@@ -48,6 +48,17 @@ for (const file of files) {
 }
 for (const key of usedKeys) if (!(key in lang)) note(`Missing localization key: ${key}`);
 
+// Foundry expands dotted keys into objects, so a key cannot be both a value
+// and the parent of other keys (e.g. "a.b" and "a.b.c").
+const langParents = new Set();
+for (const key of Object.keys(lang)) {
+  const parts = key.split(".");
+  for (let i = 1; i < parts.length; i++) langParents.add(parts.slice(0, i).join("."));
+}
+for (const key of Object.keys(lang)) {
+  if (langParents.has(key)) note(`Localization key is both a value and a namespace: ${key}`);
+}
+
 // --- ApplicationV2 template parts ------------------------------------------
 // Each PARTS entry must render exactly one root HTML element.
 const partTemplates = [
@@ -104,6 +115,9 @@ for (const pack of Object.keys(expected)) {
   for (const name of names) {
     const doc = await readJson(`${dir}/${name}`);
     if (!doc._id || !doc._key) note(`${pack}/${name}: missing _id or _key`);
+    if (doc._key?.startsWith("!folders!") && !/^[A-Za-z0-9]{16}$/.test(doc._id)) {
+      note(`${pack}/${name}: folder ID must be 16 alphanumeric characters`);
+    }
     if (keys.has(doc._key)) note(`${pack}: duplicate key ${doc._key}`);
     keys.add(doc._key);
     for (const field of ["results", "pages"]) {

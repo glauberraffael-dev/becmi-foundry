@@ -109,7 +109,7 @@
   "BECMI.sheet.notes": "Notes",
   "BECMI.sheet.equipment": "Equipment",
   "BECMI.sheet.actions": "Actions",
-  "BECMI.sheet.list": "List",
+  "BECMI.sheet.spellListColumn": "List",
   "BECMI.sheet.allLists": "All lists",
   "BECMI.sheet.list.cleric": "Cleric",
   "BECMI.sheet.list.druid": "Druid",

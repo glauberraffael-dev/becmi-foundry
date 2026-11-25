@@ -44,8 +44,11 @@ function stableId(name) {
   return createHash("sha1").update(name).digest("base64url").slice(0, 16);
 }
 
+// Foundry validates Folder IDs as 16-character alphanumeric strings.
+// A hexadecimal digest is safer than the base64url document IDs, which can
+// contain "-" and "_".
 function folderId(pack, name) {
-  return stableId(`folder:${pack}:${name}`);
+  return createHash("sha256").update(`folder:${pack}:${name}`).digest("hex").slice(0, 16);
 }
 
 function folderNameFor(pack, doc) {
