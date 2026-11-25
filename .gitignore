@@ -4,5 +4,6 @@ yarn-error.log*
 verify-*/
 unpack-*/
 *.zip
+!becmi-foundry.zip
 .DS_Store
 Thumbs.db

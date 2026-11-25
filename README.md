@@ -34,14 +34,15 @@ the optional Weapon Mastery tables. `BECMI Rules Reference` includes a six-page
 
 ### From GitHub
 
-After publishing this repository, install it in Foundry with the manifest URL:
+Install it in Foundry with this manifest URL:
 
 ```text
-https://raw.githubusercontent.com/<USER>/<REPO>/main/system.json
+https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json
 ```
 
-Replace `<USER>` and `<REPO>` with your GitHub username and repository name. See
-[PUBLISHING.md](PUBLISHING.md) for push instructions.
+The manifest points to the release archive `becmi-foundry.zip` in the repository root,
+so Foundry can download and install the system automatically. See
+[PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder
 
