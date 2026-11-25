@@ -9,6 +9,8 @@ rules text and the PDF are **not** included.
 
 - Descending AC and THAC0, saving throws, ability checks, initiative and morale.
 - Actor, Item and Journal sheets built with Foundry v13+ `ApplicationV2` (verified on v14).
+- Parchment-style tabbed character sheet: Attributes, Combat & Saves, Weapon Mastery,
+  Spells, Thief Skills, Turn Undead, Attack Table, Magic Items and Notes & Equipment.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling.
 - Seven precompiled LevelDB compendia with 554 documents in total.
 

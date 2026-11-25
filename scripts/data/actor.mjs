@@ -19,12 +19,28 @@ function savingThrowSchema() {
   });
 }
 
+function thiefSkillSchema() {
+  const f = fields();
+  const skill = () => new f.NumberField({ initial: 0, integer: true, min: 0, max: 100, label: "BECMI.labels.value" });
+  return new f.SchemaField({
+    pickPockets: skill(),
+    openLocks: skill(),
+    removeTraps: skill(),
+    climbWalls: skill(),
+    moveSilently: skill(),
+    hideInShadows: skill(),
+    hearNoise: skill(),
+    backstab: skill()
+  });
+}
+
 function identitySchema() {
   const f = fields();
   return new f.SchemaField({
     level: new f.NumberField({ initial: 1, integer: true, min: 1, max: 36, label: "BECMI.labels.level" }),
     xp: new f.NumberField({ initial: 0, integer: true, min: 0, label: "BECMI.labels.xp" }),
-    xpNext: new f.NumberField({ initial: 0, integer: true, min: 0 }),
+    xpNext: new f.NumberField({ initial: 0, integer: true, min: 0, label: "BECMI.labels.xpNext" }),
+    player: new f.StringField({ initial: "", label: "BECMI.labels.player" }),
     class: new f.StringField({ initial: "", label: "BECMI.labels.class" }),
     classUuid: new f.StringField({ initial: "" }),
     race: new f.StringField({ initial: "Human", label: "BECMI.labels.race" }),
@@ -73,6 +89,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       abilities: abilitySchema(),
       attributes: identitySchema(),
       saves: savingThrowSchema(),
+      thiefSkills: thiefSkillSchema(),
+      specialAbilities: new f.HTMLField({ initial: "" }),
+      languages: new f.StringField({ initial: "", label: "BECMI.labels.languages" }),
       biography: new f.HTMLField({ initial: "" })
     };
   }

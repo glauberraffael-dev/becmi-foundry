@@ -1,37 +1,337 @@
-/* BECMI system styles — parchment / ink aesthetic, ascending AC tables. */
+/* BECMI system styles — parchment / ink character sheet. */
 
 :root {
   --becmi-ink: #2b2118;
-  --becmi-parchment: #f4e8cf;
-  --becmi-parchment-dark: #e6d4ab;
+  --becmi-parchment: #fbe6c3;
+  --becmi-parchment-dark: #efd7a8;
   --becmi-border: #8a704a;
   --becmi-accent: #7b2d20;
   --becmi-good: #2f6b3c;
   --becmi-bad: #8b2020;
 }
 
-.becmi-sheet {
+.becmi.sheet {
   background: var(--becmi-parchment);
   color: var(--becmi-ink);
   font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 13px;
   overflow-y: auto;
 }
 
-.becmi-sheet .window-header,
-.becmi-sheet .window-title {
+.becmi.sheet .window-header,
+.becmi.sheet .window-title {
+  background: var(--becmi-parchment-dark);
+  color: var(--becmi-ink);
+}
+
+.becmi.sheet input,
+.becmi.sheet select,
+.becmi.sheet textarea {
+  color: var(--becmi-ink);
+  background: rgba(255, 252, 244, 0.6);
+  border: 1px solid var(--becmi-border);
+  border-radius: 2px;
+  padding: 1px 3px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.becmi.sheet input:disabled,
+.becmi.sheet textarea:disabled {
+  opacity: 0.75;
+}
+
+/* ---------------------------------------------------------------- header */
+.becmi-sheet-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid var(--becmi-border);
+}
+
+.becmi-portrait {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 2px solid var(--becmi-border);
+  border-radius: 3px;
+  flex: 0 0 auto;
+}
+
+.becmi-title-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.becmi-sheet-title {
+  margin: 0 0 0.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--becmi-border);
+  padding-bottom: 0.25rem;
+}
+
+.becmi-top-fields {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.3rem 0.6rem;
+}
+
+.becmi-field {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.becmi-field--wide {
+  grid-column: span 2;
+}
+
+.becmi-field label {
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.becmi-field input {
+  min-width: 0;
+  width: 100%;
+}
+
+.becmi-derived {
+  font-weight: 700;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------ tabs */
+.becmi-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 0.25rem 0.5rem 0;
+  border-bottom: 2px solid var(--becmi-border);
   background: var(--becmi-parchment-dark);
 }
 
-.becmi-sheet input,
-.becmi-sheet select,
-.becmi-sheet textarea {
+.becmi-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  padding: 0.3rem 0.65rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
   color: var(--becmi-ink);
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid var(--becmi-border);
-  border-radius: 2px;
+  cursor: pointer;
 }
 
-.becmi-sheet .becmi-header {
+.becmi-tab:hover {
+  background: rgba(255, 252, 244, 0.5);
+}
+
+.becmi-tab.is-active {
+  background: var(--becmi-parchment);
+  border-color: var(--becmi-border);
+  box-shadow: inset 0 2px 0 var(--becmi-accent);
+}
+
+.becmi-tab-panel {
+  display: none;
+  padding: 0.5rem 0.75rem 1rem;
+}
+
+.becmi-tab-panel.is-active {
+  display: block;
+}
+
+/* --------------------------------------------------------------- sections */
+.becmi-section-title {
+  margin: 0.4rem 0 0.25rem;
+  padding: 0.2rem 0.4rem;
+  background: var(--becmi-parchment-dark);
+  border: 1px solid var(--becmi-border);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.becmi-subtitle {
+  margin: 0.6rem 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--becmi-border);
+}
+
+.becmi-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.25fr;
+  gap: 0.75rem;
+}
+
+.becmi-main-bottom {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  border-top: 2px solid var(--becmi-border);
+  padding-top: 0.25rem;
+}
+
+.becmi-column {
+  min-width: 0;
+}
+
+.becmi-combat-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 0.5rem;
+}
+
+/* ----------------------------------------------------------------- tables */
+.becmi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.4rem;
+}
+
+.becmi-table th,
+.becmi-table td {
+  border: 1px solid var(--becmi-border);
+  padding: 0.15rem 0.3rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.becmi-table thead th {
+  background: var(--becmi-parchment-dark);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.becmi-table tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.becmi-table input {
+  width: 100%;
+}
+
+.becmi-table--attributes td:nth-child(2),
+.becmi-table--attributes td:nth-child(3),
+.becmi-table--saves td,
+.becmi-table--skills td {
+  width: 5.5rem;
+}
+
+.becmi-table--mastery input,
+.becmi-table--skills input {
+  max-width: 8rem;
+}
+
+.becmi-table--attack {
+  max-width: 22rem;
+}
+
+.becmi-empty {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+  padding: 0.75rem;
+}
+
+/* ----------------------------------------------------------------- items */
+.becmi-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.becmi-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px dotted var(--becmi-border);
+}
+
+.becmi-item-name {
+  flex: 1;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--becmi-ink);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.becmi-item-name:hover {
+  color: var(--becmi-accent);
+}
+
+.becmi-roll {
+  background: var(--becmi-parchment-dark);
+  border: 1px solid var(--becmi-border);
+  border-radius: 2px;
+  color: var(--becmi-ink);
+  font-family: inherit;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.35rem;
+  cursor: pointer;
+}
+
+.becmi-roll:hover {
+  background: #e3c79a;
+}
+
+.becmi-editor {
+  display: block;
+  width: 100%;
+  min-height: 5rem;
+  margin: 0 0 0.4rem;
+  resize: vertical;
+}
+
+.becmi-editor--tall {
+  min-height: 14rem;
+}
+
+.becmi-coins {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.becmi-coins input {
+  width: 4.5rem;
+}
+
+.becmi-grid {
+  display: grid;
+  gap: 0.35rem 0.6rem;
+}
+
+.becmi-grid--combat {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* ------------------------------------------------------------ item sheet */
+.becmi.sheet.item .becmi-header {
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
@@ -39,121 +339,22 @@
   border-bottom: 2px solid var(--becmi-border);
 }
 
-.becmi-sheet .becmi-header img {
+.becmi.sheet.item .becmi-header img {
   width: 72px;
   height: 72px;
   object-fit: cover;
   border: 2px solid var(--becmi-border);
   border-radius: 4px;
-  flex: 0 0 auto;
 }
 
-.becmi-sheet .becmi-header-fields {
+.becmi.sheet.item .becmi-header-fields {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.35rem 0.6rem;
   flex: 1;
 }
 
-.becmi-sheet .becmi-field {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  min-width: 0;
-}
-
-.becmi-sheet .becmi-field label {
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-}
-
-.becmi-sheet .becmi-field input {
-  min-width: 0;
-  width: 100%;
-}
-
-.becmi-sheet .becmi-section-title {
-  margin: 0.5rem 0 0.25rem;
-  padding: 0.2rem 0.4rem;
-  background: var(--becmi-parchment-dark);
-  border: 1px solid var(--becmi-border);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.becmi-sheet .becmi-grid {
-  display: grid;
-  gap: 0.35rem 0.6rem;
-  padding: 0 0.5rem;
-}
-
-.becmi-sheet .becmi-grid--abilities,
-.becmi-sheet .becmi-grid--saves {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.becmi-sheet .becmi-grid--combat {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.becmi-sheet .becmi-ability,
-.becmi-sheet .becmi-save {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.15rem;
-}
-
-.becmi-sheet .becmi-ability input,
-.becmi-sheet .becmi-save input {
-  width: 3.2rem;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.becmi-sheet .becmi-ability button,
-.becmi-sheet .becmi-save button {
-  font-size: 0.7rem;
-  line-height: 1.4;
-}
-
-.becmi-sheet .becmi-items {
-  list-style: none;
-  margin: 0;
-  padding: 0 0.5rem;
-}
-
-.becmi-sheet .becmi-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.25rem;
-  border-bottom: 1px dotted var(--becmi-border);
-}
-
-.becmi-sheet .becmi-item .becmi-item-name {
-  flex: 1;
-  cursor: pointer;
-  text-align: left;
-  background: none;
-  border: none;
-  color: var(--becmi-ink);
-  font-family: inherit;
-}
-
-.becmi-sheet .becmi-item .becmi-item-name:hover {
-  color: var(--becmi-accent);
-}
-
-.becmi-sheet .becmi-editor {
-  min-height: 120px;
-  margin: 0 0.5rem 0.5rem;
-}
-
+/* ----------------------------------------------------------- chat cards */
 .becmi-roll-card {
   border: 1px solid var(--becmi-border);
   background: var(--becmi-parchment);
