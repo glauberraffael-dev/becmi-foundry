@@ -61,6 +61,15 @@ function spellbookSchema() {
 
 function magicItemsSchema() {
   const f = fields();
+  const emptyRow = () => ({
+    equipped: false,
+    name: "",
+    ac: 0,
+    save: 0,
+    attack: 0,
+    damage: 0,
+    notes: ""
+  });
   const row = () => new f.SchemaField({
     equipped: new f.BooleanField({ initial: false }),
     name: new f.StringField({ initial: "" }),
@@ -70,7 +79,7 @@ function magicItemsSchema() {
     damage: new f.NumberField({ initial: 0, integer: true }),
     notes: new f.StringField({ initial: "" })
   });
-  return new f.ArrayField(row(), { initial: Array.from({ length: 10 }, row) });
+  return new f.ArrayField(row(), { initial: Array.from({ length: 10 }, emptyRow) });
 }
 
 function masterySchema() {

@@ -62,6 +62,19 @@ for (const module of [actorModels, itemModels]) {
 if (checked < 10) throw new Error(`Only ${checked} data models were checked`);
 console.log(`Data model schemas OK (${checked} models).`);
 
+// ArrayField initial values must be plain data, not SchemaField definitions.
+const characterSchema = actorModels.CharacterData.defineSchema();
+const magicItems = characterSchema.magicItems.options.initial;
+if (!Array.isArray(magicItems) || magicItems.length !== 10) {
+  throw new Error("magicItems must start with 10 plain rows");
+}
+for (const row of magicItems) {
+  if (typeof row.equipped !== "boolean" || row.equipped !== false) {
+    throw new Error("magicItems initial row must contain equipped: false");
+  }
+}
+console.log("magicItems initial rows OK.");
+
 // Monster-like actors have no system.attributes.ac; preparation must not throw.
 const { BECMIActor } = await import("../scripts/documents/actor.mjs");
 const withoutAc = new BECMIActor();
