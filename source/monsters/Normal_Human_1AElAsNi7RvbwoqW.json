@@ -20,10 +20,10 @@
     "treasure": "(U + V)",
     "intelligence": 11,
     "alignment": "Any",
-    "xpValue": 0,
+    "xpValue": 16,
     "terrain": "Settled.",
     "monsterType": "Human (Common).",
-    "description": "|Armor Class:|9| |---|---| |Hit Dice:|1-1 (M)| |Move:|120'(40')| |Attacks:|1 weapon| |Damage:|By weapon| |No. Appearing :|1d4 (3d20)| |Save As:|Normal Man| |Morale:|6| |Treasure Type:|(P)U| |Intelligence:|10| |Alignment:|Any| |XP Value:|5| Monster Type: Human (Common). \"Normal human\" is the game term for a human who does not seek adventure. A normal human does not have a character class, but might (optionally) have General Skills.",
+    "description": "\"Normal human\" is the game term for a human who does not seek adventure. A normal human does not have a character class, but might (optionally) have General Skills. The DM should select, rather than roll, a normal human's hit points, according to the character's age, health, and profession (1-7 hit points). For example, a blacksmith could have 7 hit points, but a young child or sickly beggar might have only 1 hit point. Most humans are \"normal\" humans and have little or no role in adventures. Some normal people belonging to specific professions or social classes (such as merchant, soldier, lord, scout, sage, healer, and so forth) are of help in some adventures. Soldiers and other fighting men will have higher morale. Typical normal humans are peasants, children, housewives, workers, artists, villagers, townspeople, fishermen, and scholars (also, see the entry for Men).",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Normal Human"
+      "key": "Normal Human",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

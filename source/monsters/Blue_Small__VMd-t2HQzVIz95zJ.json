@@ -21,10 +21,10 @@
     "intelligence": 9,
     "alignment": "Neutral",
     "xpValue": 2,
-    "terrain": "",
-    "monsterType": "",
-    "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
-    "special": "",
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "description": "AC 0; HD 9; Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below; Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;AC 0; HD 9; Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below; Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Blue (Small)"
+      "key": "Blue (Small)",
+      "category": "Dragon"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "b9a214ddebbb8a17"
 }

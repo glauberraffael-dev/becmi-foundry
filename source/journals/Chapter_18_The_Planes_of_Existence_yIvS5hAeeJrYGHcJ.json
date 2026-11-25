@@ -1,0 +1,45 @@
+{
+  "_id": "yIvS5hAeeJrYGHcJ",
+  "_key": "!journal!yIvS5hAeeJrYGHcJ",
+  "name": "Chapter 18: The Planes of Existence",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 18
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Rules",
+      "type": "text",
+      "text": {
+        "content": "<h2>The Planes of Existence</h2>\n <p>The Prime Plane is the balanced home world of ordinary adventurers. Other planes are arranged around it: the Ethereal Plane overlays the Prime, the four Elemental Planes connect to it through wormholes, and the Outer Planes lie beyond them. Interplanar travel normally passes through the Ethereal Plane, because direct travel between the Prime and the elemental spheres is not available to ordinary characters.</p>\n <p>In the Ethereal Plane ether appears as gray fog. Light works normally but illuminates only the ether; infravision is nearly useless because everything shares the same temperature. Visitors can breathe, cannot fall, and cannot walk. Movement requires magic and changes with the material nearby on the Prime Plane: vacuum doubles speed, air is normal, fire or water reduces it to three quarters, soil or wood to half, rock to one quarter, and metal or lead stops movement entirely.</p>\n <p>Elemental planes are hostile environments. Air dominates Water, Water dominates Fire, Fire dominates Earth, and Earth dominates Air; Air and Fire oppose each other, as do Earth and Water. Survival requires spells such as create air or survival, a ring of elemental adaptation, or a talisman of elemental travel. Energy-based effects work normally; matter-based effects may be altered or negated.</p>\n <p>The Outer Planes are the realms of alignment, deities and immortal powers. They are reached by advanced magic or immortal travel. Beyond the multiverse lies whatever the DM places there; use the same plane rules as a frontier rather than assuming fixed physics.</p>"
+      },
+      "_id": "w51YWQ2DSdhRveuX",
+      "_key": "!journal.pages!yIvS5hAeeJrYGHcJ.w51YWQ2DSdhRveuX"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>The Planes of Existence — Tables 1</h2><table><thead><tr><th>Realm</th><th>Access</th><th>Environment</th><th>Adventure rules</th></tr></thead><tbody><tr><td>Prime Plane</td><td>Home world</td><td>Balanced mix of elements</td><td>All rules in this system apply normally</td></tr><tr><td>Ethereal Plane</td><td>Magic travel</td><td>Gray ether; no gravity; magic movement required</td><td>Cannot see the Prime without detect invisibility or similar magic</td></tr><tr><td>Elemental Planes</td><td>Wormholes from the Ethereal</td><td>Air, Earth, Fire and Water</td><td>Survival magic required; elemental dominance changes matter-based effects</td></tr><tr><td>Outer Planes</td><td>Advanced or immortal travel</td><td>Alignment-linked realms</td><td>Deities, patrons and planar creatures follow the DM's cosmology</td></tr><tr><td>Beyond the Multiverse</td><td>DM-defined</td><td>No fixed physics</td><td>Use planes as a frontier and assign local rules explicitly</td></tr></tbody></table>"
+      },
+      "_id": "f1yAW9mPEfvWSKss",
+      "_key": "!journal.pages!yIvS5hAeeJrYGHcJ.f1yAW9mPEfvWSKss"
+    },
+    {
+      "name": "Tables 2",
+      "type": "text",
+      "text": {
+        "content": "<h2>The Planes of Existence — Tables 2</h2><table><thead><tr><th>Nearby Prime material</th><th>Ethereal movement</th><th>Example</th><th>Effect</th></tr></thead><tbody><tr><td>Vacuum</td><td>Double normal</td><td>Open space</td><td>Fast travel</td></tr><tr><td>Air</td><td>Normal</td><td>Open sky</td><td>No modifier</td></tr><tr><td>Fire or water</td><td>Three quarters normal</td><td>Lake or flame</td><td>Slowed</td></tr><tr><td>Soil or wood</td><td>Half normal</td><td>Forest or field</td><td>Slowed</td></tr><tr><td>Rock</td><td>One quarter normal</td><td>Mountain</td><td>Very slow</td></tr><tr><td>Metal or lead</td><td>No movement</td><td>Vault or wall</td><td>Blocked</td></tr></tbody></table>"
+      },
+      "_id": "YcZHtTIm8fA0gJAA",
+      "_key": "!journal.pages!yIvS5hAeeJrYGHcJ.YcZHtTIm8fA0gJAA"
+    }
+  ]
+}

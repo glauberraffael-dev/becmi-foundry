@@ -1,0 +1,45 @@
+{
+  "_id": "1fVk53zy9jUl2BUm",
+  "_key": "!journal!1fVk53zy9jUl2BUm",
+  "name": "Chapter 19: Variant Rules",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 19
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Rules",
+      "type": "text",
+      "text": {
+        "content": "<h2>Variant Rules</h2>\n <p>These options are optional. Apply them consistently or not at all, since they change encounters, advancement and combat pacing.</p>\n <p><strong>Ability scores and saving throws:</strong> in the standard game only Wisdom modifies saves versus spells. The DM may also apply the ability modifier to the matching category: Strength vs. paralysis and petrification, Intelligence vs. mind attacks, Wisdom vs. spells, Dexterity vs. wands and breath weapons, and Constitution vs. poison but not death rays. Charisma gives no save bonus. A combined modifier cannot exceed +3 or -3.</p>\n <p><strong>Death in the campaign:</strong> resurrection magic can be removed to make death final. A gentler option keeps a character at 0 hit points unconscious and mortally wounded: roll a saving throw versus death ray each round while taking damage and once per ten minutes; failure means death. Healing magic or a successful Healing skill check with a -5 penalty stabilizes the character.</p>\n <p><strong>Demihuman and mystic advancement:</strong> the standard caps keep these classes balanced because they begin with many abilities. The extended table lets them reach level 36. Under that option demihumans use the normal attack chart instead of Attack Ranks: dwarves attack as fighters, elves and halflings as clerics; mystics attack as fighters. Hit points above 9th level become fixed, saving throws stop improving at the old cap, and spell access follows the normal spell table for casters.</p>\n <p><strong>Nonlethal combat:</strong> divide each damage roll into real damage (one quarter, rounded down) and nonlethal damage (the remainder). Track them separately. When their sum reaches the target's hit points, the target falls unconscious. Nonlethal damage wears off in two stages of 2d6 x 10 minutes; real damage only heals normally. Unarmed attacks and purpose-built practice weapons have no penalty; using an ordinary weapon to deal nonlethal damage imposes a -3 attack penalty.</p>"
+      },
+      "_id": "_jOHOzFZMN5yRJf1",
+      "_key": "!journal.pages!1fVk53zy9jUl2BUm._jOHOzFZMN5yRJf1"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>Variant Rules — Tables 1</h2><table><thead><tr><th>Level</th><th>Dwarf</th><th>Elf</th><th>Halfling</th><th>Mystic</th></tr></thead><tbody><tr><td>1</td><td>2,200</td><td>4,000</td><td>2,000</td><td>2,000</td></tr><tr><td>2</td><td>4,400</td><td>8,000</td><td>4,000</td><td>4,000</td></tr><tr><td>3</td><td>8,800</td><td>16,000</td><td>8,000</td><td>8,000</td></tr><tr><td>4</td><td>17,000</td><td>32,000</td><td>16,000</td><td>16,000</td></tr><tr><td>5</td><td>35,000</td><td>64,000</td><td>32,000</td><td>32,000</td></tr><tr><td>6</td><td>70,000</td><td>120,000</td><td>64,000</td><td>64,000</td></tr><tr><td>7</td><td>140,000</td><td>250,000</td><td>120,000</td><td>120,000</td></tr><tr><td>8</td><td>270,000</td><td>400,000</td><td>300,000</td><td>240,000</td></tr><tr><td>9</td><td>400,000</td><td>600,000</td><td>600,000</td><td>360,000</td></tr><tr><td>10</td><td>530,000</td><td>850,000</td><td>900,000</td><td>480,000</td></tr><tr><td>11</td><td>660,000</td><td>1,100,000</td><td>1,200,000</td><td>600,000</td></tr><tr><td>12</td><td>800,000</td><td>1,350,000</td><td>1,500,000</td><td>720,000</td></tr><tr><td>13</td><td>1,000,000</td><td>1,600,000</td><td>1,800,000</td><td>840,000</td></tr><tr><td>14</td><td>1,200,000</td><td>1,850,000</td><td>2,100,000</td><td>960,000</td></tr><tr><td>15</td><td>1,400,000</td><td>2,100,000</td><td>2,400,000</td><td>1,080,000</td></tr><tr><td>16</td><td>1,600,000</td><td>2,350,000</td><td>2,700,000</td><td>1,200,000</td></tr><tr><td>17</td><td>1,800,000</td><td>2,600,000</td><td>3,000,000</td><td>1,320,000</td></tr><tr><td>18</td><td>2,000,000</td><td>2,850,000</td><td>3,000,000</td><td>1,440,000</td></tr></tbody></table>"
+      },
+      "_id": "dBrMGftsoP4QnOW8",
+      "_key": "!journal.pages!1fVk53zy9jUl2BUm.dBrMGftsoP4QnOW8"
+    },
+    {
+      "name": "Tables 2",
+      "type": "text",
+      "text": {
+        "content": "<h2>Variant Rules — Tables 2</h2><table><thead><tr><th>Level</th><th>Dwarf</th><th>Elf</th><th>Halfling</th><th>Mystic</th></tr></thead><tbody><tr><td>19</td><td>2,200,000</td><td>3,100,000</td><td>3,200,000</td><td>1,560,000</td></tr><tr><td>20</td><td>2,400,000</td><td>3,100,000</td><td>3,400,000</td><td>1,680,000</td></tr><tr><td>21</td><td>2,600,000</td><td>3,300,000</td><td>3,600,000</td><td>1,800,000</td></tr><tr><td>22</td><td>2,800,000</td><td>3,500,000</td><td>3,800,000</td><td>1,920,000</td></tr><tr><td>23</td><td>3,000,000</td><td>3,700,000</td><td>4,000,000</td><td>2,040,000</td></tr><tr><td>24</td><td>3,200,000</td><td>3,900,000</td><td>4,200,000</td><td>2,160,000</td></tr><tr><td>25</td><td>3,400,000</td><td>4,100,000</td><td>4,400,000</td><td>2,280,000</td></tr><tr><td>26</td><td>3,600,000</td><td>4,300,000</td><td>4,600,000</td><td>2,400,000</td></tr><tr><td>27</td><td>3,800,000</td><td>4,500,000</td><td>4,800,000</td><td>2,520,000</td></tr><tr><td>28</td><td>4,000,000</td><td>4,700,000</td><td>5,000,000</td><td>2,640,000</td></tr><tr><td>29</td><td>4,200,000</td><td>4,900,000</td><td>5,200,000</td><td>2,760,000</td></tr><tr><td>30</td><td>4,400,000</td><td>5,100,000</td><td>5,400,000</td><td>2,880,000</td></tr><tr><td>31</td><td>4,600,000</td><td>5,300,000</td><td>5,600,000</td><td>3,000,000</td></tr><tr><td>32</td><td>4,800,000</td><td>5,500,000</td><td>5,800,000</td><td>3,120,000</td></tr><tr><td>33</td><td>5,000,000</td><td>5,700,000</td><td>6,000,000</td><td>3,240,000</td></tr><tr><td>34</td><td>5,200,000</td><td>5,900,000</td><td>6,200,000</td><td>3,360,000</td></tr><tr><td>35</td><td>5,400,000</td><td>6,100,000</td><td>6,400,000</td><td>3,480,000</td></tr><tr><td>36</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>"
+      },
+      "_id": "UaWeoMVq9p99I1v1",
+      "_key": "!journal.pages!1fVk53zy9jUl2BUm.UaWeoMVq9p99I1v1"
+    }
+  ]
+}

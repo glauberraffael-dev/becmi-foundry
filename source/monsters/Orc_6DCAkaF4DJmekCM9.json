@@ -16,14 +16,14 @@
     "damage": "By weapon",
     "appearing": "2d4(1d6 x 10)",
     "saveAs": "F1",
-    "morale": 86,
+    "morale": 8,
     "treasure": "(P)D",
     "intelligence": 7,
     "alignment": "Chaotic",
     "xpValue": 10,
     "terrain": "Wilderness (any).",
     "monsterType": "Humanoid (Common).",
-    "description": "Armor Class: 6 Hit Dice: 1(M) Move: 120' (40') Attacks: 1 weapon Damage: By weapon No. Appearing: 2d4(ld6 x 10) Save As: F1 Morale: 8 or 6 (see below) Treasure Type: (P)D Intelligence: 7 Alignment: Chaotic XP Value: 10 6 with 8 hit points who gains a +1 bonus on dam1(M) age rolls. If this leader is killed, the morale of the 120' (40') group becomes 6 instead of 8. Orcs are afraid of 1 weapon anything larger or stronger than they are, but By weapon may be forced to fight by their leaders.",
+    "description": "6 with 8 hit points who gains a +1 bonus on dam1(M) age rolls. If this leader is killed, the morale of the 120' (40') group becomes 6 instead of 8. Orcs are afraid of 1 weapon anything larger or stronger than they are, but By weapon may be forced to fight by their leaders. Orcs are often used for armies by Chaotic leaders (both humans and monsters). They prefer swords, spears, axes, and clubs for weapons. They cannot use mechanical weapons (such as catapults), and only their leaders understand how to operate such devices. There are many different tribes of orcs. Each tribe has as many female orcs as males, and at least two children (\"whelps\") for each two adults. The leader of an orc tribe is a chieftain with 15 hit points, who attacks as a 4 Hit Dice monster and gains +2 on damage rolls. For every 20 orcs in a tribe, there may be an ogre with them (1 in 6 chance).",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Orc"
+      "key": "Orc",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

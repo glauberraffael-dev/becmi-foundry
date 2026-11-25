@@ -23,8 +23,8 @@
     "xpValue": 900,
     "terrain": "Mountain (volcanic).",
     "monsterType": "Lowlife (Very Rare).",
-    "description": "Armor Class: 5 Hit Dice: 9 (L) Move: 90' (30') Attacks: 3 pseudopods Damage: (4d6 + 3d6) X 3 (see below) No. Appearing: 1d3 (2d4) Save As: F9 Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: Chaotic XP Value: 900 Monster Type: Lowlife (Very Rare). This shapeless monster appears as a puddle or stream of hot molten rock, about 10' x 10'. It lives in or near a volcano or other place of great heat. Although the ooze is native to the Prime Plane, it can freely exist on the elemental plane of Fire.",
-    "special": "",
+    "description": "This shapeless monster appears as a puddle or stream of hot molten rock, about 10' x 10'. It lives in or near a volcano or other place of great heat. Although the ooze is native to the Prime Plane, it can freely exist on the elemental plane of Fire. Lava ooze is fluid, able to pass through small holes or cracks. It can sense vibrations within 60'. The monster attacks by extending pseudopods (up to three per round) from its fluid body to strike at its opponents up to 15' away. Each hit inflicts 4d6 points of damage, and leaves a coating of lava that inflicts 3d6 points of automatic heat damage per round for ld4 rounds thereafter. Multiple hits on a single-opponent do not increase this heat damage, but the durations are cumulative. The lava ooze is mindless and attacks until destroyed. It is immune to fire (both normal and magical) and to all mind attacks (including charm, ESP, etc.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Although the ooze is native to the Prime Plane, it can freely exist on the elemental plane of Fire. It is immune to fire (both normal and magical) and to all mind attacks (including charm, ESP, etc.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Lava Ooze"
+      "key": "Lava Ooze",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

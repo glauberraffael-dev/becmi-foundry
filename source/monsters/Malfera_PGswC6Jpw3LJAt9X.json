@@ -23,8 +23,8 @@
     "xpValue": 2300,
     "terrain": "Any; Dimension of Nightmares.",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "Armor Class: 3 Hit Dice: 9 (L) Move: 60' (20') Attacks: 2 claws, bite + special Damage: 1dl0/ldl0/ld6 No. Appearing: 1 (1d2) Save As: F13 Morale: 11 Treasure Type: E Intelligence: 10 Alignment: Chaotic XP Value: 2,300 Monster Type: Planar Monster, Enchanted (Very Rare). A malfera is a creature from the Dimension of Nightmares, where many evil dreams are bred and released into the minds of sleeping people.",
-    "special": "",
+    "description": "A malfera is a creature from the Dimension of Nightmares, where many evil dreams are bred and released into the minds of sleeping people. A malfera appears only through the acts of a powerful magic-user or an Immortal; its dimension is believed poisonous and deadly to humans. The malfera has a large, elephantlike face and a short trunk. The head is topped by large horns. Large fangs protrude from either side of the trunk. The chest is a mass of slimy, short tentacles. Long, muscular arms end in large, jagged pincers. Its feet are webbed and clawed. It is colored night-black but has red veins and eyes. In combat, a malfera attacks with pincers and bites. If both pincers hit the same target, the victim is dragged to the chest of the malfera on the next round. The tentacles then automatically trap the victim.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A malfera is a creature from the Dimension of Nightmares, where many evil dreams are bred and released into the minds of sleeping people. A malfera appears only through the acts of a powerful magic-user or an Immortal; its dimension is believed poisonous and deadly to humans. Its feet are webbed and clawed.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Malfera"
+      "key": "Malfera",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

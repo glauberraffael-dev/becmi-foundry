@@ -23,8 +23,8 @@
     "xpValue": 275,
     "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
     "monsterType": "Monster (Rare).",
-    "description": "Small Large Giant Armor Class: 4 2 0 Hit Dice: 6(1) 12 (L) 36 (L) Move: 60' (20') 60' (20') 60' (20') Flying: 480' (160') 480' (160') 480'(160') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Damage: 1d4 + l/ld4 + l/2d6 `1d8/ld8/2dl0 3d6/3d6/8d6` No. Appearing: 0(ldl2) 0(ld8) 0(1) Save As: F3 F6 F18 Morale: 8 9 10 Treasure Type: 1 1 Intelligence: 2 2 2 Alignment: Lawful Lawful Lawful XP Value: 275 1,250 6,250 Monster Type: Monster (Rare).",
-    "special": "",
+    "description": "This monster appears as a human figure with skeletal hands and a skull head with flowing, white hair. A revener prowls dark, underground caverns and dust-filled tombs and crypts. When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). The lost sense may be chosen or randomly determined; subsequent hits always drain different senses. A restore spell will restore one lost sense. Taste: Victim cannot identify tastes (such as potions). never check morale if encountered in their lair. If hatched or captured as chicks, young rocs can be trained as riding-beasts. Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls. Hearing: Victim cannot hear and loses the ability to speak clearly (may ruin spell casting).",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). A restore spell will restore one lost sense. Smell:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Roc (Small)"
+      "key": "Roc (Small)",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

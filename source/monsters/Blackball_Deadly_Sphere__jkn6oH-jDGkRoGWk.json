@@ -19,12 +19,12 @@
     "morale": 12,
     "treasure": "Nil",
     "intelligence": 0,
-    "alignment": "None (see below)",
+    "alignment": "Neutral",
     "xpValue": 7500,
     "terrain": "Any.",
     "monsterType": "Planar Monster (Very Rare).",
-    "description": "Armor Class: 9 Hit Dice: None (see below) (M) Move: 30' (10') Attacks: 1 touch Damage: Disintegration No. Appearing: 1 (1) Save As: See below Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: None (see below) XP Value: 7,500 Monster Type: Planar Monster (Very Rare). It is not known what these curious beings are, or even if they are living creatures. A blackball (or \"deadly sphere\") is simply a featureless black globe, 5' in diameter. It moves slowly but usually randomly.",
-    "special": "",
+    "description": "It is not known what these curious beings are, or even if they are living creatures. A blackball (or \"deadly sphere\") is simply a featureless black globe, 5' in diameter. It moves slowly but usually randomly. Whatever it touches simply disintegrates (no saving throw), so it moves freely through anything. When encountered, the blackball moves toward the nearest intelligent creature within 60'. It has no recognizable mind or intelligence and is immune to everything except Immortal control. An Immortal can command a blackball, but it is beyond mortal control; fortunately, it is extremely rare. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It has no recognizable mind or intelligence and is immune to everything except Immortal control. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Blackball (Deadly Sphere)"
+      "key": "Blackball (Deadly Sphere)",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

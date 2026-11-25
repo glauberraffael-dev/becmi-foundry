@@ -21,10 +21,10 @@
     "intelligence": 16,
     "alignment": "Chaotic",
     "xpValue": 14975,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Undead Construct, Enchanted (Very Rare).",
-    "description": "Armor Class: -4/-2/3 Hit Dice: 20* (hp special) (M) Move: 60' (20') Attacks: 1 bite + special Damage: 2dl0 + special No. Appearing: 1 (0) Save As: M20 Morale: 12 Treasure Type: L, N, O ( x 2) Intelligence: 16 Alignment: Chaotic XP Value: 14,975 Monster Type: Undead Construct, Enchanted (Very Rare). An undead beholder is similar to a living one, but is a construct created for some specific evil purpose. All undead beholders are constructs; \"real\" beholders never become undead.",
-    "special": "",
+    "description": "An undead beholder is similar to a living one, but is a construct created for some specific evil purpose. All undead beholders are constructs; \"real\" beholders never become undead. This monster looks quite similar to a normal beholder—a large floating ball, about four feet in diameter, covered with tough armor-plated skin. Atop the monster are ten small eyes on stalks, each with its own magical power. A large central eye is on the front of the body, with a toothy mouth below it. The creature moves about by magical flight, a natural (nonmagical) ability. It is extremely intelligent, and speaks many languages. Any cleric of 25th level or greater will recognize the creature as undead when he sees it. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Atop the monster are ten small eyes on stalks, each with its own magical power. The creature moves about by magical flight, a natural (nonmagical) ability. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Beholder, Undead"
+      "key": "Beholder, Undead",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

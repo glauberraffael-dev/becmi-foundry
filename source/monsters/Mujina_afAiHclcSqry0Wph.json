@@ -22,9 +22,9 @@
     "alignment": "Chaotic",
     "xpValue": 1200,
     "terrain": "Any, where humans are found.",
-    "monsterType": "Monster (Very Rare). A mujina, in its natural form, looks like a human except that it has no face. Where the eyes, nose, ears and mouth should be is nothing—the face is smooth like an egg. However, the mujina may create an illusion to give its face any appearance it wants. It most often poses as a typical human until it decides to attack.",
-    "description": "Armor Class: 4 Hit Dice: 8*(M) Move: 120' (40') Attacks: 2 weapon + special Damage: 1d6 or by weapon No. Appearing: 1d4 (1d4) Save As: F8 Morale: 9 Treasure Type: E Intelligence: 10 Alignment: Chaotic XP Value: 1,200 Monster Type: Monster (Very Rare). A mujina, in its natural form, looks like a human except that it has no face. Where the eyes, nose, ears and mouth should be is nothing—the face is smooth like an egg. However, the mujina may create an illusion to give its face any appearance it wants.",
-    "special": "",
+    "monsterType": "Monster (Very Rare).",
+    "description": "A mujina is very strong and can handle any two-handed weapon (other than a lance, pole arm, or crossbow) in one hand. In combat it uses two weapons, one in each hand. It has the same chance to hit with either weapon. A mujina can also cause its true (blank) face to appear at will. Any creature of five Hit Dice (levels) or less who sees the blank face automatically runs in fear for ld3 rounds at three times its normal movement rate. Creatures who have more than five Hit Dice (or levels) must save vs. wands or also flee. A mujina often joins a party of adventurers as a retainer fighter. It may serve faithfully for a long period, not revealing its true identity. However, if given the opportunity, it robs the party of as much as possible and then flees. Mujina can speak Common, the language of their kind, and their alignment tongue.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Any creature of five Hit Dice (levels) or less who sees the blank face automatically runs in fear for ld3 rounds at three times its normal movement rate.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Mujina"
+      "key": "Mujina",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

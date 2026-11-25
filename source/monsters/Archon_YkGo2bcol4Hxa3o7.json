@@ -23,7 +23,7 @@
     "xpValue": 13175,
     "terrain": "Any (usually wilderness along main roads).",
     "monsterType": "Giant Humanoid (Rare).",
-    "description": "Monster Type: Giant Humanoid (Rare). Armor Class: —6 Hit Dice: 20 (L) Move: 120' (40') Flying: 360' (120') Attacks: See below Damage: See below No. Appearing: 1d2 (1d2) Save As: C20 Morale: 11 Treasure Type: Nil Intelligence: 16 Alignment: Lawful XP Value: 13,175 Athachs are humanoid and stand 18' tall. Each has hideous but recognizable features, a malformed body, and a third arm in the center of its chest. Treasure Type A is only found in the bandits' wilderness lair.",
+    "description": "Athachs are humanoid and stand 18' tall. Each has hideous but recognizable features, a malformed body, and a third arm in the center of its chest. Treasure Type A is only found in the bandits' wilderness lair. These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Bandits may have an NPC leader of any hu- • man character class who is one or more levels of experience greater than the bandits.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Archon"
+      "key": "Archon",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

@@ -23,8 +23,8 @@
     "xpValue": 50,
     "terrain": "Ocean.",
     "monsterType": "Monster (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 3* (L) Move (Swimming): 180' (60') Attacks: 1 head butt Damage: 2d4 No. Appearing: 0 (1d20) Save As: D6 Morale: 10 Treasure Type: Nil Intelligence: 15 Alignment: Lawful XP Value: 50 Armor Class: 5 Hit Dice: 4* (M) Move: 90' (30') Attacks: 1 bite Damage: 1dl2 No. Appearing: 1d6 (1d6) Save As: F8 Morale: 8 Treasure Type: E Intelligence: 9 Alignment: Chaotic XP Value: 125 Monster Type: Monster (Rare). These man-sized shape-changing creatures are intelligent and evil.",
-    "special": "",
+    "description": "These man-sized shape-changing creatures are intelligent and evil. A doppleganger is able to shape itself into the exact form of any human, demihuman, or humanoid creature it sees (up to 7' tall). Once in the form of the person it is imitating, it attacks that person, intending to kill him and assume his identity. Its favorite trick is to kill the original person in some way without alerting the party. Then, in the role of that individual, it attacks others by surprise, often when they are already engaged in combat. Dolphins are seagoing mammals; their favorite food is fish. They are related to whales, but are much smaller. They are 10' long with a smooth hide. Dolphins cannot breathe water and must come to the surface once every 15 minutes for air. Dolphins are intelligent and have their own high-pitched language.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Then, in the role of that individual, it attacks others by surprise, often when they are already engaged in combat. Dolphins cannot breathe water and must come to the surface once every 15 minutes for air.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Doppleganger"
+      "key": "Doppleganger",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

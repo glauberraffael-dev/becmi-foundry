@@ -22,9 +22,9 @@
     "alignment": "Chaotic",
     "xpValue": 175,
     "terrain": "Ocean.",
-    "monsterType": "Undead (Rare, Enchanted). A wraith is an undead monster with no physi-",
-    "description": "Armor Class: 3 Hit Dice: 4 (M) Move: 120' (40') Flying: 240' (80') Attacks: 1 touch Damage: 1d6 + energy drain No. Appearing: 1d4(ld6) Save As: F4 Morale: Treasure Type: E Intelligence: 7 Alignment: Chaotic XP Value: 175 Monster Type: Undead (Rare, Enchanted). A wraith is an undead monster with no physi- Great Whale: This huge whale is about 60' long on the average. It preys on the most feared denizens of the deep (such as the giant octopus and giant squid).",
-    "special": "",
+    "monsterType": "Undead (Rare, Enchanted).",
+    "description": "It preys on the most feared denizens of the deep (such as the giant octopus and giant squid). Man-sized or smaller creatures will be swallowed whole on a die roll that is 4 or more than the score needed to hit. A swallowed creature will take 3d6 points of acid damage per round. Great whales will sometimes (10%) attack ships, attempting to ram. The monster whale does 6d6 hull points of damage in a successful ram. Extremely rare great whales might grow to double or triple this size, with a corresponding increase in Hit Dice and damage. There are rumors of monster whales large enough to swallow an entire harbor of ships! Narwhal: The narwhal is 15' long, gray to white in color, and has an 8' long spiral horn on its head (like that of a unicorn). It is an intelligent magical creature, very independent and secretive.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It preys on the most feared denizens of the deep (such as the giant octopus and giant squid). Man-sized or smaller creatures will be swallowed whole on a die roll that is 4 or more than the score needed to hit. A swallowed creature will take 3d6 points of acid damage per round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Wraith"
+      "key": "Wraith",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

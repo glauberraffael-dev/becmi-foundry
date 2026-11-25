@@ -22,8 +22,8 @@
     "alignment": "Neutral",
     "xpValue": 20,
     "terrain": "Any.",
-    "monsterType": "Normal Animal (Common). A mule is a crossbreed between a horse and a donkey. Mules are stubborn, and if bothered or excited they may either bite or kick. Mules cannot be trained to attack, but will fight in their own defense.",
-    "description": "Armor Class: 7 Hit Dice: 2(L) Move: 120' (40') Attacks: 1 kick or 1 bite Damage: 1d4 or 1d3 No. Appearing: 1d2(2dl2) Save As: Normal Man Morale: 8 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 20 Monster Type: Normal Animal (Common). A mule is a crossbreed between a horse and a donkey. Mules are stubborn, and if bothered or excited they may either bite or kick. Mules cannot be trained to attack, but will fight in their own defense.",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Mules are very strong for their number of Hit Dice, and can carry great amounts of weight for their owners. They become somewhat more stubborn when loaded down enough that they move at half normal speed. Mules may be taken into dungeons, if allowed by the DM. If encountered alone in a dungeon, the mules may belong to an NPC party nearby.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Mule"
+      "key": "Mule",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

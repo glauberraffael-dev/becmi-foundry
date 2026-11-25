@@ -22,6 +22,15 @@
       },
       "_id": "Kz-umplrSzjGTArs",
       "_key": "!journal.pages!6quJ8qK89IttNKig.Kz-umplrSzjGTArs"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>Combat — Tables 1</h2><table><thead><tr><th>Check</th><th>Roll</th><th>Success</th></tr></thead><tbody><tr><td>Attack</td><td>d20 + bonuses</td><td>At least THAC0 - target AC</td></tr><tr><td>Saving throw</td><td>d20</td><td>At least the listed target</td></tr><tr><td>Ability check</td><td>d20</td><td>At most the ability score</td></tr><tr><td>Morale</td><td>2d6</td><td>At most the morale score</td></tr><tr><td>Turn undead</td><td>2d6</td><td>At least the table result</td></tr></tbody></table>"
+      },
+      "_id": "bTksFjjgMi5v_THM",
+      "_key": "!journal.pages!6quJ8qK89IttNKig.bTksFjjgMi5v_THM"
     }
   ]
 }

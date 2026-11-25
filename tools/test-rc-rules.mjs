@@ -4,13 +4,14 @@
  * Usage: node tools/test-rc-rules.mjs
  */
 import assert from "node:assert/strict";
+import { classFeaturesFor } from "../scripts/class-features.mjs";
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
-  normalizeClassKey, planAbilityAdjustment, resolveTurnResult, rollExpression,
-  spellKey, spellSlotsForLevel, spellsFor, sumDamage, turnUndeadCell,
-  turnUndeadColumn, turnUndeadTable
+  levelForXp, normalizeClassKey, planAbilityAdjustment, resolveTurnResult,
+  rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
+  turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
 } from "../scripts/rules-rc.mjs";
 
 const check = (name, fn) => {
@@ -19,7 +20,7 @@ const check = (name, fn) => {
 };
 
 check("extracted data has the expected reference tables", () => {
-  assert.equal(Object.keys(RC.classes).length, 7);
+  assert.equal(Object.keys(RC.classes).length, 8);
   assert.equal(RC.spells.length, 201);
   assert.equal(RC.mastery.weapons.length, 37);
   assert.equal(RC.thief.length, 36);
@@ -32,6 +33,48 @@ check("class aliases normalize to RC keys", () => {
   assert.equal(normalizeClassKey("Warrior"), "fighter");
   assert.equal(normalizeClassKey("Rogue"), "thief");
   assert.equal(normalizeClassKey("not a class"), null);
+  assert.equal(normalizeClassKey("Mystic"), "mystic");
+});
+
+check("XP thresholds drive automatic level advancement", () => {
+  const fighter = RC.classes.fighter;
+  assert.equal(xpThresholds(fighter)[0], 2000);
+  assert.equal(xpForNextLevel(fighter, 1), 2000);
+  assert.equal(xpForNextLevel(fighter, 36), null);
+  assert.equal(levelForXp(fighter, 1999, 1), 1);
+  assert.equal(levelForXp(fighter, 2000, 1), 2);
+  assert.equal(levelForXp(fighter, 4350000, 1), 36);
+  assert.equal(levelForXp(fighter, 99999999, 1), 36);
+
+  const mystic = RC.classes.mystic;
+  assert.equal(mystic.maxLevel, 16);
+  assert.equal(xpForNextLevel(mystic, 15), 1080000);
+  assert.equal(levelForXp(mystic, 1080000, 1), 16);
+  assert.equal(levelForXp(mystic, 5000000, 1), 16);
+
+  const broken = { maxLevel: 4, xpTable: { 1: 0, 2: 1000, 3: 500, 4: 3000 } };
+  assert.deepEqual(xpThresholds(broken), [1000, 1001, 3000]);
+  assert.equal(levelForXp(broken, 1001, 1), 3);
+});
+
+check("class abilities include backstab, demihuman and mystic features", () => {
+  const thief = classFeaturesFor("Thief", { level: 1 });
+  const backstab = thief.find((feature) => feature.key === "backstab");
+  assert.ok(backstab?.unlocked);
+  assert.match(backstab.detail, /double weapon damage/);
+
+  const elf = classFeaturesFor("Elf", { level: 4, xp: 900000 });
+  assert.ok(elf.find((feature) => feature.key === "elfSpells")?.unlocked);
+  assert.ok(elf.find((feature) => feature.key === "combatOptions")?.unlocked);
+  assert.ok(!elf.find((feature) => feature.key === "halfBreath")?.unlocked);
+
+  const mystic = classFeaturesFor("Mystic", { level: 16, xp: 1080000 });
+  assert.equal(mystic.find((feature) => feature.key === "gentleTouch")?.unlocked, true);
+  assert.equal(mystic.find((feature) => feature.key === "combatOptions")?.unlocked, true);
+
+  const druid = classFeaturesFor("Cleric", { level: 9, xp: 200000, druid: true });
+  assert.ok(druid.some((feature) => feature.key === "druidSpells"));
+  assert.ok(druid.find((feature) => feature.key === "druid")?.unlocked);
 });
 
 check("attack table maps specs and AC values", () => {

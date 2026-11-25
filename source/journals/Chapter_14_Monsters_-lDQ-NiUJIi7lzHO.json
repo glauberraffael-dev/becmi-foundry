@@ -22,6 +22,24 @@
       },
       "_id": "OmIpXROi_y9ZSpjO",
       "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.OmIpXROi_y9ZSpjO"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>Monsters — Tables 1</h2><table><thead><tr><th>Undead</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9-10</th><th>11-12</th><th>13-14</th><th>15-16</th><th>17-20</th><th>21-24</th><th>25-28</th><th>29-32</th><th>33-36</th></tr></thead><tbody><tr><td>Esqueleto</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D#</td><td>D#</td><td>D#</td></tr><tr><td>Zumbi</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D#</td><td>D#</td></tr><tr><td>Carniçal</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D#</td></tr><tr><td>Wight</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td></tr><tr><td>Wraith</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td><td>D+</td></tr><tr><td>Múmia</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td><td>D+</td></tr><tr><td>Espectro</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td><td>D+</td></tr></tbody></table>"
+      },
+      "_id": "3ogzW4SprET2M2SI",
+      "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.3ogzW4SprET2M2SI"
+    },
+    {
+      "name": "Tables 2",
+      "type": "text",
+      "text": {
+        "content": "<h2>Monsters — Tables 2</h2><table><thead><tr><th>Undead</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9-10</th><th>11-12</th><th>13-14</th><th>15-16</th><th>17-20</th><th>21-24</th><th>25-28</th><th>29-32</th><th>33-36</th></tr></thead><tbody><tr><td>Vampiro</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D+</td></tr><tr><td>Phantom</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td></tr><tr><td>Haunt</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td></tr><tr><td>Spirit</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td><td>D</td></tr><tr><td>Nightshade</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>D</td><td>D</td><td>D</td></tr><tr><td>Lich</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>T</td><td>T</td></tr><tr><td>Especial</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>11</td><td>9</td><td>7</td><td>T</td><td>T</td><td>T</td></tr></tbody></table>"
+      },
+      "_id": "Wg-G4mYG0ARWfWX-",
+      "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.Wg-G4mYG0ARWfWX-"
     }
   ]
 }

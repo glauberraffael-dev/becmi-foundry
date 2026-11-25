@@ -21,9 +21,9 @@
     "intelligence": 0,
     "alignment": "Neutral",
     "xpValue": 125,
-    "terrain": "",
-    "monsterType": "",
-    "description": "A form of undead; see Haunt. Armor Class: 8 Hit Dice: 4* (L) Move: 60' (20') Attacks: 1 Damage: 2d4 + special No. Appearing: 1 (0) Save As: F2 Morale: 12 Treasure Type: (V) Intelligence: 0 Alignment: Neutral XP Value: 125",
+    "terrain": "Any",
+    "monsterType": "Undead",
+    "description": "A form of undead; see Haunt.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Gelatinous Cube"
+      "key": "Gelatinous Cube",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

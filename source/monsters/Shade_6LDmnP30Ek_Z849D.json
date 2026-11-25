@@ -22,9 +22,9 @@
     "alignment": "Chaotic",
     "xpValue": 35,
     "terrain": "Ruins, Woods.",
-    "monsterType": "Monster, Enchanted (Rare). This monster is _not_ undead.",
-    "description": "A form of undead; see Phantom. Shadow* Armor Class: 7 Hit Dice: 2 + 2*(M) Move: 90' (30') Attacks: 1 Damage: 1d4 + special No. Appearing: 1d8 (1d12) Save As: F2 Morale: 12 Treasure Type: F Intelligence: 4 Alignment: Chaotic XP Value: 35 Monster Type: Monster, Enchanted (Rare). This monster is not undead. Shadows are noncorporeal (ghostlike) intelligent creatures found in eerie, dark places such as dungeons, deep forests, or ruins. They can only be harmed by magical weapons.",
-    "special": "",
+    "monsterType": "Monster, Enchanted (Rare).",
+    "description": "Shadows are noncorporeal (ghostlike) intelligent creatures found in eerie, dark places such as dungeons, deep forests, or ruins. They can only be harmed by magical weapons. They look like real shadows and can alter their shape slightly. Shadows are hard to see and usually gain surprise (1-5 on 1d6). If a shadow scores a hit, it will drain 1 point of Strength in addition to doing normal damage. This weakness will last for 8 turns. Any creature whose Strength is reduced to zero becomes a shadow immediately. Shadows are not affected by sleep or charm spells, but they are not undead and cannot be turned by clerics.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They can only be harmed by magical weapons. Shadows are hard to see and usually gain surprise (1-5 on 1d6). Shadows are not affected by sleep or charm spells, but they are not undead and cannot be turned by clerics.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Shade"
+      "key": "Shade",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

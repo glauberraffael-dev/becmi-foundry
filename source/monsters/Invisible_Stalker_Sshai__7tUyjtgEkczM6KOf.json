@@ -23,8 +23,8 @@
     "xpValue": 1200,
     "terrain": "Cavern, Hill, Mountain, Wood.",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "Armor Class: 3 Hit Dice: 8* (M) Move: 120' (40') Attacks: 1 blow Damage: 4d4 No. Appearing: 1(1) Save As: F8 Morale: 12 Treasure Type: Nil Intelligence: 11 Alignment: Neutral XP Value: 1,200 Monster Type: Planar Monster, Enchanted (Very Rare). A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters.",
-    "special": "",
+    "description": "A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters. As long as the chieftain is alive, all kobolds with him have a morale of 8 rather than 6. A hydrax is an intelligent crablike creature made of ice. It is native to the elemental plane of Water, and is almost never found on the Prime Plane. The hydrax looks like a giant crab with a body 8' long, with six legs and three claws equally positioned around its body. Although the hydrax are Lawful in behavior, most are evil. Kobolds hate gnomes and will attack them on sight. Hydrax are immune to normal weapons, all 1st and 2nd level spells, and to all attacks based on fire.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Hydrax are immune to normal weapons, all 1st and 2nd level spells, and to all attacks based on fire.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Invisible Stalker (Sshai)"
+      "key": "Invisible Stalker (Sshai)",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

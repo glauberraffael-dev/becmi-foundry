@@ -38,17 +38,9 @@
         <input name="system.attributes.xpNext" type="number" value="{{system.attributes.xpNext}}" {{#unless editable}}disabled{{/unless}}>
       </div>
       {{else}}
-      <div class="becmi-field">
-        <label>{{localize 'BECMI.labels.hd'}}</label>
-        <input name="system.hd" type="text" value="{{system.hd}}" {{#unless editable}}disabled{{/unless}}>
-      </div>
-      <div class="becmi-field">
-        <label>{{localize 'BECMI.labels.morale'}}</label>
-        <input name="system.morale" type="number" value="{{system.morale}}" {{#unless editable}}disabled{{/unless}}>
-      </div>
-      <div class="becmi-field">
-        <label>{{localize 'BECMI.labels.xpValue'}}</label>
-        <input name="system.xpValue" type="number" value="{{system.xpValue}}" {{#unless editable}}disabled{{/unless}}>
+      <div class="becmi-field becmi-field--wide">
+        <label>{{localize 'BECMI.labels.monsterType'}}:</label>
+        <span class="becmi-derived">{{system.monsterType}}</span>
       </div>
       {{/if}}
     </div>

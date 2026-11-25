@@ -1,0 +1,50 @@
+{
+  "_id": "x58uxrTa80COlbah",
+  "_key": "!actors!x58uxrTa80COlbah",
+  "name": "Mystic (Form 1)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 weapon or hand",
+    "damage": "By weapon or 1d6 + 1 No. Appearing 1d8 (6d8)",
+    "appearing": "See below",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "(V) I, L, M, N, O",
+    "intelligence": 12,
+    "alignment": "Any",
+    "xpValue": 175,
+    "terrain": "Any.",
+    "monsterType": "Human (Rare).",
+    "description": "Mystics are surprised only on a roll of 1. Mystics never wear armor of any type, nor protective devices (rings, cloaks, etc.). They may use potions or other magical items for certain situations. They are trained to use many weapons, but often do not carry them, as they have great combat skill with their bare hands. Mystics have the following thief abilities: find traps, remove traps, move silently, climb walls, and hide in shadows (see table). Once per day a mystic can cure himself of 4 points of damage (leader, 7) by concentrating for one round. If 7 or 8 mystics are encountered, one will be a leader with 7 Hit Dice. The leader raises the morale of the mystics to 10. The leader can strike creatures vulnerable to + 1 magical weapons with his hand attacks.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Mystics are surprised only on a roll of 1. They may use potions or other magical items for certain situations. The leader can strike creatures vulnerable to + 1 magical weapons with his hand attacks.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Mystic (Form 1)",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "e02bba7eeaaaa851"
+}

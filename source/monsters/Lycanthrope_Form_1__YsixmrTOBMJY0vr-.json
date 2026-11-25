@@ -1,0 +1,50 @@
+{
+  "_id": "YsixmrTOBMJY0vr-",
+  "_key": "!actors!YsixmrTOBMJY0vr-",
+  "name": "Lycanthrope (Form 1)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite or weapon 1 bite 1 tusk slash 2 claws/1 bite 2 claws/1 bite",
+    "damage": "1d4 or by weapon 2d4 2d6 1d6/1d6/2d6 2d4/2d4/2d8",
+    "appearing": "1d8 (2d8) 1d6(2d6) 1d4 (2d4) 1d4 (1d4) 1d4 (1d4)",
+    "saveAs": "F3 F4 F4 F5 F6",
+    "morale": 8,
+    "treasure": "C C C C C",
+    "intelligence": 1,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Any",
+    "monsterType": "Monster, Enchanted (Common).",
+    "description": "t The number in parentheses is the creature's armor class when in human form. Lycanthropes are humans who can change into beasts (or in the case of wererats, beasts who can change into humans). They normally wear no armor, since it would interfere with their shapechanging. Any lycanthrope can summon 1d2 normal animals of its type: werebears can summon normal bears, werewolves can summon normal wolves, and so forth. Summoned animals will arrive in 1d4 rounds. Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. The sprig of wolfsbane must be swung or thrown as a weapon, using normal combat procedures. A lycanthrope returns to its \"normal\" form when killed.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lycanthrope (Form 1)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "40077e3c19fe93b6"
+}

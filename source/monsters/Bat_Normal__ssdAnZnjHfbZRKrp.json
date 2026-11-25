@@ -23,8 +23,8 @@
     "xpValue": 5,
     "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
     "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
-    "description": "Normal Giant Armor Class: 6 6 Hit Dice: 1/4(1 hp)(S) 2 (M) Move: 9'(3') 30'(10') Flying: 120' (40') 180' (60') Attacks: Confusion 1 bite Damage: Nil ld4 No. Appearing: d100(d100) 1d10 (1d10) Save As: Normal Man Fl Morale: 6 8 Treasure Type: Nil Nil Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 5 20 Monster Type: Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common). Bats are nocturnal flying insectivores.",
-    "special": "",
+    "description": "Bats are nocturnal flying insectivores. They often live in caves or abandoned buildings and find their way about by echolocation (a type of radar using hearing and echoes to locate objects). Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Normal bats: These very small mammals weigh only a few ounces. They will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character. Characters who are confused have a - 2 penalty on their attack rolls and saving throws and cannot cast spells. Normal bats must check morale each round unless they are controlled or summoned. Giant Bats: Giant bats are much larger cousins of normal bat species.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Characters who are confused have a - 2 penalty on their attack rolls and saving throws and cannot cast spells.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Bat (Normal)"
+      "key": "Bat (Normal)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

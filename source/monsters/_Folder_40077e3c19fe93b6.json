@@ -1,0 +1,13 @@
+{
+  "_id": "40077e3c19fe93b6",
+  "_key": "!folders!40077e3c19fe93b6",
+  "name": "Monsters",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

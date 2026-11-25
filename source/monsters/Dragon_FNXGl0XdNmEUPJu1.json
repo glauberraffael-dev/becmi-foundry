@@ -16,15 +16,15 @@
     "damage": "See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40'",
     "appearing": "1d4(1d4) 1d3(1d3) 1d2 (1d2)",
     "saveAs": "F6 F18 F36",
-    "morale": 8910,
+    "morale": 8,
     "treasure": "H H X 2 , I H x 3 , 1 x 2",
-    "intelligence": 91215,
-    "alignment": "Neutral Neutral Neutral",
+    "intelligence": 9,
+    "alignment": "Neutral",
     "xpValue": 725,
-    "terrain": "",
-    "monsterType": "",
-    "description": "White Small Large Huge Armor Class: 3 1 -1 Hit Dice: 6(L) 9*(L) 12(L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40' No.",
-    "special": "",
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "description": "AC 3; HD 6; Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below; Damage: See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40'",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;AC 3; HD 6; Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below; Damage: See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40'&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Dragon"
+      "key": "Dragon",
+      "category": "Dragon"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "b9a214ddebbb8a17"
 }

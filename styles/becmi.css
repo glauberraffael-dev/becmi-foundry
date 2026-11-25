@@ -18,6 +18,48 @@
   overflow-y: auto;
 }
 
+/* Keep long sheets and compendium pages inside the window instead of forcing
+   the user to resize the Foundry application. */
+.becmi.sheet .window-content,
+.becmi.sheet .becmi-body,
+.becmi.sheet .becmi-layout,
+.becmi.sheet .becmi-panels,
+.becmi.sheet .becmi-tab-panel.is-active {
+  min-height: 0;
+}
+
+.becmi.sheet .window-content,
+.becmi.sheet .becmi-body,
+.becmi.sheet .becmi-panels {
+  height: 100%;
+}
+
+.becmi.sheet .becmi-layout {
+  height: 100%;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.becmi.sheet .becmi-tab-panel.is-active,
+.becmi-scroll-y {
+  max-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Core Journal/RollTable sheets do not receive the .becmi.sheet class. Scope
+   the same behaviour to their stable ApplicationV2 classes, with fallbacks. */
+.application.sheet .window-content {
+  min-height: 0;
+}
+
+.application.sheet.journal-sheet .window-content,
+.application.sheet.journalentry-sheet .window-content,
+.application.sheet.roll-table-sheet .window-content,
+.application.sheet.rolltable-sheet .window-content {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 .becmi.sheet .window-header,
 .becmi.sheet .window-title {
   background: var(--becmi-parchment-dark);
@@ -289,6 +331,31 @@
 
 .becmi-column {
   min-width: 0;
+}
+
+.becmi-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.5rem;
+}
+
+.becmi-feature {
+  border: 1px solid var(--becmi-border);
+  background: rgba(255, 252, 244, 0.45);
+  padding: 0.25rem 0.5rem 0.4rem;
+}
+
+.becmi-feature.is-locked {
+  opacity: 0.65;
+  border-style: dashed;
+}
+
+.becmi-feature p {
+  margin: 0.15rem 0;
+}
+
+.becmi-feature-list {
+  max-height: 16rem;
 }
 
 .becmi-combat-fields {

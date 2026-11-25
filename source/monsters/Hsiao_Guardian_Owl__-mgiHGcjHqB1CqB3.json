@@ -19,11 +19,11 @@
     "morale": 9,
     "treasure": "O",
     "intelligence": 10,
-    "alignment": "Lawful XP Value by HD: `4** = 175` 10**** = 4,000 `5** = 425` 11**** = 4,300 `6*** = 950` 12**** = 4,750 `7*** = 1,650` 13**** = 5,150 `8*** = 2,300` 14**** = 5,500 `9*** = 3,000` 15**** = 5,850",
-    "xpValue": 0,
+    "alignment": "Lawful",
+    "xpValue": 175,
     "terrain": "Woods.",
     "monsterType": "Monster (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 4 to 15(L) Move: 90' (30') Flying: 210'(70') Attacks: 2 claws/1 beak or 1 spell Damage: 1d6 /1d6 /1d4 or as spell No. Appearing: ld4 (1d20) Save As: C (level = HD) Morale: 9 Treasure Type: O Intelligence: 10 Alignment: Lawful XP Value by HD: `4 = 175` 10 = 4,000 `5 = 425` 11 = 4,300 `6* = 950` 12 = 4,750 `7* = 1,650` 13 = 5,150 `8* = 2,300` 14 = 5,500 `9* = 3,000` 15 = 5,850 Monster Type: Monster (Rare).",
+    "description": "The hsiao (sh-HOW) are a race of peaceful cleric-philosophers who inhabit woodlands and forests. Hsiao look like giant owls with broad feathered wings and large intelligent golden eyes. These creatures live in trees, making earthen nests and tunnels high above the forest floor. The hsiao know and work closely with other woodland creatures (including actaeons, centaurs, dryads, elves, treants, and unicorns), and may call on them for aid. Their goals include the preservation of woodland wilderness against intrusions by dangerous humanoids. They will not interfere with passing PCs who do no damage to the woodlands or the races of the forest. Most of these avian clerics are 4th level; 25% are higher levels (as given above; maximum level is 15th).",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Hsiao (Guardian Owl)"
+      "key": "Hsiao (Guardian Owl)",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

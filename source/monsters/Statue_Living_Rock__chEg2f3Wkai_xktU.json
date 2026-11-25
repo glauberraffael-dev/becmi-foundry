@@ -23,8 +23,8 @@
     "xpValue": 300,
     "terrain": "Any (especially Ruins).",
     "monsterType": "Construct, Enchanted (Common).",
-    "description": "||Crystal|Iron|Rock| |---|---|---|---| |Armor Class:|4|2|4| |Hit Dice:|3 (M)|4*(L)|5*(L)| |Move:|90' (30')|30'(10')|60'(20')| |Attacks:|2|2|2| |Damage:|1d6/ld6|1d8/ 1d8 + special|2d6/2d6| |No. Appearing|1d6 (1d6)|1d4 (1d4)|1d3(ld3)| |Save As:|F3|F4|F5| |Morale:|11|11|11| |Treasure Type:|Nil|Nil|Nil| | Intelligence:|7|7|7| | Alignment:|Lawful|Neutral|Chaotic| | XP Value:|35|125|300| Iron: A living iron statue has a body that can absorb iron and steel.",
-    "special": "",
+    "description": "It takes normal damage when hit, but if a nonmagical metal weapon is used, the attacker must make a saving throw vs. spells or the weapon will become stuck in the body of the living iron statue, and can only be removed if the statue is killed. (If the weapon is left in the statue, the statue will eventually absorb the metal completely and eject nonmetal parts, so the statue will not forever walk around with weapons sticking out of it.) A living statue is an enchanted animated creature made by a powerful wizard. It appears to be a perfectly normal statue—until it moves! A living statue may be any size or material; the sizes given are typical. Living crystal, iron, and rock statues are given as examples, and the DM may create others. (Not every statue in a campaign should be a living statue.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It takes normal damage when hit, but if a nonmagical metal weapon is used, the attacker must make a saving throw vs. spells or the weapon will become stuck in the body of the living iron statue, and can only be removed if the statue is killed. (If the weapon is left in the statue, the statue will eventually absorb the metal completely and eject nonmetal parts, so the statue will not forever walk around with weapons sticking out of it.) A living statue is an enchanted animated creature made by a powerful wizard.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Rock_",
-      "key": "Statue, Living (Rock)"
+      "variant": "",
+      "key": "Statue, Living (Rock)",
+      "category": "Construct"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "5374a5e70e59d6d6"
 }

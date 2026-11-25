@@ -23,8 +23,8 @@
     "xpValue": 425,
     "terrain": "Any; including all dimensional planes.",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "At any time after a character has been affected, he may be restored to the normal world by a dimension door spell. When the spell is cast, the affected character or characters can step through the dimension door and return to the normal world. Armor Class: -2 Hit Dice: 5 (M) Move: 150' (50') Attacks: 1 Damage: 2d6 + special No.",
-    "special": "",
+    "description": "At any time after a character has been affected, he may be restored to the normal world by a dimension door spell. When the spell is cast, the affected character or characters can step through the dimension door and return to the normal world. Spectral hounds may be struck by silver or magical weapons, but not by normal weapons. They are immune to fire- and cold-based spells. Spectral hounds are creatures from the Dimensional Vortex—the void between all dimensions. In this world they appear as ghostly dogs—pale in color and translucent. Their eyes are formless pools of utter blackness. They are excellent trackers and once on the trail of a creature, they follow it for days.. They are bred and trained by interplanar beings (such as elemental rulers, amirs, pashas, etc.) as hunting animals, and are sometimes used to track intrusive adventurers back to their home planes.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;At any time after a character has been affected, he may be restored to the normal world by a dimension door spell. When the spell is cast, the affected character or characters can step through the dimension door and return to the normal world. Spectral hounds may be struck by silver or magical weapons, but not by normal weapons.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Spectral Hound"
+      "key": "Spectral Hound",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

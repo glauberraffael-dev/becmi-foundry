@@ -23,8 +23,8 @@
     "xpValue": 13,
     "terrain": "Open, Ruins, Woods.",
     "monsterType": "Giant Animal (Rare).",
-    "description": "Armor Class: 4 Hit Dice: 1* (S) Move: 180' (60') Attacks: 2 bites Damage: 1d6/1d6 No. Appearing: 1d8 (1d4) Save As: Fl Morale: 10 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 13 Monster Type: Giant Animal (Rare). Giant shrews look like large, brown-furred rats with long snouts. They can burrow, climb, or jump (up to 5'). The eyes of a giant shrew are so weak that the creature is not affected by light or the lack of it.",
-    "special": "",
+    "description": "Giant shrews look like large, brown-furred rats with long snouts. They can burrow, climb, or jump (up to 5'). The eyes of a giant shrew are so weak that the creature is not affected by light or the lack of it. A shrew uses radarlike squeaks to \"see\" its surroundings (as bats do), and can \"see\" things within 60' as well as a creature with normal sight. Since it needs echoes to \"see,\" a giant shrew dislikes open areas, and remains underground most of the time. A silence 15' radius spell will \"blind\" a giant shrew. If it cannot hear, it will be confused, and then becomes AC 8, with a penalty of -4 on its attack rolls. A giant shrew is very quick and will always take the initiative on its first attack. It also gains a +1 bonus on its initiative roll for the remaining rounds of combat.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A silence 15' radius spell will \"blind\" a giant shrew.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Shrew, Giant"
+      "key": "Shrew, Giant",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

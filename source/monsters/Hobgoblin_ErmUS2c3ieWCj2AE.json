@@ -16,15 +16,15 @@
     "damage": "By weapon",
     "appearing": "1d6 (4d6)",
     "saveAs": "F1",
-    "morale": 810,
+    "morale": 8,
     "treasure": "(Q) D",
     "intelligence": 10,
     "alignment": "Chaotic",
     "xpValue": 15,
     "terrain": "Cavern, Hill, Mountain, Woods.",
-    "monsterType": "Humanoid (Common). Hobgoblins are relatives of goblins, but are bigger and meaner. They live underground in caves and dungeons, but often hunt outdoors in rough, rugged wasteland and wilderness (having no penalties in daylight).",
-    "description": "Armor Class: 6 Hit Dice: 1 + 1 (M) Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 1d6 (4d6) Save As: Fl Morale: 8 or 10 (see below) Treasure Type: (Q) D Intelligence: 10 Alignment: Chaotic XP Value: 15 Monster Type: Humanoid (Common). Hobgoblins are relatives of goblins, but are bigger and meaner. They live underground in caves and dungeons, but often hunt outdoors in rough, rugged wasteland and wilderness (having no penalties in daylight).",
-    "special": "",
+    "monsterType": "Humanoid (Common).",
+    "description": "A hobgoblin king and 1d4 bodyguards live in the hobgoblin lair. The king has 22 hit points and fights as a 5 Hit Dice monster, gaining a bonus of +2 on damage rolls. The bodyguards all fight as 4 Hit Dice monsters and have 3d6 hit points each. As long as their king is alive and with them, hobgoblin morale is 10 rather than 8. A hobgoblin king might have one or more thouls in his bodyguard as well (see Thoul). There can be hobgoblin spellcasters; see \"Monster Spellcasters\" later in this chapter. Terrain: Cavern, Hill, Mountain, Woods.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;There can be hobgoblin spellcasters; see \"Monster Spellcasters\" later in this chapter.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Hobgoblin"
+      "key": "Hobgoblin",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

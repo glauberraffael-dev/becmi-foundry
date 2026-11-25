@@ -24,7 +24,9 @@ const {
   spellListsForClass,
   dedupeActorClasses,
   applyClassToActor,
-  applyDruidFeatureToActor
+  applyDruidFeatureToActor,
+  advanceActorLevels,
+  autoLevelFromXp
 } = await import("../scripts/integrations.mjs");
 
 const xpTable = { 1: 2, 2: 2500, 3: 5000, 36: 4350000 };
@@ -75,4 +77,28 @@ if (await applyDruidFeatureToActor(cleric, { name: "Druid", type: "feature" }) !
 if (getProperty(cleric, "flags.becmi.druid") !== true) throw new Error("Druid flag missing");
 if (getProperty(cleric, "system.attributes.classKey") !== "cleric") throw new Error("Druid lost the Cleric class");
 
-console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid).");
+const leveling = {
+  name: "Test Adventurer",
+  system: {
+    abilities: { con: { value: 14 } },
+    attributes: { level: 1, xp: 5000, xpNext: 2000, hp: { value: 8, max: 8 } }
+  },
+  flags: { becmi: { classInfo: { name: "Fighter", key: "fighter", maxLevel: 36, xpTable } } },
+  items: [],
+  async update(changes) {
+    for (const [path, value] of Object.entries(changes)) setProperty(this, path, value);
+  }
+};
+const gained = await autoLevelFromXp(leveling, { announce: false });
+if (gained !== 2) throw new Error(`autoLevelFromXp should gain 2 levels, got ${gained}`);
+if (getProperty(leveling, "system.attributes.level") !== 3) throw new Error("level was not advanced");
+if (getProperty(leveling, "system.attributes.hp.max") <= 8) throw new Error("HP was not added on level up");
+if (getProperty(leveling, "system.attributes.xpNext") !== 8000) throw new Error("xpNext was not advanced");
+if (await autoLevelFromXp(leveling, { announce: false }) !== 0) throw new Error("level up repeated without new XP");
+leveling.system.attributes.xp = 8000;
+if (await autoLevelFromXp(leveling, { announce: false }) !== 1) throw new Error("new XP did not advance the level");
+if (await advanceActorLevels(leveling, { targetLevel: 2, announce: false }) !== 0) {
+  throw new Error("manual level downgrade must be ignored");
+}
+
+console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, auto level).");

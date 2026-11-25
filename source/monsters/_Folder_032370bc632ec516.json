@@ -1,0 +1,13 @@
+{
+  "_id": "032370bc632ec516",
+  "_key": "!folders!032370bc632ec516",
+  "name": "Planar Monsters",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

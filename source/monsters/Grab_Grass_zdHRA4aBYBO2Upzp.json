@@ -23,8 +23,8 @@
     "xpValue": 10,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Lowlife (Common).",
-    "description": "Armor Class: 9 Hit Dice: 1 per 5' square (M) Move: 0 Attacks: 1 Damage: Special No. Appearing: Not Applicable Save As: Normal Man Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: Neutral XP Value: 10 Monster Type: Lowlife (Common). Green slime cannot be harmed by any attacks except fire or cold. It dissolves cloth or leather instantly, wood and metal in 6 rounds, but cannot dissolve stone. Green slime often clings to walls and ceilings and drops down in a surprise attack.",
-    "special": "",
+    "description": "Green slime cannot be harmed by any attacks except fire or cold. It dissolves cloth or leather instantly, wood and metal in 6 rounds, but cannot dissolve stone. Green slime often clings to walls and ceilings and drops down in a surprise attack. Once in contact with flesh, it sticks and turns the flesh into green slime. It cannot be scraped off, but may be burnt off, or treated with a cure disease spell. When green slime drops on a victim (or is stepped on), the victim can usually burn it while it is dissolving armor and clothing. If it is not burned off, the victim will turn completely into green slime 1d4 rounds after the first 6- round (one minute) period. Burning does half damage to the green slime and half damage to the victim. Grab grass looks like ordinary tall grass (3'-5' tall). Grab grass is animated and will attempt to hold any individual that moves into or through it.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Green slime cannot be harmed by any attacks except fire or cold. Green slime often clings to walls and ceilings and drops down in a surprise attack. It cannot be scraped off, but may be burnt off, or treated with a cure disease spell.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Grab Grass"
+      "key": "Grab Grass",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

@@ -14,17 +14,17 @@
     },
     "attacks": "1 bite 1 bite 1 bite/1 horn 2 claws/1 bite",
     "damage": "1d8 1d10 2d4/1d6 `1d4/1d4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4)",
-    "appearing": "",
+    "appearing": "1",
     "saveAs": "F2 F3 F3 F3",
-    "morale": 7776,
+    "morale": 7,
     "treasure": "U U U V",
-    "intelligence": 2222,
-    "alignment": "Neutral Neutral Neutral Neutral",
+    "intelligence": 2,
+    "alignment": "Neutral",
     "xpValue": 50,
     "terrain": "Cavern, Desert, Woods.",
-    "monsterType": "Giant Animal (Common). Gecko: A gecko is a 5' long lizard colored pale blue with orange-brown spots. Geckos are nocturnal carnivores. They hunt by climbing walls or trees with their specially adapted feet, then dropping on their prey to attack.",
-    "description": "Horned Gecko Draco Chameleon Tuatara Armor Class: 5 5 2 4 Hit Dice: 3 +1 (M) 4 + 2(M) 5*(L) 6(L) Move: 120' (40') 120' (40') 120' (40') 90' (30') Glide: 150' (50') Attacks: 1 bite 1 bite 1 bite/1 horn 2 claws/1 bite Damage: 1d8 1d10 2d4/ld6 `1d4/ld4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4) Save As: F2 F3 F3 F3 Morale: 7 7 7 6 Treasure Type: U U U V Intelligence: 2 2 2 2 Alignment: Neutral Neutral Neutral Neutral XP Value: 50 125 300 275 sects, but will settle for human prey in lean times.",
-    "special": "",
+    "monsterType": "Giant Animal (Common).",
+    "description": "sects, but will settle for human prey in lean times. The creature can also attack with its horn (for 1d6 points of damage) and may use its tail to knock other attackers down (make another attack roll, not doing any damage but preventing the target struck from attacking that round). Draco: A draco is a 6' long lizard with wide flaps of skin between its legs. It spreads these flaps to glide through the air, like a flying squirrel. Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather. They are carnivores and have been known to attack adventurers. Tuatara: A tuatara is an 8' long carnivore which looks like a cross between an iguana and a toad. It has pebble-colored olive skin with white spikes along its back.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Lizard, Giant"
+      "key": "Lizard, Giant",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

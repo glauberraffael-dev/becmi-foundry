@@ -21,10 +21,10 @@
     "intelligence": 14,
     "alignment": "Chaotic",
     "xpValue": 4800,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "Armor Class: -2 Hit Dice: 15* (L) Move: 120' (40') Flying: 360' (120') Attacks: 2 fists or 1 whirlwind Damage: 3d10/3d10 or 3d12 + special No. Appearing: 1 (1) Save As: M30 Morale: 11 Treasure Type: Nil Intelligence: 14 Alignment: Chaotic XP Value: 4,800 Monster Type: Planar Monster, Enchanted (Very Rare). In the elemental plane of Air, the rulers of the djinn are known as pashas. They appear as very large normal djinn. A pasha cannot be affected by normal weapons, or even by weapons of less than +2 enchantment.",
-    "special": "",
+    "description": "In the elemental plane of Air, the rulers of the djinn are known as pashas. They appear as very large normal djinn. A pasha cannot be affected by normal weapons, or even by weapons of less than +2 enchantment. They regenerate at the rate of 3 points per round. A pasha can perform all the abilities of a normal djinni (above) as often as desired, up to once per round. It can also enter or leave the Ethereal Plane by concentrating for 1 full round. They have other special powers, each usable once per day, including: - Grant another's wish - Cast cloudkill - Cast water to gas - Cast weather control A pasha's whirlwind form is 120' tall, 40' diameter at the top, 10' diameter at the base, and can move at 240' (80') rate. Unlike normal djinn, it can enter or leave whirlwind form in only 1 round.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They regenerate at the rate of 3 points per round. It can also enter or leave the Ethereal Plane by concentrating for 1 full round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Djinni (Greater; Pasha)"
+      "key": "Djinni (Greater; Pasha)",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

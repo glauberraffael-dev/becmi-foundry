@@ -23,7 +23,7 @@ const CLASSES = [
   { name: "Elf", from: 2010, to: 2103, prime: "Strength and Intelligence", hd: "1d6", max: 10, req: "Intelligence 9+", xpRange: [2104, 2128] },
   { name: "Halfling", from: 2136, to: 2301, prime: "Strength and Dexterity", hd: "1d6", max: 8, req: "Dexterity and Constitution 9+" },
   { name: "Druid", from: 2302, to: 2423, prime: "Wisdom", hd: "1d6", max: 36, req: "Neutral alignment" },
-  { name: "Mystic", from: 2424, to: 2623, prime: "Strength and Dexterity", hd: "1d6", max: 36, req: "Wisdom and Dexterity 13+" }
+  { name: "Mystic", from: 2424, to: 2623, prime: "Strength and Dexterity", hd: "1d6", max: 16, req: "Wisdom and Dexterity 13+" }
 ];
 
 // Standard BECMI progression, used only to fill levels lost in the OCR tables.
@@ -32,6 +32,10 @@ const STANDARD_XP = [0, 2000, 4000, 8000, 16000, 32000, 64000, 120000, 240000,
   1440000, 1560000, 1680000, 1800000, 1920000, 2040000, 2160000, 2280000,
   2400000, 2520000, 2640000, 2760000, 2880000, 3000000, 3120000, 3240000,
   3360000, 3480000];
+
+// The OCR interleaves the Druid and Mystic tables; the Mystic progression is
+// the first 16 rows of the standard table and must be forced explicitly.
+const XP_OVERRIDES = { Mystic: STANDARD_XP.slice(0, 16) };
 
 function parseXpTable(lines) {
   const table = {};
@@ -64,9 +68,15 @@ function main() {
       ? [...section, ...lines.slice(cls.xpRange[0] - 1, cls.xpRange[1])]
       : section;
     const xpTable = parseXpTable(xpLines);
+    const override = XP_OVERRIDES[cls.name];
+    if (override) {
+      for (const level of Object.keys(xpTable)) delete xpTable[level];
+      override.forEach((xp, index) => { xpTable[index + 1] = xp; });
+    }
     for (let level = 1; level <= cls.max; level++) {
       if (!xpTable[level]) xpTable[level] = STANDARD_XP[level - 1];
     }
+    xpTable[1] = 0;
     for (const level of Object.keys(xpTable)) {
       if (Number(level) > cls.max) delete xpTable[level];
     }

@@ -22,8 +22,8 @@
     "alignment": "Neutral",
     "xpValue": 75,
     "terrain": "Hill, Mountain, Open.",
-    "monsterType": "",
-    "description": "Armor Class: 6 Hit Dice: 4 (M) Move: 120' (40') Attacks: 2 claws or 1 rock Damage: 1d4/ld4 or 1d6 No. Appearing: 1d6 (2d4) Save As: F2 Morale: 7 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 75 Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",
+    "monsterType": "Normal Animal",
+    "description": "Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs. Rock baboons will not go out of their way to attack travelers, but will try to scare intruders out of their hunting grounds. Archons live in small families of one mated pair and 1d3 young. Archons are encountered alone or in mated pairs; adventurers almost never encounter archon young.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Ape, White"
+      "key": "Ape, White",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

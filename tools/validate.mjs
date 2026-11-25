@@ -215,6 +215,80 @@ if (!actorBody.includes("becmi-saves-scroll")) note("actor sheet: saves table is
 const css = await readFile(join(root, "styles/becmi.css"), "utf8");
 if (!css.includes(".becmi-saves-scroll")) note("CSS: missing stable saves container styles");
 
+// --- Automatic level-up, class abilities and scrolling ----------------------
+const integrationsSource = await readFile(join(root, "scripts/integrations.mjs"), "utf8");
+for (const token of [
+  "export async function advanceActorLevels",
+  "export function autoLevelFromXp",
+  'Hooks.on("updateActor"',
+  'getProperty(changed, "system.attributes.xp")',
+  "new WeakSet()"
+]) {
+  if (!integrationsSource.includes(token)) note(`integrations.mjs: missing ${token}`);
+}
+const rulesSource = await readFile(join(root, "scripts/rules-rc.mjs"), "utf8");
+for (const token of ["xpForNextLevel", "levelForXp", "normalizeClassKey"]) {
+  if (!rulesSource.includes(token)) note(`rules-rc.mjs: missing ${token}`);
+}
+
+const classFeaturesSource = await readFile(join(root, "scripts/class-features.mjs"), "utf8");
+for (const key of [
+  "cleric", "druid", "fighter", "thief", "magic-user", "dwarf", "elf", "halfling", "mystic"
+]) {
+  if (!new RegExp(`^\\s*["']?${key.replace("-", "\\-")}["']?: \\[`, "m").test(classFeaturesSource)) {
+    note(`class-features.mjs: missing ${key} abilities`);
+  }
+}
+for (const ability of ["backstab", "infravision", "secretDoors", "druidRestrictions", "unarmed"]) {
+  if (!classFeaturesSource.includes(ability)) note(`class-features.mjs: missing ${ability}`);
+}
+const sheetSource = await readFile(join(root, "scripts/sheets/actor-sheet.mjs"), "utf8");
+if (!sheetSource.includes("advanceActorLevels")) note("actor sheet: level-up button does not use advanceActorLevels");
+if (!sheetSource.includes("classFeaturesFor")) note("actor sheet: class abilities are not indexed");
+if (!sheetSource.includes("context.classFeatures")) note("actor sheet: class abilities are not passed to the template");
+if (!actorBody.includes('data-tab="features"')) note("actor sheet: missing class abilities tab");
+if (!actorBody.includes("becmi-feature-grid")) note("actor sheet: missing class ability grid");
+if (!css.includes(".becmi-tab-panel.is-active")) note("CSS: tab panels cannot scroll");
+if (!css.includes(".becmi-scroll-y")) note("CSS: reusable scroll container is missing");
+if (!css.includes("overscroll-behavior: contain")) note("CSS: scroll containers do not contain overscroll");
+const itemBody = await readFile(join(root, "templates/item/body.hbs"), "utf8");
+if (!itemBody.includes('class="becmi-scroll-y"')) note("item sheet: XP table is not scrollable");
+
+// --- Journals must cover every chapter, appendix and progression table ------
+for (let chapter = 1; chapter <= 19; chapter++) {
+  if (!journalDocs.some((doc) => doc.name.startsWith(`Chapter ${chapter}:`))) {
+    note(`journals: missing Chapter ${chapter}`);
+  }
+}
+for (let appendix = 1; appendix <= 4; appendix++) {
+  if (!journalDocs.some((doc) => doc.name.startsWith(`Appendix ${appendix}:`))) {
+    note(`journals: missing Appendix ${appendix}`);
+  }
+}
+for (const phrase of [
+  "The Planes of Existence", "Variant Rules", "AD&D Game Conversions",
+  "extended table", "Ability scores and saving throws", "Nonlethal combat"
+]) {
+  if (!journalText.includes(phrase)) note(`journals: missing reference text ${phrase}`);
+}
+
+// --- Monsters are categorized, sanitized and free of raw stat tables --------
+const monsterDocs = await readJson("data/monsters.json");
+const monsterCategories = folderDefinitions.monsters
+  .map((folder) => folderDefinitionKey(folder).replace(/^monsters:/, ""));
+for (const doc of monsterDocs) {
+  const category = doc.flags?.becmi?.category;
+  if (!monsterCategories.includes(category)) note(`monsters: unknown category ${category} on ${doc.name}`);
+  if (!doc.system?.description) note(`monsters: empty description on ${doc.name}`);
+  if (!doc.system?.monsterType) note(`monsters: empty monster type on ${doc.name}`);
+  if (doc.system?.morale < 2 || doc.system?.morale > 12) note(`monsters: morale out of range on ${doc.name}`);
+  if (!(doc.system?.xpValue > 0)) note(`monsters: missing XP value on ${doc.name}`);
+  if (/(?:Armor Class|Hit Dice|XP Value)\s*:/i.test(`${doc.system?.description} ${doc.system?.special}`)) {
+    note(`monsters: raw stat table leaked into ${doc.name}`);
+  }
+}
+if (monsterDocs.length < 150) note(`monsters: only ${monsterDocs.length} documents extracted`);
+
 if (problems.length) {
   console.error(`\n${problems.length} problem(s):`);
   for (const p of problems) console.error(` - ${p}`);

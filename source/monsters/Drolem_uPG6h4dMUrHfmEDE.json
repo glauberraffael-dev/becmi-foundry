@@ -23,8 +23,8 @@
     "xpValue": 11375,
     "terrain": "Any.",
     "monsterType": "Construct, Enchanted (Very Rare).",
-    "description": "Armor Class: - 3 Hit Dice: 20* (L) Move: 120' (40') Flying: 240' (80') Attacks: 2 claws/1 bite Damage: 2d6/2d6/1d20 +10 No. Appearing: 1 (1) Save As: F10 (and see below) Morale: 12 Treasure Type: Special (see below) Intelligence: 3 Alignment: Neutral XP Value: 11,375 Mandrake Wooddrake Colddrake Elemental* Armor Class: 0 0 0 0 Hit Dice: 3* (M) 4*(M) 5*(M) 6 (M) Move: 120' (40') 120' (40') 120' (40') 120' (40') Flying: 30' (10') 30'(10') 30'(10') 30'(10') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite 2 claws",
-    "special": "",
+    "description": "###### townsfolk. Wooddrake: These dark green drakes can change themselves into elf or halfling forms. They are otherwise very similar in habits to mandrakes, and are sometimes discovered amidst elven or halfling communities. A drolem is a type of golem that looks like a dragon; it can be made to look like a dragon of any color, or may simply be a dragon skeleton. Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. Drolems are extremely rare, made and used only to guard a special item or area. A special book and several rare materials are needed to make a drolem. A drake is a man-sized creature that looks much like a dragon in its normal form. However, it is most often encountered polymorphed into a human or demihuman form. Drakes have no breath weapons or spellcasting abilities, but they can talk.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. Drakes have no breath weapons or spellcasting abilities, but they can talk.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Drolem"
+      "key": "Drolem",
+      "category": "Construct"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "5374a5e70e59d6d6"
 }

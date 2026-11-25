@@ -23,8 +23,8 @@
     "xpValue": 5625,
     "terrain": "Any; especially Desert. _Load:_ 6,000 cn at full speed; 12,000 cn at half speed.",
     "monsterType": "Monster (Rare).",
-    "description": "Armor Class: 0 Hit Dice: 12* (L) Move: 180' (60') Flying: 360' (120') Attacks: 2 claws/1 bite Damage: 3d6/3d6/2d8 No. Appearing: 1d2 (1d4) Save As: F24 Morale: 10 Treasure Type: E Intelligence: 13 Alignment: Any XP Value: 5,625 Monster Type: Monster (Rare). A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard.",
-    "special": "",
+    "description": "A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard. Some Chaotic sphinxes are very territorial, settling on a hilltop near a road and preventing all travelers from passing along that road. Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar. The roar is usable only twice per day, but is quite powerful. Each victim within 120' must make a saving throw vs. spells at a —4 penalty or flee in fear for 1d6 turns. Each victim within 60' must check for fear (as above) and must also make a saving throw vs.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Sphinx"
+      "key": "Sphinx",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

@@ -21,10 +21,10 @@
     "intelligence": 2,
     "alignment": "Neutral",
     "xpValue": 275,
-    "terrain": "",
-    "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
-    "description": "||Killer|Great|Narwhal| |---|---|---|---| |Armor Class:|6|6|7| |Hit Dice:|6(1)|36* (L)|12 (L)| |Move, Swim:|240'(80')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 horn| |Damage:|2dlO|3d20|2d6| |No. Appearing:|0(ld6)|0(1-3)|0(ld4)| |Save As:|F3|F18|F12| |Morale:|10|10|8| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|4| |Alignment: |Neutral|Neutral|Lawful| |XP Value:|275|12,000|1,250| Monster Type: Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
-    "special": "",
+    "terrain": "Any",
+    "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Nar",
+    "description": "Killer Whale: These are 25' long and are found mainly in cold waters. They live by hunting other sea creatures. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Killer Whale:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; These are 25' long and are found mainly in cold waters. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Killer_",
-      "key": "Whales (Killer)"
+      "variant": "",
+      "key": "Whales (Killer)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

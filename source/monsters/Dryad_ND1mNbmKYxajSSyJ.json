@@ -23,8 +23,8 @@
     "xpValue": 25,
     "terrain": "Woods (dense).",
     "monsterType": "Humanoid (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 2* (M) Movement: 120' (40') Attacks: See below Damage: By weapon type No. Appearing: 0(ld6) Save As: E4 Morale: 6 Treasure Type: D Intelligence: 14 Alignment: Neutral XP Value: 25 Monster Type: Humanoid (Rare). Dryads are beautiful female tree spirits who live in trees, in woodland settings or dense forests. They are very shy and nonviolent, but very suspicious of strangers. If a dryad wishes to be unobserved, she will join with her tree, becoming pan of it.",
-    "special": "",
+    "description": "Dryads are beautiful female tree spirits who live in trees, in woodland settings or dense forests. They are very shy and nonviolent, but very suspicious of strangers. If a dryad wishes to be unobserved, she will join with her tree, becoming pan of it. Dryads possess a powerful charm person ability—it is just like the magical spell, but the dryad can use it any number of times per day, and its victims save at a — 2 penalty. Dryads only use this power on people following or attacking them or on males to whom they are attracted— and even then will only use the power on men who do not return their affection. Dryads will send charmed attackers off to a deadly monster's lair or ambush where the attackers may be slain; they draw objects of affection into their trees and keep them.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Dryads possess a powerful charm person ability—it is just like the magical spell, but the dryad can use it any number of times per day, and its victims save at a — 2 penalty. Dryads will send charmed attackers off to a deadly monster's lair or ambush where the attackers may be slain; they draw objects of affection into their trees and keep them.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Dryad"
+      "key": "Dryad",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

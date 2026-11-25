@@ -41,6 +41,17 @@
     { "key": "Classes", "name": "Classes", "type": "Item" },
     { "key": "Subclasses", "name": "Subclasses", "type": "Item" }
   ],
+  "monsters": [
+    { "key": "monsters:Normal Animal", "name": "Normal Animals", "type": "Actor" },
+    { "key": "monsters:Lowlife", "name": "Lowlife", "type": "Actor" },
+    { "key": "monsters:Construct", "name": "Constructs", "type": "Actor" },
+    { "key": "monsters:Dragon", "name": "Dragons", "type": "Actor" },
+    { "key": "monsters:Humanoid", "name": "Humanoids", "type": "Actor" },
+    { "key": "monsters:Monster", "name": "Monsters", "type": "Actor" },
+    { "key": "monsters:Planar Monster", "name": "Planar Monsters", "type": "Actor" },
+    { "key": "monsters:Undead", "name": "Undead", "type": "Actor" },
+    { "key": "monsters:Unclassified", "name": "Unclassified", "type": "Actor" }
+  ],
   "treasure": [
     { "key": "Potions", "name": "Potions", "type": "Item" },
     { "key": "Miscellaneous Magical Items", "name": "Miscellaneous Magical Items", "type": "Item" },

@@ -23,7 +23,7 @@
     "xpValue": 19,
     "terrain": "Any.",
     "monsterType": "Human (Rare).",
-    "description": "Armor Class: 7 Hit Dice: 1 + 1*(M) Move: 120' (40') Attacks: 1 weapon Damage: By weapon No. Appearing: 1d6 (3d10) Save As: Fl Morale: 12 Treasure Type: (P) B Intelligence: 9 Alignment: Neutral XP Value: 19 Monster Type: Human (Rare). Berserkers are fighters who go mad in battle. Most belong to barbarian cultures—typically, northern seagoing cultures.",
+    "description": "Berserkers are fighters who go mad in battle. Most belong to barbarian cultures—typically, northern seagoing cultures. Berserker reactions are determined normally outside of combat, but once a battle starts they will always fight to the death—sometimes attacking their comrades in their blind rage. When fighting humans or humanlike creatures (such as kobolds, goblins or orcs), they add + 2 to their attack rolls due to their ferocity. They never retreat, surrender, or take prisoners. Berserkers do not look different from any other members of their culture. In a village of the appropriate culture, 10% of all fighters will be berserkers. The DM can create societies where all fighters are berserkers.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Berserker"
+      "key": "Berserker",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

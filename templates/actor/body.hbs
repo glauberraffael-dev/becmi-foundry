@@ -110,6 +110,23 @@
   </div>
 </section>
 
+<!-- ============================ CLASS FEATURES ============================ -->
+<section class="becmi-tab-panel{{#if (eq activeTab "features")}} is-active{{/if}}" data-tab="features">
+  <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.features'}}</h2>
+  <p class="becmi-hint">{{className}}{{#if classKey}} — {{localize 'BECMI.labels.level'}} {{level}} / {{localize 'BECMI.labels.xp'}} {{xp}}{{/if}}</p>
+  <div class="becmi-feature-grid becmi-scroll-y">
+    {{#each classFeatures as |feature|}}
+    <article class="becmi-feature{{#unless feature.unlocked}} is-locked{{/unless}}">
+      <h3 class="becmi-subtitle">{{feature.label}}{{#if feature.requirement}} <small>({{feature.requirement}})</small>{{/if}}</h3>
+      <p>{{feature.detail}}</p>
+      <p class="becmi-hint">{{#if feature.unlocked}}{{localize 'BECMI.sheet.featureUnlocked'}}{{else}}{{localize 'BECMI.sheet.featureLocked'}}{{/if}}</p>
+    </article>
+    {{else}}
+    <p class="becmi-empty">{{localize 'BECMI.sheet.noFeatures'}}</p>
+    {{/each}}
+  </div>
+</section>
+
 <!-- ============================ EQUIPMENT ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "equipment")}} is-active{{/if}}" data-tab="equipment">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.equipment'}} <button type="button" class="becmi-roll" data-action="addItem">+</button></h2>
@@ -330,24 +347,42 @@
 <!-- ============================ MONSTER MAIN ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "main")}} is-active{{/if}}" data-tab="main">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.statistics'}}</h2>
-  <div class="becmi-grid becmi-grid--combat">
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.ac'}}:</label><input name="system.ac" type="number" value="{{system.ac}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.hp'}}:</label><input name="system.hp" type="number" value="{{system.hp}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}:</label><input name="system.hd" type="text" value="{{system.hd}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.appearing'}}:</label><input name="system.appearing" type="text" value="{{system.appearing}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.attacks'}}:</label><input name="system.attacks" type="text" value="{{system.attacks}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.damage'}}:</label><input name="system.damage" type="text" value="{{system.damage}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.morale'}}:</label><input name="system.morale" type="number" value="{{system.morale}}" {{#unless editable}}disabled{{/unless}}></div>
-    <div class="becmi-field"><label>{{localize 'BECMI.labels.treasure'}}:</label><input name="system.treasure" type="text" value="{{system.treasure}}" {{#unless editable}}disabled{{/unless}}></div>
-    <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}}</button>
-    <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
+  <div class="becmi-scroll-y">
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.ac'}}:</label><input name="system.ac" type="number" value="{{system.ac}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}:</label><input name="system.hd" type="text" value="{{system.hd}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.hp'}}:</label><input name="system.hp" type="number" value="{{system.hp}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.movement'}}:</label><span class="becmi-derived">{{system.move.dungeon}}' ({{system.move.outdoor}}')</span></div>
+      <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.attacks'}}:</label><input name="system.attacks" type="text" value="{{system.attacks}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.damage'}}:</label><input name="system.damage" type="text" value="{{system.damage}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.appearing'}}:</label><input name="system.appearing" type="text" value="{{system.appearing}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.saveAs'}}:</label><input name="system.saveAs" type="text" value="{{system.saveAs}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.morale'}}:</label><input name="system.morale" type="number" value="{{system.morale}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.treasure'}}:</label><input name="system.treasure" type="text" value="{{system.treasure}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.intelligence'}}:</label><input name="system.intelligence" type="number" value="{{system.intelligence}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.alignment'}}:</label><input name="system.alignment" type="text" value="{{system.alignment}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.xpValue'}}:</label><input name="system.xpValue" type="number" value="{{system.xpValue}}" {{#unless editable}}disabled{{/unless}}></div>
+      <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}}</button>
+      <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
+    </div>
+    <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.classification'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.monsterType'}}:</label><input name="system.monsterType" type="text" value="{{system.monsterType}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.terrain'}}:</label><input name="system.terrain" type="text" value="{{system.terrain}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.source'}}:</label><span class="becmi-derived">{{system.source}}</span></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.page'}}:</label><span class="becmi-derived">{{system.page}}</span></div>
+    </div>
   </div>
 </section>
 
 <section class="becmi-tab-panel{{#if (eq activeTab "notes")}} is-active{{/if}}" data-tab="notes">
-  <h2 class="becmi-section-title">{{localize 'BECMI.labels.description'}}</h2>
-  <div class="becmi-editor">{{{system.description}}}</div>
-  {{#if system.special}}<h2 class="becmi-section-title">{{localize 'BECMI.sheet.special'}}</h2><div class="becmi-editor">{{{system.special}}}</div>{{/if}}
+  <div class="becmi-scroll-y">
+    <h2 class="becmi-section-title">{{localize 'BECMI.labels.description'}}</h2>
+    <div class="becmi-editor">{{{system.description}}}</div>
+    {{#if system.special}}<h2 class="becmi-section-title">{{localize 'BECMI.sheet.special'}}</h2><div class="becmi-editor">{{{system.special}}}</div>{{/if}}
+    <h2 class="becmi-section-title">{{localize 'BECMI.labels.notes'}}</h2>
+    <div class="becmi-editor">{{{system.notes}}}</div>
+  </div>
 </section>
 {{/if}}
 
@@ -377,6 +412,14 @@
   {{#each classResources as |resource|}}
   <p class="becmi-hint">{{resource.label}}</p>
   {{/each}}
+  <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.sidebar.abilities'}}</h3>
+  <div class="becmi-scroll-y becmi-feature-list">
+    {{#each classFeatures as |feature|}}
+    <p class="becmi-hint"><strong>{{feature.label}}</strong>{{#if feature.unlocked}} ✓{{else}} ({{feature.requirement}}){{/if}} — {{feature.detail}}</p>
+    {{else}}
+    <p class="becmi-hint">{{localize 'BECMI.sheet.noFeatures'}}</p>
+    {{/each}}
+  </div>
   {{#if classKey}}
   {{#if (eq classKey "cleric")}}
   <button type="button" class="becmi-roll" data-action="toggleDruid">

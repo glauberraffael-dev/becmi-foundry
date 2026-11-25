@@ -23,7 +23,7 @@
     "xpValue": 35,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Lowlife (Common).",
-    "description": "Armor Class: 7 Hit Dice: 3 (M) Move: 9' (3') Attacks: See below Damage: Nil No. Appearing: 1d8 (0) Save As: F2 Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: Neutral XP Value: 35 Monster Type: Lowlife (Common). Shriekers look like giant mushrooms. They live in underground caverns and are able to move around slowly. They react to light (within 60') and movement (within 30') by emitting a piercing shriek which lasts for ld3 rounds.",
+    "description": "Shriekers look like giant mushrooms. They live in underground caverns and are able to move around slowly. They react to light (within 60') and movement (within 30') by emitting a piercing shriek which lasts for ld3 rounds. For each round of shrieking, the DM can roll 1d6; any result of 4-6 indicates that a wandering monster has heard the noise, and will arrive in 2d6 rounds. Their shriek can stun small animals (especially birds and bats), which the shriekers slowly crawl over to and draw into their feeding orifices, on the bottom of their \"stalks.\" They are also scavengers, feeding off carrion left in their vicinity. Terrain: Cavern, Ruins.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Shrieker"
+      "key": "Shrieker",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

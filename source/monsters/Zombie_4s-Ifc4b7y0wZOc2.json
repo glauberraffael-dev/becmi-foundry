@@ -23,8 +23,8 @@
     "xpValue": 20,
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Common).",
-    "description": "Armor Class: 8 Hit Dice: 2(M) Move: 90' (30') Attacks: 1 claw or 1 weapon Damage: ld8 or by weapon No. Appearing: 2d4 (4d6) Save As: Fl Morale: 12 Treasure Type: Nil Intelligence: 1 Alignment: Chaotic XP Value: 20 Monster Type: Undead, Enchanted (Common). Zombies are mindless undead humans or demihumans. They are empty corpses animated by an evil magic-user or cleric. They are often used as cheap labor and cheap soldiers by evil rulers. They can be turned by clerics but are not affected by sleep or charm spells.",
-    "special": "",
+    "description": "Zombies are mindless undead humans or demihumans. They are empty corpses animated by an evil magic-user or cleric. They are often used as cheap labor and cheap soldiers by evil rulers. They can be turned by clerics but are not affected by sleep or charm spells. They can be harmed by normal weapons. Zombies are often placed to guard treasures, since they make no noise. They are slow fighters, and always lose initiative (no roll needed). Barding Multiplier: x 3.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They are empty corpses animated by an evil magic-user or cleric. They can be turned by clerics but are not affected by sleep or charm spells.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Zombie"
+      "key": "Zombie",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

@@ -21,10 +21,10 @@
     "intelligence": 10,
     "alignment": "Chaotic",
     "xpValue": 1250,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Undead, Enchanted (Rare).",
-    "description": "Armor Class: 2 Hit Dice: 7 9 (M) Move: 120' (40') Flying: 180' (60') Attacks: 1 touch or special Damage: 1d10 + double energy drain or special No. Appearing: 1d4 (ld6) Save As: F7-9 Morale: 11 Treasure Type: F Intelligence: 10 Alignment: Chaotic XP Value: 1,250; 1,750 or 2,300 Monster Type: Undead, Enchanted (Rare). Vampires are among the most feared of the undead. They haunt ruins, tombs, crypts and other places deserted by man, but fly out at night to prey on man.",
-    "special": "",
+    "description": "Vampires are among the most feared of the undead. They haunt ruins, tombs, crypts and other places deserted by man, but fly out at night to prey on man. Abilities of Vampires: Vampires are unaffected by sleep, charm, and hold spells, and can only be hit with magical weapons. A vampire may take the form of a human, a dire wolf, a giant bat, or a gaseous cloud at will. Each change takes 1 round. Whatever its form, a vampire regenerates 3 hit points per round, starting as soon as it is damaged. If a vampire is reduced to 0 hit points it does not regenerate, but becomes gaseous and flees to its coffin. In dire wolf or giant bat form, the vampire's move, attacks, and damage are those of the animal. The vampire's AC, Hit Dice, morale, and saving throws remain unchanged. In gaseous form, a vampire cannot attack, but can fly at the speed given above and is immune to all weapon attacks.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Vampires are among the most feared of the undead. Abilities of Vampires:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Vampires are unaffected by sleep, charm, and hold spells, and can only be hit with magical weapons. Whatever its form, a vampire regenerates 3 hit points per round, starting as soon as it is damaged.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Vampire"
+      "key": "Vampire",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

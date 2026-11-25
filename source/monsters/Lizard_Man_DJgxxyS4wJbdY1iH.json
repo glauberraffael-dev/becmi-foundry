@@ -23,7 +23,7 @@
     "xpValue": 25,
     "terrain": "Cavern, River/Lake, Swamps.",
     "monsterType": "Humanoid (Common).",
-    "description": "Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. Armor Class: 5 Hit Dice: 2 + 1 (M) Move: 60' (20') Swimming: 120' (40') Attacks: 1 weapon Damage: By weapon + 1 No. Appearing: 2d4 (6d6) Save As: F2 Morale: 12 Treasure Type: D Intelligence: 6 Alignment: Neutral XP Value: 25 One in ten will speak a little Common. PCs can negotiate with lizard men that can talk.",
+    "description": "Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. One in ten will speak a little Common. PCs can negotiate with lizard men that can talk. If they are hungry enough, though, and the PCs can't deliver them a lot of food, the lizard men will still prefer to eat the characters. Lizard men live hard lives, hunting most of their waking hours. Sometimes they hire themselves out to other races as warriors or scouts. They have no interest in other races other than what those races can do for them (i.e., provide food in one way or another). Some varieties of lizard men are just drab green or brown in color, while others may be dramatically colorful: Bright reds, blues, yellows, or greens, like some other reptiles.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Lizard Man"
+      "key": "Lizard Man",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

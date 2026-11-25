@@ -23,8 +23,8 @@
     "xpValue": 125,
     "terrain": "Cavern, Ruins; Hill, Mountain, Woods, (after dark).",
     "monsterType": "Monster (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 4 + 2 (L) Move: 150' (50') Attacks: 1 leg/1 bite Damage: 0 + suckers/2d8 No. Appearing: 1d4 (1d6) Save As: F2 Morale: 9 Treasure Type: U Intelligence: 0 Alignment: Neutral XP Value: 125 Monster Type: Monster (Rare). A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust.",
-    "special": "",
+    "description": "A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust. A rust monster is attracted by the smell of metal, and eats the rust created by its attacks. The rust monster can be hit by any type of weapon. A successful attack roll indicates that the rust monster's body is hit, which does not harm the weapon. A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. For example, a shield + 1 has a 10% chance of surviving the attack. Salamanders are free-willed beings from the elemental planes, common there but rare elsewhere. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Rhagodessa"
+      "key": "Rhagodessa",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

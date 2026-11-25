@@ -20,11 +20,11 @@
     "treasure": "Nil Nil (U + V) Nil",
     "intelligence": 1,
     "alignment": "Neutral",
-    "xpValue": 0,
-    "terrain": "",
-    "monsterType": "",
-    "description": "Small Large Armored Armor Class: 7 5 to 7 2 to 4 Hit Dice: 2 to 8 (S to L) 9 to 24 (L) 6 to 9 (L) Move: 0 to 30' 0 to 60' 10' to 60' Swimming: 120'to 180' 150' to 240' 90' to 150' Attacks: . . 1 bite (+ 2 flippers). Damage: 1 to 2d4 2d4 to 4d8 1d4 to 2d8 No. Appearing: 1d2 to 2d8 1d2 to 1d4 1d2 to 1d6 Save As: ..F (level = 1/2 HD). . Morale: 3 to 6 6 to 11 7 to 9 Treasure Type: Nil Nil (U + V) Nil Intelligence: 1 to 3 1 to 3 1 to 3 Alignment: Neutral Neutral Neutral XP Value: Varies Varies Varies",
-    "special": "",
+    "xpValue": 3700,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "description": "AC 7; HD 9; Attacks: . . 1 bite (+ 2 flippers).; Damage: 1 to 2d4 2d4 to 4d8 1d4 to 2d8",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; . . 1 bite (+ 2 flippers).;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Dinosaur, Aquatic (Armored)"
+      "key": "Dinosaur, Aquatic (Armored)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

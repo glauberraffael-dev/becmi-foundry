@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 25,
     "terrain": "Crab: Cavern, Ruins. Black Widow, Tarantella: Ruins. Woods.",
-    "monsterType": "Lowlife (Rare). Giant spiders are simply huge versions of normal spider species. All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire. Three examples of giant spiders are given here. Crab Spider: This is a 5' long spider with a chameleonlike ability to blend into its surroundings, surprising on a roll of 1-4 (on 1d6). It clings to walls or ceilings and drops onto its prey. After the first attack, it can be seen and attacked normally. Any victim of its bite must make a saving throw vs. poison or die in 1d4 turns. However, the poison is weak, and the victim gains a + 2 bonus to the saving throw roll.",
-    "description": "Crab Spider Black Widow Tarantella Armor Class: 7 6 5 Hit Dice: 2*(M) 3*(M) 4*(L) Move: 120' (40') 60' (20') 120' (40') In Web: No webs 120' (40') No webs Attacks: 1 bite 1 bite 1 bite Damage: 1d8 + poison 2d6 + poison 1d8 + poison No. Appearing: 1d4 (1d4) 1d3(ld3) 1d3(ld3) Save As: Fl F2 F2 Morale: 7 8 8 Treasure Type: U U U Intelligence: 0 0 0 Alignment: Neutral Neutral Neutral XP Value: 25 50 125 Monster Type: Lowlife (Rare). Giant spiders are simply huge versions of normal spider species.",
-    "special": "",
+    "monsterType": "Lowlife (Rare).",
+    "description": "trapped. The webs may also be burned away. Any victim of the bite of a black widow spider must make a saving throw vs. poison or die in 1 turn. Tarantella: A tarantella is a huge hairy magical spider that looks like a 7' long tarantula. Its bite does not kill; instead, it causes the victim (if a saving throw vs. poison is failed) to have painful spasms that resemble a frantic dance. This dance has a magical effect on onlookers. Anyone watching the dance must make a saving throw vs. spells or start to dance in the same way. Dancing victims have a penalty of - 4 on their attack rolls, and attackers gain +4 on their attack rolls. The effects of the bite last for 2d6 turns. However, dancers will drop from exhaustion in 5 turns, and they will then be helpless against attacks. Those caught while watching will dance as long as the original victim. (A dispel magic spell will stop the dance.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;The webs may also be burned away. Any victim of the bite of a black widow spider must make a saving throw vs. poison or die in 1 turn. Tarantella:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; A tarantella is a huge hairy magical spider that looks like a 7' long tarantula.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Spider, Giant (Tarantella)"
+      "key": "Spider, Giant (Tarantella)",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

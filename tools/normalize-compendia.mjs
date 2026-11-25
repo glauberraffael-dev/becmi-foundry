@@ -12,6 +12,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalizeTreasureDocument, sortDocuments } from "./pack-layout.mjs";
+import { normalizeMonsterDocument } from "./normalize-monsters.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = async (name) => JSON.parse(await readFile(join(root, "data", name), "utf8"));
@@ -62,12 +63,17 @@ for (const doc of equipment) {
 // --- Treasure: keep tangible items and procedural rules in separate folders.
 const treasure = (await readJson("treasure.json")).map(normalizeTreasureDocument);
 
+// --- Monsters: repair OCR stat blocks and assign Rules Cyclopedia folders.
+const monsters = (await readJson("monsters.json"))
+  .map(normalizeMonsterDocument)
+  .filter(Boolean);
+
 const packs = {
   classes,
   equipment,
   treasure,
   spells: await readJson("spells.json"),
-  monsters: await readJson("monsters.json"),
+  monsters,
   tables: await readJson("tables.json"),
   journals: await readJson("journals.json")
 };

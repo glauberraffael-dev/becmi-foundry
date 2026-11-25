@@ -23,8 +23,8 @@
     "xpValue": 500,
     "terrain": "Any (usually Barren Lands and Ruins).",
     "monsterType": "Undead, Enchanted (Very Rare).",
-    "description": "Druj* Odic* Armor Class: -4 -4 Hit Dice: 14 (M) 16 (M) Move: 90' (30') 0 (see below) Attacks: 1 or 4 1 (see below) Damage: See below (all + poison) 1d12 + poison (see below) No. Appearing: 1 (1)or 1d4 + l 0(1) Save As: F14 F16 Morale: 12 Treasure Type: I, O, V I, O, V Intelligence: 14 12 Alignment: Chaotic Chaotic XP Value: 5,500 6,250 Druj: Druj appear as body parts, floating or crawling about in a horrible way. A druj is usually encountered in the form of a hand, eye, or skull.",
-    "special": "",
+    "description": "A druj is usually encountered in the form of a hand, eye, or skull. Druj are very intelligent and strongly evil, far more dangerous than they may seem. DM Checklist: A druj can split its essence, creating four (identical) forms instead of one. This can be performed only once per night. Each of the forms can attack separately, but only one of the forms is able to cast spells (as given above). The form using the spells can often be distinguished, as it will hover nearby while the other forms attack. If that form is slain, one of the surviving forms immediately gains all unused spellcasting abilities. All four forms are poisonous. Druj only: First successful turn attempt forces druj components to reunite; subsequent turn rolls handled normally.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Each of the forms can attack separately, but only one of the forms is able to cast spells (as given above). The form using the spells can often be distinguished, as it will hover nearby while the other forms attack. If that form is slain, one of the surviving forms immediately gains all unused spellcasting abilities.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Spirit (Odic*)"
+      "key": "Spirit (Odic*)",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

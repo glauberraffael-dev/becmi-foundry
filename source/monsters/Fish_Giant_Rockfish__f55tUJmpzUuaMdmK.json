@@ -23,8 +23,8 @@
     "xpValue": 900,
     "terrain": "River /Lake, Ocean.",
     "monsterType": "Giant Animal (Common).",
-    "description": "Giant Bass Giant Rockfish Giant Sturgeon Armor Class: 7 1 0 Hit Dice: 2 (L) 5 + 5*(L) 10 + 2*(L) Move (swim): 120' (40') 180' (60') 180' (60') Attacks: 1 bite 4 spines + poison (special) 1 bite Damage: 1d6 1d4 each + poison 2dlO No. Appearing: 0 (2d4) 0(2d4) 0(2d10) Save As: F1 F3 F5 Morale: 8 8 9 Treasure Type: Nil Nil Nil Intelligence: 1 1 1 Alignment: Neutral Neutral Neutral XP Value: 20 400 1,900 four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring",
-    "special": "",
+    "description": "four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring a saving throw vs. poison for each hit. Any failure results in death. Despite its fearsome attacks, the fish is normally peaceful, and will only attack if disturbed. These monsters are just three typical examples of the category of \"giant fish;\" many others exist, and the DM may create as many as he wishes. Giant Bass: These are normally shy fish, and will attack only if a morsel of food (halfling-sized or smaller) is floating nearby or on the surface. They may also be summoned, and directed to fight, by nixies. Giant Sturgeon: This dangerous creature is almost 30' long and covered with thick armorlike scales. It is a fierce fighter, and can swallow an opponent with an attack roll of 18 or better.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring a saving throw vs. poison for each hit. Despite its fearsome attacks, the fish is normally peaceful, and will only attack if disturbed. It is a fierce fighter, and can swallow an opponent with an attack roll of 18 or better.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Fish, Giant (Rockfish)"
+      "key": "Fish, Giant (Rockfish)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

@@ -1,0 +1,27 @@
+{
+  "_id": "vy86ZMHuCaJt7iM2",
+  "_key": "!journal!vy86ZMHuCaJt7iM2",
+  "name": "Appendix 1: The D&D Game World",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "appendix": 1
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Overview",
+      "type": "text",
+      "text": {
+        "content": "<h2>Appendix 1 — The D&D Game World</h2>\n <p>The Rules Cyclopedia presents two linked campaign settings on the planet Mystara. The Known World is the surface setting where most characters begin: kingdoms, city-states and frontier wilderness suitable for low- and mid-level play. The Hollow World is a vast interior world reached through special passes; it preserves ancient cultures, dinosaur-hunting grounds and immortal guardians, and suits higher-level exploration.</p>\n <p>Use the Known World for a conventional dungeon-and-domain campaign. Introduce the Hollow World when the party is ready for polar openings, longer journeys and immortal politics. Nothing in the system requires either setting; the compendia provide the rules, while the DM supplies geography, factions and rumors.</p>"
+      },
+      "_id": "jXu-obv1hifHGx2h",
+      "_key": "!journal.pages!vy86ZMHuCaJt7iM2.jXu-obv1hifHGx2h"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
     "maxLevel": 10,
     "requirements": "Intelligence 9+",
     "xpTable": {
-      "1": 2,
+      "1": 0,
       "2": 4000,
       "3": 8000,
       "4": 16000,

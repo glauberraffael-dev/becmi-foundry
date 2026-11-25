@@ -1,0 +1,36 @@
+{
+  "_id": "ky_JvIAnDn7YcE43",
+  "_key": "!journal!ky_JvIAnDn7YcE43",
+  "name": "Appendix 3: Record Sheets",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "appendix": 3
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Overview",
+      "type": "text",
+      "text": {
+        "content": "<h2>Appendix 3 — Record Sheets</h2>\n <p>The original appendix supplies printable forms. This system maps those records to editable sheet sections so no separate PDF is needed.</p>\n <table><thead><tr><th>Original form</th><th>Fields to record</th><th>Foundry equivalent</th></tr></thead><tbody><tr><td>DM's character card</td><td>Name, class, level, alignment, XP, hp, abilities, weapons, THAC0, magic items</td><td>Actor sheet Main, Equipment and Magic Items tabs</td></tr><tr><td>Character record sheet</td><td>Ability adjustments, saves, AC, hp, attack matrix, carried treasure, languages</td><td>Actor sheet Main, Attack Table and Notes tabs</td></tr><tr><td>Spell book sheet</td><td>Spell name, level, brief description and source</td><td>Spells tab plus spell Items in the Spell compendia</td></tr><tr><td>Adventure record sheet</td><td>Date, roster, monsters, treasure and event log</td><td>Journal entries and chat log</td></tr><tr><td>Hex mapping paper</td><td>Hex grid for wilderness exploration</td><td>Foundry scene grid (10 ft per hex by default)</td></tr></tbody></table>\n <p>Use a JournalEntry for a long-lived adventure log and the actor Notes tab for character-specific secrets and experience notes.</p>"
+      },
+      "_id": "p59ITj2ncBu6UzI0",
+      "_key": "!journal.pages!ky_JvIAnDn7YcE43.p59ITj2ncBu6UzI0"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>Record Sheets — Tables 1</h2><table><thead><tr><th>Record</th><th>Where to keep it</th><th>Update frequency</th></tr></thead><tbody><tr><td>Character statistics</td><td>Actor sheet</td><td>When level, XP or equipment changes</td></tr><tr><td>Spell book</td><td>Spell compendium and Spells tab</td><td>When a spell is learned or prepared</td></tr><tr><td>Adventure log</td><td>JournalEntry</td><td>After each session</td></tr><tr><td>Encounter log</td><td>JournalEntry or chat export</td><td>After each encounter</td></tr></tbody></table>"
+      },
+      "_id": "5Tx18TadFBBIlIME",
+      "_key": "!journal.pages!ky_JvIAnDn7YcE43.5Tx18TadFBBIlIME"
+    }
+  ]
+}

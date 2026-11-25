@@ -23,8 +23,8 @@
     "xpValue": 25,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Monster (Common).",
-    "description": "Armor Class: 6 Hit Dice: 2* (M) Move: 90' (30') Attacks: 2 claws/1 bite Damage: 1d3/ld3/ld3 + special No. Appearing: 1d6 (2d8) Save As: F2 Morale: 9 Treasure Type: B Intelligence: 3 Alignment: Chaotic XP Value: 25 Monster Type: Monster (Common). This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6).",
-    "special": "",
+    "description": "This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6). A gelatinous cube moves through the rooms and corridors of a dungeon, sweeping the halls clean of all living and dead material. In the process, it may pick up items it cannot dissolve (such as weapons, coins, and gems). The gelatinous cube will attack any living creature it encounters. Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured. An attack on a paralyzed target automatically hits (only a damage roll is needed). The gelatinous cube will continue attacking creatures until it dies or they do; if it wins, it sweeps up the dead with all the other trash and continues on its path.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It is hard to see, and it surprises often (1-4 on 1d6). Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Ghoul"
+      "key": "Ghoul",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

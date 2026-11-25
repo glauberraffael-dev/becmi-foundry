@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 25,
     "terrain": "Ocean.",
-    "monsterType": "Normal Animal (Common). Great White: Normal Animal (Rare).",
-    "description": "||Bull|Mako|Great White| |---|---|---|---| |Armor Class:|4|4|4| |Hit Dice:|2*(M)|4(M)|8(L)| |Move:|180'(60')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 bite| |Damage:|2d4|2d6|2d10| |No. Appearing:|0(3d6)|0(2d6)|0(ld4)| |Save As:|Fl|F2|F4| |Morale:|7|7|7| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|2| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|25|75|650| Monster Type: Normal Animal (Common). Great White: Normal Animal (Rare). Sharks are predators, feeding mostly on fish.",
-    "special": "",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Sharks are predators, feeding mostly on fish. They have little intelligence and are unpredictable. They are attracted to the scent of blood within 300' and it will drive them into a feeding frenzy (they attack but make no morale checks). Sharks are found in salt water. Bull Shark:These are 8' long and brown in color. Bull sharks will ram their prey first to stun it (save vs. paralysis or be stunned for three rounds), and then attack the helpless prey the next round. Mako Shark:These are 12' long and blue-gray or tan in color. Mako sharks are very unpredictable, ignoring prey one moment and attacking another. Great White Shark:These are 30' long or larger and gray with a white underside. They have been known to destroy small boats.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Bull sharks will ram their prey first to stun it (save vs. paralysis or be stunned for three rounds), and then attack the helpless prey the next round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Bull_",
-      "key": "Shark (Bull)"
+      "variant": "",
+      "key": "Shark (Bull)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

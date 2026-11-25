@@ -1,0 +1,13 @@
+{
+  "_id": "e02bba7eeaaaa851",
+  "_key": "!folders!e02bba7eeaaaa851",
+  "name": "Humanoids",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

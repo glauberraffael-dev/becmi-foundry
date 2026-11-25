@@ -1,0 +1,36 @@
+{
+  "_id": "39ObRhEn4sALAngB",
+  "_key": "!journal!39ObRhEn4sALAngB",
+  "name": "Appendix 2: AD&D Game Conversions",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "appendix": 2
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Overview",
+      "type": "text",
+      "text": {
+        "content": "<h2>Appendix 2 — AD&D Game Conversions</h2>\n <p>When moving characters between the two games, convert levels, not experience points. Levels 1-12 transfer unchanged. Above that, one AD&D level equals three BECMI levels going one way, and three BECMI levels equal one AD&D level going the other; round fractions down. Multiclass AD&D characters use the level of the active class, and dual-class characters use their active class.</p>\n <p>Keep Lawful-Neutral-Chaotic as a role-playing axis when converting to BECMI; assign Good-Neutral-Evil from past behavior when converting to AD&D. Use equivalent spells where they exist and assume knowledge is lost where no equivalent exists. Ordinary equipment, encumbrance and money are converted by using the target game's tables; adjust the starting purse so it fits the treasure level of the new campaign.</p>\n <table><thead><tr><th>BECMI armor</th><th>BECMI AC</th><th>AD&amp;D AC</th></tr></thead><tbody><tr><td>None</td><td>9</td><td>10</td></tr><tr><td>Leather</td><td>7</td><td>8</td></tr><tr><td>Scale</td><td>6</td><td>6</td></tr><tr><td>Chain</td><td>5</td><td>5</td></tr><tr><td>Banded</td><td>4</td><td>4</td></tr><tr><td>Plate</td><td>3</td><td>3</td></tr><tr><td>Suit armor</td><td>1</td><td>—</td></tr></tbody></table>\n <p>A shield gives -1 AC in both systems. Weapon mastery of Expert or better converts to the target game's weapon proficiency; demihuman multiclass options that have no BECMI equivalent should be approved by the DM case by case.</p>"
+      },
+      "_id": "YwT5DcS9VQnj_MUN",
+      "_key": "!journal.pages!39ObRhEn4sALAngB.YwT5DcS9VQnj_MUN"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>AD&D Game Conversions — Tables 1</h2><table><thead><tr><th>BECMI level</th><th>AD&amp;D level</th></tr></thead><tbody><tr><td>1-12</td><td>No change</td></tr><tr><td>13</td><td>4</td></tr><tr><td>16</td><td>5</td></tr><tr><td>19</td><td>6</td></tr><tr><td>36</td><td>12</td></tr></tbody></table>"
+      },
+      "_id": "hXJ4YItYnMJuWd5e",
+      "_key": "!journal.pages!39ObRhEn4sALAngB.hXJ4YItYnMJuWd5e"
+    }
+  ]
+}

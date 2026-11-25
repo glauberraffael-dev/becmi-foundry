@@ -23,8 +23,8 @@
     "xpValue": 6,
     "terrain": "Plain, Woods, Mountain, Hill.",
     "monsterType": "Lowlife (Rare).",
-    "description": "|Beetle, Giant|||| |---|---|---|---| ||Fire|Oil|Tiger| |Armor Class:|4|4|3| |Hit Dice:|1 +2(S)|2* (M)|3 + 1 (M)| |Move:|120' (40')| 120' (40')|150'(50')| |Attacks:|1 bite|1 bite + special|1 bite| |Damage:|2d4|1d6 + special|2d6| |No. Appearing:|1d8|1d8|1d6| ||(2d6)|(2d6)|(2d4)| |Save As:|Fl|Fl|F2| |Morale:|7|8|9| |Treasure Type:|Nil|Nil|U| |Intelligence:|0|0|0| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|15|25|50| Armor Class: 7 Hit Dice: 1/2* (1-4 hp) (S) Move: 150'(50') Attacks: 1 sting Damage: 1d3 + special N",
-    "special": "",
+    "description": "Giant bees, also called \"killer bees,\" are footlong giant bees with nasty tempers. Giant bees always attack anyone within 30' of their hive. If a giant bee attack hits, the bee dies, but the creature stung must make a saving throw vs. poison or die. The stinger will work its way into the victim, inflicting 1 point of damage per round, unless a character spends a round pulling it out. Fire Beetle: Fire beetles are 2 1/2' - long creatures often found below ground. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen. These glands give off light in a 10' radius and will continue to glow for 1d6 days after they are removed. Owing to the great weight of their hives, giant bees prefer to build their hives in small caves and underground areas near the surface. There will always be at least 10 bees with their queen in or near the hive.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;If a giant bee attack hits, the bee dies, but the creature stung must make a saving throw vs. poison or die. Fire Beetle:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Fire beetles are 2 1/2' - long creatures often found below ground. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Bee, Giant"
+      "key": "Bee, Giant",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

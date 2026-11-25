@@ -1,0 +1,13 @@
+{
+  "_id": "65abff4b71ab6a77",
+  "_key": "!folders!65abff4b71ab6a77",
+  "name": "Normal Animals",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

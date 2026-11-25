@@ -23,8 +23,8 @@
     "xpValue": 19,
     "terrain": "Any.",
     "monsterType": "Humanoid (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 1 + 1* or more (S) Move: 120' (40') Flying: 240' (80') Attacks: 1 weapon or spell Damage: By weapon or spell No. Appearing: 1d6 (5d8 + 20) Save As: E1 (or better) Morale: 9 Treasure Type: (Nil) Special Intelligence: 13 Alignment: Any XP Value: 19 (or more) Monster Type: Humanoid (Rare). The faerie inhabit the air and clouds.",
-    "special": "",
+    "description": "The faerie inhabit the air and clouds. Faeries are close relatives of the demihumans, with features of each race: They appear as halfling-sized humanoids with gossamer wings, dwarvish noses and beards, and elvish ears and eyes. Faeries' bodies are light and they fly with little effort. They build their homes of \"clouds,\" and enjoy basking in the sun while storms rage below. They have their own great empire of the wind far above the earth, commonly known only to themselves and a few air creatures. Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Faerie"
+      "key": "Faerie",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

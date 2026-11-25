@@ -1,0 +1,50 @@
+{
+  "_id": "YJ4WPUmoBLhcGX4z",
+  "_key": "!actors!YJ4WPUmoBLhcGX4z",
+  "name": "Dragon, Gemstone (Form 2)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 10,
+    "hd": "30",
+    "hp": 30,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "Up to 9 (see below)",
+    "damage": "See below Breath: As any chaotic dragon Breath: As any lawful dragon",
+    "appearing": "1(1) (unique)",
+    "saveAs": "F36 (see below)",
+    "morale": 10,
+    "treasure": "Hx4, I x 3 , N , O",
+    "intelligence": 18,
+    "alignment": "Lawful",
+    "xpValue": 38750,
+    "terrain": "Outer Plane (their own). _Load:_ Full speed when carrying 1,000 cn X HD in encumbrance; half speed when carrying 2,000 cn x HD in encumbrance.",
+    "monsterType": "Dragon, Planar Monster (Very",
+    "description": "(Crystal, Onyx, Jade, Sapphire, Ruby, Amber) This disease causes all nonmetal items to rot away in 1d6 turns unless a cure disease spell is cast on them during that time. A victim cannot be affected by any healing spells, nor healing item, save a cure disease effect. The disease also inflicts 1 point of damage per turn (but not cumulative in the case of multiple failed saving throws). If the saving throw is successful, the victim takes only half damage and avoids the dis- Unless otherwise noted, the gemstone dragons are similar to the standard dragons, including the details of preferred terrain, attacks, size, age, treasure, etc. For XP value, add an asterisk for every two spell levels available to the dragon. At 120' or greater range, each of the \"gemstone\" dragons appears identical to that of the corresponding normal color (i.e.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;(Crystal, Onyx, Jade, Sapphire, Ruby, Amber) This disease causes all nonmetal items to rot away in 1d6 turns unless a cure disease spell is cast on them during that time. A victim cannot be affected by any healing spells, nor healing item, save a cure disease effect. For XP value, add an asterisk for every two spell levels available to the dragon.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 30,
+        "max": 30
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Dragon, Gemstone (Form 2)",
+      "category": "Dragon"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b9a214ddebbb8a17"
+}

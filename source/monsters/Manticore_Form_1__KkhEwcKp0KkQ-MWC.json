@@ -1,0 +1,50 @@
+{
+  "_id": "KkhEwcKp0KkQ-MWC",
+  "_key": "!actors!KkhEwcKp0KkQ-MWC",
+  "name": "Manticore (Form 1)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon 1 weapon 1 weapon",
+    "damage": "By weapon By weapon By weapon",
+    "appearing": "0(1d4 x 10) 0 (special) 0(1d6 + 1 x 10)",
+    "saveAs": "F1 F1 F1",
+    "morale": 8,
+    "treasure": "A A A",
+    "intelligence": 11,
+    "alignment": "Chaotic",
+    "xpValue": 16,
+    "terrain": "Any.",
+    "monsterType": "Monster (Rare).",
+    "description": "Anyone who tries to attack a medusa without looking at her must subtract 4 from the attack roll, and the snakes may attack with a +2 bonus to the attack roll. A medusa also gains +2 on all saving throws vs. spells due to her magical nature. Meks are not intelligent, but respond to simple verbal commands from their masters. A cold-based attack will slow a mek to half speed, but they are immune to all other spells except disintegrate. Many medusae are evil. Others are reclusive scholars, ancient sages who can guide heroes on their quests and who conceal their deadly visages under veils. There are also medusa spellcasters (see \"Monster Spellcasters\" later in this chapter). Medusae are native to both the Prime Plane and their original home, the elemental plane of Earth.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A medusa also gains +2 on all saving throws vs. spells due to her magical nature. A cold-based attack will slow a mek to half speed, but they are immune to all other spells except disintegrate. There are also medusa spellcasters (see \"Monster Spellcasters\" later in this chapter).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Manticore (Form 1)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "40077e3c19fe93b6"
+}

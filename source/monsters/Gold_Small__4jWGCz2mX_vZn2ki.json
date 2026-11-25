@@ -21,10 +21,10 @@
     "intelligence": 9,
     "alignment": "Lawful",
     "xpValue": 2,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Dragon (Rare).",
-    "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-    "special": "",
+    "description": "* Talking dragons can also use spells. Dragons are a very old race of huge winged lizards. They like to live in isolated, out-of-the-way places where few men are found. Dragons are extremely powerful monsters and should be used with caution when encountered by low level player characters. It is recommended that until characters reach 4th level and higher that only the youngest and smallest dragons be used. There are several types of dragon, distinguishable by the colors of their hides: white, black, green, blue, red, and gold. Though the colors of their scaly hides make dragons look different, they all have quite a few things in common: they are all hatched from eggs, all are carnivores, all have breath weapons. Dragons have a great love of treasure, but they value their own lives more. Dragons in battle will do everything possible to save their own lives, including surrender.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;* Talking dragons can also use spells. Though the colors of their scaly hides make dragons look different, they all have quite a few things in common:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; they are all hatched from eggs, all are carnivores, all have breath weapons.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Gold (Small)"
+      "key": "Gold (Small)",
+      "category": "Dragon"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "b9a214ddebbb8a17"
 }

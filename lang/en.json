@@ -281,5 +281,15 @@
   "BECMI.sheet.addSpell": "Add spell item",
   "BECMI.sheet.addRow": "Add row",
   "BECMI.sheet.druidEnable": "Enable Druid spells (Cleric extension)",
-  "BECMI.sheet.druidDisable": "Disable Druid spells"
+  "BECMI.sheet.druidDisable": "Disable Druid spells",
+
+  "BECMI.sheet.tab.features": "Class Features",
+  "BECMI.sheet.featureUnlocked": "Available now",
+  "BECMI.sheet.featureLocked": "Not yet available",
+  "BECMI.sheet.noFeatures": "No class abilities are defined for this character.",
+  "BECMI.sheet.sidebar.abilities": "Class Abilities",
+  "BECMI.sheet.classification": "Classification",
+  "BECMI.labels.monsterType": "Monster Type",
+  "BECMI.notification.autoLevel": "{actor} advanced to level {level}.",
+  "BECMI.notification.notEnoughXp": "Not enough XP for the next level."
 }

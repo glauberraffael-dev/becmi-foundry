@@ -21,9 +21,9 @@
     "intelligence": 2,
     "alignment": "Neutral",
     "xpValue": 50,
-    "terrain": "",
-    "monsterType": "Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare).",
-    "description": "||Normal|Great| |---|---|---| |Armor Class:|7|3| |Hit Dice:|3*(M)|10* (L)| |Move:|90'(30')|90'(30')| |Attacks:|1 tusk|1 tusk| |Damage:|2d4|2d8| |No. Appearing:|1d6(ld6)|1d6(ld6)| |Save As:|F2|F5| |Morale:|9|9| |Treasure Type:|Nil|Nil| |Intelligence:|2|2| |Alignment: |Neutral |Neutral | |XP Value:|50|1,750| Monster Type: Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare). Wild boars generally prefer forested areas but can be found nearly everywhere.",
+    "terrain": "Any",
+    "monsterType": "Boar: Normal Animal (Common).",
+    "description": "Wild boars generally prefer forested areas but can be found nearly everywhere. They are omnivores and have extremely bad tempers when disturbed. They sometimes lie in thickets in the forest and charge passersby. They do have the charge attack special ability; if they can charge for 20 yards before reaching their prey, they inflict double damage when they hit. Great Boars: These rare boars are huge and terrifying. They are most often found in \"lost world\" settings and are occasionally used as mounts by barbaric tribes. 3,000 cn at half speed. Great Boar: 3,000 cn at full speed; 6,000 cn at half speed. Barding Multiplier: x 3.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Normal_",
-      "key": "Boar (Normal)"
+      "variant": "",
+      "key": "Boar (Normal)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

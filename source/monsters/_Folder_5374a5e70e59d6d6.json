@@ -1,0 +1,13 @@
+{
+  "_id": "5374a5e70e59d6d6",
+  "_key": "!folders!5374a5e70e59d6d6",
+  "name": "Constructs",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

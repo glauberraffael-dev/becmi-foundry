@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 2,
     "terrain": "Normal Rats: Any. Giant Rats: Cavern, Ruins.",
-    "monsterType": "Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
-    "description": "Normal Giant Armor Class: 9 7 Hit Dice: 1 hit 1/2(l-4 hit point(S) points) (S) Move: 60' (20') 120' (40') Swimming: 30' (10') 60' (20') Attacks: 1 bite 1 bite per pack each Damage: 1d6 + 1d3 + disease disease No. Appearing: 1d10 x 5 3d6 (1d10 x 2) (3dlO) Save As: Normal Man Normal Man Morale: 5 8 Treasure Type: L L Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 2 5 Monster Type: Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
-    "special": "",
+    "monsterType": "Normal Rat: Normal Animal (Common).",
+    "description": "Rats are clever rodents that can eat meat, grain, sawdust, almost anything. Rats usually avoid humans and will not attack unless summoned (by a wererat, for example) or defending their lair. Rats are good swimmers and may attack while in water. They are afraid of fire, and will run from it unless forced to fight by a summoning creature. Some rats carry diseases. Anyone bitten by a rat has a 1 in 20 chance of being infected. (This chance should be checked each time a rat successfully hits. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison. If failed, the victim may die in 1d6 days (1 in 4 chance) or may be sick in bed for 1 month, unable to adventure. Normal Rats: Normal rats have gray or brown fur, and are from 6\" to 2' long. They attack in \"packs\" of 5-10 rats per pack.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They are afraid of fire, and will run from it unless forced to fight by a summoning creature. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Rat (Normal)"
+      "key": "Rat (Normal)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

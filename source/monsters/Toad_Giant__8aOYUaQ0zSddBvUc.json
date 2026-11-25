@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 25,
     "terrain": "Giant Toad: Cavern; Woods (near water). Rock/Cave Toad: Cavern; Desert (cold). Mountain.",
-    "monsterType": "Giant Animal (Common). **Giant Toad:** A giant toad is about the size of a very large dog, and weighs 150-250 pounds. It can change its skin color to blend into woods or poorly lit dungeons, surprising its prey on a roll of 1-3 (on 1d6). It can shoot its tongue out to 15', and may drag victims of dwarf size or smaller to its mouth to be bitten. Small prey is swallowed whole on a attack roll of 20, causing 1d6 points of damage each round thereafter. **Rock Toad/Cave Toad:** A rock toad, or \"cave toad\", lives in rocky, cold regions such as high mountains or frozen deserts. It is about the size of a large dog, weighs 150 pounds, and carries a hard, bumpy shell on its back (like a turtle). On its head, it has bulging, multi-faceted eyes similar to a fly's. The eyes shine with a hypnotic glow. Any creature gazing into the eyes must save vs. paralysis, or be paralyzed for 2-8 (2d4) rounds. The eyes will continue to cast a feeble 'light (5' radius) for ld3 hours after the creature dies, but the hypnotic powers will be lost. When attacking, it bites with a horny, beaked mouth. _Terrain:_ Giant Toad: Cavern; Woods (near water). Rock/Cave Toad: Cavern; Desert (cold). Mountain.",
-    "description": "Giant Rock/Cave Armor Class: 1 2 Hit Dice: 2 + 2 (M) 3 + 1* (M) Move: 90' (30') 60' (20') Attacks: 1 bite 1 bite + special Damage: 1d4 + l 1d6 + charm No. Appearing: 1d4(ld6) 1d4(ld4) Save As: Fl F3 Morale: 6 7 Treasure Type: Nil V Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 25 75 Monster Type: Giant Animal (Common). Giant Toad: A giant toad is about the size of a very large dog, and weighs 150-250 pounds.",
-    "special": "",
+    "monsterType": "Giant Animal (Common).",
+    "description": "AC 1; HD 2+2; Attacks: 1 bite 1 bite + special; Damage: 1d4 + 1 1d6 + charm",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; 1 bite 1 bite + special;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;AC 1; HD 2+2; Attacks: 1 bite 1 bite + special; Damage: 1d4 + 1 1d6 + charm&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Toad (Giant)"
+      "key": "Toad (Giant)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

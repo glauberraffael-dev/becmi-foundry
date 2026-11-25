@@ -22,7 +22,9 @@ function clone(value) {
   return value == null ? value : JSON.parse(JSON.stringify(value));
 }
 
-import { normalizeClassKey } from "./rules-rc.mjs";
+import {
+  adjustment, getRCClass, hpForLevel, levelForXp, normalizeClassKey, xpForNextLevel
+} from "./rules-rc.mjs";
 
 export function spellListsForClass(classInfo, { druid = false } = {}) {
   const name = String(classInfo?.name ?? "").toLowerCase();
@@ -46,12 +48,38 @@ function classSnapshot(item) {
   return {
     uuid: item.flags?.core?.sourceId ?? item.uuid ?? "",
     name: item.name ?? "",
+    key: normalizeClassKey(item.name) ?? "",
     hitDice: system.hitDice ?? "",
-    maxLevel: Number(system.maxLevel) || 36,
+    maxLevel: Number(system.maxLevel) || getRCClass(item.name)?.maxLevel || 36,
     primeRequisite: system.primeRequisite ?? "",
     requirements: system.requirements ?? "",
+    description: system.description ?? "",
     xpTable: clone(system.xpTable ?? {}),
     saves: clone(system.saves ?? {})
+  };
+}
+
+function classInfoFor(actor) {
+  const stored = getProperty(actor, CLASS_FLAG);
+  if (stored) return stored;
+  const item = actor.items?.find((entry) => entry.type === "class");
+  if (item) return classSnapshot(item);
+
+  // Actors created from the sheet class selector have no Class item. The RC
+  // table is still enough to drive auto-level and the "Level Up" button.
+  const name = getProperty(actor, "system.attributes.class")
+    || getProperty(actor, "system.attributes.classKey");
+  const rc = getRCClass(name);
+  if (!rc) return null;
+  return {
+    uuid: "",
+    name: rc.name,
+    key: rc.key,
+    hitDice: `1d${rc.hitDie}`,
+    maxLevel: rc.maxLevel,
+    xp: rc.xp,
+    xpTable: {},
+    saves: rc.saves
   };
 }
 
@@ -86,7 +114,7 @@ export async function applyClassToActor(actor, classItem) {
     "system.attributes.classUuid": snapshot.uuid,
     "system.attributes.hd": snapshot.hitDice,
     "system.attributes.primeRequisite": snapshot.primeRequisite,
-    "system.attributes.xpNext": xpForLevel(snapshot, level + 1),
+    "system.attributes.xpNext": xpForNextLevel(snapshot, level),
     [CLASS_FLAG]: snapshot
   });
   if (Object.keys(changes).length) await actor.update(changes);
@@ -121,11 +149,69 @@ export async function refreshActorFromClass(actor) {
   const source = snapshot ?? classSnapshot(classes[0]);
   const level = Number(getProperty(actor.system, "attributes.level")) || 1;
   const changes = changesFor(actor, {
-    "system.attributes.xpNext": xpForLevel(source, level + 1),
+    "system.attributes.xpNext": xpForNextLevel(source, level),
     [CLASS_FLAG]: source
   });
   if (Object.keys(changes).length) await actor.update(changes);
   return removed;
+}
+
+/**
+ * Advance an Actor to the level dictated by its XP, adding HP once per level.
+ *
+ * The class snapshot is the single source of truth, so the sheet button and the
+ * automatic XP hook cannot diverge. Returns the number of levels gained.
+ */
+export async function advanceActorLevels(actor, { targetLevel, announce = true } = {}) {
+  const info = classInfoFor(actor);
+  if (!actor || !info) return 0;
+
+  const current = Math.max(1, Number(getProperty(actor.system, "attributes.level")) || 1);
+  const max = Math.max(1, Number(info.maxLevel) || getRCClass(info.name)?.maxLevel || 36);
+  const requested = targetLevel === undefined
+    ? levelForXp(info, Number(getProperty(actor.system, "attributes.xp")) || 0, current)
+    : Number(targetLevel);
+  const target = Math.max(current, Math.min(max, Number(requested) || current));
+  if (target <= current) return 0;
+
+  const classKey = normalizeClassKey(info.key || info.name) || info.key || "";
+  const conScore = Number(getProperty(actor.system, "abilities.con.value"));
+  const conAdj = Number.isFinite(conScore) ? adjustment(conScore) ?? 0
+    : Number(getProperty(actor.system, "attributes.adjustments.con")) || 0;
+  const hp = { ...(getProperty(actor.system, "attributes.hp") ?? { value: 0, max: 0 }) };
+
+  for (let level = current + 1; level <= target; level++) {
+    const gain = hpForLevel(classKey || info.name, level, conAdj).gain;
+    hp.max = Number(hp.max || 0) + gain;
+    hp.value = Number(hp.value || 0) + gain;
+  }
+
+  const nextXp = xpForNextLevel(info, target);
+  const changes = {
+    "system.attributes.level": target,
+    "system.attributes.hp": hp,
+    ...(nextXp === null ? {} : { "system.attributes.xpNext": nextXp })
+  };
+  const needed = changesFor(actor, changes);
+  if (Object.keys(needed).length) await actor.update(needed);
+
+  if (announce && globalThis.ui?.notifications?.info && target > current) {
+    ui.notifications.info(game.i18n.format("BECMI.notification.autoLevel", {
+      actor: actor.name ?? "",
+      level: target
+    }));
+  }
+  return target - current;
+}
+
+/** Recalculate the level whenever XP changes; used by the automatic hook. */
+export function autoLevelFromXp(actor, options = {}) {
+  if (!actor) return Promise.resolve(0);
+  const info = classInfoFor(actor);
+  if (!info) return Promise.resolve(0);
+  const current = Math.max(1, Number(getProperty(actor.system, "attributes.level")) || 1);
+  const target = levelForXp(info, Number(getProperty(actor.system, "attributes.xp")) || 0, current);
+  return advanceActorLevels(actor, { ...options, targetLevel: target });
 }
 
 /** Register the Foundry hooks that drive the integrations. */
@@ -141,12 +227,23 @@ export function registerIntegrations() {
     }
   });
 
+  const leveling = new WeakSet();
+  Hooks.on("updateActor", (actor, changed, options, userId) => {
+    if (game.userId !== userId) return;
+    if (getProperty(changed, "system.attributes.xp") === undefined) return;
+    if (leveling.has(actor)) return;
+    leveling.add(actor);
+    Promise.resolve(autoLevelFromXp(actor))
+      .catch((err) => console.error("BECMI | autoLevelFromXp", err))
+      .finally(() => leveling.delete(actor));
+  });
+
   Hooks.on("preUpdateActor", (actor, changed) => {
     const level = getProperty(changed, "system.attributes.level");
     if (level === undefined || getProperty(changed, "system.attributes.xpNext") !== undefined) return;
     const snapshot = getProperty(actor, CLASS_FLAG);
     if (!snapshot) return;
-    changed["system.attributes.xpNext"] = xpForLevel(snapshot, Number(level) + 1);
+    changed["system.attributes.xpNext"] = xpForNextLevel(snapshot, Number(level));
   });
 
   Hooks.on("createActor", (actor, options, userId) => {

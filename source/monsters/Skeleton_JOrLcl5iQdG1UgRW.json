@@ -23,8 +23,8 @@
     "xpValue": 10,
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Common).",
-    "description": "Armor Class: 7 Hit Dice: 1 (M) Move: 60' (20') Attacks: 1 Damage: By weapon No. Appearing: 3d4 (3d10) Save As: Fl Morale: 12 Treasure Type: Nil Intelligence: 1 Alignment: Chaotic XP Value: 10 Monster Type: Undead, Enchanted (Common). Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Skeletons are often found near graveyards, dungeons, and other deserted places.",
-    "special": "",
+    "description": "Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Skeletons are often found near graveyards, dungeons, and other deserted places. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading. Skeletons will always fight until \"killed.\" Terrain: Ruins.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Skeleton"
+      "key": "Skeleton",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

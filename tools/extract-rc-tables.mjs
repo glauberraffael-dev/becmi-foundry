@@ -74,6 +74,38 @@ function englishLabel(rotulo) {
   return match ? match[1] : rotulo;
 }
 
+// Chapter 19 lets demihumans and mystics advance beyond their normal limits.
+// These are the extended "to reach next level" XP values, not the standard caps.
+const standardExtended = (first, levels) => {
+  const values = [0, ...first];
+  for (const [level, xp] of levels) values[level - 1] = xp;
+  return values;
+};
+const EXTENDED_XP = {
+  dwarf: standardExtended(
+    [2200, 4400, 8800, 17000, 35000, 70000, 140000, 270000, 400000, 530000, 660000, 800000, 1000000, 1200000],
+    Array.from({ length: 21 }, (_, i) => [16 + i, 1400000 + i * 200000])
+  ),
+  elf: standardExtended(
+    [4000, 8000, 16000, 32000, 64000, 120000, 250000, 400000, 600000, 850000, 1100000, 1350000, 1600000, 1850000],
+    [
+      ...Array.from({ length: 5 }, (_, i) => [16 + i, 2100000 + i * 250000]),
+      ...Array.from({ length: 16 }, (_, i) => [21 + i, 3100000 + i * 200000])
+    ]
+  ),
+  halfling: standardExtended(
+    [2000, 4000, 8000, 16000, 32000, 64000, 120000, 300000, 600000, 900000, 1200000, 1500000, 1800000, 2100000],
+    [
+      ...Array.from({ length: 3 }, (_, i) => [16 + i, 2400000 + i * 300000]),
+      ...Array.from({ length: 18 }, (_, i) => [19 + i, 3000000 + i * 200000])
+    ]
+  ),
+  mystic: standardExtended(
+    [2000, 4000, 8000, 16000, 32000, 64000, 120000, 240000, 360000, 480000, 600000, 720000, 840000, 960000, 1080000],
+    Array.from({ length: 20 }, (_, i) => [17 + i, 1200000 + i * 120000])
+  )
+};
+
 const classes = {};
 for (const [key, c] of Object.entries(raw.CLASSES)) {
   const outKey = CLASS_KEYS[key] ?? key;
@@ -83,6 +115,7 @@ for (const [key, c] of Object.entries(raw.CLASSES)) {
     namePt: c.nome,
     maxLevel: c.max,
     xp: c.xp,
+    extendedXp: EXTENDED_XP[outKey] ?? [...c.xp],
     hitDie: c.vida?.d ?? 8,
     hpAfterFixed: c.vida?.apos ?? 0,
     primeRequisites: c.primarios ?? [],
@@ -103,6 +136,50 @@ for (const [key, c] of Object.entries(raw.CLASSES)) {
     demiTraining: c.treinoDemi ?? []
   };
 }
+
+// The source sheet omits the optional Mystic. Its progression, saves and
+// abilities are transcribed here from the Rules Cyclopedia (pp. 28-29).
+classes.mystic = {
+  key: "mystic",
+  name: "Mystic",
+  namePt: "Místico",
+  maxLevel: 16,
+  xp: [0, 2000, 4000, 8000, 16000, 32000, 64000, 120000, 240000, 360000,
+    480000, 600000, 720000, 840000, 960000, 1080000],
+  extendedXp: EXTENDED_XP.mystic,
+  hitDie: 6,
+  hpAfterFixed: 2,
+  primeRequisites: ["str", "dex"],
+  requirements: ["wis", "dex"],
+  saves: {
+    thresholds: [3, 6, 9, 12, 15, 16],
+    rows: [
+      [12, 10, 8, 6, 6, 5],
+      [13, 11, 9, 7, 6, 6],
+      [14, 12, 10, 8, 7, 6],
+      [15, 13, 11, 9, 8, 7],
+      [16, 14, 12, 10, 9, 8]
+    ]
+  },
+  attack: raw.ATK_F,
+  attackColumn: "Mystic",
+  choices: [],
+  resources: ["AC bonus", "movement", "unarmed attacks"],
+  spells: null,
+  armor: null,
+  ranks: [],
+  milestones: [
+    [2000, "Awareness"],
+    [8000, "Heal Self"],
+    [32000, "Speak with Animals"],
+    [120000, "Resistance"],
+    [360000, "Speak with Anyone"],
+    [600000, "Mind Block"],
+    [840000, "Blankout"],
+    [1080000, "Gentle Touch"]
+  ],
+  demiTraining: []
+};
 
 function normalizeMovement(row) {
   const [limit, turn, round] = row;

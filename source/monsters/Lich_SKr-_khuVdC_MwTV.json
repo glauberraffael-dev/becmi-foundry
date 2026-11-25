@@ -20,11 +20,11 @@
     "treasure": "See description below",
     "intelligence": 18,
     "alignment": "Chaotic",
-    "xpValue": 0,
+    "xpValue": 16,
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Very Rare).",
-    "description": "|Lich Spellcaster|Levels, Hit Point|s, and XP Va|lues||| |---|---|---|---|---|---| |Cleric Lich |||Magic-User Lich ||| |Level|Hit Points |XP Value|Level|Hit Points |XP Value| |21|9d6 + 12|10,500|21*|9d4 +12|12,500| |22|9d6 + 13 |11,750|22*|9d4 + 13 |14,000| |23|9d6 + l4|13,000|23*|9d4 +14|15,500| |24|9d6 + 15|14,250|24*|9d4 + 15|17,000| |25|9d6 +16|15,500|25*|9d4 +16|18,500| |26|9d6 + 17|16,750 |26*|9d4 + 17|20,000 | |27|9d6 + 18|18,000|27*|9d4 +18|21,500| |28|9d6 + 19|19,250|28*|9d4 + 19|23,000| |29|9d6 + 20|20,50",
-    "special": "",
+    "description": "plus the amounts of coins, gems, and jewelry given for Treasure Type H in Chapter 16 (but at 90% chance for each type). The number and severity of traps and other dangers to intruders should be appropriate to protect such a hoard. A magic-user lich normally has ld2 spells on it of permanent nature—most often detect invisible or fly. A clerical lich normally has 3d4 types of other undead nearby, acting as servants. A full lair of each type (maximum number appearing) is usually present. Either type of lich can summon other powerful undead for aid. The summons can be made simply by concentrating, and the creature(s) responding arrive 1d100 rounds later, depending on their distance. The summons may be made as often as desired, but any one type of creature will respond only once per day at most.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A magic-user lich normally has ld2 spells on it of permanent nature—most often detect invisible or fly.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Lich"
+      "key": "Lich",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

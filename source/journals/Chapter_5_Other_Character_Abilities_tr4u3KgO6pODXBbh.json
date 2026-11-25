@@ -22,6 +22,15 @@
       },
       "_id": "vWEGniy90UTBIlDY",
       "_key": "!journal.pages!tr4u3KgO6pODXBbh.vWEGniy90UTBIlDY"
+    },
+    {
+      "name": "Tables 1",
+      "type": "text",
+      "text": {
+        "content": "<h2>Other Character Abilities — Tables 1</h2><table><thead><tr><th>Rank</th><th>Attack bonus</th><th>Damage option</th><th>Defense bonus</th><th>Choices spent</th></tr></thead><tbody><tr><td>Básico</td><td>0 / 0</td><td>—</td><td>+0</td><td>1</td></tr><tr><td>Habilidoso</td><td>2 / 1</td><td>up to 4 HD</td><td>+1</td><td>2</td></tr><tr><td>Especialista</td><td>4 / 2</td><td>up to 8 HD</td><td>+2</td><td>3</td></tr><tr><td>Mestre</td><td>6 / 4</td><td>up to 12 HD</td><td>+4</td><td>4</td></tr><tr><td>Grão-Mestre</td><td>8 / 6</td><td>up to 16 HD</td><td>+6</td><td>5</td></tr></tbody></table>"
+      },
+      "_id": "Basm4WVhBIUECvWL",
+      "_key": "!journal.pages!tr4u3KgO6pODXBbh.Basm4WVhBIUECvWL"
     }
   ]
 }

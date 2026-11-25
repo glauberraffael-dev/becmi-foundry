@@ -71,6 +71,48 @@ function normaliseStats(raw) {
   return stats;
 }
 
+// Stat lines are tables, not prose. Keeping them out of `description` is what
+// makes the compendium readable and lets the sheet show one field per stat.
+const STAT_TEXT = "Armor Class|Hit Dice|Move|Flying|Attacks|Damage|No\\. Appearing|Save As|Morale|Treasure Type|Intelligence|Alignment|XP Value|Load";
+// OCR stat rows often begin with a variant label (for example
+// "_Normal Giant_ Armor Class: ..."), so matching only at the start of the
+// line leaves entire stat tables inside the prose. Match them anywhere.
+const STAT_LINE_RE = new RegExp(`(?:${STAT_TEXT})\\s*:`, "i");
+const LORE_SKIP_RE = /^(?:_?(?:Monster Type|Terrain)\s*:|\|)/i;
+const SPECIAL_RE = /^\*\*(Special Attacks|Special Defenses|Attacks|Defenses):\*\*\s*(.*)$/i;
+
+function loreFrom(bodyLines) {
+  return bodyLines
+    .filter((line) => !LORE_SKIP_RE.test(line.trim())
+      && !STAT_LINE_RE.test(line)
+      && !SPECIAL_RE.test(line.trim()))
+    .join("\n");
+}
+
+/** Pull labelled combat notes out of the prose and keep them in their own field. */
+function specialFrom(bodyLines) {
+  const sections = [];
+  let current = null;
+  for (const line of bodyLines) {
+    const match = line.trim().match(SPECIAL_RE);
+    if (match) {
+      current = { label: match[1], parts: [match[2]] };
+      sections.push(current);
+      continue;
+    }
+    if (!current) continue;
+    if (!line.trim()) {
+      current = null;
+      continue;
+    }
+    current.parts.push(line.trim());
+  }
+  return sections
+    .map((section) => `${section.label}: ${section.parts.join(" ").trim()}`)
+    .filter((text) => text.split(":")[1]?.trim())
+    .join("\n");
+}
+
 function buildActor(name, stats, bodyLines, variant) {
   const body = bodyLines.join("\n");
   const move = parseMovement(stats.move);
@@ -79,6 +121,13 @@ function buildActor(name, stats, bodyLines, variant) {
   const cleanVariant = variant ? cleanName(variant).replace(/^_+|_+$/g, "") : "";
   const fullName = cleanVariant ? `${name} (${cleanVariant})` : name;
   const hd = parseHitDice(stats.hd ?? "1");
+  const lore = loreFrom(bodyLines);
+  const statSummary = [
+    `AC ${flatten(stats.ac ?? "")}`.trim(),
+    `HD ${flatten(stats.hd ?? "")}`.trim(),
+    `attacks ${flatten(stats.attacks ?? "")}`.trim(),
+    `damage ${flatten(stats.damage ?? "")}`.trim()
+  ].filter((part) => !/\s$/.test(part) && part.split(" ").length > 1).join("; ");
 
   return {
     name: fullName,
@@ -100,8 +149,8 @@ function buildActor(name, stats, bodyLines, variant) {
       xpValue: toFirstNumber(stats.xpValue, 0),
       terrain: flatten(terrain ?? ""),
       monsterType: flatten(typeLine ?? ""),
-      description: summary(body, 520),
-      special: "",
+      description: summary(lore || statSummary, 900),
+      special: specialFrom(bodyLines),
       notes: "",
       source: "Rules Cyclopedia",
       page: 0
@@ -144,7 +193,12 @@ function parseFlattenedVariants(line, parentName = "") {
     const stats = {};
     for (const segment of segments) {
       const nameMatch = segment.match(/^\*\*([^*]+)\*\*/) ?? segment.match(/^_([^_]+)_/);
-      variants.push(cleanName(nameMatch?.[1] ?? `Variant ${variants.length + 1}`));
+      const label = String(nameMatch?.[1] ?? "").split(/\s+/)[0];
+      const form = label && label.toLowerCase() !== parentName.toLowerCase()
+        ? label
+        : `Form ${variants.length + 1}`;
+      const variantName = cleanName(`${parentName} (${form})`);
+      variants.push(variants.includes(variantName) ? `${variantName} ${variants.length + 1}` : variantName);
       const parsed = parseStatLine(segment.replace(/^\*\*[^*]+\*\*\s*/, "").replace(/^_[^_]+\_\s*/, ""));
       for (const [key, value] of Object.entries(parsed)) {
         stats[key] = Array.isArray(stats[key]) ? stats[key] : [];
@@ -231,7 +285,7 @@ function main() {
     if (heading || boldStat) {
       flush();
       const name = cleanName(boldStat ? boldStat[1] : heading[1]);
-      if (name) current = { name, lines: [] };
+      if (name && !/^DM Checklist\b/i.test(name)) current = { name, lines: [] };
       continue;
     }
     if (current) current.lines.push(line);

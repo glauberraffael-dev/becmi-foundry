@@ -21,9 +21,9 @@
     "intelligence": 2,
     "alignment": "Neutral",
     "xpValue": 1850,
-    "terrain": "",
-    "monsterType": "",
-    "description": "Armor Class: 7 Hit Dice: 16 (L) Move: 150' 50' Attacks: 1 bite Damage: 4d6 No. Appearing: 0 (1d3) Save As: F8 Morale: 9 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 1,850 Load: A pteranodon can carry 2,000 cn at full speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They Barding Multiplier: x 1.",
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "description": "Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They Barding Multiplier: x 1.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Plesiosaurus"
+      "key": "Plesiosaurus",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

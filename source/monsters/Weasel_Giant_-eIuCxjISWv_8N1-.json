@@ -22,8 +22,8 @@
     "alignment": "Neutral",
     "xpValue": 125,
     "terrain": "Cavern, Ruins, Woods.",
-    "monsterType": "Giant Animal (Common). A giant weasel is 8'-9' long and covered with a richly colored fur of white, gold, or brown. These quick and vicious predators hunt singly or in groups. Once they bite, they will hold on and suck blood, doing 2d4 points of damage each round until their prey is dead or until they are killed.",
-    "description": "Armor Class: 7 Hit Dice: 4 + 4 (L) Move: 150' (50') Attacks: 1 bite + special Damage: 2d4 No. Appearing: 1d4 (1d6) Save As: F3 Morale: 8 Treasure Type: V Intelligence: 2 Alignment: Neutral XP Value: 125 Monster Type: Giant Animal (Common). A giant weasel is 8'-9' long and covered with a richly colored fur of white, gold, or brown. These quick and vicious predators hunt singly or in groups.",
+    "monsterType": "Giant Animal (Common).",
+    "description": "Giant weasels have infravision to 30' and can track parties by scent. They will pursue wounded prey in preference to all other. They live in tunnels underground.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Weasel, Giant"
+      "key": "Weasel, Giant",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

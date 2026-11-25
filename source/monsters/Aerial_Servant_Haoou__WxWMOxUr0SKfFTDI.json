@@ -21,10 +21,10 @@
     "intelligence": 12,
     "alignment": "Chaotic",
     "xpValue": 4050,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Normal Animal (Rare).",
-    "description": "Armor Class: 0 Hit Dice: 16 (M) Move: 240' (80') Flying: 720' (240') Attacks: 1 Damage: 4d8 No. Appearing: 1 (1d4) Save As: F16 Morale: 9 Treasure Type: Nil or Special Intelligence: 12 Alignment: Chaotic XP Value: 4,050 PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are.",
-    "special": "",
+    "description": "PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are. Here are some sample herd creatures: Snow apes are squat, baboonlike creatures with shaggy white fur. They are somewhat intelligent, and often make simple tools like clubs or sharpened bones. They cannot, however, grasp more complicated concepts, such as the use of a bow and arrow. The DM may add other herd animals within these ranges. Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4). The snow ape uses one arm to attack with a weapon and attempts to hug its vic- Aerial servants are humanoid in shape. They appear to be man-shaped figures of roiling fog; they are eerie and menacing. In any given herd only one animal in four is male; the rest are females and young.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Aerial Servant (Haoou)"
+      "key": "Aerial Servant (Haoou)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

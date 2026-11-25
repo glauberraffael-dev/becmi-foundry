@@ -16,15 +16,15 @@
     "damage": "By weapon",
     "appearing": "2d8 (6d10)",
     "saveAs": "Normal Man",
-    "morale": 79,
+    "morale": 7,
     "treasure": "(R) C",
     "intelligence": 9,
     "alignment": "Chaotic",
     "xpValue": 5,
     "terrain": "Cavern; Hill, Mountain, Woods.",
-    "monsterType": "Humanoid (Common). Goblins are a humanoid race, small (3 1/2' to 4 1/2' tall) and very ugly by human standards. They have pointed ears and misshapen teeth. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light. Goblins live underground in caves and caverns",
-    "description": "and have well-developed infravision, with a 90' range. In full daylight they fight with a penalty of - 1 on their attack rolls. They normally send hunting parties out at night to scavenge food and attack poorly-defended groups of humans. There is a 20% chance that when goblins are encountered outdoors, 1 of every 4 will be riding a dire wolf. Goblins hate dwarves and will attack them on sight. Armor Class: 6 Hit Dice: 1-1 (S) Move: 90' (30') Attacks: 1 weapon Damage: By weapon No.",
-    "special": "",
+    "monsterType": "Humanoid (Common).",
+    "description": "and have well-developed infravision, with a 90' range. In full daylight they fight with a penalty of - 1 on their attack rolls. They normally send hunting parties out at night to scavenge food and attack poorly-defended groups of humans. There is a 20% chance that when goblins are encountered outdoors, 1 of every 4 will be riding a dire wolf. Goblins hate dwarves and will attack them on sight. In the goblin lair lives a goblin king with 15 hit points who fights as a 3 HD monster and gains a +1 bonus to damage rolls. The goblin king has a bodyguard of 2d6 goblins who fight as 2 Hit Dice monsters and have 2d6 hit points each. The king and his bodyguard may fight in full daylight without a penalty. The goblin morale is 9 rather than 7 as long as their king is with them and still alive. There can be goblin spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;There can be goblin spellcasters; see \"Monster Spellcasters\" later in this chapter.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Goblin"
+      "key": "Goblin",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

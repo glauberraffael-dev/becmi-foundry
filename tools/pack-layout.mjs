@@ -36,6 +36,40 @@ export const TREASURE_FOLDER_ORDER = [
 
 export const EQUIPMENT_GROUP_ORDER = ["weapons", "armor", "adventuring", "transport"];
 export const CLASS_FOLDER_ORDER = ["Classes", "Subclasses"];
+export const MONSTER_CATEGORY_ORDER = [
+  "Normal Animal", "Lowlife", "Construct", "Dragon", "Humanoid", "Monster",
+  "Planar Monster", "Undead", "Unclassified"
+];
+
+/** Category used for both the monster folder and its deterministic ordering. */
+export function monsterCategory(doc) {
+  const declared = doc.flags?.becmi?.category;
+  if (MONSTER_CATEGORY_ORDER.includes(declared)) return declared;
+
+  const name = String(doc.name ?? "").toLowerCase();
+  // The "Monster Type" line is the Rules Cyclopedia classification. Read only
+  // its first clause: combined entries list several unrelated creatures and
+  // would otherwise put ordinary humans, elves or pegasi among the undead.
+  const primary = String(doc.system?.monsterType ?? "").toLowerCase().split(";")[0];
+  const rules = [
+    [/undead|banshee|ghost|poltergeist|haunt|phantom|apparition|shade|vision|skeleton|zombie|ghoul|wight|wraith|mummy|spectre|vampire|lich|revenant/, "Undead"],
+    [/dragon|drake|wyvern/, "Dragon"],
+    [/construct|golem|automaton|animated statue|statue, living/, "Construct"],
+    [/planar|demon|devil|elemental|nightshade|astral|ethereal|djinni|efreeti|rakshasa|archon|invisible stalker|aerial servant/, "Planar Monster"],
+    [/lowlife|slime|ooze|pudding|jelly|fungus|mold|shrieker|grab grass|yellow mold/, "Lowlife"],
+    [/animal|bat|bear|boar|whale|shark|fish|ape|dinosaur|pterosaur|pteranodon|plesiosaurus|rat|wolf|snake|toad|manta|slug|worm|beetle|fly|spider|scorpion|locust/, "Normal Animal"],
+    [/humanoid|human|demihuman|dwarf|elf|halfling|goblin|orc|kobold|gnoll|hobgoblin|mystic|giant|troll|ogre|lycanthrope|thoul|minotaur|sphinx|dryad|, giant\b/, "Humanoid"],
+    [/monster|mimic|hydra|carrion crawler|rust monster|mujina/, "Monster"]
+  ];
+  for (const [pattern, category] of rules) {
+    if (pattern.test(primary)) return category;
+  }
+  if (/^(?:black|blue|green|red|white|gold|silver|bronze|copper|brass)\s*\(/.test(name)) return "Dragon";
+  for (const [pattern, category] of rules) {
+    if (pattern.test(name)) return category;
+  }
+  return "Unclassified";
+}
 
 /** Normalize an extracted treasure category into its display folder name. */
 export function treasureCategory(value) {
@@ -90,6 +124,7 @@ export function folderKeyForDocument(pack, doc) {
       ?? "Adventuring Gear";
   }
   if (pack === "classes") return doc.type === "feature" ? "Subclasses" : "Classes";
+  if (pack === "monsters") return `monsters:${monsterCategory(doc)}`;
   if (pack === "treasure") return treasureCategory(doc.flags?.becmi?.category ?? doc.system?.treasureType);
   return null;
 }
@@ -135,6 +170,10 @@ export function compareDocuments(pack, a, b) {
   if (pack === "classes") {
     const folder = (doc) => doc.type === "feature" ? "Subclasses" : "Classes";
     return rank(folder(a), CLASS_FOLDER_ORDER) - rank(folder(b), CLASS_FOLDER_ORDER) || byName(a, b);
+  }
+  if (pack === "monsters") {
+    return rank(monsterCategory(a), MONSTER_CATEGORY_ORDER)
+      - rank(monsterCategory(b), MONSTER_CATEGORY_ORDER) || byName(a, b);
   }
   return byName(a, b);
 }

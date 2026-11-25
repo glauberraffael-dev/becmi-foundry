@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 25,
     "terrain": "Plane of Earth.",
-    "monsterType": "Planar Monster (Very Rare). The kryst are intelligent beings made of crystalline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the elemental plane of Earth.",
-    "description": "An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task.",
-    "special": "",
+    "monsterType": "Planar Monster (Very Rare).",
+    "description": "An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task. The race of \"invisible stalkers\" (which is the human name for the species) lives on the elemental plane of Air. They call themselves the \"sshai.\" Invisible stalkers are much faster speed on their home plane: 360' (120'). Kryst are immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on air.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An invisible stalker is most often used to track and slay enemies. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Insect Swarm"
+      "key": "Insect Swarm",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

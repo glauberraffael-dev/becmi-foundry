@@ -20,11 +20,11 @@
     "treasure": "Nil",
     "intelligence": 2,
     "alignment": "Neutral",
-    "xpValue": 0,
+    "xpValue": 3700,
     "terrain": "Giant Slug: Cavern, Ruins. Giant Snail: Woods.",
     "monsterType": "Giant Animal (Rare).",
-    "description": "Armor Class: 8 Hit Dice: 9 or more (see below) (L) Move: 60' (20') Burrowing: 30'(10') Attacks: 1 bite or 1 spit Damage: 1d12 or as dragon breath No. Appearing: 1(1) Save As: F (level = 1/2 HD) Morale: 8 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: See below Giant Slug XP by Hit Dice: 2,300( 9) 3,250(13) 4,300(17) 2,500(10) 3,500(14) 4,825 (18) 2,700(11) 3,750(15) 5,350(19) 3,000(12) 4,050(16) 5,975 (20) Monster Type: Giant Animal (Rare).",
-    "special": "",
+    "description": "The giant slug is a huge boneless creature that dwells in underground caverns and dungeons. Its rubbery body allows it to squeeze through any opening 5' x 5' or larger. Because of its elasticity, attackers do not get to count strength bonuses when attacking them, blunt weapons inflict only magic damage (if not magical, they do no damage at all), and edged weapons inflict only half damage (plus magic adjustment). Furthermore, a fighter's Smash option inflicts no additional damage. The giant slug can attack with its sharp tongue (which does 1d12 damage), but prefers to spit acid. Their ranged acid attack can fly to a 5' range per Hit Die (45' at 9 Hit Dice, etc.). The first such attack will always miss (the slug uses it to range in on victims), but following attacks are calculated normally.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Because of its elasticity, attackers do not get to count strength bonuses when attacking them, blunt weapons inflict only magic damage (if not magical, they do no damage at all), and edged weapons inflict only half damage (plus magic adjustment). The giant slug can attack with its sharp tongue (which does 1d12 damage), but prefers to spit acid. Their ranged acid attack can fly to a 5' range per Hit Die (45' at 9 Hit Dice, etc.).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Slug, Giant"
+      "key": "Slug, Giant",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

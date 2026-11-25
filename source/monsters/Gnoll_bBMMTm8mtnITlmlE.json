@@ -22,9 +22,9 @@
     "alignment": "Chaotic",
     "xpValue": 20,
     "terrain": "Hill, Mountain.",
-    "monsterType": "Humanoid (Common). Gnolls are ferocious humanoids of low intelligence. They resemble a cross between a human and a hyena. They live in rough, rugged wasteland and wilderness areas. Gnolls may use all weapons, but most do not work metal; they steal most of their metal weapons from humans. They are strong, but dislike work and prefer to bully and steal. For every 20 gnolls encountered, one will be a leader with 16 hit points who attacks as a 3 Hit Die monster.",
-    "description": "Armor Class: 5 Hit Dice: 2 (L) Move: 90' (30') Attacks: 1 weapon Damage: By weapon + 1 No. Appearing: 1d6 (3d6) Save As: F2 Morale: 8 Treasure Type: (P) D Intelligence: 7 Alignment: Chaotic XP Value: 20 Monster Type: Humanoid (Common). Gnolls are ferocious humanoids of low intelligence. They resemble a cross between a human and a hyena. They live in rough, rugged wasteland and wilderness areas. Gnolls may use all weapons, but most do not work metal; they steal most of their metal weapons from humans.",
-    "special": "",
+    "monsterType": "Humanoid (Common).",
+    "description": "Gnolls are rumored to be the result of a magical combination of a gnome and a troll by an evil magic-user. There can be gnoll spellcasters; see \"Monster Spellcasters\" later in this chapter. Terrain: Hill, Mountain.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Gnolls are rumored to be the result of a magical combination of a gnome and a troll by an evil magic-user. There can be gnoll spellcasters; see \"Monster Spellcasters\" later in this chapter.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Gnoll"
+      "key": "Gnoll",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

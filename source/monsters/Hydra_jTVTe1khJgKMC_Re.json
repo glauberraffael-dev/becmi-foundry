@@ -23,8 +23,8 @@
     "xpValue": 175,
     "terrain": "Hydra, Regenerating Hydra: Swamp. Sea Hydra: Lake, Ocean. Flying Hydra: Mountain.",
     "monsterType": "Monster (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 5-12 (1 per head) (L) Move: 120' (40') Attacks: 5-12 bites (1 per head) Damage: 1d10 each No. Appearing: 1 (1) Save As: F5-12 Morale: 11 Treasure Type: B Intelligence: 2 Alignment: Neutral XP Value: 175, 275, 450, 650, 900, 1,000, 1,100, or 1,250 Monster Type: Monster (Rare). A hydra is a large creature with a dragonlike body and 5-12 snakelike heads. It has one Hit Die for each head, and each head has 8 hit points. Its saving throws are as a fighter level equal to the number of heads.",
-    "special": "",
+    "description": "A hydra is a large creature with a dragonlike body and 5-12 snakelike heads. It has one Hit Die for each head, and each head has 8 hit points. Its saving throws are as a fighter level equal to the number of heads. The hydra will attack with all of its heads every round. For every 8 points of damage a hydra takes, one head is destroyed. For example, if a 7- headed hydra took 18 points of damage, it would only attack with 5 heads in the next round. Special, unusual hydras can be created. These could have poisonous bites, or breathe fire (as a hellhound, for 8 points of damage per head); a few more examples are shown below. Such creatures should be placed to guard special treasures. Sea Hydra: This monster has adapted to water. It has fins instead of legs. It is otherwise the same as its land-dwelling cousins.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;These could have poisonous bites, or breathe fire (as a hellhound, for 8 points of damage per head); a few more examples are shown below.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Hydra"
+      "key": "Hydra",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

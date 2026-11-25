@@ -13,7 +13,8 @@ const CLASS_ALIASES = {
   cleric: "cleric",
   thief: "thief", rogue: "thief",
   "magic-user": "magic-user", magicuser: "magic-user", mage: "magic-user", wizard: "magic-user",
-  dwarf: "dwarf", elf: "elf", halfling: "halfling"
+  dwarf: "dwarf", elf: "elf", halfling: "halfling",
+  mystic: "mystic", monk: "mystic"
 };
 
 export function normalizeClassKey(name) {
@@ -24,6 +25,60 @@ export function normalizeClassKey(name) {
 export function getRCClass(name) {
   const key = normalizeClassKey(name);
   return key ? RC.classes[key] : null;
+}
+
+/* ------------------------------------------------------------------ *
+ * Experience and automatic level advancement                         *
+ * ------------------------------------------------------------------ */
+
+/**
+ * Build the XP thresholds for levels 2..maxLevel.
+ *
+ * RC data stores `xp[0]` as the XP for level 1, so `xp[level - 1]` is the XP
+ * needed to reach `level + 1`. Class items use a 1-indexed `xpTable` instead;
+ * both shapes are accepted here. Non-monotonic OCR values are repaired so the
+ * resulting thresholds can never run backwards.
+ */
+export function xpThresholds(classInfo = {}, requestedMaxLevel) {
+  const key = normalizeClassKey(classInfo.key ?? classInfo.name ?? classInfo.classKey);
+  const rc = key ? RC.classes[key] : null;
+  const maxLevel = Math.max(1, Number(requestedMaxLevel ?? classInfo.maxLevel ?? rc?.maxLevel ?? 36) || 1);
+  const table = classInfo.xpTable ?? {};
+  const source = rc?.xp ?? classInfo.xp ?? [];
+  const thresholds = [];
+  let previous = -1;
+
+  for (let level = 2; level <= maxLevel; level++) {
+    const fromRc = Number(source[level - 1]);
+    const fromTable = Number(table[String(level)]);
+    let value = Number.isFinite(fromRc) && fromRc >= 0 ? fromRc : fromTable;
+    if (!Number.isFinite(value) || value < 0) value = previous + 1;
+    if (value <= previous) value = previous + 1;
+    thresholds.push(value);
+    previous = value;
+  }
+  return thresholds;
+}
+
+/** XP needed to advance from `level` to the next level (null at the cap). */
+export function xpForNextLevel(classInfo, level) {
+  const maxLevel = Math.max(1, Number(classInfo?.maxLevel) || 36);
+  const current = Math.max(1, Number(level) || 1);
+  if (current >= maxLevel) return null;
+  return xpThresholds(classInfo, maxLevel)[current - 1] ?? null;
+}
+
+/** Highest level reached by `xp`, starting at `currentLevel` and respecting the cap. */
+export function levelForXp(classInfo, xp, currentLevel = 1) {
+  const thresholds = xpThresholds(classInfo);
+  const start = Math.min(thresholds.length + 1, Math.max(1, Number(currentLevel) || 1));
+  const earned = Math.max(0, Number(xp) || 0);
+  let level = start;
+  for (let index = start - 1; index < thresholds.length; index++) {
+    if (earned < thresholds[index]) break;
+    level = index + 2;
+  }
+  return level;
 }
 
 /* ------------------------------------------------------------------ *

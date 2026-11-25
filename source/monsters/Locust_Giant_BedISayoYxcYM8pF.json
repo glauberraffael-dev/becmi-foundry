@@ -23,8 +23,8 @@
     "xpValue": 30,
     "terrain": "Cavern.",
     "monsterType": "Lowlife (Common).",
-    "description": "Armor Class: 4 Hit Dice: 2 (S) Move: 60' (20') Flying: 180' (60') Attacks: 1 bite or 1 bump or 1 spit Damage: 1d2 or 1d4 or see below No. Appearing: 2d10 (0) Save As: F2 Morale: 5 Treasure Type: Nil Intelligence: 0 Alignment: Neutral XP Value: 30 Monster Type: Lowlife (Common). Giant locusts are 2'-3' long and live underground. They may be mistaken for statues (or might not be noticed at all) until approached, because of their stone-gray color.",
-    "special": "",
+    "description": "Giant locusts are 2'-3' long and live underground. They may be mistaken for statues (or might not be noticed at all) until approached, because of their stone-gray color. They are herbivores, and also eat fungus such as yellow mold and shriekers. They cannot be harmed by yellow mold or most poisons. Instead of fighting, they usually flee by jumping away (up to 60'). Unfortunately they often become confused, and may accidentally jump into a party (50% chance per jump). If so, a victim is determined randomly and an attack roll is made. If the giant locust hits a character, the victim is battered for 1d4 points of damage. The locust then flies away. When frightened or attacked, giant locusts make a loud shrieking noise to warn their fellows. In dungeons, this shriek has a 20% chance per round of attracting wandering monsters.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They cannot be harmed by yellow mold or most poisons.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Locust, Giant"
+      "key": "Locust, Giant",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

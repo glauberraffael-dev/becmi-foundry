@@ -16,14 +16,14 @@
     "damage": "1d6",
     "appearing": "2d6(3d6)",
     "saveAs": "F1",
-    "morale": 86,
+    "morale": 8,
     "treasure": "Nil",
     "intelligence": 2,
     "alignment": "Neutral",
     "xpValue": 25,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare).",
-    "description": "||Normal Wolf|Dire Wolf| |---|---|---| |Armor Class:|1|6| |Hit Dice:|2 +2(M)|4 + 1 (M)| |Move:|180'(60')|150'(50')| |Attacks:|1 bite|1 bite| |Damage:|1d6|2d4| |No. Appearing:|2d6(3d6)|1d4(2d4)| |Save As:|Fl|F2| |Morale:|8 or 6|8| ||(see below)|| |Treasure Type:|Nil|Nil| |Intelligence:|2|4| |Alignment:|Neutral|Neutral| |XP Value:|25|125| Monster Type: Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare). Wolves are large, intelligent canine carnivores, and hunt in packs.",
+    "description": "Wolves are large, intelligent canine carnivores, and hunt in packs. Though they prefer the wilderness, they may occasionally be found in",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Normal Wolf_",
-      "key": "Wolf (Normal Wolf)"
+      "variant": "",
+      "key": "Wolf (Normal Wolf)",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

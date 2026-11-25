@@ -12,19 +12,19 @@
       "dungeon": 0,
       "outdoor": 0
     },
-    "attacks": "",
-    "damage": "",
-    "appearing": "",
-    "saveAs": "",
+    "attacks": "1 attack",
+    "damage": "By weapon",
+    "appearing": "1",
+    "saveAs": "F8",
     "morale": 7,
-    "treasure": "",
+    "treasure": "Nil",
     "intelligence": 5,
     "alignment": "Neutral",
-    "xpValue": 0,
+    "xpValue": 2850,
     "terrain": "Any.",
     "monsterType": "Planar Monster, Enchanted (Common).",
-    "description": "Air, Earth, Fire, Water Armor Class: 2, 0, or -2 (see below) Hit Dice: 8, 12, or 16 (see below) (L) Move: Air (Flying): 360'(120') Earth: 60 '1(20') Fire: 120' (40') Water: 60' (20') Swimming: 180' (60') Attacks: 1 or Special Damage: ld8, 2d8, or 3d8 (see below) No.",
-    "special": "",
+    "description": "An elemental is a magical, enchanted creature that lives on another plane of existence (one of the elemental planes). It can be harmed only by magic or magical weapons. Staff Elementals (the weakest) are summoned by a magic-user with a special staff. Device Elementals are summoned with the However, an elemental cannot pass a protection from evil spell effect. use of a special miscellaneous magical item. Conjured Elementals are summoned by the casting of the 5th level magic-user spell. An elemental will vanish if it or its summoner is slain, or when the summoner sends it back to its plane (which requires control), or if a dispel magic is cast upon it. To summon an elemental, a character must have a large amount of the element nearby (such as open air, bare earth, a pool of water or a bonfire). When the elemental arrives, it is hostile, and must be controlled by concentration at all times.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An elemental is a magical, enchanted creature that lives on another plane of existence (one of the elemental planes). It can be harmed only by magic or magical weapons. Staff Elementals (the weakest) are summoned by a magic-user with a special staff.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Elemental (Water)"
+      "key": "Elemental (Water)",
+      "category": "Planar Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "032370bc632ec516"
 }

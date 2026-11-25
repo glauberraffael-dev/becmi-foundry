@@ -20,11 +20,11 @@
     "treasure": "Special",
     "intelligence": 9,
     "alignment": "Lawful",
-    "xpValue": 0,
+    "xpValue": 425,
     "terrain": "Any; Plane of Air. 60' (20') damage per round. Unarmored victims (and 180' (60') monsters with AC 6 or worse) take 4 points per **Kobold** round.",
     "monsterType": "Humanoid (Common).",
-    "description": "\"area effect\" and automatically hits. All armored negotiation to combat, and have few enemies. 2 victims within the area (and any monsters with They fear earth-type creatures and attacks. 5 to 12 (L) AC 5 or better) automatically take 2 points of Terrain: Any; Plane of Air. 60' (20') damage per round. Unarmored victims (and 180' (60') monsters with AC 6 or worse) take 4 points per Kobold round.",
-    "special": "",
+    "description": "\"area effect\" and automatically hits. All armored negotiation to combat, and have few enemies. 2 victims within the area (and any monsters with They fear earth-type creatures and attacks. 5 to 12 (L) AC 5 or better) automatically take 2 points of Terrain: Any; Plane of Air. 60' (20') damage per round. Unarmored victims (and 180' (60') monsters with AC 6 or worse) take 4 points per Kobold round. Any victim who runs out of the swarm, or who swats the insects instead of making another attack or taking another action, takes only 1 point per round. To swat at the insects, the victim must use a weapon or torch; attempts to swat with hands or arms have no effect. If the swarm is damaged, it will pursue its attacker nearly without fail (ML 11). A victim can still escape either by disappearing from sight (invisible, around a corner, etc.",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;All armored negotiation to combat, and have few enemies. 2 victims within the area (and any monsters with They fear earth-type creatures and attacks. 5 to 12 (L) AC 5 or better) automatically take 2 points of Terrain:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Any; Plane of Air. 60' (20') damage per round. A victim can still escape either by disappearing from sight (invisible, around a corner, etc.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Hydrax"
+      "key": "Hydrax",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

@@ -14,7 +14,7 @@
     },
     "attacks": "2 claws/I bite 4 claws/1 bite",
     "damage": "`1d4/1d4/1d8` 1d6(x4)/2d6 No. Appearing 1d4 + 1 (2d4) 1d3(1d3)",
-    "appearing": "",
+    "appearing": "1",
     "saveAs": "F8 F12",
     "morale": 9,
     "treasure": "F E",
@@ -22,9 +22,9 @@
     "alignment": "Chaotic",
     "xpValue": 200,
     "terrain": "Ruins.",
-    "monsterType": "",
-    "description": "Terrain: Ruins. Flame* Frost* Armor Class: 2 3 Hit Dice: 8*(L) 12* (L) Move: 120' (40') 120' (40') Attacks: 2 claws/I bite 4 claws/1 bite Damage: `1d4/ld4/ld8` 1d6(x4)/2d6 No. Appearing 1d4 + l (2d4) 1d3(ld3) Save As: F8 F12 Morale: 8 9 Treasure Type: F E Intelligence: 1 1 Alignment: Neutral Chaotic XP Value: 1,200 2,125",
-    "special": "",
+    "monsterType": "Monster",
+    "description": "AC 3; HD 12; Attacks: 2 claws/I bite 4 claws/1 bite; Damage: `1d4/1d4/1d8` 1d6(x4)/2d6 No. Appearing 1d4 + 1 (2d4) 1d3(1d3)",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; 2 claws/I bite 4 claws/1 bite;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Rust Monster (Frost*)"
+      "key": "Rust Monster (Frost*)",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

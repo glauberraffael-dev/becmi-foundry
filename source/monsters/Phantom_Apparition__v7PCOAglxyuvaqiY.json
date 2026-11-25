@@ -21,9 +21,9 @@
     "intelligence": 11,
     "alignment": "Chaotic",
     "xpValue": 3,
-    "terrain": "",
-    "monsterType": "",
-    "description": "See Djinni, Greater. Apparition* Shade* Vision* Armor Class: 0 0 0 Hit Dice: 10* (M) 11* (M) 12* (M) Move: 180' (60') 120' (40') 0 (see below) Attacks: 2 claws 1 dagger 2-8 swords Damage: ld6 + 2/ld6 + 2 3d4 1d8 each (see below) No. Appearing: 1(1) 1(0) 1(1) Save As: M10 T11 C12 Morale: 10 9 12 Treasure Type: (L) N, O (L, N, V) L, N, O Intelligence: 11 10 9 Alignment: Chaotic Chaotic Chaotic XP Value: 3,250 3.500 3,875",
+    "terrain": "Any",
+    "monsterType": "Undead",
+    "description": "See Djinni, Greater.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Phantom (Apparition*)"
+      "key": "Phantom (Apparition*)",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

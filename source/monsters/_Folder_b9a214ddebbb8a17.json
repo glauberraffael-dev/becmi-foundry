@@ -1,0 +1,13 @@
+{
+  "_id": "b9a214ddebbb8a17",
+  "_key": "!folders!b9a214ddebbb8a17",
+  "name": "Dragons",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

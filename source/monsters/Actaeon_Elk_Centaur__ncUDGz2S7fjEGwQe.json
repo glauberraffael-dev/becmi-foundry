@@ -23,8 +23,8 @@
     "xpValue": 2700,
     "terrain": "Woods.",
     "monsterType": "Monster (Rare).",
-    "description": "each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.). If the saving throw is successful, the transformation still occurs, but lasts for only 24 hours. Armor Class: 3 Hit Dice: 11 (L) Move: 150' (50') Attacks: 2 spears/1 antler or breath (special) Damage: ld6 + 6/ld6 + 6/2d8 No.",
-    "special": "",
+    "description": "each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.). If the saving throw is successful, the transformation still occurs, but lasts for only 24 hours. Once per day an actaeon may summon woodland creatures to assist it; 1d6 creatures arrive in 1d4 turns. Choose or randomly determine the types of creatures appearing: This solitary creature is a protector of woodland creatures. The actaeon is 9' tall, with the arms, torso, and facial features of a human but the antlers and lower legs of an elk; its whole body is covered with brown elklike hide. Actaeons are members of the woodland community along with centaurs, dryads, etc. They are sufficiently bold and rare that they are renowned heroes of these forest folk.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Actaeon (Elk Centaur)"
+      "key": "Actaeon (Elk Centaur)",
+      "category": "Monster"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "40077e3c19fe93b6"
 }

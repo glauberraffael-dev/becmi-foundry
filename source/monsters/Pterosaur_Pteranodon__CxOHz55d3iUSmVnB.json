@@ -23,8 +23,8 @@
     "xpValue": 10,
     "terrain": "Ethereal Plane, Wormholes (only).",
     "monsterType": "Prehistoric Animal (Very Rare).",
-    "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
-    "special": "",
+    "description": "Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons. Each blow from a magical weapon inflicts only its magic damage (\"plusses\"), ignoring normal weapon damage and strength bonuses. For example, a sword +4 would inflict 4 points of damage on a plasm. A plasm can only be damaged by magical weapons (as given above) and by attack forms based on elemental dominance. Once per turn, a plasm can \"spend\" 10 of its hit points to create an acid cloud based on its element. This cloud is a 30' diameter sphere, which inflicts 20 points of damage to all within it (except the plasm); each victim may make a saving throw vs. dragon breath to take half damage. The cloud lasts for 1d6 rounds. A plasm normally saves this attack form to use when fleeing. Terrain: Ethereal Plane, Wormholes (only). have a wingspan of up to 50'.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons. Each blow from a magical weapon inflicts only its magic damage (\"plusses\"), ignoring normal weapon damage and strength bonuses. A plasm can only be damaged by magical weapons (as given above) and by attack forms based on elemental dominance.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Pterosaur ((Pteranodon))"
+      "key": "Pterosaur ((Pteranodon))",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

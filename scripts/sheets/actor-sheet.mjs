@@ -1,4 +1,5 @@
-import { spellListsForClass } from "../integrations.mjs";
+import { advanceActorLevels, spellListsForClass } from "../integrations.mjs";
+import { classFeaturesFor } from "../class-features.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
   masteryWeapon, masteryChoices, normalizeClassKey, spellKey, spellSlotsForLevel,
@@ -13,6 +14,7 @@ const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
 
 const SHEET_TABS = [
   ["main", "BECMI.sheet.tab.main"],
+  ["features", "BECMI.sheet.tab.features"],
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
@@ -302,6 +304,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     const allSpells = actor.items.filter((item) => item.type === "spell");
     context.className = className;
+    context.classFeatures = isCharacter
+      ? classFeaturesFor(className, { level, xp, druid: isDruid })
+      : [];
     const spellView = (item) => ({
       id: item.id,
       name: item.name,
@@ -454,18 +459,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #levelUp() {
-    const cls = getRCClass(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
-    if (!cls) return;
-    const level = Number(this.actor.system.attributes?.level) || 1;
-    if (level >= cls.maxLevel) return;
-    const next = level + 1;
-    const result = hpForLevel(cls.key, next, adjustment(this.actor.system.abilities?.con?.value));
-    const hp = this.actor.system.attributes.hp ?? { value: 0, max: 0 };
-    await this.actor.update({
-      "system.attributes.level": next,
-      "system.attributes.xpNext": cls.xp[next] ?? cls.xp.at(-1),
-      "system.attributes.hp": { value: Number(hp.value) + result.gain, max: Number(hp.max) + result.gain }
-    });
+    // The same helper used by the XP hook: one canonical XP table, HP added
+    // once per level and no manual drift in "Next Level XP".
+    await advanceActorLevels(this.actor);
   }
 
   static async #restSpells() {

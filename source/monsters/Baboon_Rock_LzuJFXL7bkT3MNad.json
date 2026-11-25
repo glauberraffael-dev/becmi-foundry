@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 20,
     "terrain": "Arctic, Mountains (cold).",
-    "monsterType": "Normal Animal (Common). Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs.",
-    "description": "Armor Class: 6 Hit Dice: 2 (M) Move: 120' (40') Attacks: 1 club/1 bite Damage: 1d6/ld3 No. Appearing: 2d6 (5d6) Save As: F2 Morale: 8 Treasure Type: U Intelligence: 2 Alignment: Neutral XP Value: 20 Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case).",
-    "special": "",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case). Although they cannot make intelligible sounds, snow apes communicate with each other using a complex sign language. In addition, snow apes often leave messages for each other using a system of stacked rocks and snowballs. Both male and female archons have the bodies like that of giant eagles, with golden-feathered wings. The male archon has a head, arms, and torso like a huge muscular man; the female has no torso, but has a dragonlike neck and three heads: two bull's heads flanking a beautiful female human's. In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Baboon, Rock"
+      "key": "Baboon, Rock",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

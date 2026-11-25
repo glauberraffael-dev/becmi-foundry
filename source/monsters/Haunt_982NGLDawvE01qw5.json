@@ -16,15 +16,15 @@
     "damage": "By weapon",
     "appearing": "3d6 (5d8)",
     "saveAs": "H1",
-    "morale": 810,
+    "morale": 8,
     "treasure": "(P + S) B",
     "intelligence": 11,
     "alignment": "Lawful",
     "xpValue": 5,
-    "terrain": "",
-    "monsterType": "Demihuman (Common). Halflings can also appear as NPCs. Otherwise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or underbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
-    "description": "Armor Class: 7 (or 5, see below) Hit Dice: 1-1 Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 3d6 (5d8) Save As: H1 Morale: 8 or 10 (see below) Treasure Type: (P + S) B Intelligence: 11 Alignment: Lawful XP Value: 5 ||Banshee*|Ghost*|Poltergeist*| |---|---|---|---| |Armor Class: |- 3 - |2 |-1 | |Hit Dice:|13|14|12| ||(M)|(M)|(M)| |Move (Flying):|60' (20')|90' (30')|60' (20')| |Attacks:|1 touch/ |1 touch/ |2 missiles| ||1 gaze |1 gaze || |Damage:|Age |Age |Age 10 | ||1d4 x 10|1d4 x 10|years +| ||",
-    "special": "",
+    "terrain": "Any",
+    "monsterType": "Demihuman (Common).",
+    "description": "A harpy has the lower body of a giant eagle and the upper body and head of a hideouslooking woman. Harpies can sing with enchanting, mesmerizing voices. By singing, harpies lure creatures to them, to be killed and devoured. Any creature hearing the harpies' songs must make a saving throw vs. spells or be charmed. If a victim makes a saving throw against the songs of a group of harpies, the victim will not be affected by any of their songs during the encounter.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Any creature hearing the harpies' songs must make a saving throw vs. spells or be charmed.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Haunt"
+      "key": "Haunt",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

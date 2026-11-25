@@ -1,0 +1,50 @@
+{
+  "_id": "T9PtbT-S76-yJXvj",
+  "_key": "!actors!T9PtbT-S76-yJXvj",
+  "name": "Giant (Form 1)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "8",
+    "hp": 8,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon 1 weapon 1 weapon 1 weapon",
+    "damage": "2d8 3d6 4d6 5d6",
+    "appearing": "1d4 (1d4) 1d2 (1d6) 1d2 (1d4) 1d2(1d3)",
+    "saveAs": "F8 F9 F10 F11",
+    "morale": 8,
+    "treasure": "E + 5,000 gp E + 5,000 gp E + 5,000gp E + 5,000gp",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 650,
+    "terrain": "Any",
+    "monsterType": "Humanoid",
+    "description": "AC 4; HD 8; Attacks: 1 weapon 1 weapon 1 weapon 1 weapon; Damage: 2d8 3d6 4d6 5d6",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; 1 weapon 1 weapon 1 weapon 1 weapon;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 8,
+        "max": 8
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Giant (Form 1)",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "e02bba7eeaaaa851"
+}

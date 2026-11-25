@@ -1,0 +1,50 @@
+{
+  "_id": "20mfYrNM4FCXrk_a",
+  "_key": "!actors!20mfYrNM4FCXrk_a",
+  "name": "Manta Ray (Form 1)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 tail 1 buffet/1 tail",
+    "damage": "1d6 + poison",
+    "appearing": "1d3 (1d4)",
+    "saveAs": "F4 (see below)",
+    "morale": 8,
+    "treasure": "(V) F Chaotic (without)",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 175,
+    "terrain": "Ocean.",
+    "monsterType": "Normal: Normal Animal XP Value: 175 13** = 3,250 (Common); Giant: Giant Animal (",
+    "description": "Manta rays are aquatic creatures, flat fish whose bodies are shaped like broad wings or sails. They flap their \"wings\" to propel them through the water. When a manta ray lies in the sand on the ocean floor it is completely invisible. A medusa looks like a human female with live snakes growing from her head instead of hair. Medusae are very magical, and the mere sight of a medusa will turn a creature to stone unless the victim makes a saving throw vs. turn to stone. However, this will affect only one character per round, and characters may watch the reflection of a medusa in a mirror without danger. If a medusa sees Normal Manta Ray: Normal manta rays can grow to be 7' in width and 12' in length. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. They attack with this tail. A saving throw vs. poison will prevent paralysis.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;When a manta ray lies in the sand on the ocean floor it is completely invisible. Medusae are very magical, and the mere sight of a medusa will turn a creature to stone unless the victim makes a saving throw vs. turn to stone. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Manta Ray (Form 1)",
+      "category": "Normal Animal"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "65abff4b71ab6a77"
+}

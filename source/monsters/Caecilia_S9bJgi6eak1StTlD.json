@@ -23,8 +23,8 @@
     "xpValue": 500,
     "terrain": "Any except Arctic.",
     "monsterType": "Lowlife (Rare).",
-    "description": "Armor Class: 6 Hit Dice: 6* (L) Move: 60' (20') Attacks: 1 bite Damage: ld8 No. Appearing: ld3 (1d3) Save As: F3 Morale: 9 Treasure Type: B Intelligence: 0 Alignment: Neutral XP Value: 500 Monster Type: Lowlife (Rare). This giant gray wormlike creature is about 30' long. They are meat-eaters and can be found nearly anywhere. Caecilia often lie in wait in loose soil just below the surface.",
-    "special": "",
+    "description": "This giant gray wormlike creature is about 30' long. They are meat-eaters and can be found nearly anywhere. Caecilia often lie in wait in loose soil just below the surface. Whenever a small party of animals or humans pass, they shoot up out of the ground and begin biting with their large mouths and sharp teeth. An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole. A victim takes 1d8 points of damage each round until the victim or the caecilia is dead.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Caecilia"
+      "key": "Caecilia",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

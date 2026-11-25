@@ -22,9 +22,9 @@
     "alignment": "Any",
     "xpValue": 1200,
     "terrain": "Open, Light Woods.",
-    "monsterType": "",
-    "description": "young flee while the males protect them. are known by a name which sounds like 9 \"haoou.\" They are only encountered on the 8* (M) Prime Plane when conjured by a cleric (see the 120' (40') clerical spell aerial servant). They don't care to 2 (sword) or see below be summoned for this slave labor; they do not 1d8 + 4 /1d8 + 4 or see below deliberately or maliciously misinterpret their 1d6(ldl2) summoners' orders, but they are hateful eneF8 mies of humans who visit the plane of Air.",
-    "special": "",
+    "monsterType": "Humanoid",
+    "description": "young flee while the males protect them. are known by a name which sounds like 9 \"haoou.\" They are only encountered on the 8* (M) Prime Plane when conjured by a cleric (see the 120' (40') clerical spell aerial servant). They don't care to 2 (sword) or see below be summoned for this slave labor; they do not 1d8 + 4 /1d8 + 4 or see below deliberately or maliciously misinterpret their 1d6(ldl2) summoners' orders, but they are hateful eneF8 mies of humans who visit the plane of Air. Any group of 16 or more may panic when attacked, running toward the disturbance 40% of the time (trampling all in their path for 1d20 points of damage; no attack roll needed). Terrain: Open, Light Woods.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;young flee while the males protect them. are known by a name which sounds like 9 \"haoou.\" They are only encountered on the 8* (M) Prime Plane when conjured by a cleric (see the 120' (40') clerical spell aerial servant).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Adaptor"
+      "key": "Adaptor",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

@@ -21,10 +21,10 @@
     "intelligence": 5,
     "alignment": "Chaotic",
     "xpValue": 50,
-    "terrain": "",
+    "terrain": "Any",
     "monsterType": "Undead, Enchanted (Common).",
-    "description": "See Lycanthrope. Wight* Armor Class: 5 Hit Dice: 3* (M) Move: 90' (30') Attacks: 1 Damage: Energy drain No. Appearing: 1d6(ld8) Save As: F3 Morale: 12 Treasure Type: B Intelligence: 5 Alignment: Chaotic XP Value: 50 Monster Type: Undead, Enchanted (Common). A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy.",
-    "special": "",
+    "description": "See Lycanthrope. A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy. Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim. Each hit drains one level of experience or Hit Die. Any person totally drained of life energy by a wight will become a wight in 1d4 days, and will be under control of the slayer.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Were(creature)"
+      "key": "Were(creature)",
+      "category": "Undead"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "d7756e71a77efb17"
 }

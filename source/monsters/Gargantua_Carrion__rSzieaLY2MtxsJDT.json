@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 6,
     "terrain": "Same as the original species. _Load:_ Eight times normal.",
-    "monsterType": "Gargantua Carrion Crawler: Lowlife (Very Rare); Gargantua Gargoyle: Construct, Enchanted (Very Rare); Gargantua Troll: Giant Humanoid (Very Rare).",
-    "description": "Carrion Crawler Gargoyle* Troll Armor Class: 3 4 Hit Dice: 25* (L) 32* (L) 51(L) Move: . 240' (80') 180' (60') 240' (80') — Flying: 300' (100') Attacks: 8 4 3 Damage: 1d4 +l each 4d3/4d3/ 4d6/4d6/ + Paralysis 4d6/4d4 4d10 No. Appearing: 1(1) 1(1) 1(1) Save As: F13 F32 F36 Morale: 11 11(9) Treasure Type: B x 4 C X 4 D x 4 Intelligence: 0 5 6 Alignment: Neutral Chaotic Chaotic XP Value: 6,500 10,000 29,000 These monsters are extremely rare, the products of the mad wizard Gargantua.",
-    "special": "",
+    "monsterType": "Gargantua Carrion Crawler: Lowlife (Very Rare); Gargantua Gargoyle: Construct, E",
+    "description": "These monsters are extremely rare, the products of the mad wizard Gargantua. Three examples of Gargantuan creatures are given above. A gargantua is a very large variety of some other monster. A gargantua is the same type of monster as its smaller form, thus a gargantuan gargoyle is a construct, a gargantuan troll is a giant humanoid, and so on. Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. The statistics for any gargantuan monster are calculated as follows: - Height: 2 times normal - Movement rate: 2 times normal - Number Appearing: 1 Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. The statistics for any gargantuan monster are calculated as follows:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; - Height: 2 times normal - Movement rate: 2 times normal - Number Appearing: 1 Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Gargantua (Carrion)"
+      "key": "Gargantua (Carrion)",
+      "category": "Lowlife"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "15c341ade7785c67"
 }

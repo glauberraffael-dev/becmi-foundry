@@ -22,8 +22,8 @@
     "alignment": "Neutral",
     "xpValue": 10,
     "terrain": "Any except Arctic.",
-    "monsterType": "",
-    "description": "Armor Class: 7 Hit Dice: 1-4 (M-L) Move: 240' (80') Attacks: 1 attack (butt, bite, or kick, by species) Damage: 1d4, ld6, or 1d8 No. Appearing: 0 (3d10) Save As: Fl Morale: 5 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 10, 20, 35, or 75 Giant ants behave just like their smaller cousins. They wander all over the landscape, finding sources of ready food (grain warehouses, watering-holes, villages), communicate their finds to the nest, and set up a trail from the nest to the food and back.",
+    "monsterType": "Normal Animal",
+    "description": "Giant ants behave just like their smaller cousins. They wander all over the landscape, finding sources of ready food (grain warehouses, watering-holes, villages), communicate their finds to the nest, and set up a trail from the nest to the food and back. There are legends of giant ants mining gold, and there is a 30% chance that a lair will contain 1d10 thousand gp worth of nuggets. Terrain: Any except Arctic.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Animal Herd"
+      "key": "Animal Herd",
+      "category": "Normal Animal"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "65abff4b71ab6a77"
 }

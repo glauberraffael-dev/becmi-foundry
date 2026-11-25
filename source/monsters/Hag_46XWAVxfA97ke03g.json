@@ -16,15 +16,15 @@
     "damage": "2d4 + poison or spell 1d6/l energy drain + special",
     "appearing": "1(1) 1(1)",
     "saveAs": "• C (level = HD) F8",
-    "morale": 1010,
+    "morale": 10,
     "treasure": "C G + M",
-    "intelligence": 1212,
-    "alignment": "Chaotic Chaotic",
+    "intelligence": 1,
+    "alignment": "Chaotic",
     "xpValue": 2300,
     "terrain": "Black Hag: Woods. Sea Hag: Ocean (coast).",
-    "monsterType": "Black Hag: Humanoid (Very Rare). Sea Hag: Humanoid, Enchanted (Very Rare).",
-    "description": "Black Sea* Armor Class: 4 4 Hit Dice: 11 to 20(M) 8* (M) Move: 150' (50') 120' (40') Swimming: 50' (20') 150' (50') Attacks: 2 claws or 1 spell 1 dagger/1 touch + gaze Damage: 2d4 + poison or spell 1d6/l energy drain + special No. Appearing: 1(1) 1(1) Save As: • C (level = HD) F8 Morale: 10 10 Treasure Type: C G + M Intelligence: 12 12 Alignment: Chaotic Chaotic XP Value: <u>See below</u> 2,300 Black Hag XP Value by HD: ity to control undead as if they were also undead 11 = 4,300 16* - 7,350 (though they are not un",
-    "special": "",
+    "monsterType": "Black Hag: Humanoid (Very Rare).",
+    "description": "ity to control undead as if they were also undead (though they are not undead). Each hag is treated as double its Hit Dice for control calculations (sea hag as if 16 HD, black hag as if 22-40 HD; see the Undead Lieges and Pawns section later this chapter for details about controlling undead.) Each type of hag is also immune to all special abilities of undead (including energy drain, paralysis, undead-created disease or poison, etc.). Black: A black hag has black hair and blueblack warty skin. It can cast spells as if a cleric Hags appear as ugly human females, but are actually monsters. They have the common abil- (level equal to its Hit Dice), but rarely uses its powers for healing (except itself), preferring results of death and destruction. If a black hag does not cast spells, it rends its opponents with its poisonous iron claws; any victim hit must make a saving throw vs.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Each hag is treated as double its Hit Dice for control calculations (sea hag as if 16 HD, black hag as if 22-40 HD; see the Undead Lieges and Pawns section later this chapter for details about controlling undead.) Each type of hag is also immune to all special abilities of undead (including energy drain, paralysis, undead-created disease or poison, etc.). It can cast spells as if a cleric Hags appear as ugly human females, but are actually monsters. If a black hag does not cast spells, it rends its opponents with its poisonous iron claws; any victim hit must make a saving throw vs.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Hag"
+      "key": "Hag",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

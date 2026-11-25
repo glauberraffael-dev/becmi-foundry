@@ -23,8 +23,8 @@
     "xpValue": 25,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Humanoid (Rare).",
-    "description": "Armor Class: 5 Hit Dice: 2* (L) Move: 120' (40') Attacks: 2 claws/1 bite Damage: 1d4/ld4/ld4 No. Appearing: 1d8 (5d8) Save As: F2 Morale: 9 Treasure Type: A Intelligence: 10 Alignment: Chaotic XP Value: 25 Armor Class: 3 Hit Dice: 20 (L) Move: 120' (40') Attacks: 1 bite Damage: 6d6 No. Appearing: 0(ld2) Save As: F10 Morale: 11 Treasure Type: V x 3 Intelligence: 2 Alignment: Neutral XP Value: 2,375 Monster Type: Humanoid (Rare). Monster Type: Prehistoric Animal (Very Rare).",
-    "special": "",
+    "description": "A troglodyte is an intelligent humanoid reptile. It has a short tail, long legs, and a spiny \"comb\" on its head and arms. Troglodytes walk upright and use their hands as well as humans. They hate most other creatures. The \"tyrant lizard\" is the largest hunting dinosaur found. It's at least 40' long (and can be longer), weighing in at 8 tons; when standing, it is about 20' high. It inhabits \"lost world\" areas. Troglodytes have the chameleonlike ability to change colors, and use it to hide by rock walls, surprising often (1-4 on 1d6). A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made. Nauseated characters have a - 2 penalty on their attack rolls while in handto-hand combat with the troglodytes. The tyrannosaurus walks on its hind legs, with its heavy tail held out behind as a counterbalance.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Tyrannosaurus Rex"
+      "key": "Tyrannosaurus Rex",
+      "category": "Humanoid"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "e02bba7eeaaaa851"
 }

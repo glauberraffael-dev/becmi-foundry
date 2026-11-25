@@ -160,7 +160,188 @@ ${htmlTable(["Constitution adjustment", "Hit points per level"], [
 <p>Magical items include potions, scrolls, rings, wands, staves, swords, armor and miscellaneous items. Missile talents such as speaking, stunning, teleporting, transporting and wounding are separate from ordinary item powers. Creating an item costs gold and spell levels and requires a roll for success.</p>`,
   17: `<h2>Campaigning</h2>
 <p>A campaign links adventures into a continuing world. The DM prepares key locations, factions, rumors and encounters, then adapts them to player choices. Consistent timekeeping, geography and NPC memory make the setting believable.</p>
-<p>Use wandering monsters, random treasure and reaction checks sparingly so that the story remains coherent. Reward clever plans as well as combat, and let character actions change the world.</p>`
+<p>Use wandering monsters, random treasure and reaction checks sparingly so that the story remains coherent. Reward clever plans as well as combat, and let character actions change the world.</p>`,
+  18: `<h2>The Planes of Existence</h2>
+ <p>The Prime Plane is the balanced home world of ordinary adventurers. Other planes are arranged around it: the Ethereal Plane overlays the Prime, the four Elemental Planes connect to it through wormholes, and the Outer Planes lie beyond them. Interplanar travel normally passes through the Ethereal Plane, because direct travel between the Prime and the elemental spheres is not available to ordinary characters.</p>
+ <p>In the Ethereal Plane ether appears as gray fog. Light works normally but illuminates only the ether; infravision is nearly useless because everything shares the same temperature. Visitors can breathe, cannot fall, and cannot walk. Movement requires magic and changes with the material nearby on the Prime Plane: vacuum doubles speed, air is normal, fire or water reduces it to three quarters, soil or wood to half, rock to one quarter, and metal or lead stops movement entirely.</p>
+ <p>Elemental planes are hostile environments. Air dominates Water, Water dominates Fire, Fire dominates Earth, and Earth dominates Air; Air and Fire oppose each other, as do Earth and Water. Survival requires spells such as create air or survival, a ring of elemental adaptation, or a talisman of elemental travel. Energy-based effects work normally; matter-based effects may be altered or negated.</p>
+ <p>The Outer Planes are the realms of alignment, deities and immortal powers. They are reached by advanced magic or immortal travel. Beyond the multiverse lies whatever the DM places there; use the same plane rules as a frontier rather than assuming fixed physics.</p>`,
+  19: `<h2>Variant Rules</h2>
+ <p>These options are optional. Apply them consistently or not at all, since they change encounters, advancement and combat pacing.</p>
+ <p><strong>Ability scores and saving throws:</strong> in the standard game only Wisdom modifies saves versus spells. The DM may also apply the ability modifier to the matching category: Strength vs. paralysis and petrification, Intelligence vs. mind attacks, Wisdom vs. spells, Dexterity vs. wands and breath weapons, and Constitution vs. poison but not death rays. Charisma gives no save bonus. A combined modifier cannot exceed +3 or -3.</p>
+ <p><strong>Death in the campaign:</strong> resurrection magic can be removed to make death final. A gentler option keeps a character at 0 hit points unconscious and mortally wounded: roll a saving throw versus death ray each round while taking damage and once per ten minutes; failure means death. Healing magic or a successful Healing skill check with a -5 penalty stabilizes the character.</p>
+ <p><strong>Demihuman and mystic advancement:</strong> the standard caps keep these classes balanced because they begin with many abilities. The extended table lets them reach level 36. Under that option demihumans use the normal attack chart instead of Attack Ranks: dwarves attack as fighters, elves and halflings as clerics; mystics attack as fighters. Hit points above 9th level become fixed, saving throws stop improving at the old cap, and spell access follows the normal spell table for casters.</p>
+ <p><strong>Nonlethal combat:</strong> divide each damage roll into real damage (one quarter, rounded down) and nonlethal damage (the remainder). Track them separately. When their sum reaches the target's hit points, the target falls unconscious. Nonlethal damage wears off in two stages of 2d6 x 10 minutes; real damage only heals normally. Unarmed attacks and purpose-built practice weapons have no penalty; using an ordinary weapon to deal nonlethal damage imposes a -3 attack penalty.</p>`
+};
+
+const CHAPTER_TITLES = {
+  1: "Steps in Character Creation", 2: "The Character Classes", 3: "Spells and Spellcasting",
+  4: "Equipment", 5: "Other Character Abilities", 6: "Movement", 7: "Encounters and Evasion",
+  8: "Combat", 9: "Mass Combat", 10: "Experience", 11: "Nonplayer Characters",
+  12: "Strongholds and Dominions", 13: "Dungeon Master Procedures", 14: "Monsters",
+  15: "Immortals", 16: "Treasure", 17: "Campaigning", 18: "The Planes of Existence",
+  19: "Variant Rules"
+};
+
+const APPENDIX_TITLES = {
+  1: "The D&D Game World", 2: "AD&D Game Conversions", 3: "Record Sheets", 4: "Indices"
+};
+
+const APPENDIX_RULES = {
+  1: `<h2>Appendix 1 — The D&D Game World</h2>
+ <p>The Rules Cyclopedia presents two linked campaign settings on the planet Mystara. The Known World is the surface setting where most characters begin: kingdoms, city-states and frontier wilderness suitable for low- and mid-level play. The Hollow World is a vast interior world reached through special passes; it preserves ancient cultures, dinosaur-hunting grounds and immortal guardians, and suits higher-level exploration.</p>
+ <p>Use the Known World for a conventional dungeon-and-domain campaign. Introduce the Hollow World when the party is ready for polar openings, longer journeys and immortal politics. Nothing in the system requires either setting; the compendia provide the rules, while the DM supplies geography, factions and rumors.</p>`,
+  2: `<h2>Appendix 2 — AD&D Game Conversions</h2>
+ <p>When moving characters between the two games, convert levels, not experience points. Levels 1-12 transfer unchanged. Above that, one AD&D level equals three BECMI levels going one way, and three BECMI levels equal one AD&D level going the other; round fractions down. Multiclass AD&D characters use the level of the active class, and dual-class characters use their active class.</p>
+ <p>Keep Lawful-Neutral-Chaotic as a role-playing axis when converting to BECMI; assign Good-Neutral-Evil from past behavior when converting to AD&D. Use equivalent spells where they exist and assume knowledge is lost where no equivalent exists. Ordinary equipment, encumbrance and money are converted by using the target game's tables; adjust the starting purse so it fits the treasure level of the new campaign.</p>
+ ${htmlTable(["BECMI armor", "BECMI AC", "AD&D AC"], [
+   ["None", "9", "10"], ["Leather", "7", "8"], ["Scale", "6", "6"],
+   ["Chain", "5", "5"], ["Banded", "4", "4"], ["Plate", "3", "3"], ["Suit armor", "1", "—"]
+ ])}
+ <p>A shield gives -1 AC in both systems. Weapon mastery of Expert or better converts to the target game's weapon proficiency; demihuman multiclass options that have no BECMI equivalent should be approved by the DM case by case.</p>`,
+  3: `<h2>Appendix 3 — Record Sheets</h2>
+ <p>The original appendix supplies printable forms. This system maps those records to editable sheet sections so no separate PDF is needed.</p>
+ ${htmlTable(["Original form", "Fields to record", "Foundry equivalent"], [
+   ["DM's character card", "Name, class, level, alignment, XP, hp, abilities, weapons, THAC0, magic items", "Actor sheet Main, Equipment and Magic Items tabs"],
+   ["Character record sheet", "Ability adjustments, saves, AC, hp, attack matrix, carried treasure, languages", "Actor sheet Main, Attack Table and Notes tabs"],
+   ["Spell book sheet", "Spell name, level, brief description and source", "Spells tab plus spell Items in the Spell compendia"],
+   ["Adventure record sheet", "Date, roster, monsters, treasure and event log", "Journal entries and chat log"],
+   ["Hex mapping paper", "Hex grid for wilderness exploration", "Foundry scene grid (10 ft per hex by default)"]
+ ])}
+ <p>Use a JournalEntry for a long-lived adventure log and the actor Notes tab for character-specific secrets and experience notes.</p>`,
+  4: `<h2>Appendix 4 — Indices</h2>
+ <p>The spell index is alphabetized by name; the letter after a name identifies its list: C for cleric, D for druid and M for magic-user. The same letters are used by the Spell compendium's folder keys. Tables and checklists are indexed by category in the Tables compendium; monsters and equipment are indexed alphabetically inside their category folders.</p>`
+};
+
+const fmt = (value) => Number(value ?? 0).toLocaleString("en-US");
+const chunk = (items, size) => Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size));
+
+function classProgressionTable() {
+  return htmlTable(["Class", "Hit die", "Prime requisite", "Max level", "Fixed hp / level", "XP to level 2"],
+    Object.values(RC.classes).map((cls) => [
+      cls.name, `d${cls.hitDie}`, (cls.primeRequisites ?? []).join(", ") || "—",
+      String(cls.maxLevel), String(cls.hpAfterFixed || "by die"), fmt(cls.xp[1])
+    ]));
+}
+
+function xpTables() {
+  const keys = Object.keys(RC.classes);
+  return chunk(Array.from({ length: 36 }, (_, i) => i + 1), 18).map((levels) =>
+    htmlTable(["Level", ...keys.map((key) => RC.classes[key].name)], levels.map((level) => [
+      String(level), ...keys.map((key) => {
+        const cls = RC.classes[key];
+        if (level > cls.maxLevel) return "—";
+        return level === cls.maxLevel ? "Maximum" : fmt(cls.xp[level]);
+      })
+    ])));
+}
+
+function extendedXpTables() {
+  const keys = ["dwarf", "elf", "halfling", "mystic"];
+  return chunk(Array.from({ length: 36 }, (_, i) => i + 1), 18).map((levels) =>
+    htmlTable(["Level", ...keys.map((key) => RC.classes[key].name)], levels.map((level) => [
+      String(level), ...keys.map((key) => {
+        const cls = RC.classes[key];
+        const value = cls.extendedXp?.[level];
+        return value === undefined ? "—" : fmt(value);
+      })
+    ])));
+}
+
+function thiefSkillTables() {
+  const labels = THIEF_LABELS.slice(0, 8);
+  return chunk(RC.thief, 18).map((rows, index) =>
+    htmlTable(["Level", ...labels], rows.map((values, rowIndex) => [
+      String(index * 18 + rowIndex + 1), ...values.map((value) => `${value}%`)
+    ])));
+}
+
+function turnUndeadTables() {
+  return chunk(RC.turnUndead.rows, 7).map((rows) =>
+    htmlTable(["Undead", ...RC.turnUndead.columns], rows.map((row) => [row.name, ...row.values])));
+}
+
+function spellSlotTables() {
+  return chunk(RC.spellSlots.cleric, 18).map((rows, index) => {
+    const magic = RC.spellSlots["magic-user"].slice(index * 18, (index + 1) * 18);
+    return htmlTable(["Class and level", "1", "2", "3", "4", "5", "6", "7", "8", "9"], [
+      ...rows.map((row, rowIndex) => [
+        `Cleric / Druid ${index * 18 + rowIndex + 1}`, ...Array.from({ length: 9 }, (_, i) => row[i] ?? "—")
+      ]),
+      ...magic.map((row, rowIndex) => [
+        `Magic-User ${index * 18 + rowIndex + 1}`, ...Array.from({ length: 9 }, (_, i) => row[i] ?? "—")
+      ])
+    ]);
+  });
+}
+
+function masteryRankTable() {
+  return htmlTable(["Rank", "Attack bonus", "Damage option", "Defense bonus", "Choices spent"],
+    RC.mastery.order.map((key) => {
+      const rank = RC.mastery.grades[key];
+      return [rank.nome, `${rank.at[0]} / ${rank.at[1]}`, rank.dv ? `up to ${rank.dv} HD` : "—",
+        `+${rank.at[1]}`, String(rank.peso)];
+    }));
+}
+
+function planeTables() {
+  return [
+    htmlTable(["Realm", "Access", "Environment", "Adventure rules"], [
+      ["Prime Plane", "Home world", "Balanced mix of elements", "All rules in this system apply normally"],
+      ["Ethereal Plane", "Magic travel", "Gray ether; no gravity; magic movement required", "Cannot see the Prime without detect invisibility or similar magic"],
+      ["Elemental Planes", "Wormholes from the Ethereal", "Air, Earth, Fire and Water", "Survival magic required; elemental dominance changes matter-based effects"],
+      ["Outer Planes", "Advanced or immortal travel", "Alignment-linked realms", "Deities, patrons and planar creatures follow the DM's cosmology"],
+      ["Beyond the Multiverse", "DM-defined", "No fixed physics", "Use planes as a frontier and assign local rules explicitly"]
+    ]),
+    htmlTable(["Nearby Prime material", "Ethereal movement", "Example", "Effect"], [
+      ["Vacuum", "Double normal", "Open space", "Fast travel"],
+      ["Air", "Normal", "Open sky", "No modifier"],
+      ["Fire or water", "Three quarters normal", "Lake or flame", "Slowed"],
+      ["Soil or wood", "Half normal", "Forest or field", "Slowed"],
+      ["Rock", "One quarter normal", "Mountain", "Very slow"],
+      ["Metal or lead", "No movement", "Vault or wall", "Blocked"]
+    ])
+  ];
+}
+
+function spellIndexPages() {
+  const spells = [...RC.spells].sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
+  const rows = spells.map((spell) => [spell.name, spell.class, String(spell.level)]);
+  const tableNames = buildReferenceTables().map((table) => table.name).sort((a, b) => a.localeCompare(b, "en"));
+  return [
+    htmlTable(["Spell", "List", "Level"], rows.slice(0, 110)),
+    htmlTable(["Spell", "List", "Level"], rows.slice(110)),
+    htmlTable(["Reference table", "Compendium"], tableNames.map((name) => [name, "BECMI Tables"]))
+  ];
+}
+
+const CHAPTER_SUPPLEMENTS = {
+  2: [classProgressionTable(), ...thiefSkillTables()],
+  3: spellSlotTables(),
+  5: [masteryRankTable()],
+  8: [htmlTable(["Check", "Roll", "Success"], [
+    ["Attack", "d20 + bonuses", "At least THAC0 - target AC"],
+    ["Saving throw", "d20", "At least the listed target"],
+    ["Ability check", "d20", "At most the ability score"],
+    ["Morale", "2d6", "At most the morale score"],
+    ["Turn undead", "2d6", "At least the table result"]
+  ])],
+  10: xpTables(),
+  14: turnUndeadTables(),
+  18: planeTables(),
+  19: extendedXpTables()
+};
+const APPENDIX_SUPPLEMENTS = {
+  2: [htmlTable(["BECMI level", "AD&D level"], [
+    ["1-12", "No change"], ["13", "4"], ["16", "5"], ["19", "6"], ["36", "12"]
+  ])],
+  3: [htmlTable(["Record", "Where to keep it", "Update frequency"], [
+    ["Character statistics", "Actor sheet", "When level, XP or equipment changes"],
+    ["Spell book", "Spell compendium and Spells tab", "When a spell is learned or prepared"],
+    ["Adventure log", "JournalEntry", "After each session"],
+    ["Encounter log", "JournalEntry or chat export", "After each encounter"]
+  ])],
+  4: spellIndexPages()
 };
 
 const CORE_REFERENCE_PAGES = [
@@ -226,15 +407,27 @@ ${htmlTable(["Category", "Contents"], [
 /** JournalEntry documents for the reference compendium. */
 export function buildReferenceJournals(masteryJournal) {
   const chapters = Object.entries(CHAPTER_RULES).map(([number, content]) => ({
-    name: `Chapter ${number}: ${{
-      1: "Steps in Character Creation", 2: "The Character Classes", 3: "Spells and Spellcasting",
-      4: "Equipment", 5: "Other Character Abilities", 6: "Movement", 7: "Encounters and Evasion",
-      8: "Combat", 9: "Mass Combat", 10: "Experience", 11: "Nonplayer Characters",
-      12: "Strongholds and Dominions", 13: "Dungeon Master Procedures", 14: "Monsters",
-      15: "Immortals", 16: "Treasure", 17: "Campaigning"
-    }[number]}`,
+    name: `Chapter ${number}: ${CHAPTER_TITLES[number]}`,
     flags: { becmi: { source: "Rules Cyclopedia", chapter: Number(number) } },
-    pages: [{ ...p(content), name: "Rules" }]
+    pages: [
+      { ...p(content), name: "Rules" },
+      ...(CHAPTER_SUPPLEMENTS[number] ?? []).map((table, index) => ({
+        ...p(`<h2>${CHAPTER_TITLES[number]} — Tables ${index + 1}</h2>${table}`),
+        name: `Tables ${index + 1}`
+      }))
+    ]
+  }));
+
+  const appendices = Object.entries(APPENDIX_RULES).map(([number, content]) => ({
+    name: `Appendix ${number}: ${APPENDIX_TITLES[number]}`,
+    flags: { becmi: { source: "Rules Cyclopedia", appendix: Number(number) } },
+    pages: [
+      { ...p(content), name: "Overview" },
+      ...(APPENDIX_SUPPLEMENTS[number] ?? []).map((table, index) => ({
+        ...p(`<h2>${APPENDIX_TITLES[number]} — Tables ${index + 1}</h2>${table}`),
+        name: `Tables ${index + 1}`
+      }))
+    ]
   }));
 
   const core = {
@@ -259,7 +452,7 @@ export function buildReferenceJournals(masteryJournal) {
     }
   }));
 
-  return [...chapters, core, mastery];
+  return [...chapters, ...appendices, core, mastery];
 }
 
 /** RollTable documents that expose reference data as lookup tables. */

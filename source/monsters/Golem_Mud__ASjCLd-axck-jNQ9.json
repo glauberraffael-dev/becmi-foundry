@@ -22,9 +22,9 @@
     "alignment": "Neutral",
     "xpValue": 1200,
     "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
-    "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
-    "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
-    "special": "",
+    "monsterType": "Construct, Enchanted (Rare).",
+    "description": "mands, passwords, or riddles. In combat, an obsidian golem reduced to 0 hit points will shatter into worthless rubble. Mud Golem: A mud golem stands about 6' tall and is shaped much like a muscular human fighter. It can swim or walk on the surface of mud and quicksand without sinking. It can remain submerged in the substances indefinitely without sinking, rising to the surface when it wishes. Mud golems hug their victims with both arms, trying to smother the victim in its body. If a mud golem hits, it will automatically cause 2d6 points of smothering damage each round thereafter. Golems can only be damaged by magic or magical weapons. They are also immune to sleep, charm, and hold spells, as well as all gases (since they do not breathe). The creation of a golem is discussed in Chapter 16.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Golems can only be damaged by magic or magical weapons. They are also immune to sleep, charm, and hold spells, as well as all gases (since they do not breathe).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,11 +38,13 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "_Mud_",
-      "key": "Golem (Mud)"
+      "variant": "",
+      "key": "Golem (Mud)",
+      "category": "Construct"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "5374a5e70e59d6d6"
 }

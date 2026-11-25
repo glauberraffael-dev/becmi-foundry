@@ -19,12 +19,12 @@
     "morale": 10,
     "treasure": "H ing land.",
     "intelligence": 5,
-    "alignment": "Chaotic on just like a dragon. It can breathe a cloud of",
+    "alignment": "Chaotic",
     "xpValue": 9000,
     "terrain": "Ocean.",
-    "monsterType": "Dragon-Kin (Rare). Hit Dice: 30* (L) Dragon turtles are a magical crossbreed of a Move: 30'(10') dragon and a giant turtle. They have the head, Swimming: 90' (30') limbs, and tail of a great dragon and the hard Attacks: 2 claws/1 bite shell of a turtle. Dragon turtles are so large that Damage: 1d8/ld8/ld6x10 sailors have landed on ones floating on the surNo. Appearing: 0(1) face, mistaking them for small islands. These Save As: F15 creatures usually live in the depths of great Morale: 10 oceans and seas, seldom surfacing or approachTreasure Type: H ing land. Intelligence: 5 The dragon turtle is able to use a breath weapAlignment: Chaotic on just like a dragon. It can breathe a cloud of XP Value: 9,000 steam 50' long and 40' wide. This breath weap-",
-    "description": "Armor Class: -2 Monster Type: Dragon-Kin (Rare). Hit Dice: 30* (L) Dragon turtles are a magical crossbreed of a Move: 30'(10') dragon and a giant turtle. They have the head, Swimming: 90' (30') limbs, and tail of a great dragon and the hard Attacks: 2 claws/1 bite shell of a turtle. Dragon turtles are so large that Damage: 1d8/ld8/ld6x10 sailors have landed on ones floating on the surNo. Appearing: 0(1) face, mistaking them for small islands.",
-    "special": "",
+    "monsterType": "Dragon-Kin (Rare).",
+    "description": "The dragon turtle is able to use a breath weapon just like a dragon. It can breathe a cloud of steam 50' long and 40' wide. This breath weap- on does damage like a dragon's breath weapon, inflicting hit points of damage equal to the current hit points of the dragon turtle. Dragon turtles live in great caverns on the bottom of the deepest oceans, where they keep the treasures of sunken ships. On occasion, they will rise under ships, attempting to overturn them and devour the occupants. Note: Dragon turtles are extremely powerful creatures that should not be used unless the player characters are of very high level.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;The dragon turtle is able to use a breath weapon just like a dragon. It can breathe a cloud of steam 50' long and 40' wide. This breath weap- on does damage like a dragon's breath weapon, inflicting hit points of damage equal to the current hit points of the dragon turtle.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -39,10 +39,12 @@
     "becmi": {
       "source": "Rules Cyclopedia",
       "variant": "",
-      "key": "Dragon Turtle"
+      "key": "Dragon Turtle",
+      "category": "Dragon"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "b9a214ddebbb8a17"
 }

@@ -1,0 +1,13 @@
+{
+  "_id": "d7756e71a77efb17",
+  "_key": "!folders!d7756e71a77efb17",
+  "name": "Undead",
+  "type": "Actor",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

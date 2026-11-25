@@ -1,0 +1,50 @@
+{
+  "_id": "ozPzXa_vFPpd_YfA",
+  "_key": "!actors!ozPzXa_vFPpd_YfA",
+  "name": "Giant (Form 2)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "13",
+    "hp": 13,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon 1 + special I weapon 1 or special",
+    "damage": "6d6 8d6 + special 5dlO See below",
+    "appearing": "1d2 (1d3) 1 (1d3) 1d4(1d20) 1d2 (1d20)",
+    "saveAs": "F12 F15 F (level = HD) F (level = HD)",
+    "morale": 10,
+    "treasure": "E + 5,000 gp E + 5,000 gp E + 5,000 gp E + 5,000 gp",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 2300,
+    "terrain": "Any",
+    "monsterType": "Humanoid",
+    "description": "AC 4; HD 13; Attacks: 1 weapon 1 + special I weapon 1 or special; Damage: 6d6 8d6 + special 5dlO See below",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; 1 weapon 1 + special I weapon 1 or special;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 13,
+        "max": 13
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Giant (Form 2)",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "e02bba7eeaaaa851"
+}
