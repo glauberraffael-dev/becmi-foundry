@@ -5,5 +5,6 @@ verify-*/
 unpack-*/
 *.zip
 !becmi-foundry.zip
+!becmi-foundry-*.zip
 .DS_Store
 Thumbs.db

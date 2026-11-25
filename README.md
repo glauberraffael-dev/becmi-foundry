@@ -55,9 +55,10 @@ Install it in Foundry with this manifest URL:
 https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json
 ```
 
-The manifest points to the release archive `becmi-foundry.zip` in the repository root,
-so Foundry can download and install the system automatically. See
-[PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
+If a cached manifest offers an older version, add a cache-busting query such as
+`.../system.json?v=0.1.10`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.10.zip`, so Foundry never downloads a stale ZIP from `main`.
+See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder
 

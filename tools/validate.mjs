@@ -30,6 +30,13 @@ if (system.compatibility?.minimum !== 13 || system.compatibility?.verified !== 1
   note("system.json compatibility should be minimum 13, verified 14");
 }
 if (!system.esmodules?.length) note("system.json has no esmodules entry");
+// A versioned archive name prevents GitHub's raw cache from serving an old ZIP.
+if (!system.download?.endsWith(`-${system.version}.zip`)) {
+  note(`download must end with -${system.version}.zip to avoid stale caches`);
+}
+if (!system.manifest?.includes(`?v=${system.version}`)) {
+  note(`manifest should include ?v=${system.version} to avoid stale caches`);
+}
 for (const pack of system.packs ?? []) {
   if (!pack.path.startsWith("packs/") || pack.path.includes(".db")) note(`Bad pack path: ${pack.path}`);
 }

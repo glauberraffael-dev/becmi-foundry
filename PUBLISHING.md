@@ -33,39 +33,47 @@ After pushing, install the system in Foundry with this manifest URL:
 https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json
 ```
 
+If GitHub serves a stale manifest, append a cache-busting query, for example
+`https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json?v=0.1.10`.
+
 The manifest declares:
 
 - `url`: the GitHub repository page
-- `manifest`: the stable raw URL above
-- `download`: `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry.zip`
+- `manifest`: the stable raw URL with a version query
+- `download`: a **versioned** archive, for example
+  `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry-0.1.10.zip`
 
-`becmi-foundry.zip` must contain `system.json` at the archive root (no enclosing folder).
-Regenerate it whenever the system files change. On Windows PowerShell:
+The versioned filename is important: `raw.githubusercontent.com` can keep serving an
+older `becmi-foundry.zip` from cache even after a push. Both archives must contain
+`system.json` at the archive root (no enclosing folder). Regenerate them whenever
+the system files change. On Windows PowerShell:
 
 ```powershell
 $src = (Get-Location).Path
-$zip = Join-Path $src "becmi-foundry.zip"
-Remove-Item -LiteralPath $zip -Force -ErrorAction SilentlyContinue
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$fs = [System.IO.File]::Open($zip, [System.IO.FileMode]::Create)
-$archive = New-Object System.IO.Compression.ZipArchive($fs, [System.IO.Compression.ZipArchiveMode]::Create, $false)
 $files = Get-ChildItem -LiteralPath $src -Recurse -File -Force | Where-Object {
   $rel = $_.FullName.Substring($src.Length + 1)
   $parts = $rel -split '[\\/]'
-  -not ($parts -contains 'node_modules' -or $parts -contains '.git' -or $parts -contains 'becmi-foundry.zip')
+  -not ($parts -contains 'node_modules' -or $parts -contains '.git' -or $_.Extension -eq '.zip')
 }
-foreach ($f in $files) {
-  $rel = $f.FullName.Substring($src.Length + 1).Replace('\', '/')
-  $entry = $archive.CreateEntry($rel, [System.IO.Compression.CompressionLevel]::Optimal)
-  $entryStream = $entry.Open()
-  $fileStream = [System.IO.File]::OpenRead($f.FullName)
-  $fileStream.CopyTo($entryStream)
-  $fileStream.Dispose()
-  $entryStream.Dispose()
+foreach ($name in @("becmi-foundry-0.1.10.zip", "becmi-foundry.zip")) {
+  $zip = Join-Path $src $name
+  Remove-Item -LiteralPath $zip -Force -ErrorAction SilentlyContinue
+  $fs = [System.IO.File]::Open($zip, [System.IO.FileMode]::Create)
+  $archive = New-Object System.IO.Compression.ZipArchive($fs, [System.IO.Compression.ZipArchiveMode]::Create, $false)
+  foreach ($f in $files) {
+    $rel = $f.FullName.Substring($src.Length + 1).Replace('\', '/')
+    $entry = $archive.CreateEntry($rel, [System.IO.Compression.CompressionLevel]::Optimal)
+    $entryStream = $entry.Open()
+    $fileStream = [System.IO.File]::OpenRead($f.FullName)
+    $fileStream.CopyTo($entryStream)
+    $fileStream.Dispose()
+    $entryStream.Dispose()
+  }
+  $archive.Dispose()
+  $fs.Dispose()
 }
-$archive.Dispose()
-$fs.Dispose()
 ```
 
 ## Before publishing
