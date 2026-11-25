@@ -13,10 +13,11 @@
     "duration": "12 turns",
     "effect": "Creates whirling hammers",
     "reversible": false,
-    "description": "This spell creates a magical barrier in an area up to 30' in diameter and 30' high. The barrier is a wall of whirling and dancing hammers, obviously dangerous to any who come in contact with it. Any creature passing through the barrier takes 7dl0 (7-70) points of damage from the whirling hammers (no saving throw allowed). This spell is often used to block an entrance or passage. The reverse of this spell (remove barrier) will destroy any one barrier created by a cleric. It can also be used to destroy a magic-user's wall of ice, wall of fire, clothform, woodform, or wall of stone spell effects. It will not affect the magicuser spells wall of iron, stoneform, ironform or steelform.",
+    "description": "This spell creates a magical barrier in an area up to 30' in diameter and 30' high. The barrier is a wall of whirling and dancing hammers, obviously dangerous to any who come in contact with it. Any creature passing through the barrier takes 7d10 (7-70) points of damage from the whirling hammers (no saving throw allowed). This spell is often used to block an entrance or passage. The reverse of this spell (remove barrier) will destroy any one barrier created by a cleric. It can also be used to destroy a magic-user's wall of ice, wall of fire, clothform, woodform, or wall of stone spell effects. It will not affect the magicuser spells wall of iron, stoneform, ironform or steelform.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "rollFormula": "7d10"
   },
   "flags": {
     "becmi": {

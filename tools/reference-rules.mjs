@@ -6,7 +6,6 @@
  * never copied into these documents.
  */
 import { RC } from "../scripts/rc-data.mjs";
-import { rollTable } from "./mastery-data.mjs";
 
 const escapeHtml = (value) => String(value ?? "")
   .replace(/&/g, "&amp;")
@@ -23,9 +22,6 @@ const p = (content) => ({ name: "Reference", type: "text", text: { content } });
 const SAVE_LABELS = ["Death Ray / Poison", "Magic Wands", "Paralysis / Petrify", "Breath Weapon", "Spells"];
 const THIEF_LABELS = ["Pick Pockets", "Open Locks", "Find Traps", "Remove Traps", "Climb Walls",
   "Move Silently", "Hide in Shadows", "Hear Noise", "Backstab"];
-const UNDEAD_LABELS = ["Skeleton", "Zombie", "Ghoul", "Wight", "Wraith", "Mummy", "Spectre", "Vampire",
-  "Phantom", "Haunt", "Spirit", "Nightshade", "Lich", "Special"];
-
 function levelBands(thresholds) {
   return thresholds.map((threshold, index) => {
     const start = index === 0 ? 1 : threshold;
@@ -210,7 +206,7 @@ const APPENDIX_RULES = {
  ])}
  <p>Use a JournalEntry for a long-lived adventure log and the actor Notes tab for character-specific secrets and experience notes.</p>`,
   4: `<h2>Appendix 4 — Indices</h2>
- <p>The spell index is alphabetized by name; the letter after a name identifies its list: C for cleric, D for druid and M for magic-user. The same letters are used by the Spell compendium's folder keys. Tables and checklists are indexed by category in the Tables compendium; monsters and equipment are indexed alphabetically inside their category folders.</p>`
+ <p>The spell index is alphabetized by name; the letter after a name identifies its list: C for cleric, D for druid and M for magic-user. The same letters are used by the Spell compendium's folder keys. Reference tables and checklists are indexed as text pages in the Rules Reference compendium; only tables with a die instruction (such as Monster Reactions) are RollTables. Monsters and equipment are indexed alphabetically inside their category folders.</p>`
 };
 
 const fmt = (value) => Number(value ?? 0).toLocaleString("en-US");
@@ -307,11 +303,16 @@ function planeTables() {
 function spellIndexPages() {
   const spells = [...RC.spells].sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
   const rows = spells.map((spell) => [spell.name, spell.class, String(spell.level)]);
-  const tableNames = buildReferenceTables().map((table) => table.name).sort((a, b) => a.localeCompare(b, "en"));
+  const referencePages = [
+    "Core Rules Reference", "Combat Sequence", "Attack Matrix", "Saving Throws",
+    "Spellcasting", "Encumbrance", "Treasure", "Encounters and Reaction Rolls",
+    "Equipment Tables", "Weapon Mastery (Optional)", "Weapon Choices and Training",
+    "Benefits", "Mastery - Hand-Held", "Mastery - Missile", "Effects and Penalties"
+  ].sort((a, b) => a.localeCompare(b, "en"));
   return [
     htmlTable(["Spell", "List", "Level"], rows.slice(0, 110)),
     htmlTable(["Spell", "List", "Level"], rows.slice(110)),
-    htmlTable(["Reference table", "Compendium"], tableNames.map((name) => [name, "BECMI Tables"]))
+    htmlTable(["Reference page", "Compendium"], referencePages.map((name) => [name, "BECMI Rules Reference"]))
   ];
 }
 
@@ -391,6 +392,15 @@ ${htmlTable(["Carried weight", "Movement / turn", "Movement / round"], [
     name: "Encumbrance"
   },
   {
+    ...p(`<h2>Encounters and Reaction Rolls</h2>
+<p><strong>Chance of encounter:</strong> in a dungeon or city, roll 1d6 every two turns (1d12 once at night); on a 1 an encounter occurs. In the wilderness, roll 1d6 by day and 1d12 at night: clear or settled land needs a 1; forest, river, hills, barren land, desert, ocean or aerial a 1-2; swamp, jungle or mountains a 1-3.</p>
+<p><strong>Surprise:</strong> each side rolls 1d6; a 1 or 2 means that side is surprised. When neither side is surprised, encounter distance is looked up by terrain and visibility in the rules (dungeon bright light 4d6 x 10 ft, dim light 2d6 x 10 ft, darkness 1d4 x 10 ft).</p>
+<p><strong>Reactions:</strong> the Monster Reactions table is the random table in the <em>BECMI Tables</em> compendium: roll 2d6 (2-3 attacks, 4-6 aggressive, 7-9 cautious, 10-11 neutral, 12 friendly). Subsequent rolls can be modified by Charisma, gestures and threats.</p>
+<p><strong>Which monsters:</strong> roll 1d20 on the Dungeon Encounters table for the current dungeon level, then roll the number appearing shown in that row. In the wilderness, roll 1d8 for the terrain column, then 1d12 on the indicated subtable. These are die rolls; the tables are consulted by column and are not random tables in the compendium.</p>
+<p><strong>Magic item creation:</strong> the chance of success is a d100 roll against ([Intelligence or Wisdom + level] x 2) - (3 x spell level), or the number of bonuses for armor and weapons. Costs and time are calculated from the checklists in the Enchantment rules; they are not a random table.</p>`),
+    name: "Encounters and Reaction Rolls"
+  },
+  {
     ...p(`<h2>Treasure</h2>
 <p>Treasure types are rolled from the Treasure tables. Coins, gems and jewelry are valued separately; magical items are identified by their descriptions.</p>
 ${htmlTable(["Category", "Contents"], [
@@ -455,36 +465,3 @@ export function buildReferenceJournals(masteryJournal) {
   return [...chapters, ...appendices, core, mastery];
 }
 
-/** RollTable documents that expose reference data as lookup tables. */
-export function buildReferenceTables() {
-  const tables = [
-    rollTable("Ability Score Modifiers", "Reference", [
-      ["3", "-3"], ["4-5", "-2"], ["6-8", "-1"], ["9-12", "0"],
-      ["13-15", "+1"], ["16-17", "+2"], ["18", "+3"]
-    ]),
-    rollTable("Attack Roll Matrix", "Reference", attackMatrixRows()),
-    rollTable("Saving Throws — Fighter", "Reference",
-      RC.classes.fighter.saves.rows.flatMap((values, index) =>
-        levelBands(RC.classes.fighter.saves.thresholds).map((band, column) =>
-          [`${band} ${SAVE_LABELS[index]}`, values[column]]))),
-    rollTable("Saving Throws — Cleric and Thief", "Reference",
-      RC.classes.cleric.saves.rows.flatMap((values, index) =>
-        levelBands(RC.classes.cleric.saves.thresholds).map((band, column) =>
-          [`${band} ${SAVE_LABELS[index]}`, values[column]]))),
-    rollTable("Saving Throws — Magic-User", "Reference",
-      RC.classes["magic-user"].saves.rows.flatMap((values, index) =>
-        levelBands(RC.classes["magic-user"].saves.thresholds).map((band, column) =>
-          [`${band} ${SAVE_LABELS[index]}`, values[column]]))),
-    rollTable("Thief Skills by Level", "Reference", RC.thief.map((row, index) =>
-      [`Level ${index + 1}`,
-        row.map((value, skill) => `${THIEF_LABELS[skill] ?? skill}: ${value}%`).join(" | ")])),
-    rollTable("Turn Undead Results", "Reference", RC.turnUndead.rows.map((row, index) =>
-      [UNDEAD_LABELS[index] ?? row.name,
-        row.values.map((value, column) => `Levels ${RC.turnUndead.columns[column]}: ${value}`).join(" | ")])),
-    rollTable("Spell Slots — Cleric", "Reference", spellSlotsTable("cleric").match(/<tr>.*?<\/tr>/g)?.slice(1)
-      .map((row, index) => [`Level ${index + 1}`, row.replace(/<[^>]+>/g, " ").trim()]) ?? []),
-    rollTable("Spell Slots — Magic-User", "Reference", spellSlotsTable("magic-user").match(/<tr>.*?<\/tr>/g)?.slice(1)
-      .map((row, index) => [`Level ${index + 1}`, row.replace(/<[^>]+>/g, " ").trim()]) ?? [])
-  ];
-  return tables;
-}

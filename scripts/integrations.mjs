@@ -139,6 +139,61 @@ export async function applyDruidFeatureToActor(actor, item) {
   return Object.keys(needed).length;
 }
 
+const spellSourceUuid = (item) => String(
+  item?.flags?.becmi?.sourceUuid ?? item?.flags?.core?.sourceId ?? item?.uuid ?? ""
+);
+
+function spellSignature(item) {
+  const lists = Array.isArray(item?.system?.spellLists) ? [...item.system.spellLists] : [];
+  return [
+    String(item?.name ?? "").toLocaleLowerCase("en"),
+    Number(item?.system?.spellLevel) || 0,
+    [...new Set(lists)].sort().join("+")
+  ].join("|");
+}
+
+/** Build safe embedded Item data from a compendium spell or RC spell record. */
+export function spellItemData(spell) {
+  const source = typeof spell?.toObject === "function" ? spell.toObject() : spell;
+  const data = clone(source) ?? {};
+  const uuid = spellSourceUuid(source) || spellSourceUuid(spell);
+  delete data._id;
+  delete data.folder;
+  delete data.ownership;
+  delete data.sort;
+  data.type = "spell";
+  data.name = String(data.name ?? spell?.name ?? "");
+  data.system = { ...(data.system ?? {}) };
+
+  const list = data.flags?.becmi?.list ?? data.system.spellLists?.[0];
+  if (!data.system.spellLists?.length && list) data.system.spellLists = [list];
+  data.flags = { ...(data.flags ?? {}), becmi: { ...(data.flags?.becmi ?? {}) } };
+  if (uuid) data.flags.becmi.sourceUuid = uuid;
+  else delete data.flags.becmi.sourceUuid;
+  return data;
+}
+
+/**
+ * Import a spell onto an Actor without duplicating an already-known spell.
+ * Returns the outcome so the sheet can show the right notification.
+ */
+export async function importSpellToActor(actor, spell) {
+  if (!actor || !spell) return { status: "invalid", item: null };
+  const data = spellItemData(spell);
+  if (!data.name) return { status: "invalid", item: null };
+
+  const uuid = spellSourceUuid(data);
+  const signature = spellSignature(data);
+  const existing = (actor.items ?? []).find((item) => item.type === "spell" && (
+    (uuid && spellSourceUuid(item) === uuid) || spellSignature(item) === signature
+  ));
+  if (existing) return { status: "duplicate", item: existing };
+
+  const created = await actor.createEmbeddedDocuments?.("Item", [data]);
+  if (!created?.length) return { status: "failed", item: null };
+  return { status: "imported", item: created[0] };
+}
+
 /** Re-derive XP and remove duplicates from an Actor that already has a class. */
 export async function refreshActorFromClass(actor) {
   const classes = actor.items.filter((item) => item.type === "class");

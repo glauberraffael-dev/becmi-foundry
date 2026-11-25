@@ -1,6 +1,6 @@
 {
   "name": "becmi-foundry",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": true,
   "description": "Foundry VTT v13+ system for BECMI / Rules Cyclopedia, verified on v14",
   "type": "module",

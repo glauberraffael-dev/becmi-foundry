@@ -53,15 +53,16 @@ for (const pack of packs) {
   }
 
   if (pack === "tables") {
-    const names = ["Weapons (Basic Stats)", "Weapon Choices by Experience Level",
-      "Weapon Mastery Lookup", "Chance of Training Success"];
-    for (const name of names) {
-      const table = docs.find((doc) => doc.name === name);
-      const results = table
-        ? embedded.filter(([key]) => key.startsWith(`!tables.results!${table._id}.`)).length
-        : 0;
-      console.log(`  ${name}: ${results} results`);
+    // Only tables with an explicit die instruction are RollTables. All static
+    // reference tables live as text pages in the journals compendium.
+    if (docs.length !== 1 || docs[0].name !== "Monster Reactions (2d6)") {
+      throw new Error(`tables: expected only the 2d6 reaction table, found ${docs.map((d) => d.name).join(", ")}`);
     }
+    const table = docs[0];
+    if (table.formula !== "2d6") throw new Error("tables: Monster Reactions must roll 2d6");
+    const results = embedded.filter(([key]) => key.startsWith(`!tables.results!${table._id}.`)).length;
+    if (results !== 11) throw new Error(`tables: expected 11 reaction results, found ${results}`);
+    console.log(`  ${table.name}: ${results} results (${table.formula})`);
   }
 
   if (pack === "journals") {
@@ -88,6 +89,17 @@ for (const pack of packs) {
     );
     console.log(`  chapter 19 pages: ${variantPages.length} (${variantPages.join(", ")})`);
     if (variantPages.length < 3) throw new Error("journals: Chapter 19 progression tables are missing");
+    const equipment = docs.find((doc) => doc.name === "Equipment Tables");
+    const equipmentPages = (equipment?.pages ?? []).map((id) =>
+      embedded.find(([key]) => key === `!journal.pages!${equipment._id}.${id}`)?.[1]?.name ??
+      `<missing ${id}>`
+    );
+    console.log(`  equipment pages: ${equipmentPages.length} (${equipmentPages.join(", ")})`);
+    if (equipmentPages.length !== 9) throw new Error("journals: Equipment Tables pages are missing");
+    const core = docs.find((doc) => doc.name === "Core Rules Reference");
+    if (!core?.pages?.some((id) =>
+      embedded.find(([key]) => key === `!journal.pages!${core._id}.${id}`)?.[1]?.name === "Encounters and Reaction Rolls"
+    )) throw new Error("journals: random encounter guidance is missing");
   }
 
   await db.close();

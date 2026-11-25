@@ -9,15 +9,9 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { flatten, stripPictureText, summary } from "./normalize.mjs";
 import { ocrInput } from "./ocr-input.mjs";
-import {
-  AMMUNITION, ARMOR, ATTACK_BONUSES, BASIC_SPECIAL_EFFECTS, BASIC_WEAPONS, BARDING,
-  DESPAIR_EFFECT, EFFECTS_BLOWGUN_NET, EFFECTS_BLACKJACK, EFFECTS_BOLA_WHIP,
-  MASTERY_CHOICES, MASTERY_JOURNAL, MASTERY_LEVELS, MASTERY_REFERENCE,
-  MONSTER_MASTERY_LIMITS, NETS, PASSAGE, SIEGE_EQUIPMENT, SIEGE_WEAPONS,
-  TRAINING_COSTS, TRAINING_SUCCESS, WEAPON_PENALTIES, rollTable
-} from "./mastery-data.mjs";
+import { EQUIPMENT_JOURNAL, MASTERY_JOURNAL } from "./mastery-data.mjs";
 import { normalizeTreasureDocument } from "./pack-layout.mjs";
-import { buildReferenceJournals, buildReferenceTables } from "./reference-rules.mjs";
+import { buildReferenceJournals } from "./reference-rules.mjs";
 
 const require = createRequire(import.meta.url);
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -98,40 +92,14 @@ function tables() {
     }))
   }];
 
-  built.push(rollTable("Weapons (Basic Stats)", "Equipment", BASIC_WEAPONS.map(
-    ([name, damage, range, cost, enc, notes]) =>
-      [name, `damage ${damage}; range ${range}; ${cost} gp; ${enc} cn; notes ${notes}`]
-  )));
-  built.push(rollTable("Weapon Special Effects (Basic Weapons)", "Equipment", BASIC_SPECIAL_EFFECTS));
-  built.push(rollTable("Weapon Choices by Experience Level", "Weapon Mastery", MASTERY_CHOICES));
-  built.push(rollTable("Levels of Weapon Mastery", "Weapon Mastery", MASTERY_LEVELS));
-  built.push(rollTable("Training Times and Costs", "Weapon Mastery", TRAINING_COSTS));
-  built.push(rollTable("Chance of Training Success", "Weapon Mastery", TRAINING_SUCCESS));
-  built.push(rollTable("Attack Roll Bonuses (Weapon Mastery)", "Weapon Mastery", ATTACK_BONUSES));
-  built.push(rollTable("Despair Effect", "Weapon Mastery", DESPAIR_EFFECT));
-  built.push(rollTable("Mastery Limits for Weapon-Using Monsters", "Weapon Mastery", MONSTER_MASTERY_LIMITS));
-  built.push(rollTable("Weapon Mastery Penalties", "Weapon Mastery", WEAPON_PENALTIES));
-  built.push(rollTable("Special Effects: Blowgun and Net", "Weapon Mastery", EFFECTS_BLOWGUN_NET));
-  built.push(rollTable("Special Effects: Blackjack", "Weapon Mastery", EFFECTS_BLACKJACK));
-  built.push(rollTable("Special Effects: Bola and Whip", "Weapon Mastery", EFFECTS_BOLA_WHIP));
-  built.push(rollTable("Ammunition", "Equipment", AMMUNITION));
-  built.push(rollTable("Armor", "Equipment", ARMOR));
-  built.push(rollTable("Barding", "Equipment", BARDING));
-  built.push(rollTable("Nets", "Equipment", NETS));
-  built.push(rollTable("Siege Weapons", "Equipment", SIEGE_WEAPONS));
-  built.push(rollTable("Miscellaneous Siege Equipment", "Equipment", SIEGE_EQUIPMENT));
-  built.push(rollTable("Passage", "Equipment", PASSAGE));
-  built.push(rollTable("Weapon Mastery Lookup", "Weapon Mastery", MASTERY_REFERENCE.flatMap((g) =>
-    g.weapons.map(([name, ...levels]) =>
-      [name, `BS ${levels[0]} | SK ${levels[1]} | EX ${levels[2]} | MS ${levels[3]} | GM ${levels[4]}`]
-    )
-  )));
-
-  return [...built, ...buildReferenceTables()];
+  // Only the Monster Reactions table has an explicit 2d6 roll instruction.
+  // All other reference tables are journal text in the Rules Reference and
+  // Equipment Tables compendia.
+  return built;
 }
 
 function journals() {
-  return buildReferenceJournals(MASTERY_JOURNAL);
+  return [...buildReferenceJournals(MASTERY_JOURNAL), EQUIPMENT_JOURNAL];
 }
 
 const lines = require("node:fs").readFileSync(input, "utf8").split(/\r?\n/);

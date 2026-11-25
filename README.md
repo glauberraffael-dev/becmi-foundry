@@ -34,7 +34,7 @@ short paraphrases; the PDF and OCR export are **not** included.
   resizing the Foundry window.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling, 16 mystic,
   plus the extended demihuman/mystic progression from Chapter 19.
-- Seven precompiled LevelDB compendia with 568 documents in total.
+- Seven precompiled LevelDB compendia with 539 documents in total.
 
 ## Compendia
 
@@ -45,8 +45,8 @@ short paraphrases; the PDF and OCR export are **not** included.
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
 | BECMI Treasure | Item | 32 |
-| BECMI Tables | RollTable | 31 |
-| BECMI Rules Reference | JournalEntry | 25 |
+| BECMI Tables | RollTable | 1 |
+| BECMI Rules Reference | JournalEntry | 26 |
 
 `BECMI Spells` has folders for Cleric, Druid and Magic-User spells, each with a
 subfolder per spell level. `BECMI Equipment`
@@ -56,13 +56,15 @@ folders for Weapons, Armor & Shields, Adventuring Gear and Transport & Siege.
 `BECMI Treasure` has separate folders for Potions, Miscellaneous Magical Items,
 Missile Talents and Magic Item Enchantment Rules (procedural rules are `feature`
 items, not treasures).
-`BECMI Tables` includes the monster reaction table, a Weapons Table lookup, basic weapon
-special effects, ammunition, armor, barding, nets, siege equipment, passage prices,
-the optional Weapon Mastery tables and reference lookups for attacks, saves, thief
-skills, turn undead and spell slots. `BECMI Rules Reference` includes condensed rules
-for all 19 chapters and all 4 appendices, a **Core Rules Reference** journal and a
-six-page **Weapon Mastery (Optional)** journal with a condensed level-by-level weapon
-table. Monsters are filed in nine folders (animals, lowlife, constructs, dragons,
+`BECMI Tables` contains only the genuinely random 2d6 monster reaction table.
+Static lookups are journal text: the **Equipment Tables** journal keeps the weapon,
+special-effect, ammunition, armor, barding, net and siege tables, while the
+**Core Rules Reference** and chapter journals keep attack, save, thief skill, turn
+undead and spell slot tables. `BECMI Rules Reference` includes condensed rules for
+all 19 chapters and all 4 appendices, the Core Rules Reference (with encounter and
+reaction guidance), a nine-page Equipment Tables journal and a six-page
+**Weapon Mastery (Optional)** journal with a condensed level-by-level weapon table.
+Monsters are filed in nine folders (animals, lowlife, constructs, dragons,
 humanoids, monsters, planar monsters, undead and unclassified) with stat blocks in
 Rules Cyclopedia order. Chapters 10, 18 and 19 and Appendix 4 carry the extended XP,
 plane and index tables; each journal has its own scrollable table pages.
@@ -78,8 +80,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.12`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.12.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.13`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.13.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

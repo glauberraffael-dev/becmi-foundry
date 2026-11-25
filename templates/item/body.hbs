@@ -1,4 +1,5 @@
 <div class="becmi-body">
+<div class="becmi-scroll-y">
 <div class="becmi-section-title">{{localize 'BECMI.sheet.details'}}</div>
 <div class="becmi-grid becmi-grid--combat">
   {{#if isWeapon}}
@@ -40,7 +41,6 @@
 
 {{#if isClass}}
 <div class="becmi-section-title">{{localize 'BECMI.sheet.xpTable'}} <button type="button" class="becmi-roll" data-action="applyClass">{{localize 'BECMI.sheet.applyClass'}}</button></div>
-<div class="becmi-scroll-y">
 <table class="becmi-table becmi-table--xp">
   <thead><tr><th>{{localize 'BECMI.labels.level'}}</th><th>{{localize 'BECMI.labels.xp'}}</th></tr></thead>
   <tbody>
@@ -51,7 +51,6 @@
     {{/each}}
   </tbody>
 </table>
-</div>
 {{/if}}
 
 <div class="becmi-section-title">{{localize 'BECMI.labels.description'}}</div>
@@ -60,4 +59,5 @@
 <div class="becmi-section-title">{{localize 'BECMI.sheet.notes'}}</div>
 <button type="button" data-action="sendToChat">{{localize 'BECMI.sheet.sendToChat'}}</button>
 {{/if}}
+</div>
 </div>

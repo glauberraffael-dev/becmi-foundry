@@ -18,7 +18,7 @@
       "name": "Overview",
       "type": "text",
       "text": {
-        "content": "<h2>Appendix 4 — Indices</h2>\n <p>The spell index is alphabetized by name; the letter after a name identifies its list: C for cleric, D for druid and M for magic-user. The same letters are used by the Spell compendium's folder keys. Tables and checklists are indexed by category in the Tables compendium; monsters and equipment are indexed alphabetically inside their category folders.</p>"
+        "content": "<h2>Appendix 4 — Indices</h2>\n <p>The spell index is alphabetized by name; the letter after a name identifies its list: C for cleric, D for druid and M for magic-user. The same letters are used by the Spell compendium's folder keys. Reference tables and checklists are indexed as text pages in the Rules Reference compendium; only tables with a die instruction (such as Monster Reactions) are RollTables. Monsters and equipment are indexed alphabetically inside their category folders.</p>"
       },
       "_id": "XK1z7lxktAJqiyUO",
       "_key": "!journal.pages!llUcC8L9FefkmPYm.XK1z7lxktAJqiyUO"
@@ -45,7 +45,7 @@
       "name": "Tables 3",
       "type": "text",
       "text": {
-        "content": "<h2>Indices — Tables 3</h2><table><thead><tr><th>Reference table</th><th>Compendium</th></tr></thead><tbody><tr><td>Ability Score Modifiers</td><td>BECMI Tables</td></tr><tr><td>Attack Roll Matrix</td><td>BECMI Tables</td></tr><tr><td>Saving Throws — Cleric and Thief</td><td>BECMI Tables</td></tr><tr><td>Saving Throws — Fighter</td><td>BECMI Tables</td></tr><tr><td>Saving Throws — Magic-User</td><td>BECMI Tables</td></tr><tr><td>Spell Slots — Cleric</td><td>BECMI Tables</td></tr><tr><td>Spell Slots — Magic-User</td><td>BECMI Tables</td></tr><tr><td>Thief Skills by Level</td><td>BECMI Tables</td></tr><tr><td>Turn Undead Results</td><td>BECMI Tables</td></tr></tbody></table>"
+        "content": "<h2>Indices — Tables 3</h2><table><thead><tr><th>Reference page</th><th>Compendium</th></tr></thead><tbody><tr><td>Attack Matrix</td><td>BECMI Rules Reference</td></tr><tr><td>Benefits</td><td>BECMI Rules Reference</td></tr><tr><td>Combat Sequence</td><td>BECMI Rules Reference</td></tr><tr><td>Core Rules Reference</td><td>BECMI Rules Reference</td></tr><tr><td>Effects and Penalties</td><td>BECMI Rules Reference</td></tr><tr><td>Encounters and Reaction Rolls</td><td>BECMI Rules Reference</td></tr><tr><td>Encumbrance</td><td>BECMI Rules Reference</td></tr><tr><td>Equipment Tables</td><td>BECMI Rules Reference</td></tr><tr><td>Mastery - Hand-Held</td><td>BECMI Rules Reference</td></tr><tr><td>Mastery - Missile</td><td>BECMI Rules Reference</td></tr><tr><td>Saving Throws</td><td>BECMI Rules Reference</td></tr><tr><td>Spellcasting</td><td>BECMI Rules Reference</td></tr><tr><td>Treasure</td><td>BECMI Rules Reference</td></tr><tr><td>Weapon Choices and Training</td><td>BECMI Rules Reference</td></tr><tr><td>Weapon Mastery (Optional)</td><td>BECMI Rules Reference</td></tr></tbody></table>"
       },
       "_id": "2mvgzMBlN99yWl0O",
       "_key": "!journal.pages!llUcC8L9FefkmPYm.2mvgzMBlN99yWl0O"

@@ -8,8 +8,9 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   compareDocuments, folderDefinitionKey, folderId, spellFolderKey,
-  TREASURE_CATEGORIES
+  SPELL_LIST_LEVELS, TREASURE_CATEGORIES
 } from "./pack-layout.mjs";
+import { SPELL_MATH_OVERRIDES } from "./spell-math.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), "utf8"));
@@ -116,6 +117,41 @@ for (const [pack, check] of Object.entries(expected)) {
   console.log(`${pack}: ${docs.length} documents`);
 }
 
+// --- OCR spell maths must keep their explicit dice formulas ----------------
+const spellDocs = await readJson("data/spells.json");
+for (const [name, override] of Object.entries(SPELL_MATH_OVERRIDES)) {
+  const spell = spellDocs.find((doc) => String(doc.name).toLowerCase() === name);
+  if (!spell) { note(`spells: missing ${name} for math validation`); continue; }
+  if (spell.system?.rollFormula !== override.rollFormula) {
+    note(`spells: ${name} should roll ${override.rollFormula}`);
+  }
+  for (const [field, value] of Object.entries(override.fields ?? {})) {
+    if (spell.system?.[field] !== value) note(`spells: ${name} has an incorrect ${field}`);
+  }
+  for (const [from] of override.descriptionReplace ?? []) {
+    if (String(spell.system?.description ?? "").includes(from)) {
+      note(`spells: ${name} still contains OCR-damaged math "${from}"`);
+    }
+  }
+  if (override.descriptionAppend && !String(spell.system?.description ?? "").includes(override.descriptionAppend)) {
+    note(`spells: ${name} is missing its dice explanation`);
+  }
+}
+
+// --- Only explicitly rollable tables are RollTables ------------------------
+const tableDocs = await readJson("data/tables.json");
+if (tableDocs.length !== 1 || tableDocs[0].name !== "Monster Reactions (2d6)" ||
+    tableDocs[0].formula !== "2d6") {
+  note("tables: only the Monster Reactions (2d6) RollTable should remain");
+}
+const rollableJournalDocs = await readJson("data/journals.json");
+const equipmentJournal = rollableJournalDocs.find((doc) => doc.name === "Equipment Tables");
+if (equipmentJournal?.pages?.length !== 9) note("journals: Equipment Tables should have 9 text pages");
+if (!rollableJournalDocs.find((doc) => doc.name === "Core Rules Reference")?.pages
+  ?.some((page) => page.name === "Encounters and Reaction Rolls")) {
+  note("journals: missing encounter and reaction reference page");
+}
+
 // --- Compendium source files ----------------------------------------------
 for (const pack of Object.keys(expected)) {
   const dir = `source/${pack}`;
@@ -154,13 +190,21 @@ for (const [pack, definitions] of Object.entries(folderDefinitions)) {
     }
   }
 }
-for (const list of ["cleric", "druid", "magic-user"]) {
-  for (let level = 1; level <= 9; level++) {
-    const key = spellFolderKey(list, level);
-    if (!folderDefinitions.spells.some((f) => folderDefinitionKey(f) === key)) {
-      note(`spells: missing level folder ${key}`);
-    }
-  }
+const expectedSpellFolders = new Set();
+for (const [list, levels] of Object.entries(SPELL_LIST_LEVELS)) {
+  expectedSpellFolders.add(`spells:${list}`);
+  for (const level of levels) expectedSpellFolders.add(spellFolderKey(list, level));
+}
+const actualSpellFolders = new Set(folderDefinitions.spells.map(folderDefinitionKey));
+for (const key of expectedSpellFolders) {
+  if (!actualSpellFolders.has(key)) note(`spells: missing level folder ${key}`);
+}
+for (const key of actualSpellFolders) {
+  if (!expectedSpellFolders.has(key)) note(`spells: empty or unexpected folder ${key}`);
+}
+for (const doc of await readJson("data/spells.json")) {
+  const key = spellFolderKey(doc.flags?.becmi?.list ?? doc.system?.spellLists?.[0], doc.system?.spellLevel);
+  if (!actualSpellFolders.has(key)) note(`spells: ${doc.name} points to missing folder ${key}`);
 }
 
 const sortedPacks = ["monsters", "spells", "equipment", "classes", "treasure", "tables", "journals"];
@@ -246,13 +290,25 @@ const sheetSource = await readFile(join(root, "scripts/sheets/actor-sheet.mjs"),
 if (!sheetSource.includes("advanceActorLevels")) note("actor sheet: level-up button does not use advanceActorLevels");
 if (!sheetSource.includes("classFeaturesFor")) note("actor sheet: class abilities are not indexed");
 if (!sheetSource.includes("context.classFeatures")) note("actor sheet: class abilities are not passed to the template");
+for (const token of [
+  "async _onDrop(event)", "async _onDropItem(event, item)", "getDragEventData",
+  "fromCompendium", "importSpellToActor"
+]) {
+  if (!sheetSource.includes(token)) note(`actor sheet: missing spell drop support (${token})`);
+}
+if (!actorBody.includes("spellDropHint")) note("actor sheet: missing spell drop hint");
 if (!actorBody.includes('data-tab="features"')) note("actor sheet: missing class abilities tab");
 if (!actorBody.includes("becmi-feature-grid")) note("actor sheet: missing class ability grid");
 if (!css.includes(".becmi-tab-panel.is-active")) note("CSS: tab panels cannot scroll");
 if (!css.includes(".becmi-scroll-y")) note("CSS: reusable scroll container is missing");
 if (!css.includes("overscroll-behavior: contain")) note("CSS: scroll containers do not contain overscroll");
 const itemBody = await readFile(join(root, "templates/item/body.hbs"), "utf8");
-if (!itemBody.includes('class="becmi-scroll-y"')) note("item sheet: XP table is not scrollable");
+if (!/^<div class="becmi-body">\s*<div class="becmi-scroll-y">/.test(itemBody)) {
+  note("item sheet: the whole body is not inside one scroll container");
+}
+if (!css.includes(".becmi.sheet.item .becmi-body > .becmi-scroll-y")) {
+  note("CSS: item body scroll container is not sized");
+}
 
 // --- Journals must cover every chapter, appendix and progression table ------
 for (let chapter = 1; chapter <= 19; chapter++) {

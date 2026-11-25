@@ -245,6 +245,7 @@
   "BECMI.sheet.used": "Used",
   "BECMI.sheet.rest": "Rest — Clear Used Slots",
   "BECMI.sheet.spellList": "Spell List",
+  "BECMI.sheet.spellDropHint": "Drag a spell from a compendium onto this sheet to add it to the spell list.",
   "BECMI.sheet.search": "Search",
   "BECMI.sheet.turnLegend": "The highlighted column is your level's Turn Undead column. Roll 2d6 against the cell.",
   "BECMI.sheet.attackLegend": "† = automatic hit. Resolve the d20 roll against the target's AC.",
@@ -274,6 +275,10 @@
 
   "BECMI.notification.noClass": "Choose a character class first.",
   "BECMI.notification.noSpellSlot": "No free spell slot of that level is available.",
+  "BECMI.notification.spellImported": "Added {name} to the spell list.",
+  "BECMI.notification.spellAlreadyKnown": "{name} is already in the spell list.",
+  "BECMI.notification.spellDropInvalid": "Only spell items can be dropped here.",
+  "BECMI.notification.spellImportFailed": "The spell could not be added to this character.",
   "BECMI.notification.noSpells": "This class does not cast spells.",
   "BECMI.notification.badExpression": "Invalid dice expression: {expression}",
   "BECMI.rolls.cast": "Cast",

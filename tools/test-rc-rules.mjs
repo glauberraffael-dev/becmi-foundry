@@ -163,7 +163,15 @@ check("weapon mastery resolves ranks and damage options", () => {
 
 check("hit points use dice up to level 9 and fixed values after", () => {
   assert.equal(hpForLevel("fighter", 2, 2, () => 0).gain, 3);
-  assert.equal(hpForLevel("fighter", 10, 2, () => 0).gain, 2);
+  assert.equal(hpForLevel("fighter", 9, 2, () => 0).gain, 3);
+  const fixed = { fighter: 2, cleric: 1, thief: 2, "magic-user": 1, dwarf: 3, elf: 1, mystic: 2 };
+  for (const [key, gain] of Object.entries(fixed)) {
+    const result = hpForLevel(key, 10, 5, () => 0);
+    assert.equal(result.gain, gain, `${key} fixed HP after 9th`);
+    assert.match(result.text, /fixed HP \(no CON bonus\)/, `${key} must ignore CON after 9th`);
+  }
+  // The halfling campaign ends at 8th level, so it never reaches a fixed gain.
+  assert.ok(hpForLevel("halfling", 8, 2, () => 0).gain > 0);
 });
 
 check("the free roller supports dice, modifiers and half expressions", () => {

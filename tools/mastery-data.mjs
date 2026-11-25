@@ -8,29 +8,9 @@
  * cell alignment.
  */
 
-const src = (category) => ({ source: "Rules Cyclopedia", category });
-
-/**
- * Build a RollTable document. Every row becomes a single result so the table
- * can be rolled as a lookup with `1d<rows>`.
- */
-export function rollTable(name, category, rows, extra = {}) {
-  const formula = rows.length === 1 ? "1" : `1d${rows.length}`;
-  return {
-    name,
-    flags: { becmi: src(category) },
-    formula,
-    ...extra,
-    results: rows.map(([label, text], i) => ({
-      _id: `${name.replace(/[^a-z0-9]/gi, "").slice(0, 12).toLowerCase()}${i}`.padEnd(16, "0"),
-      type: "text",
-      text: text ? `${label}: ${text}` : label,
-      range: [i + 1, i + 1],
-      weight: 1,
-      drawn: false
-    }))
-  };
-}
+// Static reference tables are journal text, not RollTables. The Rules
+// Cyclopedia says to consult them by score, level, class, HD or weapon; only
+// tables with an explicit die instruction become RollTable documents.
 
 // ---------------------------------------------------------------------------
 // Chapter 4: the basic Weapons Table (PDF p. 62).
@@ -413,6 +393,63 @@ ${table(["Victim HD", "Effect on failed save"], EFFECTS_BOLA_WHIP)}
 ${table(["Case", "Result"], WEAPON_PENALTIES)}
 <p>With the optional Two Weapons Combat rule, the second attack is at -4 to hit and is treated as one mastery level lower. A Basic second weapon stays Basic; an Unskilled weapon cannot be used as the second attack. Cestus, horned shield, knife shield and sword shield ignore the off-hand penalty; the tusked shield allows two attacks with no off-hand penalty. All optional sources together can add at most +1 attack per round.</p>`),
       name: "Effects and Penalties"
+    }
+  ]
+};
+
+/** Static equipment tables, kept as journal text instead of fake RollTables. */
+export const EQUIPMENT_JOURNAL = {
+  name: "Equipment Tables",
+  flags: { becmi: { source: "Rules Cyclopedia", category: "Equipment" } },
+  pages: [
+    {
+      ...p(`<h2>Weapons (Basic Stats)</h2>
+${table(["Weapon", "Damage", "Range S/M/L", "Cost (gp)", "Enc. (cn)", "Notes"], BASIC_WEAPONS)}
+<p>Consult this table by weapon name; it is not rolled randomly. Damage is the base die before Strength and magic bonuses.</p>`),
+      name: "Weapons"
+    },
+    {
+      ...p(`<h2>Weapon Special Effects (Basic Weapons)</h2>
+${table(["Victim HD", "Result by weapon type"], BASIC_SPECIAL_EFFECTS)}
+<p>Find the victim's Hit Dice row; the listed save bonus and effects are looked up, not rolled.</p>`),
+      name: "Weapon Special Effects"
+    },
+    {
+      ...p(`<h2>Ammunition</h2>
+${table(["Ammunition", "Quantity, cost and encumbrance"], AMMUNITION)}`),
+      name: "Ammunition"
+    },
+    {
+      ...p(`<h2>Armor</h2>
+${table(["Armor", "AC, cost and encumbrance"], ARMOR)}`),
+      name: "Armor"
+    },
+    {
+      ...p(`<h2>Barding</h2>
+${table(["Barding", "AC, cost and encumbrance"], BARDING)}
+<p>Multiply the listed cost and weight by the creature's size multiplier.</p>`),
+      name: "Barding"
+    },
+    {
+      ...p(`<h2>Nets</h2>
+${table(["Victim size", "Net size"], NETS)}`),
+      name: "Nets"
+    },
+    {
+      ...p(`<h2>Siege Weapons</h2>
+${table(["Weapon", "Cost, encumbrance, AC, hp, crew, range, damage, rate"], SIEGE_WEAPONS)}`),
+      name: "Siege Weapons"
+    },
+    {
+      ...p(`<h2>Miscellaneous Siege Equipment</h2>
+${table(["Equipment", "Cost and statistics"], SIEGE_EQUIPMENT)}`),
+      name: "Siege Equipment"
+    },
+    {
+      ...p(`<h2>Passage</h2>
+${table(["Class", "Fare"], PASSAGE)}
+<p>Divide the distance travelled by the listed rate to find the passage cost.</p>`),
+      name: "Passage"
     }
   ]
 };

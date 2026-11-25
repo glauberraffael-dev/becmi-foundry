@@ -10,13 +10,14 @@
       "cleric"
     ],
     "range": "60'",
-    "duration": "2-5 rounds or 2-5 turns",
+    "duration": "1d4 + 1 (2-5) rounds or 1d4 + 1 (2-5) turns",
     "effect": "Charms 1 HD of snakes per level of the caster With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed.",
     "reversible": false,
-    "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 +1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
+    "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 + 1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "rollFormula": "1d4 + 1"
   },
   "flags": {
     "becmi": {

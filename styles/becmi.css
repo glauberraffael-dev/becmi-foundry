@@ -519,6 +519,28 @@
   flex: 1;
 }
 
+/* Item sheets keep one scrollbar for the whole body, including long XP
+   tables and descriptions, instead of nesting independent scroll areas. */
+.becmi.sheet.item,
+.becmi.sheet.item .window-content {
+  overflow: hidden;
+}
+
+.becmi.sheet.item .becmi-body {
+  display: flex;
+  min-height: 0;
+}
+
+.becmi.sheet.item .becmi-body > .becmi-scroll-y {
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.25rem;
+  overscroll-behavior: contain;
+}
+
 /* ----------------------------------------------------------- chat cards */
 .becmi-roll-card {
   border: 1px solid var(--becmi-border);

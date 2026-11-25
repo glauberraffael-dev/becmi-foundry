@@ -1,4 +1,4 @@
-import { advanceActorLevels, spellListsForClass } from "../integrations.mjs";
+import { advanceActorLevels, importSpellToActor, spellListsForClass } from "../integrations.mjs";
 import { classFeaturesFor } from "../class-features.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
@@ -104,10 +104,31 @@ const byName = (a, b) => String(a.name ?? "").localeCompare(String(b.name ?? "")
 const bySpellLevelThenName = (a, b) =>
   (Number(a.system?.spellLevel) || 0) - (Number(b.system?.spellLevel) || 0) || byName(a, b);
 
+/** Read the raw document UUID before ActorSheetV2 resolves the drop. */
+function draggedDocumentUuid(event) {
+  try {
+    const TextEditor = foundry.applications.ux.TextEditor.implementation
+      ?? foundry.applications.ux.TextEditor;
+    const data = TextEditor.getDragEventData(event);
+    const uuid = data?.uuid ?? data?.documentUuid;
+    return typeof uuid === "string" ? uuid : "";
+  } catch {
+    return "";
+  }
+}
+
+/** Normalize the compendium UUID variants used by Foundry v13 and v14. */
+function canonicalCompendiumUuid(uuid) {
+  const value = String(uuid ?? "");
+  return value.replace(/^Compendium\.([^.]+)\.([^.]+)\.(?:Item\.)?([^.]+)$/,
+    (_match, scope, pack, id) => `Compendium.${scope}.${pack}.Item.${id}`);
+}
+
 export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   activeTab = "main";
   sidebarCollapsed = false;
   targetAC = 9;
+  #dropUuidByEvent = new WeakMap();
 
   static DEFAULT_OPTIONS = Object.freeze(foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
     classes: ["becmi", "sheet", "actor"],
@@ -155,6 +176,66 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     header: { template: "systems/becmi/templates/actor/header.hbs" },
     body: { template: "systems/becmi/templates/actor/body.hbs" }
   };
+
+  /** Capture the drag UUID, then let ActorSheetV2 resolve the dropped document. */
+  async _onDrop(event) {
+    const uuid = draggedDocumentUuid(event);
+    if (uuid) this.#dropUuidByEvent.set(event, uuid);
+    try {
+      return await super._onDrop(event);
+    } finally {
+      this.#dropUuidByEvent.delete(event);
+    }
+  }
+
+  /** Import compendium spells as owned spell Items instead of duplicating them. */
+  async _onDropItem(event, item) {
+    if (!this.isEditable || item?.documentName !== "Item") return null;
+
+    // Dropping an owned Item back onto its Actor is reordering, not importing.
+    if (item.parent === this.actor) return super._onDropItem(event, item);
+
+    if (item.type !== "spell") {
+      if (globalThis.ui?.notifications?.warn) {
+        ui.notifications.warn(game.i18n.localize("BECMI.notification.spellDropInvalid"));
+      }
+      return null;
+    }
+
+    const droppedUuid = canonicalCompendiumUuid(this.#dropUuidByEvent.get(event));
+    const sourceUuid = canonicalCompendiumUuid(
+      item.flags?.core?.sourceId ?? item._stats?.compendiumSource ?? item.uuid ?? droppedUuid
+    );
+    const uuid = droppedUuid.startsWith("Compendium.") ? droppedUuid : sourceUuid;
+
+    const source = item.compendium
+      ? game.items.fromCompendium(item, { clearFolder: true, keepId: false })
+      : foundry.utils.deepClone(item.toObject());
+    source.type = "spell";
+    if (uuid.startsWith("Compendium.")) {
+      source.flags ??= {};
+      source.flags.core ??= {};
+      source.flags.core.sourceId ??= uuid;
+      source._stats ??= {};
+      source._stats.compendiumSource ??= uuid;
+    }
+
+    const result = await importSpellToActor(this.actor, source);
+    if (globalThis.ui?.notifications) {
+      if (result.status === "imported") {
+        ui.notifications.info(game.i18n.format("BECMI.notification.spellImported", {
+          name: result.item?.name ?? item.name
+        }));
+      } else if (result.status === "duplicate") {
+        ui.notifications.info(game.i18n.format("BECMI.notification.spellAlreadyKnown", {
+          name: item.name
+        }));
+      } else if (result.status === "failed") {
+        ui.notifications.warn(game.i18n.localize("BECMI.notification.spellImportFailed"));
+      }
+    }
+    return result.item;
+  }
 
   async _prepareContext(options) {
     const context = await super._prepareContext(options);

@@ -11,12 +11,13 @@
     ],
     "range": "0",
     "duration": "6 turns",
-    "effect": "The spellcaster only With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him.",
+    "effect": "Creates 1d4 (1-4) additional images which look and act exactly like the spellcaster",
     "reversible": false,
-    "description": "With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him. The images appear and remain next to (within 3' of) the spellcaster, moving if the spell- caster moves, talking if the spellcaster talks, and so forth. The spellcaster need not concentrate; the images will remain until the duration ends, or until they are hit. The images are not real, and cannot actually do anything. Any successful attack on the spellcaster will strike an image instead, which will merely cause that image to disappear (regardless of the actual damage); this continues until all the images are dispelled.",
+    "description": "With this spell, the spellcaster creates 1d4 (1-4) additional images which look and act exactly like him. The images appear and remain next to (within 3' of) the spellcaster, moving if the spell- caster moves, talking if the spellcaster talks, and so forth. The spellcaster need not concentrate; the images will remain until the duration ends, or until they are hit. The images are not real, and cannot actually do anything. Any successful attack on the spellcaster will strike an image instead, which will merely cause that image to disappear (regardless of the actual damage); this continues until all the images are dispelled.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "rollFormula": "1d4"
   },
   "flags": {
     "becmi": {

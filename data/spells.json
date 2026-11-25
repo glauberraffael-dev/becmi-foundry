@@ -330,13 +330,14 @@
         "cleric"
       ],
       "range": "60'",
-      "duration": "2-5 rounds or 2-5 turns",
+      "duration": "1d4 + 1 (2-5) rounds or 1d4 + 1 (2-5) turns",
       "effect": "Charms 1 HD of snakes per level of the caster With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed.",
       "reversible": false,
-      "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 +1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
+      "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 + 1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d4 + 1"
     }
   },
   {
@@ -406,10 +407,11 @@
       "duration": "Permanent",
       "effect": "One living creature within range",
       "reversible": false,
-      "description": "This spell will cure any living creature of one disease, such as those caused by a mummy or green slime. If cast by a cleric of llth level or greater, this spell will also cure lycanthropy. The reverse of this spell, cause disease, infects the victim with a hideous wasting disease unless he successfully makes a saving throw vs. spells. A diseased victim has a -2 penalty on all attack rolls. In addition, the victim's wounds cannot be magically cured, and natural healing takes twice as long as usual. The disease is fatal in 2dl2 (224) days unless removed by a cure disease spell.",
+      "description": "This spell will cure any living creature of one disease, such as those caused by a mummy or green slime. If cast by a cleric of 11th level or greater, this spell will also cure lycanthropy. The reverse of this spell, cause disease, infects the victim with a hideous wasting disease unless he successfully makes a saving throw vs. spells. A diseased victim has a -2 penalty on all attack rolls. In addition, the victim's wounds cannot be magically cured, and natural healing takes twice as long as usual. The disease is fatal in 2d12 (2-24) days unless removed by a cure disease spell.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d12"
     }
   },
   {
@@ -987,10 +989,11 @@
       "duration": "12 turns",
       "effect": "Creates whirling hammers",
       "reversible": false,
-      "description": "This spell creates a magical barrier in an area up to 30' in diameter and 30' high. The barrier is a wall of whirling and dancing hammers, obviously dangerous to any who come in contact with it. Any creature passing through the barrier takes 7dl0 (7-70) points of damage from the whirling hammers (no saving throw allowed). This spell is often used to block an entrance or passage. The reverse of this spell (remove barrier) will destroy any one barrier created by a cleric. It can also be used to destroy a magic-user's wall of ice, wall of fire, clothform, woodform, or wall of stone spell effects. It will not affect the magicuser spells wall of iron, stoneform, ironform or steelform.",
+      "description": "This spell creates a magical barrier in an area up to 30' in diameter and 30' high. The barrier is a wall of whirling and dancing hammers, obviously dangerous to any who come in contact with it. Any creature passing through the barrier takes 7d10 (7-70) points of damage from the whirling hammers (no saving throw allowed). This spell is often used to block an entrance or passage. The reverse of this spell (remove barrier) will destroy any one barrier created by a cleric. It can also be used to destroy a magic-user's wall of ice, wall of fire, clothform, woodform, or wall of stone spell effects. It will not affect the magicuser spells wall of iron, stoneform, ironform or steelform.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "7d10"
     }
   },
   {
@@ -1155,10 +1158,11 @@
       "duration": "Instantaneous",
       "effect": "All creatures within 40'",
       "reversible": false,
-      "description": "This spell affects all creatures, friend or foe, within a circular area of 40' radius, centered on the caster. When the cleric casts this spell, all creatures of alignments other than the cleric's are affected as follows (no saving throw vs. spells allowed): Holy Word Effects Up to 5th Level: Killed Level 6-8: Level 9-12: Level 13 + : Stunned 2dl0 turns Deafened 1d6 turns Stunned 1d10 rounds Any victim of 13th level (or Hit Dice) or higher, or any victim of the same alignment as the caster, may make a saving throw vs. spells to avoid all spell effects. This powerful spell cannot be blocked by stone, nor by any other solid material except lead.",
+      "description": "This spell affects all creatures, friend or foe, within a circular area of 40' radius, centered on the caster. When the cleric casts this spell, all creatures of alignments other than the cleric's are affected as follows (no saving throw vs. spells allowed): Holy Word Effects Up to 5th Level: Killed Level 6-8: Level 9-12: Level 13 + : Stunned 2d10 turns Deafened 1d6 turns Stunned 1d10 rounds Any victim of 13th level (or Hit Dice) or higher, or any victim of the same alignment as the caster, may make a saving throw vs. spells to avoid all spell effects. This powerful spell cannot be blocked by stone, nor by any other solid material except lead.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "Level 6-8: stunned 2d10 turns; level 9-12: deafened 1d6 turns; level 13+: stunned 1d10 rounds.",
+      "rollFormula": "2d10"
     }
   },
   {
@@ -1203,10 +1207,11 @@
       "duration": "Permanent",
       "effect": "Restores 1 level lost to _energy drain_",
       "reversible": false,
-      "description": "This spell restores one full level of energy (experience) to any victim who has lost a level because of energy drain (for instance, from a vampire's attack). It does not restore more than one level, nor does it add a level if no level has been lost. Furthermore, the cleric casting this spell loses one level of experience, as if struck by a wight when the spell is cast; however, the cleric's loss is not permanent, and the cleric need only rest for 2dl0 (2-20) days to regain the lost experience. The reverse of this spell, life drain, drains one level of experience from the victim touched, just like the touch of a wight or wraith.",
+      "description": "This spell restores one full level of energy (experience) to any victim who has lost a level because of energy drain (for instance, from a vampire's attack). It does not restore more than one level, nor does it add a level if no level has been lost. Furthermore, the cleric casting this spell loses one level of experience, as if struck by a wight when the spell is cast; however, the cleric's loss is not permanent, and the cleric need only rest for 2d10 (2-20) days to regain the lost experience. The reverse of this spell, life drain, drains one level of experience from the victim touched, just like the touch of a wight or wraith.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d10"
     }
   },
   {
@@ -2239,12 +2244,13 @@
       ],
       "range": "240'",
       "duration": "4d4 (4-16) turns",
-      "effect": "2-16 Hit Dice of living creatures within a 40' square area",
+      "effect": "2d8 (2-16) Hit Dice of living creatures within a 40' square area",
       "reversible": false,
-      "description": "This spell will put creatures to sleep for up to 16 turns. It will only affect creatures with 4 + 1 Hit Dice or less—generally, small or man-sized creatures. The spell will not affect creatures outside the 40' X 40' area which the player chooses as the spell's target area. The spell will not work against undead or very large creatures, such as dragons. When a character is first hit with a sleep spell, falling or sagging to the ground will not wake him up. However, characters affected by a sleep spell are not in a deep sleep. Any sleeping character or creature will awaken if slapped, kicked, or shaken.",
+      "description": "This spell will put creatures to sleep for up to 16 turns. It will only affect creatures with 4 + 1 Hit Dice or less—generally, small or man-sized creatures. The spell will not affect creatures outside the 40' X 40' area which the player chooses as the spell's target area. The spell will not work against undead or very large creatures, such as dragons. When a character is first hit with a sleep spell, falling or sagging to the ground will not wake him up. However, characters affected by a sleep spell are not in a deep sleep. Any sleeping character or creature will awaken if slapped, kicked, or shaken. Your Dungeon Master will roll 2d8 to find the total Hit Dice or experience levels of monsters affected by the spell.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d8"
     }
   },
   {
@@ -2431,12 +2437,13 @@
       ],
       "range": "0",
       "duration": "6 turns",
-      "effect": "The spellcaster only With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him.",
+      "effect": "Creates 1d4 (1-4) additional images which look and act exactly like the spellcaster",
       "reversible": false,
-      "description": "With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him. The images appear and remain next to (within 3' of) the spellcaster, moving if the spell- caster moves, talking if the spellcaster talks, and so forth. The spellcaster need not concentrate; the images will remain until the duration ends, or until they are hit. The images are not real, and cannot actually do anything. Any successful attack on the spellcaster will strike an image instead, which will merely cause that image to disappear (regardless of the actual damage); this continues until all the images are dispelled.",
+      "description": "With this spell, the spellcaster creates 1d4 (1-4) additional images which look and act exactly like him. The images appear and remain next to (within 3' of) the spellcaster, moving if the spell- caster moves, talking if the spellcaster talks, and so forth. The spellcaster need not concentrate; the images will remain until the duration ends, or until they are hit. The images are not real, and cannot actually do anything. Any successful attack on the spellcaster will strike an image instead, which will merely cause that image to disappear (regardless of the actual damage); this continues until all the images are dispelled.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d4"
     }
   },
   {
@@ -3127,12 +3134,13 @@
       ],
       "range": "120'",
       "duration": "6 turns + 1 turn per level of the caster",
-      "effect": "Paralyzes 1-4 creatures",
+      "effect": "Paralyzes 1d4 creatures",
       "reversible": false,
-      "description": "Duration: 6 turns + 1 turn per level of the caster Effect: Paralyzes 1-4 creatures This spell has an effect identical to that of a hold person spell, but will affect any living creature. (It does not affect the undead.) Each victim must make a saving throw vs. spells or be paralyzed. The spell may be cast at a single creature or a group. If cast at a single creature, the victim takes a - 2 penalty to his saving throw. If cast at a group, it will affect 1d4 creatures (of the spellcaster's choice, and within spell range), but with no penalties to the saving throw. The reverse of this spell, free monster, removes the paralysis of up to four victims of hold person or hold monster spells.",
+      "description": "Duration: 6 turns + 1 turn per level of the caster Effect: Paralyzes 1d4 creatures This spell has an effect identical to that of a hold person spell, but will affect any living creature. (It does not affect the undead.) Each victim must make a saving throw vs. spells or be paralyzed. The spell may be cast at a single creature or a group. If cast at a single creature, the victim takes a - 2 penalty to his saving throw. If cast at a group, it will affect 1d4 creatures (of the spellcaster's choice, and within spell range), but with no penalties to the saving throw. The reverse of this spell, free monster, removes the paralysis of up to four victims of hold person or hold monster spells.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d4"
     }
   },
   {
@@ -3417,10 +3425,11 @@
       "duration": "10 turns",
       "effect": "Cuts depths to half normal",
       "reversible": false,
-      "description": "This spell causes a body of water to lower to half its normal depth. It will effect an area up to 10,000 square feet (width and length). If cast on a constantly-renewed source of water (such as a river or ocean), it lowers that area of water for the entire duration of the spell (or until it is dispelled); surrounding water does not rush in until the spell is ended. If cast around a boat or ship, the vessel may become stuck. At the end of the spell's duration, the sudden rush of water filling the \"hole\" will sweep a ship's deck clear of most items (and people who fail their saving throws vs. spells) and cause 1dl2 + 20 (21-32) points of hull damage.",
+      "description": "This spell causes a body of water to lower to half its normal depth. It will effect an area up to 10,000 square feet (width and length). If cast on a constantly-renewed source of water (such as a river or ocean), it lowers that area of water for the entire duration of the spell (or until it is dispelled); surrounding water does not rush in until the spell is ended. If cast around a boat or ship, the vessel may become stuck. At the end of the spell's duration, the sudden rush of water filling the \"hole\" will sweep a ship's deck clear of most items (and people who fail their saving throws vs. spells) and cause 1d12 + 20 (21-32) points of hull damage.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d12 + 20"
     }
   },
   {
@@ -4062,13 +4071,14 @@
         "magic-user"
       ],
       "range": "120'",
-      "duration": "1-4 days or 2-8 hours (see below)",
+      "duration": "1d4 days or 2d4 hours (see below)",
       "effect": "Blinds 1 creature with 80 hit points or less With this spell, the caster may _blind_ one victim within 120' (no saving throw).",
       "reversible": false,
-      "description": "Duration: 1-4 days or 2-8 hours (see below) Effect: Blinds 1 creature with 80 hit points or less With this spell, the caster may blind one victim within 120' (no saving throw). A victim with 1-40 hit points is blinded for ld4 days; one with 41-80 hit points is blinded for 2d4 hours. The spell does not affect creatures with 81 or more hit points. A blinded victim suffers penalties of — 4 on all saving throws and +4 on armor class. A cleric's cure blindness or cureall spell will not remove this blindness unless the cleric is of a level equal to or higher than the caster of the power word blind.",
+      "description": "Duration: 1-4 days or 2-8 hours (see below) Effect: Blinds 1 creature with 80 hit points or less With this spell, the caster may blind one victim within 120' (no saving throw). A victim with 1-40 hit points is blinded for 1d4 days; one with 41-80 hit points is blinded for 2d4 hours. The spell does not affect creatures with 81 or more hit points. A blinded victim suffers penalties of — 4 on all saving throws and +4 on armor class. A cleric's cure blindness or cureall spell will not remove this blindness unless the cleric is of a level equal to or higher than the caster of the power word blind.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "1-40 HP: blinded for 1d4 days; 41-80 HP: blinded for 2d4 hours.",
+      "rollFormula": "1d4"
     }
   },
   {
@@ -4182,13 +4192,14 @@
         "magic-user"
       ],
       "range": "30'",
-      "duration": "1d10 x 10(l-l00) turns or 1 turn",
+      "duration": "1d10 x 10 (10-100) turns or 1 turn",
       "effect": "Opens a portal to another plane",
       "reversible": false,
-      "description": "When the magic-user casts this spell, he must name one target: the Ethereal Plane, the Astral Plane, one of the four elemental planes, or one outer plane. He must also name a resident of that plane, usually that of an Immortal, a ruler of the plane. The spell opens a direct connection to the other plane of existence. A gate to an outer plane remains open for only one turn. Any other gate remains open for 1d10 x 10 (1-100) turns, and there is a 10% chance per turn that some other-planar creature will wander through the gate while it is open. A gate to an elemental plane actually creates a vortex and a wormhole, and a wish may be used to make them permanent.",
+      "description": "When the magic-user casts this spell, he must name one target: the Ethereal Plane, the Astral Plane, one of the four elemental planes, or one outer plane. He must also name a resident of that plane, usually that of an Immortal, a ruler of the plane. The spell opens a direct connection to the other plane of existence. A gate to an outer plane remains open for only one turn. Any other gate remains open for 1d10 x 10 (10-100) turns, and there is a 10% chance per turn that some other-planar creature will wander through the gate while it is open. A gate to an elemental plane actually creates a vortex and a wormhole, and a wish may be used to make them permanent.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d10 * 10"
     }
   },
   {
@@ -4326,13 +4337,14 @@
         "magic-user"
       ],
       "range": "0 (caster only)",
-      "duration": "2-5 rounds",
+      "duration": "1d4 + 1 (2-5) rounds",
       "effect": "Allows caster to act for 1d4 + l (2-5) rounds while everything else \"stops\" To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds.",
       "reversible": false,
       "description": "To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds. The caster may perform one action during each of these magical rounds. Normal and magical fire, cold, gas, etc. can still harm the caster. While the timestop is in effect, however, other creatures are invulnerable to the caster's attacks and spells. Spells with durations other than \"instantaneous\" may be created and left to take effect when time resumes.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "1d4 + 1"
     }
   }
 ]

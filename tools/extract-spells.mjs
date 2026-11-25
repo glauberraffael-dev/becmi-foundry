@@ -6,8 +6,9 @@
  */
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-import { fixDice, flatten, stripPictureText, summary } from "./normalize.mjs";
+import { fixDice, fixOnes, flatten, stripPictureText, summary } from "./normalize.mjs";
 import { ocrInput } from "./ocr-input.mjs";
+import { applySpellMathOverrides } from "./spell-math.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const input = ocrInput();
@@ -60,7 +61,7 @@ function main() {
       const statText = current.statLines.join(" ");
       const fullText = `${statText} ${body}`;
       const stats = parseStats(fullText.slice(0, 900));
-      const description = summary(body, 700);
+      const description = fixDice(fixOnes(summary(body, 700)));
       if (current.name && description.length > 20) {
         spells.push({
           name: current.name,
@@ -138,7 +139,7 @@ function main() {
     }
     prev.system.reversible ||= spell.system.reversible;
   }
-  return [...merged.values()];
+  return [...merged.values()].map(applySpellMathOverrides);
 }
 
 function readFileSync(path) {

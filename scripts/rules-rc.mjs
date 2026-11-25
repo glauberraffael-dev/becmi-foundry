@@ -384,6 +384,12 @@ export function masteryChoices(className, level, xp = 0) {
  * Hit points and character creation                                  *
  * ------------------------------------------------------------------ */
 
+/**
+ * HP gains are rolled through 9th level (8th for halflings) and then become a
+ * fixed class value with no Constitution bonus. The RC prose conflicts on the
+ * elf's 10th-level gain (+1 in the summary/high-level appendix, +2 in one
+ * paragraph); the summary value is used here, as in the reference sheet.
+ */
 export function hpForLevel(className, level, conAdj = 0, rng = Math.random) {
   const cls = getRCClass(className);
   if (!cls) return { gain: 1, text: "" };

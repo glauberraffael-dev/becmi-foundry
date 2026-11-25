@@ -26,7 +26,9 @@ const {
   applyClassToActor,
   applyDruidFeatureToActor,
   advanceActorLevels,
-  autoLevelFromXp
+  autoLevelFromXp,
+  importSpellToActor,
+  spellItemData
 } = await import("../scripts/integrations.mjs");
 
 const xpTable = { 1: 2, 2: 2500, 3: 5000, 36: 4350000 };
@@ -77,6 +79,38 @@ if (await applyDruidFeatureToActor(cleric, { name: "Druid", type: "feature" }) !
 if (getProperty(cleric, "flags.becmi.druid") !== true) throw new Error("Druid flag missing");
 if (getProperty(cleric, "system.attributes.classKey") !== "cleric") throw new Error("Druid lost the Cleric class");
 
+const spellbookActor = {
+  items: [],
+  async createEmbeddedDocuments(type, documents) {
+    if (type !== "Item") throw new Error("spells must be created as embedded Items");
+    const created = documents.map((data, index) => ({ ...data, id: `new-${index}` }));
+    this.items.push(...created);
+    return created;
+  }
+};
+const sleepSource = {
+  _id: "compendium-id",
+  name: "Sleep",
+  type: "spell",
+  flags: { core: { sourceId: "Compendium.becmi.spells.Item.sleep" } },
+  system: { spellLevel: 1, spellLists: ["magic-user"] }
+};
+const imported = await importSpellToActor(spellbookActor, sleepSource);
+if (imported.status !== "imported") throw new Error("spell import did not create an Item");
+if (spellbookActor.items[0]._id) throw new Error("imported spell kept its compendium _id");
+if (getProperty(spellbookActor.items[0], "flags.becmi.sourceUuid") !== "Compendium.becmi.spells.Item.sleep") {
+  throw new Error("imported spell lost its source UUID");
+}
+if ((await importSpellToActor(spellbookActor, sleepSource)).status !== "duplicate") {
+  throw new Error("the same spell was imported twice");
+}
+const sameName = spellItemData({
+  name: "Sleep", type: "spell", system: { spellLevel: 1, spellLists: ["magic-user"] }
+});
+if ((await importSpellToActor(spellbookActor, sameName)).status !== "duplicate") {
+  throw new Error("duplicate spell name was not detected");
+}
+
 const leveling = {
   name: "Test Adventurer",
   system: {
@@ -101,4 +135,4 @@ if (await advanceActorLevels(leveling, { targetLevel: 2, announce: false }) !== 
   throw new Error("manual level downgrade must be ignored");
 }
 
-console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, auto level).");
+console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, spell import, auto level).");

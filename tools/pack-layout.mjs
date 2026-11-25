@@ -12,6 +12,17 @@ const byName = (a, b) => collator.compare(String(a.name ?? ""), String(b.name ??
 export const SPELL_LIST_ORDER = ["cleric", "druid", "magic-user"];
 export const SPELL_LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+/**
+ * Levels actually printed for each spell list in the Rules Cyclopedia.
+ * Clerics and druids stop at 7th level, so empty 8th/9th-level folders are not
+ * generated. Magic-users have all nine levels.
+ */
+export const SPELL_LIST_LEVELS = Object.freeze({
+  cleric: [1, 2, 3, 4, 5, 6, 7],
+  druid: [1, 2, 3, 4, 5, 6, 7],
+  "magic-user": SPELL_LEVELS
+});
+
 export const TREASURE_CATEGORIES = Object.freeze({
   "Potion Descriptions": {
     folder: "Potions", group: "potions", rule: false

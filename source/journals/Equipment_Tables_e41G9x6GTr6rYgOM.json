@@ -1,0 +1,99 @@
+{
+  "_id": "e41G9x6GTr6rYgOM",
+  "_key": "!journal!e41G9x6GTr6rYgOM",
+  "name": "Equipment Tables",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Weapons",
+      "type": "text",
+      "text": {
+        "content": "<h2>Weapons (Basic Stats)</h2>\n<table><thead><tr><th>Weapon</th><th>Damage</th><th>Range S/M/L</th><th>Cost (gp)</th><th>Enc. (cn)</th><th>Notes</th></tr></thead><tbody><tr><td>Axe, Battle</td><td>1d8</td><td>-</td><td>7</td><td>60</td><td>r, 2H, M</td></tr><tr><td>Axe, Hand</td><td>1d6</td><td>10/20/30</td><td>4</td><td>30</td><td>t, S</td></tr><tr><td>Bow, Short</td><td>1d6</td><td>50/100/150</td><td>25</td><td>20</td><td>a, m, 2H, M</td></tr><tr><td>Bow, Long</td><td>1d6</td><td>70/140/210</td><td>40</td><td>30</td><td>a, m, 2H, L</td></tr><tr><td>Crossbow, Light</td><td>1d6</td><td>60/120/180</td><td>30</td><td>50</td><td>a, m, s, 2H, M</td></tr><tr><td>Crossbow, Heavy</td><td>2d4</td><td>80/160/240</td><td>50</td><td>80</td><td>a, m, s, 2H, L</td></tr><tr><td>Blackjack</td><td>1d2</td><td>-</td><td>5</td><td>5</td><td>c, r, s, S</td></tr><tr><td>Club</td><td>1d4</td><td>-</td><td>3</td><td>50</td><td>c, r, M</td></tr><tr><td>Hammer, Throwing</td><td>1d4</td><td>10/20/30</td><td>4</td><td>25</td><td>c, t, M</td></tr><tr><td>Hammer, War</td><td>1d6</td><td>-</td><td>5</td><td>50</td><td>c, r, M</td></tr><tr><td>Mace</td><td>1d6</td><td>-</td><td>5</td><td>30</td><td>c, r, M</td></tr><tr><td>Staff</td><td>1d6</td><td>-</td><td>5</td><td>40</td><td>c, r, w, 2H, M</td></tr><tr><td>Torch</td><td>1d4</td><td>-</td><td>-</td><td>20</td><td>c, r, S</td></tr><tr><td>Dagger, Normal</td><td>1d4</td><td>10/20/30</td><td>3</td><td>10</td><td>t, w, S</td></tr><tr><td>Dagger, Silver</td><td>1d4</td><td>10/20/30</td><td>30</td><td>10</td><td>t, w, S</td></tr><tr><td>Halberd</td><td>1d10</td><td>-</td><td>7</td><td>150</td><td>s, 2H, L</td></tr><tr><td>Javelin</td><td>1d6</td><td>30/60/90</td><td>1</td><td>20</td><td>t, M</td></tr><tr><td>Lance</td><td>1d10</td><td>-</td><td>10</td><td>180</td><td>s, v, L</td></tr><tr><td>Pike</td><td>1d10</td><td>-</td><td>3</td><td>80</td><td>s, v, 2H, L</td></tr><tr><td>Polearm</td><td>1d10</td><td>-</td><td>7</td><td>150</td><td>s, 2H, L</td></tr><tr><td>Poleaxe</td><td>1d10</td><td>-</td><td>5</td><td>120</td><td>s, 2H, L</td></tr><tr><td>Spear</td><td>1d6</td><td>20/40/60</td><td>3</td><td>30</td><td>t, v, L</td></tr><tr><td>Trident</td><td>1d6</td><td>10/20/30</td><td>5</td><td>25</td><td>s, t, M</td></tr><tr><td>Shield, Horned</td><td>1d2</td><td>-</td><td>15</td><td>20</td><td>s, S</td></tr><tr><td>Shield, Knife</td><td>1d4+1</td><td>-</td><td>65</td><td>70</td><td>s, S</td></tr><tr><td>Shield, Sword</td><td>1d4+2</td><td>-</td><td>200</td><td>185</td><td>s, v, M</td></tr><tr><td>Shield, Tusked</td><td>1d4+1</td><td>-</td><td>200</td><td>275</td><td>s, 2H, L</td></tr><tr><td>Sword, Short</td><td>1d6</td><td>-</td><td>7</td><td>30</td><td>r, S</td></tr><tr><td>Sword, Normal</td><td>1d8</td><td>-</td><td>10</td><td>60</td><td>r, M</td></tr><tr><td>Sword, Bastard (1H)</td><td>1d6+1</td><td>-</td><td>15</td><td>80</td><td>r, HH, L</td></tr><tr><td>Sword, Bastard (2H)</td><td>1d8+1</td><td>-</td><td>15</td><td>80</td><td>r, 2H, L</td></tr><tr><td>Sword, Two-Handed</td><td>1d10</td><td>-</td><td>15</td><td>100</td><td>2H, L</td></tr><tr><td>Blowgun, up to 2'</td><td>Nil</td><td>10/20/30</td><td>3</td><td>6</td><td>a, m, s, w, S</td></tr><tr><td>Blowgun, 2'+</td><td>Nil</td><td>20/25/30</td><td>6</td><td>15</td><td>a, m, s, w, 2H, M</td></tr><tr><td>Bola</td><td>1d2</td><td>20/40/60</td><td>5</td><td>5</td><td>s, t, M</td></tr><tr><td>Cestus</td><td>1d3</td><td>-</td><td>5</td><td>10</td><td>s, S</td></tr><tr><td>Holy Water</td><td>1d8</td><td>10/30/50</td><td>25</td><td>1</td><td>c, s, t, w, S</td></tr><tr><td>Net</td><td>Nil</td><td>10/20/30</td><td>1 sp/sq ft</td><td>1 cn/sq ft</td><td>s, t, w, M or L</td></tr><tr><td>Oil, Burning</td><td>1d8</td><td>10/30/50</td><td>2</td><td>10</td><td>c, s, t, w, S</td></tr><tr><td>Rock, Thrown</td><td>1d3</td><td>10/30/50</td><td>-</td><td>10</td><td>c, t, w, S</td></tr><tr><td>Sling</td><td>1d4</td><td>40/80/160</td><td>2</td><td>20</td><td>c, m, w, S</td></tr><tr><td>Whip</td><td>1d2</td><td>-</td><td>1 gp/ft</td><td>10 cn/ft</td><td>s, w, M</td></tr></tbody></table>\n<p>Consult this table by weapon name; it is not rolled randomly. Damage is the base die before Strength and magic bonuses.</p>"
+      },
+      "_id": "hW-a4d4aErTNfL3Q",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.hW-a4d4aErTNfL3Q"
+    },
+    {
+      "name": "Weapon Special Effects",
+      "type": "text",
+      "text": {
+        "content": "<h2>Weapon Special Effects (Basic Weapons)</h2>\n<table><thead><tr><th>Victim HD</th><th>Result by weapon type</th></tr></thead><tbody><tr><td>Up to 1 HD</td><td>Save bonus None; Blackjack Knockout; Bola/Net/Whip Entangle; Blowgun By poison</td></tr><tr><td>1+1 to 3 HD</td><td>Save +1; Knockout; Entangle; By poison</td></tr><tr><td>3+1 to 6 HD</td><td>Save +2; Stun; Slow; By poison</td></tr><tr><td>6+1 to 9 HD</td><td>Save +3; Stun; Slow; By poison</td></tr><tr><td>9+1 to 12 HD</td><td>Save +4; Delay; Delay; By poison</td></tr><tr><td>12+ HD</td><td>Save +5; Delay; Delay; By poison</td></tr></tbody></table>\n<p>Find the victim's Hit Dice row; the listed save bonus and effects are looked up, not rolled.</p>"
+      },
+      "_id": "ckordaDP8j1ST7K8",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.ckordaDP8j1ST7K8"
+    },
+    {
+      "name": "Ammunition",
+      "type": "text",
+      "text": {
+        "content": "<h2>Ammunition</h2>\n<table><thead><tr><th>Ammunition</th><th>Quantity, cost and encumbrance</th></tr></thead><tbody><tr><td>Blowgun dart</td><td>5 shots, 1 gp, 5 shots/cn</td></tr><tr><td>Bow arrow</td><td>20 shots, 5 gp, 2 shots/cn</td></tr><tr><td>Silver-tipped arrow</td><td>1 shot, 5 gp, 2 shots/cn</td></tr><tr><td>Crossbow quarrel</td><td>30 shots, 10 gp, 3 shots/cn</td></tr><tr><td>Silver-tipped quarrel</td><td>1 shot, 5 gp, 3 shots/cn</td></tr><tr><td>Sling stone or pellet</td><td>30 shots, 1 gp, 5 shots/cn</td></tr><tr><td>Silver pellet</td><td>1 shot, 5 gp, 5 shots/cn</td></tr></tbody></table>"
+      },
+      "_id": "ue5Ez1pFO9sBPdKM",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.ue5Ez1pFO9sBPdKM"
+    },
+    {
+      "name": "Armor",
+      "type": "text",
+      "text": {
+        "content": "<h2>Armor</h2>\n<table><thead><tr><th>Armor</th><th>AC, cost and encumbrance</th></tr></thead><tbody><tr><td>Shield</td><td>AC -1, 10 gp, 100 cn</td></tr><tr><td>Leather Armor</td><td>AC 7, 20 gp, 200 cn; druid/thief allowed with conditions</td></tr><tr><td>Scale Mail</td><td>AC 6, 30 gp, 300 cn</td></tr><tr><td>Chain Mail</td><td>AC 5, 40 gp, 400 cn</td></tr><tr><td>Banded Mail</td><td>AC 4, 50 gp, 450 cn</td></tr><tr><td>Plate Mail</td><td>AC 3, 60 gp, 500 cn</td></tr><tr><td>Suit Armor</td><td>AC 0, 250 gp, 750 cn; -5 to missile attacks</td></tr></tbody></table>"
+      },
+      "_id": "PlZn8YwvgcKd-doS",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.PlZn8YwvgcKd-doS"
+    },
+    {
+      "name": "Barding",
+      "type": "text",
+      "text": {
+        "content": "<h2>Barding</h2>\n<table><thead><tr><th>Barding</th><th>AC, cost and encumbrance</th></tr></thead><tbody><tr><td>Leather</td><td>AC 7, 40 gp, 250 cn</td></tr><tr><td>Scale</td><td>AC 6, 75 gp, 400 cn</td></tr><tr><td>Chain</td><td>AC 5, 150 gp, 600 cn</td></tr><tr><td>Banded</td><td>AC 4, 400 gp, 1,500 cn</td></tr><tr><td>Plate</td><td>AC 3, 500 gp, 3,000 cn</td></tr><tr><td>Field</td><td>AC 2, 600 gp, 4,000 cn</td></tr><tr><td>Joust</td><td>AC 0, 700 gp, 5,000 cn</td></tr></tbody></table>\n<p>Multiply the listed cost and weight by the creature's size multiplier.</p>"
+      },
+      "_id": "fjGyJpFpGR89p7iD",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.fjGyJpFpGR89p7iD"
+    },
+    {
+      "name": "Nets",
+      "type": "text",
+      "text": {
+        "content": "<h2>Nets</h2>\n<table><thead><tr><th>Victim size</th><th>Net size</th></tr></thead><tbody><tr><td>Very small</td><td>Up to 1'; 2' x 2' net</td></tr><tr><td>Small</td><td>1'+ to 3'; 4' x 4' net</td></tr><tr><td>Medium</td><td>3'+ to 6'; 6' x 6' net</td></tr><tr><td>Large</td><td>6'+ to 10'; 9' x 9' net</td></tr><tr><td>Very large</td><td>10'+ to 15'; 12' x 12' net</td></tr><tr><td>Huge</td><td>15'+ to 20'; 16' x 16' net</td></tr><tr><td>Mammoth</td><td>20'+ to 30'; 25' x 25' net</td></tr></tbody></table>"
+      },
+      "_id": "CqFLSUoeODPTPYHy",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.CqFLSUoeODPTPYHy"
+    },
+    {
+      "name": "Siege Weapons",
+      "type": "text",
+      "text": {
+        "content": "<h2>Siege Weapons</h2>\n<table><thead><tr><th>Weapon</th><th>Cost, encumbrance, AC, hp, crew, range, damage, rate</th></tr></thead><tbody><tr><td>Ballista</td><td>75 gp, 6,000 cn, AC 4, 9 hp, crew 4, 100/200/300, d10+6, 1/2 rounds</td></tr><tr><td>Catapult, Light</td><td>150 gp, 12,000 cn, AC 4, 18 hp, crew 6, 200/250/300, d8+8, 1/5 rounds</td></tr><tr><td>Catapult, Heavy</td><td>250 gp, 18,000 cn, AC 0, 27 hp, crew 8, 250/325/400, d10+10, 1/6 rounds</td></tr><tr><td>Trebuchet</td><td>400 gp, 24,000 cn, AC 0, 36 hp, crew 12, 250/400/500, d12+13, 1/6 rounds</td></tr><tr><td>Bore</td><td>150 gp, 3,000 cn, AC -4, 50 hp, crew 10, d6+14, 1/2 rounds</td></tr><tr><td>Ram, Battering</td><td>100 gp, 3,000 cn, AC -4, 50 hp, crew 10, d6+8, 1/2 rounds</td></tr></tbody></table>"
+      },
+      "_id": "hTYkrPhugvwewd_3",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.hTYkrPhugvwewd_3"
+    },
+    {
+      "name": "Siege Equipment",
+      "type": "text",
+      "text": {
+        "content": "<h2>Miscellaneous Siege Equipment</h2>\n<table><thead><tr><th>Equipment</th><th>Cost and statistics</th></tr></thead><tbody><tr><td>Belfry</td><td>25 gp per foot, 30' tall, AC 0, AC -8, 75 hp</td></tr><tr><td>Gallery Shed</td><td>15 gp per foot, 10' x 10' x 20', AC 4, AC -12, 40 hp</td></tr><tr><td>Hoist</td><td>5 gp per foot, 30' tall, AC 4, 15 hp</td></tr><tr><td>Ladder</td><td>1 gp per 10', 30' tall, AC 4, 3 hp</td></tr><tr><td>Mantlet</td><td>2 gp per foot, 8' long, AC 0, AC -4, 16 hp</td></tr><tr><td>Timber Fort</td><td>4 gp per foot, 8' long, AC 0, AC -8, 32 hp</td></tr></tbody></table>"
+      },
+      "_id": "Tz5A4Ds9-ZcYTpjl",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.Tz5A4Ds9-ZcYTpjl"
+    },
+    {
+      "name": "Passage",
+      "type": "text",
+      "text": {
+        "content": "<h2>Passage</h2>\n<table><thead><tr><th>Class</th><th>Fare</th></tr></thead><tbody><tr><td>First class</td><td>1 mile per sp, minimum 35 sp</td></tr><tr><td>Second class</td><td>5 miles per sp, minimum 10 sp</td></tr><tr><td>Third class</td><td>20 miles per sp, minimum 2 sp</td></tr></tbody></table>\n<p>Divide the distance travelled by the listed rate to find the passage cost.</p>"
+      },
+      "_id": "cfvn9-1XaSD_SFkF",
+      "_key": "!journal.pages!e41G9x6GTr6rYgOM.cfvn9-1XaSD_SFkF"
+    }
+  ]
+}
