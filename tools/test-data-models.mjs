@@ -39,6 +39,13 @@ globalThis.foundry = {
   }
 };
 
+globalThis.Actor = class {
+  prepareDerivedData() {}
+  getRollData() {
+    return {};
+  }
+};
+
 const actorModels = await import("../scripts/data/actor.mjs");
 const itemModels = await import("../scripts/data/item.mjs");
 
@@ -54,3 +61,17 @@ for (const module of [actorModels, itemModels]) {
 
 if (checked < 10) throw new Error(`Only ${checked} data models were checked`);
 console.log(`Data model schemas OK (${checked} models).`);
+
+// Monster-like actors have no system.attributes.ac; preparation must not throw.
+const { BECMIActor } = await import("../scripts/documents/actor.mjs");
+const withoutAc = new BECMIActor();
+withoutAc.system = { attributes: { hp: { value: 1, max: 1 } } };
+withoutAc.prepareDerivedData();
+
+const withAc = new BECMIActor();
+withAc.system = { attributes: { ac: { base: 2, value: undefined }, acBonus: 1 } };
+withAc.prepareDerivedData();
+if (withAc.system.attributes.ac.value !== 3) {
+  throw new Error(`Derived AC expected 3, got ${withAc.system.attributes.ac.value}`);
+}
+console.log("Actor prepareDerivedData OK (with and without AC).");

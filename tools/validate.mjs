@@ -48,6 +48,27 @@ for (const file of files) {
 }
 for (const key of usedKeys) if (!(key in lang)) note(`Missing localization key: ${key}`);
 
+// --- ApplicationV2 template parts ------------------------------------------
+// Each PARTS entry must render exactly one root HTML element.
+const partTemplates = [
+  "templates/actor/header.hbs",
+  "templates/actor/body.hbs",
+  "templates/item/header.hbs",
+  "templates/item/body.hbs"
+];
+for (const file of partTemplates) {
+  const raw = await readFile(join(root, file), "utf8");
+  const text = raw
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/\{\{!--[\s\S]*?--\}\}/g, "")
+    .trim();
+  const open = text.match(/^<([A-Za-z][\w-]*)\b/);
+  const close = text.match(/<\/([A-Za-z][\w-]*)\s*>$/);
+  if (!open || !close || open[1] !== close[1]) {
+    note(`${file}: template part must render exactly one root HTML element`);
+  }
+}
+
 // --- Extracted data --------------------------------------------------------
 const expected = {
   monsters: (d) => typeof d.system?.ac === "number" && typeof d.system?.hp === "number" && typeof d.system?.hd === "string",

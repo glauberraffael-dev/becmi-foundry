@@ -15,8 +15,8 @@ export class BECMIActor extends Actor {
 
   prepareDerivedData() {
     super.prepareDerivedData();
-    const attrs = this.system.attributes;
-    if (attrs && !Number.isFinite(attrs.ac.value)) {
+    const attrs = this.system?.attributes;
+    if (attrs?.ac && !Number.isFinite(attrs.ac.value)) {
       attrs.ac.value = (attrs.ac.base ?? 0) + (attrs.acBonus ?? 0);
     }
   }

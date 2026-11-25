@@ -1,3 +1,4 @@
+<div class="becmi-body">
 <nav class="becmi-tabs" aria-label="{{localize 'BECMI.sheet.tabs'}}">
   {{#each tabs as |tab|}}
   <button type="button" class="becmi-tab{{#if tab.active}} is-active{{/if}}" data-action="switchTab" data-tab="{{tab.id}}">{{tab.label}}</button>
@@ -242,3 +243,4 @@
   {{#if system.special}}<h2 class="becmi-section-title">{{localize 'BECMI.sheet.special'}}</h2><div class="becmi-editor">{{{system.special}}}</div>{{/if}}
 </section>
 {{/if}}
+</div>
