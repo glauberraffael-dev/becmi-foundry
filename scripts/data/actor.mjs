@@ -85,12 +85,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
 
 export class NPCData extends CharacterData {
   static defineSchema() {
+    const f = fields();
     return {
       ...super.defineSchema(),
-      retainer: new fields().SchemaField({
-        loyalty: new fields().NumberField({ initial: 8, integer: true, min: 1, max: 12 }),
-        morale: new fields().NumberField({ initial: 7, integer: true, min: 2, max: 12 }),
-        wage: new fields().StringField({ initial: "" })
+      retainer: new f.SchemaField({
+        loyalty: new f.NumberField({ initial: 8, integer: true, min: 1, max: 12 }),
+        morale: new f.NumberField({ initial: 7, integer: true, min: 2, max: 12 }),
+        wage: new f.StringField({ initial: "" })
       })
     };
   }

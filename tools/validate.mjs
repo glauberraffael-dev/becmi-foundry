@@ -26,8 +26,8 @@ async function walk(dir) {
 // --- Manifests and localization -------------------------------------------
 const system = await readJson("system.json");
 const lang = await readJson("lang/en.json");
-if (system.compatibility?.minimum !== 13 || system.compatibility?.verified !== 13) {
-  note("system.json compatibility should target v13+ (verified on v14)");
+if (system.compatibility?.minimum !== 13 || system.compatibility?.verified !== 14) {
+  note("system.json compatibility should be minimum 13, verified 14");
 }
 if (!system.esmodules?.length) note("system.json has no esmodules entry");
 for (const pack of system.packs ?? []) {
@@ -38,6 +38,9 @@ const files = [...await walk("scripts"), ...await walk("templates")];
 const usedKeys = new Set();
 for (const file of files) {
   const text = await readFile(join(root, file), "utf8");
+  if (/new\s+fields\s*\(\)/.test(text)) {
+    note(`${file}: use const f = fields(); new f.XField() instead of new fields()`);
+  }
   for (const match of text.matchAll(/BECMI\.[A-Za-z][\w.]*/g)) {
     // Ignore prefixes of dynamically composed keys, e.g. BECMI.saves.${key}.
     if (!match[0].endsWith(".")) usedKeys.add(match[0]);

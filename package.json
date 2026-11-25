@@ -8,7 +8,7 @@
     "extract": "node tools/extract-all.mjs",
     "sources": "node tools/build-packs.mjs",
     "pack": "npm run sources && fvtt package pack -n monsters --id becmi --type System --in source/monsters --out packs && fvtt package pack -n spells --id becmi --type System --in source/spells --out packs && fvtt package pack -n equipment --id becmi --type System --in source/equipment --out packs && fvtt package pack -n classes --id becmi --type System --in source/classes --out packs && fvtt package pack -n treasure --id becmi --type System --in source/treasure --out packs && fvtt package pack -n tables --id becmi --type System --in source/tables --out packs && fvtt package pack -n journals --id becmi --type System --in source/journals --out packs",
-    "verify": "node tools/validate.mjs && node tools/verify-packs.mjs tables journals"
+    "verify": "node tools/validate.mjs && node tools/test-data-models.mjs && node tools/verify-packs.mjs tables journals"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.5"
