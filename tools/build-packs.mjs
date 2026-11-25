@@ -8,6 +8,9 @@ import { createHash } from "node:crypto";
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  folderDefinitionKey, folderId, folderKeyForDocument, sortDocuments
+} from "./pack-layout.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const dataDir = join(root, "data");
@@ -44,32 +47,6 @@ function stableId(name) {
   return createHash("sha1").update(name).digest("base64url").slice(0, 16);
 }
 
-// Foundry validates Folder IDs as 16-character alphanumeric strings.
-// A hexadecimal digest is safer than the base64url document IDs, which can
-// contain "-" and "_".
-function folderId(pack, name) {
-  return createHash("sha256").update(`folder:${pack}:${name}`).digest("hex").slice(0, 16);
-}
-
-function folderNameFor(pack, doc) {
-  if (pack === "spells") {
-    const list = doc.flags?.becmi?.list ?? doc.system?.spellLists?.[0] ?? "magic-user";
-    return ({ cleric: "Cleric Spells", druid: "Druid Spells", "magic-user": "Magic-User Spells" })[list] ?? null;
-  }
-  if (pack === "equipment") {
-    const group = doc.flags?.becmi?.group
-      ?? (doc.type === "weapon" ? "weapons" : doc.type === "armor" ? "armor" : "adventuring");
-    return ({
-      weapons: "Weapons",
-      armor: "Armor & Shields",
-      adventuring: "Adventuring Gear",
-      transport: "Transport & Siege"
-    })[group] ?? "Adventuring Gear";
-  }
-  if (pack === "classes") return doc.type === "feature" ? "Subclasses" : "Classes";
-  return null;
-}
-
 async function main() {
   const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json"));
   const folderDefinitions = JSON.parse(await readFile(join(dataDir, "pack-folders.json"), "utf8"));
@@ -84,13 +61,15 @@ async function main() {
 
     let foldersWritten = 0;
     for (const definition of folderDefinitions[pack] ?? []) {
-      const id = folderId(pack, definition.name);
+      const key = folderDefinitionKey(definition);
+      const id = folderId(pack, key);
+      const parent = definition.parentKey ? folderId(pack, definition.parentKey) : null;
       const folder = {
         _id: id,
         _key: `!folders!${id}`,
         name: definition.name,
         type: definition.type ?? "Item",
-        parent: null,
+        parent,
         sorting: "m",
         color: null,
         flags: {},
@@ -102,7 +81,7 @@ async function main() {
 
     const seen = new Set();
     let written = 0;
-    for (const doc of docs) {
+    for (const doc of sortDocuments(pack, docs)) {
       const name = doc.name || doc.flags?.becmi?.key || `unnamed-${written}`;
       let id = stableId(`${pack}:${name}`);
       if (seen.has(id)) id = stableId(`${pack}:${name}:${written}`);
@@ -124,8 +103,8 @@ async function main() {
         flags: doc.flags ?? {},
         ownership: { default: 0 },
         ...(() => {
-          const name = folderNameFor(pack, doc);
-          return name ? { folder: folderId(pack, name) } : {};
+          const key = folderKeyForDocument(pack, doc);
+          return key ? { folder: folderId(pack, key) } : {};
         })(),
         ...(doc.text ? { text: doc.text } : {}),
         ...(doc.pages ? { pages: doc.pages } : {}),

@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Weapons, armor, adventuring gear, transportation and siege equipment with costs and encumbrance.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 4. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Equipment</h2>\n<p>Coins weigh 10 per pound (100 cn), gems and jewels are carried separately, and each item has a cost in gold pieces and a weight in coin weight. Armor class is descending: unarmored AC 9, leather 7, scale 6, chain 5, banded 4, plate 3 and full plate 0. A shield subtracts 1 from AC.</p>\n<table><thead><tr><th>Armor</th><th>AC</th><th>Cost</th><th>Weight</th></tr></thead><tbody><tr><td>Shield</td><td>-1</td><td>10 gp</td><td>100 cn</td></tr><tr><td>Leather</td><td>7</td><td>20 gp</td><td>200 cn</td></tr><tr><td>Scale mail</td><td>6</td><td>30 gp</td><td>300 cn</td></tr><tr><td>Chain mail</td><td>5</td><td>40 gp</td><td>400 cn</td></tr><tr><td>Banded mail</td><td>4</td><td>50 gp</td><td>450 cn</td></tr><tr><td>Plate mail</td><td>3</td><td>60 gp</td><td>500 cn</td></tr><tr><td>Full plate</td><td>0</td><td>250 gp</td><td>750 cn</td></tr></tbody></table>\n<p>Weapons list damage, range, cost and encumbrance; two-handed and missile weapons have the usual restrictions. Adventuring gear, transport and siege equipment are bought from the Equipment compendium.</p>"
       },
-      "_id": "O6U0mzRrOWO6EUZj",
-      "_key": "!journal.pages!OyziTLL3O6g-jAR-.O6U0mzRrOWO6EUZj"
+      "_id": "iuhr5IbXqqSGYit1",
+      "_key": "!journal.pages!OyziTLL3O6g-jAR-.iuhr5IbXqqSGYit1"
     }
   ]
 }

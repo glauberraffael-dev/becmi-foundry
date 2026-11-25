@@ -1,17 +1,50 @@
 {
   "spells": [
-    { "name": "Cleric Spells", "type": "Item" },
-    { "name": "Druid Spells", "type": "Item" },
-    { "name": "Magic-User Spells", "type": "Item" }
+    { "key": "spells:cleric", "name": "Cleric Spells", "type": "Item" },
+    { "key": "spells:cleric:1", "name": "Level 1", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:2", "name": "Level 2", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:3", "name": "Level 3", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:4", "name": "Level 4", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:5", "name": "Level 5", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:6", "name": "Level 6", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:7", "name": "Level 7", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:8", "name": "Level 8", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:cleric:9", "name": "Level 9", "parentKey": "spells:cleric", "type": "Item" },
+    { "key": "spells:druid", "name": "Druid Spells", "type": "Item" },
+    { "key": "spells:druid:1", "name": "Level 1", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:2", "name": "Level 2", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:3", "name": "Level 3", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:4", "name": "Level 4", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:5", "name": "Level 5", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:6", "name": "Level 6", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:7", "name": "Level 7", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:8", "name": "Level 8", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:druid:9", "name": "Level 9", "parentKey": "spells:druid", "type": "Item" },
+    { "key": "spells:magic-user", "name": "Magic-User Spells", "type": "Item" },
+    { "key": "spells:magic-user:1", "name": "Level 1", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:2", "name": "Level 2", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:3", "name": "Level 3", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:4", "name": "Level 4", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:5", "name": "Level 5", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:6", "name": "Level 6", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:7", "name": "Level 7", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:8", "name": "Level 8", "parentKey": "spells:magic-user", "type": "Item" },
+    { "key": "spells:magic-user:9", "name": "Level 9", "parentKey": "spells:magic-user", "type": "Item" }
   ],
   "equipment": [
-    { "name": "Weapons", "type": "Item" },
-    { "name": "Armor & Shields", "type": "Item" },
-    { "name": "Adventuring Gear", "type": "Item" },
-    { "name": "Transport & Siege", "type": "Item" }
+    { "key": "Weapons", "name": "Weapons", "type": "Item" },
+    { "key": "Armor & Shields", "name": "Armor & Shields", "type": "Item" },
+    { "key": "Adventuring Gear", "name": "Adventuring Gear", "type": "Item" },
+    { "key": "Transport & Siege", "name": "Transport & Siege", "type": "Item" }
   ],
   "classes": [
-    { "name": "Classes", "type": "Item" },
-    { "name": "Subclasses", "type": "Item" }
+    { "key": "Classes", "name": "Classes", "type": "Item" },
+    { "key": "Subclasses", "name": "Subclasses", "type": "Item" }
+  ],
+  "treasure": [
+    { "key": "Potions", "name": "Potions", "type": "Item" },
+    { "key": "Miscellaneous Magical Items", "name": "Miscellaneous Magical Items", "type": "Item" },
+    { "key": "Missile Talents", "name": "Missile Talents", "type": "Item" },
+    { "key": "Magic Item Enchantment Rules", "name": "Magic Item Enchantment Rules", "type": "Item" }
   ]
 }

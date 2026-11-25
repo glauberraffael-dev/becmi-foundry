@@ -9,10 +9,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Ability scores, alignments, hit points, starting money and the first decisions a player makes.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 1. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Steps in Character Creation</h2>\n<p>Choose an alignment, roll six ability scores in order, select a class that satisfies the prime requisite, then record hit points, armor class, saving throws, starting equipment and languages. Strength, Intelligence, Wisdom, Dexterity, Constitution and Charisma are scored from 3 to 18; the normal modifier is -3 at 3, -2 at 4-5, -1 at 6-8, none at 9-12, +1 at 13-15, +2 at 16-17 and +3 at 18. A prime requisite of 13 or better grants a 5% XP bonus; 9 or lower grants a 10% XP penalty.</p>\n<p>Starting hit points are the maximum of the class hit die plus the Constitution adjustment; subsequent levels roll the hit die, with a minimum of 1 point. Starting gold is 3d6 x 10 gp. Characters begin with a languages score based on Intelligence and buy equipment from the Equipment chapter.</p>"
         }
       }
     ]
@@ -27,10 +27,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Cleric, fighter, magic-user, thief, dwarf, elf, halfling and the optional druid and mystic classes, with progression tables.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 2. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>The Character Classes</h2>\n<p>Choose one class. A human may reach level 36 as a fighter, cleric, magic-user or thief; demihumans have lower maximum levels and class restrictions. A class supplies hit dice, attack progression, saving throws, experience requirements, spell access and special abilities.</p>\n<table><thead><tr><th>Class</th><th>Hit die</th><th>Prime requisite</th><th>Max level</th><th>Notes</th></tr></thead><tbody><tr><td>Cleric</td><td>d8</td><td>Wisdom</td><td>36</td><td>Turn undead; cleric spells</td></tr><tr><td>Fighter</td><td>d10</td><td>Strength</td><td>36</td><td>Weapon mastery; no spells</td></tr><tr><td>Magic-User</td><td>d4</td><td>Intelligence</td><td>36</td><td>Magic-user spells; read magic</td></tr><tr><td>Thief</td><td>d6</td><td>Dexterity</td><td>36</td><td>Thief skills; backstab</td></tr><tr><td>Dwarf</td><td>d8</td><td>Constitution</td><td>12</td><td>Fighter abilities; detect tricks</td></tr><tr><td>Elf</td><td>d6</td><td>Intelligence</td><td>10</td><td>Magic-user spells plus fighter abilities</td></tr><tr><td>Halfling</td><td>d6</td><td>Dexterity</td><td>8</td><td>Fighter abilities; hiding and missile bonus</td></tr></tbody></table>\n<p>Multiclassing is not used. The optional Druid is an extension of the Cleric: it keeps cleric hit dice, saves and XP, but uses the druid spell list and druid restrictions. The Mystic is an optional variant handled by the DM.</p>"
         }
       }
     ]
@@ -45,10 +45,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Clerical, druidic and magical spell lists, descriptions and the rules for learning and casting spells.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 3. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Spells and Spellcasting</h2>\n<p>Spells are divided into nine levels and into the cleric, druid and magic-user lists. Clerics and druids receive spells through their deity; magic-users learn spells from spellbooks and need read magic to decipher them. A caster can only prepare the number of spells shown by the level table, and a spell is expended when cast.</p>\n<table><thead><tr><th>Class</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4</th><th>Level 5</th><th>Level 6</th><th>Level 7</th><th>Level 8</th><th>Level 9</th></tr></thead><tbody><tr><td>Cleric 1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 4</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 5</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 6</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 7</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 8</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 10</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 11</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 12</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 4</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 5</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 6</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 7</td><td>3</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 8</td><td>3</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 10</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 12</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>\n<p>A spell description gives range, duration, effect and often a saving throw. Reversible spells can be cast in an opposite form, usually with a saving throw allowed. Magical defenses modify saving throws, and anti-magic areas suppress spell effects.</p>"
         }
       }
     ]
@@ -63,10 +63,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Weapons, armor, adventuring gear, transportation and siege equipment with costs and encumbrance.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 4. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Equipment</h2>\n<p>Coins weigh 10 per pound (100 cn), gems and jewels are carried separately, and each item has a cost in gold pieces and a weight in coin weight. Armor class is descending: unarmored AC 9, leather 7, scale 6, chain 5, banded 4, plate 3 and full plate 0. A shield subtracts 1 from AC.</p>\n<table><thead><tr><th>Armor</th><th>AC</th><th>Cost</th><th>Weight</th></tr></thead><tbody><tr><td>Shield</td><td>-1</td><td>10 gp</td><td>100 cn</td></tr><tr><td>Leather</td><td>7</td><td>20 gp</td><td>200 cn</td></tr><tr><td>Scale mail</td><td>6</td><td>30 gp</td><td>300 cn</td></tr><tr><td>Chain mail</td><td>5</td><td>40 gp</td><td>400 cn</td></tr><tr><td>Banded mail</td><td>4</td><td>50 gp</td><td>450 cn</td></tr><tr><td>Plate mail</td><td>3</td><td>60 gp</td><td>500 cn</td></tr><tr><td>Full plate</td><td>0</td><td>250 gp</td><td>750 cn</td></tr></tbody></table>\n<p>Weapons list damage, range, cost and encumbrance; two-handed and missile weapons have the usual restrictions. Adventuring gear, transport and siege equipment are bought from the Equipment compendium.</p>"
         }
       }
     ]
@@ -81,10 +81,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Weapon mastery and the optional general skill system.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 5. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Other Character Abilities</h2>\n<p>Weapon Mastery is optional. Humans receive weapon choices by level; demihumans begin with Basic skill in class-approved weapons. The five ranks are Basic, Skilled, Expert, Master and Grand Master. Each rank improves damage, range, attack bonus, defense or special effects as shown in the Weapon Mastery journal.</p>\n<p>The optional General Skills system lets a character buy noncombat skills with weapon choices or skill points. The DM sets the characteristic and difficulty, then the player rolls d20 against the resulting target.</p>"
         }
       }
     ]
@@ -99,10 +99,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Game time, distance, land, water and aerial travel rates.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 6. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Movement</h2>\n<p>Exploration movement is measured in turns (10 minutes) and dungeon movement in rounds. Encumbered characters move more slowly; the movement rate is derived from total carried weight. Running increases speed but makes stealth impossible and can cause fatigue.</p>\n<table><thead><tr><th>Encumbrance (cn)</th><th>Movement / turn</th><th>Movement / round</th></tr></thead><tbody><tr><td>Up to 400</td><td>120 ft</td><td>12 ft</td></tr><tr><td>401-600</td><td>90 ft</td><td>9 ft</td></tr><tr><td>601-800</td><td>60 ft</td><td>6 ft</td></tr><tr><td>801-1,000</td><td>30 ft</td><td>3 ft</td></tr><tr><td>Over 1,000</td><td>Cannot move</td><td>—</td></tr></tbody></table>\n<p>Water and air travel use their own tables for ships, rowing and flying speeds; weather and currents modify travel time.</p>"
         }
       }
     ]
@@ -117,10 +117,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Encounter checks, surprise, monster reactions, wandering monsters and pursuit.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 7. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Encounters and Evasion</h2>\n<p>When an encounter is possible, roll 2d6 for surprise (a result of 1-2 on a d6 can mean surprise for one side) and 2d6 on the monster reaction table. Hostile creatures may attack, parley or flee according to the result; the DM adjusts for obvious strength, alignment and previous conduct.</p>\n<table><thead><tr><th>2d6</th><th>Reaction</th></tr></thead><tbody><tr><td>2-3</td><td>Hostile, attacks immediately</td></tr><tr><td>4-5</td><td>Hostile, may attack</td></tr><tr><td>6-7</td><td>Neutral, uncertain</td></tr><tr><td>8-9</td><td>No attack, may parley</td></tr><tr><td>10-12</td><td>Friendly, helpful or enthusiastic</td></tr></tbody></table>\n<p>Wandering monsters are rolled by time and terrain. Evasion, pursuit and hiding use movement rates, surprise and the DM's judgment.</p>"
         }
       }
     ]
@@ -135,10 +135,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Initiative, morale, attack rolls, missile fire, magic, unarmed and special forms of combat.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 8. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Combat</h2>\n<p>Each round: roll initiative (1d6 per side), resolve morale, movement, missile fire, spells and hand-to-hand attacks in order. To hit, roll d20 and compare the result to the attack matrix using THAC0 and the target's descending AC; a natural 1 always misses and a natural 20 always hits. Damage is rolled after a hit, modified by Strength for melee weapons.</p>\n<table><thead><tr><th>Category</th><th>Check</th><th>Success</th></tr></thead><tbody><tr><td>Attack</td><td>d20 + bonuses</td><td>≥ THAC0 - AC</td></tr><tr><td>Saving throw</td><td>d20</td><td>≥ saving throw target</td></tr><tr><td>Ability check</td><td>d20</td><td>≤ ability score + bonus</td></tr><tr><td>Morale</td><td>2d6</td><td>≤ morale score</td></tr><tr><td>Turn undead</td><td>2d6</td><td>≥ table cell</td></tr></tbody></table>\n<p>Morale is checked when foes die or when the situation turns against them. Unarmed combat deals 1d2 or 1d3 damage; grappling, disarming and called shots are optional. Spells cast in combat follow their listed casting time and range.</p>"
         }
       }
     ]
@@ -153,10 +153,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>The War Machine and Siege Machine for resolving large-scale battles.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 9. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Mass Combat</h2>\n<p>For battles with many combatants, the War Machine converts each unit into a Combat Result using troop class, hit dice, morale and leaders. Opposing results are compared on the War Machine table to produce casualties, gains and losses. The Siege Machine resolves attacks on fortifications using class, armor and construction factors.</p>\n<p>Leaders add their level and ability bonuses; terrain, surprise and morale can shift the result. The system resolves the battle as a whole rather than individual attacks.</p>"
         }
       }
     ]
@@ -171,10 +171,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Awarding XP for role-playing, goals, monsters, treasure and exceptional actions; maximum hit points.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 10. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Experience</h2>\n<p>XP is awarded for defeating monsters (the XP value in the monster entry), for treasure gained, for completing goals and for good role-playing. The DM divides awards among the characters who earned them. Partial levels are not used.</p>\n<table><thead><tr><th>Constitution adjustment</th><th>Hit points per level</th></tr></thead><tbody><tr><td>-3</td><td>1</td></tr><tr><td>-2</td><td>1</td></tr><tr><td>-1</td><td>1</td></tr><tr><td>None</td><td>Roll hit die (minimum 1)</td></tr><tr><td>+1</td><td>Roll hit die + 1 (minimum 2)</td></tr><tr><td>+2</td><td>Roll hit die + 2 (minimum 3)</td></tr><tr><td>+3</td><td>Roll hit die + 3 (minimum 4)</td></tr></tbody></table>\n<p>Class maximum levels and demihuman level limits are enforced by the class tables in the Classes compendium.</p>"
         }
       }
     ]
@@ -189,10 +189,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Retainers, mercenaries and specialists.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 11. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Nonplayer Characters</h2>\n<p>Retainers and mercenaries are hired with pay, food and lodging. Their loyalty depends on the employer's Charisma, alignment, treatment and regular pay. Specialists such as sages, smiths and alchemists charge for services and may require contracts or advances.</p>\n<p>Hirelings have morale scores and abandon or betray an employer when morale fails. The DM controls all NPC decisions, even when the players negotiate terms.</p>"
         }
       }
     ]
@@ -207,10 +207,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Building a stronghold, hiring staff and ruling a dominion.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 12. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Strongholds and Dominions</h2>\n<p>A character can build a stronghold after reaching the appropriate level. Construction cost depends on size, materials and fortifications; monthly upkeep covers wages, supplies and repairs. Staff are hired from the NPC rules and have morale and loyalty.</p>\n<p>A dominion generates income from taxes, trade and resources. The ruler must maintain order, collect taxes and defend the territory; population and attitude affect revenue.</p>"
         }
       }
     ]
@@ -225,10 +225,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Ability checks, aging, alignment changes, anti-magic and ICC rulings.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 13. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Dungeon Master Procedures</h2>\n<p>When no specific rule applies, the DM sets a target number on d20 (easy 5, moderate 10, hard 15, very hard 20) and applies the relevant ability adjustment. Ability checks are optional; a natural 20 succeeds and a natural 1 fails when the DM uses that convention.</p>\n<p>Aging modifies ability scores at thresholds determined by the DM. Alignment changes require a major shift in behavior and may cause the loss of class abilities. Anti-magic areas suppress spells and magical item powers. The DM's final ruling resolves ambiguous cases.</p>"
         }
       }
     ]
@@ -243,10 +243,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>How to read monster descriptions and the alphabetical monster list with complete statistics.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 14. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Monsters</h2>\n<p>Each monster entry lists armor class, hit dice, hit points, number appearing, movement, attacks, damage, special abilities, morale, treasure type and XP value. Hit dice are d8; a \"+\" adds hit points without changing the HD for attack or saving throw purposes.</p>\n<p>Monsters use the same descending AC and saving throw categories as characters. Special attacks such as breath weapons, poison, paralysis and charm usually allow a saving throw with a stated modifier. Treasure type determines the rolled treasure.</p>"
         }
       }
     ]
@@ -261,10 +261,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Immortal spheres, statistics and the paths by which mortals may become immortals.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 15. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Immortals</h2>\n<p>Immortal characters use spheres (matter, energy, time, space and thought) and ranks from novice to Hierophant. Each rank grants powers, higher ability scores and increased hit points, while requiring experience and a patron's approval.</p>\n<p>Mortals may qualify through the paths of the Dynamism, the Hierarchy or the Void, each with different prerequisites. Immortal magic uses the same level structure but much larger energy costs.</p>"
         }
       }
     ]
@@ -279,10 +279,10 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Treasure types, coins, gems, jewelry and magical items.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 16. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Treasure</h2>\n<p>Treasure is generated by lettered types that specify coins, gems, jewelry and magical items. Gold, electrum, silver, copper and platinum have different values; gems and jewelry are valued individually and weigh less than coins.</p>\n<p>Magical items include potions, scrolls, rings, wands, staves, swords, armor and miscellaneous items. Missile talents such as speaking, stunning, teleporting, transporting and wounding are separate from ordinary item powers. Creating an item costs gold and spell levels and requires a roll for success.</p>"
         }
       }
     ]
@@ -297,10 +297,63 @@
     },
     "pages": [
       {
-        "name": "Summary",
+        "name": "Rules",
         "type": "text",
         "text": {
-          "content": "<p>Running an ongoing campaign and linking adventures together.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 17. Full rules text is not reproduced here.</em></p>"
+          "content": "<h2>Campaigning</h2>\n<p>A campaign links adventures into a continuing world. The DM prepares key locations, factions, rumors and encounters, then adapts them to player choices. Consistent timekeeping, geography and NPC memory make the setting believable.</p>\n<p>Use wandering monsters, random treasure and reaction checks sparingly so that the story remains coherent. Reward clever plans as well as combat, and let character actions change the world.</p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Core Rules Reference",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Reference"
+      }
+    },
+    "pages": [
+      {
+        "name": "Combat Sequence",
+        "type": "text",
+        "text": {
+          "content": "<h2>Combat Sequence</h2>\n<ol><li>Roll 1d6 for each side; the higher roll acts first.</li><li>Check morale for NPCs and monsters.</li><li>Move, then resolve missile fire, spells and hand-to-hand attacks.</li><li>Apply damage and resolve special effects.</li></ol>\n<p>Attack: d20 + Strength/Dexterity + magic + mastery versus THAC0 - AC. Natural 1 misses; natural 20 hits automatically. Damage uses the weapon die plus Strength for melee attacks.</p>"
+        }
+      },
+      {
+        "name": "Attack Matrix",
+        "type": "text",
+        "text": {
+          "content": "<h2>Attack Matrix</h2>\n<p>Read the row for the target's AC to find the needed modified d20 result. The dagger symbol marks an automatic hit on a natural 20; a natural 1 still misses.</p>\n<table><thead><tr><th>AC</th><th>Needed</th></tr></thead><tbody><tr><td>AC -10</td><td>14†</td></tr><tr><td>AC -9</td><td>13†</td></tr><tr><td>AC -8</td><td>12†</td></tr><tr><td>AC -7</td><td>11†</td></tr><tr><td>AC -6</td><td>10†</td></tr><tr><td>AC -5</td><td>10†</td></tr><tr><td>AC -4</td><td>10†</td></tr><tr><td>AC -3</td><td>10†</td></tr><tr><td>AC -2</td><td>10†</td></tr><tr><td>AC -1</td><td>9†</td></tr><tr><td>AC 0</td><td>8†</td></tr><tr><td>AC 1</td><td>7†</td></tr><tr><td>AC 2</td><td>6†</td></tr><tr><td>AC 3</td><td>5†</td></tr><tr><td>AC 4</td><td>4†</td></tr><tr><td>AC 5</td><td>3†</td></tr><tr><td>AC 6</td><td>2†</td></tr><tr><td>AC 7</td><td>1†</td></tr><tr><td>AC 8</td><td>0†</td></tr><tr><td>AC 9</td><td>1</td></tr><tr><td>AC 10</td><td>2</td></tr><tr><td>AC 11</td><td>2</td></tr><tr><td>AC 12</td><td>2</td></tr><tr><td>AC 13</td><td>2</td></tr><tr><td>AC 14</td><td>2</td></tr><tr><td>AC 15</td><td>3</td></tr><tr><td>AC 16</td><td>4</td></tr><tr><td>AC 17</td><td>5</td></tr><tr><td>AC 18</td><td>6</td></tr><tr><td>AC 19</td><td>7</td></tr><tr><td>AC 20</td><td>8</td></tr><tr><td>AC 21</td><td>9</td></tr><tr><td>AC 22</td><td>10</td></tr><tr><td>AC 23</td><td>11</td></tr><tr><td>AC 24</td><td>12</td></tr><tr><td>AC 25</td><td>13</td></tr><tr><td>AC 26</td><td>14</td></tr><tr><td>AC 27</td><td>15</td></tr><tr><td>AC 28</td><td>16</td></tr><tr><td>AC 29</td><td>17</td></tr><tr><td>AC 30</td><td>18</td></tr><tr><td>AC 31</td><td>19</td></tr><tr><td>AC 32</td><td>20</td></tr><tr><td>AC 33</td><td>20</td></tr><tr><td>AC 34</td><td>20</td></tr><tr><td>AC 35</td><td>20</td></tr><tr><td>AC 36</td><td>20</td></tr><tr><td>AC 37</td><td>21</td></tr><tr><td>AC 38</td><td>22</td></tr><tr><td>AC 39</td><td>23</td></tr><tr><td>AC 40</td><td>24</td></tr><tr><td>AC 41</td><td>25</td></tr><tr><td>AC 42</td><td>26</td></tr><tr><td>AC 43</td><td>27</td></tr><tr><td>AC 44</td><td>28</td></tr><tr><td>AC 45</td><td>29</td></tr><tr><td>AC 46</td><td>30</td></tr><tr><td>AC 47</td><td>30</td></tr><tr><td>AC 48</td><td>30</td></tr><tr><td>AC 49</td><td>30</td></tr><tr><td>AC 50</td><td>30</td></tr><tr><td>AC 51</td><td>31</td></tr><tr><td>AC 52</td><td>32</td></tr><tr><td>AC 53</td><td>33</td></tr><tr><td>AC 54</td><td>34</td></tr><tr><td>AC 55</td><td>35</td></tr><tr><td>AC 56</td><td>36</td></tr><tr><td>AC 57</td><td>37</td></tr><tr><td>AC 58</td><td>38</td></tr><tr><td>AC 59</td><td>39</td></tr><tr><td>AC 60</td><td>40</td></tr></tbody></table>"
+        }
+      },
+      {
+        "name": "Saving Throws",
+        "type": "text",
+        "text": {
+          "content": "<h2>Saving Throws</h2>\n<p>Roll d20; the throw succeeds when the total equals or exceeds the target. Wisdom adjusts saves vs. spells; magic items can add bonuses.</p>\n<p>Fighter</p><table><thead><tr><th>Level</th><th>1-5</th><th>6-8</th><th>9-11</th><th>12-14</th><th>15-17</th><th>18-20</th><th>21-23</th><th>24-26</th><th>27-29</th><th>30-32</th><th>33-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>12</td><td>10</td><td>8</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>13</td><td>11</td><td>9</td><td>7</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>14</td><td>12</td><td>10</td><td>8</td><td>7</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>15</td><td>13</td><td>11</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>2</td></tr><tr><td>≥ Spells</td><td>16</td><td>14</td><td>12</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr></tbody></table>\n<p>Cleric / Thief</p><table><thead><tr><th>Level</th><th>1-7</th><th>8-11</th><th>12-15</th><th>16-19</th><th>20-23</th><th>24-27</th><th>28-31</th><th>32-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>11</td><td>9</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>12</td><td>10</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>16</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Spells</td><td>15</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr></tbody></table>\n<p>Magic-User</p><table><thead><tr><th>Level</th><th>1-9</th><th>10-14</th><th>15-19</th><th>20-23</th><th>24-27</th><th>28-31</th><th>32-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>16</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>2</td></tr><tr><td>≥ Spells</td><td>15</td><td>12</td><td>9</td><td>6</td><td>4</td><td>3</td><td>2</td><td>2</td></tr></tbody></table>"
+        }
+      },
+      {
+        "name": "Spellcasting",
+        "type": "text",
+        "text": {
+          "content": "<h2>Spellcasting</h2>\n<p>Spell slots reset after rest and study. A magic-user must have the spell in the spellbook; clerics and druids receive spells from their deity.</p>\n<table><thead><tr><th>Class</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>Cleric 1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 4</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 5</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 6</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 7</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 8</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 10</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>\n<table><thead><tr><th>Class</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>Magic-User 1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 4</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 5</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 6</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 7</td><td>3</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 8</td><td>3</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 10</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>"
+        }
+      },
+      {
+        "name": "Encumbrance",
+        "type": "text",
+        "text": {
+          "content": "<h2>Encumbrance and Movement</h2>\n<table><thead><tr><th>Carried weight</th><th>Movement / turn</th><th>Movement / round</th></tr></thead><tbody><tr><td>Up to 400 cn</td><td>120 ft</td><td>12 ft</td></tr><tr><td>401-600 cn</td><td>90 ft</td><td>9 ft</td></tr><tr><td>601-800 cn</td><td>60 ft</td><td>6 ft</td></tr><tr><td>801-1,000 cn</td><td>30 ft</td><td>3 ft</td></tr><tr><td>Over 1,000 cn</td><td>Cannot move</td><td>—</td></tr></tbody></table>\n<p>Coins weigh 10 per cn; gems and jewelry are recorded separately.</p>"
+        }
+      },
+      {
+        "name": "Treasure",
+        "type": "text",
+        "text": {
+          "content": "<h2>Treasure</h2>\n<p>Treasure types are rolled from the Treasure tables. Coins, gems and jewelry are valued separately; magical items are identified by their descriptions.</p>\n<table><thead><tr><th>Category</th><th>Contents</th></tr></thead><tbody><tr><td>Potions</td><td>Single-use liquids with effects such as healing, control, defense or illusion</td></tr><tr><td>Miscellaneous magical items</td><td>Permanent items such as helms, lamps, medallions and girdles</td></tr><tr><td>Missile talents</td><td>Special effects carried by magical missiles</td></tr><tr><td>Enchantment rules</td><td>Costs, attack limits, reproduction and special attacks for constructed items</td></tr></tbody></table>\n<p>Creating a magical item requires the caster to supply the spell levels, pay the gold cost and roll for success.</p>"
         }
       }
     ]
@@ -319,7 +372,7 @@
         "name": "Overview",
         "type": "text",
         "text": {
-          "content": "<h2>Weapon Mastery (Optional)</h2>\n<p>Weapon mastery lets a character study one weapon in depth, or several weapons less intensely. It is optional: the DM decides whether to use it. All characters, not only fighters, can learn it.</p>\n<p>With these rules a human starts with no weapon skill and receives <strong>weapon choices</strong>. Demihumans start with Basic skill in all weapons allowed to their class, but do not gain weapon choices; they improve through training at levels 4, 8 and 12 (dwarves) and after maximum level.</p>\n<p>A weapon choice buys one weapon used in one fashion. A bastard sword used one-handed and the same sword used two-handed are two separate choices. The net is a single exception.</p>\n<p><em>Short paraphrase of Rules Cyclopedia, Chapter 5. The full text remains in the source PDF.</em></p>"
+          "content": "<h2>Weapon Mastery (Optional)</h2>\n<p>Weapon mastery lets a character study one weapon in depth, or several weapons less intensely. It is optional: the DM decides whether to use it. All characters, not only fighters, can learn it.</p>\n<p>With these rules a human starts with no weapon skill and receives <strong>weapon choices</strong>. Demihumans start with Basic skill in all weapons allowed to their class, but do not gain weapon choices; they improve through training at levels 4, 8 and 12 (dwarves) and after maximum level.</p>\n<p>A weapon choice buys one weapon used in one fashion. A bastard sword used one-handed and the same sword used two-handed are two separate choices. The net is a single exception.</p>\n<p><em>Condensed reference from Rules Cyclopedia, Chapter 5.</em></p>"
         }
       },
       {
@@ -340,14 +393,14 @@
         "name": "Mastery - Hand-Held",
         "type": "text",
         "text": {
-          "content": "<h2>Weapon Mastery Table - Hand-Held Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. P = primary target, S = secondary target, H = hand-held attacker, M = missile or monster attacker, A = all. \"§\" refers to the special-effects tables.</p>\n<h3>Hand-held weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blackjack</td><td>1d2; § knockout</td><td>2d2; § knockout (save -1)</td><td>1d4+1; § knockout (save -2)</td><td>P 1d4+3 / S 1d6+1; § knockout (save -3)</td><td>P 1d4+5 / S 1d6+2; § knockout (save -4)</td></tr><tr><td>Cestus</td><td>1d3; no off-hand penalty</td><td>1d4+1; no off-hand penalty</td><td>2d4; no off-hand penalty</td><td>P 2d4 / S 1d4+3; no off-hand penalty</td><td>P 3d4 / S 2d4+3; no off-hand penalty</td></tr><tr><td>Club or Torch</td><td>1d8; M -2AC/2; delay</td><td>1d8+2; M -3AC/2; delay</td><td>1d8+4; M -3AC/3; delay + stun</td><td>P 1d8+8 / S 1d8+6; M -4AC/4; delay + stun</td><td>P 1d10+10 / S 1d8+8; M -5AC/4; delay + stun</td></tr><tr><td>Halberd</td><td>1d10</td><td>1d10+2; H -1AC/1; hook (save +1) + disarm</td><td>1d10+5; H -2AC/1; hook (save -2) + disarm</td><td>P 1d8+10 / S 1d6+15; H -2AC/2; deflect (1) + disarm</td><td>P 1d10+14 / S 1d6+12; H -3AC/2; hook (save -4) + disarm</td></tr><tr><td>Hammer, War</td><td>1d6</td><td>1d6+2; H -1AC/1; second attack + breaks</td><td>1d8+2; H -2AC/2; second attack + breaks</td><td>P 1d8+5 / S 1d4+5; H -3AC/2; second attack + breaks</td><td>P 1d8+7 / S 1d6+4; H -3AC/2; second attack + breaks</td></tr><tr><td>Lance</td><td>1d10; A -2AC; charge</td><td>1d10+3; M -2AC/1; charge</td><td>1d10+7; M -3AC/1; charge</td><td>P 1d8+12 / S 1d6+5; M -3AC/2; charge</td><td>P 1d8+16 / S 1d6+12; M -4AC/2; charge</td></tr><tr><td>Mace</td><td>1d6</td><td>2d4; H -1AC/1; deflect (1)</td><td>2d4+2; H -2AC/2; deflect (1)</td><td>2d4+4; H -3AC/3; deflect (2)</td><td>2d4+6; H -4AC/4; deflect (2)</td></tr><tr><td>Pike</td><td>1d10; A -1AC/2; deflect (1)</td><td>1d12+2; H -2AC/1; deflect (1)</td><td>1d12+5; H -2AC/2; deflect (3)</td><td>P 1d12+9 / S 1d6+4; A -3AC/3; deflect (2)</td><td>P 1d10+14 / S 1d6+7; A -4AC/4; deflect (4)</td></tr><tr><td>Polearm, Other</td><td>Uses halberd / pike / poleaxe stats</td><td>Uses halberd / pike / poleaxe stats</td><td>2d6+1; stun + deflect (1)</td><td>P 3d6+3 / S 2d8+2; stun + deflect (2)</td><td>P 3d6+6 / S 3d6+2; stun + deflect (3)</td></tr><tr><td>Poleaxe</td><td>1d10</td><td>1d10+3; H -1AC/1; deflect (1)</td><td>1d10+6; H -2AC/1; deflect (2)</td><td>P 1d8+10 / S 3d6+2; H -2AC/2; deflect (2)</td><td>P 1d8+16 / S 1d10+8; H -3AC/2; deflect (2)</td></tr><tr><td>Shield, Horned</td><td>1d2; A -1AC/1; second attack</td><td>2d2; A -1AC/1; second attack</td><td>1d4+1; A -1AC/2; second attack</td><td>P 1d4+3 / S 1d6+1; A -1AC/4; second attack</td><td>P 1d4+5 / S 1d6+2; A -1AC/6; second attack</td></tr><tr><td>Shield, Knife</td><td>1d4+1; A -1AC; second attack + breaks</td><td>1d6+1; A -1AC; second attack + breaks</td><td>2d4+1; A -2AC; second attack + breaks</td><td>P 3d4 / S 2d4+2; A -2AC; second attack + breaks</td><td>P 4d4 / S 3d4+1; A -2AC; second attack + breaks</td></tr><tr><td>Shield, Sword</td><td>1d4+2; A -1AC/2; second attack + breaks</td><td>1d6+3; A -1AC/2; second attack + breaks</td><td>1d6+4; A -2AC/3; second attack + breaks</td><td>P 1d6+7 / S 1d4+7; A -2AC/3; second attack + breaks</td><td>P 1d6+9 / S 1d4+9; A -3AC/4; second attack + breaks</td></tr><tr><td>Shield, Tusked</td><td>1d4+1; A -1AC; two attacks + breaks</td><td>1d6+2; A -2AC; two attacks + breaks</td><td>2d4+2; A -2AC; two attacks + breaks</td><td>P 2d4+4 / S 2d4+1; A -3AC; two attacks + breaks</td><td>P 2d4+6 / S 3d4+1; A -3AC; two attacks + breaks</td></tr><tr><td>Staff</td><td>1d6</td><td>1d8+2; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d8+8 / S 1d6+7; H -2AC/3; deflect (2)</td><td>P 1d8+10 / S 1d6+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Bastard (1H)</td><td>1d6+1; A -1AC/2; second attack</td><td>1d6+3; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d6+7; H -2AC/2; deflect (2)</td><td>P 1d10+8 / S 1d6+7; H -2AC/3; deflect (2)</td></tr><tr><td>Sword, Bastard (2H)</td><td>1d8+1; H -1AC/1; deflect (1)</td><td>1d8+3; H -2AC/2; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d8+8; H -2AC/2; deflect (2)</td><td>P 1d10+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Normal</td><td>1d8; H -1AC/1; deflect (1)</td><td>1d12; H -2AC/1; deflect (1) + disarm</td><td>2d8; H -2AC/2; deflect (2) + disarm</td><td>P 2d8+4 / S 2d6+4; H -3AC/3; deflect (2) + disarm</td><td>P 2d6+8 / S 1d8+8; H -3AC/3; deflect (3) + disarm</td></tr><tr><td>Sword, Short</td><td>1d6; H -1AC/1; deflect (1) + disarm</td><td>1d6+2; H -2AC/2; deflect (2) + disarm</td><td>1d6+4; H -2AC/2; deflect (2) + disarm</td><td>P 1d6+7 / S 1d4+7; H -2AC/3; deflect (3) + disarm</td><td>P 1d6+9 / S 1d4+9; H -3AC/4; deflect (3) + disarm</td></tr><tr><td>Sword, Two-Handed</td><td>2d8; H -1AC/1; deflect (1)</td><td>2d8+2; H -2AC/2; deflect (1)</td><td>2d8+4; H -2AC/2; deflect (2)</td><td>P 2d8+6 / S 1d10+8; H -3AC/2; deflect (2)</td><td>P 1d12+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Whip</td><td>1d2; M -2AC/2; § entangle</td><td>1d4; M -3AC/3; § entangle (save -1)</td><td>1d4+1; M -3AC/3; § entangle (save -2)</td><td>P 1d4+3 / S 1d3+2; M -4AC/3; § entangle (save -3)</td><td>P 1d4+5 / S 1d3+3; M -4AC/4; § entangle (save -4)</td></tr></tbody></table><h3>Hand-held weapons rarely thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Battle</td><td>1d8</td><td>1d8+2, range -/5/10</td><td>1d8+4, range -/5/10</td><td>P 1d8+8 / S 1d8+6, range 5/10/15</td><td>P 1d10+10 / S 1d8+8, range 5/10/15</td></tr><tr><td>Club or Torch</td><td>1d4</td><td>1d6+1, range -/15/25</td><td>1d8+2, range -/15/25</td><td>P 1d6+5 / S 1d4+5, range 10/25/40</td><td>P 1d6+6 / S 1d4+6, range 10/25/40</td></tr></tbody></table>\n<p><em>Condensed from the scanned table on PDF page 78; check the original for exact cell alignment.</em></p>"
+          "content": "<h2>Weapon Mastery Table - Hand-Held Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. P = primary target, S = secondary target, H = hand-held attacker, M = missile or monster attacker, A = all. \"§\" refers to the special-effects tables.</p>\n<h3>Hand-held weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blackjack</td><td>1d2; § knockout</td><td>2d2; § knockout (save -1)</td><td>1d4+1; § knockout (save -2)</td><td>P 1d4+3 / S 1d6+1; § knockout (save -3)</td><td>P 1d4+5 / S 1d6+2; § knockout (save -4)</td></tr><tr><td>Cestus</td><td>1d3; no off-hand penalty</td><td>1d4+1; no off-hand penalty</td><td>2d4; no off-hand penalty</td><td>P 2d4 / S 1d4+3; no off-hand penalty</td><td>P 3d4 / S 2d4+3; no off-hand penalty</td></tr><tr><td>Club or Torch</td><td>1d8; M -2AC/2; delay</td><td>1d8+2; M -3AC/2; delay</td><td>1d8+4; M -3AC/3; delay + stun</td><td>P 1d8+8 / S 1d8+6; M -4AC/4; delay + stun</td><td>P 1d10+10 / S 1d8+8; M -5AC/4; delay + stun</td></tr><tr><td>Halberd</td><td>1d10</td><td>1d10+2; H -1AC/1; hook (save +1) + disarm</td><td>1d10+5; H -2AC/1; hook (save -2) + disarm</td><td>P 1d8+10 / S 1d6+15; H -2AC/2; deflect (1) + disarm</td><td>P 1d10+14 / S 1d6+12; H -3AC/2; hook (save -4) + disarm</td></tr><tr><td>Hammer, War</td><td>1d6</td><td>1d6+2; H -1AC/1; second attack + breaks</td><td>1d8+2; H -2AC/2; second attack + breaks</td><td>P 1d8+5 / S 1d4+5; H -3AC/2; second attack + breaks</td><td>P 1d8+7 / S 1d6+4; H -3AC/2; second attack + breaks</td></tr><tr><td>Lance</td><td>1d10; A -2AC; charge</td><td>1d10+3; M -2AC/1; charge</td><td>1d10+7; M -3AC/1; charge</td><td>P 1d8+12 / S 1d6+5; M -3AC/2; charge</td><td>P 1d8+16 / S 1d6+12; M -4AC/2; charge</td></tr><tr><td>Mace</td><td>1d6</td><td>2d4; H -1AC/1; deflect (1)</td><td>2d4+2; H -2AC/2; deflect (1)</td><td>2d4+4; H -3AC/3; deflect (2)</td><td>2d4+6; H -4AC/4; deflect (2)</td></tr><tr><td>Pike</td><td>1d10; A -1AC/2; deflect (1)</td><td>1d12+2; H -2AC/1; deflect (1)</td><td>1d12+5; H -2AC/2; deflect (3)</td><td>P 1d12+9 / S 1d6+4; A -3AC/3; deflect (2)</td><td>P 1d10+14 / S 1d6+7; A -4AC/4; deflect (4)</td></tr><tr><td>Polearm, Other</td><td>Uses halberd / pike / poleaxe stats</td><td>Uses halberd / pike / poleaxe stats</td><td>2d6+1; stun + deflect (1)</td><td>P 3d6+3 / S 2d8+2; stun + deflect (2)</td><td>P 3d6+6 / S 3d6+2; stun + deflect (3)</td></tr><tr><td>Poleaxe</td><td>1d10</td><td>1d10+3; H -1AC/1; deflect (1)</td><td>1d10+6; H -2AC/1; deflect (2)</td><td>P 1d8+10 / S 3d6+2; H -2AC/2; deflect (2)</td><td>P 1d8+16 / S 1d10+8; H -3AC/2; deflect (2)</td></tr><tr><td>Shield, Horned</td><td>1d2; A -1AC/1; second attack</td><td>2d2; A -1AC/1; second attack</td><td>1d4+1; A -1AC/2; second attack</td><td>P 1d4+3 / S 1d6+1; A -1AC/4; second attack</td><td>P 1d4+5 / S 1d6+2; A -1AC/6; second attack</td></tr><tr><td>Shield, Knife</td><td>1d4+1; A -1AC; second attack + breaks</td><td>1d6+1; A -1AC; second attack + breaks</td><td>2d4+1; A -2AC; second attack + breaks</td><td>P 3d4 / S 2d4+2; A -2AC; second attack + breaks</td><td>P 4d4 / S 3d4+1; A -2AC; second attack + breaks</td></tr><tr><td>Shield, Sword</td><td>1d4+2; A -1AC/2; second attack + breaks</td><td>1d6+3; A -1AC/2; second attack + breaks</td><td>1d6+4; A -2AC/3; second attack + breaks</td><td>P 1d6+7 / S 1d4+7; A -2AC/3; second attack + breaks</td><td>P 1d6+9 / S 1d4+9; A -3AC/4; second attack + breaks</td></tr><tr><td>Shield, Tusked</td><td>1d4+1; A -1AC; two attacks + breaks</td><td>1d6+2; A -2AC; two attacks + breaks</td><td>2d4+2; A -2AC; two attacks + breaks</td><td>P 2d4+4 / S 2d4+1; A -3AC; two attacks + breaks</td><td>P 2d4+6 / S 3d4+1; A -3AC; two attacks + breaks</td></tr><tr><td>Staff</td><td>1d6</td><td>1d8+2; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d8+8 / S 1d6+7; H -2AC/3; deflect (2)</td><td>P 1d8+10 / S 1d6+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Bastard (1H)</td><td>1d6+1; A -1AC/2; second attack</td><td>1d6+3; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d6+7; H -2AC/2; deflect (2)</td><td>P 1d10+8 / S 1d6+7; H -2AC/3; deflect (2)</td></tr><tr><td>Sword, Bastard (2H)</td><td>1d8+1; H -1AC/1; deflect (1)</td><td>1d8+3; H -2AC/2; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d8+8; H -2AC/2; deflect (2)</td><td>P 1d10+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Normal</td><td>1d8; H -1AC/1; deflect (1)</td><td>1d12; H -2AC/1; deflect (1) + disarm</td><td>2d8; H -2AC/2; deflect (2) + disarm</td><td>P 2d8+4 / S 2d6+4; H -3AC/3; deflect (2) + disarm</td><td>P 2d6+8 / S 1d8+8; H -3AC/3; deflect (3) + disarm</td></tr><tr><td>Sword, Short</td><td>1d6; H -1AC/1; deflect (1) + disarm</td><td>1d6+2; H -2AC/2; deflect (2) + disarm</td><td>1d6+4; H -2AC/2; deflect (2) + disarm</td><td>P 1d6+7 / S 1d4+7; H -2AC/3; deflect (3) + disarm</td><td>P 1d6+9 / S 1d4+9; H -3AC/4; deflect (3) + disarm</td></tr><tr><td>Sword, Two-Handed</td><td>2d8; H -1AC/1; deflect (1)</td><td>2d8+2; H -2AC/2; deflect (1)</td><td>2d8+4; H -2AC/2; deflect (2)</td><td>P 2d8+6 / S 1d10+8; H -3AC/2; deflect (2)</td><td>P 1d12+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Whip</td><td>1d2; M -2AC/2; § entangle</td><td>1d4; M -3AC/3; § entangle (save -1)</td><td>1d4+1; M -3AC/3; § entangle (save -2)</td><td>P 1d4+3 / S 1d3+2; M -4AC/3; § entangle (save -3)</td><td>P 1d4+5 / S 1d3+3; M -4AC/4; § entangle (save -4)</td></tr></tbody></table><h3>Hand-held weapons rarely thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Battle</td><td>1d8</td><td>1d8+2, range -/5/10</td><td>1d8+4, range -/5/10</td><td>P 1d8+8 / S 1d8+6, range 5/10/15</td><td>P 1d10+10 / S 1d8+8, range 5/10/15</td></tr><tr><td>Club or Torch</td><td>1d4</td><td>1d6+1, range -/15/25</td><td>1d8+2, range -/15/25</td><td>P 1d6+5 / S 1d4+5, range 10/25/40</td><td>P 1d6+6 / S 1d4+6, range 10/25/40</td></tr></tbody></table>\n<p><em>Compact reference table; check the source for exact cell alignment.</em></p>"
         }
       },
       {
         "name": "Mastery - Missile",
         "type": "text",
         "text": {
-          "content": "<h2>Weapon Mastery Table - Thrown and Missile Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. Ranges are listed in feet indoors and yards outdoors.</p>\n<h3>Hand-held weapons easily thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Hand</td><td>1d6, 10/20/30</td><td>1d6+2, 15/25/35; M -1AC/1</td><td>1d6+3, 25/35/45; M -2AC/2</td><td>P 2d4+4 / S 1d6+4, 30/40/50; M -3AC/3</td><td>P 2d4+7 / S 1d6+4, 40/50/60; M -3AC/3</td></tr><tr><td>Dagger</td><td>1d4, 10/20/30</td><td>1d6, 15/25/35; H -1AC/1; double damage (20)</td><td>2d4, 20/30/45; H -2AC/2; double damage (19-20)</td><td>P 3d4 / S 2d4+2, 25/35/50; H -2AC/2; double damage (18-20)</td><td>P 4d4 / S 3d4+1, 30/40/50; H -3AC/3; double damage (17-20)</td></tr><tr><td>Hammer, Throwing</td><td>1d4, 10/20/30</td><td>1d4+2, 10/20/30; stun (s/m)</td><td>1d6+2, 20/30/45; M -2AC/3; stun (s/m)</td><td>P 1d6+4 / S 1d4+4, 20/30/45; M -3AC/4; stun (s/m)</td><td>S 1d6+6, 20/30/45; M -4AC/5; stun (s/m)</td></tr><tr><td>Javelin</td><td>1d6, 30/60/90</td><td>1d6+2, 30/60/90; H -1AC/1; delay (s/m)</td><td>1d6+4, 40/80/120; H -2AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d10+6, 40/80/120; H -3AC/3; delay (s/m)</td><td>P 1d6+9 / S 1d10+6, 50/100/150; H -4AC/4; delay (s/m)</td></tr><tr><td>Spear</td><td>1d6, 20/40/60; set</td><td>1d6+2, 20/40/60; set</td><td>2d4+2, 40/60/75; set + stun</td><td>2d4+4, 40/60/75; M -3AC/2; set + stun</td><td>2d4+6, 60/75/90; M -3AC/3; set + stun</td></tr><tr><td>Trident</td><td>1d6, 10/20/30</td><td>1d8+1, 10/20/30; skewer up to 4 HD</td><td>1d8+4, 20/30/45; skewer up to 7 HD</td><td>P 1d8+6 / S 2d4+5, 20/30/45; skewer up to 10 HD</td><td>P 1d8+7 / S 1d6+6, 25/35/50; skewer up to 15 HD</td></tr></tbody></table><h3>Missile weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blowgun, up to 2'</td><td>Nil, 10/20/30; § by poison</td><td>Nil, 15/20/30; § by poison (save -1)</td><td>Nil, 15/25/35; § by poison (save -2)</td><td>Nil, 20/25/35; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Blowgun, over 2'</td><td>Nil, 20/25/30; § by poison</td><td>Nil, 20/25/30; § by poison (save -1)</td><td>Nil, 25/30/40; § by poison (save -2)</td><td>Nil, 30/35/40; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Bola</td><td>1d2, 20/40/60; strangle (20)</td><td>1d3, 25/40/60; H -1AC/1; strangle (20) (save -1)</td><td>1d3+1, 30/50/70; H -2AC/2; strangle (19-20) (save -2)</td><td>S 3d4+1, 35/50/70; H -3AC/3; strangle (18-20)</td><td>P 4d4 / S 3d4+1, 30/50/60; H -3AC/3; strangle (17-20)</td></tr><tr><td>Bow, Long</td><td>1d6, 70/140/210</td><td>1d8+1, 90/150/220; H -1AC/1; delay (s/m)</td><td>1d10+2, 110/170/230; H -2AC/1; delay (s/m)</td><td>S 1d4+6, 110/170/230; H -3AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d6+6, 130/190/250; M -4AC/5; delay (s/m)</td></tr><tr><td>Bow, Short</td><td>1d6, 50/100/150</td><td>1d6+2, 60/110/160; H -1AC/1; delay (s)</td><td>1d6+4, 80/130/170; H -1AC/2; delay (s)</td><td>P 1d6+7 / S 1d4+8, 90/130/180; H -2AC/2; delay (s)</td><td>P 1d6+9 / S 1d4+8, 110/140/190; H -2AC/2; delay (s)</td></tr><tr><td>Crossbow, Heavy</td><td>2d4, 80/160/240</td><td>2d6, 90/160/240; M -1AC/1; stun (s/m)</td><td>2d6+2, 100/170/240; M -2AC/2; stun (s/m)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Crossbow, Light</td><td>1d6, 60/120/180</td><td>1d6+2, 60/120/180; M -1AC/1; stun (s)</td><td>1d6+4, 75/130/180; M -2AC/2; stun (s)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Net</td><td>Nil, 10/20/30; § entangle</td><td>Nil, 15/25/35; A -2AC/1; entangle (save -1)</td><td>Nil, 20/30/40; A -4AC/2; entangle (save -2)</td><td>Nil, 25/35/45; A -6AC/3; entangle (save -4)</td><td>Nil, 30/40/50; A -8AC/4; entangle (save -6)</td></tr><tr><td>Sling</td><td>1d4, 40/80/160</td><td>1d6, 40/80/160; H -1AC/2; stun (s/m)</td><td>2d4, 60/110/170; H -2AC/3; stun (s/m)</td><td>P 3d4 / S 1d8+2, 60/110/170; H -3AC/3; stun (s/m)</td><td>P 4d4 / S 1d10+2, 80/130/180; H -4AC/4; stun (s/m)</td></tr><tr><td>Stone, Thrown</td><td>1d3, 10/30/50; stun (s)</td><td>Stone 1d3, 10/30/50; stun (s)</td><td>1d6+2, 10/30/50; ignite</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr><tr><td>Holy Water</td><td>1d8, 10/30/50; ignite</td><td>1d8, 10/30/50; stun (s)</td><td>1d8+4, 10/30/50; stun (s)</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr></tbody></table>\n<p><em>Condensed from the scanned table on PDF page 79; check the original for exact cell alignment.</em></p>"
+          "content": "<h2>Weapon Mastery Table - Thrown and Missile Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. Ranges are listed in feet indoors and yards outdoors.</p>\n<h3>Hand-held weapons easily thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Hand</td><td>1d6, 10/20/30</td><td>1d6+2, 15/25/35; M -1AC/1</td><td>1d6+3, 25/35/45; M -2AC/2</td><td>P 2d4+4 / S 1d6+4, 30/40/50; M -3AC/3</td><td>P 2d4+7 / S 1d6+4, 40/50/60; M -3AC/3</td></tr><tr><td>Dagger</td><td>1d4, 10/20/30</td><td>1d6, 15/25/35; H -1AC/1; double damage (20)</td><td>2d4, 20/30/45; H -2AC/2; double damage (19-20)</td><td>P 3d4 / S 2d4+2, 25/35/50; H -2AC/2; double damage (18-20)</td><td>P 4d4 / S 3d4+1, 30/40/50; H -3AC/3; double damage (17-20)</td></tr><tr><td>Hammer, Throwing</td><td>1d4, 10/20/30</td><td>1d4+2, 10/20/30; stun (s/m)</td><td>1d6+2, 20/30/45; M -2AC/3; stun (s/m)</td><td>P 1d6+4 / S 1d4+4, 20/30/45; M -3AC/4; stun (s/m)</td><td>S 1d6+6, 20/30/45; M -4AC/5; stun (s/m)</td></tr><tr><td>Javelin</td><td>1d6, 30/60/90</td><td>1d6+2, 30/60/90; H -1AC/1; delay (s/m)</td><td>1d6+4, 40/80/120; H -2AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d10+6, 40/80/120; H -3AC/3; delay (s/m)</td><td>P 1d6+9 / S 1d10+6, 50/100/150; H -4AC/4; delay (s/m)</td></tr><tr><td>Spear</td><td>1d6, 20/40/60; set</td><td>1d6+2, 20/40/60; set</td><td>2d4+2, 40/60/75; set + stun</td><td>2d4+4, 40/60/75; M -3AC/2; set + stun</td><td>2d4+6, 60/75/90; M -3AC/3; set + stun</td></tr><tr><td>Trident</td><td>1d6, 10/20/30</td><td>1d8+1, 10/20/30; skewer up to 4 HD</td><td>1d8+4, 20/30/45; skewer up to 7 HD</td><td>P 1d8+6 / S 2d4+5, 20/30/45; skewer up to 10 HD</td><td>P 1d8+7 / S 1d6+6, 25/35/50; skewer up to 15 HD</td></tr></tbody></table><h3>Missile weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blowgun, up to 2'</td><td>Nil, 10/20/30; § by poison</td><td>Nil, 15/20/30; § by poison (save -1)</td><td>Nil, 15/25/35; § by poison (save -2)</td><td>Nil, 20/25/35; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Blowgun, over 2'</td><td>Nil, 20/25/30; § by poison</td><td>Nil, 20/25/30; § by poison (save -1)</td><td>Nil, 25/30/40; § by poison (save -2)</td><td>Nil, 30/35/40; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Bola</td><td>1d2, 20/40/60; strangle (20)</td><td>1d3, 25/40/60; H -1AC/1; strangle (20) (save -1)</td><td>1d3+1, 30/50/70; H -2AC/2; strangle (19-20) (save -2)</td><td>S 3d4+1, 35/50/70; H -3AC/3; strangle (18-20)</td><td>P 4d4 / S 3d4+1, 30/50/60; H -3AC/3; strangle (17-20)</td></tr><tr><td>Bow, Long</td><td>1d6, 70/140/210</td><td>1d8+1, 90/150/220; H -1AC/1; delay (s/m)</td><td>1d10+2, 110/170/230; H -2AC/1; delay (s/m)</td><td>S 1d4+6, 110/170/230; H -3AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d6+6, 130/190/250; M -4AC/5; delay (s/m)</td></tr><tr><td>Bow, Short</td><td>1d6, 50/100/150</td><td>1d6+2, 60/110/160; H -1AC/1; delay (s)</td><td>1d6+4, 80/130/170; H -1AC/2; delay (s)</td><td>P 1d6+7 / S 1d4+8, 90/130/180; H -2AC/2; delay (s)</td><td>P 1d6+9 / S 1d4+8, 110/140/190; H -2AC/2; delay (s)</td></tr><tr><td>Crossbow, Heavy</td><td>2d4, 80/160/240</td><td>2d6, 90/160/240; M -1AC/1; stun (s/m)</td><td>2d6+2, 100/170/240; M -2AC/2; stun (s/m)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Crossbow, Light</td><td>1d6, 60/120/180</td><td>1d6+2, 60/120/180; M -1AC/1; stun (s)</td><td>1d6+4, 75/130/180; M -2AC/2; stun (s)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Net</td><td>Nil, 10/20/30; § entangle</td><td>Nil, 15/25/35; A -2AC/1; entangle (save -1)</td><td>Nil, 20/30/40; A -4AC/2; entangle (save -2)</td><td>Nil, 25/35/45; A -6AC/3; entangle (save -4)</td><td>Nil, 30/40/50; A -8AC/4; entangle (save -6)</td></tr><tr><td>Sling</td><td>1d4, 40/80/160</td><td>1d6, 40/80/160; H -1AC/2; stun (s/m)</td><td>2d4, 60/110/170; H -2AC/3; stun (s/m)</td><td>P 3d4 / S 1d8+2, 60/110/170; H -3AC/3; stun (s/m)</td><td>P 4d4 / S 1d10+2, 80/130/180; H -4AC/4; stun (s/m)</td></tr><tr><td>Stone, Thrown</td><td>1d3, 10/30/50; stun (s)</td><td>Stone 1d3, 10/30/50; stun (s)</td><td>1d6+2, 10/30/50; ignite</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr><tr><td>Holy Water</td><td>1d8, 10/30/50; ignite</td><td>1d8, 10/30/50; stun (s)</td><td>1d8+4, 10/30/50; stun (s)</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr></tbody></table>\n<p><em>Compact reference table; check the source for exact cell alignment.</em></p>"
         }
       },
       {

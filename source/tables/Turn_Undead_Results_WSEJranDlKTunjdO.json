@@ -1,0 +1,187 @@
+{
+  "_id": "WSEJranDlKTunjdO",
+  "_key": "!tables!WSEJranDlKTunjdO",
+  "name": "Turn Undead Results",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Reference"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "We6AnmPAGoBxWnr9",
+      "type": "text",
+      "text": "Skeleton: Levels 1: 7 | Levels 2: T | Levels 3: T | Levels 4: D | Levels 5: D | Levels 6: D | Levels 7: D | Levels 8: D | Levels 9-10: D | Levels 11-12: D+ | Levels 13-14: D+ | Levels 15-16: D+ | Levels 17-20: D+ | Levels 21-24: D+ | Levels 25-28: D# | Levels 29-32: D# | Levels 33-36: D#",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.We6AnmPAGoBxWnr9"
+    },
+    {
+      "_id": "4odXSvpUEJxBDiMC",
+      "type": "text",
+      "text": "Zombie: Levels 1: 9 | Levels 2: 7 | Levels 3: T | Levels 4: T | Levels 5: D | Levels 6: D | Levels 7: D | Levels 8: D | Levels 9-10: D | Levels 11-12: D | Levels 13-14: D+ | Levels 15-16: D+ | Levels 17-20: D+ | Levels 21-24: D+ | Levels 25-28: D+ | Levels 29-32: D# | Levels 33-36: D#",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.4odXSvpUEJxBDiMC"
+    },
+    {
+      "_id": "Eexjk_l3QtXAf4t6",
+      "type": "text",
+      "text": "Ghoul: Levels 1: 11 | Levels 2: 9 | Levels 3: 7 | Levels 4: T | Levels 5: T | Levels 6: D | Levels 7: D | Levels 8: D | Levels 9-10: D | Levels 11-12: D | Levels 13-14: D | Levels 15-16: D+ | Levels 17-20: D+ | Levels 21-24: D+ | Levels 25-28: D+ | Levels 29-32: D+ | Levels 33-36: D#",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.Eexjk_l3QtXAf4t6"
+    },
+    {
+      "_id": "cqCEARSGxzOOncDb",
+      "type": "text",
+      "text": "Wight: Levels 1: - | Levels 2: 11 | Levels 3: 9 | Levels 4: 7 | Levels 5: T | Levels 6: T | Levels 7: D | Levels 8: D | Levels 9-10: D | Levels 11-12: D | Levels 13-14: D | Levels 15-16: D | Levels 17-20: D+ | Levels 21-24: D+ | Levels 25-28: D+ | Levels 29-32: D+ | Levels 33-36: D+",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.cqCEARSGxzOOncDb"
+    },
+    {
+      "_id": "IRvU-p1-hUut6XTT",
+      "type": "text",
+      "text": "Wraith: Levels 1: - | Levels 2: - | Levels 3: 11 | Levels 4: 9 | Levels 5: 7 | Levels 6: T | Levels 7: T | Levels 8: D | Levels 9-10: D | Levels 11-12: D | Levels 13-14: D | Levels 15-16: D | Levels 17-20: D | Levels 21-24: D+ | Levels 25-28: D+ | Levels 29-32: D+ | Levels 33-36: D+",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.IRvU-p1-hUut6XTT"
+    },
+    {
+      "_id": "n_G17EwGSXor6Rgt",
+      "type": "text",
+      "text": "Mummy: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: 11 | Levels 5: 9 | Levels 6: 7 | Levels 7: T | Levels 8: T | Levels 9-10: D | Levels 11-12: D | Levels 13-14: D | Levels 15-16: D | Levels 17-20: D | Levels 21-24: D | Levels 25-28: D+ | Levels 29-32: D+ | Levels 33-36: D+",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.n_G17EwGSXor6Rgt"
+    },
+    {
+      "_id": "zfYMpLXKl4J4wKA3",
+      "type": "text",
+      "text": "Spectre: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: 11 | Levels 6: 9 | Levels 7: 7 | Levels 8: T | Levels 9-10: T | Levels 11-12: D | Levels 13-14: D | Levels 15-16: D | Levels 17-20: D | Levels 21-24: D | Levels 25-28: D | Levels 29-32: D+ | Levels 33-36: D+",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.zfYMpLXKl4J4wKA3"
+    },
+    {
+      "_id": "mCwo0wIjYnyW56jz",
+      "type": "text",
+      "text": "Vampire: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: 11 | Levels 7: 9 | Levels 8: 7 | Levels 9-10: T | Levels 11-12: T | Levels 13-14: D | Levels 15-16: D | Levels 17-20: D | Levels 21-24: D | Levels 25-28: D | Levels 29-32: D | Levels 33-36: D+",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.mCwo0wIjYnyW56jz"
+    },
+    {
+      "_id": "2OfrsrcYUGZmi9Bq",
+      "type": "text",
+      "text": "Phantom: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: 11 | Levels 8: 9 | Levels 9-10: 7 | Levels 11-12: T | Levels 13-14: T | Levels 15-16: D | Levels 17-20: D | Levels 21-24: D | Levels 25-28: D | Levels 29-32: D | Levels 33-36: D",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.2OfrsrcYUGZmi9Bq"
+    },
+    {
+      "_id": "eqIBY1yL0z_xdHO5",
+      "type": "text",
+      "text": "Haunt: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: - | Levels 8: 11 | Levels 9-10: 9 | Levels 11-12: 7 | Levels 13-14: T | Levels 15-16: T | Levels 17-20: D | Levels 21-24: D | Levels 25-28: D | Levels 29-32: D | Levels 33-36: D",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.eqIBY1yL0z_xdHO5"
+    },
+    {
+      "_id": "vHMVr9pay07EuGt2",
+      "type": "text",
+      "text": "Spirit: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: - | Levels 8: - | Levels 9-10: 11 | Levels 11-12: 9 | Levels 13-14: 7 | Levels 15-16: T | Levels 17-20: T | Levels 21-24: D | Levels 25-28: D | Levels 29-32: D | Levels 33-36: D",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.vHMVr9pay07EuGt2"
+    },
+    {
+      "_id": "eoMAXDtHBosmVC02",
+      "type": "text",
+      "text": "Nightshade: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: - | Levels 8: - | Levels 9-10: - | Levels 11-12: 11 | Levels 13-14: 9 | Levels 15-16: 7 | Levels 17-20: T | Levels 21-24: T | Levels 25-28: D | Levels 29-32: D | Levels 33-36: D",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.eoMAXDtHBosmVC02"
+    },
+    {
+      "_id": "Offe4R8IgaV9q88E",
+      "type": "text",
+      "text": "Lich: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: - | Levels 8: - | Levels 9-10: - | Levels 11-12: - | Levels 13-14: 11 | Levels 15-16: 9 | Levels 17-20: 7 | Levels 21-24: T | Levels 25-28: T | Levels 29-32: T | Levels 33-36: T",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.Offe4R8IgaV9q88E"
+    },
+    {
+      "_id": "D4QmqiX4pZlkBDOP",
+      "type": "text",
+      "text": "Special: Levels 1: - | Levels 2: - | Levels 3: - | Levels 4: - | Levels 5: - | Levels 6: - | Levels 7: - | Levels 8: - | Levels 9-10: - | Levels 11-12: - | Levels 13-14: - | Levels 15-16: 11 | Levels 17-20: 9 | Levels 21-24: 7 | Levels 25-28: T | Levels 29-32: T | Levels 33-36: T",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!WSEJranDlKTunjdO.D4QmqiX4pZlkBDOP"
+    }
+  ],
+  "formula": "1d14"
+}

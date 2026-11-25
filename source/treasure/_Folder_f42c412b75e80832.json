@@ -1,0 +1,13 @@
+{
+  "_id": "f42c412b75e80832",
+  "_key": "!folders!f42c412b75e80832",
+  "name": "Miscellaneous Magical Items",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

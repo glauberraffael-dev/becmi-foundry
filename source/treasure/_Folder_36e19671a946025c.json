@@ -1,0 +1,13 @@
+{
+  "_id": "36e19671a946025c",
+  "_key": "!folders!36e19671a946025c",
+  "name": "Missile Talents",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

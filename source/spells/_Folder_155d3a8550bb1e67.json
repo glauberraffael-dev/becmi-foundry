@@ -1,0 +1,13 @@
+{
+  "_id": "155d3a8550bb1e67",
+  "_key": "!folders!155d3a8550bb1e67",
+  "name": "Druid Spells",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Item Descriptions",
+    "treasureType": "Miscellaneous Magical Items",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "These gauntlets will give the wearer a Strength score of 18, gaining all normal bonuses. If the wearer is not using a weapon, he can strike with one fist each round, gaining a +3 on hit rolls, for 1d4 points of damage.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Item Descriptions"
+    "notes": "Miscellaneous Magical Items"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Item Descriptions"
+      "category": "Miscellaneous Magical Items",
+      "group": "items",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "f42c412b75e80832"
 }

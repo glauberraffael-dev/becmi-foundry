@@ -1,0 +1,13 @@
+{
+  "_id": "82a2fd094addcf18",
+  "_key": "!folders!82a2fd094addcf18",
+  "name": "Potions",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

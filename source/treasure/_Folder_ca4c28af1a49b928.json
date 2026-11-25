@@ -1,0 +1,13 @@
+{
+  "_id": "ca4c28af1a49b928",
+  "_key": "!folders!ca4c28af1a49b928",
+  "name": "Magic Item Enchantment Rules",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Initiative, morale, attack rolls, missile fire, magic, unarmed and special forms of combat.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 8. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Combat</h2>\n<p>Each round: roll initiative (1d6 per side), resolve morale, movement, missile fire, spells and hand-to-hand attacks in order. To hit, roll d20 and compare the result to the attack matrix using THAC0 and the target's descending AC; a natural 1 always misses and a natural 20 always hits. Damage is rolled after a hit, modified by Strength for melee weapons.</p>\n<table><thead><tr><th>Category</th><th>Check</th><th>Success</th></tr></thead><tbody><tr><td>Attack</td><td>d20 + bonuses</td><td>≥ THAC0 - AC</td></tr><tr><td>Saving throw</td><td>d20</td><td>≥ saving throw target</td></tr><tr><td>Ability check</td><td>d20</td><td>≤ ability score + bonus</td></tr><tr><td>Morale</td><td>2d6</td><td>≤ morale score</td></tr><tr><td>Turn undead</td><td>2d6</td><td>≥ table cell</td></tr></tbody></table>\n<p>Morale is checked when foes die or when the situation turns against them. Unarmed combat deals 1d2 or 1d3 damage; grappling, disarming and called shots are optional. Spells cast in combat follow their listed casting time and range.</p>"
       },
-      "_id": "uZGK3MepqPPzAFfT",
-      "_key": "!journal.pages!6quJ8qK89IttNKig.uZGK3MepqPPzAFfT"
+      "_id": "Kz-umplrSzjGTArs",
+      "_key": "!journal.pages!6quJ8qK89IttNKig.Kz-umplrSzjGTArs"
     }
   ]
 }

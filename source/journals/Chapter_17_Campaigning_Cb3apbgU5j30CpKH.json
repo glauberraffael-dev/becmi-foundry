@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Running an ongoing campaign and linking adventures together.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 17. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Campaigning</h2>\n<p>A campaign links adventures into a continuing world. The DM prepares key locations, factions, rumors and encounters, then adapts them to player choices. Consistent timekeeping, geography and NPC memory make the setting believable.</p>\n<p>Use wandering monsters, random treasure and reaction checks sparingly so that the story remains coherent. Reward clever plans as well as combat, and let character actions change the world.</p>"
       },
-      "_id": "W1Jw2I1L4Tc22XqZ",
-      "_key": "!journal.pages!Cb3apbgU5j30CpKH.W1Jw2I1L4Tc22XqZ"
+      "_id": "gBt4YcNRF-FALFN9",
+      "_key": "!journal.pages!Cb3apbgU5j30CpKH.gBt4YcNRF-FALFN9"
     }
   ]
 }

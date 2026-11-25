@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Item Descriptions",
+    "treasureType": "Miscellaneous Magical Items",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "This magical medallion is strung on a chain and worn around the neck. If the wearer concentrates for 1 round, he may read the thoughts of any one creature within 30'. The wearer may move normally but cannot fight or cast spells while concentrating. The DM must roll 1d6 each time this item is used; it will not work properly on a roll of 1.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Item Descriptions"
+    "notes": "Miscellaneous Magical Items"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Item Descriptions"
+      "category": "Miscellaneous Magical Items",
+      "group": "items",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "f42c412b75e80832"
 }

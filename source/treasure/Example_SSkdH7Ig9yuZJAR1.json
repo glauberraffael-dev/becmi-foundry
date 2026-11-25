@@ -2,10 +2,10 @@
   "_id": "SSkdH7Ig9yuZJAR1",
   "_key": "!items!SSkdH7Ig9yuZJAR1",
   "name": "Example",
-  "type": "equipment",
+  "type": "feature",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+    "treasureType": "Magic Item Enchantment Rules",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "A 20th level, 18 Intelligence wizard makes a crystal bull with ESP. That requires two spell effects— clairvoyance and ESP. The initial enchantment cost is 5,000 gp (one is a 3rd level spell and the other is 2nd level; 1,000 gp x total number of spell levels). The wizard must roll for chance of success for both spells.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    "notes": "Magic Item Enchantment Rules"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      "category": "Magic Item Enchantment Rules",
+      "group": "rules",
+      "kind": "rule"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "ca4c28af1a49b928"
 }

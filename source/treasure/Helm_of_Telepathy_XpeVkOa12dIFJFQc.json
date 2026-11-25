@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Item Descriptions",
+    "treasureType": "Miscellaneous Magical Items",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "This item looks like a fancy helmet. The wearer of this helm may send messages, by mere thought, to any creature within 90'. The creature receiving the thought messages will understand them. (The creature may refuse to respond.) The wearer may also read the thoughts of a living creature within range. To make the",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Item Descriptions"
+    "notes": "Miscellaneous Magical Items"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Item Descriptions"
+      "category": "Miscellaneous Magical Items",
+      "group": "items",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "f42c412b75e80832"
 }

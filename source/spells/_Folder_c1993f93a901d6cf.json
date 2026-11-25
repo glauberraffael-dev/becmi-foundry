@@ -1,0 +1,13 @@
+{
+  "_id": "c1993f93a901d6cf",
+  "_key": "!folders!c1993f93a901d6cf",
+  "name": "Level 1",
+  "type": "Item",
+  "parent": "de1e07e384154b6b",
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

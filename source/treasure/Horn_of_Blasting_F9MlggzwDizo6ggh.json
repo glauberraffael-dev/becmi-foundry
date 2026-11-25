@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Item Descriptions",
+    "treasureType": "Miscellaneous Magical Items",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "This horn creates a cone of sound, 100' long and 20' wide at the far end, when blown. Victims within this area take 2d6 points of damage and must make a saving throw vs. spells or be deafened for one turn; constructions and ships take 1d8 points of damage. The horn may be blown but once per turn.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Item Descriptions"
+    "notes": "Miscellaneous Magical Items"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Item Descriptions"
+      "category": "Miscellaneous Magical Items",
+      "group": "items",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "f42c412b75e80832"
 }

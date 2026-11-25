@@ -170,6 +170,8 @@
 
 .becmi-panels {
   min-width: 0;
+  container-type: inline-size;
+  container-name: becmi-panels;
 }
 
 .becmi-sidebar {
@@ -253,8 +255,27 @@
 
 .becmi-main-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.25fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.25fr);
   gap: 0.75rem;
+}
+
+/* The saves table needs stable width when the sheet window is narrowed. */
+.becmi-saves-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.becmi-saves-scroll .becmi-table--saves {
+  min-width: 34rem;
+}
+
+@container becmi-panels (max-width: 52rem) {
+  .becmi-main-grid,
+  .becmi-main-bottom {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .becmi-main-bottom {

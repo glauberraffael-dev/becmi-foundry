@@ -2,10 +2,10 @@
   "_id": "yGAw19JteYQflMcS",
   "_key": "!items!yGAw19JteYQflMcS",
   "name": "Number of Attacks",
-  "type": "equipment",
+  "type": "feature",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+    "treasureType": "Magic Item Enchantment Rules",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "A construct can have anywhere from one to four attacks in a round, as the DM decides.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    "notes": "Magic Item Enchantment Rules"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      "category": "Magic Item Enchantment Rules",
+      "group": "rules",
+      "kind": "rule"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "ca4c28af1a49b928"
 }

@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Missile Talent Descriptions",
+    "treasureType": "Missile Talents",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "A victim hit by a missile with this talent must make a saving throw vs. spells (at a + 2 bonus to the roll) or be teleported to a point 1d100 miles away, with the direction and distance determined randomly. Unlike the effect of the magic-user spell, the victim cannot arrive in the air or within a solid object.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Missile Talent Descriptions"
+    "notes": "Missile Talents"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Missile Talent Descriptions"
+      "category": "Missile Talents",
+      "group": "talents",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "36e19671a946025c"
 }

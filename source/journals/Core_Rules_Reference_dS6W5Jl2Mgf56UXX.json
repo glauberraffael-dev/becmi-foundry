@@ -1,0 +1,72 @@
+{
+  "_id": "dS6W5Jl2Mgf56UXX",
+  "_key": "!journal!dS6W5Jl2Mgf56UXX",
+  "name": "Core Rules Reference",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Reference"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Combat Sequence",
+      "type": "text",
+      "text": {
+        "content": "<h2>Combat Sequence</h2>\n<ol><li>Roll 1d6 for each side; the higher roll acts first.</li><li>Check morale for NPCs and monsters.</li><li>Move, then resolve missile fire, spells and hand-to-hand attacks.</li><li>Apply damage and resolve special effects.</li></ol>\n<p>Attack: d20 + Strength/Dexterity + magic + mastery versus THAC0 - AC. Natural 1 misses; natural 20 hits automatically. Damage uses the weapon die plus Strength for melee attacks.</p>"
+      },
+      "_id": "c9vbTqJdqFqNJKv9",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.c9vbTqJdqFqNJKv9"
+    },
+    {
+      "name": "Attack Matrix",
+      "type": "text",
+      "text": {
+        "content": "<h2>Attack Matrix</h2>\n<p>Read the row for the target's AC to find the needed modified d20 result. The dagger symbol marks an automatic hit on a natural 20; a natural 1 still misses.</p>\n<table><thead><tr><th>AC</th><th>Needed</th></tr></thead><tbody><tr><td>AC -10</td><td>14†</td></tr><tr><td>AC -9</td><td>13†</td></tr><tr><td>AC -8</td><td>12†</td></tr><tr><td>AC -7</td><td>11†</td></tr><tr><td>AC -6</td><td>10†</td></tr><tr><td>AC -5</td><td>10†</td></tr><tr><td>AC -4</td><td>10†</td></tr><tr><td>AC -3</td><td>10†</td></tr><tr><td>AC -2</td><td>10†</td></tr><tr><td>AC -1</td><td>9†</td></tr><tr><td>AC 0</td><td>8†</td></tr><tr><td>AC 1</td><td>7†</td></tr><tr><td>AC 2</td><td>6†</td></tr><tr><td>AC 3</td><td>5†</td></tr><tr><td>AC 4</td><td>4†</td></tr><tr><td>AC 5</td><td>3†</td></tr><tr><td>AC 6</td><td>2†</td></tr><tr><td>AC 7</td><td>1†</td></tr><tr><td>AC 8</td><td>0†</td></tr><tr><td>AC 9</td><td>1</td></tr><tr><td>AC 10</td><td>2</td></tr><tr><td>AC 11</td><td>2</td></tr><tr><td>AC 12</td><td>2</td></tr><tr><td>AC 13</td><td>2</td></tr><tr><td>AC 14</td><td>2</td></tr><tr><td>AC 15</td><td>3</td></tr><tr><td>AC 16</td><td>4</td></tr><tr><td>AC 17</td><td>5</td></tr><tr><td>AC 18</td><td>6</td></tr><tr><td>AC 19</td><td>7</td></tr><tr><td>AC 20</td><td>8</td></tr><tr><td>AC 21</td><td>9</td></tr><tr><td>AC 22</td><td>10</td></tr><tr><td>AC 23</td><td>11</td></tr><tr><td>AC 24</td><td>12</td></tr><tr><td>AC 25</td><td>13</td></tr><tr><td>AC 26</td><td>14</td></tr><tr><td>AC 27</td><td>15</td></tr><tr><td>AC 28</td><td>16</td></tr><tr><td>AC 29</td><td>17</td></tr><tr><td>AC 30</td><td>18</td></tr><tr><td>AC 31</td><td>19</td></tr><tr><td>AC 32</td><td>20</td></tr><tr><td>AC 33</td><td>20</td></tr><tr><td>AC 34</td><td>20</td></tr><tr><td>AC 35</td><td>20</td></tr><tr><td>AC 36</td><td>20</td></tr><tr><td>AC 37</td><td>21</td></tr><tr><td>AC 38</td><td>22</td></tr><tr><td>AC 39</td><td>23</td></tr><tr><td>AC 40</td><td>24</td></tr><tr><td>AC 41</td><td>25</td></tr><tr><td>AC 42</td><td>26</td></tr><tr><td>AC 43</td><td>27</td></tr><tr><td>AC 44</td><td>28</td></tr><tr><td>AC 45</td><td>29</td></tr><tr><td>AC 46</td><td>30</td></tr><tr><td>AC 47</td><td>30</td></tr><tr><td>AC 48</td><td>30</td></tr><tr><td>AC 49</td><td>30</td></tr><tr><td>AC 50</td><td>30</td></tr><tr><td>AC 51</td><td>31</td></tr><tr><td>AC 52</td><td>32</td></tr><tr><td>AC 53</td><td>33</td></tr><tr><td>AC 54</td><td>34</td></tr><tr><td>AC 55</td><td>35</td></tr><tr><td>AC 56</td><td>36</td></tr><tr><td>AC 57</td><td>37</td></tr><tr><td>AC 58</td><td>38</td></tr><tr><td>AC 59</td><td>39</td></tr><tr><td>AC 60</td><td>40</td></tr></tbody></table>"
+      },
+      "_id": "M45_R-1d_VMJ1AkL",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.M45_R-1d_VMJ1AkL"
+    },
+    {
+      "name": "Saving Throws",
+      "type": "text",
+      "text": {
+        "content": "<h2>Saving Throws</h2>\n<p>Roll d20; the throw succeeds when the total equals or exceeds the target. Wisdom adjusts saves vs. spells; magic items can add bonuses.</p>\n<p>Fighter</p><table><thead><tr><th>Level</th><th>1-5</th><th>6-8</th><th>9-11</th><th>12-14</th><th>15-17</th><th>18-20</th><th>21-23</th><th>24-26</th><th>27-29</th><th>30-32</th><th>33-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>12</td><td>10</td><td>8</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>13</td><td>11</td><td>9</td><td>7</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>14</td><td>12</td><td>10</td><td>8</td><td>7</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>15</td><td>13</td><td>11</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>2</td></tr><tr><td>≥ Spells</td><td>16</td><td>14</td><td>12</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr></tbody></table>\n<p>Cleric / Thief</p><table><thead><tr><th>Level</th><th>1-7</th><th>8-11</th><th>12-15</th><th>16-19</th><th>20-23</th><th>24-27</th><th>28-31</th><th>32-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>11</td><td>9</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>12</td><td>10</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>16</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Spells</td><td>15</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr></tbody></table>\n<p>Magic-User</p><table><thead><tr><th>Level</th><th>1-9</th><th>10-14</th><th>15-19</th><th>20-23</th><th>24-27</th><th>28-31</th><th>32-35</th><th>36</th></tr></thead><tbody><tr><td>≥ Death Ray / Poison</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Magic Wands</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Paralysis / Petrify</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td><td>4</td><td>3</td><td>2</td></tr><tr><td>≥ Breath Weapon</td><td>16</td><td>14</td><td>12</td><td>10</td><td>8</td><td>6</td><td>4</td><td>2</td></tr><tr><td>≥ Spells</td><td>15</td><td>12</td><td>9</td><td>6</td><td>4</td><td>3</td><td>2</td><td>2</td></tr></tbody></table>"
+      },
+      "_id": "346xgQoKwzU5RWFh",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.346xgQoKwzU5RWFh"
+    },
+    {
+      "name": "Spellcasting",
+      "type": "text",
+      "text": {
+        "content": "<h2>Spellcasting</h2>\n<p>Spell slots reset after rest and study. A magic-user must have the spell in the spellbook; clerics and druids receive spells from their deity.</p>\n<table><thead><tr><th>Class</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>Cleric 1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 4</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 5</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 6</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 7</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 8</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cleric 10</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>\n<table><thead><tr><th>Class</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>Magic-User 1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 4</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 5</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 6</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 7</td><td>3</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 8</td><td>3</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 9</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Magic-User 10</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>"
+      },
+      "_id": "JRcAlfEf54QntvTi",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.JRcAlfEf54QntvTi"
+    },
+    {
+      "name": "Encumbrance",
+      "type": "text",
+      "text": {
+        "content": "<h2>Encumbrance and Movement</h2>\n<table><thead><tr><th>Carried weight</th><th>Movement / turn</th><th>Movement / round</th></tr></thead><tbody><tr><td>Up to 400 cn</td><td>120 ft</td><td>12 ft</td></tr><tr><td>401-600 cn</td><td>90 ft</td><td>9 ft</td></tr><tr><td>601-800 cn</td><td>60 ft</td><td>6 ft</td></tr><tr><td>801-1,000 cn</td><td>30 ft</td><td>3 ft</td></tr><tr><td>Over 1,000 cn</td><td>Cannot move</td><td>—</td></tr></tbody></table>\n<p>Coins weigh 10 per cn; gems and jewelry are recorded separately.</p>"
+      },
+      "_id": "ZIuQruqrgVPkszDD",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.ZIuQruqrgVPkszDD"
+    },
+    {
+      "name": "Treasure",
+      "type": "text",
+      "text": {
+        "content": "<h2>Treasure</h2>\n<p>Treasure types are rolled from the Treasure tables. Coins, gems and jewelry are valued separately; magical items are identified by their descriptions.</p>\n<table><thead><tr><th>Category</th><th>Contents</th></tr></thead><tbody><tr><td>Potions</td><td>Single-use liquids with effects such as healing, control, defense or illusion</td></tr><tr><td>Miscellaneous magical items</td><td>Permanent items such as helms, lamps, medallions and girdles</td></tr><tr><td>Missile talents</td><td>Special effects carried by magical missiles</td></tr><tr><td>Enchantment rules</td><td>Costs, attack limits, reproduction and special attacks for constructed items</td></tr></tbody></table>\n<p>Creating a magical item requires the caster to supply the spell levels, pay the gold cost and roll for success.</p>"
+      },
+      "_id": "2lzJ8h4xAW4bUZal",
+      "_key": "!journal.pages!dS6W5Jl2Mgf56UXX.2lzJ8h4xAW4bUZal"
+    }
+  ]
+}

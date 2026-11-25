@@ -3,12 +3,15 @@
  *
  * - Druid becomes a Feature item (an extension of the Cleric), not a Class.
  * - Equipment is cleaned of table fragments and tagged with a sheet group.
+ * - Treasure is split into item and rule categories and tagged for its folder.
+ * - Every compendium is stored in deterministic level/category/alphabetical order.
  *
  * Usage: node tools/normalize-compendia.mjs
  */
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { normalizeTreasureDocument, sortDocuments } from "./pack-layout.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = async (name) => JSON.parse(await readFile(join(root, "data", name), "utf8"));
@@ -35,7 +38,6 @@ for (const doc of classes) {
     notes: "Cleric subclass — Druid spell list"
   };
 }
-await writeJson("classes.json", classes);
 
 // --- Equipment: remove table fragments and tag the sheet group. ------------
 const junk = new Set([
@@ -56,6 +58,22 @@ for (const doc of equipment) {
     becmi: { ...(doc.flags?.becmi ?? {}), group }
   };
 }
-await writeJson("equipment.json", equipment);
 
-console.log(`Normalized ${classes.length} classes and ${equipment.length} equipment documents.`);
+// --- Treasure: keep tangible items and procedural rules in separate folders.
+const treasure = (await readJson("treasure.json")).map(normalizeTreasureDocument);
+
+const packs = {
+  classes,
+  equipment,
+  treasure,
+  spells: await readJson("spells.json"),
+  monsters: await readJson("monsters.json"),
+  tables: await readJson("tables.json"),
+  journals: await readJson("journals.json")
+};
+
+for (const [name, docs] of Object.entries(packs)) {
+  await writeJson(`${name}.json`, sortDocuments(name, docs));
+}
+
+console.log(`Normalized and sorted: ${Object.entries(packs).map(([name, docs]) => `${name} ${docs.length}`).join(", ")}.`);

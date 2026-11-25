@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Building a stronghold, hiring staff and ruling a dominion.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 12. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Strongholds and Dominions</h2>\n<p>A character can build a stronghold after reaching the appropriate level. Construction cost depends on size, materials and fortifications; monthly upkeep covers wages, supplies and repairs. Staff are hired from the NPC rules and have morale and loyalty.</p>\n<p>A dominion generates income from taxes, trade and resources. The ruler must maintain order, collect taxes and defend the territory; population and attitude affect revenue.</p>"
       },
-      "_id": "J6c42s8p7lr9U9XT",
-      "_key": "!journal.pages!vSWq-qy2xZOPUvwI.J6c42s8p7lr9U9XT"
+      "_id": "qwOXhUz7hTelatsE",
+      "_key": "!journal.pages!vSWq-qy2xZOPUvwI.qwOXhUz7hTelatsE"
     }
   ]
 }

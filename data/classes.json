@@ -59,183 +59,6 @@
     }
   },
   {
-    "name": "Fighter",
-    "type": "class",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "xpLevels": 36
-      }
-    },
-    "system": {
-      "primeRequisite": "Strength",
-      "hitDice": "1d8",
-      "maxLevel": 36,
-      "requirements": "",
-      "xpTable": {
-        "1": 0,
-        "2": 2000,
-        "3": 4000,
-        "4": 8000,
-        "5": 16000,
-        "6": 32000,
-        "7": 64000,
-        "8": 120000,
-        "9": 240000,
-        "10": 360000,
-        "11": 480000,
-        "12": 600000,
-        "13": 720000,
-        "14": 840000,
-        "15": 960000,
-        "16": 1080000,
-        "17": 1200000,
-        "18": 1320000,
-        "19": 1440000,
-        "20": 1560000,
-        "21": 1680000,
-        "22": 1800000,
-        "23": 1920000,
-        "24": 2040000,
-        "25": 2160000,
-        "26": 2280000,
-        "27": 2400000,
-        "28": 2520000,
-        "29": 2640000,
-        "30": 2760000,
-        "31": 2880000,
-        "32": 3000000,
-        "33": 3120000,
-        "34": 3240000,
-        "35": 3360000,
-        "36": 3480000
-      },
-      "saves": {},
-      "description": "A cleric who travels to the wilderness usually searches for enemies of the clerical order, to convert or destroy. This cleric normally travels with other characters as an adventuring party (though the others may all be NPCs). Prime Requisite: A fighter's prime requisite is Strength. If a fighter has a Strength score of 1315 or more, the character gains a 5% bonus to experience points earned in every adventure; if his Strength is 16-18, his bonus is 10%. Hit Dice: Roll an 8-sided die (1d8) to determine a fighter's hit points. A fighter starts with 1d8 (1-8) hit points (plus Constitution bonus, if any) and gains 1d8 more hit points (plus bonus) with each level of experience.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
-    "name": "Magic-User",
-    "type": "class",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "xpLevels": 36
-      }
-    },
-    "system": {
-      "primeRequisite": "Intelligence",
-      "hitDice": "1d4",
-      "maxLevel": 36,
-      "requirements": "",
-      "xpTable": {
-        "1": 2,
-        "2": 2500,
-        "3": 5000,
-        "4": 10000,
-        "5": 20000,
-        "6": 40000,
-        "7": 80000,
-        "8": 150000,
-        "9": 300000,
-        "10": 450000,
-        "11": 600000,
-        "12": 750000,
-        "13": 900000,
-        "14": 1050000,
-        "15": 1200000,
-        "16": 1350000,
-        "17": 1500000,
-        "18": 1650000,
-        "19": 1800000,
-        "20": 1950000,
-        "21": 2100000,
-        "22": 2250000,
-        "23": 2400000,
-        "24": 2550000,
-        "25": 2700000,
-        "26": 2850000,
-        "27": 3000000,
-        "28": 3150000,
-        "29": 3300000,
-        "30": 3450000,
-        "31": 3600000,
-        "32": 3750000,
-        "33": 3900000,
-        "34": 4050000,
-        "35": 4200000,
-        "36": 4350000
-      },
-      "saves": {},
-      "description": "Prime Requisite: Intelligence. Experience Bonus: 5% for Intelligence 1315, 10% for Intelligence 16-18. Hit Dice: 1d4 per level up to 9th level. Starting with 10th level, +1 hit point per level, and Constitution adjustments no longer apply. Maximum Level: 36. Armor: None; no shield permitted. Weapons: Dagger only. Optional (DM's discretion): staff, blowgun, flaming oil, holy water, net, thrown rock, sling, whip. Special Abilities: Magical spells. A magic-user is a human character who studies the powers of magic. Magic-users find spells, put them into books, and study those books to learn the spells. Magic-users have their own spells, entirely different from clerical spells.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
-    "name": "Thief",
-    "type": "class",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "xpLevels": 36
-      }
-    },
-    "system": {
-      "primeRequisite": "Dexterity",
-      "hitDice": "1d4",
-      "maxLevel": 36,
-      "requirements": "",
-      "xpTable": {
-        "1": 0,
-        "2": 1200,
-        "3": 2400,
-        "4": 4800,
-        "5": 9600,
-        "6": 20000,
-        "7": 40000,
-        "8": 80000,
-        "9": 160000,
-        "10": 280000,
-        "11": 400000,
-        "12": 520000,
-        "13": 640000,
-        "14": 760000,
-        "15": 880000,
-        "16": 1000000,
-        "17": 1120000,
-        "18": 1240000,
-        "19": 1360000,
-        "20": 1480000,
-        "21": 1600000,
-        "22": 1720000,
-        "23": 1840000,
-        "24": 1960000,
-        "25": 2080000,
-        "26": 2200000,
-        "27": 2320000,
-        "28": 2440000,
-        "29": 2560000,
-        "30": 2680000,
-        "31": 2800000,
-        "32": 2920000,
-        "33": 3040000,
-        "34": 3160000,
-        "35": 3280000,
-        "36": 3400000
-      },
-      "saves": {},
-      "description": "Weapons: A thief may use any missile weapon, and any other weapon usable with one hand (two-handed weapons are prohibited). Prime Requisite: Dexterity. Experience Bonus: 5% for Dexterity 1315, 10% for Dexterity 16-18. Find Traps (FT): With successful use of this special ability, the thief may examine a room or an object and determine whether it is rigged with traps. He may check only once per trap, and failure prevents the character from finding any trap in or on the object searched. (Since the DM actually does the rolling, the player doesn't know how many traps he's rolling to find.) If the thief finds a trap, he may use his Remove Traps ability to remove or deactivate it.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
     "name": "Dwarf",
     "type": "class",
     "flags": {
@@ -304,6 +127,65 @@
     }
   },
   {
+    "name": "Fighter",
+    "type": "class",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "xpLevels": 36
+      }
+    },
+    "system": {
+      "primeRequisite": "Strength",
+      "hitDice": "1d8",
+      "maxLevel": 36,
+      "requirements": "",
+      "xpTable": {
+        "1": 0,
+        "2": 2000,
+        "3": 4000,
+        "4": 8000,
+        "5": 16000,
+        "6": 32000,
+        "7": 64000,
+        "8": 120000,
+        "9": 240000,
+        "10": 360000,
+        "11": 480000,
+        "12": 600000,
+        "13": 720000,
+        "14": 840000,
+        "15": 960000,
+        "16": 1080000,
+        "17": 1200000,
+        "18": 1320000,
+        "19": 1440000,
+        "20": 1560000,
+        "21": 1680000,
+        "22": 1800000,
+        "23": 1920000,
+        "24": 2040000,
+        "25": 2160000,
+        "26": 2280000,
+        "27": 2400000,
+        "28": 2520000,
+        "29": 2640000,
+        "30": 2760000,
+        "31": 2880000,
+        "32": 3000000,
+        "33": 3120000,
+        "34": 3240000,
+        "35": 3360000,
+        "36": 3480000
+      },
+      "saves": {},
+      "description": "A cleric who travels to the wilderness usually searches for enemies of the clerical order, to convert or destroy. This cleric normally travels with other characters as an adventuring party (though the others may all be NPCs). Prime Requisite: A fighter's prime requisite is Strength. If a fighter has a Strength score of 1315 or more, the character gains a 5% bonus to experience points earned in every adventure; if his Strength is 16-18, his bonus is 10%. Hit Dice: Roll an 8-sided die (1d8) to determine a fighter's hit points. A fighter starts with 1d8 (1-8) hit points (plus Constitution bonus, if any) and gains 1d8 more hit points (plus bonus) with each level of experience.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
     "name": "Halfling",
     "type": "class",
     "flags": {
@@ -335,19 +217,62 @@
     }
   },
   {
-    "name": "Druid",
-    "type": "feature",
+    "name": "Magic-User",
+    "type": "class",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "classExtension": "cleric"
+        "xpLevels": 36
       }
     },
     "system": {
-      "description": "Druid is an extension of the Cleric class. Druids use the Cleric hit dice, saving throws and experience table, but choose spells from the Druid list.",
+      "primeRequisite": "Intelligence",
+      "hitDice": "1d4",
+      "maxLevel": 36,
+      "requirements": "",
+      "xpTable": {
+        "1": 2,
+        "2": 2500,
+        "3": 5000,
+        "4": 10000,
+        "5": 20000,
+        "6": 40000,
+        "7": 80000,
+        "8": 150000,
+        "9": 300000,
+        "10": 450000,
+        "11": 600000,
+        "12": 750000,
+        "13": 900000,
+        "14": 1050000,
+        "15": 1200000,
+        "16": 1350000,
+        "17": 1500000,
+        "18": 1650000,
+        "19": 1800000,
+        "20": 1950000,
+        "21": 2100000,
+        "22": 2250000,
+        "23": 2400000,
+        "24": 2550000,
+        "25": 2700000,
+        "26": 2850000,
+        "27": 3000000,
+        "28": 3150000,
+        "29": 3300000,
+        "30": 3450000,
+        "31": 3600000,
+        "32": 3750000,
+        "33": 3900000,
+        "34": 4050000,
+        "35": 4200000,
+        "36": 4350000
+      },
+      "saves": {},
+      "description": "Prime Requisite: Intelligence. Experience Bonus: 5% for Intelligence 1315, 10% for Intelligence 16-18. Hit Dice: 1d4 per level up to 9th level. Starting with 10th level, +1 hit point per level, and Constitution adjustments no longer apply. Maximum Level: 36. Armor: None; no shield permitted. Weapons: Dagger only. Optional (DM's discretion): staff, blowgun, flaming oil, holy water, net, thrown rock, sling, whip. Special Abilities: Magical spells. A magic-user is a human character who studies the powers of magic. Magic-users find spells, put them into books, and study those books to learn the spells. Magic-users have their own spells, entirely different from clerical spells.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": "Cleric subclass — Druid spell list"
+      "notes": ""
     }
   },
   {
@@ -407,6 +332,81 @@
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
+    }
+  },
+  {
+    "name": "Thief",
+    "type": "class",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "xpLevels": 36
+      }
+    },
+    "system": {
+      "primeRequisite": "Dexterity",
+      "hitDice": "1d4",
+      "maxLevel": 36,
+      "requirements": "",
+      "xpTable": {
+        "1": 0,
+        "2": 1200,
+        "3": 2400,
+        "4": 4800,
+        "5": 9600,
+        "6": 20000,
+        "7": 40000,
+        "8": 80000,
+        "9": 160000,
+        "10": 280000,
+        "11": 400000,
+        "12": 520000,
+        "13": 640000,
+        "14": 760000,
+        "15": 880000,
+        "16": 1000000,
+        "17": 1120000,
+        "18": 1240000,
+        "19": 1360000,
+        "20": 1480000,
+        "21": 1600000,
+        "22": 1720000,
+        "23": 1840000,
+        "24": 1960000,
+        "25": 2080000,
+        "26": 2200000,
+        "27": 2320000,
+        "28": 2440000,
+        "29": 2560000,
+        "30": 2680000,
+        "31": 2800000,
+        "32": 2920000,
+        "33": 3040000,
+        "34": 3160000,
+        "35": 3280000,
+        "36": 3400000
+      },
+      "saves": {},
+      "description": "Weapons: A thief may use any missile weapon, and any other weapon usable with one hand (two-handed weapons are prohibited). Prime Requisite: Dexterity. Experience Bonus: 5% for Dexterity 1315, 10% for Dexterity 16-18. Find Traps (FT): With successful use of this special ability, the thief may examine a room or an object and determine whether it is rigged with traps. He may check only once per trap, and failure prevents the character from finding any trap in or on the object searched. (Since the DM actually does the rolling, the player doesn't know how many traps he's rolling to find.) If the thief finds a trap, he may use his Remove Traps ability to remove or deactivate it.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Druid",
+    "type": "feature",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "classExtension": "cleric"
+      }
+    },
+    "system": {
+      "description": "Druid is an extension of the Cleric class. Druids use the Cleric hit dice, saving throws and experience table, but choose spells from the Druid list.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Cleric subclass — Druid spell list"
     }
   }
 ]

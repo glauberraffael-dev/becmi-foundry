@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Missile Talent Descriptions",
+    "treasureType": "Missile Talents",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "A victim hit by a missile with this talent must make a saving throw vs. spells or be sent to a point up to 360' away, as determined by the user of the missile. The effect is identical to the magic-user spell dimension door, and it cannot cause the victim to appear within a solid object.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Missile Talent Descriptions"
+    "notes": "Missile Talents"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Missile Talent Descriptions"
+      "category": "Missile Talents",
+      "group": "talents",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "36e19671a946025c"
 }

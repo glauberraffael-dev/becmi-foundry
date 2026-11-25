@@ -2,10 +2,10 @@
   "_id": "nd9QnxTTJ6xWqV8y",
   "_key": "!items!nd9QnxTTJ6xWqV8y",
   "name": "Special Attacks",
-  "type": "equipment",
+  "type": "feature",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+    "treasureType": "Magic Item Enchantment Rules",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "Some constructs have special, unusual attacks (such as poison-gas breath or crushing hugs). The DM can approve, veto, or modify any special attack chosen by the player creating the construct. Each special attack is worth another asterisk (*) and, as always, each asterisk increases the construct's cost).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    "notes": "Magic Item Enchantment Rules"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      "category": "Magic Item Enchantment Rules",
+      "group": "rules",
+      "kind": "rule"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "ca4c28af1a49b928"
 }

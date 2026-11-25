@@ -1,0 +1,13 @@
+{
+  "_id": "16fd91cd0a6fe9d1",
+  "_key": "!folders!16fd91cd0a6fe9d1",
+  "name": "Cleric Spells",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

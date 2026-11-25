@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Game time, distance, land, water and aerial travel rates.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 6. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Movement</h2>\n<p>Exploration movement is measured in turns (10 minutes) and dungeon movement in rounds. Encumbered characters move more slowly; the movement rate is derived from total carried weight. Running increases speed but makes stealth impossible and can cause fatigue.</p>\n<table><thead><tr><th>Encumbrance (cn)</th><th>Movement / turn</th><th>Movement / round</th></tr></thead><tbody><tr><td>Up to 400</td><td>120 ft</td><td>12 ft</td></tr><tr><td>401-600</td><td>90 ft</td><td>9 ft</td></tr><tr><td>601-800</td><td>60 ft</td><td>6 ft</td></tr><tr><td>801-1,000</td><td>30 ft</td><td>3 ft</td></tr><tr><td>Over 1,000</td><td>Cannot move</td><td>—</td></tr></tbody></table>\n<p>Water and air travel use their own tables for ships, rowing and flying speeds; weather and currents modify travel time.</p>"
       },
-      "_id": "wbpT-NiS7m3td49t",
-      "_key": "!journal.pages!EaKr0J1zpI87SG6m.wbpT-NiS7m3td49t"
+      "_id": "5nY54HOwmBH-oTgl",
+      "_key": "!journal.pages!EaKr0J1zpI87SG6m.5nY54HOwmBH-oTgl"
     }
   ]
 }

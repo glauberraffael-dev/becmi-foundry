@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Weapon mastery and the optional general skill system.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 5. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Other Character Abilities</h2>\n<p>Weapon Mastery is optional. Humans receive weapon choices by level; demihumans begin with Basic skill in class-approved weapons. The five ranks are Basic, Skilled, Expert, Master and Grand Master. Each rank improves damage, range, attack bonus, defense or special effects as shown in the Weapon Mastery journal.</p>\n<p>The optional General Skills system lets a character buy noncombat skills with weapon choices or skill points. The DM sets the characteristic and difficulty, then the player rolls d20 against the resulting target.</p>"
       },
-      "_id": "9cHnSmsRzFySMwKx",
-      "_key": "!journal.pages!tr4u3KgO6pODXBbh.9cHnSmsRzFySMwKx"
+      "_id": "vWEGniy90UTBIlDY",
+      "_key": "!journal.pages!tr4u3KgO6pODXBbh.vWEGniy90UTBIlDY"
     }
   ]
 }

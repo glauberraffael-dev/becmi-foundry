@@ -7,14 +7,15 @@
   <div class="becmi-field"><label>{{localize 'BECMI.labels.range'}}</label><input name="system.range" type="number" value="{{system.range}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.attacksPerRound'}}</label><input name="system.rate" type="number" value="{{system.rate}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.cost'}}</label><input name="system.cost" type="text" value="{{system.cost}}" {{#unless editable}}disabled{{/unless}}></div>
-  <button type="button" data-action="rollAttack">{{localize 'BECMI.rolls.attack'}}</button>
-  <button type="button" data-action="rollDamage">{{localize 'BECMI.rolls.damage'}}</button>
+  <button type="button" class="becmi-roll" data-action="rollAttack">{{localize 'BECMI.rolls.attack'}}</button>
+  <button type="button" class="becmi-roll" data-action="rollDamage">{{localize 'BECMI.rolls.damage'}}</button>
   {{else if isSpell}}
   <div class="becmi-field"><label>{{localize 'BECMI.labels.spellLevel'}}</label><input name="system.spellLevel" type="number" value="{{system.spellLevel}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.range'}}</label><input name="system.range" type="text" value="{{system.range}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.duration'}}</label><input name="system.duration" type="text" value="{{system.duration}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.effect'}}</label><input name="system.effect" type="text" value="{{system.effect}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.spellLists'}}</label><input name="system.spellLists" type="text" value="{{system.spellLists}}" {{#unless editable}}disabled{{/unless}}></div>
+  <button type="button" class="becmi-roll" data-action="castSpell">{{localize 'BECMI.rolls.cast'}}</button>
   {{else if isArmor}}
   <div class="becmi-field"><label>{{localize 'BECMI.labels.ac'}}</label><input name="system.ac" type="number" value="{{system.ac}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.cost'}}</label><input name="system.cost" type="text" value="{{system.cost}}" {{#unless editable}}disabled{{/unless}}></div>
@@ -27,6 +28,14 @@
   <div class="becmi-field"><label>{{localize 'BECMI.labels.cost'}}</label><input name="system.cost" type="text" value="{{system.cost}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.quantity'}}</label><input name="system.quantity" type="number" value="{{system.quantity}}" {{#unless editable}}disabled{{/unless}}></div>
   {{/if}}
+</div>
+
+<div class="becmi-section-title">{{localize 'BECMI.sheet.rolls'}}</div>
+<div class="becmi-grid becmi-grid--combat">
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.targetAC'}}</label><input data-target-ac type="number" value="{{targetAC}}" min="-10" max="20"></div>
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.rollFormula'}}</label><input name="system.rollFormula" type="text" value="{{system.rollFormula}}" placeholder="2d6+3" {{#unless editable}}disabled{{/unless}}></div>
+  <button type="button" class="becmi-roll" data-action="rollFormula">{{localize 'BECMI.rolls.formula'}}</button>
+  <button type="button" class="becmi-roll" data-action="sendToChat">{{localize 'BECMI.sheet.sendToChat'}}</button>
 </div>
 
 {{#if isClass}}

@@ -1,0 +1,451 @@
+{
+  "_id": "PScuqQj5cfH9_dfg",
+  "_key": "!tables!PScuqQj5cfH9_dfg",
+  "name": "Thief Skills by Level",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Reference"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "_yKdJhW3kAWGm62-",
+      "type": "text",
+      "text": "Level 1: Pick Pockets: 15% | Open Locks: 10% | Find Traps: 10% | Remove Traps: 87% | Climb Walls: 20% | Move Silently: 10% | Hide in Shadows: 20% | Hear Noise: 30%",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg._yKdJhW3kAWGm62-"
+    },
+    {
+      "_id": "iz0vXlTf4mH7b-ty",
+      "type": "text",
+      "text": "Level 2: Pick Pockets: 20% | Open Locks: 15% | Find Traps: 15% | Remove Traps: 88% | Climb Walls: 25% | Move Silently: 15% | Hide in Shadows: 25% | Hear Noise: 35%",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.iz0vXlTf4mH7b-ty"
+    },
+    {
+      "_id": "juIzuY0YGFaxiMtx",
+      "type": "text",
+      "text": "Level 3: Pick Pockets: 25% | Open Locks: 20% | Find Traps: 20% | Remove Traps: 89% | Climb Walls: 30% | Move Silently: 20% | Hide in Shadows: 30% | Hear Noise: 40%",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.juIzuY0YGFaxiMtx"
+    },
+    {
+      "_id": "ApLSiAw4nQOXwved",
+      "type": "text",
+      "text": "Level 4: Pick Pockets: 30% | Open Locks: 25% | Find Traps: 25% | Remove Traps: 90% | Climb Walls: 35% | Move Silently: 24% | Hide in Shadows: 35% | Hear Noise: 45%",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.ApLSiAw4nQOXwved"
+    },
+    {
+      "_id": "Dh9u2eHPCRwZZH7k",
+      "type": "text",
+      "text": "Level 5: Pick Pockets: 35% | Open Locks: 30% | Find Traps: 30% | Remove Traps: 91% | Climb Walls: 40% | Move Silently: 28% | Hide in Shadows: 40% | Hear Noise: 50%",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.Dh9u2eHPCRwZZH7k"
+    },
+    {
+      "_id": "aYXlv7QHsb2lk8gx",
+      "type": "text",
+      "text": "Level 6: Pick Pockets: 40% | Open Locks: 35% | Find Traps: 34% | Remove Traps: 92% | Climb Walls: 44% | Move Silently: 32% | Hide in Shadows: 45% | Hear Noise: 54%",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.aYXlv7QHsb2lk8gx"
+    },
+    {
+      "_id": "oQciMSFkBCHa6Wi2",
+      "type": "text",
+      "text": "Level 7: Pick Pockets: 45% | Open Locks: 40% | Find Traps: 38% | Remove Traps: 93% | Climb Walls: 48% | Move Silently: 35% | Hide in Shadows: 50% | Hear Noise: 58%",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.oQciMSFkBCHa6Wi2"
+    },
+    {
+      "_id": "slR2mgsNwH7FoBhC",
+      "type": "text",
+      "text": "Level 8: Pick Pockets: 50% | Open Locks: 45% | Find Traps: 42% | Remove Traps: 94% | Climb Walls: 52% | Move Silently: 38% | Hide in Shadows: 55% | Hear Noise: 62%",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.slR2mgsNwH7FoBhC"
+    },
+    {
+      "_id": "eKXqD8ZxVqcBpAm3",
+      "type": "text",
+      "text": "Level 9: Pick Pockets: 54% | Open Locks: 50% | Find Traps: 46% | Remove Traps: 95% | Climb Walls: 55% | Move Silently: 41% | Hide in Shadows: 60% | Hear Noise: 66%",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.eKXqD8ZxVqcBpAm3"
+    },
+    {
+      "_id": "4rVZH5YbJZ3MMwQ7",
+      "type": "text",
+      "text": "Level 10: Pick Pockets: 58% | Open Locks: 54% | Find Traps: 50% | Remove Traps: 96% | Climb Walls: 58% | Move Silently: 44% | Hide in Shadows: 65% | Hear Noise: 70%",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.4rVZH5YbJZ3MMwQ7"
+    },
+    {
+      "_id": "Vzp6syiHQPaYL4II",
+      "type": "text",
+      "text": "Level 11: Pick Pockets: 62% | Open Locks: 58% | Find Traps: 54% | Remove Traps: 97% | Climb Walls: 61% | Move Silently: 47% | Hide in Shadows: 70% | Hear Noise: 74%",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.Vzp6syiHQPaYL4II"
+    },
+    {
+      "_id": "uteEQ1NmyoL0jRNQ",
+      "type": "text",
+      "text": "Level 12: Pick Pockets: 66% | Open Locks: 62% | Find Traps: 58% | Remove Traps: 98% | Climb Walls: 64% | Move Silently: 50% | Hide in Shadows: 75% | Hear Noise: 78%",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.uteEQ1NmyoL0jRNQ"
+    },
+    {
+      "_id": "pPlPMl1rjl8zf_GV",
+      "type": "text",
+      "text": "Level 13: Pick Pockets: 69% | Open Locks: 66% | Find Traps: 61% | Remove Traps: 99% | Climb Walls: 66% | Move Silently: 53% | Hide in Shadows: 80% | Hear Noise: 81%",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.pPlPMl1rjl8zf_GV"
+    },
+    {
+      "_id": "imA4by8YbzK66GTT",
+      "type": "text",
+      "text": "Level 14: Pick Pockets: 72% | Open Locks: 70% | Find Traps: 64% | Remove Traps: 100% | Climb Walls: 68% | Move Silently: 56% | Hide in Shadows: 85% | Hear Noise: 84%",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.imA4by8YbzK66GTT"
+    },
+    {
+      "_id": "8rhl7cpydFrjAC40",
+      "type": "text",
+      "text": "Level 15: Pick Pockets: 75% | Open Locks: 73% | Find Traps: 67% | Remove Traps: 101% | Climb Walls: 70% | Move Silently: 58% | Hide in Shadows: 90% | Hear Noise: 87%",
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.8rhl7cpydFrjAC40"
+    },
+    {
+      "_id": "xFUL-CzEMHFsf5hK",
+      "type": "text",
+      "text": "Level 16: Pick Pockets: 78% | Open Locks: 76% | Find Traps: 70% | Remove Traps: 102% | Climb Walls: 72% | Move Silently: 60% | Hide in Shadows: 95% | Hear Noise: 90%",
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.xFUL-CzEMHFsf5hK"
+    },
+    {
+      "_id": "2b6XGA15j_aCSCyz",
+      "type": "text",
+      "text": "Level 17: Pick Pockets: 81% | Open Locks: 80% | Find Traps: 73% | Remove Traps: 103% | Climb Walls: 74% | Move Silently: 62% | Hide in Shadows: 100% | Hear Noise: 92%",
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.2b6XGA15j_aCSCyz"
+    },
+    {
+      "_id": "-d9TcxlZPkizy3ME",
+      "type": "text",
+      "text": "Level 18: Pick Pockets: 84% | Open Locks: 83% | Find Traps: 76% | Remove Traps: 104% | Climb Walls: 76% | Move Silently: 64% | Hide in Shadows: 105% | Hear Noise: 94%",
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.-d9TcxlZPkizy3ME"
+    },
+    {
+      "_id": "mAzHNqOXqLPhcFwq",
+      "type": "text",
+      "text": "Level 19: Pick Pockets: 86% | Open Locks: 86% | Find Traps: 79% | Remove Traps: 105% | Climb Walls: 78% | Move Silently: 66% | Hide in Shadows: 110% | Hear Noise: 96%",
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.mAzHNqOXqLPhcFwq"
+    },
+    {
+      "_id": "qwHcFquyni378dRl",
+      "type": "text",
+      "text": "Level 20: Pick Pockets: 88% | Open Locks: 89% | Find Traps: 82% | Remove Traps: 106% | Climb Walls: 80% | Move Silently: 68% | Hide in Shadows: 115% | Hear Noise: 98%",
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.qwHcFquyni378dRl"
+    },
+    {
+      "_id": "LwOWQAExAxVrNNq7",
+      "type": "text",
+      "text": "Level 21: Pick Pockets: 90% | Open Locks: 92% | Find Traps: 85% | Remove Traps: 107% | Climb Walls: 82% | Move Silently: 70% | Hide in Shadows: 120% | Hear Noise: 100%",
+      "range": [
+        21,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.LwOWQAExAxVrNNq7"
+    },
+    {
+      "_id": "pOMLfr_LH1rr2ekJ",
+      "type": "text",
+      "text": "Level 22: Pick Pockets: 92% | Open Locks: 94% | Find Traps: 88% | Remove Traps: 108% | Climb Walls: 84% | Move Silently: 72% | Hide in Shadows: 125% | Hear Noise: 102%",
+      "range": [
+        22,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.pOMLfr_LH1rr2ekJ"
+    },
+    {
+      "_id": "KA8h6MRUuya7B9Yq",
+      "type": "text",
+      "text": "Level 23: Pick Pockets: 94% | Open Locks: 96% | Find Traps: 91% | Remove Traps: 109% | Climb Walls: 86% | Move Silently: 74% | Hide in Shadows: 130% | Hear Noise: 104%",
+      "range": [
+        23,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.KA8h6MRUuya7B9Yq"
+    },
+    {
+      "_id": "HZp5btpZ5TZqBX_I",
+      "type": "text",
+      "text": "Level 24: Pick Pockets: 96% | Open Locks: 98% | Find Traps: 94% | Remove Traps: 110% | Climb Walls: 88% | Move Silently: 76% | Hide in Shadows: 135% | Hear Noise: 106%",
+      "range": [
+        24,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.HZp5btpZ5TZqBX_I"
+    },
+    {
+      "_id": "7d8S3-pqZlUAFfyN",
+      "type": "text",
+      "text": "Level 25: Pick Pockets: 98% | Open Locks: 99% | Find Traps: 97% | Remove Traps: 111% | Climb Walls: 89% | Move Silently: 78% | Hide in Shadows: 140% | Hear Noise: 108%",
+      "range": [
+        25,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.7d8S3-pqZlUAFfyN"
+    },
+    {
+      "_id": "XV8wfNH0ECkuJIbB",
+      "type": "text",
+      "text": "Level 26: Pick Pockets: 100% | Open Locks: 100% | Find Traps: 100% | Remove Traps: 112% | Climb Walls: 90% | Move Silently: 80% | Hide in Shadows: 145% | Hear Noise: 110%",
+      "range": [
+        26,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.XV8wfNH0ECkuJIbB"
+    },
+    {
+      "_id": "TAqXpNQjHS6gJdz5",
+      "type": "text",
+      "text": "Level 27: Pick Pockets: 102% | Open Locks: 101% | Find Traps: 103% | Remove Traps: 113% | Climb Walls: 91% | Move Silently: 82% | Hide in Shadows: 150% | Hear Noise: 112%",
+      "range": [
+        27,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.TAqXpNQjHS6gJdz5"
+    },
+    {
+      "_id": "Z9GDVApePYgIbQ_j",
+      "type": "text",
+      "text": "Level 28: Pick Pockets: 104% | Open Locks: 102% | Find Traps: 106% | Remove Traps: 114% | Climb Walls: 92% | Move Silently: 84% | Hide in Shadows: 155% | Hear Noise: 114%",
+      "range": [
+        28,
+        28
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.Z9GDVApePYgIbQ_j"
+    },
+    {
+      "_id": "ZavzGb_xuAcUnQX8",
+      "type": "text",
+      "text": "Level 29: Pick Pockets: 106% | Open Locks: 103% | Find Traps: 109% | Remove Traps: 115% | Climb Walls: 93% | Move Silently: 86% | Hide in Shadows: 160% | Hear Noise: 116%",
+      "range": [
+        29,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.ZavzGb_xuAcUnQX8"
+    },
+    {
+      "_id": "srHU-FT4ubz-qqzZ",
+      "type": "text",
+      "text": "Level 30: Pick Pockets: 108% | Open Locks: 104% | Find Traps: 112% | Remove Traps: 116% | Climb Walls: 94% | Move Silently: 88% | Hide in Shadows: 165% | Hear Noise: 118%",
+      "range": [
+        30,
+        30
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.srHU-FT4ubz-qqzZ"
+    },
+    {
+      "_id": "2GBjSA3390SbqITX",
+      "type": "text",
+      "text": "Level 31: Pick Pockets: 110% | Open Locks: 105% | Find Traps: 115% | Remove Traps: 117% | Climb Walls: 95% | Move Silently: 90% | Hide in Shadows: 170% | Hear Noise: 120%",
+      "range": [
+        31,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.2GBjSA3390SbqITX"
+    },
+    {
+      "_id": "pzHD-ZVHYwk5_q6e",
+      "type": "text",
+      "text": "Level 32: Pick Pockets: 112% | Open Locks: 106% | Find Traps: 118% | Remove Traps: 118% | Climb Walls: 96% | Move Silently: 92% | Hide in Shadows: 175% | Hear Noise: 122%",
+      "range": [
+        32,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.pzHD-ZVHYwk5_q6e"
+    },
+    {
+      "_id": "bSZM6Q8YQc06_GIR",
+      "type": "text",
+      "text": "Level 33: Pick Pockets: 114% | Open Locks: 107% | Find Traps: 121% | Remove Traps: 118% | Climb Walls: 97% | Move Silently: 94% | Hide in Shadows: 180% | Hear Noise: 124%",
+      "range": [
+        33,
+        33
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.bSZM6Q8YQc06_GIR"
+    },
+    {
+      "_id": "nfqlIoZ1Upji0cew",
+      "type": "text",
+      "text": "Level 34: Pick Pockets: 116% | Open Locks: 108% | Find Traps: 124% | Remove Traps: 119% | Climb Walls: 98% | Move Silently: 96% | Hide in Shadows: 185% | Hear Noise: 126%",
+      "range": [
+        34,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.nfqlIoZ1Upji0cew"
+    },
+    {
+      "_id": "ckmSWYzFXm_-rPlc",
+      "type": "text",
+      "text": "Level 35: Pick Pockets: 118% | Open Locks: 109% | Find Traps: 127% | Remove Traps: 119% | Climb Walls: 99% | Move Silently: 98% | Hide in Shadows: 190% | Hear Noise: 128%",
+      "range": [
+        35,
+        35
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.ckmSWYzFXm_-rPlc"
+    },
+    {
+      "_id": "6PDI8i8EyF6dp_7a",
+      "type": "text",
+      "text": "Level 36: Pick Pockets: 120% | Open Locks: 110% | Find Traps: 130% | Remove Traps: 120% | Climb Walls: 100% | Move Silently: 100% | Hide in Shadows: 195% | Hear Noise: 130%",
+      "range": [
+        36,
+        36
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!PScuqQj5cfH9_dfg.6PDI8i8EyF6dp_7a"
+    }
+  ],
+  "formula": "1d36"
+}

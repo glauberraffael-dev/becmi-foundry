@@ -16,6 +16,8 @@ import {
   MONSTER_MASTERY_LIMITS, NETS, PASSAGE, SIEGE_EQUIPMENT, SIEGE_WEAPONS,
   TRAINING_COSTS, TRAINING_SUCCESS, WEAPON_PENALTIES, rollTable
 } from "./mastery-data.mjs";
+import { normalizeTreasureDocument } from "./pack-layout.mjs";
+import { buildReferenceJournals, buildReferenceTables } from "./reference-rules.mjs";
 
 const require = createRequire(import.meta.url);
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -28,26 +30,6 @@ const STOP = new Set([
   "Hit Dice", "Armor Class", "Damage", "Saving Throw", "Curses", "Restrictions",
   "Creation", "Construction", "Cost", "Type", "General", "Powers", "Abilities"
 ]);
-
-const CHAPTERS = [
-  [1, "Steps in Character Creation", "Ability scores, alignments, hit points, starting money and the first decisions a player makes."],
-  [2, "The Character Classes", "Cleric, fighter, magic-user, thief, dwarf, elf, halfling and the optional druid and mystic classes, with progression tables."],
-  [3, "Spells and Spellcasting", "Clerical, druidic and magical spell lists, descriptions and the rules for learning and casting spells."],
-  [4, "Equipment", "Weapons, armor, adventuring gear, transportation and siege equipment with costs and encumbrance."],
-  [5, "Other Character Abilities", "Weapon mastery and the optional general skill system."],
-  [6, "Movement", "Game time, distance, land, water and aerial travel rates."],
-  [7, "Encounters and Evasion", "Encounter checks, surprise, monster reactions, wandering monsters and pursuit."],
-  [8, "Combat", "Initiative, morale, attack rolls, missile fire, magic, unarmed and special forms of combat."],
-  [9, "Mass Combat", "The War Machine and Siege Machine for resolving large-scale battles."],
-  [10, "Experience", "Awarding XP for role-playing, goals, monsters, treasure and exceptional actions; maximum hit points."],
-  [11, "Nonplayer Characters", "Retainers, mercenaries and specialists."],
-  [12, "Strongholds and Dominions", "Building a stronghold, hiring staff and ruling a dominion."],
-  [13, "Dungeon Master Procedures", "Ability checks, aging, alignment changes, anti-magic and ICC rulings."],
-  [14, "Monsters", "How to read monster descriptions and the alphabetical monster list with complete statistics."],
-  [15, "Immortals", "Immortal spheres, statistics and the paths by which mortals may become immortals."],
-  [16, "Treasure", "Treasure types, coins, gems, jewelry and magical items."],
-  [17, "Campaigning", "Running an ongoing campaign and linking adventures together."]
-];
 
 function treasureSection(lines) {
   const section = stripPictureText(lines.slice(19715, 21741).join("\n")).split(/\r?\n/);
@@ -85,7 +67,7 @@ function treasureSection(lines) {
   }
   const unique = new Map();
   for (const item of items) if (!unique.has(item.name.toLowerCase())) unique.set(item.name.toLowerCase(), item);
-  return [...unique.values()];
+  return [...unique.values()].map(normalizeTreasureDocument);
 }
 
 function tables() {
@@ -145,22 +127,11 @@ function tables() {
     )
   )));
 
-  return built;
+  return [...built, ...buildReferenceTables()];
 }
 
 function journals() {
-  return [
-    ...CHAPTERS.map(([num, title, text]) => ({
-      name: `Chapter ${num}: ${title}`,
-      flags: { becmi: { source: "Rules Cyclopedia", chapter: num } },
-      pages: [{
-        name: "Summary",
-        type: "text",
-        text: { content: `<p>${text}</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter ${num}. Full rules text is not reproduced here.</em></p>` }
-      }]
-    })),
-    MASTERY_JOURNAL
-  ];
+  return buildReferenceJournals(MASTERY_JOURNAL);
 }
 
 const lines = require("node:fs").readFileSync(input, "utf8").split(/\r?\n/);

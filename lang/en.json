@@ -199,6 +199,8 @@
   "BECMI.notification.noActor": "Select a token or set a default character first.",
   "BECMI.notification.classApplied": "Applied {name} to {actor}.",
   "BECMI.notification.noTarget": "Select a token to attack.",
+  "BECMI.notification.assumedTargetAC": "No target selected — assuming AC {ac}.",
+  "BECMI.notification.noFormula": "This item has no dice formula to roll.",
   "BECMI.notification.noSpellLevel": "Choose a spell level first.",
 
   "BECMI.labels.rcClass": "Character Class",
@@ -223,6 +225,8 @@
   "BECMI.labels.grimoire": "Spellbook (comma-separated spell keys)",
   "BECMI.labels.useMastery": "Use Weapon Mastery",
   "BECMI.labels.weight": "Weight",
+  "BECMI.labels.targetAC": "Target AC",
+  "BECMI.labels.rollFormula": "Dice formula",
 
   "BECMI.sheet.tab.roller": "Roller",
   "BECMI.sheet.adjustment": "Adjustment",
@@ -233,6 +237,7 @@
   "BECMI.sheet.levelUp": "Level Up",
   "BECMI.sheet.roller": "Dice Roller",
   "BECMI.sheet.expression": "Expression (e.g. 2d6+3)",
+  "BECMI.sheet.rolls": "Rolls",
   "BECMI.sheet.weaponAttacks": "Weapon Attacks",
   "BECMI.sheet.spellsPerDay": "Spells per Day",
   "BECMI.sheet.grimoire": "Grimoire",
@@ -258,6 +263,7 @@
 
   "BECMI.thief.findTraps": "Find Traps",
   "BECMI.rolls.free": "Free Roll",
+  "BECMI.rolls.formula": "Roll Formula",
   "BECMI.rolls.skill": "Skill Check",
   "BECMI.rolls.turnUndead": "Turn Undead",
   "BECMI.undead.outcome.turn": "turned",

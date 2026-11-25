@@ -244,6 +244,30 @@
     }
   },
   {
+    "name": "Resist Cold",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0",
+      "duration": "6 turns",
+      "effect": "All creatures within 30'",
+      "reversible": false,
+      "description": "Duration: 6 turns Effect: All creatures within 30' The caster of this spell may discover the alignment (Lawful, Neutral, or Chaotic) of any one creature within 10'. The spell may also be used When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
     "name": "Resist Fire",
     "type": "spell",
     "flags": {
@@ -310,30 +334,6 @@
       "effect": "Charms 1 HD of snakes per level of the caster With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed.",
       "reversible": false,
       "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 +1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
-    "name": "Resist Cold",
-    "type": "spell",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "list": "cleric"
-      }
-    },
-    "system": {
-      "spellLevel": 2,
-      "spellLists": [
-        "cleric"
-      ],
-      "range": "0",
-      "duration": "6 turns",
-      "effect": "All creatures within 30'",
-      "reversible": false,
-      "description": "Duration: 6 turns Effect: All creatures within 30' The caster of this spell may discover the alignment (Lawful, Neutral, or Chaotic) of any one creature within 10'. The spell may also be used When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures.",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
@@ -1309,30 +1309,6 @@
     }
   },
   {
-    "name": "Druidic Spells",
-    "type": "spell",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "list": "druid"
-      }
-    },
-    "system": {
-      "spellLevel": 1,
-      "spellLists": [
-        "druid"
-      ],
-      "range": "",
-      "duration": "",
-      "effect": "",
-      "reversible": false,
-      "description": "Druids can learn and cast any spell that a cleric can—with the exception of spells that affect alignments (such as protection from evil). However, druids also have their own spells, spells which clerics and magic-users cannot utilize. The druid cannot cast more spells in a day than a cleric, but he has the advantage of being able to learn spells from two different sources, his own list and the cleric's spell list. Druidic spells tend to concern nature and the natural order of life rather than combat or power like many of the clerical and magical spells. Druidic spells are also not reversible.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
     "name": "Detect Danger",
     "type": "spell",
     "flags": {
@@ -1351,6 +1327,30 @@
       "effect": "Reveals hazards",
       "reversible": false,
       "description": "This spell combines some effects of detect evil and find traps. While it is functioning, the druid can concentrate on places, objects, or creatures within range. He needs a full round of concentration to examine one square foot of area, one creature, or one small object (a chest, weapon, or smaller item). Larger objects require more time. After he examines the thing, the druid will know whether it is immediately dangerous, potentially dangerous, or benign (all strictly from the druid's point of view). Note that most creatures are potentially dangerous. This spell will detect poisons, while other spells may not.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Druidic Spells",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "",
+      "duration": "",
+      "effect": "",
+      "reversible": false,
+      "description": "Druids can learn and cast any spell that a cleric can—with the exception of spells that affect alignments (such as protection from evil). However, druids also have their own spells, spells which clerics and magic-users cannot utilize. The druid cannot cast more spells in a day than a cleric, but he has the advantage of being able to learn spells from two different sources, his own list and the cleric's spell list. Druidic spells tend to concern nature and the natural order of life rather than combat or power like many of the clerical and magical spells. Druidic spells are also not reversible.",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
@@ -2032,6 +2032,30 @@
     }
   },
   {
+    "name": "Charm Person",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "See below",
+      "effect": "One living person (see below)",
+      "reversible": false,
+      "description": "This spell will only affect humans, demihumans, and certain other creatures. The victim is allowed a saving throw vs. spells. If the saving throw is successful, the spell has no effect. If it fails, the victim will believe that the spellcaster is its \"best friend,\" and will try to defend the spellcaster against any threat, whether real or imagined. The victim is charmed. by a creature or object. The floating disc is created at the height of the spellcaster's waist, and will always remain at that height. It will automatically follow the spellcaster at his current movement rate, remaining within 6' of him at all times.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
     "name": "Higher-level Spells",
     "type": "spell",
     "flags": {
@@ -2050,6 +2074,30 @@
       "effect": "",
       "reversible": false,
       "description": "Other Magic-Users: By ancient tradition—of necessity and common sense—magic-users are loathe to trade spells among themselves. Each magic-user knows that he may become a very powerful wizard some day . . . and that he may end up being the enemy of another wizard of similar power. No wizard wants to teach the other fellow magic that can kill him. This is something the DM should reinforce in his campaign: If he finds characters casually trading spells from their spell books, he should remind them of the traditions of secrecy, of the good reasons for that tradition, of the paranoia that infects the magicusers' community, and so on.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hold Portal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "2-12 (2d6) turns",
+      "effect": "One door, gate, or similar portal",
+      "reversible": false,
+      "description": "If the spellcaster can speak a language that the charmed victim understands, the spellcaster may give orders to the victim. These orders should sound like suggestions, as if \"just between friends.\" The charmed victim will usually obey, but the victim may resist orders that are contrary to the victim's nature (alignment and habits)— he doesn't need to roll anything to resist. A victim will refuse to obey if ordered to kill itself. In addition, enchanted creatures cannot attack the spellcaster in hand-to-hand or melee combat. (An enchanted creature is one that normal weapons cannot hurt; only magical weapons can hit the creature.",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
@@ -2080,7 +2128,7 @@
     }
   },
   {
-    "name": "Charm Person",
+    "name": "Magic Missile",
     "type": "spell",
     "flags": {
       "becmi": {
@@ -2093,35 +2141,11 @@
       "spellLists": [
         "magic-user"
       ],
-      "range": "120'",
-      "duration": "See below",
-      "effect": "One living person (see below)",
+      "range": "150'",
+      "duration": "1 round",
+      "effect": "Creates 1 or more arrows",
       "reversible": false,
-      "description": "This spell will only affect humans, demihumans, and certain other creatures. The victim is allowed a saving throw vs. spells. If the saving throw is successful, the spell has no effect. If it fails, the victim will believe that the spellcaster is its \"best friend,\" and will try to defend the spellcaster against any threat, whether real or imagined. The victim is charmed. by a creature or object. The floating disc is created at the height of the spellcaster's waist, and will always remain at that height. It will automatically follow the spellcaster at his current movement rate, remaining within 6' of him at all times.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
-    "name": "Hold Portal",
-    "type": "spell",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "list": "magic-user"
-      }
-    },
-    "system": {
-      "spellLevel": 1,
-      "spellLists": [
-        "magic-user"
-      ],
-      "range": "10'",
-      "duration": "2-12 (2d6) turns",
-      "effect": "One door, gate, or similar portal",
-      "reversible": false,
-      "description": "If the spellcaster can speak a language that the charmed victim understands, the spellcaster may give orders to the victim. These orders should sound like suggestions, as if \"just between friends.\" The charmed victim will usually obey, but the victim may resist orders that are contrary to the victim's nature (alignment and habits)— he doesn't need to roll anything to resist. A victim will refuse to obey if ordered to kill itself. In addition, enchanted creatures cannot attack the spellcaster in hand-to-hand or melee combat. (An enchanted creature is one that normal weapons cannot hurt; only magical weapons can hit the creature.",
+      "description": "This spell will allow the spellcaster to read, not speak, any magical words or runes, such as those found on scrolls and other items. A spellcaster cannot understand unfamiliar magic writings without using this spell. However, once a spellcaster reads a scroll or runes with this spell, he can read or speak that magic later without using a spell. Example: Shortly after casting this spell, a magic-user walks into a room containing a door locked by magic, a magical potion lying nearby, and a treasure chest containing a magical wand. All the magic will glow, but the spellcaster can see only the door and potion; the light of the glowing wand is hidden by the treasure chest.",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
@@ -2170,30 +2194,6 @@
       "effect": "The spellcaster only",
       "reversible": false,
       "description": "When he casts this spell, the spellcaster will see a glow surround all magical objects, creatures, and places which are visible and within range of the spell. No saving throw is allowed.",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
-    "name": "Magic Missile",
-    "type": "spell",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "list": "magic-user"
-      }
-    },
-    "system": {
-      "spellLevel": 1,
-      "spellLists": [
-        "magic-user"
-      ],
-      "range": "150'",
-      "duration": "1 round",
-      "effect": "Creates 1 or more arrows",
-      "reversible": false,
-      "description": "This spell will allow the spellcaster to read, not speak, any magical words or runes, such as those found on scrolls and other items. A spellcaster cannot understand unfamiliar magic writings without using this spell. However, once a spellcaster reads a scroll or runes with this spell, he can read or speak that magic later without using a spell. Example: Shortly after casting this spell, a magic-user walks into a room containing a door locked by magic, a magical potion lying nearby, and a treasure chest containing a magical wand. All the magic will glow, but the spellcaster can see only the door and potion; the light of the glowing wand is hidden by the treasure chest.",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""
@@ -2872,30 +2872,6 @@
     }
   },
   {
-    "name": "Massmorph",
-    "type": "spell",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "list": "magic-user"
-      }
-    },
-    "system": {
-      "spellLevel": 4,
-      "spellLists": [
-        "magic-user"
-      ],
-      "range": "240'",
-      "duration": "See below The spell lasts until the illusion is touched by an intelligent creature, or until dispelled.",
-      "effect": "Causes illusion of trees within 240' range",
-      "reversible": false,
-      "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": ""
-    }
-  },
-  {
     "name": "Ice Storm/Wall of Ice",
     "type": "spell",
     "flags": {
@@ -2914,6 +2890,30 @@
       "effect": "Storm in 20' x 20' x 20' volume; or Wall of 1,200 square feet",
       "reversible": false,
       "description": "Duration: Storm, 1 round; Wall, 12 turns Effect: Storm in 20' x 20' x 20' volume; or Wall of 1,200 square feet This spell will affect up to 100 human or mansized creatures in a 240' diameter, making them appear to be the trees of an orchard, dense woods, or other large plant life appropriate to the region. (Unless the campaign's deserts feature very large cactus, the spell won't work in the desert.) Unwilling creatures are not affected. Creatures larger than man-size (such as horses) may be included, counting as two or three men This spell may be cast in either of two ways: either as an icy blast, ice storm, or wall of ice. An ice storm fills a 20' x 20' x 20' cube.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Massmorph",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "See below The spell lasts until the illusion is touched by an intelligent creature, or until dispelled.",
+      "effect": "Causes illusion of trees within 240' range",
+      "reversible": false,
+      "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
       "source": "Rules Cyclopedia",
       "page": 0,
       "notes": ""

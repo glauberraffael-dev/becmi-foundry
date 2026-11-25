@@ -7,7 +7,8 @@ class SourceData extends foundry.abstract.TypeDataModel {
       description: new f.HTMLField({ initial: "" }),
       source: new f.StringField({ initial: "Rules Cyclopedia" }),
       page: new f.NumberField({ initial: 0, integer: true, min: 0 }),
-      notes: new f.StringField({ initial: "" })
+      notes: new f.StringField({ initial: "" }),
+      rollFormula: new f.StringField({ initial: "", label: "BECMI.labels.rollFormula" })
     };
   }
 }

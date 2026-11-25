@@ -65,6 +65,7 @@
         <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
       </div>
       <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.savingThrows'}}</h3>
+      <div class="becmi-saves-scroll">
       <table class="becmi-table becmi-table--saves">
         <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.saveBase'}}</th><th>{{localize 'BECMI.labels.saveAuto'}}</th><th>{{localize 'BECMI.labels.saveMod'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
         <tbody>
@@ -80,6 +81,7 @@
           {{/each}}
         </tbody>
       </table>
+      </div>
     </div>
 
     <div class="becmi-column">
@@ -125,6 +127,7 @@
           <button type="button" class="becmi-roll" data-action="itemAttack" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.attack'}}</button>
           <button type="button" class="becmi-roll" data-action="itemDamage" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.damage'}}</button>
           {{/if}}
+          {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
           <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
         </td>
       </tr>
@@ -199,8 +202,10 @@
   <ul class="becmi-items">
     {{#each classSpells as |item|}}
     <li class="becmi-item">
+      <span class="becmi-badge">{{item.level}}</span>
       <button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button>
       <button type="button" class="becmi-roll" data-action="itemCast" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.cast'}}</button>
+      {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
       <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
     </li>
     {{/each}}
@@ -355,6 +360,7 @@
   </div>
 
   <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.sidebar.quickRolls'}}</h3>
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.targetAC'}}:</label><input data-target-ac type="number" value="{{targetAC}}" min="-10" max="20"></div>
   <div class="becmi-sidebar-roll">
     <input type="text" data-roll-expression value="1d20" aria-label="{{localize 'BECMI.sheet.expression'}}">
     <button type="button" class="becmi-roll" data-action="rollFree">{{localize 'BECMI.sheet.roll'}}</button>

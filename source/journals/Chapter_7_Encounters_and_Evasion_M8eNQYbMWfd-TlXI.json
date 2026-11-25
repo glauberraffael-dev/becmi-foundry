@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Encounter checks, surprise, monster reactions, wandering monsters and pursuit.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 7. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Encounters and Evasion</h2>\n<p>When an encounter is possible, roll 2d6 for surprise (a result of 1-2 on a d6 can mean surprise for one side) and 2d6 on the monster reaction table. Hostile creatures may attack, parley or flee according to the result; the DM adjusts for obvious strength, alignment and previous conduct.</p>\n<table><thead><tr><th>2d6</th><th>Reaction</th></tr></thead><tbody><tr><td>2-3</td><td>Hostile, attacks immediately</td></tr><tr><td>4-5</td><td>Hostile, may attack</td></tr><tr><td>6-7</td><td>Neutral, uncertain</td></tr><tr><td>8-9</td><td>No attack, may parley</td></tr><tr><td>10-12</td><td>Friendly, helpful or enthusiastic</td></tr></tbody></table>\n<p>Wandering monsters are rolled by time and terrain. Evasion, pursuit and hiding use movement rates, surprise and the DM's judgment.</p>"
       },
-      "_id": "tHwY92Ex1wsatEQQ",
-      "_key": "!journal.pages!M8eNQYbMWfd-TlXI.tHwY92Ex1wsatEQQ"
+      "_id": "A_qlz59XgDcHDpFb",
+      "_key": "!journal.pages!M8eNQYbMWfd-TlXI.A_qlz59XgDcHDpFb"
     }
   ]
 }

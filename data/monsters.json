@@ -72,6 +72,42 @@
     }
   },
   {
+    "name": "Aerial Servant (Haoou)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Aerial Servant (Haoou)"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "16",
+      "hp": 16,
+      "move": {
+        "dungeon": 240,
+        "outdoor": 80
+      },
+      "attacks": "1",
+      "damage": "4d8",
+      "appearing": "1 (1d4)",
+      "saveAs": "F16",
+      "morale": 9,
+      "treasure": "Nil or Special",
+      "intelligence": 12,
+      "alignment": "Chaotic",
+      "xpValue": 4050,
+      "terrain": "",
+      "monsterType": "Normal Animal (Rare).",
+      "description": "Armor Class: 0 Hit Dice: 16 (M) Move: 240' (80') Flying: 720' (240') Attacks: 1 Damage: 4d8 No. Appearing: 1 (1d4) Save As: F16 Morale: 9 Treasure Type: Nil or Special Intelligence: 12 Alignment: Chaotic XP Value: 4,050 PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Animal Herd",
     "type": "monster",
     "flags": {
@@ -144,78 +180,6 @@
     }
   },
   {
-    "name": "Aerial Servant (Haoou)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Aerial Servant (Haoou)"
-      }
-    },
-    "system": {
-      "ac": 0,
-      "hd": "16",
-      "hp": 16,
-      "move": {
-        "dungeon": 240,
-        "outdoor": 80
-      },
-      "attacks": "1",
-      "damage": "4d8",
-      "appearing": "1 (1d4)",
-      "saveAs": "F16",
-      "morale": 9,
-      "treasure": "Nil or Special",
-      "intelligence": 12,
-      "alignment": "Chaotic",
-      "xpValue": 4050,
-      "terrain": "",
-      "monsterType": "Normal Animal (Rare).",
-      "description": "Armor Class: 0 Hit Dice: 16 (M) Move: 240' (80') Flying: 720' (240') Attacks: 1 Damage: 4d8 No. Appearing: 1 (1d4) Save As: F16 Morale: 9 Treasure Type: Nil or Special Intelligence: 12 Alignment: Chaotic XP Value: 4,050 PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Baboon, Rock",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Baboon, Rock"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "2",
-      "hp": 2,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 club/1 bite",
-      "damage": "1d6/1d3",
-      "appearing": "2d6 (5d6)",
-      "saveAs": "F2",
-      "morale": 8,
-      "treasure": "U",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 20,
-      "terrain": "Arctic, Mountains (cold).",
-      "monsterType": "Normal Animal (Common). Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs.",
-      "description": "Armor Class: 6 Hit Dice: 2 (M) Move: 120' (40') Attacks: 1 club/1 bite Damage: 1d6/ld3 No. Appearing: 2d6 (5d6) Save As: F2 Morale: 8 Treasure Type: U Intelligence: 2 Alignment: Neutral XP Value: 20 Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case).",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Ape, White",
     "type": "monster",
     "flags": {
@@ -245,78 +209,6 @@
       "terrain": "Hill, Mountain, Open.",
       "monsterType": "",
       "description": "Armor Class: 6 Hit Dice: 4 (M) Move: 120' (40') Attacks: 2 claws or 1 rock Damage: 1d4/ld4 or 1d6 No. Appearing: 1d6 (2d4) Save As: F2 Morale: 7 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 75 Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Bandit",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Bandit"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "1",
-      "hp": 1,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "1 weapon",
-      "damage": "By weapon",
-      "appearing": "2d4 (3d10)",
-      "saveAs": "T1",
-      "morale": 8,
-      "treasure": "(U) A",
-      "intelligence": 11,
-      "alignment": "Chaotic or Neutral",
-      "xpValue": 10,
-      "terrain": "Any, any Planar.",
-      "monsterType": "Normal Animal (Rare). White apes have lost their color due to many years of living in caves. They are nocturnal herbivores, looking for fruits and vegetables at night.",
-      "description": "Armor Class: 6 Hit Dice: 1 (M) Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 2d4 (3d10) Save As: T1 Morale: 8 Treasure Type: (U) A Intelligence: 11 Alignment: Chaotic or Neutral XP Value: 10 Terrain: Any, any Planar. Load: 5,000 cn at full speed; 10,000 cn at half speed (may carry a character at a crucial time if he is worthy). Monster Type: Normal Animal (Rare). White apes have lost their color due to many years of living in caves.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Athach",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Athach"
-      }
-    },
-    "system": {
-      "ac": 0,
-      "hd": "14",
-      "hp": 14,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "4",
-      "damage": "2d2/2d2/2d2/2d0 + poison (special)",
-      "appearing": "1d3 (1d6)",
-      "saveAs": "Fl4",
-      "morale": 7,
-      "treasure": "I",
-      "intelligence": 8,
-      "alignment": "Chaotic",
-      "xpValue": 2500,
-      "terrain": "Cavern, Hill, Mountain, Ruin.",
-      "monsterType": "Human (Common).",
-      "description": "They do not go out of their way to attack characters; if approached by humans and demihumans and given a chance to flee, they will do so. But if creatures approach their lair, the apes will threaten the intruders. If their threats are ignored, they will attack. They may throw one stone per round for 1d6 points each. Armor Class: 0 Hit Dice: 14* (L) Move: 180' (60') Attacks: 4 Damage: 2dl2/2dl2/2dl2/2dl0 + poison (special) No.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -360,35 +252,107 @@
     }
   },
   {
-    "name": "Bat (Normal)",
+    "name": "Athach",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Bat (Normal)"
+        "key": "Athach"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "14",
+      "hp": 14,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "4",
+      "damage": "2d2/2d2/2d2/2d0 + poison (special)",
+      "appearing": "1d3 (1d6)",
+      "saveAs": "Fl4",
+      "morale": 7,
+      "treasure": "I",
+      "intelligence": 8,
+      "alignment": "Chaotic",
+      "xpValue": 2500,
+      "terrain": "Cavern, Hill, Mountain, Ruin.",
+      "monsterType": "Human (Common).",
+      "description": "They do not go out of their way to attack characters; if approached by humans and demihumans and given a chance to flee, they will do so. But if creatures approach their lair, the apes will threaten the intruders. If their threats are ignored, they will attack. They may throw one stone per round for 1d6 points each. Armor Class: 0 Hit Dice: 14* (L) Move: 180' (60') Attacks: 4 Damage: 2dl2/2dl2/2dl2/2dl0 + poison (special) No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Baboon, Rock",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Baboon, Rock"
       }
     },
     "system": {
       "ac": 6,
-      "hd": "1/4",
-      "hp": 1,
+      "hd": "2",
+      "hp": 2,
       "move": {
-        "dungeon": 9,
-        "outdoor": 3
+        "dungeon": 120,
+        "outdoor": 40
       },
-      "attacks": "Confusion 1 bite",
-      "damage": "Nil 1d4",
-      "appearing": "d100(d100) 1d10 (1d10)",
-      "saveAs": "Normal Man F1",
-      "morale": 6,
-      "treasure": "Nil Nil",
+      "attacks": "1 club/1 bite",
+      "damage": "1d6/1d3",
+      "appearing": "2d6 (5d6)",
+      "saveAs": "F2",
+      "morale": 8,
+      "treasure": "U",
       "intelligence": 2,
       "alignment": "Neutral",
-      "xpValue": 5,
-      "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
-      "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
-      "description": "Normal Giant Armor Class: 6 6 Hit Dice: 1/4(1 hp)(S) 2 (M) Move: 9'(3') 30'(10') Flying: 120' (40') 180' (60') Attacks: Confusion 1 bite Damage: Nil ld4 No. Appearing: d100(d100) 1d10 (1d10) Save As: Normal Man Fl Morale: 6 8 Treasure Type: Nil Nil Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 5 20 Monster Type: Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common). Bats are nocturnal flying insectivores.",
+      "xpValue": 20,
+      "terrain": "Arctic, Mountains (cold).",
+      "monsterType": "Normal Animal (Common). Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs.",
+      "description": "Armor Class: 6 Hit Dice: 2 (M) Move: 120' (40') Attacks: 1 club/1 bite Damage: 1d6/ld3 No. Appearing: 2d6 (5d6) Save As: F2 Morale: 8 Treasure Type: U Intelligence: 2 Alignment: Neutral XP Value: 20 Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Bandit",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Bandit"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "1",
+      "hp": 1,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon",
+      "appearing": "2d4 (3d10)",
+      "saveAs": "T1",
+      "morale": 8,
+      "treasure": "(U) A",
+      "intelligence": 11,
+      "alignment": "Chaotic or Neutral",
+      "xpValue": 10,
+      "terrain": "Any, any Planar.",
+      "monsterType": "Normal Animal (Rare). White apes have lost their color due to many years of living in caves. They are nocturnal herbivores, looking for fruits and vegetables at night.",
+      "description": "Armor Class: 6 Hit Dice: 1 (M) Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 2d4 (3d10) Save As: T1 Morale: 8 Treasure Type: (U) A Intelligence: 11 Alignment: Chaotic or Neutral XP Value: 10 Terrain: Any, any Planar. Load: 5,000 cn at full speed; 10,000 cn at half speed (may carry a character at a crucial time if he is worthy). Monster Type: Normal Animal (Rare). White apes have lost their color due to many years of living in caves.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -432,6 +396,42 @@
     }
   },
   {
+    "name": "Bat (Normal)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Bat (Normal)"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "1/4",
+      "hp": 1,
+      "move": {
+        "dungeon": 9,
+        "outdoor": 3
+      },
+      "attacks": "Confusion 1 bite",
+      "damage": "Nil 1d4",
+      "appearing": "d100(d100) 1d10 (1d10)",
+      "saveAs": "Normal Man F1",
+      "morale": 6,
+      "treasure": "Nil Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 5,
+      "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
+      "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
+      "description": "Normal Giant Armor Class: 6 6 Hit Dice: 1/4(1 hp)(S) 2 (M) Move: 9'(3') 30'(10') Flying: 120' (40') 180' (60') Attacks: Confusion 1 bite Damage: Nil ld4 No. Appearing: d100(d100) 1d10 (1d10) Save As: Normal Man Fl Morale: 6 8 Treasure Type: Nil Nil Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 5 20 Monster Type: Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common). Bats are nocturnal flying insectivores.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Bear (Black)",
     "type": "monster",
     "flags": {
@@ -458,6 +458,42 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 75,
+      "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
+      "monsterType": "Black, Grizzly Bears: Normal Animal (Common). Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
+      "description": "||Black|Grizzly| |---|---|---| |Armor Class:|6|8| |Hit Dice:|4 (L) |5 (L) | |Move:|120' (40')|120' (40')| |Attacks:|2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d3/ld3/ld6|1d8/ld8/ldl0| |No. Appearing:|1-4 (1d4)|1 (1d4)| |Save As:|F2|F4| |Morale:|7|10| |Treasure Type:|U|U| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|75|175| ||Polar|Cave| |Armor Class:|6|5| |Hit Dice:|6 (L)|7 (L)| |Move:|120' (40)|120' (40')| |Attacks: |2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d6/ld6/ldl0|2d4/2d4/2d6| |No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Bear (Cave)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Cave_",
+        "key": "Bear (Cave)"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "7",
+      "hp": 7,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/ 1 bite",
+      "damage": "2d4/2d4/2d6",
+      "appearing": "1-2 (1d2)",
+      "saveAs": "F4",
+      "morale": 9,
+      "treasure": "V",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 450,
       "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
       "monsterType": "Black, Grizzly Bears: Normal Animal (Common). Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
       "description": "||Black|Grizzly| |---|---|---| |Armor Class:|6|8| |Hit Dice:|4 (L) |5 (L) | |Move:|120' (40')|120' (40')| |Attacks:|2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d3/ld3/ld6|1d8/ld8/ldl0| |No. Appearing:|1-4 (1d4)|1 (1d4)| |Save As:|F2|F4| |Morale:|7|10| |Treasure Type:|U|U| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|75|175| ||Polar|Cave| |Armor Class:|6|5| |Hit Dice:|6 (L)|7 (L)| |Move:|120' (40)|120' (40')| |Attacks: |2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d6/ld6/ldl0|2d4/2d4/2d6| |No.",
@@ -530,42 +566,6 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 275,
-      "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
-      "monsterType": "Black, Grizzly Bears: Normal Animal (Common). Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
-      "description": "||Black|Grizzly| |---|---|---| |Armor Class:|6|8| |Hit Dice:|4 (L) |5 (L) | |Move:|120' (40')|120' (40')| |Attacks:|2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d3/ld3/ld6|1d8/ld8/ldl0| |No. Appearing:|1-4 (1d4)|1 (1d4)| |Save As:|F2|F4| |Morale:|7|10| |Treasure Type:|U|U| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|75|175| ||Polar|Cave| |Armor Class:|6|5| |Hit Dice:|6 (L)|7 (L)| |Move:|120' (40)|120' (40')| |Attacks: |2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d6/ld6/ldl0|2d4/2d4/2d6| |No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Bear (Cave)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "_Cave_",
-        "key": "Bear (Cave)"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "7",
-      "hp": 7,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "2 claws/ 1 bite",
-      "damage": "2d4/2d4/2d6",
-      "appearing": "1-2 (1d2)",
-      "saveAs": "F4",
-      "morale": 9,
-      "treasure": "V",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 450,
       "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
       "monsterType": "Black, Grizzly Bears: Normal Animal (Common). Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
       "description": "||Black|Grizzly| |---|---|---| |Armor Class:|6|8| |Hit Dice:|4 (L) |5 (L) | |Move:|120' (40')|120' (40')| |Attacks:|2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d3/ld3/ld6|1d8/ld8/ldl0| |No. Appearing:|1-4 (1d4)|1 (1d4)| |Save As:|F2|F4| |Morale:|7|10| |Treasure Type:|U|U| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|75|175| ||Polar|Cave| |Armor Class:|6|5| |Hit Dice:|6 (L)|7 (L)| |Move:|120' (40)|120' (40')| |Attacks: |2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d6/ld6/ldl0|2d4/2d4/2d6| |No.",
@@ -684,6 +684,114 @@
     }
   },
   {
+    "name": "Black (Huge)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Black (Huge)"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "14",
+      "hp": 14,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F7 F21 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I H x 3 , I x 2",
+      "intelligence": 15,
+      "alignment": "Chaotic",
+      "xpValue": 3,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Black (Large)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Black (Large)"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "10+3",
+      "hp": 103,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F7 F21 F36",
+      "morale": 9,
+      "treasure": "H H x 2 , I H x 3 , I x 2",
+      "intelligence": 12,
+      "alignment": "Chaotic",
+      "xpValue": 250,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Black (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Black (Small)"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "7",
+      "hp": 7,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F7 F21 F36",
+      "morale": 8,
+      "treasure": "H H x 2 , I H x 3 , I x 2",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 1,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Blackball (Deadly Sphere)",
     "type": "monster",
     "flags": {
@@ -756,35 +864,107 @@
     }
   },
   {
-    "name": "Boar (Normal)",
+    "name": "Blue (Huge)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "_Normal_",
-        "key": "Boar (Normal)"
+        "variant": "",
+        "key": "Blue (Huge)"
       }
     },
     "system": {
-      "ac": 7,
-      "hd": "3",
-      "hp": 3,
+      "ac": 4,
+      "hd": "18",
+      "hp": 18,
       "move": {
         "dungeon": 90,
         "outdoor": 30
       },
-      "attacks": "1 tusk",
-      "damage": "2d4",
-      "appearing": "1d6(1d6)",
-      "saveAs": "F2",
-      "morale": 9,
-      "treasure": "Nil",
-      "intelligence": 2,
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F9 F27 F36",
+      "morale": 10,
+      "treasure": "H Hx2, I H x 3 , I x 2",
+      "intelligence": 15,
       "alignment": "Neutral",
-      "xpValue": 50,
+      "xpValue": 4,
       "terrain": "",
-      "monsterType": "Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare).",
-      "description": "||Normal|Great| |---|---|---| |Armor Class:|7|3| |Hit Dice:|3*(M)|10* (L)| |Move:|90'(30')|90'(30')| |Attacks:|1 tusk|1 tusk| |Damage:|2d4|2d8| |No. Appearing:|1d6(ld6)|1d6(ld6)| |Save As:|F2|F5| |Morale:|9|9| |Treasure Type:|Nil|Nil| |Intelligence:|2|2| |Alignment: |Neutral |Neutral | |XP Value:|50|1,750| Monster Type: Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare). Wild boars generally prefer forested areas but can be found nearly everywhere.",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Blue (Large)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Blue (Large)"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "13+3",
+      "hp": 133,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F9 F27 F36",
+      "morale": 9,
+      "treasure": "H Hx2, I H x 3 , I x 2",
+      "intelligence": 12,
+      "alignment": "Neutral",
+      "xpValue": 300,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Blue (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Blue (Small)"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "9",
+      "hp": 9,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F9 F27 F36",
+      "morale": 9,
+      "treasure": "H Hx2, I H x 3 , I x 2",
+      "intelligence": 9,
+      "alignment": "Neutral",
+      "xpValue": 2,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -818,6 +998,42 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 1750,
+      "terrain": "",
+      "monsterType": "Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare).",
+      "description": "||Normal|Great| |---|---|---| |Armor Class:|7|3| |Hit Dice:|3*(M)|10* (L)| |Move:|90'(30')|90'(30')| |Attacks:|1 tusk|1 tusk| |Damage:|2d4|2d8| |No. Appearing:|1d6(ld6)|1d6(ld6)| |Save As:|F2|F5| |Morale:|9|9| |Treasure Type:|Nil|Nil| |Intelligence:|2|2| |Alignment: |Neutral |Neutral | |XP Value:|50|1,750| Monster Type: Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare). Wild boars generally prefer forested areas but can be found nearly everywhere.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Boar (Normal)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Normal_",
+        "key": "Boar (Normal)"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "3",
+      "hp": 3,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 tusk",
+      "damage": "2d4",
+      "appearing": "1d6(1d6)",
+      "saveAs": "F2",
+      "morale": 9,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 50,
       "terrain": "",
       "monsterType": "Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare).",
       "description": "||Normal|Great| |---|---|---| |Armor Class:|7|3| |Hit Dice:|3*(M)|10* (L)| |Move:|90'(30')|90'(30')| |Attacks:|1 tusk|1 tusk| |Damage:|2d4|2d8| |No. Appearing:|1d6(ld6)|1d6(ld6)| |Save As:|F2|F5| |Morale:|9|9| |Treasure Type:|Nil|Nil| |Intelligence:|2|2| |Alignment: |Neutral |Neutral | |XP Value:|50|1,750| Monster Type: Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare). Wild boars generally prefer forested areas but can be found nearly everywhere.",
@@ -972,19 +1188,19 @@
     }
   },
   {
-    "name": "Dinosaur, Aquatic (Small)",
+    "name": "Dinosaur, Aquatic (Armored)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Dinosaur, Aquatic (Small)"
+        "key": "Dinosaur, Aquatic (Armored)"
       }
     },
     "system": {
       "ac": 7,
-      "hd": "2",
-      "hp": 2,
+      "hd": "9",
+      "hp": 9,
       "move": {
         "dungeon": 0,
         "outdoor": 30
@@ -993,7 +1209,7 @@
       "damage": "1 to 2d4 2d4 to 4d8 1d4 to 2d8",
       "appearing": "1d2 to 2d8 1d2 to 1d4 1d2 to 1d6",
       "saveAs": "..F (level = 1/2 HD). .",
-      "morale": 3,
+      "morale": 6,
       "treasure": "Nil Nil (U + V) Nil",
       "intelligence": 1,
       "alignment": "Neutral",
@@ -1044,19 +1260,19 @@
     }
   },
   {
-    "name": "Dinosaur, Aquatic (Armored)",
+    "name": "Dinosaur, Aquatic (Small)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Dinosaur, Aquatic (Armored)"
+        "key": "Dinosaur, Aquatic (Small)"
       }
     },
     "system": {
       "ac": 7,
-      "hd": "9",
-      "hp": 9,
+      "hd": "2",
+      "hp": 2,
       "move": {
         "dungeon": 0,
         "outdoor": 30
@@ -1065,7 +1281,7 @@
       "damage": "1 to 2d4 2d4 to 4d8 1d4 to 2d8",
       "appearing": "1d2 to 2d8 1d2 to 1d4 1d2 to 1d6",
       "saveAs": "..F (level = 1/2 HD). .",
-      "morale": 6,
+      "morale": 3,
       "treasure": "Nil Nil (U + V) Nil",
       "intelligence": 1,
       "alignment": "Neutral",
@@ -1073,6 +1289,42 @@
       "terrain": "",
       "monsterType": "",
       "description": "Small Large Armored Armor Class: 7 5 to 7 2 to 4 Hit Dice: 2 to 8 (S to L) 9 to 24 (L) 6 to 9 (L) Move: 0 to 30' 0 to 60' 10' to 60' Swimming: 120'to 180' 150' to 240' 90' to 150' Attacks: . . 1 bite (+ 2 flippers). Damage: 1 to 2d4 2d4 to 4d8 1d4 to 2d8 No. Appearing: 1d2 to 2d8 1d2 to 1d4 1d2 to 1d6 Save As: ..F (level = 1/2 HD). . Morale: 3 to 6 6 to 11 7 to 9 Treasure Type: Nil Nil (U + V) Nil Intelligence: 1 to 3 1 to 3 1 to 3 Alignment: Neutral Neutral Neutral XP Value: Varies Varies Varies",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Djinni (Greater; Pasha)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Djinni (Greater; Pasha)"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "15",
+      "hp": 15,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 fists or 1 whirlwind",
+      "damage": "3d10/3d10 or 3d12 + special",
+      "appearing": "1 (1)",
+      "saveAs": "M30",
+      "morale": 11,
+      "treasure": "Nil",
+      "intelligence": 14,
+      "alignment": "Chaotic",
+      "xpValue": 4800,
+      "terrain": "",
+      "monsterType": "Planar Monster, Enchanted (Very Rare).",
+      "description": "Armor Class: -2 Hit Dice: 15* (L) Move: 120' (40') Flying: 360' (120') Attacks: 2 fists or 1 whirlwind Damage: 3d10/3d10 or 3d12 + special No. Appearing: 1 (1) Save As: M30 Morale: 11 Treasure Type: Nil Intelligence: 14 Alignment: Chaotic XP Value: 4,800 Monster Type: Planar Monster, Enchanted (Very Rare). In the elemental plane of Air, the rulers of the djinn are known as pashas. They appear as very large normal djinn. A pasha cannot be affected by normal weapons, or even by weapons of less than +2 enchantment.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -1116,35 +1368,35 @@
     }
   },
   {
-    "name": "Djinni (Greater; Pasha)",
+    "name": "DM Checklist:",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Djinni (Greater; Pasha)"
+        "key": "DM Checklist:"
       }
     },
     "system": {
-      "ac": 2,
-      "hd": "15",
-      "hp": 15,
+      "ac": 4,
+      "hd": "1",
+      "hp": 1,
       "move": {
         "dungeon": 120,
         "outdoor": 40
       },
-      "attacks": "2 fists or 1 whirlwind",
-      "damage": "3d10/3d10 or 3d12 + special",
-      "appearing": "1 (1)",
-      "saveAs": "M30",
-      "morale": 11,
-      "treasure": "Nil",
-      "intelligence": 14,
-      "alignment": "Chaotic",
-      "xpValue": 4800,
-      "terrain": "",
-      "monsterType": "Planar Monster, Enchanted (Very Rare).",
-      "description": "Armor Class: -2 Hit Dice: 15* (L) Move: 120' (40') Flying: 360' (120') Attacks: 2 fists or 1 whirlwind Damage: 3d10/3d10 or 3d12 + special No. Appearing: 1 (1) Save As: M30 Morale: 11 Treasure Type: Nil Intelligence: 14 Alignment: Chaotic XP Value: 4,800 Monster Type: Planar Monster, Enchanted (Very Rare). In the elemental plane of Air, the rulers of the djinn are known as pashas. They appear as very large normal djinn. A pasha cannot be affected by normal weapons, or even by weapons of less than +2 enchantment.",
+      "attacks": "1 weapon",
+      "damage": "By weapon or special",
+      "appearing": "1d6 (2d2)",
+      "saveAs": "T (level = HD)",
+      "morale": 7,
+      "treasure": "(U + V), F",
+      "intelligence": 12,
+      "alignment": "Neutral XP Value by HD: 1** = 16 2** = 30 3** = 65 4** = 175 5** = 425 6*** = 950 7*** = 1,650 8**** = 2,850 9**** = 3,700 10***** = 4,750 11***** = 5,100 12****** = 6,500",
+      "xpValue": 0,
+      "terrain": "Hill, Open.",
+      "monsterType": "Undead, Enchanted (Very Rare).",
+      "description": "Attacks: Ectoplasmic Net; Gaze (Paralysis); Aging damage per blow. Defenses: Immune to all spells except those affecting evil; harmed only by +2 or better weapons; saving throw vs. turning/destruction (spells). Harpies typically make their nests in out-ofthe-way places where there is a certain amount of human traffic: beside mountain passes along caravan routes, on small hills along trade routes, etc. The harpies try to lure all travelers to their death.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -1217,618 +1469,6 @@
       "terrain": "",
       "monsterType": "",
       "description": "White Small Large Huge Armor Class: 3 1 -1 Hit Dice: 6(L) 9*(L) 12(L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Blue (Small)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Blue (Small)"
-      }
-    },
-    "system": {
-      "ac": 0,
-      "hd": "9",
-      "hp": 9,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F9 F27 F36",
-      "morale": 9,
-      "treasure": "H Hx2, I H x 3 , I x 2",
-      "intelligence": 9,
-      "alignment": "Neutral",
-      "xpValue": 2,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Blue (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Blue (Large)"
-      }
-    },
-    "system": {
-      "ac": 2,
-      "hd": "13+3",
-      "hp": 133,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F9 F27 F36",
-      "morale": 9,
-      "treasure": "H Hx2, I H x 3 , I x 2",
-      "intelligence": 12,
-      "alignment": "Neutral",
-      "xpValue": 300,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Blue (Huge)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Blue (Huge)"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "18",
-      "hp": 18,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M)",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F9 F27 F36",
-      "morale": 10,
-      "treasure": "H Hx2, I H x 3 , I x 2",
-      "intelligence": 15,
-      "alignment": "Neutral",
-      "xpValue": 4,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 0 - 2 - 4 Hit Dice: 9 (L) 13 + 3*(L) 18 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 100'x 5' 150'x 5' 200'x 5(F M) No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Black (Small)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Black (Small)"
-      }
-    },
-    "system": {
-      "ac": 2,
-      "hd": "7",
-      "hp": 7,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F7 F21 F36",
-      "morale": 8,
-      "treasure": "H H x 2 , I H x 3 , I x 2",
-      "intelligence": 9,
-      "alignment": "Chaotic",
-      "xpValue": 1,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Black (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Black (Large)"
-      }
-    },
-    "system": {
-      "ac": 0,
-      "hd": "10+3",
-      "hp": 103,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F7 F21 F36",
-      "morale": 9,
-      "treasure": "H H x 2 , I H x 3 , I x 2",
-      "intelligence": 12,
-      "alignment": "Chaotic",
-      "xpValue": 250,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Black (Huge)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Black (Huge)"
-      }
-    },
-    "system": {
-      "ac": 2,
-      "hd": "14",
-      "hp": 14,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F7 F21 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I H x 3 , I x 2",
-      "intelligence": 15,
-      "alignment": "Chaotic",
-      "xpValue": 3,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Red (Small)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Red (Small)"
-      }
-    },
-    "system": {
-      "ac": 1,
-      "hd": "10",
-      "hp": 10,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
-      "damage": "See below See below See below",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F10 F30 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 9,
-      "alignment": "Chaotic",
-      "xpValue": 2,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Red (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Red (Large)"
-      }
-    },
-    "system": {
-      "ac": 3,
-      "hd": "15",
-      "hp": 15,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
-      "damage": "See below See below See below",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F10 F30 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 12,
-      "alignment": "Chaotic",
-      "xpValue": 500,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Red (Huge)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Red (Huge)"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "20",
-      "hp": 20,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
-      "damage": "See below See below See below",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F10 F30 F36",
-      "morale": 11,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 15,
-      "alignment": "Chaotic",
-      "xpValue": 4,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Green (Small)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Green (Small)"
-      }
-    },
-    "system": {
-      "ac": 1,
-      "hd": "8",
-      "hp": 8,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F8 F24 F36",
-      "morale": 9,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 9,
-      "alignment": "Chaotic",
-      "xpValue": 1,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Green (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Green (Large)"
-      }
-    },
-    "system": {
-      "ac": 1,
-      "hd": "12",
-      "hp": 12,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F8 F24 F36",
-      "morale": 9,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 12,
-      "alignment": "Chaotic",
-      "xpValue": 750,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Green (Huge)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Green (Huge)"
-      }
-    },
-    "system": {
-      "ac": 3,
-      "hd": "16",
-      "hp": 16,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F8 F24 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 15,
-      "alignment": "Chaotic",
-      "xpValue": 3,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Gold (Small)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Gold (Small)"
-      }
-    },
-    "system": {
-      "ac": 2,
-      "hd": "11",
-      "hp": 11,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F11 F33 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 9,
-      "alignment": "Lawful",
-      "xpValue": 2,
-      "terrain": "",
-      "monsterType": "Dragon (Rare).",
-      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Gold (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Gold (Large)"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "16+3",
-      "hp": 163,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F11 F33 F36",
-      "morale": 10,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 12,
-      "alignment": "Lawful",
-      "xpValue": 700,
-      "terrain": "",
-      "monsterType": "Dragon (Rare).",
-      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Gold (Huge)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Gold (Huge)"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "22",
-      "hp": 22,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
-      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
-      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
-      "saveAs": "F11 F33 F36",
-      "morale": 11,
-      "treasure": "H H x 2 , I Hx3, I x 2",
-      "intelligence": 15,
-      "alignment": "Lawful",
-      "xpValue": 5,
-      "terrain": "",
-      "monsterType": "Dragon (Rare).",
-      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Variant 1",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Variant 1"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "4",
-      "hp": 4,
-      "move": {
-        "dungeon": 150,
-        "outdoor": 50
-      },
-      "attacks": "1 weapon or hand",
-      "damage": "By weapon or 1d6 + 1 No. Appearing 1d8 (6d8)",
-      "appearing": "See below",
-      "saveAs": "F4",
-      "morale": 810,
-      "treasure": "(V) I, L, M, N, O",
-      "intelligence": 12,
-      "alignment": "Any (usually Lawful)",
-      "xpValue": 175,
-      "terrain": "Any.",
-      "monsterType": "Human (Rare). Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
-      "description": "Mystic Armor Class: 6 Hit Dice: 4(d6)(M) Move: 150'(50') Attacks: 1 weapon or hand Damage: By weapon or ld6 + 1 No. Appearing 1 d 8 (6d8) Save As: F4 Morale: 8 or 10 (see below) Treasure Type: (V) I, L, M, N, O Intelligence: 12 Alignment: Any (usually Lawful) XP Value: 175 Leader Armor Class: 3 Hit Dice: 7 (d6) (M) Move: 180' (60') Attacks: 1 weapon or 2 hands Damage: By weapon or 1d10/ 1d10 No.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Variant 2",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Variant 2"
-      }
-    },
-    "system": {
-      "ac": 3,
-      "hd": "7",
-      "hp": 7,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "1 weapon or 2 hands",
-      "damage": "By weapon or 1d10/ 1d10",
-      "appearing": "See below",
-      "saveAs": "F6",
-      "morale": 10,
-      "treasure": "I, L, M, N, O",
-      "intelligence": 12,
-      "alignment": "Any (usually Lawful)",
-      "xpValue": 1650,
-      "terrain": "Any.",
-      "monsterType": "Human (Rare). Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
-      "description": "Mystic Armor Class: 6 Hit Dice: 4(d6)(M) Move: 150'(50') Attacks: 1 weapon or hand Damage: By weapon or ld6 + 1 No. Appearing 1 d 8 (6d8) Save As: F4 Morale: 8 or 10 (see below) Treasure Type: (V) I, L, M, N, O Intelligence: 12 Alignment: Any (usually Lawful) XP Value: 175 Leader Armor Class: 3 Hit Dice: 7 (d6) (M) Move: 180' (60') Attacks: 1 weapon or 2 hands Damage: By weapon or 1d10/ 1d10 No.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -2268,42 +1908,6 @@
     }
   },
   {
-    "name": "Fish, Giant (Giant)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Fish, Giant (Giant)"
-      }
-    },
-    "system": {
-      "ac": 0,
-      "hd": "10+2",
-      "hp": 102,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 bite 4 spines + poison (special) 1 bite",
-      "damage": "1d6 1d4 each + poison 2dlO",
-      "appearing": "0 (2d4) 0(2d4) 0(2d10)",
-      "saveAs": "F1 F3 F5",
-      "morale": 9,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 1,
-      "alignment": "Neutral",
-      "xpValue": 1,
-      "terrain": "River /Lake, Ocean.",
-      "monsterType": "Giant Animal (Common).",
-      "description": "Giant Bass Giant Rockfish Giant Sturgeon Armor Class: 7 1 0 Hit Dice: 2 (L) 5 + 5*(L) 10 + 2*(L) Move (swim): 120' (40') 180' (60') 180' (60') Attacks: 1 bite 4 spines + poison (special) 1 bite Damage: 1d6 1d4 each + poison 2dlO No. Appearing: 0 (2d4) 0(2d4) 0(2d10) Save As: F1 F3 F5 Morale: 8 8 9 Treasure Type: Nil Nil Nil Intelligence: 1 1 1 Alignment: Neutral Neutral Neutral XP Value: 20 400 1,900 four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Fish, Giant (Bass)",
     "type": "monster",
     "flags": {
@@ -2330,6 +1934,42 @@
       "intelligence": 1,
       "alignment": "Neutral",
       "xpValue": 400,
+      "terrain": "River /Lake, Ocean.",
+      "monsterType": "Giant Animal (Common).",
+      "description": "Giant Bass Giant Rockfish Giant Sturgeon Armor Class: 7 1 0 Hit Dice: 2 (L) 5 + 5*(L) 10 + 2*(L) Move (swim): 120' (40') 180' (60') 180' (60') Attacks: 1 bite 4 spines + poison (special) 1 bite Damage: 1d6 1d4 each + poison 2dlO No. Appearing: 0 (2d4) 0(2d4) 0(2d10) Save As: F1 F3 F5 Morale: 8 8 9 Treasure Type: Nil Nil Nil Intelligence: 1 1 1 Alignment: Neutral Neutral Neutral XP Value: 20 400 1,900 four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Fish, Giant (Giant)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Fish, Giant (Giant)"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "10+2",
+      "hp": 102,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 bite 4 spines + poison (special) 1 bite",
+      "damage": "1d6 1d4 each + poison 2dlO",
+      "appearing": "0 (2d4) 0(2d4) 0(2d10)",
+      "saveAs": "F1 F3 F5",
+      "morale": 9,
+      "treasure": "Nil Nil Nil",
+      "intelligence": 1,
+      "alignment": "Neutral",
+      "xpValue": 1,
       "terrain": "River /Lake, Ocean.",
       "monsterType": "Giant Animal (Common).",
       "description": "Giant Bass Giant Rockfish Giant Sturgeon Armor Class: 7 1 0 Hit Dice: 2 (L) 5 + 5*(L) 10 + 2*(L) Move (swim): 120' (40') 180' (60') 180' (60') Attacks: 1 bite 4 spines + poison (special) 1 bite Damage: 1d6 1d4 each + poison 2dlO No. Appearing: 0 (2d4) 0(2d4) 0(2d10) Save As: F1 F3 F5 Morale: 8 8 9 Treasure Type: Nil Nil Nil Intelligence: 1 1 1 Alignment: Neutral Neutral Neutral XP Value: 20 400 1,900 four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring",
@@ -2736,32 +2376,140 @@
     }
   },
   {
-    "name": "Golem (Wood)",
+    "name": "Gold (Huge)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "_Wood_",
-        "key": "Golem (Wood)"
+        "variant": "",
+        "key": "Gold (Huge)"
       }
     },
     "system": {
-      "ac": 7,
-      "hd": "2+2",
+      "ac": 6,
+      "hd": "22",
       "hp": 22,
       "move": {
-        "dungeon": 120,
-        "outdoor": 40
+        "dungeon": 90,
+        "outdoor": 30
       },
-      "attacks": "1 fist",
-      "damage": "1d8",
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F11 F33 F36",
+      "morale": 11,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 15,
+      "alignment": "Lawful",
+      "xpValue": 5,
+      "terrain": "",
+      "monsterType": "Dragon (Rare).",
+      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Gold (Large)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gold (Large)"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "16+3",
+      "hp": 163,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F11 F33 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 12,
+      "alignment": "Lawful",
+      "xpValue": 700,
+      "terrain": "",
+      "monsterType": "Dragon (Rare).",
+      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Gold (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gold (Small)"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "11",
+      "hp": 11,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F11 F33 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 9,
+      "alignment": "Lawful",
+      "xpValue": 2,
+      "terrain": "",
+      "monsterType": "Dragon (Rare).",
+      "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Golem (Amber)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Amber_",
+        "key": "Golem (Amber)"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "10",
+      "hp": 10,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "2 claws/",
+      "damage": "2d6/2d6/",
       "appearing": "1(1)",
-      "saveAs": "F1",
+      "saveAs": "F5",
       "morale": 12,
       "treasure": "Nil",
       "intelligence": 4,
       "alignment": "Neutral",
-      "xpValue": 35,
+      "xpValue": 1750,
       "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
       "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
       "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
@@ -2808,32 +2556,32 @@
     }
   },
   {
-    "name": "Golem (Obsidian)",
+    "name": "Golem (Bronze)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "_Obsidian_",
-        "key": "Golem (Obsidian)"
+        "variant": "_Bronze_",
+        "key": "Golem (Bronze)"
       }
     },
     "system": {
-      "ac": 3,
-      "hd": "6",
-      "hp": 6,
+      "ac": 0,
+      "hd": "20",
+      "hp": 20,
       "move": {
-        "dungeon": 120,
-        "outdoor": 40
+        "dungeon": 240,
+        "outdoor": 80
       },
-      "attacks": "1 weapon or",
-      "damage": "2d4",
+      "attacks": "1 fist",
+      "damage": "3d10+special",
       "appearing": "1(1)",
-      "saveAs": "F3",
+      "saveAs": "F10",
       "morale": 12,
       "treasure": "Nil",
       "intelligence": 4,
       "alignment": "Neutral",
-      "xpValue": 500,
+      "xpValue": 5975,
       "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
       "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
       "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
@@ -2880,32 +2628,32 @@
     }
   },
   {
-    "name": "Golem (Amber)",
+    "name": "Golem (Obsidian)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "_Amber_",
-        "key": "Golem (Amber)"
+        "variant": "_Obsidian_",
+        "key": "Golem (Obsidian)"
       }
     },
     "system": {
-      "ac": 6,
-      "hd": "10",
-      "hp": 10,
+      "ac": 3,
+      "hd": "6",
+      "hp": 6,
       "move": {
-        "dungeon": 180,
-        "outdoor": 60
+        "dungeon": 120,
+        "outdoor": 40
       },
-      "attacks": "2 claws/",
-      "damage": "2d6/2d6/",
+      "attacks": "1 weapon or",
+      "damage": "2d4",
       "appearing": "1(1)",
-      "saveAs": "F5",
+      "saveAs": "F3",
       "morale": 12,
       "treasure": "Nil",
       "intelligence": 4,
       "alignment": "Neutral",
-      "xpValue": 1750,
+      "xpValue": 500,
       "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
       "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
       "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
@@ -2916,32 +2664,32 @@
     }
   },
   {
-    "name": "Golem (Bronze)",
+    "name": "Golem (Wood)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "_Bronze_",
-        "key": "Golem (Bronze)"
+        "variant": "_Wood_",
+        "key": "Golem (Wood)"
       }
     },
     "system": {
-      "ac": 0,
-      "hd": "20",
-      "hp": 20,
+      "ac": 7,
+      "hd": "2+2",
+      "hp": 22,
       "move": {
-        "dungeon": 240,
-        "outdoor": 80
+        "dungeon": 120,
+        "outdoor": 40
       },
       "attacks": "1 fist",
-      "damage": "3d10+special",
+      "damage": "1d8",
       "appearing": "1(1)",
-      "saveAs": "F10",
+      "saveAs": "F1",
       "morale": 12,
       "treasure": "Nil",
       "intelligence": 4,
       "alignment": "Neutral",
-      "xpValue": 5975,
+      "xpValue": 35,
       "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
       "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
       "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
@@ -2981,6 +2729,114 @@
       "terrain": "Cavern, Ruins.",
       "monsterType": "Lowlife (Common).",
       "description": "Armor Class: 9 Hit Dice: 1 per 5' square (M) Move: 0 Attacks: 1 Damage: Special No. Appearing: Not Applicable Save As: Normal Man Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: Neutral XP Value: 10 Monster Type: Lowlife (Common). Green slime cannot be harmed by any attacks except fire or cold. It dissolves cloth or leather instantly, wood and metal in 6 rounds, but cannot dissolve stone. Green slime often clings to walls and ceilings and drops down in a surprise attack.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Green (Huge)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Green (Huge)"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "16",
+      "hp": 16,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F8 F24 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 15,
+      "alignment": "Chaotic",
+      "xpValue": 3,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Green (Large)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Green (Large)"
+      }
+    },
+    "system": {
+      "ac": 1,
+      "hd": "12",
+      "hp": 12,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F8 F24 F36",
+      "morale": 9,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 12,
+      "alignment": "Chaotic",
+      "xpValue": 750,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Green (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Green (Small)"
+      }
+    },
+    "system": {
+      "ac": 1,
+      "hd": "8",
+      "hp": 8,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+      "damage": "See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F8 F24 F36",
+      "morale": 9,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 1,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: 1 -1 - 3 Hit Dice: 8 (L) 12* (L) 16 (L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -3053,42 +2909,6 @@
       "terrain": "",
       "monsterType": "Demihuman (Common). Halflings can also appear as NPCs. Otherwise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or underbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
       "description": "Armor Class: 7 (or 5, see below) Hit Dice: 1-1 Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 3d6 (5d8) Save As: H1 Morale: 8 or 10 (see below) Treasure Type: (P + S) B Intelligence: 11 Alignment: Lawful XP Value: 5 ||Banshee*|Ghost*|Poltergeist*| |---|---|---|---| |Armor Class: |- 3 - |2 |-1 | |Hit Dice:|13|14|12| ||(M)|(M)|(M)| |Move (Flying):|60' (20')|90' (30')|60' (20')| |Attacks:|1 touch/ |1 touch/ |2 missiles| ||1 gaze |1 gaze || |Damage:|Age |Age |Age 10 | ||1d4 x 10|1d4 x 10|years +| ||",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "DM Checklist:",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "DM Checklist:"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "1",
-      "hp": 1,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 weapon",
-      "damage": "By weapon or special",
-      "appearing": "1d6 (2d2)",
-      "saveAs": "T (level = HD)",
-      "morale": 7,
-      "treasure": "(U + V), F",
-      "intelligence": 12,
-      "alignment": "Neutral XP Value by HD: 1** = 16 2** = 30 3** = 65 4** = 175 5** = 425 6*** = 950 7*** = 1,650 8**** = 2,850 9**** = 3,700 10***** = 4,750 11***** = 5,100 12****** = 6,500",
-      "xpValue": 0,
-      "terrain": "Hill, Open.",
-      "monsterType": "Undead, Enchanted (Very Rare).",
-      "description": "Attacks: Ectoplasmic Net; Gaze (Paralysis); Aging damage per blow. Defenses: Immune to all spells except those affecting evil; harmed only by +2 or better weapons; saving throw vs. turning/destruction (spells). Harpies typically make their nests in out-ofthe-way places where there is a certain amount of human traffic: beside mountain passes along caravan routes, on small hills along trade routes, etc. The harpies try to lure all travelers to their death.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -3348,42 +3168,6 @@
     }
   },
   {
-    "name": "Invisible Stalker (Sshai)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Invisible Stalker (Sshai)"
-      }
-    },
-    "system": {
-      "ac": 3,
-      "hd": "8",
-      "hp": 8,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 blow",
-      "damage": "4d4",
-      "appearing": "1(1)",
-      "saveAs": "F8",
-      "morale": 12,
-      "treasure": "Nil",
-      "intelligence": 11,
-      "alignment": "Neutral",
-      "xpValue": 1200,
-      "terrain": "Cavern, Hill, Mountain, Wood.",
-      "monsterType": "Planar Monster, Enchanted (Very Rare).",
-      "description": "Armor Class: 3 Hit Dice: 8* (M) Move: 120' (40') Attacks: 1 blow Damage: 4d4 No. Appearing: 1(1) Save As: F8 Morale: 12 Treasure Type: Nil Intelligence: 11 Alignment: Neutral XP Value: 1,200 Monster Type: Planar Monster, Enchanted (Very Rare). A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Insect Swarm",
     "type": "monster",
     "flags": {
@@ -3413,6 +3197,42 @@
       "terrain": "Plane of Earth.",
       "monsterType": "Planar Monster (Very Rare). The kryst are intelligent beings made of crystalline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the elemental plane of Earth.",
       "description": "An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Invisible Stalker (Sshai)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Invisible Stalker (Sshai)"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "8",
+      "hp": 8,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 blow",
+      "damage": "4d4",
+      "appearing": "1(1)",
+      "saveAs": "F8",
+      "morale": 12,
+      "treasure": "Nil",
+      "intelligence": 11,
+      "alignment": "Neutral",
+      "xpValue": 1200,
+      "terrain": "Cavern, Hill, Mountain, Wood.",
+      "monsterType": "Planar Monster, Enchanted (Very Rare).",
+      "description": "Armor Class: 3 Hit Dice: 8* (M) Move: 120' (40') Attacks: 1 blow Damage: 4d4 No. Appearing: 1(1) Save As: F8 Morale: 12 Treasure Type: Nil Intelligence: 11 Alignment: Neutral XP Value: 1,200 Monster Type: Planar Monster, Enchanted (Very Rare). A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -3492,42 +3312,6 @@
     }
   },
   {
-    "name": "Lizard, Giant",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Lizard, Giant"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "3+1",
-      "hp": 31,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 bite 1 bite 1 bite/1 horn 2 claws/1 bite",
-      "damage": "1d8 1d10 2d4/1d6 `1d4/1d4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4)",
-      "appearing": "",
-      "saveAs": "F2 F3 F3 F3",
-      "morale": 7776,
-      "treasure": "U U U V",
-      "intelligence": 2222,
-      "alignment": "Neutral Neutral Neutral Neutral",
-      "xpValue": 50,
-      "terrain": "Cavern, Desert, Woods.",
-      "monsterType": "Giant Animal (Common). Gecko: A gecko is a 5' long lizard colored pale blue with orange-brown spots. Geckos are nocturnal carnivores. They hunt by climbing walls or trees with their specially adapted feet, then dropping on their prey to attack.",
-      "description": "Horned Gecko Draco Chameleon Tuatara Armor Class: 5 5 2 4 Hit Dice: 3 +1 (M) 4 + 2(M) 5*(L) 6(L) Move: 120' (40') 120' (40') 120' (40') 90' (30') Glide: 150' (50') Attacks: 1 bite 1 bite 1 bite/1 horn 2 claws/1 bite Damage: 1d8 1d10 2d4/ld6 `1d4/ld4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4) Save As: F2 F3 F3 F3 Morale: 7 7 7 6 Treasure Type: U U U V Intelligence: 2 2 2 2 Alignment: Neutral Neutral Neutral Neutral XP Value: 50 125 300 275 sects, but will settle for human prey in lean times.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Lizard Man",
     "type": "monster",
     "flags": {
@@ -3557,6 +3341,42 @@
       "terrain": "Cavern, River/Lake, Swamps.",
       "monsterType": "Humanoid (Common).",
       "description": "Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. Armor Class: 5 Hit Dice: 2 + 1 (M) Move: 60' (20') Swimming: 120' (40') Attacks: 1 weapon Damage: By weapon + 1 No. Appearing: 2d4 (6d6) Save As: F2 Morale: 12 Treasure Type: D Intelligence: 6 Alignment: Neutral XP Value: 25 One in ten will speak a little Common. PCs can negotiate with lizard men that can talk.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Lizard, Giant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lizard, Giant"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "3+1",
+      "hp": 31,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 bite 1 bite 1 bite/1 horn 2 claws/1 bite",
+      "damage": "1d8 1d10 2d4/1d6 `1d4/1d4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4)",
+      "appearing": "",
+      "saveAs": "F2 F3 F3 F3",
+      "morale": 7776,
+      "treasure": "U U U V",
+      "intelligence": 2222,
+      "alignment": "Neutral Neutral Neutral Neutral",
+      "xpValue": 50,
+      "terrain": "Cavern, Desert, Woods.",
+      "monsterType": "Giant Animal (Common). Gecko: A gecko is a 5' long lizard colored pale blue with orange-brown spots. Geckos are nocturnal carnivores. They hunt by climbing walls or trees with their specially adapted feet, then dropping on their prey to attack.",
+      "description": "Horned Gecko Draco Chameleon Tuatara Armor Class: 5 5 2 4 Hit Dice: 3 +1 (M) 4 + 2(M) 5*(L) 6(L) Move: 120' (40') 120' (40') 120' (40') 90' (30') Glide: 150' (50') Attacks: 1 bite 1 bite 1 bite/1 horn 2 claws/1 bite Damage: 1d8 1d10 2d4/ld6 `1d4/ld4/2d6` No. Appearing 1d6(ldl0) 1d4 (1d8) 1d3(1d6) 1d2 (1d4) Save As: F2 F3 F3 F3 Morale: 7 7 7 6 Treasure Type: U U U V Intelligence: 2 2 2 2 Alignment: Neutral Neutral Neutral Neutral XP Value: 50 125 300 275 sects, but will settle for human prey in lean times.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -3960,6 +3780,42 @@
     }
   },
   {
+    "name": "Pegasus",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Pegasus"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "2+2",
+      "hp": 22,
+      "move": {
+        "dungeon": 240,
+        "outdoor": 80
+      },
+      "attacks": "2 hooves",
+      "damage": "1d6/1d6",
+      "appearing": "0(ldl2)",
+      "saveAs": "F2",
+      "morale": 8,
+      "treasure": "Nil",
+      "intelligence": 4,
+      "alignment": "Lawful",
+      "xpValue": 25,
+      "terrain": "Hill, Mountain, Open. _Load:_ 3,000 cn at full speed; 6,000 cn at half speed.",
+      "monsterType": "Monster (Rare).",
+      "description": "Armor Class: 6 Hit Dice: 2 + 2 (L) Move: 240' (80') Flying: 480' (160') Attacks: 2 hooves Damage: 1d6/ld6 No. Appearing: 0(ldl2) Save As: F2 Morale: 8 Treasure Type: Nil Intelligence: 4 Alignment: Lawful XP Value: 25 saving throw vs. spells; if successful, the turn effect is reflected back onto the cleric, who must also make a saving throw vs. spells or be paralyzed with fear for 2d6 rounds. ###### DM Checklist: Attacks: Sight = fear; Special for each Defenses: Ethereal at first; saving throw vs.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Phantom (Apparition*)",
     "type": "monster",
     "flags": {
@@ -4068,35 +3924,35 @@
     }
   },
   {
-    "name": "Pegasus",
+    "name": "Plesiosaurus",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Pegasus"
+        "key": "Plesiosaurus"
       }
     },
     "system": {
-      "ac": 6,
-      "hd": "2+2",
-      "hp": 22,
+      "ac": 7,
+      "hd": "16",
+      "hp": 16,
       "move": {
-        "dungeon": 240,
-        "outdoor": 80
+        "dungeon": 150,
+        "outdoor": 50
       },
-      "attacks": "2 hooves",
-      "damage": "1d6/1d6",
-      "appearing": "0(ldl2)",
-      "saveAs": "F2",
-      "morale": 8,
+      "attacks": "1 bite",
+      "damage": "4d6",
+      "appearing": "0 (1d3)",
+      "saveAs": "F8",
+      "morale": 9,
       "treasure": "Nil",
-      "intelligence": 4,
-      "alignment": "Lawful",
-      "xpValue": 25,
-      "terrain": "Hill, Mountain, Open. _Load:_ 3,000 cn at full speed; 6,000 cn at half speed.",
-      "monsterType": "Monster (Rare).",
-      "description": "Armor Class: 6 Hit Dice: 2 + 2 (L) Move: 240' (80') Flying: 480' (160') Attacks: 2 hooves Damage: 1d6/ld6 No. Appearing: 0(ldl2) Save As: F2 Morale: 8 Treasure Type: Nil Intelligence: 4 Alignment: Lawful XP Value: 25 saving throw vs. spells; if successful, the turn effect is reflected back onto the cleric, who must also make a saving throw vs. spells or be paralyzed with fear for 2d6 rounds. ###### DM Checklist: Attacks: Sight = fear; Special for each Defenses: Ethereal at first; saving throw vs.",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 1850,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Armor Class: 7 Hit Dice: 16 (L) Move: 150' 50' Attacks: 1 bite Damage: 4d6 No. Appearing: 0 (1d3) Save As: F8 Morale: 9 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 1,850 Load: A pteranodon can carry 2,000 cn at full speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They Barding Multiplier: x 1.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -4104,19 +3960,19 @@
     }
   },
   {
-    "name": "Pterosaur (Small)",
+    "name": "Pterosaur ((Pteranodon))",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Pterosaur (Small)"
+        "key": "Pterosaur ((Pteranodon))"
       }
     },
     "system": {
       "ac": 7,
-      "hd": "1",
-      "hp": 1,
+      "hd": "60",
+      "hp": 60,
       "move": {
         "dungeon": 0,
         "outdoor": 0
@@ -4130,78 +3986,6 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 10,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Pterosaur (Medium)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur (Medium)"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "5",
-      "hp": 5,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 8,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 175,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Pterosaur (Large)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur (Large)"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "10",
-      "hp": 10,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 9,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 1,
       "terrain": "Ethereal Plane, Wormholes (only).",
       "monsterType": "Prehistoric Animal (Very Rare).",
       "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
@@ -4248,42 +4032,6 @@
     }
   },
   {
-    "name": "Pterosaur ((Pteranodon))",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur ((Pteranodon))"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "60",
-      "hp": 60,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 7,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 10,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Pterosaur ((Pterosaur))",
     "type": "monster",
     "flags": {
@@ -4320,35 +4068,107 @@
     }
   },
   {
-    "name": "Plesiosaurus",
+    "name": "Pterosaur (Large)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Plesiosaurus"
+        "key": "Pterosaur (Large)"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "10",
+      "hp": 10,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 beak 1 beak 1 beak",
+      "damage": "1d3 1d2 3d6",
+      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
+      "saveAs": "F1 F3 F5",
+      "morale": 9,
+      "treasure": "Nil Nil Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 1,
+      "terrain": "Ethereal Plane, Wormholes (only).",
+      "monsterType": "Prehistoric Animal (Very Rare).",
+      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Pterosaur (Medium)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Pterosaur (Medium)"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "5",
+      "hp": 5,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 beak 1 beak 1 beak",
+      "damage": "1d3 1d2 3d6",
+      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
+      "saveAs": "F1 F3 F5",
+      "morale": 8,
+      "treasure": "Nil Nil Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 175,
+      "terrain": "Ethereal Plane, Wormholes (only).",
+      "monsterType": "Prehistoric Animal (Very Rare).",
+      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Pterosaur (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Pterosaur (Small)"
       }
     },
     "system": {
       "ac": 7,
-      "hd": "16",
-      "hp": 16,
+      "hd": "1",
+      "hp": 1,
       "move": {
-        "dungeon": 150,
-        "outdoor": 50
+        "dungeon": 0,
+        "outdoor": 0
       },
-      "attacks": "1 bite",
-      "damage": "4d6",
-      "appearing": "0 (1d3)",
-      "saveAs": "F8",
-      "morale": 9,
-      "treasure": "Nil",
+      "attacks": "1 beak 1 beak 1 beak",
+      "damage": "1d3 1d2 3d6",
+      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
+      "saveAs": "F1 F3 F5",
+      "morale": 7,
+      "treasure": "Nil Nil Nil",
       "intelligence": 2,
       "alignment": "Neutral",
-      "xpValue": 1850,
-      "terrain": "",
-      "monsterType": "",
-      "description": "Armor Class: 7 Hit Dice: 16 (L) Move: 150' 50' Attacks: 1 bite Damage: 4d6 No. Appearing: 0 (1d3) Save As: F8 Morale: 9 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 1,850 Load: A pteranodon can carry 2,000 cn at full speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They Barding Multiplier: x 1.",
+      "xpValue": 10,
+      "terrain": "Ethereal Plane, Wormholes (only).",
+      "monsterType": "Prehistoric Animal (Very Rare).",
+      "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -4392,42 +4212,6 @@
     }
   },
   {
-    "name": "Rat (Normal)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Rat (Normal)"
-      }
-    },
-    "system": {
-      "ac": 9,
-      "hd": "1",
-      "hp": 1,
-      "move": {
-        "dungeon": 60,
-        "outdoor": 20
-      },
-      "attacks": "1 bite 1 bite per pack each",
-      "damage": "1d6 + 1d3 + disease disease",
-      "appearing": "1d10 x 5 3d6 (1d10 x 2) (3dlO)",
-      "saveAs": "Normal Man Normal Man",
-      "morale": 5,
-      "treasure": "L L",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 2,
-      "terrain": "Normal Rats: Any. Giant Rats: Cavern, Ruins.",
-      "monsterType": "Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
-      "description": "Normal Giant Armor Class: 9 7 Hit Dice: 1 hit 1/2(l-4 hit point(S) points) (S) Move: 60' (20') 120' (40') Swimming: 30' (10') 60' (20') Attacks: 1 bite 1 bite per pack each Damage: 1d6 + 1d3 + disease disease No. Appearing: 1d10 x 5 3d6 (1d10 x 2) (3dlO) Save As: Normal Man Normal Man Morale: 5 8 Treasure Type: L L Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 2 5 Monster Type: Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Rat (Giant)",
     "type": "monster",
     "flags": {
@@ -4464,19 +4248,199 @@
     }
   },
   {
-    "name": "Roc (Small)",
+    "name": "Rat (Normal)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Roc (Small)"
+        "key": "Rat (Normal)"
       }
     },
     "system": {
-      "ac": 4,
-      "hd": "6",
-      "hp": 6,
+      "ac": 9,
+      "hd": "1",
+      "hp": 1,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 bite 1 bite per pack each",
+      "damage": "1d6 + 1d3 + disease disease",
+      "appearing": "1d10 x 5 3d6 (1d10 x 2) (3dlO)",
+      "saveAs": "Normal Man Normal Man",
+      "morale": 5,
+      "treasure": "L L",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 2,
+      "terrain": "Normal Rats: Any. Giant Rats: Cavern, Ruins.",
+      "monsterType": "Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
+      "description": "Normal Giant Armor Class: 9 7 Hit Dice: 1 hit 1/2(l-4 hit point(S) points) (S) Move: 60' (20') 120' (40') Swimming: 30' (10') 60' (20') Attacks: 1 bite 1 bite per pack each Damage: 1d6 + 1d3 + disease disease No. Appearing: 1d10 x 5 3d6 (1d10 x 2) (3dlO) Save As: Normal Man Normal Man Morale: 5 8 Treasure Type: L L Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 2 5 Monster Type: Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Red (Huge)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Red (Huge)"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "20",
+      "hp": 20,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
+      "damage": "See below See below See below",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F10 F30 F36",
+      "morale": 11,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 15,
+      "alignment": "Chaotic",
+      "xpValue": 4,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Red (Large)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Red (Large)"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "15",
+      "hp": 15,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
+      "damage": "See below See below See below",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F10 F30 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 12,
+      "alignment": "Chaotic",
+      "xpValue": 500,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Red (Small)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Red (Small)"
+      }
+    },
+    "system": {
+      "ac": 1,
+      "hd": "10",
+      "hp": 10,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30'",
+      "damage": "See below See below See below",
+      "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+      "saveAs": "F10 F30 F36",
+      "morale": 10,
+      "treasure": "H H x 2 , I Hx3, I x 2",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 2,
+      "terrain": "",
+      "monsterType": "",
+      "description": "Small Large Huge Armor Class: -1 - 3 - 5 Hit Dice: 10 (L) 15* (L) 20 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air Up to 6: Up to 6: Up to 6: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30' Damage: See below See below See below No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Rhagodessa",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Rhagodessa"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4+2",
+      "hp": 42,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 leg/1 bite",
+      "damage": "0 + suckers/2d8",
+      "appearing": "1d4 (1d6)",
+      "saveAs": "F2",
+      "morale": 9,
+      "treasure": "U",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 125,
+      "terrain": "Cavern, Ruins; Hill, Mountain, Woods, (after dark).",
+      "monsterType": "Monster (Rare).",
+      "description": "Armor Class: 5 Hit Dice: 4 + 2 (L) Move: 150' (50') Attacks: 1 leg/1 bite Damage: 0 + suckers/2d8 No. Appearing: 1d4 (1d6) Save As: F2 Morale: 9 Treasure Type: U Intelligence: 0 Alignment: Neutral XP Value: 125 Monster Type: Monster (Rare). A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Roc (Giant)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Roc (Giant)"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "12",
+      "hp": 12,
       "move": {
         "dungeon": 60,
         "outdoor": 20
@@ -4485,11 +4449,11 @@
       "damage": "1d4 + 1/1d4 + 1/2d6 `1d8/1d8/2d0 3d6/3d6/8d6`",
       "appearing": "0(ldl2) 0(1d8) 0(1)",
       "saveAs": "F3 F6 F18",
-      "morale": 8,
+      "morale": 10,
       "treasure": "1 1",
       "intelligence": 2,
       "alignment": "Lawful",
-      "xpValue": 275,
+      "xpValue": 250,
       "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
       "monsterType": "Monster (Rare).",
       "description": "Small Large Giant Armor Class: 4 2 0 Hit Dice: 6(1) 12 (L) 36 (L) Move: 60' (20') 60' (20') 60' (20') Flying: 480' (160') 480' (160') 480'(160') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Damage: 1d4 + l/ld4 + l/2d6 `1d8/ld8/2dl0 3d6/3d6/8d6` No. Appearing: 0(ldl2) 0(ld8) 0(1) Save As: F3 F6 F18 Morale: 8 9 10 Treasure Type: 1 1 Intelligence: 2 2 2 Alignment: Lawful Lawful Lawful XP Value: 275 1,250 6,250 Monster Type: Monster (Rare).",
@@ -4536,19 +4500,19 @@
     }
   },
   {
-    "name": "Roc (Giant)",
+    "name": "Roc (Small)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Roc (Giant)"
+        "key": "Roc (Small)"
       }
     },
     "system": {
-      "ac": 0,
-      "hd": "12",
-      "hp": 12,
+      "ac": 4,
+      "hd": "6",
+      "hp": 6,
       "move": {
         "dungeon": 60,
         "outdoor": 20
@@ -4557,11 +4521,11 @@
       "damage": "1d4 + 1/1d4 + 1/2d6 `1d8/1d8/2d0 3d6/3d6/8d6`",
       "appearing": "0(ldl2) 0(1d8) 0(1)",
       "saveAs": "F3 F6 F18",
-      "morale": 10,
+      "morale": 8,
       "treasure": "1 1",
       "intelligence": 2,
       "alignment": "Lawful",
-      "xpValue": 250,
+      "xpValue": 275,
       "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
       "monsterType": "Monster (Rare).",
       "description": "Small Large Giant Armor Class: 4 2 0 Hit Dice: 6(1) 12 (L) 36 (L) Move: 60' (20') 60' (20') 60' (20') Flying: 480' (160') 480' (160') 480'(160') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Damage: 1d4 + l/ld4 + l/2d6 `1d8/ld8/2dl0 3d6/3d6/8d6` No. Appearing: 0(ldl2) 0(ld8) 0(1) Save As: F3 F6 F18 Morale: 8 9 10 Treasure Type: 1 1 Intelligence: 2 2 2 Alignment: Lawful Lawful Lawful XP Value: 275 1,250 6,250 Monster Type: Monster (Rare).",
@@ -4637,42 +4601,6 @@
       "terrain": "Ruins.",
       "monsterType": "",
       "description": "Terrain: Ruins. Flame* Frost* Armor Class: 2 3 Hit Dice: 8*(L) 12* (L) Move: 120' (40') 120' (40') Attacks: 2 claws/I bite 4 claws/1 bite Damage: `1d4/ld4/ld8` 1d6(x4)/2d6 No. Appearing 1d4 + l (2d4) 1d3(ld3) Save As: F8 F12 Morale: 8 9 Treasure Type: F E Intelligence: 1 1 Alignment: Neutral Chaotic XP Value: 1,200 2,125",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Rhagodessa",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Rhagodessa"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "4+2",
-      "hp": 42,
-      "move": {
-        "dungeon": 150,
-        "outdoor": 50
-      },
-      "attacks": "1 leg/1 bite",
-      "damage": "0 + suckers/2d8",
-      "appearing": "1d4 (1d6)",
-      "saveAs": "F2",
-      "morale": 9,
-      "treasure": "U",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 125,
-      "terrain": "Cavern, Ruins; Hill, Mountain, Woods, (after dark).",
-      "monsterType": "Monster (Rare).",
-      "description": "Armor Class: 5 Hit Dice: 4 + 2 (L) Move: 150' (50') Attacks: 1 leg/1 bite Damage: 0 + suckers/2d8 No. Appearing: 1d4 (1d6) Save As: F2 Morale: 9 Treasure Type: U Intelligence: 0 Alignment: Neutral XP Value: 125 Monster Type: Monster (Rare). A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -4824,42 +4752,6 @@
     }
   },
   {
-    "name": "Shark (Mako)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "_Mako_",
-        "key": "Shark (Mako)"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "4",
-      "hp": 4,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "1 bite",
-      "damage": "2d6",
-      "appearing": "0(2d6)",
-      "saveAs": "F2",
-      "morale": 7,
-      "treasure": "Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 75,
-      "terrain": "Ocean.",
-      "monsterType": "Normal Animal (Common). Great White: Normal Animal (Rare).",
-      "description": "||Bull|Mako|Great White| |---|---|---|---| |Armor Class:|4|4|4| |Hit Dice:|2*(M)|4(M)|8(L)| |Move:|180'(60')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 bite| |Damage:|2d4|2d6|2d10| |No. Appearing:|0(3d6)|0(2d6)|0(ld4)| |Save As:|Fl|F2|F4| |Morale:|7|7|7| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|2| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|25|75|650| Monster Type: Normal Animal (Common). Great White: Normal Animal (Rare). Sharks are predators, feeding mostly on fish.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Shark (Great_ _White)",
     "type": "monster",
     "flags": {
@@ -4886,6 +4778,42 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 650,
+      "terrain": "Ocean.",
+      "monsterType": "Normal Animal (Common). Great White: Normal Animal (Rare).",
+      "description": "||Bull|Mako|Great White| |---|---|---|---| |Armor Class:|4|4|4| |Hit Dice:|2*(M)|4(M)|8(L)| |Move:|180'(60')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 bite| |Damage:|2d4|2d6|2d10| |No. Appearing:|0(3d6)|0(2d6)|0(ld4)| |Save As:|Fl|F2|F4| |Morale:|7|7|7| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|2| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|25|75|650| Monster Type: Normal Animal (Common). Great White: Normal Animal (Rare). Sharks are predators, feeding mostly on fish.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Shark (Mako)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Mako_",
+        "key": "Shark (Mako)"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "4",
+      "hp": 4,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite",
+      "damage": "2d6",
+      "appearing": "0(2d6)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 75,
       "terrain": "Ocean.",
       "monsterType": "Normal Animal (Common). Great White: Normal Animal (Rare).",
       "description": "||Bull|Mako|Great White| |---|---|---|---| |Armor Class:|4|4|4| |Hit Dice:|2*(M)|4(M)|8(L)| |Move:|180'(60')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 bite| |Damage:|2d4|2d6|2d10| |No. Appearing:|0(3d6)|0(2d6)|0(ld4)| |Save As:|Fl|F2|F4| |Morale:|7|7|7| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|2| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|25|75|650| Monster Type: Normal Animal (Common). Great White: Normal Animal (Rare). Sharks are predators, feeding mostly on fish.",
@@ -5040,42 +4968,6 @@
     }
   },
   {
-    "name": "Snake (Spitting)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Snake (Spitting)"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "1",
-      "hp": 1,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "1 bite or 1 spit 1 bite",
-      "damage": "1d3 + poison 1d6",
-      "appearing": "1d6(1d6) 1d6(1d8)",
-      "saveAs": "F1 F1",
-      "morale": 7,
-      "treasure": "Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 13,
-      "terrain": "Any except Arctic. Sea Snake: Ocean.",
-      "monsterType": "Normal Animal (Common).",
-      "description": "Spitting Cobra Giant Racer Armor Class: 7 5 Hit Dice: 1*(S) 2(M) Move: 90' (30') 120' (40') Attacks: 1 bite or 1 spit 1 bite Damage: ld3 + poison 1d6 No. Appearing: 1d6(ld6) 1d6(ld8) Save As: Fl Fl Morale: 7 7 Treasure Type: Nil Nil Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 13 20 Pit Viper Sea Snake 6 6 2*(M) 3*(M) 90' (30') 90' (30') 1 bite 1 bite 1d4 + poison 1 + poison 1d8 (1d8) 0(ld8) Fl F2 7 7 Nil Nil 2 2 Neutral Neutral 25 50 Giant Rattler Rock Python 5 6 4*(M) 5*(L) 120' (40') 90' (30') 2 bites",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Snake (Cobra)",
     "type": "monster",
     "flags": {
@@ -5184,6 +5076,42 @@
     }
   },
   {
+    "name": "Snake (Spitting)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Snake (Spitting)"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1",
+      "hp": 1,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 bite or 1 spit 1 bite",
+      "damage": "1d3 + poison 1d6",
+      "appearing": "1d6(1d6) 1d6(1d8)",
+      "saveAs": "F1 F1",
+      "morale": 7,
+      "treasure": "Nil Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 13,
+      "terrain": "Any except Arctic. Sea Snake: Ocean.",
+      "monsterType": "Normal Animal (Common).",
+      "description": "Spitting Cobra Giant Racer Armor Class: 7 5 Hit Dice: 1*(S) 2(M) Move: 90' (30') 120' (40') Attacks: 1 bite or 1 spit 1 bite Damage: ld3 + poison 1d6 No. Appearing: 1d6(ld6) 1d6(ld8) Save As: Fl Fl Morale: 7 7 Treasure Type: Nil Nil Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 13 20 Pit Viper Sea Snake 6 6 2*(M) 3*(M) 90' (30') 90' (30') 1 bite 1 bite 1d4 + poison 1 + poison 1d8 (1d8) 0(ld8) Fl F2 7 7 Nil Nil 2 2 Neutral Neutral 25 50 Giant Rattler Rock Python 5 6 4*(M) 5*(L) 120' (40') 90' (30') 2 bites",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Spectral Hound",
     "type": "monster",
     "flags": {
@@ -5249,6 +5177,42 @@
       "terrain": "Any; especially Desert. _Load:_ 6,000 cn at full speed; 12,000 cn at half speed.",
       "monsterType": "Monster (Rare).",
       "description": "Armor Class: 0 Hit Dice: 12* (L) Move: 180' (60') Flying: 360' (120') Attacks: 2 claws/1 bite Damage: 3d6/3d6/2d8 No. Appearing: 1d2 (1d4) Save As: F24 Morale: 10 Treasure Type: E Intelligence: 13 Alignment: Any XP Value: 5,625 Monster Type: Monster (Rare). A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Spider, Giant (Black)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Spider, Giant (Black)"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4",
+      "hp": 4,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 bite 1 bite 1 bite",
+      "damage": "1d8 + poison 2d6 + poison 1d8 + poison",
+      "appearing": "1d4 (1d4) 1d3(1d3) 1d3(1d3)",
+      "saveAs": "F1 F2 F2",
+      "morale": 8,
+      "treasure": "U U U",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 125,
+      "terrain": "Crab: Cavern, Ruins. Black Widow, Tarantella: Ruins. Woods.",
+      "monsterType": "Lowlife (Rare). Giant spiders are simply huge versions of normal spider species. All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire. Three examples of giant spiders are given here. Crab Spider: This is a 5' long spider with a chameleonlike ability to blend into its surroundings, surprising on a roll of 1-4 (on 1d6). It clings to walls or ceilings and drops onto its prey. After the first attack, it can be seen and attacked normally. Any victim of its bite must make a saving throw vs. poison or die in 1d4 turns. However, the poison is weak, and the victim gains a + 2 bonus to the saving throw roll.",
+      "description": "Crab Spider Black Widow Tarantella Armor Class: 7 6 5 Hit Dice: 2*(M) 3*(M) 4*(L) Move: 120' (40') 60' (20') 120' (40') In Web: No webs 120' (40') No webs Attacks: 1 bite 1 bite 1 bite Damage: 1d8 + poison 2d6 + poison 1d8 + poison No. Appearing: 1d4 (1d4) 1d3(ld3) 1d3(ld3) Save As: Fl F2 F2 Morale: 7 8 8 Treasure Type: U U U Intelligence: 0 0 0 Alignment: Neutral Neutral Neutral XP Value: 25 50 125 Monster Type: Lowlife (Rare). Giant spiders are simply huge versions of normal spider species.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -5328,49 +5292,13 @@
     }
   },
   {
-    "name": "Spider, Giant (Black)",
+    "name": "Spider, Giant (Tarantella)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Spider, Giant (Black)"
-      }
-    },
-    "system": {
-      "ac": 5,
-      "hd": "4",
-      "hp": 4,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 bite 1 bite 1 bite",
-      "damage": "1d8 + poison 2d6 + poison 1d8 + poison",
-      "appearing": "1d4 (1d4) 1d3(1d3) 1d3(1d3)",
-      "saveAs": "F1 F2 F2",
-      "morale": 8,
-      "treasure": "U U U",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 125,
-      "terrain": "Crab: Cavern, Ruins. Black Widow, Tarantella: Ruins. Woods.",
-      "monsterType": "Lowlife (Rare). Giant spiders are simply huge versions of normal spider species. All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire. Three examples of giant spiders are given here. Crab Spider: This is a 5' long spider with a chameleonlike ability to blend into its surroundings, surprising on a roll of 1-4 (on 1d6). It clings to walls or ceilings and drops onto its prey. After the first attack, it can be seen and attacked normally. Any victim of its bite must make a saving throw vs. poison or die in 1d4 turns. However, the poison is weak, and the victim gains a + 2 bonus to the saving throw roll.",
-      "description": "Crab Spider Black Widow Tarantella Armor Class: 7 6 5 Hit Dice: 2*(M) 3*(M) 4*(L) Move: 120' (40') 60' (20') 120' (40') In Web: No webs 120' (40') No webs Attacks: 1 bite 1 bite 1 bite Damage: 1d8 + poison 2d6 + poison 1d8 + poison No. Appearing: 1d4 (1d4) 1d3(ld3) 1d3(ld3) Save As: Fl F2 F2 Morale: 7 8 8 Treasure Type: U U U Intelligence: 0 0 0 Alignment: Neutral Neutral Neutral XP Value: 25 50 125 Monster Type: Lowlife (Rare). Giant spiders are simply huge versions of normal spider species.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Spider, Giant (Widow)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Spider, Giant (Widow)"
+        "key": "Spider, Giant (Tarantella)"
       }
     },
     "system": {
@@ -5400,13 +5328,13 @@
     }
   },
   {
-    "name": "Spider, Giant (Tarantella)",
+    "name": "Spider, Giant (Widow)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
         "variant": "",
-        "key": "Spider, Giant (Tarantella)"
+        "key": "Spider, Giant (Widow)"
       }
     },
     "system": {
@@ -5796,6 +5724,78 @@
     }
   },
   {
+    "name": "Variant 1",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Variant 1"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "4",
+      "hp": 4,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 weapon or hand",
+      "damage": "By weapon or 1d6 + 1 No. Appearing 1d8 (6d8)",
+      "appearing": "See below",
+      "saveAs": "F4",
+      "morale": 810,
+      "treasure": "(V) I, L, M, N, O",
+      "intelligence": 12,
+      "alignment": "Any (usually Lawful)",
+      "xpValue": 175,
+      "terrain": "Any.",
+      "monsterType": "Human (Rare). Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
+      "description": "Mystic Armor Class: 6 Hit Dice: 4(d6)(M) Move: 150'(50') Attacks: 1 weapon or hand Damage: By weapon or ld6 + 1 No. Appearing 1 d 8 (6d8) Save As: F4 Morale: 8 or 10 (see below) Treasure Type: (V) I, L, M, N, O Intelligence: 12 Alignment: Any (usually Lawful) XP Value: 175 Leader Armor Class: 3 Hit Dice: 7 (d6) (M) Move: 180' (60') Attacks: 1 weapon or 2 hands Damage: By weapon or 1d10/ 1d10 No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Variant 2",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Variant 2"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "7",
+      "hp": 7,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 weapon or 2 hands",
+      "damage": "By weapon or 1d10/ 1d10",
+      "appearing": "See below",
+      "saveAs": "F6",
+      "morale": 10,
+      "treasure": "I, L, M, N, O",
+      "intelligence": 12,
+      "alignment": "Any (usually Lawful)",
+      "xpValue": 1650,
+      "terrain": "Any.",
+      "monsterType": "Human (Rare). Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
+      "description": "Mystic Armor Class: 6 Hit Dice: 4(d6)(M) Move: 150'(50') Attacks: 1 weapon or hand Damage: By weapon or ld6 + 1 No. Appearing 1 d 8 (6d8) Save As: F4 Morale: 8 or 10 (see below) Treasure Type: (V) I, L, M, N, O Intelligence: 12 Alignment: Any (usually Lawful) XP Value: 175 Leader Armor Class: 3 Hit Dice: 7 (d6) (M) Move: 180' (60') Attacks: 1 weapon or 2 hands Damage: By weapon or 1d10/ 1d10 No.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Weasel, Giant",
     "type": "monster",
     "flags": {
@@ -5868,42 +5868,6 @@
     }
   },
   {
-    "name": "Whales (Killer)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "_Killer_",
-        "key": "Whales (Killer)"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "6",
-      "hp": 6,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 bite",
-      "damage": "2dlO",
-      "appearing": "0(1d6)",
-      "saveAs": "F3",
-      "morale": 10,
-      "treasure": "Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 275,
-      "terrain": "",
-      "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
-      "description": "||Killer|Great|Narwhal| |---|---|---|---| |Armor Class:|6|6|7| |Hit Dice:|6(1)|36* (L)|12 (L)| |Move, Swim:|240'(80')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 horn| |Damage:|2dlO|3d20|2d6| |No. Appearing:|0(ld6)|0(1-3)|0(ld4)| |Save As:|F3|F18|F12| |Morale:|10|10|8| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|4| |Alignment: |Neutral|Neutral|Lawful| |XP Value:|275|12,000|1,250| Monster Type: Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Whales (Great)",
     "type": "monster",
     "flags": {
@@ -5930,6 +5894,42 @@
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 12000,
+      "terrain": "",
+      "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
+      "description": "||Killer|Great|Narwhal| |---|---|---|---| |Armor Class:|6|6|7| |Hit Dice:|6(1)|36* (L)|12 (L)| |Move, Swim:|240'(80')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 horn| |Damage:|2dlO|3d20|2d6| |No. Appearing:|0(ld6)|0(1-3)|0(ld4)| |Save As:|F3|F18|F12| |Morale:|10|10|8| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|4| |Alignment: |Neutral|Neutral|Lawful| |XP Value:|275|12,000|1,250| Monster Type: Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Whales (Killer)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Killer_",
+        "key": "Whales (Killer)"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "6",
+      "hp": 6,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 bite",
+      "damage": "2dlO",
+      "appearing": "0(1d6)",
+      "saveAs": "F3",
+      "morale": 10,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 275,
       "terrain": "",
       "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
       "description": "||Killer|Great|Narwhal| |---|---|---|---| |Armor Class:|6|6|7| |Hit Dice:|6(1)|36* (L)|12 (L)| |Move, Swim:|240'(80')|180'(60')|180'(60')| |Attacks:|1 bite|1 bite|1 horn| |Damage:|2dlO|3d20|2d6| |No. Appearing:|0(ld6)|0(1-3)|0(ld4)| |Save As:|F3|F18|F12| |Morale:|10|10|8| |Treasure Type:|Nil|Nil|Nil| |Intelligence:|2|2|4| |Alignment: |Neutral|Neutral|Lawful| |XP Value:|275|12,000|1,250| Monster Type: Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Narwhal: Monster (Rare).",
@@ -5976,42 +5976,6 @@
     }
   },
   {
-    "name": "Wolf (Normal Wolf)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "_Normal Wolf_",
-        "key": "Wolf (Normal Wolf)"
-      }
-    },
-    "system": {
-      "ac": 1,
-      "hd": "2+2",
-      "hp": 22,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "1 bite",
-      "damage": "1d6",
-      "appearing": "2d6(3d6)",
-      "saveAs": "F1",
-      "morale": 86,
-      "treasure": "Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 25,
-      "terrain": "",
-      "monsterType": "Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare).",
-      "description": "||Normal Wolf|Dire Wolf| |---|---|---| |Armor Class:|1|6| |Hit Dice:|2 +2(M)|4 + 1 (M)| |Move:|180'(60')|150'(50')| |Attacks:|1 bite|1 bite| |Damage:|1d6|2d4| |No. Appearing:|2d6(3d6)|1d4(2d4)| |Save As:|Fl|F2| |Morale:|8 or 6|8| ||(see below)|| |Treasure Type:|Nil|Nil| |Intelligence:|2|4| |Alignment:|Neutral|Neutral| |XP Value:|25|125| Monster Type: Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare). Wolves are large, intelligent canine carnivores, and hunt in packs.",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Wolf (Dire Wolf)",
     "type": "monster",
     "flags": {
@@ -6038,6 +6002,42 @@
       "intelligence": 4,
       "alignment": "Neutral",
       "xpValue": 125,
+      "terrain": "",
+      "monsterType": "Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare).",
+      "description": "||Normal Wolf|Dire Wolf| |---|---|---| |Armor Class:|1|6| |Hit Dice:|2 +2(M)|4 + 1 (M)| |Move:|180'(60')|150'(50')| |Attacks:|1 bite|1 bite| |Damage:|1d6|2d4| |No. Appearing:|2d6(3d6)|1d4(2d4)| |Save As:|Fl|F2| |Morale:|8 or 6|8| ||(see below)|| |Treasure Type:|Nil|Nil| |Intelligence:|2|4| |Alignment:|Neutral|Neutral| |XP Value:|25|125| Monster Type: Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare). Wolves are large, intelligent canine carnivores, and hunt in packs.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Wolf (Normal Wolf)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "_Normal Wolf_",
+        "key": "Wolf (Normal Wolf)"
+      }
+    },
+    "system": {
+      "ac": 1,
+      "hd": "2+2",
+      "hp": 22,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite",
+      "damage": "1d6",
+      "appearing": "2d6(3d6)",
+      "saveAs": "F1",
+      "morale": 86,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 25,
       "terrain": "",
       "monsterType": "Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare).",
       "description": "||Normal Wolf|Dire Wolf| |---|---|---| |Armor Class:|1|6| |Hit Dice:|2 +2(M)|4 + 1 (M)| |Move:|180'(60')|150'(50')| |Attacks:|1 bite|1 bite| |Damage:|1d6|2d4| |No. Appearing:|2d6(3d6)|1d4(2d4)| |Save As:|Fl|F2| |Morale:|8 or 6|8| ||(see below)|| |Treasure Type:|Nil|Nil| |Intelligence:|2|4| |Alignment:|Neutral|Neutral| |XP Value:|25|125| Monster Type: Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare). Wolves are large, intelligent canine carnivores, and hunt in packs.",

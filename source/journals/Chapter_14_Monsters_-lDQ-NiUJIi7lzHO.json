@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>How to read monster descriptions and the alphabetical monster list with complete statistics.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 14. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Monsters</h2>\n<p>Each monster entry lists armor class, hit dice, hit points, number appearing, movement, attacks, damage, special abilities, morale, treasure type and XP value. Hit dice are d8; a \"+\" adds hit points without changing the HD for attack or saving throw purposes.</p>\n<p>Monsters use the same descending AC and saving throw categories as characters. Special attacks such as breath weapons, poison, paralysis and charm usually allow a saving throw with a stated modifier. Treasure type determines the rolled treasure.</p>"
       },
-      "_id": "cALh88UeC_nkDvEa",
-      "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.cALh88UeC_nkDvEa"
+      "_id": "OmIpXROi_y9ZSpjO",
+      "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.OmIpXROi_y9ZSpjO"
     }
   ]
 }

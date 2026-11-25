@@ -17,6 +17,8 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     actions: {
       rollAttack: BECMIItemSheet.#rollAttack,
       rollDamage: BECMIItemSheet.#rollDamage,
+      rollFormula: BECMIItemSheet.#rollFormula,
+      castSpell: BECMIItemSheet.#castSpell,
       sendToChat: BECMIItemSheet.#sendToChat,
       applyClass: BECMIItemSheet.#applyClass
     }
@@ -26,6 +28,8 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     header: { template: "systems/becmi/templates/item/header.hbs" },
     body: { template: "systems/becmi/templates/item/body.hbs" }
   };
+
+  targetAC = 9;
 
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
@@ -37,6 +41,7 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     context.isSpell = item.type === "spell";
     context.isArmor = item.type === "armor";
     context.isClass = item.type === "class";
+    context.targetAC = this.targetAC;
     if (context.isClass) {
       context.xpTableRows = Object.entries(item.system.xpTable ?? {})
         .map(([level, xp]) => ({ level: Number(level), xp: Number(xp) }))
@@ -51,12 +56,26 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     await this.document.update(formData.object);
   }
 
+  #targetAC() {
+    const value = Number(this.element?.querySelector("[data-target-ac]")?.value);
+    this.targetAC = Number.isFinite(value) ? value : 9;
+    return this.targetAC;
+  }
+
   static async #rollAttack() {
-    await this.document.rollAttack();
+    await this.document.rollAttack({ targetAC: this.#targetAC() });
   }
 
   static async #rollDamage() {
     await this.document.rollDamage();
+  }
+
+  static async #rollFormula() {
+    await this.document.rollFormula();
+  }
+
+  static async #castSpell() {
+    await this.document.castSpell();
   }
 
   static async #sendToChat() {

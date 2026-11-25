@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Cleric, fighter, magic-user, thief, dwarf, elf, halfling and the optional druid and mystic classes, with progression tables.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 2. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>The Character Classes</h2>\n<p>Choose one class. A human may reach level 36 as a fighter, cleric, magic-user or thief; demihumans have lower maximum levels and class restrictions. A class supplies hit dice, attack progression, saving throws, experience requirements, spell access and special abilities.</p>\n<table><thead><tr><th>Class</th><th>Hit die</th><th>Prime requisite</th><th>Max level</th><th>Notes</th></tr></thead><tbody><tr><td>Cleric</td><td>d8</td><td>Wisdom</td><td>36</td><td>Turn undead; cleric spells</td></tr><tr><td>Fighter</td><td>d10</td><td>Strength</td><td>36</td><td>Weapon mastery; no spells</td></tr><tr><td>Magic-User</td><td>d4</td><td>Intelligence</td><td>36</td><td>Magic-user spells; read magic</td></tr><tr><td>Thief</td><td>d6</td><td>Dexterity</td><td>36</td><td>Thief skills; backstab</td></tr><tr><td>Dwarf</td><td>d8</td><td>Constitution</td><td>12</td><td>Fighter abilities; detect tricks</td></tr><tr><td>Elf</td><td>d6</td><td>Intelligence</td><td>10</td><td>Magic-user spells plus fighter abilities</td></tr><tr><td>Halfling</td><td>d6</td><td>Dexterity</td><td>8</td><td>Fighter abilities; hiding and missile bonus</td></tr></tbody></table>\n<p>Multiclassing is not used. The optional Druid is an extension of the Cleric: it keeps cleric hit dice, saves and XP, but uses the druid spell list and druid restrictions. The Mystic is an optional variant handled by the DM.</p>"
       },
-      "_id": "kU842JKdGLGxFLmq",
-      "_key": "!journal.pages!sdhGS5xgRdjq7bVK.kU842JKdGLGxFLmq"
+      "_id": "I7p8iL3kugGdnbV8",
+      "_key": "!journal.pages!sdhGS5xgRdjq7bVK.I7p8iL3kugGdnbV8"
     }
   ]
 }

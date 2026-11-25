@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Retainers, mercenaries and specialists.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 11. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Nonplayer Characters</h2>\n<p>Retainers and mercenaries are hired with pay, food and lodging. Their loyalty depends on the employer's Charisma, alignment, treatment and regular pay. Specialists such as sages, smiths and alchemists charge for services and may require contracts or advances.</p>\n<p>Hirelings have morale scores and abandon or betray an employer when morale fails. The DM controls all NPC decisions, even when the players negotiate terms.</p>"
       },
-      "_id": "k4lvXmvqIYaHLxvS",
-      "_key": "!journal.pages!0tn8T59RnxLL39t4.k4lvXmvqIYaHLxvS"
+      "_id": "YnYAbK6V_HLWY71G",
+      "_key": "!journal.pages!0tn8T59RnxLL39t4.YnYAbK6V_HLWY71G"
     }
   ]
 }

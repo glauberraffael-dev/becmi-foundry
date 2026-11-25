@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Awarding XP for role-playing, goals, monsters, treasure and exceptional actions; maximum hit points.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 10. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Experience</h2>\n<p>XP is awarded for defeating monsters (the XP value in the monster entry), for treasure gained, for completing goals and for good role-playing. The DM divides awards among the characters who earned them. Partial levels are not used.</p>\n<table><thead><tr><th>Constitution adjustment</th><th>Hit points per level</th></tr></thead><tbody><tr><td>-3</td><td>1</td></tr><tr><td>-2</td><td>1</td></tr><tr><td>-1</td><td>1</td></tr><tr><td>None</td><td>Roll hit die (minimum 1)</td></tr><tr><td>+1</td><td>Roll hit die + 1 (minimum 2)</td></tr><tr><td>+2</td><td>Roll hit die + 2 (minimum 3)</td></tr><tr><td>+3</td><td>Roll hit die + 3 (minimum 4)</td></tr></tbody></table>\n<p>Class maximum levels and demihuman level limits are enforced by the class tables in the Classes compendium.</p>"
       },
-      "_id": "XzAvxyrG82BjTOwx",
-      "_key": "!journal.pages!A9QmSRza5zGM0jrL.XzAvxyrG82BjTOwx"
+      "_id": "iPqswijwCsak2dEB",
+      "_key": "!journal.pages!A9QmSRza5zGM0jrL.iPqswijwCsak2dEB"
     }
   ]
 }

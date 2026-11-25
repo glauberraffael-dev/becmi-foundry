@@ -1,0 +1,13 @@
+{
+  "_id": "de1e07e384154b6b",
+  "_key": "!folders!de1e07e384154b6b",
+  "name": "Magic-User Spells",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

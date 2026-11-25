@@ -2,8 +2,8 @@
 
 An unofficial **Foundry VTT system** for the Basic / Expert / Companion / Master /
 Immortal rules, based on the *D&D Rules Cyclopedia*. This is a system, not a content
-module. The compendia contain structured game data and short paraphrases; the full
-rules text and the PDF are **not** included.
+module. The compendia contain structured game data, a condensed rules reference and
+short paraphrases; the PDF and OCR export are **not** included.
 
 ## Features
 
@@ -18,11 +18,16 @@ rules text and the PDF are **not** included.
 - Druid is handled as a Cleric extension, not as a stand-alone class.
 - Class-exclusive sections (thief skills, turn undead, mastery, spellcasting) only
   appear for classes that have them.
-- Spells are split into compendium folders and filtered by Cleric, Druid or Magic-User
-  lists on the sheet; equipment is grouped as weapons, armor, adventuring gear and
-  transport/siege gear.
+- Spells are split into compendium folders by list and level, and are sorted by level
+  and name on the sheet; equipment is grouped and alphabetized as weapons, armor,
+  adventuring gear and transport/siege gear.
+- Treasure separates tangible items (potions, miscellaneous magical items, missile
+  talents) from item-enchantment rules, each in its own folder.
+- All rolls work directly from item and actor sheets without a selected token: attack
+  rolls take a Target AC field and default to AC 9; damage, spell effects and arbitrary
+  dice formulas have dedicated buttons.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling.
-- Seven precompiled LevelDB compendia with 537 documents in total.
+- Seven precompiled LevelDB compendia with 547 documents in total.
 
 ## Compendia
 
@@ -33,16 +38,22 @@ rules text and the PDF are **not** included.
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
 | BECMI Treasure | Item | 32 |
-| BECMI Tables | RollTable | 22 |
-| BECMI Rules Reference | JournalEntry | 18 |
+| BECMI Tables | RollTable | 31 |
+| BECMI Rules Reference | JournalEntry | 19 |
 
-`BECMI Spells` has folders for Cleric, Druid and Magic-User spells. `BECMI Equipment`
+`BECMI Spells` has folders for Cleric, Druid and Magic-User spells, each with a
+subfolder per spell level. `BECMI Equipment`
 contains **42 weapons**, 7 armor types and 57 other equipment entries, organized in
 folders for Weapons, Armor & Shields, Adventuring Gear and Transport & Siege.
 `BECMI Classes` keeps the Druid entry in a Subclasses folder.
+`BECMI Treasure` has separate folders for Potions, Miscellaneous Magical Items,
+Missile Talents and Magic Item Enchantment Rules (procedural rules are `feature`
+items, not treasures).
 `BECMI Tables` includes the monster reaction table, a Weapons Table lookup, basic weapon
-special effects, ammunition, armor, barding, nets, siege equipment, passage prices and
-the optional Weapon Mastery tables. `BECMI Rules Reference` includes a six-page
+special effects, ammunition, armor, barding, nets, siege equipment, passage prices,
+the optional Weapon Mastery tables and reference lookups for attacks, saves, thief
+skills, turn undead and spell slots. `BECMI Rules Reference` includes condensed rules
+for all 17 chapters, a **Core Rules Reference** journal and a six-page
 **Weapon Mastery (Optional)** journal with a condensed level-by-level weapon table.
 
 ## Installation
@@ -56,8 +67,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.10`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.10.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.11`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.11.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

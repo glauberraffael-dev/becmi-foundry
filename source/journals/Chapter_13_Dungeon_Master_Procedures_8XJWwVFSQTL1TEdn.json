@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Ability checks, aging, alignment changes, anti-magic and ICC rulings.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 13. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Dungeon Master Procedures</h2>\n<p>When no specific rule applies, the DM sets a target number on d20 (easy 5, moderate 10, hard 15, very hard 20) and applies the relevant ability adjustment. Ability checks are optional; a natural 20 succeeds and a natural 1 fails when the DM uses that convention.</p>\n<p>Aging modifies ability scores at thresholds determined by the DM. Alignment changes require a major shift in behavior and may cause the loss of class abilities. Anti-magic areas suppress spells and magical item powers. The DM's final ruling resolves ambiguous cases.</p>"
       },
-      "_id": "ikFPWtXGyU9SS5kh",
-      "_key": "!journal.pages!8XJWwVFSQTL1TEdn.ikFPWtXGyU9SS5kh"
+      "_id": "18RUb0Sv7NIHs4U4",
+      "_key": "!journal.pages!8XJWwVFSQTL1TEdn.18RUb0Sv7NIHs4U4"
     }
   ]
 }

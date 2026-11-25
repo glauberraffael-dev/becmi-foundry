@@ -1,0 +1,103 @@
+{
+  "_id": "CjkB4XAam4ys9Kpb",
+  "_key": "!tables!CjkB4XAam4ys9Kpb",
+  "name": "Ability Score Modifiers",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Reference"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "pNaHkm3Oh75y4jO9",
+      "type": "text",
+      "text": "3: -3",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.pNaHkm3Oh75y4jO9"
+    },
+    {
+      "_id": "7_lB2L47Y58lWBPg",
+      "type": "text",
+      "text": "4-5: -2",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.7_lB2L47Y58lWBPg"
+    },
+    {
+      "_id": "FLaaytcsl5Ae4i2p",
+      "type": "text",
+      "text": "6-8: -1",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.FLaaytcsl5Ae4i2p"
+    },
+    {
+      "_id": "m5fPtlTCwiNtT_t7",
+      "type": "text",
+      "text": "9-12: 0",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.m5fPtlTCwiNtT_t7"
+    },
+    {
+      "_id": "bqX7dYzja5bDhTI_",
+      "type": "text",
+      "text": "13-15: +1",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.bqX7dYzja5bDhTI_"
+    },
+    {
+      "_id": "TYJb3BVHh382r7do",
+      "type": "text",
+      "text": "16-17: +2",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.TYJb3BVHh382r7do"
+    },
+    {
+      "_id": "zONaoQW9P6lh8fnl",
+      "type": "text",
+      "text": "18: +3",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CjkB4XAam4ys9Kpb.zONaoQW9P6lh8fnl"
+    }
+  ],
+  "formula": "1d7"
+}

@@ -15,13 +15,13 @@
   },
   "pages": [
     {
-      "name": "Summary",
+      "name": "Rules",
       "type": "text",
       "text": {
-        "content": "<p>Immortal spheres, statistics and the paths by which mortals may become immortals.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 15. Full rules text is not reproduced here.</em></p>"
+        "content": "<h2>Immortals</h2>\n<p>Immortal characters use spheres (matter, energy, time, space and thought) and ranks from novice to Hierophant. Each rank grants powers, higher ability scores and increased hit points, while requiring experience and a patron's approval.</p>\n<p>Mortals may qualify through the paths of the Dynamism, the Hierarchy or the Void, each with different prerequisites. Immortal magic uses the same level structure but much larger energy costs.</p>"
       },
-      "_id": "ReQzbze_fqOUmgop",
-      "_key": "!journal.pages!1jQvS6kCIVRMoyTi.ReQzbze_fqOUmgop"
+      "_id": "qMHhBlQgbwJZm8lZ",
+      "_key": "!journal.pages!1jQvS6kCIVRMoyTi.qMHhBlQgbwJZm8lZ"
     }
   ]
 }

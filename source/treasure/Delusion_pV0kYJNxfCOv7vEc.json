@@ -5,7 +5,7 @@
   "type": "equipment",
   "img": "icons/svg/coins.svg",
   "system": {
-    "treasureType": "Potion Descriptions",
+    "treasureType": "Potions",
     "value": 0,
     "quantity": 1,
     "cost": "",
@@ -13,15 +13,18 @@
     "description": "The user will believe this potion to have the effect of any one other potion (roll again for the fake potion). However, it has no real effect.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": "Potion Descriptions"
+    "notes": "Potions"
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "category": "Potion Descriptions"
+      "category": "Potions",
+      "group": "potions",
+      "kind": "item"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "82a2fd094addcf18"
 }

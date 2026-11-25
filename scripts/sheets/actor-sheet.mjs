@@ -98,9 +98,14 @@ function masteryRowsFor(actor) {
   });
 }
 
+const byName = (a, b) => String(a.name ?? "").localeCompare(String(b.name ?? ""), "en", { sensitivity: "base", numeric: true });
+const bySpellLevelThenName = (a, b) =>
+  (Number(a.system?.spellLevel) || 0) - (Number(b.system?.spellLevel) || 0) || byName(a, b);
+
 export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   activeTab = "main";
   sidebarCollapsed = false;
+  targetAC = 9;
 
   static DEFAULT_OPTIONS = Object.freeze(foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
     classes: ["becmi", "sheet", "actor"],
@@ -136,6 +141,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       addMasteryRow: BECMIActorSheet.#addMasteryRow,
       itemAttack: BECMIActorSheet.#itemAttack,
       itemDamage: BECMIActorSheet.#itemDamage,
+      itemFormula: BECMIActorSheet.#itemFormula,
       itemCast: BECMIActorSheet.#itemCast,
       itemOpen: BECMIActorSheet.#itemOpen,
       itemDelete: BECMIActorSheet.#itemDelete,
@@ -171,17 +177,18 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
-      classOptions: Object.values(RC.classes).map((cls) => ({ key: cls.key, name: cls.name })),
+      targetAC: this.targetAC,
+      classOptions: Object.values(RC.classes).map((cls) => ({ key: cls.key, name: cls.name })).sort(byName),
       armorOptions: Object.entries(RC.armor.types).map(([key, value]) => ({ key, name: ARMOR_EN[key] ?? value.name, ac: value.ac })),
       masteryGrades: masteryRanks().map((grade) => ({ key: grade.key, name: grade.nome })),
       diceOptions: [4, 6, 8, 10, 12, 20, 100].map((faces) => ({ faces })),
-      masteryWeapons: RC.mastery.weapons.map((weapon) => weapon.name),
+      masteryWeapons: RC.mastery.weapons.map((weapon) => weapon.name).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })),
       masteryCatalog: RC.mastery.weapons.map((weapon) => ({
         ...masteryData(weapon, "gm"),
         primary: weapon.primary,
         cost: weapon.cost,
         weight: weapon.weight
-      }))
+      })).sort(byName)
     });
 
     context.abilityRows = ABILITIES.map((key) => ({
@@ -270,7 +277,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.equipmentGroups = EQUIPMENT_GROUPS.map(([key, label]) => ({
       key,
       label: game.i18n.localize(label),
-      items: allItems.filter((item) => equipmentGroupFor(item) === key).map((item) => ({
+      items: allItems.filter((item) => equipmentGroupFor(item) === key).sort(byName).map((item) => ({
         id: item.id,
         name: item.name,
         type: item.type,
@@ -279,7 +286,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         quantity: item.system?.quantity ?? 1,
         damage: item.system?.damage ?? "",
         attackBonus: item.system?.attackBonus ?? 0,
-        damageBonus: item.system?.damageBonus ?? 0
+        damageBonus: item.system?.damageBonus ?? 0,
+        rollFormula: item.system?.rollFormula ?? ""
       }))
     }));
     context.magicItems = actor.system.magicItems ?? [];
@@ -294,12 +302,18 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     const allSpells = actor.items.filter((item) => item.type === "spell");
     context.className = className;
-    context.classSpells = spellLists.length
+    const spellView = (item) => ({
+      id: item.id,
+      name: item.name,
+      level: Number(item.system?.spellLevel) || 0,
+      rollFormula: item.system?.rollFormula ?? ""
+    });
+    const classSpellItems = spellLists.length
       ? allSpells.filter((item) => (item.system.spellLists ?? []).some((list) => spellLists.includes(list)))
       : allSpells;
-    context.otherSpells = spellLists.length
-      ? allSpells.filter((item) => !context.classSpells.includes(item))
-      : [];
+    context.classSpells = [...classSpellItems].sort(bySpellLevelThenName).map(spellView);
+    context.otherSpells = allSpells.filter((item) => !classSpellItems.includes(item))
+      .sort(bySpellLevelThenName).map(spellView);
     context.classResources = (rcClass?.resources ?? []).map((key) => ({
       key,
       label: game.i18n.localize(RESOURCE_LABELS[key] ?? key)
@@ -334,6 +348,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onSubmit(event, form, formData) {
     await this.document.update(formData.object);
+  }
+
+  #targetAC() {
+    const value = Number(this.element?.querySelector("[data-target-ac]")?.value);
+    this.targetAC = Number.isFinite(value) ? value : 9;
+    return this.targetAC;
   }
 
   static async #setClass(event, target) {
@@ -477,7 +497,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #itemCast(event, target) {
     const item = this.actor.items.get(target.dataset.itemId);
-    if (item?.type === "spell") await item.sendToChat();
+    if (item?.type === "spell") await item.castSpell();
   }
 
   static async #memorizeSpell(event, target) {
@@ -506,12 +526,17 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #itemAttack(event, target) {
     const item = this.actor.items.get(target.dataset.itemId);
-    await item?.rollAttack();
+    await item?.rollAttack({ targetAC: this.#targetAC() });
   }
 
   static async #itemDamage(event, target) {
     const item = this.actor.items.get(target.dataset.itemId);
     await item?.rollDamage();
+  }
+
+  static async #itemFormula(event, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    await item?.rollFormula();
   }
 
   static async #itemOpen(event, target) {

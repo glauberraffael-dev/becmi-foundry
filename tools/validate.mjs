@@ -6,6 +6,10 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  compareDocuments, folderDefinitionKey, folderId, spellFolderKey,
+  TREASURE_CATEGORIES
+} from "./pack-layout.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), "utf8"));
@@ -137,6 +141,79 @@ for (const pack of Object.keys(expected)) {
   }
   console.log(`${dir}: ${names.length} source documents`);
 }
+
+// --- Folder hierarchy and document ordering ---------------------------------
+const folderDefinitions = await readJson("data/pack-folders.json");
+for (const [pack, definitions] of Object.entries(folderDefinitions)) {
+  const keys = new Set(definitions.map(folderDefinitionKey));
+  for (const definition of definitions) {
+    const key = folderDefinitionKey(definition);
+    if (!/^[a-f0-9]{16}$/.test(folderId(pack, key))) note(`${pack}: invalid folder id for ${key}`);
+    if (definition.parentKey && !keys.has(definition.parentKey)) {
+      note(`${pack}: folder ${key} has unknown parent ${definition.parentKey}`);
+    }
+  }
+}
+for (const list of ["cleric", "druid", "magic-user"]) {
+  for (let level = 1; level <= 9; level++) {
+    const key = spellFolderKey(list, level);
+    if (!folderDefinitions.spells.some((f) => folderDefinitionKey(f) === key)) {
+      note(`spells: missing level folder ${key}`);
+    }
+  }
+}
+
+const sortedPacks = ["monsters", "spells", "equipment", "classes", "treasure", "tables", "journals"];
+for (const pack of sortedPacks) {
+  let docs;
+  try { docs = await readJson(`data/${pack}.json`); }
+  catch { continue; }
+  for (let i = 1; i < docs.length; i++) {
+    if (compareDocuments(pack, docs[i - 1], docs[i]) > 0) {
+      note(`${pack}: documents are not sorted at ${docs[i - 1].name} / ${docs[i].name}`);
+      break;
+    }
+  }
+}
+
+// --- Treasure: items and rules must stay in separate categories -------------
+const treasureDocs = await readJson("data/treasure.json");
+const treasureFolders = new Map(Object.values(TREASURE_CATEGORIES).map((info) => [info.folder, info]));
+for (const doc of treasureDocs) {
+  const category = doc.flags?.becmi?.category;
+  const info = treasureFolders.get(category);
+  if (!info) { note(`treasure: unknown category ${category} on ${doc.name}`); continue; }
+  const expectedType = info.rule ? "feature" : "equipment";
+  if (doc.type !== expectedType) note(`treasure: ${doc.name} should be ${expectedType}, got ${doc.type}`);
+  if (doc.flags?.becmi?.kind !== (info.rule ? "rule" : "item")) {
+    note(`treasure: ${doc.name} has an inconsistent kind`);
+  }
+  if (doc.system?.treasureType !== category) note(`treasure: ${doc.name} has a mismatched treasureType`);
+}
+
+// --- Reference rules are reproduced in the journals ------------------------
+const journalDocs = await readJson("data/journals.json");
+const journalText = journalDocs.map((doc) => (doc.pages ?? []).map((page) => page.text?.content ?? "").join("")).join("");
+if (/Full rules text is not reproduced here/i.test(journalText)) {
+  note("journals: placeholder text about withheld rules is still present");
+}
+if (!journalText.includes("Attack Matrix") || !journalText.includes("Saving Throws")) {
+  note("journals: core combat reference is missing");
+}
+
+// --- Dice rolls must work from sheets without a token -----------------------
+const rollsSource = await readFile(join(root, "scripts/rolls.mjs"), "utf8");
+if (!rollsSource.includes("DEFAULT_TARGET_AC")) note("rolls.mjs: missing default target AC fallback");
+if (/actor\.name/.test(rollsSource)) note("rolls.mjs: unguarded actor.name breaks rolls without an actor");
+const itemSheet = await readFile(join(root, "templates/item/body.hbs"), "utf8");
+for (const action of ["rollAttack", "rollDamage", "rollFormula", "castSpell"]) {
+  if (!itemSheet.includes(`data-action="${action}"`)) note(`item sheet: missing ${action} button`);
+}
+const actorBody = await readFile(join(root, "templates/actor/body.hbs"), "utf8");
+if (!actorBody.includes("data-target-ac")) note("actor sheet: missing target AC input");
+if (!actorBody.includes("becmi-saves-scroll")) note("actor sheet: saves table is missing its scroll container");
+const css = await readFile(join(root, "styles/becmi.css"), "utf8");
+if (!css.includes(".becmi-saves-scroll")) note("CSS: missing stable saves container styles");
 
 if (problems.length) {
   console.error(`\n${problems.length} problem(s):`);
