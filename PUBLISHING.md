@@ -30,14 +30,14 @@ Do not upload `node_modules/`; it is excluded by `.gitignore`.
 After pushing, install the system in Foundry with this manifest URL:
 
 ```text
-https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json
+https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/refs/heads/main/system.json
 ```
 
 The manifest declares:
 
 - `url`: the GitHub repository page
 - `manifest`: the stable raw URL above
-- `download`: `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry.zip`
+- `download`: `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/refs/heads/main/becmi-foundry.zip`
 
 `becmi-foundry.zip` must contain `system.json` at the archive root (no enclosing folder).
 Regenerate it whenever the system files change. On Windows PowerShell:
