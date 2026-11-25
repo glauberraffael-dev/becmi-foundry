@@ -2,7 +2,7 @@
   "name": "becmi-foundry",
   "version": "0.1.0",
   "private": true,
-  "description": "Foundry VTT v13 system for BECMI / Rules Cyclopedia",
+  "description": "Foundry VTT v13+ system for BECMI / Rules Cyclopedia, verified on v14",
   "type": "module",
   "scripts": {
     "extract": "node tools/extract-all.mjs",

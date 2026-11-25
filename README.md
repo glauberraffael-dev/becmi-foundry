@@ -1,4 +1,4 @@
-# BECMI — Rules Cyclopedia for Foundry VTT v13
+# BECMI — Rules Cyclopedia for Foundry VTT v13+
 
 An unofficial **Foundry VTT system** for the Basic / Expert / Companion / Master /
 Immortal rules, based on the *D&D Rules Cyclopedia*. This is a system, not a content
@@ -8,7 +8,7 @@ rules text and the PDF are **not** included.
 ## Features
 
 - Descending AC and THAC0, saving throws, ability checks, initiative and morale.
-- Actor, Item and Journal sheets built with Foundry v13 `ApplicationV2`.
+- Actor, Item and Journal sheets built with Foundry v13+ `ApplicationV2` (verified on v14).
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling.
 - Seven precompiled LevelDB compendia with 554 documents in total.
 

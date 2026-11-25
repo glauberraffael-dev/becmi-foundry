@@ -27,7 +27,7 @@ async function walk(dir) {
 const system = await readJson("system.json");
 const lang = await readJson("lang/en.json");
 if (system.compatibility?.minimum !== 13 || system.compatibility?.verified !== 13) {
-  note("system.json compatibility should target v13");
+  note("system.json compatibility should target v13+ (verified on v14)");
 }
 if (!system.esmodules?.length) note("system.json has no esmodules entry");
 for (const pack of system.packs ?? []) {
