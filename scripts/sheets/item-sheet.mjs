@@ -1,3 +1,5 @@
+import { applyClassToActor } from "../integrations.mjs";
+
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;
 
@@ -15,7 +17,8 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     actions: {
       rollAttack: BECMIItemSheet.#rollAttack,
       rollDamage: BECMIItemSheet.#rollDamage,
-      sendToChat: BECMIItemSheet.#sendToChat
+      sendToChat: BECMIItemSheet.#sendToChat,
+      applyClass: BECMIItemSheet.#applyClass
     }
   }, { inplace: false }));
 
@@ -34,6 +37,13 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     context.isSpell = item.type === "spell";
     context.isArmor = item.type === "armor";
     context.isClass = item.type === "class";
+    if (context.isClass) {
+      context.xpTableRows = Object.entries(item.system.xpTable ?? {})
+        .map(([level, xp]) => ({ level: Number(level), xp: Number(xp) }))
+        .filter((row) => Number.isFinite(row.xp))
+        .sort((a, b) => a.level - b.level);
+      context.maxLevel = item.system.maxLevel ?? 36;
+    }
     return context;
   }
 
@@ -51,5 +61,18 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
 
   static async #sendToChat() {
     await this.document.sendToChat();
+  }
+
+  static async #applyClass() {
+    const actor = canvas.tokens.controlled[0]?.actor ?? game.user.character;
+    if (!actor) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.noActor"));
+      return;
+    }
+    await applyClassToActor(actor, this.document);
+    ui.notifications.info(game.i18n.format("BECMI.notification.classApplied", {
+      name: this.document.name,
+      actor: actor.name
+    }));
   }
 }

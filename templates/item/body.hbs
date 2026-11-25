@@ -21,12 +21,27 @@
   {{else if isClass}}
   <div class="becmi-field"><label>{{localize 'BECMI.labels.primeRequisite'}}</label><input name="system.primeRequisite" type="text" value="{{system.primeRequisite}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}</label><input name="system.hitDice" type="text" value="{{system.hitDice}}" {{#unless editable}}disabled{{/unless}}></div>
-  <div class="becmi-field"><label>{{localize 'BECMI.labels.level'}}</label><input name="system.maxLevel" type="number" value="{{system.maxLevel}}" {{#unless editable}}disabled{{/unless}}></div>
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.maxLevel'}}</label><input name="system.maxLevel" type="number" value="{{system.maxLevel}}" {{#unless editable}}disabled{{/unless}}></div>
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.requirements'}}</label><input name="system.requirements" type="text" value="{{system.requirements}}" {{#unless editable}}disabled{{/unless}}></div>
   {{else}}
   <div class="becmi-field"><label>{{localize 'BECMI.labels.cost'}}</label><input name="system.cost" type="text" value="{{system.cost}}" {{#unless editable}}disabled{{/unless}}></div>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.quantity'}}</label><input name="system.quantity" type="number" value="{{system.quantity}}" {{#unless editable}}disabled{{/unless}}></div>
   {{/if}}
 </div>
+
+{{#if isClass}}
+<div class="becmi-section-title">{{localize 'BECMI.sheet.xpTable'}} <button type="button" class="becmi-roll" data-action="applyClass">{{localize 'BECMI.sheet.applyClass'}}</button></div>
+<table class="becmi-table becmi-table--xp">
+  <thead><tr><th>{{localize 'BECMI.labels.level'}}</th><th>{{localize 'BECMI.labels.xp'}}</th></tr></thead>
+  <tbody>
+    {{#each xpTableRows as |row|}}
+    <tr><th>{{row.level}}</th><td>{{row.xp}}</td></tr>
+    {{else}}
+    <tr><td colspan="2" class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</td></tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
 
 <div class="becmi-section-title">{{localize 'BECMI.labels.description'}}</div>
 <textarea class="becmi-editor" name="system.description" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>

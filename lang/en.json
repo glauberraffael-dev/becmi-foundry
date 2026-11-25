@@ -48,6 +48,8 @@
   "BECMI.labels.race": "Race",
   "BECMI.labels.primeRequisite": "Prime Requisite",
   "BECMI.labels.morale": "Morale",
+  "BECMI.labels.maxLevel": "Maximum Level",
+  "BECMI.labels.requirements": "Requirements",
   "BECMI.labels.movement": "Movement",
   "BECMI.labels.treasure": "Treasure Type",
   "BECMI.labels.appearing": "No. Appearing",
@@ -111,6 +113,10 @@
   "BECMI.sheet.newItem": "New Item",
   "BECMI.sheet.chooseItemType": "What kind of item should be created?",
   "BECMI.sheet.sendToChat": "Send to Chat",
+  "BECMI.sheet.classSpells": "Spells for",
+  "BECMI.sheet.otherSpells": "Other Spells",
+  "BECMI.sheet.xpTable": "Experience Table",
+  "BECMI.sheet.applyClass": "Apply to Actor",
 
   "BECMI.labels.characterName": "Character Name:",
   "BECMI.labels.player": "Player:",
@@ -170,6 +176,8 @@
   "BECMI.undead.vampire": "Vampire",
   "BECMI.undead.lich": "Lich",
 
+  "BECMI.notification.noActor": "Select a token or set a default character first.",
+  "BECMI.notification.classApplied": "Applied {name} to {actor}.",
   "BECMI.notification.noTarget": "Select a token to attack.",
   "BECMI.notification.noSpellLevel": "Choose a spell level first."
 }

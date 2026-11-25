@@ -1,3 +1,5 @@
+import { spellListsForClass } from "../integrations.mjs";
+
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
@@ -121,7 +123,18 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       damageBonus: item.system.damageBonus ?? 0,
       damage: item.system.damage ?? ""
     }));
-    context.spells = actor.items.filter((i) => i.type === "spell");
+    const classInfo = flags.classInfo ?? {};
+    const spellLists = spellListsForClass(classInfo);
+    const allSpells = actor.items.filter((i) => i.type === "spell");
+    context.className = classInfo.name ?? actor.system.attributes?.class ?? "";
+    context.classInfo = classInfo;
+    context.spells = allSpells;
+    context.classSpells = spellLists.length
+      ? allSpells.filter((i) => (i.system.spellLists ?? []).some((list) => spellLists.includes(list)))
+      : [];
+    context.otherSpells = spellLists.length
+      ? allSpells.filter((i) => !context.classSpells.includes(i))
+      : [];
     context.equipment = actor.items.filter((i) => !["weapon", "spell", "feature", "class"].includes(i.type));
     context.features = actor.items.filter((i) => i.type === "feature");
     context.magicItems = weapons.filter((i) => Number(i.system.magicBonus ?? 0) > 0);

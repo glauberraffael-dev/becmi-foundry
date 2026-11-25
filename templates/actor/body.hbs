@@ -106,10 +106,30 @@
 <!-- ============================ SPELLS ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "spells")}} is-active{{/if}}" data-tab="spells">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.spells'}} <button type="button" class="becmi-roll" data-action="addItem">+</button></h2>
+  {{#if className}}
+  <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.classSpells'}} — {{className}}</h3>
   <table class="becmi-table">
-    <thead><tr><th>{{localize 'BECMI.sheet.weapon'}}</th><th>{{localize 'BECMI.labels.spellLevel'}}</th><th>{{localize 'BECMI.labels.range'}}</th><th>{{localize 'BECMI.labels.duration'}}</th><th></th></tr></thead>
+    <thead><tr><th>{{localize 'BECMI.item.spell'}}</th><th>{{localize 'BECMI.labels.spellLevel'}}</th><th>{{localize 'BECMI.labels.range'}}</th><th>{{localize 'BECMI.labels.duration'}}</th><th></th></tr></thead>
     <tbody>
-      {{#each spells as |item|}}
+      {{#each classSpells as |item|}}
+      <tr>
+        <th><button type="button" class="becmi-item-name" data-action="itemOpen">{{item.name}}</button></th>
+        <td>{{item.system.spellLevel}}</td>
+        <td>{{item.system.range}}</td>
+        <td>{{item.system.duration}}</td>
+        <td><button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button></td>
+      </tr>
+      {{else}}
+      <tr><td colspan="5" class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{/if}}
+  <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.otherSpells'}}</h3>
+  <table class="becmi-table">
+    <thead><tr><th>{{localize 'BECMI.item.spell'}}</th><th>{{localize 'BECMI.labels.spellLevel'}}</th><th>{{localize 'BECMI.labels.range'}}</th><th>{{localize 'BECMI.labels.duration'}}</th><th></th></tr></thead>
+    <tbody>
+      {{#each otherSpells as |item|}}
       <tr>
         <th><button type="button" class="becmi-item-name" data-action="itemOpen">{{item.name}}</button></th>
         <td>{{item.system.spellLevel}}</td>

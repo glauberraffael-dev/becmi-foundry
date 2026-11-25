@@ -6,6 +6,7 @@ import { BECMIActor } from "./documents/actor.mjs";
 import { BECMIItem } from "./documents/item.mjs";
 import { BECMIActorSheet } from "./sheets/actor-sheet.mjs";
 import { BECMIItemSheet } from "./sheets/item-sheet.mjs";
+import { registerIntegrations } from "./integrations.mjs";
 
 const ACTOR_TYPES = ["character", "npc", "monster"];
 const ITEM_TYPES = ["weapon", "armor", "equipment", "spell", "class", "feature", "treasure"];
@@ -65,6 +66,8 @@ Hooks.once("init", () => {
     "systems/becmi/templates/chat/roll.hbs",
     "systems/becmi/templates/chat/item.hbs"
   ]).catch(() => {});
+
+  registerIntegrations();
 });
 
 Hooks.once("setup", () => {

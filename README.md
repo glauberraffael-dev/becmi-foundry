@@ -11,6 +11,9 @@ rules text and the PDF are **not** included.
 - Actor, Item and Journal sheets built with Foundry v13+ `ApplicationV2` (verified on v14).
 - Parchment-style tabbed character sheet: Attributes, Combat & Saves, Weapon Mastery,
   Spells, Thief Skills, Turn Undead, Attack Table, Magic Items and Notes & Equipment.
+- Dropping a Character Class onto an Actor fills class, HD, prime requisite and the
+  next-level XP from its compendium table; duplicate class items are removed.
+- Spells are split into class-allowed and other spells using the class spell list.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling.
 - Seven precompiled LevelDB compendia with 554 documents in total.
 
