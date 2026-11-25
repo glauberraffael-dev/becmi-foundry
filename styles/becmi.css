@@ -152,6 +152,83 @@
   display: block;
 }
 
+.becmi-tab--sidebar {
+  margin-left: auto;
+  border-color: var(--becmi-border);
+}
+
+/* ------------------------------------------------------- sidebar / layout */
+.becmi-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 0.5rem;
+}
+
+.becmi-layout.is-collapsed {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.becmi-panels {
+  min-width: 0;
+}
+
+.becmi-sidebar {
+  border-left: 2px solid var(--becmi-border);
+  background: rgba(255, 252, 244, 0.35);
+  padding: 0.25rem 0.5rem 1rem;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.becmi-layout.is-collapsed .becmi-sidebar {
+  display: none;
+}
+
+.becmi-sidebar input[type="text"] {
+  width: 100%;
+}
+
+.becmi-sidebar .becmi-editor {
+  min-height: 5rem;
+  font-size: 0.78rem;
+}
+
+.becmi-sidebar-roll,
+.becmi-sidebar-dice,
+.becmi-sidebar-links,
+.becmi-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.becmi-sidebar-roll input {
+  flex: 1;
+  min-width: 5rem;
+}
+
+.becmi-filter-row input[type="number"] {
+  width: 4.5rem;
+}
+
+.becmi-filter-row input[type="text"] {
+  flex: 1;
+  min-width: 8rem;
+}
+
+.becmi-roll.is-active {
+  background: var(--becmi-accent);
+  color: #fff;
+}
+
+.becmi-actions {
+  white-space: nowrap;
+}
+
 /* --------------------------------------------------------------- sections */
 .becmi-section-title {
   margin: 0.4rem 0 0.25rem;

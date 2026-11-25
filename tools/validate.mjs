@@ -74,7 +74,7 @@ const expected = {
   monsters: (d) => typeof d.system?.ac === "number" && typeof d.system?.hp === "number" && typeof d.system?.hd === "string",
   spells: (d) => typeof d.system?.spellLevel === "number" && Array.isArray(d.system?.spellLists),
   equipment: (d) => ["weapon", "armor", "equipment"].includes(d.type),
-  classes: (d) => d.system?.xpTable && typeof d.system.xpTable === "object",
+  classes: (d) => d.type === "feature" || (d.system?.xpTable && typeof d.system.xpTable === "object"),
   treasure: (d) => typeof d.system?.treasureType === "string",
   tables: (d) => Array.isArray(d.results) && typeof d.formula === "string",
   journals: (d) => Array.isArray(d.pages)

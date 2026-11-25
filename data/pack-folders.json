@@ -1,0 +1,17 @@
+{
+  "spells": [
+    { "name": "Cleric Spells", "type": "Item" },
+    { "name": "Druid Spells", "type": "Item" },
+    { "name": "Magic-User Spells", "type": "Item" }
+  ],
+  "equipment": [
+    { "name": "Weapons", "type": "Item" },
+    { "name": "Armor & Shields", "type": "Item" },
+    { "name": "Adventuring Gear", "type": "Item" },
+    { "name": "Transport & Siege", "type": "Item" }
+  ],
+  "classes": [
+    { "name": "Classes", "type": "Item" },
+    { "name": "Subclasses", "type": "Item" }
+  ]
+}

@@ -1,6 +1,6 @@
 import { spellListsForClass } from "../integrations.mjs";
 import {
-  RC, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
+  RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
   masteryWeapon, masteryChoices, normalizeClassKey, spellKey, spellSlotsForLevel,
   spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
@@ -13,7 +13,7 @@ const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
 
 const SHEET_TABS = [
   ["main", "BECMI.sheet.tab.main"],
-  ["roller", "BECMI.sheet.tab.roller"],
+  ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
   ["undead", "BECMI.sheet.tab.undead"],
@@ -22,6 +22,23 @@ const SHEET_TABS = [
   ["magic", "BECMI.sheet.tab.magic"],
   ["notes", "BECMI.sheet.tab.notes"]
 ];
+
+/** Class-exclusive sheet sections. Unknown classes get no special abilities. */
+const CLASS_CAPABILITIES = {
+  fighter: { mastery: true },
+  cleric: { spells: true, turn: true },
+  thief: { thief: true },
+  "magic-user": { spells: true },
+  dwarf: { mastery: true },
+  elf: { spells: true, mastery: true },
+  halfling: { mastery: true }
+};
+
+const RESOURCE_LABELS = {
+  magias: "BECMI.sheet.resource.spells",
+  afugentar: "BECMI.sheet.resource.turn",
+  pericias: "BECMI.sheet.resource.skills"
+};
 
 const THIEF_SKILLS = [
   ["pickPockets", "BECMI.thief.pickPockets"],
@@ -45,6 +62,22 @@ const ARMOR_EN = {
   bandas: "Banded mail", placas: "Plate mail", completa: "Full plate"
 };
 
+const EQUIPMENT_GROUPS = [
+  ["weapons", "BECMI.sheet.group.weapons"],
+  ["armor", "BECMI.sheet.group.armor"],
+  ["adventuring", "BECMI.sheet.group.adventuring"],
+  ["transport", "BECMI.sheet.group.transport"]
+];
+
+function equipmentGroupFor(item) {
+  if (item.type === "weapon") return "weapons";
+  if (item.type === "armor") return "armor";
+  const note = String(item.flags?.becmi?.notes ?? "");
+  const group = item.flags?.becmi?.group;
+  if (group === "transport" || /transport|siege/i.test(note)) return "transport";
+  return "adventuring";
+}
+
 function masteryRowsFor(actor) {
   const stored = actor.system.mastery?.rows ?? [];
   const rows = Array.from({ length: Math.max(15, stored.length) }, (_, index) => ({
@@ -67,6 +100,7 @@ function masteryRowsFor(actor) {
 
 export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   activeTab = "main";
+  sidebarCollapsed = false;
 
   static DEFAULT_OPTIONS = Object.freeze(foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
     classes: ["becmi", "sheet", "actor"],
@@ -80,7 +114,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     },
     actions: {
       switchTab: BECMIActorSheet.#switchTab,
+      toggleSidebar: BECMIActorSheet.#toggleSidebar,
       setClass: BECMIActorSheet.#setClass,
+      toggleDruid: BECMIActorSheet.#toggleDruid,
+      setSpellList: BECMIActorSheet.#setSpellList,
       rollAbility: BECMIActorSheet.#rollAbility,
       rollSave: BECMIActorSheet.#rollSave,
       rollInitiative: BECMIActorSheet.#rollInitiative,
@@ -94,10 +131,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollLevelHP: BECMIActorSheet.#rollLevelHP,
       levelUp: BECMIActorSheet.#levelUp,
       restSpells: BECMIActorSheet.#restSpells,
+      castSpell: BECMIActorSheet.#castSpell,
       memorizeSpell: BECMIActorSheet.#memorizeSpell,
       addMasteryRow: BECMIActorSheet.#addMasteryRow,
       itemAttack: BECMIActorSheet.#itemAttack,
       itemDamage: BECMIActorSheet.#itemDamage,
+      itemCast: BECMIActorSheet.#itemCast,
       itemOpen: BECMIActorSheet.#itemOpen,
       itemDelete: BECMIActorSheet.#itemDelete,
       addItem: BECMIActorSheet.#addItem
@@ -119,10 +158,19 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const xp = Number(attrs.xp) || 0;
     const classKey = normalizeClassKey(attrs.classKey || attrs.class);
     const rcClass = getRCClass(attrs.classKey || attrs.class);
+    const capabilities = CLASS_CAPABILITIES[classKey] ?? {};
+    const isDruid = classKey === "cleric" && Boolean(flags.druid);
+    const canCast = Boolean(capabilities.spells);
+    const canTurn = Boolean(capabilities.turn);
+    const canThief = Boolean(capabilities.thief);
+    const canMastery = Boolean(capabilities.mastery);
 
     Object.assign(context, {
       actor, system: actor.system, flags, editable: this.isEditable, isCharacter,
-      level, xp, classKey, rcClass,
+      level, xp, classKey, rcClass, isDruid, canCast, canTurn, canThief, canMastery,
+      sidebarCollapsed: this.sidebarCollapsed,
+      sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
+        ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
       classOptions: Object.values(RC.classes).map((cls) => ({ key: cls.key, name: cls.name })),
       armorOptions: Object.entries(RC.armor.types).map(([key, value]) => ({ key, name: ARMOR_EN[key] ?? value.name, ac: value.ac })),
       masteryGrades: masteryRanks().map((grade) => ({ key: grade.key, name: grade.nome })),
@@ -176,54 +224,64 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return sum + (data?.weightCost ?? 0);
     }, 0);
 
+    const extraLists = isDruid ? ["druid"] : [];
     const grimoire = String(actor.system.spellbook?.grimoire ?? "").split(",").map((key) => key.trim()).filter(Boolean);
     const search = String(flags.spellSearch ?? "");
+    const listFilter = String(flags.spellList ?? "");
+    const className = rcClass?.name ?? attrs.class ?? flags.classInfo?.name ?? "";
+    const spellLists = canCast ? spellListsForClass({ name: className }, { druid: isDruid }) : [];
     context.grimoire = actor.system.spellbook?.grimoire ?? "";
     context.spellLevels = Array.from({ length: 9 }, (_, index) => index + 1);
-    context.spellSlots = spellSlotsForLevel(classKey, level);
+    context.spellSlots = canCast ? spellSlotsForLevel(classKey, level) : [];
     context.spellOptions = context.spellLevels.map((spellLevel) =>
-      spellsFor(classKey, spellLevel, { grimoire }).map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level })));
+      spellsFor(classKey, spellLevel, { grimoire, extraLists }).map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level })));
     context.spellRows = context.spellLevels.map((spellLevel, levelIndex) => ({
       level: spellLevel,
       slots: context.spellSlots[levelIndex] ?? 0,
       entries: Array.from({ length: 9 }, (_, index) => {
         const key = `${spellLevel}_${index + 1}`;
+        const spell = actor.system.spellbook?.memorized?.[key] ?? "";
         return {
           key,
-          spell: actor.system.spellbook?.memorized?.[key] ?? "",
+          spell,
           used: Boolean(actor.system.spellbook?.used?.[key]),
           options: context.spellOptions[levelIndex] ?? []
         };
       })
     }));
-    context.spellList = spellsFor(classKey, Number(flags.spellFilterLevel) || 0, { grimoire, search }).slice(0, 120)
-      .map((spell) => ({
-        ...spell,
-        key: spellKey(spell),
-        notes: [spell.reverse ? `Reverse: ${spell.reverse}` : "", spell.save ? `Save: ${spell.save}` : ""].filter(Boolean).join("; ")
-      }));
+    context.spellFilterOptions = [
+      { key: "", name: game.i18n.localize("BECMI.sheet.allLists") },
+      ...SPELL_LISTS.filter((entry) => spellLists.includes(entry.key))
+        .map((entry) => ({ key: entry.key, name: game.i18n.localize(`BECMI.sheet.list.${entry.key}`) }))
+    ];
+    context.spellListFilter = spellLists.includes(listFilter) ? listFilter : "";
+    context.spellList = canCast
+      ? spellsFor(classKey, Number(flags.spellFilterLevel) || 0, { grimoire, search, extraLists, listFilter: context.spellListFilter }).slice(0, 120)
+        .map((spell) => ({
+          ...spell,
+          key: spellKey(spell),
+          listName: game.i18n.localize(`BECMI.sheet.list.${spell.class}`),
+          notes: [spell.reverse ? `Reverse: ${spell.reverse}` : "", spell.save ? `Save: ${spell.save}` : ""].filter(Boolean).join("; ")
+        }))
+      : [];
     context.spellSearch = search;
 
-    const weapons = actor.items.filter((item) => item.type === "weapon");
-    context.weapons = weapons;
-    context.weaponRows = weapons.map((item) => ({
-      id: item.id,
-      name: item.name,
-      mastery: flags.mastery?.[item.id] ?? "",
-      attackBonus: item.system.attackBonus ?? 0,
-      damageBonus: item.system.damageBonus ?? 0,
-      damage: item.system.damage ?? ""
+    const allItems = actor.items.filter((item) => !["spell", "feature", "class"].includes(item.type));
+    context.equipmentGroups = EQUIPMENT_GROUPS.map(([key, label]) => ({
+      key,
+      label: game.i18n.localize(label),
+      items: allItems.filter((item) => equipmentGroupFor(item) === key).map((item) => ({
+        id: item.id,
+        name: item.name,
+        type: item.type,
+        cost: item.system?.cost ?? "",
+        weight: item.system?.weight ?? 0,
+        quantity: item.system?.quantity ?? 1,
+        damage: item.system?.damage ?? "",
+        attackBonus: item.system?.attackBonus ?? 0,
+        damageBonus: item.system?.damageBonus ?? 0
+      }))
     }));
-    const spellLists = spellListsForClass(flags.classInfo ?? {});
-    const allSpells = actor.items.filter((item) => item.type === "spell");
-    context.className = flags.classInfo?.name ?? attrs.class ?? "";
-    context.classSpells = spellLists.length
-      ? allSpells.filter((item) => (item.system.spellLists ?? []).some((list) => spellLists.includes(list)))
-      : allSpells;
-    context.otherSpells = spellLists.length
-      ? allSpells.filter((item) => !context.classSpells.includes(item))
-      : [];
-    context.equipment = actor.items.filter((item) => !["weapon", "spell", "feature", "class"].includes(item.type));
     context.magicItems = actor.system.magicItems ?? [];
     context.magicTotals = context.magicItems.reduce((totals, item) => {
       if (!item.equipped) return totals;
@@ -233,9 +291,28 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       totals.damage += Number(item.damage) || 0;
       return totals;
     }, { ac: 0, save: 0, attack: 0, damage: 0 });
+
+    const allSpells = actor.items.filter((item) => item.type === "spell");
+    context.className = className;
+    context.classSpells = spellLists.length
+      ? allSpells.filter((item) => (item.system.spellLists ?? []).some((list) => spellLists.includes(list)))
+      : allSpells;
+    context.otherSpells = spellLists.length
+      ? allSpells.filter((item) => !context.classSpells.includes(item))
+      : [];
+    context.classResources = (rcClass?.resources ?? []).map((key) => ({
+      key,
+      label: game.i18n.localize(RESOURCE_LABELS[key] ?? key)
+    }));
     context.milestones = (rcClass?.milestones ?? []).filter(([minimum]) => xp >= minimum).map(([, text]) => text);
 
-    const definitions = isCharacter ? SHEET_TABS : SHEET_TABS.filter(([id]) => ["main", "notes"].includes(id));
+    const definitions = isCharacter ? SHEET_TABS.filter(([id]) => {
+      if (id === "spells") return canCast;
+      if (id === "thief") return canThief;
+      if (id === "undead") return canTurn;
+      if (id === "mastery") return canMastery;
+      return true;
+    }) : SHEET_TABS.filter(([id]) => ["main", "notes"].includes(id));
     context.tabs = definitions.map(([id, label]) => ({
       id, label: game.i18n.localize(label), active: id === this.activeTab
     }));
@@ -250,12 +327,17 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.render();
   }
 
+  static async #toggleSidebar() {
+    this.sidebarCollapsed = !this.sidebarCollapsed;
+    await this.render();
+  }
+
   static async #onSubmit(event, form, formData) {
     await this.document.update(formData.object);
   }
 
   static async #setClass(event, target) {
-    const key = target.dataset.classKey;
+    const key = target.dataset.classKey ?? target.value;
     const cls = RC.classes[key];
     if (!cls) return;
     await this.actor.update({
@@ -264,6 +346,15 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       "system.attributes.hd": `1d${cls.hitDie}`,
       "system.attributes.xpNext": cls.xp[1] ?? 0
     });
+  }
+
+  static async #toggleDruid() {
+    const enabled = !Boolean(this.actor.flags?.becmi?.druid);
+    await this.actor.update({ "flags.becmi.druid": enabled });
+  }
+
+  static async #setSpellList(event, target) {
+    await this.actor.update({ "flags.becmi.spellList": target.dataset.list ?? "" });
   }
 
   static async #rollAbility(event, target) {
@@ -309,6 +400,15 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       ui.notifications.warn(game.i18n.localize("BECMI.notification.noClass"));
       return;
     }
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+      window: { title: game.i18n.localize("BECMI.sheet.createCharacter") },
+      content: `<p>${game.i18n.localize("BECMI.sheet.confirmCreate")}</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+      rejectClose: false
+    });
+    if (!confirmed) return;
     const roll = (faces) => 1 + Math.floor(Math.random() * faces);
     const abilities = Object.fromEntries(ABILITIES.map((key) => [key, { value: roll(6) + roll(6) + roll(6) }]));
     const hp = hpForLevel(cls.key, 1, adjustment(abilities.con.value))?.gain ?? 1;
@@ -352,11 +452,40 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.actor.update({ "system.spellbook.used": {} });
   }
 
+  static async #castSpell(event, target) {
+    const slot = target.dataset.slot;
+    if (slot) {
+      const used = { ...(this.actor.system.spellbook?.used ?? {}) };
+      if (!used[slot]) {
+        used[slot] = true;
+        await this.actor.update({ "system.spellbook.used": used });
+      }
+    }
+    const spell = RC.spells.find((entry) => spellKey(entry) === target.dataset.spellKey);
+    if (!spell) return;
+    const escape = (value) => foundry.utils.escapeHTML(String(value ?? ""));
+    const details = [
+      ["Range", spell.range], ["Duration", spell.duration], ["Effect", spell.effect],
+      spell.save ? ["Save", spell.save] : null, spell.reverse ? ["Reverse", spell.reverse] : null
+    ].filter(Boolean).map(([label, value]) => `<p><strong>${label}:</strong> ${escape(value)}</p>`).join("");
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: `Spell — ${escape(spell.name)}`,
+      content: `<div class="becmi-roll-card"><h3 class="becmi-roll-card__title">${escape(spell.name)}</h3>${details}</div>`
+    });
+  }
+
+  static async #itemCast(event, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    if (item?.type === "spell") await item.sendToChat();
+  }
+
   static async #memorizeSpell(event, target) {
     const key = target.dataset.spellKey;
     const spell = RC.spells.find((entry) => spellKey(entry) === key);
     if (!spell) return;
     const classKey = normalizeClassKey(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
+    const extraLists = this.actor.flags?.becmi?.druid && classKey === "cleric" ? ["druid"] : [];
     const slots = spellSlotsForLevel(classKey, Number(this.actor.system.attributes?.level) || 1);
     const memorized = { ...(this.actor.system.spellbook?.memorized ?? {}) };
     for (let slot = 1; slot <= (slots[spell.level - 1] ?? 0); slot++) {
@@ -387,7 +516,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #itemOpen(event, target) {
     const item = this.actor.items.get(target.dataset.itemId);
-    item?.sheet.render(true);
+    if (item?.sheet) item.sheet.render(true);
   }
 
   static async #itemDelete(event, target) {

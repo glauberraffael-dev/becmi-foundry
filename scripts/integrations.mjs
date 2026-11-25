@@ -9,7 +9,6 @@
 const CLASS_SPELL_LISTS = {
   cleric: ["cleric"],
   "magic-user": ["magic-user"],
-  druid: ["druid"],
   elf: ["magic-user"]
 };
 
@@ -25,9 +24,11 @@ function clone(value) {
 
 import { normalizeClassKey } from "./rules-rc.mjs";
 
-export function spellListsForClass(classInfo) {
+export function spellListsForClass(classInfo, { druid = false } = {}) {
   const name = String(classInfo?.name ?? "").toLowerCase();
-  return CLASS_SPELL_LISTS[name] ? [...CLASS_SPELL_LISTS[name]] : [];
+  const lists = CLASS_SPELL_LISTS[name] ? [...CLASS_SPELL_LISTS[name]] : [];
+  if (druid && name === "cleric" && !lists.includes("druid")) lists.push("druid");
+  return lists;
 }
 
 export function xpForLevel(classInfo, level) {
@@ -92,6 +93,24 @@ export async function applyClassToActor(actor, classItem) {
   return dedupeActorClasses(actor, classItem.id);
 }
 
+/** Druid is a Cleric extension: mark the Cleric actor and enable its spell list. */
+export async function applyDruidFeatureToActor(actor, item) {
+  if (!actor || String(item?.name ?? "").toLowerCase() !== "druid") return 0;
+  const classKey = normalizeClassKey(getProperty(actor.system, "attributes.classKey")
+    || getProperty(actor.system, "attributes.class"));
+  const changes = { "flags.becmi.druid": true };
+  if (!classKey) {
+    Object.assign(changes, {
+      "system.attributes.class": "Cleric",
+      "system.attributes.classKey": "cleric",
+      "system.attributes.hd": "1d6"
+    });
+  }
+  const needed = changesFor(actor, changes);
+  if (Object.keys(needed).length) await actor.update(needed);
+  return Object.keys(needed).length;
+}
+
 /** Re-derive XP and remove duplicates from an Actor that already has a class. */
 export async function refreshActorFromClass(actor) {
   const classes = actor.items.filter((item) => item.type === "class");
@@ -112,10 +131,14 @@ export async function refreshActorFromClass(actor) {
 /** Register the Foundry hooks that drive the integrations. */
 export function registerIntegrations() {
   Hooks.on("createItem", (item, options, userId) => {
-    if (game.userId !== userId || item.type !== "class") return;
+    if (game.userId !== userId) return;
     const actor = item.parent;
     if (actor?.documentName !== "Actor") return;
-    applyClassToActor(actor, item).catch((err) => console.error("BECMI | applyClassToActor", err));
+    if (item.type === "class") {
+      applyClassToActor(actor, item).catch((err) => console.error("BECMI | applyClassToActor", err));
+    } else if (item.type === "feature") {
+      applyDruidFeatureToActor(actor, item).catch((err) => console.error("BECMI | applyDruidFeatureToActor", err));
+    }
   });
 
   Hooks.on("preUpdateActor", (actor, changed) => {
@@ -131,6 +154,10 @@ export function registerIntegrations() {
     const classItem = actor.items.find((item) => item.type === "class");
     if (classItem) {
       applyClassToActor(actor, classItem).catch((err) => console.error("BECMI | applyClassToActor", err));
+    }
+    const druidItem = actor.items.find((item) => item.type === "feature" && String(item.name).toLowerCase() === "druid");
+    if (druidItem) {
+      applyDruidFeatureToActor(actor, druidItem).catch((err) => console.error("BECMI | applyDruidFeatureToActor", err));
     }
   });
 

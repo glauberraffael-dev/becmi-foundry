@@ -24,7 +24,8 @@ for (const pack of packs) {
         key.startsWith("!items!") || key.startsWith("!actors!")) docs.push(value);
     else embedded.push([key, value]);
   }
-  console.log(`${pack}: ${docs.length} documents, ${embedded.length} embedded keys`);
+  const folders = embedded.filter(([key]) => key.startsWith("!folders!")).map(([, value]) => value.name);
+  console.log(`${pack}: ${docs.length} documents, ${embedded.length} embedded keys${folders.length ? `, folders: ${folders.join(", ")}` : ""}`);
 
   if (pack === "tables") {
     const names = ["Weapons (Basic Stats)", "Weapon Choices by Experience Level",

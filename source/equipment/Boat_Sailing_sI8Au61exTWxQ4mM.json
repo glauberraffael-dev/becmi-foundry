@@ -16,10 +16,12 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "notes": "Transportation / siege equipment"
+      "notes": "Transportation / siege equipment",
+      "group": "transport"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "nvlrfHA52rKkfkyc"
 }

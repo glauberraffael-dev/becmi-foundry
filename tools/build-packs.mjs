@@ -44,8 +44,32 @@ function stableId(name) {
   return createHash("sha1").update(name).digest("base64url").slice(0, 16);
 }
 
+function folderId(pack, name) {
+  return stableId(`folder:${pack}:${name}`);
+}
+
+function folderNameFor(pack, doc) {
+  if (pack === "spells") {
+    const list = doc.flags?.becmi?.list ?? doc.system?.spellLists?.[0] ?? "magic-user";
+    return ({ cleric: "Cleric Spells", druid: "Druid Spells", "magic-user": "Magic-User Spells" })[list] ?? null;
+  }
+  if (pack === "equipment") {
+    const group = doc.flags?.becmi?.group
+      ?? (doc.type === "weapon" ? "weapons" : doc.type === "armor" ? "armor" : "adventuring");
+    return ({
+      weapons: "Weapons",
+      armor: "Armor & Shields",
+      adventuring: "Adventuring Gear",
+      transport: "Transport & Siege"
+    })[group] ?? "Adventuring Gear";
+  }
+  if (pack === "classes") return doc.type === "feature" ? "Subclasses" : "Classes";
+  return null;
+}
+
 async function main() {
   const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json"));
+  const folderDefinitions = JSON.parse(await readFile(join(dataDir, "pack-folders.json"), "utf8"));
   await rm(sourceDir, { recursive: true, force: true });
 
   for (const file of files) {
@@ -54,6 +78,24 @@ async function main() {
     const docs = JSON.parse(await readFile(join(dataDir, file), "utf8"));
     const outDir = join(sourceDir, pack);
     await mkdir(outDir, { recursive: true });
+
+    let foldersWritten = 0;
+    for (const definition of folderDefinitions[pack] ?? []) {
+      const id = folderId(pack, definition.name);
+      const folder = {
+        _id: id,
+        _key: `!folders!${id}`,
+        name: definition.name,
+        type: definition.type ?? "Item",
+        parent: null,
+        sorting: "m",
+        color: null,
+        flags: {},
+        ownership: { default: 0 }
+      };
+      await writeFile(join(outDir, `_Folder_${id}.json`), JSON.stringify(folder, null, 2));
+      foldersWritten++;
+    }
 
     const seen = new Set();
     let written = 0;
@@ -78,7 +120,10 @@ async function main() {
         })(),
         flags: doc.flags ?? {},
         ownership: { default: 0 },
-        ...(doc.folder ? { folder: doc.folder } : {}),
+        ...(() => {
+          const name = folderNameFor(pack, doc);
+          return name ? { folder: folderId(pack, name) } : {};
+        })(),
         ...(doc.text ? { text: doc.text } : {}),
         ...(doc.pages ? { pages: doc.pages } : {}),
         ...(doc.results ? { results: doc.results } : {}),
@@ -103,7 +148,7 @@ async function main() {
       await writeFile(join(outDir, `${safeName}_${id}.json`), JSON.stringify(output, null, 2));
       written++;
     }
-    console.log(`${pack}: ${written} documents -> source/${pack}`);
+    console.log(`${pack}: ${written} documents, ${foldersWritten} folders -> source/${pack}`);
   }
 }
 

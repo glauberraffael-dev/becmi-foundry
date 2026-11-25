@@ -16,10 +16,12 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "notes": "Adventuring gear"
+      "notes": "Adventuring gear",
+      "group": "adventuring"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "v6-BZwjVhLzyyIqX"
 }

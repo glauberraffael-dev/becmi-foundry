@@ -25,10 +25,12 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "notes": "r, M"
+      "notes": "r, M",
+      "group": "weapons"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "C_7I3oqaIO1kOaRk"
 }

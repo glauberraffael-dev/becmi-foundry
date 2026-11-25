@@ -2,7 +2,7 @@
   "id": "becmi",
   "title": "BECMI — Rules Cyclopedia",
   "description": "Unofficial Foundry VTT system for the Basic/Expert/Companion/Master/Immortal rules, based on the D&D Rules Cyclopedia. Requires the Rules Cyclopedia PDF for full rules text; compendia contain structured game data only.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "compatibility": {
     "minimum": 13,
     "verified": 14

@@ -5,7 +5,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "r, 2H, M"
+        "notes": "r, 2H, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -33,7 +34,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "t, S"
+        "notes": "t, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -61,7 +63,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, 2H, M"
+        "notes": "a, m, 2H, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -89,7 +92,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, 2H, L"
+        "notes": "a, m, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -117,7 +121,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, s, 2H, M"
+        "notes": "a, m, s, 2H, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -145,7 +150,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, s, 2H, L"
+        "notes": "a, m, s, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -173,7 +179,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, s, S"
+        "notes": "c, r, s, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -201,7 +208,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, M"
+        "notes": "c, r, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -229,7 +237,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, t, M"
+        "notes": "c, t, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -257,7 +266,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, M"
+        "notes": "c, r, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -285,7 +295,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, M"
+        "notes": "c, r, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -313,7 +324,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, w, 2H, M"
+        "notes": "c, r, w, 2H, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -341,7 +353,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, r, S"
+        "notes": "c, r, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -369,7 +382,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "t, w, S"
+        "notes": "t, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -397,7 +411,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "t, w, S"
+        "notes": "t, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -425,7 +440,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, 2H, L"
+        "notes": "s, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -453,7 +469,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "t, M"
+        "notes": "t, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -481,7 +498,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, v, L"
+        "notes": "s, v, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -509,7 +527,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, v, 2H, L"
+        "notes": "s, v, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -537,7 +556,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, 2H, L"
+        "notes": "s, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -565,7 +585,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, 2H, L"
+        "notes": "s, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -593,7 +614,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "t, v, L"
+        "notes": "t, v, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -621,7 +643,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, t, M"
+        "notes": "s, t, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -649,7 +672,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, S"
+        "notes": "s, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -677,7 +701,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, S"
+        "notes": "s, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -705,7 +730,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, v, M"
+        "notes": "s, v, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -733,7 +759,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, 2H, L"
+        "notes": "s, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -761,7 +788,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "r, S"
+        "notes": "r, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -789,7 +817,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "r, M"
+        "notes": "r, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -817,7 +846,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "r, HH, L"
+        "notes": "r, HH, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -845,7 +875,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "r, 2H, L"
+        "notes": "r, 2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -873,7 +904,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "2H, L"
+        "notes": "2H, L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -901,7 +933,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, s, w, S"
+        "notes": "a, m, s, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -929,7 +962,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "a, m, s, w, 2H, M"
+        "notes": "a, m, s, w, 2H, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -957,7 +991,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, t, M"
+        "notes": "s, t, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -985,7 +1020,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, S"
+        "notes": "s, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1013,7 +1049,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, s, t, w, S"
+        "notes": "c, s, t, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1041,7 +1078,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, t, w, M or L"
+        "notes": "s, t, w, M or L",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1069,7 +1107,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, s, t, w, S"
+        "notes": "c, s, t, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1097,7 +1136,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, t, w, S"
+        "notes": "c, t, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1125,7 +1165,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "c, m, w, S"
+        "notes": "c, m, w, S",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1153,7 +1194,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "s, w, M"
+        "notes": "s, w, M",
+        "group": "weapons"
       }
     },
     "system": {
@@ -1181,7 +1223,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "D"
+        "notes": "D",
+        "group": "armor"
       }
     },
     "system": {
@@ -1201,7 +1244,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "D,T"
+        "notes": "D,T",
+        "group": "armor"
       }
     },
     "system": {
@@ -1221,7 +1265,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": ""
+        "notes": "",
+        "group": "armor"
       }
     },
     "system": {
@@ -1241,7 +1286,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": ""
+        "notes": "",
+        "group": "armor"
       }
     },
     "system": {
@@ -1261,7 +1307,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": ""
+        "notes": "",
+        "group": "armor"
       }
     },
     "system": {
@@ -1281,7 +1328,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": ""
+        "notes": "",
+        "group": "armor"
       }
     },
     "system": {
@@ -1301,7 +1349,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "S"
+        "notes": "S",
+        "group": "armor"
       }
     },
     "system": {
@@ -1316,50 +1365,13 @@
     }
   },
   {
-    "name": "Adventuring Gear Table",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
-      }
-    },
-    "system": {
-      "description": " —  — ",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Adventuring gear",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "---",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
-      }
-    },
-    "system": {
-      "description": "--- — --- — ---",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Adventuring gear",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
     "name": "Backpack",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1378,7 +1390,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1397,7 +1410,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1416,7 +1430,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1435,7 +1450,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1454,7 +1470,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1473,7 +1490,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1492,7 +1510,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1511,7 +1530,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1530,7 +1550,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1549,7 +1570,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1568,7 +1590,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1587,7 +1610,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1606,7 +1630,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1625,7 +1650,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1644,7 +1670,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1663,7 +1690,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1682,7 +1710,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1701,7 +1730,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1720,7 +1750,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1739,7 +1770,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1758,7 +1790,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1777,7 +1810,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1796,7 +1830,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1815,7 +1850,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1834,7 +1870,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1853,7 +1890,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1872,7 +1910,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1891,7 +1930,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1910,7 +1950,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1929,7 +1970,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1948,7 +1990,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1967,7 +2010,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -1986,7 +2030,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -2005,7 +2050,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -2024,7 +2070,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Adventuring gear"
+        "notes": "Adventuring gear",
+        "group": "adventuring"
       }
     },
     "system": {
@@ -2043,7 +2090,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2057,12 +2105,13 @@
     }
   },
   {
-    "name": "Horse:",
+    "name": "Horse",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2076,69 +2125,13 @@
     }
   },
   {
-    "name": "Draft",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "40",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 40,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Riding",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "75",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 75,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "War",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "250",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 250,
-      "quantity": 1
-    }
-  },
-  {
     "name": "Mule",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2157,7 +2150,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2171,31 +2165,13 @@
     }
   },
   {
-    "name": "Sailing Vessels Table",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": " —  —  —  —  —  —  —  — ",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
     "name": "Boat, River",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2214,7 +2190,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2233,7 +2210,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2247,69 +2225,13 @@
     }
   },
   {
-    "name": "Galleys:",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": " —  —  —  —  —  —  —  — ",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Large",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "30,000 — 180 — 20 — 50 — 60,000 — 18/72 — 90/120 — 100-120 — 7",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 7,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Small",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "10,000 — 60 — 10 — 20 — 40,000 — 18/90 — 90/150 — 80-100 — 8",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 8,
-      "quantity": 1
-    }
-  },
-  {
     "name": "Lifeboat, Ship's",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2328,7 +2250,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2342,164 +2265,13 @@
     }
   },
   {
-    "name": "Rafts tt:",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": " —  —  —  —  —  —  —  — ",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Professional",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "1 gp/sq ft —  —  —  — 10,000 — 12 — 30 — 5 — 9",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "1 gp",
-      "weight": 9,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Built by PCs",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": " —  —  —  — 5,000 — 12 — 30 — 5 — 9",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 9,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Sailing Ships:",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": " —  —  —  —  —  —  —  — ",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 0,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Troop Transport",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "30,000 —  — **20** — 100 — 600,000 — 60 — 90 — 160-220 — **7**",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "",
-      "weight": 7,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "First-Class",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "Miles/1 sp — 35 sp",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "1 sp",
-      "weight": 35,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Second-Class",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "Miles/5 sp — 10 sp",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "5 sp",
-      "weight": 10,
-      "quantity": 1
-    }
-  },
-  {
-    "name": "Third-Class",
-    "type": "equipment",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
-      }
-    },
-    "system": {
-      "description": "Miles/20 sp — 2 sp",
-      "source": "Rules Cyclopedia",
-      "page": 0,
-      "notes": "Transportation / siege equipment",
-      "cost": "20 sp",
-      "weight": 2,
-      "quantity": 1
-    }
-  },
-  {
     "name": "Ballista",
     "type": "equipment",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2518,7 +2290,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2537,7 +2310,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2556,7 +2330,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2575,7 +2350,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2594,7 +2370,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2613,7 +2390,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2632,7 +2410,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2651,7 +2430,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2670,7 +2450,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2689,7 +2470,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {
@@ -2708,7 +2490,8 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "notes": "Transportation / siege equipment"
+        "notes": "Transportation / siege equipment",
+        "group": "transport"
       }
     },
     "system": {

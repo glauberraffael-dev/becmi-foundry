@@ -17,10 +17,12 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "notes": "S"
+      "notes": "S",
+      "group": "armor"
     }
   },
   "ownership": {
     "default": 0
-  }
+  },
+  "folder": "Ucd_X1McQKt7iFYY"
 }

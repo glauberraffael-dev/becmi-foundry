@@ -23,7 +23,8 @@ const {
   xpForLevel,
   spellListsForClass,
   dedupeActorClasses,
-  applyClassToActor
+  applyClassToActor,
+  applyDruidFeatureToActor
 } = await import("../scripts/integrations.mjs");
 
 const xpTable = { 1: 2, 2: 2500, 3: 5000, 36: 4350000 };
@@ -34,6 +35,9 @@ if (xpForLevel(magicUser, 37) !== 4350000) throw new Error("xpForLevel above max
 if (spellListsForClass(magicUser)[0] !== "magic-user") throw new Error("Magic-User spell list failed");
 if (spellListsForClass({ name: "Elf" })[0] !== "magic-user") throw new Error("Elf spell list failed");
 if (spellListsForClass({ name: "Fighter" }).length !== 0) throw new Error("Fighter should have no spells");
+if (spellListsForClass({ name: "Druid" }).length !== 0) throw new Error("Druid is not a stand-alone class");
+if (spellListsForClass({ name: "Cleric" }).join() !== "cleric") throw new Error("Cleric spell list failed");
+if (spellListsForClass({ name: "Cleric" }, { druid: true }).join() !== "cleric,druid") throw new Error("Druid extension failed");
 
 const actor = {
   system: { attributes: { level: 1, xpNext: 0 } },
@@ -58,4 +62,17 @@ if (getProperty(actor, "flags.becmi.classInfo.name") !== "Magic-User") throw new
 actor.items.push({ id: "copy", type: "class", name: "Magic-User", system: { xpTable } });
 if (await dedupeActorClasses(actor) !== 1) throw new Error("duplicate class was not removed");
 
-console.log("Integrations OK (class apply, XP, spell lists, dedupe).");
+const cleric = {
+  system: { attributes: { level: 1, class: "Cleric", classKey: "cleric" } },
+  flags: {},
+  async update(changes) {
+    for (const [path, value] of Object.entries(changes)) setProperty(this, path, value);
+  }
+};
+if (await applyDruidFeatureToActor(cleric, { name: "Druid", type: "feature" }) !== 1) {
+  throw new Error("Druid feature was not applied");
+}
+if (getProperty(cleric, "flags.becmi.druid") !== true) throw new Error("Druid flag missing");
+if (getProperty(cleric, "system.attributes.classKey") !== "cleric") throw new Error("Druid lost the Cleric class");
+
+console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid).");

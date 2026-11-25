@@ -9,13 +9,20 @@ rules text and the PDF are **not** included.
 
 - Descending AC and THAC0, saving throws, ability checks, initiative and morale.
 - Actor, Item and Journal sheets built with Foundry v13+ `ApplicationV2` (verified on v14).
-- Parchment-style tabbed character sheet: Attributes, Combat & Saves, Weapon Mastery,
-  Spells, Thief Skills, Turn Undead, Attack Table, Magic Items and Notes & Equipment.
+- Parchment-style tabbed character sheet: Main, Equipment, Spells, Thief Skills,
+  Turn Undead, Attack Table, Weapon Mastery, Magic Items and Notes, plus a collapsible
+  reference sidebar for quick rolls, class features and hidden details.
 - Dropping a Character Class onto an Actor fills class, HD, prime requisite and the
   next-level XP from its compendium table; duplicate class items are removed.
-- Spells are split into class-allowed and other spells using the class spell list.
+- Character generation asks for confirmation before replacing scores, level, XP and HP.
+- Druid is handled as a Cleric extension, not as a stand-alone class.
+- Class-exclusive sections (thief skills, turn undead, mastery, spellcasting) only
+  appear for classes that have them.
+- Spells are split into compendium folders and filtered by Cleric, Druid or Magic-User
+  lists on the sheet; equipment is grouped as weapons, armor, adventuring gear and
+  transport/siege gear.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling.
-- Seven precompiled LevelDB compendia with 554 documents in total.
+- Seven precompiled LevelDB compendia with 537 documents in total.
 
 ## Compendia
 
@@ -23,13 +30,16 @@ rules text and the PDF are **not** included.
 |---|---|---:|
 | BECMI Monsters | Actor | 170 |
 | BECMI Spells | Item | 180 |
-| BECMI Equipment | Item | 123 |
+| BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
 | BECMI Treasure | Item | 32 |
 | BECMI Tables | RollTable | 22 |
 | BECMI Rules Reference | JournalEntry | 18 |
 
-`BECMI Equipment` contains **42 weapons**, 7 armor types and 74 other equipment entries.
+`BECMI Spells` has folders for Cleric, Druid and Magic-User spells. `BECMI Equipment`
+contains **42 weapons**, 7 armor types and 57 other equipment entries, organized in
+folders for Weapons, Armor & Shields, Adventuring Gear and Transport & Siege.
+`BECMI Classes` keeps the Druid entry in a Subclasses folder.
 `BECMI Tables` includes the monster reaction table, a Weapons Table lookup, basic weapon
 special effects, ammunition, armor, barding, nets, siege equipment, passage prices and
 the optional Weapon Mastery tables. `BECMI Rules Reference` includes a six-page

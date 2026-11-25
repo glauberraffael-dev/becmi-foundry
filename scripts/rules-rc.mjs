@@ -350,21 +350,28 @@ function slug(value) {
   return String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+export const SPELL_LISTS = [
+  { key: "cleric", name: "Cleric" },
+  { key: "druid", name: "Druid" },
+  { key: "magic-user", name: "Magic-User" }
+];
+
 export function spellKey(spell) {
   return `${String(spell.class).charAt(0)}${spell.level}-${slug(spell.namePt)}`;
 }
 
-export function spellsFor(className, level, { grimoire = [], search = "" } = {}) {
+export function spellsFor(className, level, { grimoire = [], search = "", extraLists = [], listFilter = "" } = {}) {
   const cls = getRCClass(className);
   if (!cls?.spells) return [];
-  const list = cls.spells.list;
+  const lists = new Set([cls.spells.list, ...extraLists]);
   const selectedLevel = Math.max(0, Number(level) || 0);
   const keys = new Set(grimoire);
   const needle = String(search).trim().toLowerCase();
   return RC.spells
-    .filter((spell) => spell.class === list && spell.level <= cls.spells.levels)
+    .filter((spell) => lists.has(spell.class) && spell.level <= cls.spells.levels)
     .filter((spell) => !selectedLevel || spell.level === selectedLevel)
-    .filter((spell) => list !== "magic-user" || !keys.size || keys.has(spellKey(spell)))
+    .filter((spell) => cls.spells.list !== "magic-user" || !keys.size || keys.has(spellKey(spell)))
+    .filter((spell) => !listFilter || spell.class === listFilter)
     .filter((spell) => !needle || `${spell.name} ${spell.namePt} ${spell.effect}`.toLowerCase().includes(needle))
     .sort((a, b) => a.name.localeCompare(b.name));
 }

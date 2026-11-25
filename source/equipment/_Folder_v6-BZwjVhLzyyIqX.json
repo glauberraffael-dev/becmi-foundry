@@ -1,0 +1,13 @@
+{
+  "_id": "v6-BZwjVhLzyyIqX",
+  "_key": "!folders!v6-BZwjVhLzyyIqX",
+  "name": "Adventuring Gear",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

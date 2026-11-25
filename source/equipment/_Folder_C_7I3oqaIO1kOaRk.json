@@ -1,0 +1,13 @@
+{
+  "_id": "C_7I3oqaIO1kOaRk",
+  "_key": "!folders!C_7I3oqaIO1kOaRk",
+  "name": "Weapons",
+  "type": "Item",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

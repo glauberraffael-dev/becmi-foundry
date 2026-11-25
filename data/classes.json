@@ -336,61 +336,18 @@
   },
   {
     "name": "Druid",
-    "type": "class",
+    "type": "feature",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "xpLevels": 36
+        "classExtension": "cleric"
       }
     },
     "system": {
-      "primeRequisite": "Wisdom",
-      "hitDice": "1d6",
-      "maxLevel": 36,
-      "requirements": "Neutral alignment",
-      "xpTable": {
-        "1": 2,
-        "2": 2000,
-        "3": 4000,
-        "4": 8000,
-        "5": 16000,
-        "6": 32000,
-        "7": 6,
-        "8": 7,
-        "9": 200000,
-        "10": 300000,
-        "11": 400000,
-        "12": 500000,
-        "13": 600000,
-        "14": 700000,
-        "15": 800000,
-        "16": 900000,
-        "17": 1000000,
-        "18": 1100000,
-        "19": 1200000,
-        "20": 1300000,
-        "21": 1400000,
-        "22": 1500000,
-        "23": 1600000,
-        "24": 1700000,
-        "25": 1800000,
-        "26": 1900000,
-        "27": 2000000,
-        "28": 2100000,
-        "29": 2200000,
-        "30": 2300000,
-        "31": 2400000,
-        "32": 2500000,
-        "33": 2600000,
-        "34": 2700000,
-        "35": 2800000,
-        "36": 2900000
-      },
-      "saves": {},
-      "description": "A druid is pure Neutral, never Lawful or Chaotic. The druid devotes his life to the balance of all things and to the study of nature. Prime Requisite: Wisdom. Other Requirements: Neutral alignment. Experience Bonus: 5% for Wisdom 13-15, 10% for Wisdom 16-18. Druid items and equipment are all made of items that were once alive (leather, wood, etc.). \"Dead\" things that have never been alive are repulsive to the druid; the character simply won't want to use or touch them. However, the character should not object if others use \"dead\" things. Thus, a druid can be a challenging character to play, but the role can be entertaining.",
+      "description": "Druid is an extension of the Cleric class. Druids use the Cleric hit dice, saving throws and experience table, but choose spells from the Druid list.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "Cleric subclass — Druid spell list"
     }
   },
   {

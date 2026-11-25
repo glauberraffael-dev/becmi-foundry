@@ -68,6 +68,9 @@ check("spell slots and spell lists use the extracted tables", () => {
   const key = spellKey(spellsFor("cleric", 1)[0]);
   assert.ok(spellsFor("magic-user", 1, { grimoire: [key] }).length >= 0);
   assert.equal(spellsFor("fighter", 1).length, 0);
+  const druidSpells = spellsFor("cleric", 1, { extraLists: ["druid"] });
+  assert.ok(druidSpells.length > 8);
+  assert.ok(druidSpells.every((spell) => ["cleric", "druid"].includes(spell.class)));
 });
 
 check("ability adjustments and creation swap follow the RC bands", () => {

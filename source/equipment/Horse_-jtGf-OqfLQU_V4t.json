@@ -1,0 +1,27 @@
+{
+  "_id": "-jtGf-OqfLQU_V4t",
+  "_key": "!items!-jtGf-OqfLQU_V4t",
+  "name": "Horse",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment",
+      "group": "transport"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "nvlrfHA52rKkfkyc"
+}
