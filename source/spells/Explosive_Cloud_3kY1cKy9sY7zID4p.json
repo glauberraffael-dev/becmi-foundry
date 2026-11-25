@@ -1,0 +1,30 @@
+{
+  "_id": "3kY1cKy9sY7zID4p",
+  "_key": "!items!3kY1cKy9sY7zID4p",
+  "name": "Explosive Cloud",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "1'",
+    "duration": "6 turns",
+    "effect": "Creates a moving poisonous cloud",
+    "reversible": false,
+    "description": "Effect: Creates a moving poisonous cloud This spell creates an effect which looks identical to the 5th level cloudkill spell (a 20' tall cloud of greenish gas 30' in diameter appearing next to the caster). The cloud is only mildly poisonous; all victims within it must make a saving throw vs. spells or be paralyzed that round. Each victim within the cloud makes a new saving throw each round. The cloud is filled with sparkling lights (visible only to those within it), which are small explosions. Each round, all those within the cloud take damage from the explosions, with no saving throw allowed.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

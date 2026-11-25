@@ -1,0 +1,30 @@
+{
+  "_id": "WGggERJmcku3hr8i",
+  "_key": "!items!WGggERJmcku3hr8i",
+  "name": "Ventriloquism",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "60'",
+    "duration": "2 turns",
+    "effect": "One item or location",
+    "reversible": false,
+    "description": "This spell will allow the spellcaster to make the sound of his or her voice come from somewhere else, such as a statue, animal, a dark corner, and so forth. The \"somewhere else\" must be within range of the spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

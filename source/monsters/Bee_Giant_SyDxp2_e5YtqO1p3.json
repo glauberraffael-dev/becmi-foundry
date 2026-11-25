@@ -1,0 +1,48 @@
+{
+  "_id": "SyDxp2_e5YtqO1p3",
+  "_key": "!actors!SyDxp2_e5YtqO1p3",
+  "name": "Bee, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1/2",
+    "hp": 1,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 sting",
+    "damage": "1d3 + special",
+    "appearing": "1d6 (5d6)",
+    "saveAs": "F1",
+    "morale": 9,
+    "treasure": "See below",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 6,
+    "terrain": "Plain, Woods, Mountain, Hill.",
+    "monsterType": "Lowlife (Rare).",
+    "description": "|Beetle, Giant|||| |---|---|---|---| ||Fire|Oil|Tiger| |Armor Class:|4|4|3| |Hit Dice:|1 +2(S)|2* (M)|3 + 1 (M)| |Move:|120' (40')| 120' (40')|150'(50')| |Attacks:|1 bite|1 bite + special|1 bite| |Damage:|2d4|1d6 + special|2d6| |No. Appearing:|1d8|1d8|1d6| ||(2d6)|(2d6)|(2d4)| |Save As:|Fl|Fl|F2| |Morale:|7|8|9| |Treasure Type:|Nil|Nil|U| |Intelligence:|0|0|0| |Alignment:|Neutral|Neutral|Neutral| |XP Value:|15|25|50| Armor Class: 7 Hit Dice: 1/2* (1-4 hp) (S) Move: 150'(50') Attacks: 1 sting Damage: 1d3 + special N",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Bee, Giant"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

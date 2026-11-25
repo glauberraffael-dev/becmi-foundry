@@ -1,0 +1,25 @@
+{
+  "_id": "jKZne0v0LzDBG8n3",
+  "_key": "!items!jKZne0v0LzDBG8n3",
+  "name": "Clothes, middle-class",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "See above — 5gp — 20**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 20,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

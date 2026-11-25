@@ -1,0 +1,25 @@
+{
+  "_id": "4reNdNklxoecH3oS",
+  "_key": "!items!4reNdNklxoecH3oS",
+  "name": "Timber Fort",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "4 gp/ft length — 8' long — 7,200* — 0 — -8 — 32",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "4 gp",
+    "weight": 32,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

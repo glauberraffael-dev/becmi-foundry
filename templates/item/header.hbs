@@ -1,0 +1,16 @@
+<header class="becmi-header">
+  <img class="becmi-avatar" src="{{item.img}}" data-edit="img" title="{{item.name}}" alt="{{item.name}}">
+  <div class="becmi-header-fields">
+    <div class="becmi-field becmi-field--name">
+      <input name="name" type="text" value="{{item.name}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+    <div class="becmi-field">
+      <label>{{localize 'BECMI.labels.source'}}</label>
+      <input name="system.source" type="text" value="{{system.source}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+    <div class="becmi-field">
+      <label>{{localize 'BECMI.labels.page'}}</label>
+      <input name="system.page" type="number" value="{{system.page}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+  </div>
+</header>

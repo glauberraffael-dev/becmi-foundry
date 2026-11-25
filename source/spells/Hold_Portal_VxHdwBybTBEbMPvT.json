@@ -1,0 +1,30 @@
+{
+  "_id": "VxHdwBybTBEbMPvT",
+  "_key": "!items!VxHdwBybTBEbMPvT",
+  "name": "Hold Portal",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "2-12 (2d6) turns",
+    "effect": "One door, gate, or similar portal",
+    "reversible": false,
+    "description": "If the spellcaster can speak a language that the charmed victim understands, the spellcaster may give orders to the victim. These orders should sound like suggestions, as if \"just between friends.\" The charmed victim will usually obey, but the victim may resist orders that are contrary to the victim's nature (alignment and habits)— he doesn't need to roll anything to resist. A victim will refuse to obey if ordered to kill itself. In addition, enchanted creatures cannot attack the spellcaster in hand-to-hand or melee combat. (An enchanted creature is one that normal weapons cannot hurt; only magical weapons can hit the creature.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

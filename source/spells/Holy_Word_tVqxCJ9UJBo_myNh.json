@@ -1,0 +1,30 @@
+{
+  "_id": "tVqxCJ9UJBo_myNh",
+  "_key": "!items!tVqxCJ9UJBo_myNh",
+  "name": "Holy Word",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0",
+    "duration": "Instantaneous",
+    "effect": "All creatures within 40'",
+    "reversible": false,
+    "description": "This spell affects all creatures, friend or foe, within a circular area of 40' radius, centered on the caster. When the cleric casts this spell, all creatures of alignments other than the cleric's are affected as follows (no saving throw vs. spells allowed): Holy Word Effects Up to 5th Level: Killed Level 6-8: Level 9-12: Level 13 + : Stunned 2dl0 turns Deafened 1d6 turns Stunned 1d10 rounds Any victim of 13th level (or Hit Dice) or higher, or any victim of the same alignment as the caster, may make a saving throw vs. spells to avoid all spell effects. This powerful spell cannot be blocked by stone, nor by any other solid material except lead.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

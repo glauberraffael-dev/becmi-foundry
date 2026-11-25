@@ -1,0 +1,30 @@
+{
+  "_id": "-DZSjUTKD83nnsui",
+  "_key": "!items!-DZSjUTKD83nnsui",
+  "name": "Phantasmal Force",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "Concentration (see below)",
+    "effect": "A volume 20' x 20' x 20'",
+    "reversible": false,
+    "description": "This spell creates or changes appearances of everything within the area affected. The spellcaster can create the illusion of something he or she has seen. If not, the DM will give a bonus to the saving throws of those trying to ignore the spell's effects. If the spellcaster does not use this spell to attack, the illusion created by this spell will disappear when touched. If the spellcaster uses the spell to create the illusion of a monster, it will appear in every way to be the monster in question. However, the monster is AC 9 and will disappear when hit. If the spellcaster uses the spell to create an attack (a phantasmal magic missile, collapsing wall, etc.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

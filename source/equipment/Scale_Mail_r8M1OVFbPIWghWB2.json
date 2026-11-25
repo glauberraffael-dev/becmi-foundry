@@ -1,0 +1,26 @@
+{
+  "_id": "r8M1OVFbPIWghWB2",
+  "_key": "!items!r8M1OVFbPIWghWB2",
+  "name": "Scale Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "ac": 6,
+    "cost": "30",
+    "weight": 300,
+    "armorType": "Scale Mail"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

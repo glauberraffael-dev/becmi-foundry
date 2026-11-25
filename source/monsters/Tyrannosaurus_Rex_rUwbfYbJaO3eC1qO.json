@@ -1,0 +1,48 @@
+{
+  "_id": "rUwbfYbJaO3eC1qO",
+  "_key": "!actors!rUwbfYbJaO3eC1qO",
+  "name": "Tyrannosaurus Rex",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/1d4",
+    "appearing": "1d8 (5d8)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "A",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 25,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Humanoid (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 2* (L) Move: 120' (40') Attacks: 2 claws/1 bite Damage: 1d4/ld4/ld4 No. Appearing: 1d8 (5d8) Save As: F2 Morale: 9 Treasure Type: A Intelligence: 10 Alignment: Chaotic XP Value: 25 Armor Class: 3 Hit Dice: 20 (L) Move: 120' (40') Attacks: 1 bite Damage: 6d6 No. Appearing: 0(ld2) Save As: F10 Morale: 11 Treasure Type: V x 3 Intelligence: 2 Alignment: Neutral XP Value: 2,375 Monster Type: Humanoid (Rare). Monster Type: Prehistoric Animal (Very Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Tyrannosaurus Rex"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

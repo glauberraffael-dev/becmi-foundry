@@ -1,0 +1,27 @@
+{
+  "_id": "vSWq-qy2xZOPUvwI",
+  "_key": "!journal!vSWq-qy2xZOPUvwI",
+  "name": "Chapter 12: Strongholds and Dominions",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 12
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Building a stronghold, hiring staff and ruling a dominion.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 12. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "J6c42s8p7lr9U9XT",
+      "_key": "!journal.pages!vSWq-qy2xZOPUvwI.J6c42s8p7lr9U9XT"
+    }
+  ]
+}

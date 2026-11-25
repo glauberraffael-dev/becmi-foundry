@@ -1,0 +1,25 @@
+{
+  "_id": "zoF7dPzOqtcf4PrY",
+  "_key": "!items!zoF7dPzOqtcf4PrY",
+  "name": "Shoes",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 5sp — 8",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 sp",
+    "weight": 8,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

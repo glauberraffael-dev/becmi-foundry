@@ -1,0 +1,27 @@
+{
+  "_id": "sGgVmFqdtBlW-mYU",
+  "_key": "!journal!sGgVmFqdtBlW-mYU",
+  "name": "Chapter 16: Treasure",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 16
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Treasure types, coins, gems, jewelry and magical items.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 16. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "CWcXUWbThAC7aJkp",
+      "_key": "!journal.pages!sGgVmFqdtBlW-mYU.CWcXUWbThAC7aJkp"
+    }
+  ]
+}

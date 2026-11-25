@@ -1,0 +1,48 @@
+{
+  "_id": "URiCYly42LXqtsdQ",
+  "_key": "!actors!URiCYly42LXqtsdQ",
+  "name": "Athach",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "14",
+    "hp": 14,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "4",
+    "damage": "2d2/2d2/2d2/2d0 + poison (special)",
+    "appearing": "1d3 (1d6)",
+    "saveAs": "Fl4",
+    "morale": 7,
+    "treasure": "I",
+    "intelligence": 8,
+    "alignment": "Chaotic",
+    "xpValue": 2500,
+    "terrain": "Cavern, Hill, Mountain, Ruin.",
+    "monsterType": "Human (Common).",
+    "description": "They do not go out of their way to attack characters; if approached by humans and demihumans and given a chance to flee, they will do so. But if creatures approach their lair, the apes will threaten the intruders. If their threats are ignored, they will attack. They may throw one stone per round for 1d6 points each. Armor Class: 0 Hit Dice: 14* (L) Move: 180' (60') Attacks: 4 Damage: 2dl2/2dl2/2dl2/2dl0 + poison (special) No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Athach"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "6M6u80qbJ5jVJFXl",
+  "_key": "!items!6M6u80qbJ5jVJFXl",
+  "name": "Contingency",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "Indefinite (see below)",
+    "effect": "Prepares one other spell",
+    "reversible": false,
+    "description": "This powerful spell acts as a trigger for one stated magic-user spell; this second spell must be of 4th level or less that does not normally cause damage. While casting a contingency spell, the magicuser must describe one situation and the spell which is contingent upon it. When that situation next occurs, the contingent spell effect triggers automatically and immediately, as if cast at that time. Examples of proper use: \"When I am touched or struck by any living creature that is not a Lawful or Neutral cleric, except for my friends Charlie McGonigle and Sally Silvernose (contingency), then cast charm monster on the creature touching or striking me (spell).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

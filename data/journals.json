@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Chapter 1: Steps in Character Creation",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 1
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Ability scores, alignments, hit points, starting money and the first decisions a player makes.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 1. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 2: The Character Classes",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 2
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Cleric, fighter, magic-user, thief, dwarf, elf, halfling and the optional druid and mystic classes, with progression tables.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 2. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 3: Spells and Spellcasting",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 3
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Clerical, druidic and magical spell lists, descriptions and the rules for learning and casting spells.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 3. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 4: Equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 4
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Weapons, armor, adventuring gear, transportation and siege equipment with costs and encumbrance.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 4. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 5: Other Character Abilities",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 5
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Weapon mastery and the optional general skill system.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 5. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 6: Movement",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 6
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Game time, distance, land, water and aerial travel rates.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 6. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 7: Encounters and Evasion",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 7
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Encounter checks, surprise, monster reactions, wandering monsters and pursuit.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 7. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 8: Combat",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 8
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Initiative, morale, attack rolls, missile fire, magic, unarmed and special forms of combat.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 8. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 9: Mass Combat",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 9
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>The War Machine and Siege Machine for resolving large-scale battles.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 9. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 10: Experience",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 10
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Awarding XP for role-playing, goals, monsters, treasure and exceptional actions; maximum hit points.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 10. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 11: Nonplayer Characters",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 11
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Retainers, mercenaries and specialists.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 11. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 12: Strongholds and Dominions",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 12
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Building a stronghold, hiring staff and ruling a dominion.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 12. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 13: Dungeon Master Procedures",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 13
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Ability checks, aging, alignment changes, anti-magic and ICC rulings.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 13. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 14: Monsters",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 14
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>How to read monster descriptions and the alphabetical monster list with complete statistics.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 14. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 15: Immortals",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 15
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Immortal spheres, statistics and the paths by which mortals may become immortals.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 15. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 16: Treasure",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 16
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Treasure types, coins, gems, jewelry and magical items.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 16. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chapter 17: Campaigning",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "chapter": 17
+      }
+    },
+    "pages": [
+      {
+        "name": "Summary",
+        "type": "text",
+        "text": {
+          "content": "<p>Running an ongoing campaign and linking adventures together.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 17. Full rules text is not reproduced here.</em></p>"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Weapon Mastery (Optional)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Optional Rules",
+        "page": 75
+      }
+    },
+    "pages": [
+      {
+        "name": "Overview",
+        "type": "text",
+        "text": {
+          "content": "<h2>Weapon Mastery (Optional)</h2>\n<p>Weapon mastery lets a character study one weapon in depth, or several weapons less intensely. It is optional: the DM decides whether to use it. All characters, not only fighters, can learn it.</p>\n<p>With these rules a human starts with no weapon skill and receives <strong>weapon choices</strong>. Demihumans start with Basic skill in all weapons allowed to their class, but do not gain weapon choices; they improve through training at levels 4, 8 and 12 (dwarves) and after maximum level.</p>\n<p>A weapon choice buys one weapon used in one fashion. A bastard sword used one-handed and the same sword used two-handed are two separate choices. The net is a single exception.</p>\n<p><em>Short paraphrase of Rules Cyclopedia, Chapter 5. The full text remains in the source PDF.</em></p>"
+        }
+      },
+      {
+        "name": "Choices and Training",
+        "type": "text",
+        "text": {
+          "content": "<h2>Weapon Choices and Training</h2>\n<h3>Weapon choices by experience level</h3>\n<table><thead><tr><th>Level</th><th>Choices</th></tr></thead><tbody><tr><td>Level 1</td><td>Fighter 4 choices; all other classes 2</td></tr><tr><td>Level 3</td><td>Fighter 5; all others 3</td></tr><tr><td>Level 6</td><td>Fighter 6; all others 4</td></tr><tr><td>Level 9</td><td>Fighter 7; all others 5</td></tr><tr><td>Level 11</td><td>Fighter 8; all others 6</td></tr><tr><td>Level 15</td><td>Fighter 9; all others 7</td></tr><tr><td>Level 19</td><td>Fighter 10; all others 7</td></tr><tr><td>Level 23</td><td>Fighter 11; all others 8</td></tr><tr><td>Level 27</td><td>Fighter 12; all others 8</td></tr><tr><td>Level 30</td><td>Fighter 13; all others 9</td></tr><tr><td>Level 33</td><td>Fighter 14; all others 9</td></tr><tr><td>Level 36</td><td>Fighter 15; all others 10; +1 per 200,000 XP above maximum level</td></tr></tbody></table>\n<h3>Levels of mastery</h3>\n<table><thead><tr><th>Weapon choices spent</th><th>Level</th></tr></thead><tbody><tr><td>Unskilled</td><td>0 weapon choices spent; half damage with any weapon</td></tr><tr><td>Basic</td><td>1 choice; normal weapon characteristics</td></tr><tr><td>Skilled</td><td>2 choices; first attack and damage bonuses</td></tr><tr><td>Expert</td><td>3 choices; improved damage, range and special effects</td></tr><tr><td>Master</td><td>4 choices; stronger damage and defense</td></tr><tr><td>Grand Master</td><td>5 choices; best bonuses and special effects</td></tr></tbody></table>\n<h3>Training time and cost</h3>\n<table><thead><tr><th>Mastery sought</th><th>Time and cost</th></tr></thead><tbody><tr><td>Basic (new weapon)</td><td>1 week, 100 gp per week</td></tr><tr><td>Skilled</td><td>2 weeks, 250 gp per week</td></tr><tr><td>Expert</td><td>4 weeks, 500 gp per week</td></tr><tr><td>Master</td><td>8 weeks, 750 gp per week</td></tr><tr><td>Grand Master</td><td>12 weeks, 1,000 gp per week</td></tr></tbody></table>\n<h3>Chance of training success</h3>\n<table><thead><tr><th>Student knowledge</th><th>Chance by trainer knowledge</th></tr></thead><tbody><tr><td>Student: None</td><td>Basic 60%, Skilled 80%, Expert 95%, Master 99%, Grand Master 99%</td></tr><tr><td>Student: Basic</td><td>Basic 1%, Skilled 50%, Expert 70%, Master 90%, Grand Master 95%</td></tr><tr><td>Student: Skilled</td><td>Skilled 1%, Expert 40%, Master 60%, Grand Master 80%</td></tr><tr><td>Student: Expert</td><td>Expert 1%, Master 30%, Grand Master 50%</td></tr><tr><td>Student: Master</td><td>Master 1%, Grand Master 20%</td></tr><tr><td>Student: Grand Master</td><td>Grand Master 1%</td></tr></tbody></table>\n<p>Success is checked halfway through training. A failed student may continue with the same teacher, or stop and get a half refund; a second attempt with a different teacher gains +10%. Training can only advance one rank at a time.</p>"
+        }
+      },
+      {
+        "name": "Benefits",
+        "type": "text",
+        "text": {
+          "content": "<h2>Benefits of Weapon Mastery</h2>\n<h3>Attack roll bonuses</h3>\n<table><thead><tr><th>Mastery</th><th>Bonus vs. primary</th><th>Bonus vs. secondary</th></tr></thead><tbody><tr><td>Unskilled</td><td>None</td><td>None</td></tr><tr><td>Basic</td><td>None</td><td>None</td></tr><tr><td>Skilled</td><td>+2</td><td>+1</td></tr><tr><td>Expert</td><td>+4</td><td>+2</td></tr><tr><td>Master</td><td>+6</td><td>+4</td></tr><tr><td>Grand Master</td><td>+8</td><td>+6</td></tr></tbody></table>\n<h3>Despair effect</h3>\n<table><thead><tr><th>Mastery</th><th>HD or levels affected</th></tr></thead><tbody><tr><td>Basic</td><td>No despair effect</td></tr><tr><td>Skilled</td><td>Up to 4 Hit Dice or levels</td></tr><tr><td>Expert</td><td>Up to 8 Hit Dice or levels</td></tr><tr><td>Master</td><td>Up to 12 Hit Dice or levels</td></tr><tr><td>Grand Master</td><td>Up to 16 Hit Dice or levels</td></tr></tbody></table>\n<h3>Monster mastery limits</h3>\n<table><thead><tr><th>Intelligence</th><th>Maximum mastery</th></tr></thead><tbody><tr><td>Intelligence up to 11</td><td>Basic</td></tr><tr><td>Intelligence 12-15</td><td>Skilled</td></tr><tr><td>Intelligence 16-17</td><td>Expert</td></tr><tr><td>Intelligence 18+</td><td>Master (never Grand Master)</td></tr></tbody></table>\n<p>Primary (P) targets are missile-fire or natural weapons (M); secondary (S) targets use hand-held or thrown weapons (H). Some weapons are [P=A] and work equally against all targets. Ranged weapons improve at Skilled and better; some melee weapons can be thrown at Expert or better. AC bonuses apply to a limited number of attacks per round as shown in the mastery table.</p>\n<p><strong>Unskilled:**</strong> half damage, and -1 to attack with missile weapons.</p>"
+        }
+      },
+      {
+        "name": "Mastery - Hand-Held",
+        "type": "text",
+        "text": {
+          "content": "<h2>Weapon Mastery Table - Hand-Held Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. P = primary target, S = secondary target, H = hand-held attacker, M = missile or monster attacker, A = all. \"§\" refers to the special-effects tables.</p>\n<h3>Hand-held weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blackjack</td><td>1d2; § knockout</td><td>2d2; § knockout (save -1)</td><td>1d4+1; § knockout (save -2)</td><td>P 1d4+3 / S 1d6+1; § knockout (save -3)</td><td>P 1d4+5 / S 1d6+2; § knockout (save -4)</td></tr><tr><td>Cestus</td><td>1d3; no off-hand penalty</td><td>1d4+1; no off-hand penalty</td><td>2d4; no off-hand penalty</td><td>P 2d4 / S 1d4+3; no off-hand penalty</td><td>P 3d4 / S 2d4+3; no off-hand penalty</td></tr><tr><td>Club or Torch</td><td>1d8; M -2AC/2; delay</td><td>1d8+2; M -3AC/2; delay</td><td>1d8+4; M -3AC/3; delay + stun</td><td>P 1d8+8 / S 1d8+6; M -4AC/4; delay + stun</td><td>P 1d10+10 / S 1d8+8; M -5AC/4; delay + stun</td></tr><tr><td>Halberd</td><td>1d10</td><td>1d10+2; H -1AC/1; hook (save +1) + disarm</td><td>1d10+5; H -2AC/1; hook (save -2) + disarm</td><td>P 1d8+10 / S 1d6+15; H -2AC/2; deflect (1) + disarm</td><td>P 1d10+14 / S 1d6+12; H -3AC/2; hook (save -4) + disarm</td></tr><tr><td>Hammer, War</td><td>1d6</td><td>1d6+2; H -1AC/1; second attack + breaks</td><td>1d8+2; H -2AC/2; second attack + breaks</td><td>P 1d8+5 / S 1d4+5; H -3AC/2; second attack + breaks</td><td>P 1d8+7 / S 1d6+4; H -3AC/2; second attack + breaks</td></tr><tr><td>Lance</td><td>1d10; A -2AC; charge</td><td>1d10+3; M -2AC/1; charge</td><td>1d10+7; M -3AC/1; charge</td><td>P 1d8+12 / S 1d6+5; M -3AC/2; charge</td><td>P 1d8+16 / S 1d6+12; M -4AC/2; charge</td></tr><tr><td>Mace</td><td>1d6</td><td>2d4; H -1AC/1; deflect (1)</td><td>2d4+2; H -2AC/2; deflect (1)</td><td>2d4+4; H -3AC/3; deflect (2)</td><td>2d4+6; H -4AC/4; deflect (2)</td></tr><tr><td>Pike</td><td>1d10; A -1AC/2; deflect (1)</td><td>1d12+2; H -2AC/1; deflect (1)</td><td>1d12+5; H -2AC/2; deflect (3)</td><td>P 1d12+9 / S 1d6+4; A -3AC/3; deflect (2)</td><td>P 1d10+14 / S 1d6+7; A -4AC/4; deflect (4)</td></tr><tr><td>Polearm, Other</td><td>Uses halberd / pike / poleaxe stats</td><td>Uses halberd / pike / poleaxe stats</td><td>2d6+1; stun + deflect (1)</td><td>P 3d6+3 / S 2d8+2; stun + deflect (2)</td><td>P 3d6+6 / S 3d6+2; stun + deflect (3)</td></tr><tr><td>Poleaxe</td><td>1d10</td><td>1d10+3; H -1AC/1; deflect (1)</td><td>1d10+6; H -2AC/1; deflect (2)</td><td>P 1d8+10 / S 3d6+2; H -2AC/2; deflect (2)</td><td>P 1d8+16 / S 1d10+8; H -3AC/2; deflect (2)</td></tr><tr><td>Shield, Horned</td><td>1d2; A -1AC/1; second attack</td><td>2d2; A -1AC/1; second attack</td><td>1d4+1; A -1AC/2; second attack</td><td>P 1d4+3 / S 1d6+1; A -1AC/4; second attack</td><td>P 1d4+5 / S 1d6+2; A -1AC/6; second attack</td></tr><tr><td>Shield, Knife</td><td>1d4+1; A -1AC; second attack + breaks</td><td>1d6+1; A -1AC; second attack + breaks</td><td>2d4+1; A -2AC; second attack + breaks</td><td>P 3d4 / S 2d4+2; A -2AC; second attack + breaks</td><td>P 4d4 / S 3d4+1; A -2AC; second attack + breaks</td></tr><tr><td>Shield, Sword</td><td>1d4+2; A -1AC/2; second attack + breaks</td><td>1d6+3; A -1AC/2; second attack + breaks</td><td>1d6+4; A -2AC/3; second attack + breaks</td><td>P 1d6+7 / S 1d4+7; A -2AC/3; second attack + breaks</td><td>P 1d6+9 / S 1d4+9; A -3AC/4; second attack + breaks</td></tr><tr><td>Shield, Tusked</td><td>1d4+1; A -1AC; two attacks + breaks</td><td>1d6+2; A -2AC; two attacks + breaks</td><td>2d4+2; A -2AC; two attacks + breaks</td><td>P 2d4+4 / S 2d4+1; A -3AC; two attacks + breaks</td><td>P 2d4+6 / S 3d4+1; A -3AC; two attacks + breaks</td></tr><tr><td>Staff</td><td>1d6</td><td>1d8+2; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d8+8 / S 1d6+7; H -2AC/3; deflect (2)</td><td>P 1d8+10 / S 1d6+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Bastard (1H)</td><td>1d6+1; A -1AC/2; second attack</td><td>1d6+3; H -1AC/1; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d6+7; H -2AC/2; deflect (2)</td><td>P 1d10+8 / S 1d6+7; H -2AC/3; deflect (2)</td></tr><tr><td>Sword, Bastard (2H)</td><td>1d8+1; H -1AC/1; deflect (1)</td><td>1d8+3; H -2AC/2; deflect (1)</td><td>1d8+5; H -2AC/2; deflect (1)</td><td>P 1d10+8 / S 1d8+8; H -2AC/2; deflect (2)</td><td>P 1d10+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Sword, Normal</td><td>1d8; H -1AC/1; deflect (1)</td><td>1d12; H -2AC/1; deflect (1) + disarm</td><td>2d8; H -2AC/2; deflect (2) + disarm</td><td>P 2d8+4 / S 2d6+4; H -3AC/3; deflect (2) + disarm</td><td>P 2d6+8 / S 1d8+8; H -3AC/3; deflect (3) + disarm</td></tr><tr><td>Sword, Short</td><td>1d6; H -1AC/1; deflect (1) + disarm</td><td>1d6+2; H -2AC/2; deflect (2) + disarm</td><td>1d6+4; H -2AC/2; deflect (2) + disarm</td><td>P 1d6+7 / S 1d4+7; H -2AC/3; deflect (3) + disarm</td><td>P 1d6+9 / S 1d4+9; H -3AC/4; deflect (3) + disarm</td></tr><tr><td>Sword, Two-Handed</td><td>2d8; H -1AC/1; deflect (1)</td><td>2d8+2; H -2AC/2; deflect (1)</td><td>2d8+4; H -2AC/2; deflect (2)</td><td>P 2d8+6 / S 1d10+8; H -3AC/2; deflect (2)</td><td>P 1d12+10 / S 1d10+8; H -3AC/2; deflect (3)</td></tr><tr><td>Whip</td><td>1d2; M -2AC/2; § entangle</td><td>1d4; M -3AC/3; § entangle (save -1)</td><td>1d4+1; M -3AC/3; § entangle (save -2)</td><td>P 1d4+3 / S 1d3+2; M -4AC/3; § entangle (save -3)</td><td>P 1d4+5 / S 1d3+3; M -4AC/4; § entangle (save -4)</td></tr></tbody></table><h3>Hand-held weapons rarely thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Battle</td><td>1d8</td><td>1d8+2, range -/5/10</td><td>1d8+4, range -/5/10</td><td>P 1d8+8 / S 1d8+6, range 5/10/15</td><td>P 1d10+10 / S 1d8+8, range 5/10/15</td></tr><tr><td>Club or Torch</td><td>1d4</td><td>1d6+1, range -/15/25</td><td>1d8+2, range -/15/25</td><td>P 1d6+5 / S 1d4+5, range 10/25/40</td><td>P 1d6+6 / S 1d4+6, range 10/25/40</td></tr></tbody></table>\n<p><em>Condensed from the scanned table on PDF page 78; check the original for exact cell alignment.</em></p>"
+        }
+      },
+      {
+        "name": "Mastery - Missile",
+        "type": "text",
+        "text": {
+          "content": "<h2>Weapon Mastery Table - Thrown and Missile Weapons</h2>\n<p>Compact level-by-level reference: Basic / Skilled / Expert / Master / Grand Master. Ranges are listed in feet indoors and yards outdoors.</p>\n<h3>Hand-held weapons easily thrown</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Axe, Hand</td><td>1d6, 10/20/30</td><td>1d6+2, 15/25/35; M -1AC/1</td><td>1d6+3, 25/35/45; M -2AC/2</td><td>P 2d4+4 / S 1d6+4, 30/40/50; M -3AC/3</td><td>P 2d4+7 / S 1d6+4, 40/50/60; M -3AC/3</td></tr><tr><td>Dagger</td><td>1d4, 10/20/30</td><td>1d6, 15/25/35; H -1AC/1; double damage (20)</td><td>2d4, 20/30/45; H -2AC/2; double damage (19-20)</td><td>P 3d4 / S 2d4+2, 25/35/50; H -2AC/2; double damage (18-20)</td><td>P 4d4 / S 3d4+1, 30/40/50; H -3AC/3; double damage (17-20)</td></tr><tr><td>Hammer, Throwing</td><td>1d4, 10/20/30</td><td>1d4+2, 10/20/30; stun (s/m)</td><td>1d6+2, 20/30/45; M -2AC/3; stun (s/m)</td><td>P 1d6+4 / S 1d4+4, 20/30/45; M -3AC/4; stun (s/m)</td><td>S 1d6+6, 20/30/45; M -4AC/5; stun (s/m)</td></tr><tr><td>Javelin</td><td>1d6, 30/60/90</td><td>1d6+2, 30/60/90; H -1AC/1; delay (s/m)</td><td>1d6+4, 40/80/120; H -2AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d10+6, 40/80/120; H -3AC/3; delay (s/m)</td><td>P 1d6+9 / S 1d10+6, 50/100/150; H -4AC/4; delay (s/m)</td></tr><tr><td>Spear</td><td>1d6, 20/40/60; set</td><td>1d6+2, 20/40/60; set</td><td>2d4+2, 40/60/75; set + stun</td><td>2d4+4, 40/60/75; M -3AC/2; set + stun</td><td>2d4+6, 60/75/90; M -3AC/3; set + stun</td></tr><tr><td>Trident</td><td>1d6, 10/20/30</td><td>1d8+1, 10/20/30; skewer up to 4 HD</td><td>1d8+4, 20/30/45; skewer up to 7 HD</td><td>P 1d8+6 / S 2d4+5, 20/30/45; skewer up to 10 HD</td><td>P 1d8+7 / S 1d6+6, 25/35/50; skewer up to 15 HD</td></tr></tbody></table><h3>Missile weapons</h3><table><thead><tr><th>Weapon</th><th>BS</th><th>SK</th><th>EX</th><th>MS</th><th>GM</th></tr></thead><tbody><tr><td>Blowgun, up to 2'</td><td>Nil, 10/20/30; § by poison</td><td>Nil, 15/20/30; § by poison (save -1)</td><td>Nil, 15/25/35; § by poison (save -2)</td><td>Nil, 20/25/35; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Blowgun, over 2'</td><td>Nil, 20/25/30; § by poison</td><td>Nil, 20/25/30; § by poison (save -1)</td><td>Nil, 25/30/40; § by poison (save -2)</td><td>Nil, 30/35/40; § by poison (save -3)</td><td>Nil, 25/30/40; § by poison (save -4)</td></tr><tr><td>Bola</td><td>1d2, 20/40/60; strangle (20)</td><td>1d3, 25/40/60; H -1AC/1; strangle (20) (save -1)</td><td>1d3+1, 30/50/70; H -2AC/2; strangle (19-20) (save -2)</td><td>S 3d4+1, 35/50/70; H -3AC/3; strangle (18-20)</td><td>P 4d4 / S 3d4+1, 30/50/60; H -3AC/3; strangle (17-20)</td></tr><tr><td>Bow, Long</td><td>1d6, 70/140/210</td><td>1d8+1, 90/150/220; H -1AC/1; delay (s/m)</td><td>1d10+2, 110/170/230; H -2AC/1; delay (s/m)</td><td>S 1d4+6, 110/170/230; H -3AC/2; delay (s/m)</td><td>P 1d6+6 / S 1d6+6, 130/190/250; M -4AC/5; delay (s/m)</td></tr><tr><td>Bow, Short</td><td>1d6, 50/100/150</td><td>1d6+2, 60/110/160; H -1AC/1; delay (s)</td><td>1d6+4, 80/130/170; H -1AC/2; delay (s)</td><td>P 1d6+7 / S 1d4+8, 90/130/180; H -2AC/2; delay (s)</td><td>P 1d6+9 / S 1d4+8, 110/140/190; H -2AC/2; delay (s)</td></tr><tr><td>Crossbow, Heavy</td><td>2d4, 80/160/240</td><td>2d6, 90/160/240; M -1AC/1; stun (s/m)</td><td>2d6+2, 100/170/240; M -2AC/2; stun (s/m)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Crossbow, Light</td><td>1d6, 60/120/180</td><td>1d6+2, 60/120/180; M -1AC/1; stun (s)</td><td>1d6+4, 75/130/180; M -2AC/2; stun (s)</td><td>P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)</td></tr><tr><td>Net</td><td>Nil, 10/20/30; § entangle</td><td>Nil, 15/25/35; A -2AC/1; entangle (save -1)</td><td>Nil, 20/30/40; A -4AC/2; entangle (save -2)</td><td>Nil, 25/35/45; A -6AC/3; entangle (save -4)</td><td>Nil, 30/40/50; A -8AC/4; entangle (save -6)</td></tr><tr><td>Sling</td><td>1d4, 40/80/160</td><td>1d6, 40/80/160; H -1AC/2; stun (s/m)</td><td>2d4, 60/110/170; H -2AC/3; stun (s/m)</td><td>P 3d4 / S 1d8+2, 60/110/170; H -3AC/3; stun (s/m)</td><td>P 4d4 / S 1d10+2, 80/130/180; H -4AC/4; stun (s/m)</td></tr><tr><td>Stone, Thrown</td><td>1d3, 10/30/50; stun (s)</td><td>Stone 1d3, 10/30/50; stun (s)</td><td>1d6+2, 10/30/50; ignite</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr><tr><td>Holy Water</td><td>1d8, 10/30/50; ignite</td><td>1d8, 10/30/50; stun (s)</td><td>1d8+4, 10/30/50; stun (s)</td><td>P 1d8+6, 75/130/180; stun (s)</td><td>P 1d8+6 / S 1d6+7, 75/130/180; stun (s)</td></tr></tbody></table>\n<p><em>Condensed from the scanned table on PDF page 79; check the original for exact cell alignment.</em></p>"
+        }
+      },
+      {
+        "name": "Effects and Penalties",
+        "type": "text",
+        "text": {
+          "content": "<h2>Special Effects and Two-Weapon Penalties</h2>\n<h3>Blowgun and net</h3>\n<table><thead><tr><th>Victim HD</th><th>Effect on failed save</th></tr></thead><tbody><tr><td>Up to 1 HD</td><td>Save None; Blowgun death; Net entangle</td></tr><tr><td>1+1 to 3 HD</td><td>Save +1; Blowgun lose 75% hp + paralysis; Net entangle</td></tr><tr><td>3+1 to 6 HD</td><td>Save +2; Blowgun lose 50% hp + paralysis; Net slow</td></tr><tr><td>6+1 to 9 HD</td><td>Save +3; Blowgun lose 50% hp; Net slow</td></tr><tr><td>9+1 to 12 HD</td><td>Save +4; Blowgun lose 25% hp; Net delay</td></tr><tr><td>12+1 to 16 HD</td><td>Save +5; Blowgun lose 25% hp; Net delay</td></tr><tr><td>16+1 HD</td><td>Save +5; Blowgun lose 10% hp; Net delay</td></tr></tbody></table>\n<h3>Blackjack</h3>\n<table><thead><tr><th>Victim HD</th><th>Effect on failed save</th></tr></thead><tbody><tr><td>Up to 1 HD</td><td>Save None; knockout at all mastery levels</td></tr><tr><td>1+1 to 3 HD</td><td>Save +1; knockout at all mastery levels</td></tr><tr><td>3+1 to 6 HD</td><td>Save +2; Basic/Skilled stun, Expert/GM knockout</td></tr><tr><td>6+1 to 9 HD</td><td>Save +3; Basic/Skilled stun, Expert stun, GM knockout</td></tr><tr><td>9+1 to 12 HD</td><td>Save +4; Basic/Skilled delay, Expert stun, GM stun</td></tr><tr><td>12+1 to 16 HD</td><td>Save +5; Basic/Skilled delay, Expert delay, GM stun</td></tr><tr><td>16+1 HD</td><td>Save +5; delay at all mastery levels</td></tr></tbody></table>\n<h3>Bola and whip</h3>\n<table><thead><tr><th>Victim HD</th><th>Effect on failed save</th></tr></thead><tbody><tr><td>Up to 1 HD</td><td>Save None; entangle at all mastery levels</td></tr><tr><td>1+1 to 3 HD</td><td>Save +1; entangle at all mastery levels</td></tr><tr><td>3+1 to 6 HD</td><td>Save +2; Basic/Skilled slow, Expert/GM entangle</td></tr><tr><td>6+1 to 9 HD</td><td>Save +3; Basic/Skilled slow, Expert slow, GM entangle</td></tr><tr><td>9+1 to 12 HD</td><td>Save +4; Basic/Skilled delay, Expert slow, GM slow</td></tr><tr><td>12+1 to 16 HD</td><td>Save +5; Basic/Skilled delay, Expert delay, GM slow</td></tr><tr><td>16+1 HD</td><td>Save +5; delay at all mastery levels</td></tr></tbody></table>\n<h3>Weapon mastery penalties with two weapons</h3>\n<table><thead><tr><th>Case</th><th>Result</th></tr></thead><tbody><tr><td>Basic second weapon</td><td>Cannot be reduced below Basic</td></tr><tr><td>Unskilled second weapon</td><td>Cannot be used for the second attack</td></tr><tr><td>Second attack</td><td>-4 attack roll and -1 mastery level</td></tr><tr><td>Cestus / shield weapons</td><td>No off-hand penalty (horned, knife, sword shield)</td></tr><tr><td>Tusked shield</td><td>Two attacks, neither at an off-hand penalty</td></tr><tr><td>Maximum extra attacks</td><td>+1 attack per round from all optional rules combined</td></tr></tbody></table>\n<p>With the optional Two Weapons Combat rule, the second attack is at -4 to hit and is treated as one mastery level lower. A Basic second weapon stays Basic; an Unskilled weapon cannot be used as the second attack. Cestus, horned shield, knife shield and sword shield ignore the off-hand penalty; the tusked shield allows two attacks with no off-hand penalty. All optional sources together can add at most +1 attack per round.</p>"
+        }
+      }
+    ]
+  }
+]

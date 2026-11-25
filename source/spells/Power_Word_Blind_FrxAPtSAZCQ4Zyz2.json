@@ -1,0 +1,30 @@
+{
+  "_id": "FrxAPtSAZCQ4Zyz2",
+  "_key": "!items!FrxAPtSAZCQ4Zyz2",
+  "name": "Power Word Blind",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "1-4 days or 2-8 hours (see below)",
+    "effect": "Blinds 1 creature with 80 hit points or less With this spell, the caster may _blind_ one victim within 120' (no saving throw).",
+    "reversible": false,
+    "description": "Duration: 1-4 days or 2-8 hours (see below) Effect: Blinds 1 creature with 80 hit points or less With this spell, the caster may blind one victim within 120' (no saving throw). A victim with 1-40 hit points is blinded for ld4 days; one with 41-80 hit points is blinded for 2d4 hours. The spell does not affect creatures with 81 or more hit points. A blinded victim suffers penalties of — 4 on all saving throws and +4 on armor class. A cleric's cure blindness or cureall spell will not remove this blindness unless the cleric is of a level equal to or higher than the caster of the power word blind.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

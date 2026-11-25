@@ -1,0 +1,26 @@
+{
+  "_id": "KQf4ZGRP0rtaYwvn",
+  "_key": "!items!KQf4ZGRP0rtaYwvn",
+  "name": "Banded Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "ac": 4,
+    "cost": "50",
+    "weight": 450,
+    "armorType": "Banded Mail"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

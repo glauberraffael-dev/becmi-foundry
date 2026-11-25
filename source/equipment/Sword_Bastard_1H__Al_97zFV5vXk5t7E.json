@@ -1,0 +1,34 @@
+{
+  "_id": "Al_97zFV5vXk5t7E",
+  "_key": "!items!Al_97zFV5vXk5t7E",
+  "name": "Sword, Bastard (1H)",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "r, HH, L",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "r, HH, L",
+    "damage": "1d6+1",
+    "range": 0,
+    "ranges": "-",
+    "cost": 15,
+    "weight": 80,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "r, HH, L"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

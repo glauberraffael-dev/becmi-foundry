@@ -1,0 +1,30 @@
+{
+  "_id": "fKCa--jSFPEyoSov",
+  "_key": "!items!fKCa--jSFPEyoSov",
+  "name": "Create Food",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "10'",
+    "duration": "Permanent",
+    "effect": "Creates food for 12 or more",
+    "reversible": false,
+    "description": "This spell creates enough normal food to feed up to 12 men and their mounts for one day. For every level of the cleric above 8th, the spell creates enough food for 12 additional men and mounts. The cleric doesn't have to create the maximum amount of food if he doesn't wish to; he can create a lesser amount. Created food spoils after 24 hours; therefore it is impossible to lay in a big store of food created by this spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

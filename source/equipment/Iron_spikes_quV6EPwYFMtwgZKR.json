@@ -1,0 +1,25 @@
+{
+  "_id": "quV6EPwYFMtwgZKR",
+  "_key": "!items!quV6EPwYFMtwgZKR",
+  "name": "Iron spikes",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Twelve spikes — 1gp — 60",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 60,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

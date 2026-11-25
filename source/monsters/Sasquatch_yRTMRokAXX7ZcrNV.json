@@ -1,0 +1,48 @@
+{
+  "_id": "yRTMRokAXX7ZcrNV",
+  "_key": "!actors!yRTMRokAXX7ZcrNV",
+  "name": "Sasquatch",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 5,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws or 1 boulder",
+    "damage": "2d4/2d4 or 2d8",
+    "appearing": "0(1d10)",
+    "saveAs": "F5",
+    "morale": 611,
+    "treasure": "Nil",
+    "intelligence": 6,
+    "alignment": "Neutral",
+    "xpValue": 300,
+    "terrain": "Mountain, Woods.",
+    "monsterType": "Humanoid (Rare).",
+    "description": "Armor Class: 6 Hit Dice: 5* (L) Move: 150' (50') Attacks: 2 claws or 1 boulder Damage: 2d4/2d4 or 2d8 No. Appearing: 0(ld10) Save As: F5 Morale: 6 or 11 (see below) Treasure Type: Nil Intelligence: 6 Alignment: Neutral XP Value: 300 Monster Type: Humanoid (Rare). The sasquatch are a very shy race of low intelligence who dwell deep within dark woods and in high mountains. The creature is a tall apelike creature with a crested head, large feet, and a thick mat of hair (dark brown in woods, white in mountains).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Sasquatch"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

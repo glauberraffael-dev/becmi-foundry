@@ -1,0 +1,30 @@
+{
+  "_id": "fWoyxVlwcMpujGLh",
+  "_key": "!items!fWoyxVlwcMpujGLh",
+  "name": "Cure Critical Wounds",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "Any one living creature",
+    "reversible": false,
+    "description": "This spell is similar to a cure light wounds spell, but will cure one living creature of 3d6 + 3 (6-21) points of damage. The reverse of this spell (cause critical wounds) causes 3d6 + 3 (6-21) points of damage to any living creature or character touched (no saving throw). The caster must make a normal attack roll to cause the critical wound.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

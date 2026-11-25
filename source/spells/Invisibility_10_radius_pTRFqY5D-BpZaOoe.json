@@ -1,0 +1,30 @@
+{
+  "_id": "pTRFqY5D-BpZaOoe",
+  "_key": "!items!pTRFqY5D-BpZaOoe",
+  "name": "Invisibility 10' radius",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "Permanent until broken",
+    "effect": "All creatures within 10'",
+    "reversible": false,
+    "description": "This spell makes the recipient (and all others within 10' at the time of the casting) invisible. This is an area effect, and those who move further than 10' from the recipient become visible. They may not regain invisibility by returning to the area. Otherwise, the invisibility is the same as that bestowed by the spell invisibility. An invisible creature will remain invisible until he or she attacks or casts any spell. All items carried (whether by the recipient or others within 10') also become invisible.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

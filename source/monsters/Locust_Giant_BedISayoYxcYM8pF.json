@@ -1,0 +1,48 @@
+{
+  "_id": "BedISayoYxcYM8pF",
+  "_key": "!actors!BedISayoYxcYM8pF",
+  "name": "Locust, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite or 1 bump or 1 spit",
+    "damage": "1d2 or 1d4 or see below",
+    "appearing": "2d10 (0)",
+    "saveAs": "F2",
+    "morale": 5,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 30,
+    "terrain": "Cavern.",
+    "monsterType": "Lowlife (Common).",
+    "description": "Armor Class: 4 Hit Dice: 2 (S) Move: 60' (20') Flying: 180' (60') Attacks: 1 bite or 1 bump or 1 spit Damage: 1d2 or 1d4 or see below No. Appearing: 2d10 (0) Save As: F2 Morale: 5 Treasure Type: Nil Intelligence: 0 Alignment: Neutral XP Value: 30 Monster Type: Lowlife (Common). Giant locusts are 2'-3' long and live underground. They may be mistaken for statues (or might not be noticed at all) until approached, because of their stone-gray color.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Locust, Giant"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

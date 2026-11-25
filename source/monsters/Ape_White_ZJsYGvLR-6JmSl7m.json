@@ -1,0 +1,48 @@
+{
+  "_id": "ZJsYGvLR-6JmSl7m",
+  "_key": "!actors!ZJsYGvLR-6JmSl7m",
+  "name": "Ape, White",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws or 1 rock",
+    "damage": "1d4/1d4 or 1d6",
+    "appearing": "1d6 (2d4)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 75,
+    "terrain": "Hill, Mountain, Open.",
+    "monsterType": "",
+    "description": "Armor Class: 6 Hit Dice: 4 (M) Move: 120' (40') Attacks: 2 claws or 1 rock Damage: 1d4/ld4 or 1d6 No. Appearing: 1d6 (2d4) Save As: F2 Morale: 7 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 75 Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ape, White"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

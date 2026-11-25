@@ -1,0 +1,48 @@
+{
+  "_id": "TIdJorCpblDqBKp-",
+  "_key": "!actors!TIdJorCpblDqBKp-",
+  "name": "Pegasus",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2+2",
+    "hp": 22,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "2 hooves",
+    "damage": "1d6/1d6",
+    "appearing": "0(ldl2)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "Nil",
+    "intelligence": 4,
+    "alignment": "Lawful",
+    "xpValue": 25,
+    "terrain": "Hill, Mountain, Open. _Load:_ 3,000 cn at full speed; 6,000 cn at half speed.",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 6 Hit Dice: 2 + 2 (L) Move: 240' (80') Flying: 480' (160') Attacks: 2 hooves Damage: 1d6/ld6 No. Appearing: 0(ldl2) Save As: F2 Morale: 8 Treasure Type: Nil Intelligence: 4 Alignment: Lawful XP Value: 25 saving throw vs. spells; if successful, the turn effect is reflected back onto the cleric, who must also make a saving throw vs. spells or be paralyzed with fear for 2d6 rounds. ###### DM Checklist: Attacks: Sight = fear; Special for each Defenses: Ethereal at first; saving throw vs.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 22,
+        "max": 22
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Pegasus"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

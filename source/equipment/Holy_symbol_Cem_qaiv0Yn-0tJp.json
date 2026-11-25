@@ -1,0 +1,25 @@
+{
+  "_id": "Cem_qaiv0Yn-0tJp",
+  "_key": "!items!Cem_qaiv0Yn-0tJp",
+  "name": "Holy symbol",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 25 gp — 1",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "25 gp",
+    "weight": 1,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

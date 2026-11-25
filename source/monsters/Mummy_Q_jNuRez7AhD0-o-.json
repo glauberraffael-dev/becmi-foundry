@@ -1,0 +1,48 @@
+{
+  "_id": "Q_jNuRez7AhD0-o-",
+  "_key": "!actors!Q_jNuRez7AhD0-o-",
+  "name": "Mummy",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "5+1",
+    "hp": 51,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 touch",
+    "damage": "1d12 + disease",
+    "appearing": "1d4(ldl2)",
+    "saveAs": "F5",
+    "morale": 12,
+    "treasure": "D",
+    "intelligence": 6,
+    "alignment": "Chaotic",
+    "xpValue": 575,
+    "terrain": "Ruins.",
+    "monsterType": "Undead, Enchanted (Rare). Mummies are undead monsters; the carefullyprepared and bandage-swathed remains of longdead nobles and guardians—who lurk near deserted ruins and tombs. Mummies are often created as guardians for these tombs; they, are charged with the task of killing anyone who breaks into the tomb, even if they must follow the trespassers to the very ends of the earth.",
+    "description": "Armor Class: 3 Hit Dice: 5 + 1 (M) Move: 60' (20') Attacks: 1 touch Damage: 1d12 + disease No. Appearing: 1d4(ldl2) Save As: F5 Morale: 12 Treasure Type: D Intelligence: 6 Alignment: Chaotic XP Value: 575 Monster Type: Undead, Enchanted (Rare). Mummies are undead monsters; the carefullyprepared and bandage-swathed remains of longdead nobles and guardians—who lurk near deserted ruins and tombs.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 51,
+        "max": 51
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Mummy"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

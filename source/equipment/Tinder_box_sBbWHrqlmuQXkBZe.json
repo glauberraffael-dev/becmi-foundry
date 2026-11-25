@@ -1,0 +1,25 @@
+{
+  "_id": "sBbWHrqlmuQXkBZe",
+  "_key": "!items!sBbWHrqlmuQXkBZe",
+  "name": "Tinder box",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Flint, steel, kindling — 3gp — 5",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "3 gp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

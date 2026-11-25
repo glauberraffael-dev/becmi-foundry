@@ -1,0 +1,25 @@
+{
+  "_id": "yGYZWYGKlF2VyFSz",
+  "_key": "!items!yGYZWYGKlF2VyFSz",
+  "name": "Torches",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Six torches — 1gp — 120",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 120,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

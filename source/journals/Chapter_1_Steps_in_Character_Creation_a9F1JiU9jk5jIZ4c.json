@@ -1,0 +1,27 @@
+{
+  "_id": "a9F1JiU9jk5jIZ4c",
+  "_key": "!journal!a9F1JiU9jk5jIZ4c",
+  "name": "Chapter 1: Steps in Character Creation",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 1
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Ability scores, alignments, hit points, starting money and the first decisions a player makes.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 1. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "FLaklRoHeD-oHGs8",
+      "_key": "!journal.pages!a9F1JiU9jk5jIZ4c.FLaklRoHeD-oHGs8"
+    }
+  ]
+}

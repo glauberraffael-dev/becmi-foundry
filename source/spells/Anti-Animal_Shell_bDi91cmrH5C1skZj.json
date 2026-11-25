@@ -1,0 +1,30 @@
+{
+  "_id": "bDi91cmrH5C1skZj",
+  "_key": "!items!bDi91cmrH5C1skZj",
+  "name": "Anti-Animal Shell",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "1 turn per level of the caster",
+    "effect": "Personal barrier that blocks animals",
+    "reversible": false,
+    "description": "This spell creates an invisible barrier around the druid's body (less than an inch away). The barrier stops all attacks by animals, both normal and giant-sized, as well as insects and all other nonfantastic creatures of animal intelligence or less (0-2). The druid cannot attack animals while protected except by use of other spells; the animals are protected from the druid's physical attacks, just as the druid is protected from theirs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

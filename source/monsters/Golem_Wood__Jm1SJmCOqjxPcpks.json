@@ -1,0 +1,48 @@
+{
+  "_id": "Jm1SJmCOqjxPcpks",
+  "_key": "!actors!Jm1SJmCOqjxPcpks",
+  "name": "Golem (Wood)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2+2",
+    "hp": 22,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 fist",
+    "damage": "1d8",
+    "appearing": "1(1)",
+    "saveAs": "F1",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 4,
+    "alignment": "Neutral",
+    "xpValue": 35,
+    "terrain": "Variable. _Load:_ 500 cn x HD at full movement rate, or 1,000 cn X its HD at half movement rate.",
+    "monsterType": "Construct, Enchanted (Rare). A golem is a \"construct,\" a powerful, enchanted monster created and animated by a high level magic-user or cleric. Golems can be made of almost any material. The DM should feel free to create new types as desired.",
+    "description": "||Wood|Bone|Obsidian|Mud|Amber|Bronze| |---|---|---|---|---|---|---| |Armor Class:|7|2|3|9|6|0| |Hit Dice:|2 + 2 (S)|6*(M)|6*(L)|8*(M)|10* (L)|20(L)| |Move:|120' (40')|120' (40')|120' (40')|90'(30')|180' (60')|240' (80')| |Attacks:|1 fist|4 weapons|1 weapon or|1 hug|2 claws/|1 fist| ||||1 fist||1 bite|+ special| |Damage:|1d8|by weapon|2d4|2d6|2d6/2d6/|3dl10+special| |||||+ special|2d10|| |No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 22,
+        "max": 22
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "_Wood_",
+      "key": "Golem (Wood)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "CHeQ5l_OetBhpLhy",
+  "_key": "!items!CHeQ5l_OetBhpLhy",
+  "name": "Feeblemind",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "Permanent until dispelled",
+    "effect": "Lowers Intelligence score to 2",
+    "reversible": false,
+    "description": "Effect: Lowers Intelligence score to 2 This spell will only affect a magic-user, elf, or a monster which can cast magical spells; it does not affect those which cast only cleric or druid spells. HRN DESMO) DRS It will make the victim helpless, unable to cast spells or think clearly (as if the victim has an Intelligence score of 2). The victim may make a saving throw vs. spells to avoid the effect, but with a -4 penalty to the roll. The feeblemind lasts until removed by a dispel magic spell (at normal chances for success) or by a cleric's cureall spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "epXhNVxXwwGZsiVS",
+  "_key": "!items!epXhNVxXwwGZsiVS",
+  "name": "Creeping Doom",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "120'",
+    "duration": "1 round per level of the caster",
+    "effect": "Creates a 20' x 20' insect horde",
+    "reversible": false,
+    "description": "This spell magically creates a huge swarm of 1,000 creeping insects, appearing anywhere within 120' of the druid (as chosen by the caster). They fill an area at least 20' x 20', and can be ordered to fill any area up to a maximum of 60' x 60'. The creeping doom can move at up to 60'(20') if the caster remains within 120' of any part of the swarm. They vanish after the duration ends, or whenever the druid is more than 120' away. The insects always attack everyone and everything in their path, inflicting 1 point of damage per 10 insects, a total of 100 points per round to each creature caught in the effect (no saving throw).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

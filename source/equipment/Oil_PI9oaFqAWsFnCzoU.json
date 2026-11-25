@@ -1,0 +1,25 @@
+{
+  "_id": "PI9oaFqAWsFnCzoU",
+  "_key": "!items!PI9oaFqAWsFnCzoU",
+  "name": "Oil",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "One flask — 2gp — 10",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "2 gp",
+    "weight": 10,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

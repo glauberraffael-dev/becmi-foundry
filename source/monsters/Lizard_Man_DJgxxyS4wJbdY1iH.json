@@ -1,0 +1,48 @@
+{
+  "_id": "DJgxxyS4wJbdY1iH",
+  "_key": "!actors!DJgxxyS4wJbdY1iH",
+  "name": "Lizard Man",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "2+1",
+    "hp": 21,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon + 1",
+    "appearing": "2d4 (6d6)",
+    "saveAs": "F2",
+    "morale": 12,
+    "treasure": "D",
+    "intelligence": 6,
+    "alignment": "Neutral",
+    "xpValue": 25,
+    "terrain": "Cavern, River/Lake, Swamps.",
+    "monsterType": "Humanoid (Common).",
+    "description": "Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. Armor Class: 5 Hit Dice: 2 + 1 (M) Move: 60' (20') Swimming: 120' (40') Attacks: 1 weapon Damage: By weapon + 1 No. Appearing: 2d4 (6d6) Save As: F2 Morale: 12 Treasure Type: D Intelligence: 6 Alignment: Neutral XP Value: 25 One in ten will speak a little Common. PCs can negotiate with lizard men that can talk.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 21,
+        "max": 21
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lizard Man"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

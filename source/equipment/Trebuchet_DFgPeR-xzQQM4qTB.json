@@ -1,0 +1,25 @@
+{
+  "_id": "DFgPeR-xzQQM4qTB",
+  "_key": "!items!DFgPeR-xzQQM4qTB",
+  "name": "Trebuchet",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "400 — 24,000* — 0 — 36 — 12 — 250/400/500 (Min: 100) — d12 + 13 — 1 per 6 — 8,000",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 8000,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

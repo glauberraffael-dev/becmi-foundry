@@ -1,0 +1,30 @@
+{
+  "_id": "M3ZXSvR0lQteTbAm",
+  "_key": "!items!M3ZXSvR0lQteTbAm",
+  "name": "ESP",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "60'",
+    "duration": "12 turns",
+    "effect": "All thoughts in one direction",
+    "reversible": false,
+    "description": "This spell will allow the spellcaster to \"hear\" thoughts. The spellcaster must concentrate in one direction for six rounds (one minute) to hear the thoughts (if any) of a creature within range. The spell allows the spellcaster to understand the thoughts of any single living creature, regardless of the language. The spell does not allow the caster to hear the thoughts of undead creatures. If more than one creature is within range and in the direction the caster is concentrating, the spellcaster will \"hear\" a confused jumble of thoughts. The spellcaster can sort out the jumble only by concentrating for an extra six rounds to find a single creature.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

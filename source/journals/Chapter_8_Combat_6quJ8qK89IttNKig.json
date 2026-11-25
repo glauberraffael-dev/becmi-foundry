@@ -1,0 +1,27 @@
+{
+  "_id": "6quJ8qK89IttNKig",
+  "_key": "!journal!6quJ8qK89IttNKig",
+  "name": "Chapter 8: Combat",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 8
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Initiative, morale, attack rolls, missile fire, magic, unarmed and special forms of combat.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 8. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "uZGK3MepqPPzAFfT",
+      "_key": "!journal.pages!6quJ8qK89IttNKig.uZGK3MepqPPzAFfT"
+    }
+  ]
+}

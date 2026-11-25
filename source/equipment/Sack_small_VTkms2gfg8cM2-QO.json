@@ -1,0 +1,25 @@
+{
+  "_id": "VTkms2gfg8cM2-QO",
+  "_key": "!items!VTkms2gfg8cM2-QO",
+  "name": "Sack, small",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Capacity 200 cn — 1gp — 1*",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 1,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

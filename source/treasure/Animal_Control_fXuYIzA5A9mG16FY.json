@@ -1,0 +1,27 @@
+{
+  "_id": "fXuYIzA5A9mG16FY",
+  "_key": "!items!fXuYIzA5A9mG16FY",
+  "name": "Animal Control",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user may control up to 3d6 Hit Dice of animals (normal or giant, but not fantastic or magical). When the control ends, the animals will be afraid and will leave the area if they can.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

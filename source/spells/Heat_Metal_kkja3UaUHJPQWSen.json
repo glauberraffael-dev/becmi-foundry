@@ -1,0 +1,30 @@
+{
+  "_id": "kkja3UaUHJPQWSen",
+  "_key": "!items!kkja3UaUHJPQWSen",
+  "name": "Heat Metal",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "30'",
+    "duration": "7 rounds",
+    "effect": "Warms one metal object",
+    "reversible": false,
+    "description": "This spell causes one object to slowly heat and then cool. It will affect one metal item weighing up to one-half pound (5 cn) per level of the caster. A 12th level druid, for example, can heat up to 6 pounds (60 cn—a normal sword, for instance), while a 20th level druid can heat 10 pounds (100 cn—for example, a two-handed sword). The heat causes no damage to magical items. Normal weapons or other items may be severely damaged, especially if made of both wood and metal (as a normal lance), as the wood will burn away at the point of contact with metal.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

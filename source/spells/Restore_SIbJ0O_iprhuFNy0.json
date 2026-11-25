@@ -1,0 +1,30 @@
+{
+  "_id": "SIbJ0O_iprhuFNy0",
+  "_key": "!items!SIbJ0O_iprhuFNy0",
+  "name": "Restore",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "Restores 1 level lost to _energy drain_",
+    "reversible": false,
+    "description": "This spell restores one full level of energy (experience) to any victim who has lost a level because of energy drain (for instance, from a vampire's attack). It does not restore more than one level, nor does it add a level if no level has been lost. Furthermore, the cleric casting this spell loses one level of experience, as if struck by a wight when the spell is cast; however, the cleric's loss is not permanent, and the cleric need only rest for 2dl0 (2-20) days to regain the lost experience. The reverse of this spell, life drain, drains one level of experience from the victim touched, just like the touch of a wight or wraith.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

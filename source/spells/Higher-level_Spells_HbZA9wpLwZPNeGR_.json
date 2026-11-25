@@ -1,0 +1,30 @@
+{
+  "_id": "HbZA9wpLwZPNeGR_",
+  "_key": "!items!HbZA9wpLwZPNeGR_",
+  "name": "Higher-level Spells",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "",
+    "duration": "",
+    "effect": "",
+    "reversible": false,
+    "description": "Other Magic-Users: By ancient tradition—of necessity and common sense—magic-users are loathe to trade spells among themselves. Each magic-user knows that he may become a very powerful wizard some day . . . and that he may end up being the enemy of another wizard of similar power. No wizard wants to teach the other fellow magic that can kill him. This is something the DM should reinforce in his campaign: If he finds characters casually trading spells from their spell books, he should remind them of the traditions of secrecy, of the good reasons for that tradition, of the paranoia that infects the magicusers' community, and so on.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

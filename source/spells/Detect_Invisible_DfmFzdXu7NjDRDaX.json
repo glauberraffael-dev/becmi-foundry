@@ -1,0 +1,30 @@
+{
+  "_id": "DfmFzdXu7NjDRDaX",
+  "_key": "!items!DfmFzdXu7NjDRDaX",
+  "name": "Detect Invisible",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10' per level of the spellcaster",
+    "duration": "6 turns",
+    "effect": "The spellcaster only",
+    "reversible": false,
+    "description": "When this spell is cast, the spellcaster can see all invisible creatures and objects within range. The range is 10' for each level of the spellcaster. For example, a 3rd level spellcaster can use this spell to see invisible things within 30'.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

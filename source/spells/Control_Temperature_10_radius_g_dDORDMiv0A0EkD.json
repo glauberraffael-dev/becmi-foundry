@@ -1,0 +1,30 @@
+{
+  "_id": "g_dDORDMiv0A0EkD",
+  "_key": "!items!g_dDORDMiv0A0EkD",
+  "name": "Control Temperature 10' radius",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "1 turn per level of the caster",
+    "effect": "Cools or warms air within 10'",
+    "reversible": false,
+    "description": "This spell allows the druid to alter the temperature within an area 20' across. The maximum change is 50 degrees (Fahrenheit), either warmer or cooler. The change occurs immediately, and the effect moves with the druid. The druid may change the temperature simply by concentrating for 1 round, and the temperature will remain changed as long as the spell lasts. The spell is useful for resisting cold or heat so the caster may survive temperature extremes.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

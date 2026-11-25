@@ -1,0 +1,48 @@
+{
+  "_id": "bBMMTm8mtnITlmlE",
+  "_key": "!actors!bBMMTm8mtnITlmlE",
+  "name": "Gnoll",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon + 1",
+    "appearing": "1d6 (3d6)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "(P) D",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 20,
+    "terrain": "Hill, Mountain.",
+    "monsterType": "Humanoid (Common). Gnolls are ferocious humanoids of low intelligence. They resemble a cross between a human and a hyena. They live in rough, rugged wasteland and wilderness areas. Gnolls may use all weapons, but most do not work metal; they steal most of their metal weapons from humans. They are strong, but dislike work and prefer to bully and steal. For every 20 gnolls encountered, one will be a leader with 16 hit points who attacks as a 3 Hit Die monster.",
+    "description": "Armor Class: 5 Hit Dice: 2 (L) Move: 90' (30') Attacks: 1 weapon Damage: By weapon + 1 No. Appearing: 1d6 (3d6) Save As: F2 Morale: 8 Treasure Type: (P) D Intelligence: 7 Alignment: Chaotic XP Value: 20 Monster Type: Humanoid (Common). Gnolls are ferocious humanoids of low intelligence. They resemble a cross between a human and a hyena. They live in rough, rugged wasteland and wilderness areas. Gnolls may use all weapons, but most do not work metal; they steal most of their metal weapons from humans.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gnoll"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

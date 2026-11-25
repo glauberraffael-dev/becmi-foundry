@@ -1,0 +1,25 @@
+{
+  "_id": "2-PoxS92trUD6SIV",
+  "_key": "!items!2-PoxS92trUD6SIV",
+  "name": "Sack, large",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Capacity 600 cn — 2gp — 5* **",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "2 gp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

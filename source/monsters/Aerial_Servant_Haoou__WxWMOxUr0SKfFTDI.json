@@ -1,0 +1,48 @@
+{
+  "_id": "WxWMOxUr0SKfFTDI",
+  "_key": "!actors!WxWMOxUr0SKfFTDI",
+  "name": "Aerial Servant (Haoou)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "16",
+    "hp": 16,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "1",
+    "damage": "4d8",
+    "appearing": "1 (1d4)",
+    "saveAs": "F16",
+    "morale": 9,
+    "treasure": "Nil or Special",
+    "intelligence": 12,
+    "alignment": "Chaotic",
+    "xpValue": 4050,
+    "terrain": "",
+    "monsterType": "Normal Animal (Rare).",
+    "description": "Armor Class: 0 Hit Dice: 16 (M) Move: 240' (80') Flying: 720' (240') Attacks: 1 Damage: 4d8 No. Appearing: 1 (1d4) Save As: F16 Morale: 9 Treasure Type: Nil or Special Intelligence: 12 Alignment: Chaotic XP Value: 4,050 PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 16,
+        "max": 16
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Aerial Servant (Haoou)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "1ZkCb6WSBbSNZ2qj",
+  "_key": "!actors!1ZkCb6WSBbSNZ2qj",
+  "name": "Rhagodessa",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4+2",
+    "hp": 42,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 leg/1 bite",
+    "damage": "0 + suckers/2d8",
+    "appearing": "1d4 (1d6)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "U",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Cavern, Ruins; Hill, Mountain, Woods, (after dark).",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 4 + 2 (L) Move: 150' (50') Attacks: 1 leg/1 bite Damage: 0 + suckers/2d8 No. Appearing: 1d4 (1d6) Save As: F2 Morale: 9 Treasure Type: U Intelligence: 0 Alignment: Neutral XP Value: 125 Monster Type: Monster (Rare). A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 42,
+        "max": 42
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Rhagodessa"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

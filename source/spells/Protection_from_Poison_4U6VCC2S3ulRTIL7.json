@@ -1,0 +1,30 @@
+{
+  "_id": "4U6VCC2S3ulRTIL7",
+  "_key": "!items!4U6VCC2S3ulRTIL7",
+  "name": "Protection from Poison",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "Touch",
+    "duration": "One turn per level of the caster",
+    "effect": "Gives one creature immunity to all poison",
+    "reversible": false,
+    "description": "For the duration of this spell, the recipient is completely immune to the effects of poisons of all types, including gas traps and cloudkill spells. This protection extends to items carried (thus protecting against a spirit's poisonous presence, for example). Furthermore, the recipient gains a + 4 bonus on saving throws vs. poisonous breath weapons (such as green dragon breath), but not petrification breath (such as a gorgon's).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "8cVg_b6bQDqEC3ZO",
+  "_key": "!items!8cVg_b6bQDqEC3ZO",
+  "name": "Magic Jar",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "See below",
+    "effect": "Take over one body",
+    "reversible": false,
+    "description": "This spell causes the caster's body to fall into a trance, while the caster's life force is placed in an inanimate object (which is called a magic jar regardless of its form; it does not have to be an actual jar) within range. From this object, the caster's life force may attempt to take over any one creature within 120' of the magic jar. If the victim makes a successful saving throw vs. spells, the attempt fails and the caster may not try to take over that victim again for one turn. If the victim fails the saving throw, the caster takes over his body and the life force of the victim is placed into the magic jar.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

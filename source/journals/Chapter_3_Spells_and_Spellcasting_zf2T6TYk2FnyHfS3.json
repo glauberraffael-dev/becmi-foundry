@@ -1,0 +1,27 @@
+{
+  "_id": "zf2T6TYk2FnyHfS3",
+  "_key": "!journal!zf2T6TYk2FnyHfS3",
+  "name": "Chapter 3: Spells and Spellcasting",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 3
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Clerical, druidic and magical spell lists, descriptions and the rules for learning and casting spells.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 3. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "9bo9Clz680yAt7hn",
+      "_key": "!journal.pages!zf2T6TYk2FnyHfS3.9bo9Clz680yAt7hn"
+    }
+  ]
+}

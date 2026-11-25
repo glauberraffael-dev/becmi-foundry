@@ -1,0 +1,30 @@
+{
+  "_id": "_omAtcnqDnZbh2J9",
+  "_key": "!items!_omAtcnqDnZbh2J9",
+  "name": "Massmorph",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "See below The spell lasts until the illusion is touched by an intelligent creature, or until dispelled.",
+    "effect": "Causes illusion of trees within 240' range",
+    "reversible": false,
+    "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

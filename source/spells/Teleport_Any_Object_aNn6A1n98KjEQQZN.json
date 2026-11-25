@@ -1,0 +1,30 @@
+{
+  "_id": "aNn6A1n98KjEQQZN",
+  "_key": "!items!aNn6A1n98KjEQQZN",
+  "name": "Teleport Any Object",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "effect": "Causes 1 object to teleport",
+    "reversible": false,
+    "description": "This spell is similar to the 5th level teleport spell, but nonliving objects can be affected. After casting this spell, the spellcaster may touch one creature or object and cause it to teleport. The normal chance of error apply (see the description of the teleport spell above) an object appearing too high will fall and probably break, while one appearing too low will be destroyed instantly. If the spellcaster uses this spell to teleport himself, there is no chance for error. The caster may not deliberately choose a destination occupied by a solid object or in open air above the ground. The maximum weight affected is 500 cn (50 pounds) per level of the caster.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

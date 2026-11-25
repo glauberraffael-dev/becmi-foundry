@@ -1,0 +1,30 @@
+{
+  "_id": "ah3BRmYJrIyonGPd",
+  "_key": "!items!ah3BRmYJrIyonGPd",
+  "name": "Predict Weather",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "12 hours",
+    "effect": "Gives knowledge of coming weather",
+    "reversible": false,
+    "description": "This spell enables the druid to learn the accurate weather to come for the next 12 hours. It affects an area 1 mile in diameter per level of the druid; for example, a 20th level druid would learn the weather within a 20 mile diameter (a 10 mile radius). The spell does not give the druid any control over the weather; it merely predicts what is to come.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

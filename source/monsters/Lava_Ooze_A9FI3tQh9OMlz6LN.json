@@ -1,0 +1,48 @@
+{
+  "_id": "A9FI3tQh9OMlz6LN",
+  "_key": "!actors!A9FI3tQh9OMlz6LN",
+  "name": "Lava Ooze",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "9",
+    "hp": 9,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "3 pseudopods",
+    "damage": "(4d6 + 3d6) X 3 (see below)",
+    "appearing": "1d3 (2d4)",
+    "saveAs": "F9",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Chaotic",
+    "xpValue": 900,
+    "terrain": "Mountain (volcanic).",
+    "monsterType": "Lowlife (Very Rare).",
+    "description": "Armor Class: 5 Hit Dice: 9 (L) Move: 90' (30') Attacks: 3 pseudopods Damage: (4d6 + 3d6) X 3 (see below) No. Appearing: 1d3 (2d4) Save As: F9 Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: Chaotic XP Value: 900 Monster Type: Lowlife (Very Rare). This shapeless monster appears as a puddle or stream of hot molten rock, about 10' x 10'. It lives in or near a volcano or other place of great heat. Although the ooze is native to the Prime Plane, it can freely exist on the elemental plane of Fire.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lava Ooze"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

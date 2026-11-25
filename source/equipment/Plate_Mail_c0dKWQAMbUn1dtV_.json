@@ -1,0 +1,26 @@
+{
+  "_id": "c0dKWQAMbUn1dtV_",
+  "_key": "!items!c0dKWQAMbUn1dtV_",
+  "name": "Plate Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "ac": 3,
+    "cost": "60",
+    "weight": 500,
+    "armorType": "Plate Mail"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

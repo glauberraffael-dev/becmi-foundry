@@ -1,0 +1,25 @@
+{
+  "_id": "rQwyyJ4W0yd4qKyF",
+  "_key": "!items!rQwyyJ4W0yd4qKyF",
+  "name": "---",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "--- — --- — ---",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "L1IFgSMptaDlXQZB",
+  "_key": "!items!L1IFgSMptaDlXQZB",
+  "name": "Lower Water",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "10 turns",
+    "effect": "Cuts depths to half normal",
+    "reversible": false,
+    "description": "This spell causes a body of water to lower to half its normal depth. It will effect an area up to 10,000 square feet (width and length). If cast on a constantly-renewed source of water (such as a river or ocean), it lowers that area of water for the entire duration of the spell (or until it is dispelled); surrounding water does not rush in until the spell is ended. If cast around a boat or ship, the vessel may become stuck. At the end of the spell's duration, the sudden rush of water filling the \"hole\" will sweep a ship's deck clear of most items (and people who fail their saving throws vs. spells) and cause 1dl2 + 20 (21-32) points of hull damage.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "67cGmoYXphCKTcxR",
+  "_key": "!actors!67cGmoYXphCKTcxR",
+  "name": "Horse (Riding Horse)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "2 hooves",
+    "damage": "1d4/1d4",
+    "appearing": "0(1d10 x 10)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Open.",
+    "monsterType": "Normal Animal (Common). Horses are four-legged equines already familiar to players. They're herbivores; they run wild in the plains and can be tamed as riding-beasts. **Riding Horse:** This beast can carry a rider for a greater distance than any other type of horse. It is smaller, and can exist wherever there is grass to",
+    "description": "||Riding Horse|War Horse| |---|---|---| |Armor Class:|7|1| |Hit Dice:|2(L)|3(L)| |Move:|240' (80')|120' (40')| |Attacks:|2 hooves|2 hooves| |Damage:|1d4/ld4|1d6/ld6| |No. Appearing:|0(ld10 x 10)|0 (domestic)| |Save As:|F1|F2| |Morale:|7|9| |Treasure:|Nil|Nil| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|20|35| Monster Type: Normal Animal (Common). Horses are four-legged equines already familiar to players. They're herbivores; they run wild in the plains and can be tamed as riding-beasts.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "_Riding Horse_",
+      "key": "Horse (Riding Horse)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

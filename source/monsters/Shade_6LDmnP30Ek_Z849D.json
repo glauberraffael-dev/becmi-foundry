@@ -1,0 +1,48 @@
+{
+  "_id": "6LDmnP30Ek_Z849D",
+  "_key": "!actors!6LDmnP30Ek_Z849D",
+  "name": "Shade",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2+2",
+    "hp": 22,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1",
+    "damage": "1d4 + special",
+    "appearing": "1d8 (1d12)",
+    "saveAs": "F2",
+    "morale": 12,
+    "treasure": "F",
+    "intelligence": 4,
+    "alignment": "Chaotic",
+    "xpValue": 35,
+    "terrain": "Ruins, Woods.",
+    "monsterType": "Monster, Enchanted (Rare). This monster is _not_ undead.",
+    "description": "A form of undead; see Phantom. Shadow* Armor Class: 7 Hit Dice: 2 + 2*(M) Move: 90' (30') Attacks: 1 Damage: 1d4 + special No. Appearing: 1d8 (1d12) Save As: F2 Morale: 12 Treasure Type: F Intelligence: 4 Alignment: Chaotic XP Value: 35 Monster Type: Monster, Enchanted (Rare). This monster is not undead. Shadows are noncorporeal (ghostlike) intelligent creatures found in eerie, dark places such as dungeons, deep forests, or ruins. They can only be harmed by magical weapons.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 22,
+        "max": 22
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Shade"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

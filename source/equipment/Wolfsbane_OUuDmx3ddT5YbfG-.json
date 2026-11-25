@@ -1,0 +1,25 @@
+{
+  "_id": "OUuDmx3ddT5YbfG-",
+  "_key": "!items!OUuDmx3ddT5YbfG-",
+  "name": "Wolfsbane",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "One bunch — 10 gp — 1",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "10 gp",
+    "weight": 1,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

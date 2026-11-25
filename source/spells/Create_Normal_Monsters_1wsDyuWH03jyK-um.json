@@ -1,0 +1,30 @@
+{
+  "_id": "1wsDyuWH03jyK-um",
+  "_key": "!items!1wsDyuWH03jyK-um",
+  "name": "Create Normal Monsters",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "1 turn",
+    "effect": "Creates 1 or more monsters",
+    "reversible": false,
+    "description": "This spell causes monsters to appear out of thin air. All monsters appearing will understand and obey the caster's commands—fighting, carrying or fetching things, etc. They will faithfully obey all commands to the best of their abilities. Each monster will appear carrying its normal weapons and wearing its normal armor (if any), but arrives otherwise unequipped. At the end of one turn, all the monsters created vanish back into thin air, along with all their equipment. (If a monster has dropped a weapon while fighting and then vanishes, the weapon disappears, too.) The total number of Hit Dice of monsters appearing is equal to the level of the magic-user casting the spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "1htr7haL-C2DuoNA",
+  "_key": "!items!1htr7haL-C2DuoNA",
+  "name": "Hammer",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Small — 2gp — 10",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "2 gp",
+    "weight": 10,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

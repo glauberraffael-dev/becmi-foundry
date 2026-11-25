@@ -1,0 +1,25 @@
+{
+  "_id": "fnp7CuGszpO5r3eE",
+  "_key": "!items!fnp7CuGszpO5r3eE",
+  "name": "Gallery Shed",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "15 gp/ft length — 10' x 10' X 20' — 8,000* — 4 — -12 — 40",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "15 gp",
+    "weight": 40,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

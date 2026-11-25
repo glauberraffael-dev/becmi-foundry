@@ -1,0 +1,25 @@
+{
+  "_id": "C6B4tbTVgZO87ULo",
+  "_key": "!items!C6B4tbTVgZO87ULo",
+  "name": "Rations, iron",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Preserved food for one person for —  — ",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

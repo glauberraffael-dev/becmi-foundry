@@ -1,0 +1,48 @@
+{
+  "_id": "Htr6Ke7N2CwdTYlm",
+  "_key": "!actors!Htr6Ke7N2CwdTYlm",
+  "name": "Slug, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "9",
+    "hp": 9,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite or 1 spit",
+    "damage": "1d12 or as dragon breath",
+    "appearing": "1(1)",
+    "saveAs": "F (level = 1/2 HD)",
+    "morale": 8,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 0,
+    "terrain": "Giant Slug: Cavern, Ruins. Giant Snail: Woods.",
+    "monsterType": "Giant Animal (Rare).",
+    "description": "Armor Class: 8 Hit Dice: 9 or more (see below) (L) Move: 60' (20') Burrowing: 30'(10') Attacks: 1 bite or 1 spit Damage: 1d12 or as dragon breath No. Appearing: 1(1) Save As: F (level = 1/2 HD) Morale: 8 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: See below Giant Slug XP by Hit Dice: 2,300( 9) 3,250(13) 4,300(17) 2,500(10) 3,500(14) 4,825 (18) 2,700(11) 3,750(15) 5,350(19) 3,000(12) 4,050(16) 5,975 (20) Monster Type: Giant Animal (Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Slug, Giant"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

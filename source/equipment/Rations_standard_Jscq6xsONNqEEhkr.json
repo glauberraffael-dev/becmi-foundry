@@ -1,0 +1,25 @@
+{
+  "_id": "Jscq6xsONNqEEhkr",
+  "_key": "!items!Jscq6xsONNqEEhkr",
+  "name": "Rations, standard",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Unpreserved food for one person for one week — 5gp — 200",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 200,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

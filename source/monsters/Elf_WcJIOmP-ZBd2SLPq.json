@@ -1,0 +1,48 @@
+{
+  "_id": "WcJIOmP-ZBd2SLPq",
+  "_key": "!actors!WcJIOmP-ZBd2SLPq",
+  "name": "Elf",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "1d4 (2d24)",
+    "saveAs": "E1",
+    "morale": 810,
+    "treasure": "(S + T) E",
+    "intelligence": 13,
+    "alignment": "Lawful or Neutral",
+    "xpValue": 6,
+    "terrain": "Woods. Sea Elves: Ocean.",
+    "monsterType": "Demihuman (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 1* Move: 120' (40') Attacks: 1 weapon Damage: By weapon No. Appearing: ld4 (2d24) Save As: E1 Morale: 8 or 10 (see below) Treasure Type: (S + T) E Intelligence: 13 Alignment: Lawful or Neutral XP Value: 6 Monster Type: Demihuman (Rare). Elves can also appear as NPCs. Otherwise, they might be encountered as travelers or wilderness patrols. In hand-to-hand combat, they attack as first level fighters. Each elf will have one 1st level spell (chosen at random).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Elf"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "OsGLvx7zvE8-Mlk2",
+  "_key": "!items!OsGLvx7zvE8-Mlk2",
+  "name": "Ballista",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "75 — 6,000* — 4 — 9 — **4** — 100/200/300 (Min: NA) — d10+6 — 1 per 2 — 2,000",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 2000,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

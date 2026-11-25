@@ -1,0 +1,30 @@
+{
+  "_id": "_12WY7Rp0mgTkwK_",
+  "_key": "!items!_12WY7Rp0mgTkwK_",
+  "name": "Detect Danger",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "5' per level of the caster",
+    "duration": "One hour",
+    "effect": "Reveals hazards",
+    "reversible": false,
+    "description": "This spell combines some effects of detect evil and find traps. While it is functioning, the druid can concentrate on places, objects, or creatures within range. He needs a full round of concentration to examine one square foot of area, one creature, or one small object (a chest, weapon, or smaller item). Larger objects require more time. After he examines the thing, the druid will know whether it is immediately dangerous, potentially dangerous, or benign (all strictly from the druid's point of view). Note that most creatures are potentially dangerous. This spell will detect poisons, while other spells may not.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

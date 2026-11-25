@@ -1,0 +1,48 @@
+{
+  "_id": "f55tUJmpzUuaMdmK",
+  "_key": "!actors!f55tUJmpzUuaMdmK",
+  "name": "Fish, Giant (Rockfish)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "120",
+    "hp": 120,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "1 bite 4 spines + poison (special) 1 bite",
+    "damage": "1d6 1d4 each + poison 2dlO",
+    "appearing": "0 (2d4) 0(2d4) 0(2d10)",
+    "saveAs": "F1 F3 F5",
+    "morale": 8,
+    "treasure": "Nil Nil Nil",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 900,
+    "terrain": "River /Lake, Ocean.",
+    "monsterType": "Giant Animal (Common).",
+    "description": "Giant Bass Giant Rockfish Giant Sturgeon Armor Class: 7 1 0 Hit Dice: 2 (L) 5 + 5*(L) 10 + 2*(L) Move (swim): 120' (40') 180' (60') 180' (60') Attacks: 1 bite 4 spines + poison (special) 1 bite Damage: 1d6 1d4 each + poison 2dlO No. Appearing: 0 (2d4) 0(2d4) 0(2d10) Save As: F1 F3 F5 Morale: 8 8 9 Treasure Type: Nil Nil Nil Intelligence: 1 1 1 Alignment: Neutral Neutral Neutral XP Value: 20 400 1,900 four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 120,
+        "max": 120
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Fish, Giant (Rockfish)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

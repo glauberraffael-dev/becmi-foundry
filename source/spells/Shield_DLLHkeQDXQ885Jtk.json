@@ -1,0 +1,30 @@
+{
+  "_id": "DLLHkeQDXQ885Jtk",
+  "_key": "!items!DLLHkeQDXQ885Jtk",
+  "name": "Shield",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0",
+    "duration": "2 turns",
+    "effect": "The spellcaster only Duration: 6 turns Effect: Disc remains within 6'",
+    "reversible": false,
+    "description": "Duration: 6 turns Effect: Disc remains within 6' This spell creates an invisible magical horizontal platform about the size and shape of a small round shield. It can carry up to 5000 cn (500 pounds). It cannot be created in a place occupied This spell creates a magical barrier all around the spellcaster (less than an inch away). It moves For every 5 levels of experience of the caster, two more missiles are created by the same spell. with the spellcaster. While the duration lasts, the spellcaster has an AC of 2 against missiles, and AC 4 against all other attacks. If someone shoots a magic missile at a spellcaster protected by this spell, the spellcaster may make a saving throw vs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

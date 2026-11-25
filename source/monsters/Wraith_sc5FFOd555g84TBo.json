@@ -1,0 +1,48 @@
+{
+  "_id": "sc5FFOd555g84TBo",
+  "_key": "!actors!sc5FFOd555g84TBo",
+  "name": "Wraith",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 touch",
+    "damage": "1d6 + energy drain",
+    "appearing": "1d4(1d6)",
+    "saveAs": "F4",
+    "morale": 7,
+    "treasure": "E",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 175,
+    "terrain": "Ocean.",
+    "monsterType": "Undead (Rare, Enchanted). A wraith is an undead monster with no physi-",
+    "description": "Armor Class: 3 Hit Dice: 4 (M) Move: 120' (40') Flying: 240' (80') Attacks: 1 touch Damage: 1d6 + energy drain No. Appearing: 1d4(ld6) Save As: F4 Morale: Treasure Type: E Intelligence: 7 Alignment: Chaotic XP Value: 175 Monster Type: Undead (Rare, Enchanted). A wraith is an undead monster with no physi- Great Whale: This huge whale is about 60' long on the average. It preys on the most feared denizens of the deep (such as the giant octopus and giant squid).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Wraith"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

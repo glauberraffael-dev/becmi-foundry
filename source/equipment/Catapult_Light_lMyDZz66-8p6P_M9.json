@@ -1,0 +1,25 @@
+{
+  "_id": "lMyDZz66-8p6P_M9",
+  "_key": "!items!lMyDZz66-8p6P_M9",
+  "name": "Catapult, Light",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "150 — 12,000* — 4 — 18 — **6** — 200/250/300 (Min: 150) — d8 + 8 — Iper5 — 4,000",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 4000,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

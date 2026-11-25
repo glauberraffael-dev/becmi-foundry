@@ -1,0 +1,30 @@
+{
+  "_id": "C3igK7mcrZMPEAr5",
+  "_key": "!items!C3igK7mcrZMPEAr5",
+  "name": "Fireball",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "Instantaneous",
+    "effect": "Explosion in a sphere 40' diameter",
+    "reversible": false,
+    "description": "This spell creates a missile of fire that bursts into a ball of fire with a 40' diameter (20' radius) where it strikes a target. The fireball will cause 1d6 points of fire damage per level of the caster to every creature in the area of effect. Each victim may make a saving throw vs. spells; if successful, the spell will only do half damage. For example, a fireball cast by a 6th level spellcaster will burst for 6d6 (6-36) points of damage; characters who make their saving throw vs. spell will take only half of the damage rolled on the dice.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

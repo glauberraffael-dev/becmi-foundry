@@ -1,0 +1,25 @@
+{
+  "_id": "ullh_iUNncXI8LVU",
+  "_key": "!items!ullh_iUNncXI8LVU",
+  "name": "Rope",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "50' length — 1gp — 50",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 50,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

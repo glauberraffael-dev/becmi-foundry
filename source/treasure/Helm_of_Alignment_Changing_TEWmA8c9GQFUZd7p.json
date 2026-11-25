@@ -1,0 +1,27 @@
+{
+  "_id": "TEWmA8c9GQFUZd7p",
+  "_key": "!items!TEWmA8c9GQFUZd7p",
+  "name": "Helm of Alignment Changing",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item looks like a fancy helmet. When the helm is put on, it will immediately change the wearer's alignment (the DM should determine the new alignment randomly). This device can only be taken off by using a remove curse spell, but the wearer will resist seeking the removal. Once it is removed, however, the wearer's original alignment will return.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,4338 @@
+[
+  {
+    "name": "Detect Evil",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "2 turns",
+      "effect": "Everything within 60'",
+      "reversible": false,
+      "description": "When this spell is cast, the spellcaster will see a glow surround all evilly-enchanted objects within 60'. It will also cause creatures that want to harm the spellcaster to glow when they are within range. The spell, however, does not allow the spellcaster to hear the actual thoughts of the creatures. Remember that Chaotic alignment is not automatically the same as evil, although many Chaotic monsters have evil intentions. Traps and poison are neither good nor evil, but merely dangerous.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Detect Magic",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0",
+      "duration": "2 turns",
+      "effect": "Everything within 60'",
+      "reversible": false,
+      "description": "When this spell is cast, the cleric will see a glow surround magical objects, creatures, and places within the spell's effect. The glow will not last very long; clerics should normally use the spell only when they want to know if particular objects already within sight are, in fact, magical. For example, a door may be held shut magically, a stranger might actually be an enchanted monster, or a treasure might be enchanted.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Light",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "6 turns + 1 turn/level of the caster",
+      "effect": "Volume of 30' diameter",
+      "reversible": false,
+      "description": "This spell will not affect a magic missile, either incoming or outgoing. If the spellcaster attacks (hand-to-hand) anything during the spell's duration, the effect changes slightly. Enchanted creatures are then able to touch the spellcaster, but the attack roll and saving throw adjustments still apply until the spell duration ends. A more complex system for determining the duration of a charm spell appears in Chapter 13, on page 144. This spell creates a large ball of light, much like a bright torchlight. If the spell is cast on an object (such as a coin), the light will move with the object. If cast at a creature's eyes, the creature must make a saving throw vs. spells.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Protection from Evil",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "12 turns",
+      "effect": "The cleric only",
+      "reversible": false,
+      "description": "This spell creates an invisible magical barrier all around the cleric's body (less than an inch away). While the spell lasts, characters and monsters attacking the cleric are penalized by - 1 to their attack rolls, and the cleric gains a + 1 bonus to all saving throws. In addition, enchanted creatures cannot even touch the cleric! (An enchanted creature is one that normal weapons will not affect, one which only magical weapons can hit. A creature that can only be hit by a silver weapon—a werewolf, for example—is not an enchanted creature. Any creature that is magically summoned or controlled, such as a charmed character, is also considered to be an enchanted creature.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Purify Food and Water",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "10'",
+      "duration": "Permanent",
+      "effect": "See below",
+      "reversible": false,
+      "description": "This spell will make spoiled or poisoned food and water safe and usable. It will purify one ration of preserved food (either iron or standard rations)., or six waterskins of water, or enough normal food to feed a dozen people. If cast at mud, the spell will cause the dirt to settle, leaving a pool of pure, clear water. The spell will not affect any living creature.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Remove Fear",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "2 turns",
+      "effect": "Any one living creature",
+      "reversible": false,
+      "description": "When the cleric casts this spell and then touches any living creature, the spell will calm the creature and remove any fear. If the creature has been affected by a fear spell or effect which does not normally allow a saving throw, the remove fear spell can still be useful. If the cleric casts the spell on someone afflicted by a magical fear effect, the victim gets to make a saving throw vs. spells, adding a bonus to the roll equal to the cleric's level of experience (up to a maximum bonus of +6). If the saving throw is successful, the victim's fear is negated. Regardless of the cleric's level or any bonuses, a roll of 1 will always fail.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Bless",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "6 turns",
+      "effect": "All within a 20' square area",
+      "reversible": false,
+      "description": "This spell improves the morale of friendly creatures by +1 and gives the recipients a +1 bonus on all attack and damage rolls. It will only affect creatures in a 20' X 20' area, and only those who are not yet in melee. When reversed, this spell, blight, places a - 1 penalty on enemies' morale, attack rolls, and damage rolls. Each victim may make a saving throw vs. spells to avoid the penalties.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Find Traps",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "2 turns",
+      "effect": "Traps within 30' glow",
+      "reversible": false,
+      "description": "This spell causes all mechanical and magical traps to glow with a dull blue light when the cleric comes within 30' of them. It does not reveal the types of traps, nor any method of removing them. Note that an ambush is not a trap, nor is a natural hazard, such as quicksand.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hold Person",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "180'",
+      "duration": "9 turns",
+      "effect": "Paralyzes up to 4 creatures",
+      "reversible": false,
+      "description": "The hold person spell will affect any human, demihuman, or human-like creature (bugbear, dryad, gnoll, hobgoblin, kobold, lizard man, ogre, orc, nixie, pixie or sprite, for instance). It will not affect the undead or creatures larger than ogres. Each victim must make a saving throw vs. spells or be paralyzed for nine turns. The spell may be cast at a single person or at a group. If cast at a single person, the victim suffers a — 2 penalty to the saving throw. If cast at a group, it will affect up to four persons (of the cleric's choice), but with no penalty to their rolls. The paralysis may only be removed by the reversed form of the spell, or by a dispel magic spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Know Alignment",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "1 round",
+      "effect": "One creature within 10' to find the alignment of an enchanted item or area (if any).",
+      "reversible": false,
+      "description": "to find the alignment of an enchanted item or area (if any). The reverse of the spell, confuse alignment, lasts for one turn per level of the caster, and may be cast on any one creature, by touch. No saving throw is allowed. For as long as the spell lasts, a cleric trying to identify the alignment of the recipient by using the normal know alignment spell will get a false answer. That same false answer will be the result of any further attempts.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Resist Fire",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "2 turns",
+      "effect": "One living creature",
+      "reversible": false,
+      "description": "For the duration of this spell, normal fire and heat cannot harm the spell's recipient. The recipient also gains a +2 bonus on all saving throws against magical fire (dragon's breath, fireball, etc.). Furthermore, damage from such fire is reduced by 1 point per die of damage (though each die will inflict at least 1 point of damage, regardless of adjustments). Red dragon breath damage is reduced by 1 point per Hit Die of the creature (again, to no less than 1 point of damage per Hit Die).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Silence 15' Radius",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "180'",
+      "duration": "12 turns",
+      "effect": "Sphere of silence 30' across",
+      "reversible": false,
+      "description": "This spell makes the area of effect totally silent. Conversation and spellcasting in this area are impossible for the duration of the spell. This spell does not prevent a person within the area from hearing noises outside the area. If cast on a creature, the victim must make a saving throw vs. spells or the spell effects will move with the creature. If the saving throw is successful, the spell remains in the area in which it was cast, and the victim may move out of the area.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Snake Charm",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "2-5 rounds or 2-5 turns",
+      "effect": "Charms 1 HD of snakes per level of the caster With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed.",
+      "reversible": false,
+      "description": "With this spell, a cleric may charm 1 Hit Die of snakes for each level of experience he has, and no saving throw is allowed. A 5th level cleric could charm one 5 HD snake, five 1 HD snakes, or any combination totalling 5 Hit Dice or less. The snakes affected will rise up and sway, but will not attack unless attacked themselves. If the cleric uses the spell on snakes attacking him, the spell's duration is 1d4 + 1 (2-5) rounds; otherwise, it lasts 1d4 +1 (2-5) turns. When the spell wears off, the snakes return to normal (but with normal reactions; they will not be automatically hostile).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Resist Cold",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0",
+      "duration": "6 turns",
+      "effect": "All creatures within 30'",
+      "reversible": false,
+      "description": "Duration: 6 turns Effect: All creatures within 30' The caster of this spell may discover the alignment (Lawful, Neutral, or Chaotic) of any one creature within 10'. The spell may also be used When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Continual Light",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Permanent",
+      "effect": "Volume of 60' diameter",
+      "reversible": false,
+      "description": "This spell creates a globe of light 60' across. It is much brighter than a torch, but not as bright as full daylight. It will continue to glow forever, or until it is magically removed. It may be cast on an object, just as the first level light spell. If cast at a creature's eyes, the victim must make a saving throw vs. spells. If he fails the saving throw, the victim is blinded—permanently, or until the spell is dispelled. If he makes the saving throw, the globe will still appear, but will remain in the place it was cast, and the intended victim will suffer no ill effects. The reverse of this spell, continual darkness, creates a volume of complete darkness in a 30' radius.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cure Blindness",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "One living creature",
+      "reversible": false,
+      "description": "This spell will cure nearly any form of blindness, including those caused by light or darkness spells (whether normal or continual). It will not, however, affect blindness caused by a curse.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cure Disease",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "Permanent",
+      "effect": "One living creature within range",
+      "reversible": false,
+      "description": "This spell will cure any living creature of one disease, such as those caused by a mummy or green slime. If cast by a cleric of llth level or greater, this spell will also cure lycanthropy. The reverse of this spell, cause disease, infects the victim with a hideous wasting disease unless he successfully makes a saving throw vs. spells. A diseased victim has a -2 penalty on all attack rolls. In addition, the victim's wounds cannot be magically cured, and natural healing takes twice as long as usual. The disease is fatal in 2dl2 (224) days unless removed by a cure disease spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Growth of Animal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "120'",
+      "duration": "12 turns",
+      "effect": "Doubles the size of one animal",
+      "reversible": false,
+      "description": "This spell doubles the size of one normal or giant animal. The animal then has twice its normal strength and inflicts double its normal damage. It may also carry twice its normal encumbrance. This spell does not change an animal's behavior, armor class, or hit points, and does not affect intelligent animal races or fantastic creatures.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Locate Object",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "60' + 10' per level of the spellcaster",
+      "duration": "2 turns",
+      "effect": "One object within range",
+      "reversible": false,
+      "description": "The spellcaster casts this spell to find an object within the spell's range. For this spell to work, the spellcaster must know exactly what the object looks like. He can specify a common type of object, such as \"any flight of stairs,\" instead. The spell will point to the nearest designated object within range, giving the direction but not the distance. The spell's range increases as the spellcaster gains levels of experience. For example, a 2nd level spellcaster can locate objects up to 80' away; a 3rd level spellcaster, up to 90'.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Remove Curse",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Removes any one curse",
+      "reversible": false,
+      "description": "This spell removes one curse, whether on a character, item, or area. Some curses—especially those on magical items—may only be temporarily removed, at the DM's discretion, requiring a clerical dispel evil spell for permanently removing the effects (or possibly a remove curse cast by a high-level spellcaster). The reverse of this spell, curse, causes a misfortune or penalty to affect the recipient. Curses are limited only by the caster's imagination, but if an attempted curse is too powerful, it may return to the caster (DM's discretion)! Safe limits to curses may include: - 4 penalty on attack rolls; - 2 penalty to all saving throws; prime requisite reduced to half normal.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Speak with the Dead",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "10'",
+      "duration": "1 round per level of the cleric",
+      "effect": "Cleric may ask three questions By means of this spell, a cleric may ask three questions of a deceased spirit if the body is within range.",
+      "reversible": false,
+      "description": "By means of this spell, a cleric may ask three questions of a deceased spirit if the body is within range. A cleric of 6th or 7th level can contact recently deceased spirits (those dead up to 4 days). Clerics of levels 8-14 have slightly more power (contacting spirits up to 4 months dead), and clerics of levels 15-20 have even more (speaking with corpses up to 4 years dead). No time limits apply to clerics of 21st level or greater. The spirit will always reply in a tongue known to the cleric, but can only offer knowledge of things up to the time of its death.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Striking",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "1 turn",
+      "effect": "1d6 bonus to damage on 1 weapon",
+      "reversible": false,
+      "description": "This spell allows any one weapon to inflict 1d6 additional points of damage per attack (like a magical staff of striking). The weapon will inflict this extra damage with every successful blow for as long as the spell lasts. This bonus does not apply to attack rolls, but only to damage rolls. If the cleric casts this spell on a normal weapon, the weapon may then damage creatures which are normally affected only by magic weapons; the weapon will do 1d6 points of damage per strike (regardless of the normal damage of the weapon).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Animate Dead",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Permanent",
+      "effect": "Creates zombies or skeletons",
+      "reversible": false,
+      "description": "This spell allows the caster to make animated, enchanted skeletons or zombies from normal skeletons or dead bodies within range. These animated undead creatures will obey the cleric until they are destroyed by another cleric or a dispel magic spell. For each experience level of the cleric, he may animate one Hit Die of undead. A skeleton has the same Hit Dice as the original creature, but a zombie has one Hit Die more than the original. Note that this doesn't count character experience levels as Hit Dice: For purposes of this spell, all humans and demihumans are 1 HD creatures, so the remains of a 9th level thief would be animated as a zombie with 2 HD.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Water",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "10'",
+      "duration": "6 turns",
+      "effect": "Creates one magical spring With this spell, the cleric summons forth an enchanted spring from the ground or a wall.",
+      "reversible": false,
+      "description": "With this spell, the cleric summons forth an enchanted spring from the ground or a wall. The spring will flow for an hour, creating enough water for 12 men and their mounts (for that day, about 50 gallons). For each of the cleric's experience levels above 8, water for twelve additional men and mounts is created; thus a 10th level cleric could create water for 36 men and horses. The cleric doesn't have to create the maximum amount of water if he doesn't wish to. He might wish to create a spring which will flow for half an hour, or a few minutes; the player need only tell the GM how many gallons he wants the spell to create, up to the spell's maximum.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cure Serious Wounds",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Any one living creature",
+      "reversible": false,
+      "description": "Effect: Any one living creature This spell is similar to a cure light wounds spell, but will cure one creature of 2d6 + 2 (4-14) points of damage. The reverse of this spell, cause serious wounds, causes 2d6 + 2 points of damage to any creature or character touched (no saving throw). The caster must make a normal attack roll to successfully cast the cause serious wounds spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Dispel Magic",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Permanent",
+      "effect": "Destroys spells in a 20' cube",
+      "reversible": false,
+      "description": "Duration: Permanent Effect: Destroys spells in a 20' cube This spell destroys other spell effects in a cubic volume of 20' x 20' x 20'. It does not affect magical items. Spell effects created by a caster (whether cleric, druid, magic-user, or elf) of a level equal to or lower than the spellcaster of the dispel magic are automatically and immediately destroyed. Spell effects created by a higher-level spellcaster might not be affected. The chance of failure is 5 % per level of difference between the spellcasters. For example, a 7th level magic-user trying to dispel a web spell cast by a 9th level cleric would have a 10% chance of failure.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Neutralize Poison",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "A creature, container, or object",
+      "reversible": false,
+      "description": "This spell will make poison harmless either in a creature, a container (such as a bottle), or on one object (such as a chest). It will even revive a victim slain by poison if cast within 10 rounds of the poisoning! The spell will affect any and all poisons present at the time it is cast, but does not cure any damage (and will thus not revive a poisoned victim who has died of wounds). The reverse of this spell, create poison, may be cast, by touch, on a creature or container. A cleric cannot cast it on any other object. A victim must make a saving throw vs. poison or be immediately slain by the poison.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Protection from Evil 10' Radius",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "12 turns",
+      "effect": "Barrier 20' diameter",
+      "reversible": false,
+      "description": "This spell creates an invisible magical barrier all around the caster, extending for a 10' radius in all directions. The spell serves as protection from attacks by monsters of an alignment other than the caster's. Each creature within the barrier gains a +1 to all saving throws, and all attacks against those within are penalized by - 1 to the attacker's attack roll while the spell lasts. In addition, enchanted creatures cannot attack those within the barrier in hand-to-hand (melee) combat. (An enchanted creature is any creature which is magically summoned or controlled, such as a charmed character, or one that is not harmed by normal weapons.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Speak with Plants",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "3 turns",
+      "effect": "All plants within 30'",
+      "reversible": false,
+      "description": "This spell enables the cleric to talk to plants as though they are intelligent. The cleric may request a simple favor, and the plants will grant it if it is within the plants' power to understand and perform. This spell may be used to allow the cleric and party to pass through otherwise impenetrable undergrowth. It will also allow the cleric to communicate with plantlike monsters (such as treants).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Sticks to Snakes",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "120'",
+      "duration": "6 turns",
+      "effect": "Up to 16 sticks",
+      "reversible": false,
+      "description": "This spell turns 2d8 sticks into snakes (detailed below). The snakes may be poisonous (50% chance per snake; the DM can roll 1d6 for each snake; on a roll of 1-3, the snake is poisonous). They obey the cleric's commands, but will turn back into sticks when slain or when the spell's duration ends. Snakes: NA 2d8 (2d8); AC 6, HD 1; AT 1 bite; Dmg 1d4; MV 90' (30'); Save Fl; ML 12; TT Nil; AL Neutral; SA poison (50% chance for each snake to be poisonous); XP 10 (nonpoisonous) or 13 (poisonous).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Commune",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "3 turns",
+      "effect": "3 questions",
+      "reversible": false,
+      "description": "This spell allows the cleric to ask questions of the greater powers (whatever forces of nature, greater spirits, or legendary Immortals the DM has created for this campaign world). The cleric may ask three questions that can be answered \"yes\" or \"no.\" A cleric may commune only once a week. If the clerics in the campaign are using the spell too often, the DM may wish to limit its use to once a month. Once a year the cleric may ask twice the normal number of questions. The DM might wish to establish that this must occur on a day which is significant to the greater powers being questioned.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Food",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "10'",
+      "duration": "Permanent",
+      "effect": "Creates food for 12 or more",
+      "reversible": false,
+      "description": "This spell creates enough normal food to feed up to 12 men and their mounts for one day. For every level of the cleric above 8th, the spell creates enough food for 12 additional men and mounts. The cleric doesn't have to create the maximum amount of food if he doesn't wish to; he can create a lesser amount. Created food spoils after 24 hours; therefore it is impossible to lay in a big store of food created by this spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cure Critical Wounds",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Any one living creature",
+      "reversible": false,
+      "description": "This spell is similar to a cure light wounds spell, but will cure one living creature of 3d6 + 3 (6-21) points of damage. The reverse of this spell (cause critical wounds) causes 3d6 + 3 (6-21) points of damage to any living creature or character touched (no saving throw). The caster must make a normal attack roll to cause the critical wound.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Dispel Evil",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "1 turn",
+      "effect": "Enchanted or undead monsters or one curse or _charm_",
+      "reversible": false,
+      "description": "This spell may affect all undead and enchanted (summoned, controlled, and animated) monsters within range. It will destroy the monster unless each victim makes a saving throw vs. spells. If cast at only one creature, that creature takes a —2 penalty to the saving throw. Any creature from another plane is banished (forced to return to its home plane) if it fails the saving throw. Even if the victims successfully roll their saving throws, they must flee the area, and will stay away as long as the caster concentrates; the caster cannot move while concentrating. This spell will also remove the curse from any one cursed item, or may be used to remove the influence of any magical charm.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Insect Plague",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "480'",
+      "duration": "1 day",
+      "effect": "Creates a swarm of 30' radius",
+      "reversible": false,
+      "description": "This spell summons a vast swarm of insects. The swarm obscures vision and drives off creatures of less than 3 Hit Dice (no saving throw). The swarm moves at up to 20' per round as directed by the cleric while it is within range. The caster must concentrate, without moving, to control the swarm. If the caster is disturbed, the. insects scatter and the spell ends. This spell only works outdoors and above-ground.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Quest",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "Special",
+      "effect": "Compels one living creature",
+      "reversible": false,
+      "description": "This spell forces the victim to perform some special task or quest, as commanded by the caster. The victim may make a saving throw vs. spells; if he succeeds, the spell does not affect him. A typical task might involve slaying a certain monster, rescuing a prisoner, obtaining a magical item for the caster, or going on a pilgrimage. If the task is impossible or suicidal, the spell has no effect. Once the task is completed, the spell ends. The spell forces the victim to undertake a task, but doesn't force him to like it. Once the task is accomplished, the victim might wish to exact revenge on the cleric, just depending on the circumstances of the adventure.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Raise Dead",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "120'",
+      "duration": "Permanent",
+      "effect": "Body of one human or demihuman By means of this spell, the cleric can raise any human, dwarf, halfling, or elf from the dead.",
+      "reversible": false,
+      "description": "By means of this spell, the cleric can raise any human, dwarf, halfling, or elf from the dead. The body must be present, and if part is missing, the raised character will be disabled accordingly. An 8th level cleric can raise a body that has been dead for up to four days. For each level of the cleric above 8th, add four days to this time. Thus, a 10th level cleric can raise bodies that have been dead for up to twelve days. The recipient returns to life with 1 hit point, and cannot fight, cast spells, use abilities, carry heavy loads, or move at more than half speed. These penalties will disappear after two full weeks of complete bed rest, but the healing cannot be speeded by magic.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Truesight",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (cleric only)",
+      "duration": "1 turn + 1 round per level of caster.",
+      "effect": "Reveals all things",
+      "reversible": false,
+      "description": "When he casts this spell, the cleric is able to see all things within 120'. The spell is quite powerful; the cleric can clearly see all hidden, invisible, and ethereal objects and creatures as with the magic-user detect invisible spell. In addition, any secret doors as well as things or creatures not in their true form—whether polymorphed, disguised, or otherwise—are seen as they truly are, with no possibility of deception. Alignment is also \"seen,\" as is experience and power.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Aerial Servant",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "1 day per level of caster",
+      "effect": "Servant fetches one item or creature",
+      "reversible": false,
+      "description": "An aerial servant is a very intelligent being from the elemental plane. With this spell, the cleric summons one of these beings, which appears immediately. The cleric must then describe one creature or item and its location to the servant, or else it will depart. When it hears this description and location, the aerial servant leaves, trying to find the item or creature and bring it to the cleric. The servant will take as much time as needed, up to the limit of the duration. If the spell's duration lapses before the task is completed, even if the aerial servant is already bringing the target back to the caster, the aerial servant has failed to accomplish its task.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Animate Objects",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "6 turns",
+      "effect": "Causes objects to move",
+      "reversible": false,
+      "description": "The cleric may use this spell to cause any nonliving, nonmagical objects to move and attack. Magical objects are not affected. The spell can animate any one object up to 400 lbs (4,000 cn) (roughly the size of two men), or a number of smaller objects whose total weight does not exceed 400 lbs. The DM must decide on the movement rate, number of attacks, damage, and other combat details of the objects animated. As a guideline, a man-sized statue might move at 30' per round, attack once per round for 2d8 (2-16) points of damage, and have an armor class of 1. A chair might only be AC 6, but move at 180' per round on its four legs, attacking twice per round for 1d4 points per attack.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Barrier",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "12 turns",
+      "effect": "Creates whirling hammers",
+      "reversible": false,
+      "description": "This spell creates a magical barrier in an area up to 30' in diameter and 30' high. The barrier is a wall of whirling and dancing hammers, obviously dangerous to any who come in contact with it. Any creature passing through the barrier takes 7dl0 (7-70) points of damage from the whirling hammers (no saving throw allowed). This spell is often used to block an entrance or passage. The reverse of this spell (remove barrier) will destroy any one barrier created by a cleric. It can also be used to destroy a magic-user's wall of ice, wall of fire, clothform, woodform, or wall of stone spell effects. It will not affect the magicuser spells wall of iron, stoneform, ironform or steelform.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Normal Animals",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "30'",
+      "duration": "10 turns",
+      "effect": "Creates 1-6 loyal animals",
+      "reversible": false,
+      "description": "The cleric is able to create normal animals from thin air with this spell. The animals will appear at a point chosen (within 30'), but may thereafter be sent (by command) up to 240' away, if desired. The animals created will understand and obey the cleric at all times. They will fight if so commanded, and will perform other actions (carrying, watching, etc.) to the best of their abilities. They are normal animals, and may attack others unless their instructions are carefully worded. The cleric may choose the number of animals created, but not the exact type; the DM should decide, or even randomly determine, what sort of animals appear.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cureall",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Cures anything",
+      "reversible": false,
+      "description": "This spell is the most powerful of the healing spells. When used to cure wounds, it cures nearly all damage, leaving the recipient with only 1d6 points of damage. (Restore the victim to full starting hit points, then roll 1d6 and subtract that amount from the victim's hit point total.) The spell can remove a curse, neutralize a poison, cure paralysis, cure a disease, cure blindness, or even remove a feeblemind effect instead of healing. However, it will cure one thing only; if the recipient is suffering from two or more afflictions (such as wounds and a curse), the cleric must name the ailment the spell is intended to cure.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Find the Path",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "6 turns + 1 turn per level of the caster",
+      "effect": "Shows the path to an area",
+      "reversible": false,
+      "description": "When casting this spell, the cleric must name a specific place, though it need not be a place he has visited before. For the duration of the spell, the cleric knows the direction to that place. In addition, the cleric will magically gain any special knowledge needed to get to the place; for example, he would know the location of secret doors, passwords, and so forth. When the spell's duration runs out, the caster only remembers the general direction to the place. All other special information is forgotten. The spell is instantly negated is the caster attempts to write down, record, or disclose that special knowledge to others. This spell is often used to find a fast escape route.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Speak with Monsters",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "1 round per level of the cleric",
+      "effect": "Permits conversation with any monster",
+      "reversible": false,
+      "description": "This spell gives the caster the power to ask questions of any and all living and undead creatures within 30'. Even unintelligent monsters will understand and respond to the cleric. Those spoken to will not attack the cleric while engaged in conversation, but may defend themselves or flee if attacked. The cleric may ask only one question per round, and the spell lasts one round per level of the caster. The reverse of this spell, babble, has a 60' range, a duration of 1 turn per level of the caster, and affects one target within spell range. The victim may make a saving throw vs. spells to avoid the effect, but with a — 2 penalty to the roll.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Word of Recall",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (Cleric only)",
+      "duration": "Instantaneous",
+      "effect": "Teleports the caster to sanctuary Similar to a magic-user's _teleport_ spell, this spell carries the cleric and all equipment carried (but no other creatures) to the cleric's home, regardless of the distance.",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Teleports the caster to sanctuary Similar to a magic-user's teleport spell, this spell carries the cleric and all equipment carried (but no other creatures) to the cleric's home, regardless of the distance. The cleric must have a permanent home (such as a castle), and a meditation room within that home; this room is the destination when the spell is cast. During the round in which this spell is cast, the cleric automatically gains initiative unless surprised.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Earthquake",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "120 yards",
+      "duration": "1 turn",
+      "effect": "Causes earth tremors",
+      "reversible": false,
+      "description": "This powerful spell causes a section of earth to shake, and opens large cracks in the ground. A 17th level caster can affect an area up to 60' square, adding 5' to each dimension with each experience level above 17th. For example, an 18th level cleric affects an area up to 65' square; 19th level, 70' square; and so forth. Within the area of effect, all small dwellings are reduced to rubble, and larger constructions are cracked open. Earthen formations (hills, cliffsides, etc.) form rockslides.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Holy Word",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0",
+      "duration": "Instantaneous",
+      "effect": "All creatures within 40'",
+      "reversible": false,
+      "description": "This spell affects all creatures, friend or foe, within a circular area of 40' radius, centered on the caster. When the cleric casts this spell, all creatures of alignments other than the cleric's are affected as follows (no saving throw vs. spells allowed): Holy Word Effects Up to 5th Level: Killed Level 6-8: Level 9-12: Level 13 + : Stunned 2dl0 turns Deafened 1d6 turns Stunned 1d10 rounds Any victim of 13th level (or Hit Dice) or higher, or any victim of the same alignment as the caster, may make a saving throw vs. spells to avoid all spell effects. This powerful spell cannot be blocked by stone, nor by any other solid material except lead.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Raise Dead Fully",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "60'",
+      "duration": "Permanent",
+      "effect": "Raises any living creature",
+      "reversible": false,
+      "description": "This spell is similar to the 5th level spell raise dead, except that it can raise any living creature—not just humans and demihumans. Any human or demihuman recipient awakens immediately, with full hit points, and is able to fight, use abilities, spells known, etc., without any penalties— except those penalties the creature already possessed at the time of death. For example, a victim cursed or diseased at death would still suffer the affliction when raised fully. If any other living creature (other than a human or demihuman) is the recipient, the guide- lines given in the raise dead spell apply (including time limitations, rest needed, etc.).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Restore",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Restores 1 level lost to _energy drain_",
+      "reversible": false,
+      "description": "This spell restores one full level of energy (experience) to any victim who has lost a level because of energy drain (for instance, from a vampire's attack). It does not restore more than one level, nor does it add a level if no level has been lost. Furthermore, the cleric casting this spell loses one level of experience, as if struck by a wight when the spell is cast; however, the cleric's loss is not permanent, and the cleric need only rest for 2dl0 (2-20) days to regain the lost experience. The reverse of this spell, life drain, drains one level of experience from the victim touched, just like the touch of a wight or wraith.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Survival",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "One hour per level of the caster",
+      "effect": "Protects one creature against all nonmagical environmental damage",
+      "reversible": false,
+      "description": "This spell is similar to the 4th level polymorph self spell, but is far more powerful. The caster actually becomes another creature or object in all respects except the mind, hit points, and saving throws. The caster takes his new armor class, attack rolls, special attack forms, immunities, and all other details from the form he has taken. This spell protects the recipient from adverse conditions of all types, including normal heat or cold, lack of air, and so forth. While the spell is in effect, the caster needs no air, food, water, or sleep. The spell does not protect against magical damage of any type, attack damage, poisons, breath weapons, or physical blows from creatures.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Travel",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "0 (caster only)",
+      "duration": "One turn per level of the caster",
+      "effect": "Allows aerial or gaseous travel",
+      "reversible": false,
+      "description": "This spell allows the magic-user to move quickly and freely, even between the planes of existence. The caster (only) may fly in the same manner as given by the magic-user's spell, at a rate of 360' (120'). The caster can also enter a nearby plane of existence, simply by concentrating for one round. He may enter a maximum of one plane per turn. The magic-user may bring one other creature for every five levels of experience (rounded down; for example, a 28th level magic-user could bring five other creatures on the journey). To bring others, he must touch them, or they must touch him, while the spell is cast and the shift is made. Any unwilling creature can make a saving throw vs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wish",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric",
+        "magic-user"
+      ],
+      "range": "Special",
+      "duration": "Special",
+      "effect": "Special",
+      "reversible": false,
+      "description": "A wish is the single most powerful spell a magic-user can have. It is never found on a scroll, but may be placed elsewhere (in a ring, for example) in rare cases. Only magic-users of 36th level and with an 18 (or greater) Wisdom score may cast the wish spell. Wording the Wish: The player must say or write the exact wish his character makes. The wording is very important. The wish will usually follow the literal wording, and whatever the intentions of the magic-user. The DM should try to maintain game balance, being neither too generous nor too stingy in deciding the effects of a wish. Even a badly phrased wish, made with good intentions, may have good results.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wizardry",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "cleric"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "cleric"
+      ],
+      "range": "0 (cleric only)",
+      "duration": "One turn",
+      "effect": "Allows the use of one magic-user device or scroll spell",
+      "reversible": false,
+      "description": "The cleric using this spell gains the power to use one item normally restricted to magic-users: either a device (such as a wand) or a scroll containing a 1st or 2nd level magic-user spell. (The cleric cannot cast spells of 3rd or higher level, even though they may be present on the scroll.) This ability lasts for one turn, or until the scroll or device is used. The cleric magically gains knowledge of the proper use of the item, as if the character were a magic-user. For the duration and effect of the magic-user spell, the caster is treated as the minimum level necessary to cast the spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Druidic Spells",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "",
+      "duration": "",
+      "effect": "",
+      "reversible": false,
+      "description": "Druids can learn and cast any spell that a cleric can—with the exception of spells that affect alignments (such as protection from evil). However, druids also have their own spells, spells which clerics and magic-users cannot utilize. The druid cannot cast more spells in a day than a cleric, but he has the advantage of being able to learn spells from two different sources, his own list and the cleric's spell list. Druidic spells tend to concern nature and the natural order of life rather than combat or power like many of the clerical and magical spells. Druidic spells are also not reversible.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Detect Danger",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "5' per level of the caster",
+      "duration": "One hour",
+      "effect": "Reveals hazards",
+      "reversible": false,
+      "description": "This spell combines some effects of detect evil and find traps. While it is functioning, the druid can concentrate on places, objects, or creatures within range. He needs a full round of concentration to examine one square foot of area, one creature, or one small object (a chest, weapon, or smaller item). Larger objects require more time. After he examines the thing, the druid will know whether it is immediately dangerous, potentially dangerous, or benign (all strictly from the druid's point of view). Note that most creatures are potentially dangerous. This spell will detect poisons, while other spells may not.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Faerie Fire",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "60'",
+      "duration": "1 round per level of caster",
+      "effect": "Illuminates creatures or objects With this spell, the druid can outline one or more creatures or objects with a pale, flickering, greenish fire.",
+      "reversible": false,
+      "description": "Duration: 1 round per level of caster Effect: Illuminates creatures or objects With this spell, the druid can outline one or more creatures or objects with a pale, flickering, greenish fire. The fire does not inflict any damage. The objects or creatures need only be detected in some way (such as by sight, or a detect invisible spell) to be the object of this spell. All attacks against the outlined creature or object gain a +2 bonus to attack rolls. The druid can outline one man-sized creature (about 12' of fire) for each 5 levels of experience. Thus, at 20th level, 48' of fire can be produced (outlining one dragon-sized creature, two horse-sized, or four man-sized creatures).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Locate",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "6 turns",
+      "effect": "Detects 1 animal or plant within 120'",
+      "reversible": false,
+      "description": "This spell allows the druid to sense the direction of one known normal animal or plant. The druid can locate (similar to the locate object spell) any normal or giant-sized animal, but not fantastic creatures, plant monsters, nor any intelligent creature or plant. He must name the exact type of animal or plant, but does not need to see the specific one he wishes to locate. The animal or plant gets no saving throw. (This spell is most often used to find special rare plants.)",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Predict Weather",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "12 hours",
+      "effect": "Gives knowledge of coming weather",
+      "reversible": false,
+      "description": "This spell enables the druid to learn the accurate weather to come for the next 12 hours. It affects an area 1 mile in diameter per level of the druid; for example, a 20th level druid would learn the weather within a 20 mile diameter (a 10 mile radius). The spell does not give the druid any control over the weather; it merely predicts what is to come.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Heat Metal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "30'",
+      "duration": "7 rounds",
+      "effect": "Warms one metal object",
+      "reversible": false,
+      "description": "This spell causes one object to slowly heat and then cool. It will affect one metal item weighing up to one-half pound (5 cn) per level of the caster. A 12th level druid, for example, can heat up to 6 pounds (60 cn—a normal sword, for instance), while a 20th level druid can heat 10 pounds (100 cn—for example, a two-handed sword). The heat causes no damage to magical items. Normal weapons or other items may be severely damaged, especially if made of both wood and metal (as a normal lance), as the wood will burn away at the point of contact with metal.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Obscure",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "1 turn per level of the caster",
+      "effect": "Creates a huge misty cloud",
+      "reversible": false,
+      "description": "This spell causes a misty vapor to arise from the ground around the druid, forming a huge cloud. The cloud is 1' high per level of the druid, and is 10' in diameter for each level. For example, a 20th level druid could cast an obscure 20' tall and 200' diameter (100' radius). The cloud has no ill effects except to block vision. The caster, and all creatures able to see invisible things, will be able to see dimly through the cloud. All other creatures within the cloud will be delayed and confused by the effect. While within the cloud, these creatures are effectively blind.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Produce Fire",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "2 turns per level",
+      "effect": "Creates fire in hand",
+      "reversible": false,
+      "description": "This spell causes a small flame to appear in the druid's hand. It does not harm the caster in any way, and sheds light as if a normal torch. The flame can be used to ignite combustible materials touched to it (a lantern, torch, oil, etc.) without harming the magical flame. While holding the flame, the caster can cause it to disappear and reappear by concentration once per round, until the duration ends. Other items may be held and used in the hand while the fire is out. If desired, the fire may be dropped or thrown to a 30' range, but disappears 1 round after leaving the druid's hand. (Any fire it ignites during that round remains burning.)",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Warp Wood",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "240'",
+      "duration": "Permanent",
+      "effect": "Causes wooden weapons to bend",
+      "reversible": false,
+      "description": "This spell causes one or more wooden weapons to bend and (probably) become useless. The spell will affect one arrow for each level of the caster; treat a spear, javelin, or magical wand as two arrows' worth, and any club, bow or staff (magical or otherwise) as four. The spell will not affect any wooden items other than weapons. If a magical wooden item (such as an enchanted staff) is the target, the wielder may make a saving throw vs. spells to avoid the effect. Items carried but not held get no saving throw; magical items with \"pluses\" might not be affected, at a 10% chance per \"plus.\" (For example, an arrow +1 would have a 10% chance to be unaffected.)",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Call Lightning",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "360'",
+      "duration": "1 turn per level of the caster",
+      "effect": "Calls lightning bolts from a storm",
+      "reversible": false,
+      "description": "This spell cannot be used unless a storm of some (any) type is within range of the druid. (This does not mean that he must be within the spell's range of the storm cloud, but only that the stormy weather be taking place within 360' of him.) If a storm is present, the druid may call 1 lightning bolt per turn (10 minutes) to strike at any point within range. The lightning boh descends from the sky, hitting an area 20' across. Each victim within that area takes 8d6 (8-48) points of electrical damage, but may make a saving throw vs. spells to take half damage. The druid need not call the lightning every turn unless desired; it remains available until the spell duration (or the storm) ends.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hold Animal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "180'",
+      "duration": "1 turn per level of the caster",
+      "effect": "Paralyzes several animals",
+      "reversible": false,
+      "description": "Duration: 1 turn per level of the caster Effect: Paralyzes several animals This spell will affect any normal or giant-sized animal, but will not affect any fantastic creature, nor one of greater than animal intelligence (2). Each victim must make a saving throw vs. spells or be paralyzed for the duration of the spell. The druid can affect 1 Hit Die of animals for each level of experience, ignoring \"pluses\" to Hit Dice. For example, a 20th level druid could cast the spell at 10 giant toads (which have 2 + 2 Hit Dice each). Note that the spell can affect summoned, conjured, or controlled animals.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Protection from Poison",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "Touch",
+      "duration": "One turn per level of the caster",
+      "effect": "Gives one creature immunity to all poison",
+      "reversible": false,
+      "description": "For the duration of this spell, the recipient is completely immune to the effects of poisons of all types, including gas traps and cloudkill spells. This protection extends to items carried (thus protecting against a spirit's poisonous presence, for example). Furthermore, the recipient gains a + 4 bonus on saving throws vs. poisonous breath weapons (such as green dragon breath), but not petrification breath (such as a gorgon's).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Water Breathing",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "druid",
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "1 day (24 hours)",
+      "effect": "One air-breathing creature",
+      "reversible": false,
+      "description": "This spell allows the recipient to breathe while underwater (at any depth). It does not affect his movement in any way, nor does it interfere with the breathing of air if the recipient emerges from the water.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Control Temperature 10' radius",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "1 turn per level of the caster",
+      "effect": "Cools or warms air within 10'",
+      "reversible": false,
+      "description": "This spell allows the druid to alter the temperature within an area 20' across. The maximum change is 50 degrees (Fahrenheit), either warmer or cooler. The change occurs immediately, and the effect moves with the druid. The druid may change the temperature simply by concentrating for 1 round, and the temperature will remain changed as long as the spell lasts. The spell is useful for resisting cold or heat so the caster may survive temperature extremes.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Plant Door",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "1 turn per level of the caster",
+      "effect": "Opens a path through growth",
+      "reversible": false,
+      "description": "For the duration of this spell, no plants can prevent the druid's passage, no matter how dense. Even trees will bend or magically open to allow the druid to pass. The druid can freely carry equipment while moving through such barriers, but no other creature can use the passage. Note that a druid can hide inside a large tree after casting this spell. The druid cannot see what is happening while he is in the tree.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Protection from Lightning",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "Touch",
+      "duration": "1 turn per level of the caster",
+      "effect": "Protects against lightning attack",
+      "reversible": false,
+      "description": "Any recipient of this spell is immune to a given amount of electrical damage. The druid's experience level determines the amount of damage: for each level of experience, one die (1d6) of damage is negated. Subtract the number of dice from the number of dice of damage that would be done to him. Example: A 20th level druid casts this spell. He is protected against 20d6 lightning damage. For example, this would negate the effects of two full call lightning attacks (of 8 dice each)on him, plus half of a third (8 + 8 + 4 = 20).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Summon Animals",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "360'",
+      "duration": "3 turns",
+      "effect": "Calls and befriends normal animals With this spell, the druid can summon any or all normal animals within range. Only normal, nonmagical creatures of animal intelligence are affected, including mammals, reptiles, amphibians, etc.",
+      "reversible": false,
+      "description": "With this spell, the druid can summon any or all normal animals within range. Only normal, nonmagical creatures of animal intelligence are affected, including mammals, reptiles, amphibians, etc. The spell does not affect insects, arthropods, humans, and demihumans. The druid may choose one or more known animals, may call for specific types, or may summon everything within range. The total Hit Dice of the animals responding will equal the level of the druid. Treat normal small creatures (frogs, mice, squirrels, small birds, etc.) as 1/10 Hit Die each. Animals affected will come at their fastest movement rate, and will understand the druid's speech while the spell is in effect.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Anti-Plant Shell",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "1 round per level of the druid",
+      "effect": "Personal barrier which blocks plants",
+      "reversible": false,
+      "description": "This spell creates an invisible barrier around the druid's body (less than an inch away). The barrier stops all attacks by plants and plant-like monsters, so that they can inflict no damage. If the caster pushes through normal but dense growth while protected, he will open a path that others can pass through. While protected, the druid cannot attack plants except by spells; the plants are protected from the druid's physical attacks, just as the druid is protected from theirs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Control Winds",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "10' radius per level of the caster",
+      "duration": "1 turn per level of the caster",
+      "effect": "Calms or increases winds With this spell, the druid can cause all the air within range to behave as desired, either increasing to gale force or slowing to a dead calm.",
+      "reversible": false,
+      "description": "With this spell, the druid can cause all the air within range to behave as desired, either increasing to gale force or slowing to a dead calm. The druid must concentrate for one full turn of concentration (can't move or attack) to change the wind completely (calm to gale, for example). Any higher-level spellcaster using the same spell can easily counter the spell. The effect moves with the caster. If the spell is cast against an air creature (such as an elemental), the victim can make a saving throw vs. spells. If the victim fails its roll, the druid can slay or control the air creature by proper use of the wind force.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Dissolve",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "druid",
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "3-18 days",
+      "effect": "Liquifies 3000 square feet",
+      "reversible": false,
+      "description": "This spell changes a volume of soil or rock (but not a construction) to a morass of mud. An area up to 10' deep or thick is affected, and may have up to 3,000 square feet of surface area. The magic-user may choose the exact width and length (20' x 150', 30' x 100', etc.), but the entire area of effect must be within 240' of the caster. Creatures moving through the mud are slowed to 10% of their normal movement rate at best, and may become stuck (at the DM's discretion, a victim must make saving throw vs. spells to avoid becoming stuck). The reverse of this spell (harden) will change the same volume of mud to rock, but permanently. A victim in the mud may make a saving throw vs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Pass Plant",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "Instantaneous",
+      "effect": "Short-range teleportation With this spell, the druid can enter one tree, teleport, and immediately step out of another tree of the same type.",
+      "reversible": false,
+      "description": "With this spell, the druid can enter one tree, teleport, and immediately step out of another tree of the same type. The trees must be large enough to enclose the druid. The range a druid can teleport varies by the type of tree, as follows. Oak 600 yards Ash, Elm, Linden, Yew 360 yards Evergreen trees 240 yards Other trees 300 yards",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Anti-Animal Shell",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "0 (druid only)",
+      "duration": "1 turn per level of the caster",
+      "effect": "Personal barrier that blocks animals",
+      "reversible": false,
+      "description": "This spell creates an invisible barrier around the druid's body (less than an inch away). The barrier stops all attacks by animals, both normal and giant-sized, as well as insects and all other nonfantastic creatures of animal intelligence or less (0-2). The druid cannot attack animals while protected except by use of other spells; the animals are protected from the druid's physical attacks, just as the druid is protected from theirs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Summon Weather",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "5 miles or more",
+      "duration": "6 turns per level",
+      "effect": "Brings weather to druid's area",
+      "reversible": false,
+      "description": "When the druid casts this spell, some known nearby weather condition is pulled to the druid's location. The druid does not have control of the weather, but merely summons it. Only a druid of 25th level or greater may summon severe weather (hurricane, severe heat wave, etc.). The range of summoning is 5 miles at levels 12 to 15, adding 1 mile for each level of the caster above 15th. (A 20th level druid could summon weather from up to 10 miles away.)",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Transport Through Plants",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "Infinite",
+      "duration": "Instantaneous",
+      "effect": "Long-range teleportation",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Long-range teleportation This spell may be used a maximum of once per day. The druid must be near a plant (of any size), and must choose either a general location or a specific known plant elsewhere. After casting the spell, the druid magically enters the nearby plant and steps out of a plant at the destination (if the druid could not specify the exact plant, he appears from a plant determined randomly by the DM). There is no limit to the range, but the plants must both be living for the spell to work, and must both be on the same plane of existence. If either plant is dead, the spell fails. Otherwise, the caster immediately reappears at the new location.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Turn Wood",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "30'",
+      "duration": "One turn per level of the druid",
+      "effect": "Pushes all wooden items away",
+      "reversible": false,
+      "description": "Duration: One turn per level of the druid Effect: Pushes all wooden items away This spell creates an invisible wave of force, 120' long and 60' tall. Its midpoint can be created anywhere within 30' of the caster. This wave of force then immediately moves in one horizontal direction, as specified by the caster, at the rate of 10' per round. If the druid desires, he can stop the wave of force at any time, but cannot thereafter move it again. All wooden objects contacting or contacted by the wave of force become stuck to it and move with it. The wave of force continues moving until it reaches the maximum range of 360 feet, and stops there for the remainder of the spell du- ration.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Creeping Doom",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "120'",
+      "duration": "1 round per level of the caster",
+      "effect": "Creates a 20' x 20' insect horde",
+      "reversible": false,
+      "description": "This spell magically creates a huge swarm of 1,000 creeping insects, appearing anywhere within 120' of the druid (as chosen by the caster). They fill an area at least 20' x 20', and can be ordered to fill any area up to a maximum of 60' x 60'. The creeping doom can move at up to 60'(20') if the caster remains within 120' of any part of the swarm. They vanish after the duration ends, or whenever the druid is more than 120' away. The insects always attack everyone and everything in their path, inflicting 1 point of damage per 10 insects, a total of 100 points per round to each creature caught in the effect (no saving throw).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Metal to Wood",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "120'",
+      "duration": "Permanent",
+      "effect": "Changes metal into dead wood",
+      "reversible": false,
+      "description": "This spell can be used to change any metal item or items into wood. The spell can transmute five pounds (50 cn weight) per level of the caster. Any magical metal item is 90% resistant to the magic. The effect is permanent, and the affected metal cannot be changed back with a dispel magic spell. Any armor changed to wood falls off the wearer and any weapons affected turn to nonmagical wooden clubs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Summon Elemental",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "druid"
+      ],
+      "range": "240'",
+      "duration": "6 turns",
+      "effect": "Summons one 16 HD elemental",
+      "reversible": false,
+      "description": "This spell allows the caster to summon any one elemental per spell (see Chapter 14). The druid may only summon one of each type of elemental (air, earth, fire, water) in one day. The elemental will understand the druid's spoken commands and will perform any tasks within its power (carrying, attacking, etc.) as directed by the caster. Unlike the magic-user's version of the spell, the druid does not need to concentrate to control the creature. The caster may send it back to its own plane with a simple command, and someone else may send it back by the use of a dispel magic or dispel evil spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Weather Control",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "druid"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "druid",
+        "magic-user"
+      ],
+      "range": "0 (druid only)",
+      "duration": "Concentration",
+      "effect": "All weather within 240 yards",
+      "reversible": false,
+      "description": "This spell allows the druid to create one special weather condition in the surrounding area (within a 240 yard radius). The caster may select the weather condition. The spell only works outdoors, and the weather will affect all creatures in the area (including the caster). The effects last as long as the caster concentrates, without moving; if the caster is being moved (for example, aboard a ship), the effect moves also. The spell's effects vary, but the following results are typical: Rain: -2 penalty to attack rolls applies to all missile fire. After three turns, the ground becomes muddy, reducing movement to half the normal rate.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Analyze",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (touch only)",
+      "duration": "1 round",
+      "effect": "Analyzes magic on one item lower-level spells.",
+      "reversible": false,
+      "description": "lower-level spells. The PC should gain only one or two new spells out of such an encounter. A new spell is a rare find, and a spell book is an even rarer treasure; the books are always well hidden and protected. PCs using someone else's spell book may find magical traps and curses within before they find any new spells. In many campaigns, that's the point at which the teacher stops instructing the character. The character has gone from apprentice to journeyman, and now he must journey in order to learn more of magic. A spellcaster using this spell can handle one item and learn the enchantment on it.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Higher-level Spells",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "",
+      "duration": "",
+      "effect": "",
+      "reversible": false,
+      "description": "Other Magic-Users: By ancient tradition—of necessity and common sense—magic-users are loathe to trade spells among themselves. Each magic-user knows that he may become a very powerful wizard some day . . . and that he may end up being the enemy of another wizard of similar power. No wizard wants to teach the other fellow magic that can kill him. This is something the DM should reinforce in his campaign: If he finds characters casually trading spells from their spell books, he should remind them of the traditions of secrecy, of the good reasons for that tradition, of the paranoia that infects the magicusers' community, and so on.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Lost Spell Books",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "",
+      "duration": "",
+      "effect": "",
+      "reversible": false,
+      "description": "A magic-user or elf whose spell book is lost or destroyed cannot regain spells until he replaces the spell book. He can't just read from somebody else's spell book. He can recreate the spells from memory and research . . . but it takes a lot of money and a lot of time. The spell does not reveal much precise information. It will characterize a weapon's pluses (attack bonus) as \"many\" or \"few,\" will estimate the number of charges on an item within 25% of the actual number, etc. The method, amount of time, and cost it takes to recreate a spell book are for the DM to decide. Here's a rough guideline: 1,000 gold pieces and one week of study for each spell level replaced.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Charm Person",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "See below",
+      "effect": "One living person (see below)",
+      "reversible": false,
+      "description": "This spell will only affect humans, demihumans, and certain other creatures. The victim is allowed a saving throw vs. spells. If the saving throw is successful, the spell has no effect. If it fails, the victim will believe that the spellcaster is its \"best friend,\" and will try to defend the spellcaster against any threat, whether real or imagined. The victim is charmed. by a creature or object. The floating disc is created at the height of the spellcaster's waist, and will always remain at that height. It will automatically follow the spellcaster at his current movement rate, remaining within 6' of him at all times.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hold Portal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "2-12 (2d6) turns",
+      "effect": "One door, gate, or similar portal",
+      "reversible": false,
+      "description": "If the spellcaster can speak a language that the charmed victim understands, the spellcaster may give orders to the victim. These orders should sound like suggestions, as if \"just between friends.\" The charmed victim will usually obey, but the victim may resist orders that are contrary to the victim's nature (alignment and habits)— he doesn't need to roll anything to resist. A victim will refuse to obey if ordered to kill itself. In addition, enchanted creatures cannot attack the spellcaster in hand-to-hand or melee combat. (An enchanted creature is one that normal weapons cannot hurt; only magical weapons can hit the creature.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Read Languages",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "2 turns",
+      "effect": "The spellcaster only",
+      "reversible": false,
+      "description": "This spell will allow the spellcaster to read, not speak, any unknown languages or codes, including treasure maps, secret symbols, and so forth, until the duration ends. When reversed, this spell, darkness, creates a circle of darkness 30' in diameter. It will block all sight except infravision. Darkness will cancel a light spell if cast upon it (but may itself be canceled by another light spell). If cast at an opponent's eyes, it will cause blindness until canceled, or until the duration ends; as before, the victim does get a saving throw.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Read Magic",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "1 turn",
+      "effect": "The spellcaster only",
+      "reversible": false,
+      "description": "When he casts this spell, the spellcaster will see a glow surround all magical objects, creatures, and places which are visible and within range of the spell. No saving throw is allowed.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Magic Missile",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "150'",
+      "duration": "1 round",
+      "effect": "Creates 1 or more arrows",
+      "reversible": false,
+      "description": "This spell will allow the spellcaster to read, not speak, any magical words or runes, such as those found on scrolls and other items. A spellcaster cannot understand unfamiliar magic writings without using this spell. However, once a spellcaster reads a scroll or runes with this spell, he can read or speak that magic later without using a spell. Example: Shortly after casting this spell, a magic-user walks into a room containing a door locked by magic, a magical potion lying nearby, and a treasure chest containing a magical wand. All the magic will glow, but the spellcaster can see only the door and potion; the light of the glowing wand is hidden by the treasure chest.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Shield",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "2 turns",
+      "effect": "The spellcaster only Duration: 6 turns Effect: Disc remains within 6'",
+      "reversible": false,
+      "description": "Duration: 6 turns Effect: Disc remains within 6' This spell creates an invisible magical horizontal platform about the size and shape of a small round shield. It can carry up to 5000 cn (500 pounds). It cannot be created in a place occupied This spell creates a magical barrier all around the spellcaster (less than an inch away). It moves For every 5 levels of experience of the caster, two more missiles are created by the same spell. with the spellcaster. While the duration lasts, the spellcaster has an AC of 2 against missiles, and AC 4 against all other attacks. If someone shoots a magic missile at a spellcaster protected by this spell, the spellcaster may make a saving throw vs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Sleep",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "4d4 (4-16) turns",
+      "effect": "2-16 Hit Dice of living creatures within a 40' square area",
+      "reversible": false,
+      "description": "This spell will put creatures to sleep for up to 16 turns. It will only affect creatures with 4 + 1 Hit Dice or less—generally, small or man-sized creatures. The spell will not affect creatures outside the 40' X 40' area which the player chooses as the spell's target area. The spell will not work against undead or very large creatures, such as dragons. When a character is first hit with a sleep spell, falling or sagging to the ground will not wake him up. However, characters affected by a sleep spell are not in a deep sleep. Any sleeping character or creature will awaken if slapped, kicked, or shaken.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Ventriloquism",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 1,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "2 turns",
+      "effect": "One item or location",
+      "reversible": false,
+      "description": "This spell will allow the spellcaster to make the sound of his or her voice come from somewhere else, such as a statue, animal, a dark corner, and so forth. The \"somewhere else\" must be within range of the spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Detect Invisible",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10' per level of the spellcaster",
+      "duration": "6 turns",
+      "effect": "The spellcaster only",
+      "reversible": false,
+      "description": "When this spell is cast, the spellcaster can see all invisible creatures and objects within range. The range is 10' for each level of the spellcaster. For example, a 3rd level spellcaster can use this spell to see invisible things within 30'.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Entangle",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "1 round per level",
+      "effect": "Controls ropes",
+      "reversible": false,
+      "description": "This spell allows the spellcaster to use any rope-like object of living or once-living material (roots, vines, leather ropes, plant-fibre ropes, etc.) to behave as he or she orders. About 50' of normal 1/2\" diameter vine plus 5' per level of the caster can be affected. The commands which can be given during an entangle spell include: coil (form a neat stack), coil and knot, loop, loop and knot, tie and knot, and the reverses of all the above. The vine or rope must be within 1' of any object it is to coil around or tie up, so it must often be thrown at the target.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "ESP",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "12 turns",
+      "effect": "All thoughts in one direction",
+      "reversible": false,
+      "description": "This spell will allow the spellcaster to \"hear\" thoughts. The spellcaster must concentrate in one direction for six rounds (one minute) to hear the thoughts (if any) of a creature within range. The spell allows the spellcaster to understand the thoughts of any single living creature, regardless of the language. The spell does not allow the caster to hear the thoughts of undead creatures. If more than one creature is within range and in the direction the caster is concentrating, the spellcaster will \"hear\" a confused jumble of thoughts. The spellcaster can sort out the jumble only by concentrating for an extra six rounds to find a single creature.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Invisibility",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Permanent until broken",
+      "effect": "One creature or object",
+      "reversible": false,
+      "description": "This spell will make any one creature or object invisible. When a creature becomes invisible, all items that he carries and wears also become invisible. Any invisible item becomes visible again when it leaves the creature's possession (dropped, set down, etc.). A light source (such as a torch) may be made invisible, but the light given off will always remain visible. If the spellcaster makes an object invisible that is not being carried or worn, it will become visible again when touched by any living creature. An invisible creature will remain invisible until he or she attacks or casts any spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Knock",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "See below",
+      "effect": "One lock or bar",
+      "reversible": false,
+      "description": "This spell will open any type of lock. This spell will open any normal or magically locked door (one affected by a hold portal or wizard lock spell), and any secret door (but a secret door must be found before it can be knocked open). Any locking magic will remain, however, and will take effect once again when the door is closed. This spell will also unlock a gate, or unstick it if it is stuck, and will cause any treasure chest to open easily. It will also cause a barred door to open, magically forcing the bar to fall to the floor. If a door is locked and barred, only one type of lock will be opened.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Levitate",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "6 turns + 1 turn/level of the caster",
+      "effect": "The spellcaster only",
+      "reversible": false,
+      "description": "When this spell is cast, the spellcaster may move up or down in the air without any support. This spell does not, however, allow the spellcaster to move from side to side. For example, a spellcaster could levitate to a ceiling, and then could slowly move sideways by pushing and pulling. His movement up or down is at the rate of 20' per round. The spell cannot be cast on another person or object. The spellcaster may carry a normal amount of weight while levitating, up to 2,000 cn (200 lbs) in weight, possibly another mansized creature (if it isn't wearing metal armor). Any creature smaller than man-sized can be carried, unless heavily laden. No saving throw is allowed.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Mirror Image",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0",
+      "duration": "6 turns",
+      "effect": "The spellcaster only With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him.",
+      "reversible": false,
+      "description": "With this spell, the spellcaster creates 1d4 (14) additional images which look and act exactly like him. The images appear and remain next to (within 3' of) the spellcaster, moving if the spell- caster moves, talking if the spellcaster talks, and so forth. The spellcaster need not concentrate; the images will remain until the duration ends, or until they are hit. The images are not real, and cannot actually do anything. Any successful attack on the spellcaster will strike an image instead, which will merely cause that image to disappear (regardless of the actual damage); this continues until all the images are dispelled.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Phantasmal Force",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Concentration (see below)",
+      "effect": "A volume 20' x 20' x 20'",
+      "reversible": false,
+      "description": "This spell creates or changes appearances of everything within the area affected. The spellcaster can create the illusion of something he or she has seen. If not, the DM will give a bonus to the saving throws of those trying to ignore the spell's effects. If the spellcaster does not use this spell to attack, the illusion created by this spell will disappear when touched. If the spellcaster uses the spell to create the illusion of a monster, it will appear in every way to be the monster in question. However, the monster is AC 9 and will disappear when hit. If the spellcaster uses the spell to create an attack (a phantasmal magic missile, collapsing wall, etc.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Web",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "48 turns",
+      "effect": "A volume 10' x 10' x 10'",
+      "reversible": false,
+      "description": "This spell creates a mass of sticky strands which are difficult to destroy except with flame. It usually blocks the area affected. Giants and other creatures with great strength can break through a web in 2 rounds. A human of Average Strength (a score of 9-12) will take 2d4 (2-8) turns to break through the web. Flames (from a torch, for example) will destroy the web in 2 rounds, but all creatures within the web will be burned for 1-6 (1d6) points of damage. Anyone wearing gauntlets of ogre power (a magical treasure) can break free of a web in 4 rounds.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wizard Lock",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 2,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "Permanent",
+      "effect": "One portal or lock",
+      "reversible": false,
+      "description": "This spell is a more powerful version of a hold portal spell. It will work on any lock, not merely doors, and will last forever (or until magically dispelled). However, a knock spell can open the wizard lock. The wizard who cast the wizard lock can easily open the door he has enchanted, as can any magic-using character or creature of three or more levels (or Hit Dice) greater than the caster. This sort of door-opening does not remove the magic, and the magical lock will relock when allowed to close (just as with the hold portal spell).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Clairvoyance",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "12 turns",
+      "effect": "See through another's eyes With this spell, the caster may see through the eyes of any single creature in spell range. \"Seeing\" through a creature's eyes takes one full turn, after which the caster can change to another creature, even one in another direction; he does not have to cast the spell again to do so. Two feet of rock or a thin coating of lead blocks the effects of this spell. No saving throw is allowed.",
+      "reversible": false,
+      "description": "With this spell, the caster may see through the eyes of any single creature in spell range. \"Seeing\" through a creature's eyes takes one full turn, after which the caster can change to another creature, even one in another direction; he does not have to cast the spell again to do so. Two feet of rock or a thin coating of lead blocks the effects of this spell. No saving throw is allowed.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Air",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Immediate area, 8,000 cu. ft.",
+      "duration": "1 hour per level of caster",
+      "effect": "Provides breathable air",
+      "reversible": false,
+      "description": "This spell provides breathable air, especially in areas where otherwise there is none to be had. It is cast on a volume of 8,000 cubic feet (such as a 20' x 20' x 20' room) and, while it is in effect, everyone in that area has good air to breathe. Customarily, it's used when dungeon explorers are trapped where air is running out. When cast in this fashion, the spell effect stays in one place; it does not move with the caster. However, it does not have to be cast in only that way; it can be cast on enclosed vehicle interiors (such as the below-deck areas of ships), living creatures, or pieces of equipment.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Fireball",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Instantaneous",
+      "effect": "Explosion in a sphere 40' diameter",
+      "reversible": false,
+      "description": "This spell creates a missile of fire that bursts into a ball of fire with a 40' diameter (20' radius) where it strikes a target. The fireball will cause 1d6 points of fire damage per level of the caster to every creature in the area of effect. Each victim may make a saving throw vs. spells; if successful, the spell will only do half damage. For example, a fireball cast by a 6th level spellcaster will burst for 6d6 (6-36) points of damage; characters who make their saving throw vs. spell will take only half of the damage rolled on the dice.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Fly",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "1d6 (1-6) turns + 1 turn per level of the caster",
+      "effect": "One creature may fly",
+      "reversible": false,
+      "description": "Duration: 1d6 (1-6) turns + 1 turn per level of the caster Effect: One creature may fly This spell allows the target it is cast upon (possibly the spellcaster himself) to fly. The recipient can fly in any direction and at any speed up to 360' (120') by mere concentration. The recipient may also stop and hover at any point (as a levitate spell); this does not require concentration.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Haste",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "3 turns",
+      "effect": "Up to 24 creatures move double speed",
+      "reversible": false,
+      "description": "Effect: Up to 24 creatures move double speed This spell allows up to 24 creatures in a 60' diameter circle to perform actions at double speed for half an hour (3 turns). Those affected may move at up to twice normal speed and make double the normal number of missile or handto-hand attacks. This spell does not affect the rate at which magic works, so a hasted spellcaster can still not cast more than one spell per round, and the use of magical devices (such as wands) cannot be speeded up. The reverse of this spell, slow, will remove the effects of a haste spell, or will cause the victims to move and attack at half normal speed.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Infravision",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "1 day",
+      "effect": "One living creature",
+      "reversible": false,
+      "description": "This spell enables the recipient to see in the dark, to a 60' range, with the same sort of vision possessed by dwarves and elves. Infravision is the ability to see heat (and the lack of heat). Dwarves, elves, and casters of the infravision spell have infravision in addition to normal sight and can see 60' in the dark. Infravision does not work in normal and magical light. Fire and other heat sources can interfere with infravision, just as a bright flash of light can make normal vision go black for a short time. With infravision, warm things appear red, and cold things appear blue. For example, an approaching creature could be seen as a red shape, leaving faint reddish footprints.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Invisibility 10' radius",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Permanent until broken",
+      "effect": "All creatures within 10'",
+      "reversible": false,
+      "description": "This spell makes the recipient (and all others within 10' at the time of the casting) invisible. This is an area effect, and those who move further than 10' from the recipient become visible. They may not regain invisibility by returning to the area. Otherwise, the invisibility is the same as that bestowed by the spell invisibility. An invisible creature will remain invisible until he or she attacks or casts any spell. All items carried (whether by the recipient or others within 10') also become invisible.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Lightning Bolt",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "180'",
+      "duration": "Instantaneous",
+      "effect": "Bolt 60' long, 5' wide",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Bolt 60' long, 5' wide This spell creates a bolt of lightning, starting up to 180' away from the caster and extending 60' in a straight line further away. All creatures within the area of effect take 1d6 points of damage per level of the spellcaster. (Thus a 6th level elf would cast a lightning bolt doing 6d6 points of damage.) Each victim may make a saving throw vs. spells; if successful, he takes only half damage. If the lightning bolt strikes a solid surface (such as a wall), it will bounce back toward the caster until the total length of the bolt is 60'.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Protection from Normal Missiles",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 3,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "12 turns",
+      "effect": "One creature",
+      "reversible": false,
+      "description": "Duration: 12 turns Effect: One creature This spell gives the recipient complete protection from all small nonmagical missiles (such as arrows, quarrels, thrown spears, etc.); the ranged attacks simply miss. Large or magical attacks, such as a catapult stone or a magic arrow, are not affected. The spellcaster can cast the spell on any one creature within the spell's range.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Charm Monster",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Special",
+      "effect": "One or more living creatures",
+      "reversible": false,
+      "description": "This spell effect is identical to that of a charm person spell, but will affect any creature except an undead monster. If cast on victims with 3 Hit Dice or less, the spell will charm 3d6 (3-18) victims. Otherwise, it will charm only one victim. Each victim may make a saving throw vs. spells to avoid the effects.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Clothform",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates up to 30' x 30' cloth",
+      "reversible": false,
+      "description": "This spell creates quantities of cloth up to 30'x30'. The cloth created by a single spell must appear in one piece. Unlike many creationtype spells, this one creates cloth that is nonmagical and cannot be dispelled. If the campaign uses the optional general skills and the caster has an appropriate Craft skill, he may shape the cloth as he creates it. He may thus create a tent, a sail, a single garment, a drape, 60' of common rope, etc. If the campaign doesn't use the skills rules, the character could have been defined earlier as one who knows how to work cloth in order for him to do this.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Confusion",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "12 rounds",
+      "effect": "3-18 creatures in an area 60' across",
+      "reversible": false,
+      "description": "This spell will confuse its victims, affecting all creatures within a 30' radius. Victims with less than 2 + 1 Hit Dice are not allowed a saving throw. Those with 2 + 1 or more Hit Dice must make a saving throw vs. spells every round of the spell's duration, if they remain in the area, or be confused. Confused creatures act randomly. The DM should roll 2d6 each round to determine each creature's action, using the following chart: ###### Confusion Results - 2d6 Roll Result - 2-5 Attack the spellcaster's party - 6-8 Do nothing 9-12 Attack the creature's own party",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Dimension Door",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "1 round",
+      "effect": "Safely transport one creature",
+      "reversible": false,
+      "description": "This spell will transport one creature (either the caster or a victim up to 10' from the caster) to a place up to 360' away. The caster picks the desired destination. If he does not know the location, the caster may specify the direction and distance of travel, but the distance cannot exceed a total of 360' (for example, 360' straight up; or 200' west, 60' south, and 100' down). If this would cause the recipient to arrive at a location occupied by a solid object, the spell has no effect. An unwilling recipient may make a saving throw vs. spells to avoid the effect.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Growth of Plants",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Special",
+      "effect": "Enlarges 3000 square feet of plants",
+      "reversible": false,
+      "description": "This spell causes normal brush or woods to become thickly overgrown with vines, creepers, thorns, and briars (or types of small plant-life appropriate to the area). The spell affects an area of up to 3,000 square feet (the caster chooses the dimensions of the spell effect). The plants to be affected must be entirely within the spell's range. The area affected by the spell is impassable to all but giant-sized creatures. The effect lasts until removed by the reversed form of the spell or by a dispel magic spell. The reverse of this spell, shrink plants, causes all normal plants within the area of effect to shrink and become passable. It may be used to negate the effects of the normal spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hallucinatory Terrain",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Special",
+      "effect": "Changes or hides terrain in 240' radius (or less)",
+      "reversible": false,
+      "description": "This spell creates the illusion of a terrain feature, either indoors (such as a pit, stairs, etc.) or outdoors (hill, swamp, grove of trees, etc.), possibly hiding a real feature. The caster could create the illusion of solid ground over a series of pits or quicksand pools, or he could create the image of dense forest over his army's camp, etc. A wall of ice is a thin vertical wall of any dimensions and shape determined by the spellcaster totalling 1,200 square feet or less (10' x 120', 30'x40', etc.). The wall is opaque and will block sight. The wall must be cast to rest on the ground or similar support, and cannot be cast in a space occupied by another object.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Massmorph",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "See below The spell lasts until the illusion is touched by an intelligent creature, or until dispelled.",
+      "effect": "Causes illusion of trees within 240' range",
+      "reversible": false,
+      "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Ice Storm/Wall of Ice",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Storm, 1 round; Wall, 12 turns",
+      "effect": "Storm in 20' x 20' x 20' volume; or Wall of 1,200 square feet",
+      "reversible": false,
+      "description": "Duration: Storm, 1 round; Wall, 12 turns Effect: Storm in 20' x 20' x 20' volume; or Wall of 1,200 square feet This spell will affect up to 100 human or mansized creatures in a 240' diameter, making them appear to be the trees of an orchard, dense woods, or other large plant life appropriate to the region. (Unless the campaign's deserts feature very large cactus, the spell won't work in the desert.) Unwilling creatures are not affected. Creatures larger than man-size (such as horses) may be included, counting as two or three men This spell may be cast in either of two ways: either as an icy blast, ice storm, or wall of ice. An ice storm fills a 20' x 20' x 20' cube.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Polymorph Other",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Permanent until dispelled",
+      "effect": "Changes one living creature",
+      "reversible": false,
+      "description": "This spell changes the victim into another living creature. The new form may have no more than twice as many Hit Dice as the original, or the spell will fail. The victim's hit points remain the same; an 8th level prince with 32 hit points could end up as a frog with 32 hit points. Unlike the polymorph self spell, the polymorph others spell actually turns the victim into the new creature, giving him any and all special abilities of the new form, plus its tendencies and behavior. For example, a hobgoblin polymorphed into a mule will think and act like a mule. This spell cannot create a duplicate of a specific individual, only a race or monster type.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Polymorph Self",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (Caster only)",
+      "duration": "6 turns + 1 turn per level of the caster",
+      "effect": "Caster may change shapes",
+      "reversible": false,
+      "description": "This spell allows the caster to change shape, taking the physical form of another living creature. The Hit Dice of the new form must be equal to or less than the Hit Dice of the caster, or the spell will fail. The caster's armor class, hit points, attack rolls, and saving throws do not change, and he does not gain special abilities (such as ghouls' paralysis) or special immunities of the new form; however, he does gain the natural physical abilities of the new form. For example, a spellcaster polymorphed into a frost giant has the strength of a frost giant and the ability to hurl boulders, but not immunity from cold.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wall of Fire",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Concentration",
+      "effect": "Creates 1200 square feet of fire",
+      "reversible": false,
+      "description": "Duration: Concentration Effect: Creates 1200 square feet of fire This spell creates a thin vertical wall of fire of any dimension and shape, determined by the spellcaster, totalling 1,200 square feet (for example, 10'x120', 20' x 60', 30'x40', etc.). The wall is opaque and will block sight. The wall cannot be cast is a space occupied by another object. It lasts as long as the caster concentrates, without moving, on it. Creatures of less than 4 Hit Dice cannot break through the wall. Creatures of 4 HD or more can break through, but take 1d6 points of damage in the process. Undead and cold-using creatures (white dragons, frost giants, etc.) each take double damage while breaking through.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wizard Eye",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 4,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "6 turns",
+      "effect": "Creates movable invisible eye",
+      "reversible": false,
+      "description": "Duration: 6 turns Effect: Creates movable invisible eye This spell creates an invisible eye through which the caster can see. It is the size of a real eye and has infravision (60' range). The wizard eye floats through the air at up to 120' per turn, but will not go through solid objects nor move more than 240' away from the caster. The spellcaster must concentrate (without moving) to see through the eye.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Cloudkill",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "1'",
+      "duration": "6 turns",
+      "effect": "Creates a moving poisonous cloud",
+      "reversible": false,
+      "description": "This spell creates a circular cloud of poisonous vapor, 30' across and 20' tall, which appears next to the spellcaster. It moves away at the rate of 60' (20' per round) in any one direction (with the wind, if any; otherwise, in the direction chosen by the caster). This cloud is heavier than air and will sink when possible (going down holes, sliding downhill, etc.). The cloud will evaporate if it hits trees or thick vegetation. If cast in a small area (such as in a 10' tall dungeon corridor), the cloud may be of smaller than normal size. All living creatures within the cloud take 1 point of damage per round. Any victim of less than 5 Hit Dice must make a saving throw vs.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Conjure Elemental",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Concentration",
+      "effect": "Summons one 16 HD elemental",
+      "reversible": false,
+      "description": "Duration: Concentration Effect: Summons one 16 HD elemental This spell allows the caster to summon any one elemental (AC -2, HD 16, Damage 3d8; see the description of elementals in Chapter 14). The caster can only summon one of each type of elemental (earth, air, fire, water) in one day. The elemental will perform any tasks within its power (carrying, attacking, etc.) as long as the caster maintains control by concentrating. The caster cannot fight, cast other spells, or move over half Normal Speed, else he will lose control of the elemental. If he loses control, he cannot regain it.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Contact Outer Plane",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (spellcaster only)",
+      "duration": "See below",
+      "effect": "3-12 questions may be answered",
+      "reversible": false,
+      "description": "This spell allows the spellcaster to contact one of the outer planes of existence to seek knowledge from an Immortal creature—a powerful magical being played by the DM. The wisest and most powerful Immortals live on the most distant outer planes. However, mental contact with an Immortal may cause a mortal to go insane. The more distant the plane, the greater the chance of a correct answer—but the greater the chance of insanity as well. The number of questions the spellcaster may ask is equal to the \"distance\" to the outer plane. \"Distance\" to any other plane of existence is measured in the number of planes the character would have to cross in order to visit that plane.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Feeblemind",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Permanent until dispelled",
+      "effect": "Lowers Intelligence score to 2",
+      "reversible": false,
+      "description": "Effect: Lowers Intelligence score to 2 This spell will only affect a magic-user, elf, or a monster which can cast magical spells; it does not affect those which cast only cleric or druid spells. HRN DESMO) DRS It will make the victim helpless, unable to cast spells or think clearly (as if the victim has an Intelligence score of 2). The victim may make a saving throw vs. spells to avoid the effect, but with a -4 penalty to the roll. The feeblemind lasts until removed by a dispel magic spell (at normal chances for success) or by a cleric's cureall spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Hold Monster",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "6 turns + 1 turn per level of the caster",
+      "effect": "Paralyzes 1-4 creatures",
+      "reversible": false,
+      "description": "Duration: 6 turns + 1 turn per level of the caster Effect: Paralyzes 1-4 creatures This spell has an effect identical to that of a hold person spell, but will affect any living creature. (It does not affect the undead.) Each victim must make a saving throw vs. spells or be paralyzed. The spell may be cast at a single creature or a group. If cast at a single creature, the victim takes a - 2 penalty to his saving throw. If cast at a group, it will affect 1d4 creatures (of the spellcaster's choice, and within spell range), but with no penalties to the saving throw. The reverse of this spell, free monster, removes the paralysis of up to four victims of hold person or hold monster spells.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Magic Jar",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "See below",
+      "effect": "Take over one body",
+      "reversible": false,
+      "description": "This spell causes the caster's body to fall into a trance, while the caster's life force is placed in an inanimate object (which is called a magic jar regardless of its form; it does not have to be an actual jar) within range. From this object, the caster's life force may attempt to take over any one creature within 120' of the magic jar. If the victim makes a successful saving throw vs. spells, the attempt fails and the caster may not try to take over that victim again for one turn. If the victim fails the saving throw, the caster takes over his body and the life force of the victim is placed into the magic jar.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Passwall",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "3 turns",
+      "effect": "Creates a hole 10' deep",
+      "reversible": false,
+      "description": "This spell causes a hole 5' diameter, 10' deep to appear in solid rock or stone only. The hole may be horizontal or vertical. The stone reappears at the end of the duration. If someone is still in the tunnel when the stone reappears, he gets a saving throw vs. turn to stone. If he succeeds, he is hurled out the nearest end of the tunnel. If he fails, he is trapped within the reappearing stone, and dies.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Telekinesis",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "6 rounds",
+      "effect": "200 cn of weight per level of caster",
+      "reversible": false,
+      "description": "This spell enables the spellcaster to move a creature or object simply by concentrating. The item may weigh up to 200 cn (20 lbs) per level of the caster (a 10th level elf could move an object weighing up to 2,000 cn, or 200 lbs). The caster may move the object in any direction, at a rate of up to 20' per round. An unwilling victim may make a saving throw vs. spells to avoid the effect. If he makes the roll, he doesn't budge. If a target is being held by someone, the holder can make a saving throw with a — 2 penalty to retain the target item. If the telekinesis grabs an object that is being carried but not held in the hand, the owner may grab for it as it is yanked away.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Teleport",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "Instantaneous",
+      "effect": "Transports one creature with equipment",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Transports one creature with equipment This spell instantly transports the spellcaster or another recipient to any unoccupied destination on the same plane of existence. Distance does not matter so long as the destination is on the same plane. The recipient arrives at the destination with all equipment he was carrying. An unwilling victim can make a saving throw vs. spell to avoid the spell effects. The caster may not deliberately choose a destination he knows to be occupied by a solid object, and he must choose to appear on a surface (such as ground level or the top of a building); he cannot choose to appear far up in the air.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Wall of Stone",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Special",
+      "effect": "Creates 1000 cubic feet of stone",
+      "reversible": false,
+      "description": "Effect: Creates 1000 cubic feet of stone This spell creates a vertical stone wall exactly 2' thick. The caster chooses the wall's dimensions and shape, but its total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 60' of the caster. The caster must create the wall where the wall will rest on the ground or similar support, and cannot create the wall in a space already occupied by another object. The wall lasts until it is dispelled or physically broken. If a wall of stone topples, it causes 10d10 points of damage to what it hits, and it shatters.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Woodform",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 5,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates 1,000 cubic feet of wood",
+      "reversible": false,
+      "description": "Effect: Creates 1,000 cubic feet of wood This spell creates a mass of wood equal to 1,000 cubic feet; it may be arranged in any fashion the caster desires (10' x 10' x 10' block, 25'x 20'x 2' wall, etc.) Casting time varies depending on the complexity of the design. A simple wall and other simple shapes take 1 round. A simple staircase may take 10 rounds (1 turn). A complicated design which is supposed to adhere to very tight specifications—such as the keel of a ship—could take the maximum time allowable, 12 turns (2 hours) just to work up in rough form. When the caster wants to try a complicated design, the DM decides how long the casting will take.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Anti-Magic Shell",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (Caster only)",
+      "duration": "12 turns",
+      "effect": "Personal barrier which blocks magic",
+      "reversible": false,
+      "description": "This spell creates an invisible barrier around the spellcaster's body (less than an inch away). The barrier stops all spells or spell effects, including the caster's. The caster may destroy the shell at will; otherwise, it lasts for the duration. Except for a wish, no magic (including a dispel magic spell) can cancel the barrier.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Death Spell",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Instantaneous",
+      "effect": "Slays 4d8 (4-32) Hit Dice of creatures within a 60' x 60' x 60' area",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Slays 4d8 (4-32) Hit Dice of creatures within a 60' x 60' x 60' area This spell will affect 4d8 (4-32) Hit Dice of living creatures within the given area. Normal plants and insects are automatically slain, and those with no hit points (normal insects, plants smaller than shrub-sized, for instance) are not counted in the total affected. Undead are not affected, nor are creatures with 8 or more Hit Dice (or levels of experience). The lowest Hit Dice creatures are affected first. Each victim must make a saving throw vs. death ray or die.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Disintegrate",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Instantaneous",
+      "effect": "Destroys one creature or object",
+      "reversible": false,
+      "description": "Duration: Instantaneous Effect: Destroys one creature or object This spell causes one creature or nonmagical object to crumble to dust. A victim may make a saving throw vs. death ray to avoid the effect. (The spell can disintegrate a dragon, a ship, or a 10' section of wall, for example.) The spell does not affect magical items or spell effects.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Geas",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "Until completed or removed",
+      "effect": "Compels one creature",
+      "reversible": false,
+      "description": "This spell forces a victim either to perform or avoid a stated action. For example, a character may be geased to bring back an object for the caster, to eat whenever the chance arises, or never to reveal certain information. The action must be possible and not directly fatal or else the geas will return and affect the caster instead! When the spell is first cast, the victim may make a saving throw vs. spells to avoid the spell's effect. If the victim ignores the geas, penalties (decided by the DM) are applied until the character either obeys the geas or dies. Suitable penalties include penalties in combat, lowered ability scores, loss of spells, pain and weakness, and so forth.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Invisible Stalker",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (Caster only)",
+      "duration": "Until mission is accomplished",
+      "effect": "Summons one creature",
+      "reversible": false,
+      "description": "This spell summons an invisible stalker (from Chapter 14) which will perform one task for the caster. The creature will serve the caster regardless of the time or distance involved, until the task is completed or until the creature is slain. A dispel evil spell will force the creature to return to its home plane.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Lower Water",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "10 turns",
+      "effect": "Cuts depths to half normal",
+      "reversible": false,
+      "description": "This spell causes a body of water to lower to half its normal depth. It will effect an area up to 10,000 square feet (width and length). If cast on a constantly-renewed source of water (such as a river or ocean), it lowers that area of water for the entire duration of the spell (or until it is dispelled); surrounding water does not rush in until the spell is ended. If cast around a boat or ship, the vessel may become stuck. At the end of the spell's duration, the sudden rush of water filling the \"hole\" will sweep a ship's deck clear of most items (and people who fail their saving throws vs. spells) and cause 1dl2 + 20 (21-32) points of hull damage.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Move Earth",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "6 turns",
+      "effect": "Moves soil",
+      "reversible": false,
+      "description": "This spell causes soil (but not rock) to move. The caster can use the spell to move earth horizontally to make a hill, or vertically, to open a large hole (one up to 240' deep, unless it reaches solid rock). The spell moves the soil at up to 60' per turn, and at the end of the spell duration, the moved soil remains where it is put. This spell is helpful for constructing castles.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Projected Image",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "6 turns",
+      "effect": "Creates one image",
+      "reversible": false,
+      "description": "This spell creates an image of the caster up to 240' away; the image will last without concentration. The projected image cannot be distinguished from the original except by touch. Any spell the spellcaster casts will seem to come from the image, but the caster must still be able to see the target. Spells and missile attacks will not appear to affect the image. If the image is touched or struck by a hand-to-hand weapon, it disappears.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Reincarnation",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "Permanent",
+      "effect": "Creates a new body To cast this spell, the magic-user must have a part (however small) of a dead body.",
+      "reversible": false,
+      "description": "To cast this spell, the magic-user must have a part (however small) of a dead body. The spell magically creates a new body, and the life force which was once in the dead body returns and inhabits the new one. The DM can choose what sort of body is created, or can refers to the tables below to decide. If the life force is reincarnated as a different race, all details of the new race apply, instead of the old. For example, a cleric reincarnated as an elf is no longer a cleric, but is able to cast magicuser spells and fight as an elf. The victim's level of experience does not change unless restricted by the maximum for demihumans.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Stone to Flesh",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Permanent",
+      "effect": "Creates 500 square feet of iron Range: 120' Duration: Permanent Effect: One creature or object",
+      "reversible": false,
+      "description": "This spell creates a vertical wall of iron exactly 2' thick. The magic-user may choose any length and width, but the total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 120' of the caster. The caster must create the wall so it rests on the ground or similar support. It cannot be cast in a space occupied by another object. It lasts until dispelled, disintegrated, or physically broken (though it will resist all but giant-sized physical attacks). Most other spell effects, including fireball, lightning bolt, etc., have no effect on a wall of iron.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Stoneform",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 6,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates 1,000 cubic feet of stone",
+      "reversible": false,
+      "description": "This spell creates a mass of stone equal to 1,000 cubic feet; it may be arranged in any fashion the caster desires (10'x 10' x 10' block, 25'x 20'x 2'wall, etc.). If the wall is attacked, it has a number of hit points equal to the level of the caster. A rust monster can destroy a wall of iron with a single touch. Otherwise, the wall can only be damaged by battering; see Chapter 9 (page 118) for more on battering attacks. Casting time varies depending on the complexity of the design. A simple wall and other simple shapes take 1 round. A simple staircase may take 10 rounds (1 turn).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Charm Plant",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "6 months(see below)",
+      "effect": "Charms one tree or more smaller plants Similar to a _charm person_ spell, this effect causes one tree, six medium-sized bushes, 12 small shrubs, or 24 small plants to become friends of the magic-user (no saving throw). However, a plant-like monster (treant, shrieker, etc.) may make a saving throw vs. spells to resist the effect.",
+      "reversible": false,
+      "description": "Similar to a charm person spell, this effect causes one tree, six medium-sized bushes, 12 small shrubs, or 24 small plants to become friends of the magic-user (no saving throw). However, a plant-like monster (treant, shrieker, etc.) may make a saving throw vs. spells to resist the effect. The charmed plants will understand and obey all commands of the magic-user, as long as the tasks are within their ability (including the entangling of passers-by within range, but not including movement, sensing alignment, etc.). The plants will remain charmed for six months, until the charm is dispelled, or until winter (when they sleep).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Normal Monsters",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "1 turn",
+      "effect": "Creates 1 or more monsters",
+      "reversible": false,
+      "description": "This spell causes monsters to appear out of thin air. All monsters appearing will understand and obey the caster's commands—fighting, carrying or fetching things, etc. They will faithfully obey all commands to the best of their abilities. Each monster will appear carrying its normal weapons and wearing its normal armor (if any), but arrives otherwise unequipped. At the end of one turn, all the monsters created vanish back into thin air, along with all their equipment. (If a monster has dropped a weapon while fighting and then vanishes, the weapon disappears, too.) The total number of Hit Dice of monsters appearing is equal to the level of the magic-user casting the spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Delayed Blast Fireball",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "0 to 60 rounds",
+      "effect": "Delayed blast fireball of 20' radius As the name implies, this is a _fireball_ spell whose blast can be delayed; it behaves like a time bomb.",
+      "reversible": false,
+      "description": "Duration: 0 to 60 rounds Effect: Delayed blast fireball of 20' radius As the name implies, this is a fireball spell whose blast can be delayed; it behaves like a time bomb. When he casts the spell, the magicuser states the exact number of rounds of delay (from 0 to 60) until the spell detonates. A small rock, very similar in appearance to a valuable gem, then shoots out toward the desired location, and remains at that location until the stated delay elapses. The \"gem\" may be picked up, carried, and so forth.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Ironform",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates 500 square feet of iron",
+      "reversible": false,
+      "description": "Duration: Permanent Effect: Creates 500 square feet of iron This spell creates a wall of iron 2\" thick (or less) with an area equal to 500 square feet; it may be arranged in any fashion the caster desires (10'x 50' wall, or 25' X 20' wall, etc.) Casting time varies depending on the complexity of the design. A simple wall and other simple shapes take 1 round. A simple staircase may take 10 rounds (1 turn). A complicated design which is supposed to adhere to very tight specifications—such as a giant portcullis—could take the maximum time allowable, 12 turns (2 hours) just to create in rough form.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Lore",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (magic-user only)",
+      "duration": "Permanent",
+      "effect": "Reveals details of 1 item, place, or person By means of this spell, the magic-user may gain knowledge of one item, place, or person.",
+      "reversible": false,
+      "description": "By means of this spell, the magic-user may gain knowledge of one item, place, or person. If the caster holds the item being studied, the spell takes 1d4 turns to complete, and the magic-user learns the item's name, method of operation and command words (if any), and approximate number of charges (if any, within five of the correct number). If the item has more than one mode of operation, or more than one command word, only one function will be revealed for each lore spell used, and the spell will not even hint that the object has any other functions.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Magic Door",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "7 uses",
+      "effect": "Creates one passage",
+      "reversible": false,
+      "description": "This spell may be cast on any wall, floor, ceiling, or section of ground. It creates a magical, invisible doorway that only the spellcaster may use. It also creates a passage through up to 10' of non-living solid material beyond the doorway itself. It cannot be created in a living object of any kind. The door is undetectable except by a detect magic spell, and cannot be destroyed except by a dispel magic spell (at normal chances for success). The magic door lasts until dispelled, or until it has been used seven times. Note that each oneway passage through the door is counted as a separate use.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Mass Invisibility",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "Permanent until broken",
+      "effect": "Creatures or objects in 60' square area",
+      "reversible": false,
+      "description": "This bestows invisibility (as the 2nd level spell) on several creatures. All the recipients must be within an area 60' square within 240' of the magic-user. The spell will affect up to 6 dragon-sized creatures, or up to 300 man-sized creatures. After the spell is cast, each creature becomes invisible, along with all equipment it carries (as per the invisibility spell, above). An invisible creature will remain invisible until he or she attacks or casts any spell. The reverse of this spell, (appear), will cause all invisible creatures and objects in a 20' x 20' x 20' volume to become visible.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Power Word Stun",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "2d6 or 1d6 turns",
+      "effect": "Stuns 1 creature of 70 hp or less Reverse Gravity Range: 90' Duration: 1/5 round (2 seconds) Effect: Causes victims in a 30' cubic volume to",
+      "reversible": false,
+      "description": "This lets the caster stun one victim within 120' (no saving throw). A victim with 1-35 hit points is stunned for 2d6 turns; a victim with 36-70 hit points is stunned for 1d6 turns. No creature with 71 or greater hit points is affected. fall upward This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Statue",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (Magic-user only)",
+      "duration": "2 turns per level of the caster",
+      "effect": "Allows caster to turn to stone",
+      "reversible": false,
+      "description": "This allows the magic-user to change into a statue, along with all nonliving equipment he carries, up to once per round (to or from statue form) for the duration of the spell. The caster can concentrate on other spells while in statue for, though he can cast no new spells while in this form. Although this spell does not give him immunity to \"turn to stone\" effects (from a gorgon's attack), the caster may simply turn back to normal one round after becoming petrified. While in statue form, the magic-user is armor class -4, but cannot move. He cannot be damaged by cold or fire (whether normal or magical) or by normal weapons.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Summon Object",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Infinite",
+      "duration": "Instantaneous",
+      "effect": "Retrieves one object from caster's home By means of this spell, the magic-user can cause one nonliving object to leave the spellcasters's home and appear in his hand.",
+      "reversible": false,
+      "description": "Effect: Retrieves one object from caster's home By means of this spell, the magic-user can cause one nonliving object to leave the spellcasters's home and appear in his hand. The object must weigh no more than 500 cn (50 pounds), and may be no bigger than a staff or small chest. The spellcaster must be very familiar with the item and its exact location, or the spell will not work. The caster must also have prepared the item beforehand by sprinkling it with a special powder that costs 1,000 gold pieces per item prepared; the powder becomes invisible and does not interfere with the item in any way. The spell cannot summon items that have not been prepared in this fashion.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Sword",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "1 round per level of the caster",
+      "effect": "Creates a magical sword",
+      "reversible": false,
+      "description": "Duration: 1 round per level of the caster Effect: Creates a magical sword When this spell is cast, a glowing sword made of magic, rather than metal, appears next to the caster. The magic-user may cause it to attack any creature within 30', simply by concentrating; the sword flies to the target and attacks. If the caster's concentration is broken, the sword merely stops attacking. It remains in existence for one round per level of the spellcaster. The sword moves very quickly, attacking twice per round and making its attack rolls at the caster's level.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Teleport Any Object",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 7,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Instantaneous",
+      "effect": "Causes 1 object to teleport",
+      "reversible": false,
+      "description": "This spell is similar to the 5th level teleport spell, but nonliving objects can be affected. After casting this spell, the spellcaster may touch one creature or object and cause it to teleport. The normal chance of error apply (see the description of the teleport spell above) an object appearing too high will fall and probably break, while one appearing too low will be destroyed instantly. If the spellcaster uses this spell to teleport himself, there is no chance for error. The caster may not deliberately choose a destination occupied by a solid object or in open air above the ground. The maximum weight affected is 500 cn (50 pounds) per level of the caster.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Clone",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "Permanent",
+      "effect": "Grows one duplicate creature from a piece of the original creature",
+      "reversible": false,
+      "description": "Duration: Permanent Effect: Grows one duplicate creature from a piece of the original creature A clone is an exact duplicate of another living creature, grown from a piece of the original through the use of this spell. The piece need not be alive at the time the spell is cast. A human or demihuman clone is rare and may be very dangerous. A clone of any other living creature is a more common thing called a simulacrum. A character can have only one clone at a time; attempts at making multiple clones of a single character automatically fail. Undead and constructs cannot be cloned, because they are not living creatures.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Magical Monsters",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "Two turns",
+      "effect": "Creates one or more monsters",
+      "reversible": false,
+      "description": "Duration: Two turns Effect: Creates one or more monsters This spell is similar to the 7th level create normal monsters spell, except that it can create monsters with some special abilities (up to two asterisks). The range and duration are double those of the lesser spell. All other details are the same: the creatures are chosen by the caster, appear out of thin air, and vanish at the end of the spell duration. The total number of Hit Dice of monsters appearing is equal to the level of the magic-user casting the spell (again, dropping fractions if the caster's level is not an exact multiple of the creatures' Hit Dice). The spell does not create humans or demihumans, but can create undead.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Dance",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "3 or more rounds",
+      "effect": "Causes 1 victim to dance",
+      "reversible": false,
+      "description": "This spell causes one victim to prance madly about, performing a jig or other dance, for 3 or more rounds. The magic-user must touch the victim for the spell to take effect (a normal attack roll). The victim gets no saving throw, and can- not attack, use spells (or spell-like abilities), or flee. While dancing, the victim suffers a —4 penalty to his saving throws, and a +4 penalty to his armor class. The duration is three rounds for a caster of 18th to 20th level; four rounds for levels 21-24, five rounds at levels 25-28, six rounds at levels 29-32, and seven rounds at levels 33-36.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Explosive Cloud",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "1'",
+      "duration": "6 turns",
+      "effect": "Creates a moving poisonous cloud",
+      "reversible": false,
+      "description": "Effect: Creates a moving poisonous cloud This spell creates an effect which looks identical to the 5th level cloudkill spell (a 20' tall cloud of greenish gas 30' in diameter appearing next to the caster). The cloud is only mildly poisonous; all victims within it must make a saving throw vs. spells or be paralyzed that round. Each victim within the cloud makes a new saving throw each round. The cloud is filled with sparkling lights (visible only to those within it), which are small explosions. Each round, all those within the cloud take damage from the explosions, with no saving throw allowed.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Force Field",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "6 turns",
+      "effect": "Creates an invisible barrier",
+      "reversible": false,
+      "description": "Effect: Creates an invisible barrier This spell creates an invisible, immovable barrier or object of pure force. It has almost no thickness, but cannot be broken or destroyed by any means except a disintegrate spell or a wish; even a dispel magic spell cannot affect it. A force field's shape is limited to a sphere, hemisphere, a flat surface, a cylinder, a square or rectangular box with flat sides, or part of such a box. The sphere's radius can be a maximum of 20'. The flat surface or combinations thereof may be up to 5,000 square feet in total area. The force field cannot be irregular in shape, and its surface must be perfectly smooth. It can be as small as the caster desires.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Mass Charm",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Special (as _charm person_ spell)",
+      "effect": "30 Levels of creatures",
+      "reversible": false,
+      "description": "This spell creates the same effect as a charm person or charm monster spell, except that the spell affects 30 levels (or Hit Dice) at once. Each victim may make a saving throw vs. spells to avoid the charm, but with a -2 penalty to the roll. The spell will not affect a creature of 31 or more levels or Hit Dice. The duration of each charm is determined by the victim's Intelligence (see charm person, above). If the magic-user attacks one of the charmed victims, only that one creature's charm is automatically broken. Any other charmed creatures seeing the attack may make another saving throw, but other creatures' charms are not affected.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Mind Barrier",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "1 hour per level of the caster",
+      "effect": "Protects against mind-affecting spells and items",
+      "reversible": false,
+      "description": "Duration: 1 hour per level of the caster Effect: Protects against mind-affecting spells and items This spell affects one creature; an unwilling recipient may make a saving throw vs. spells to avoid the effect. The spell prevents any form of ESP, clairvoyance, clairaudience, crystal ball gazing, or any other form of mental influence or information gathering (such as by a contact higher plane or summon object) from working on the target creature. The caster or recipient simply does not exist for the purposes of those and similar spell effects for the duration of the mind barrier spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Permanence",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "10'",
+      "duration": "Permanent until dispelled",
+      "effect": "Causes one magical effect to become permanent By means of this spell, the magic-user can cause one other magic-user spell effect of 7th level or less to become permanent.",
+      "reversible": false,
+      "description": "Duration: Permanent until dispelled Effect: Causes one magical effect to become permanent By means of this spell, the magic-user can cause one other magic-user spell effect of 7th level or less to become permanent. This spell will not make permanent any spell which has an \"instantaneous\" or \"permanent\" duration (such as dispel magic, fireball, lightning bolt, etc.); clerical spells and 8th or 9th level magic-user spells also cannot be made permanent. The DM can declare that the permanence spell will not work with any other specific spell. Whenever a character wishes to cast the spell, the DM should carefully consider whether permanence will affect the other spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Polymorph any Object",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "240'",
+      "duration": "See below",
+      "effect": "Changes form of one object or creature",
+      "reversible": false,
+      "description": "Duration: See below Effect: Changes form of one object or creature This spell is similar to the 4th level polymorph others spell, except that it will affect objects as well as creatures. If the object is part of a greater whole (such as a section of wall), the spell will affect up to a 10' x 10' X 10' volume. A creature may avoid the effects if it successfully makes a saving throw vs. spells is made at a -4 penalty to the roll. The duration of the polymorph depends on the degree of the change. There are three basic kingdoms of all things—animal, vegetable, and mineral.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Power Word Blind",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "1-4 days or 2-8 hours (see below)",
+      "effect": "Blinds 1 creature with 80 hit points or less With this spell, the caster may _blind_ one victim within 120' (no saving throw).",
+      "reversible": false,
+      "description": "Duration: 1-4 days or 2-8 hours (see below) Effect: Blinds 1 creature with 80 hit points or less With this spell, the caster may blind one victim within 120' (no saving throw). A victim with 1-40 hit points is blinded for ld4 days; one with 41-80 hit points is blinded for 2d4 hours. The spell does not affect creatures with 81 or more hit points. A blinded victim suffers penalties of — 4 on all saving throws and +4 on armor class. A cleric's cure blindness or cureall spell will not remove this blindness unless the cleric is of a level equal to or higher than the caster of the power word blind.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Steelform",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates up to 500 square feet of steel",
+      "reversible": false,
+      "description": "Effect: Creates up to 500 square feet of steel This spell is effectively identical to the 7th level ironform spell. However, the material created is of weapon-quality; a swordmaker with this spell could cast the spell and create a finelycrafted, high-quality sword in 12 turns (two hours) or less. Following the same general guidelines as ironform, a steel wall will have an AC of — 10(2) and about 20 hit points per 1\" thickness.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Symbol",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 8,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Permanent",
+      "effect": "Creates one magical rune",
+      "reversible": false,
+      "description": "Effect: Creates one magical rune This spell creates a written magical drawing (a \"rune\") of great power. There are six kinds of symbols; the caster must select one when the spell is memorized. The rune may be placed on an object (such as a door or wall) or placed in mid-air. The rune cannot move; if placed on a creature or moving object, it will remain at that point when the surface moves (possibly floating in mid-air). When any living creature passes over or through the rune, or touches the object on which the rune is inscribed, or (foolishly) reads the rune, the rune's effect takes place immediately (no saving throw).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Contingency",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch",
+      "duration": "Indefinite (see below)",
+      "effect": "Prepares one other spell",
+      "reversible": false,
+      "description": "This powerful spell acts as a trigger for one stated magic-user spell; this second spell must be of 4th level or less that does not normally cause damage. While casting a contingency spell, the magicuser must describe one situation and the spell which is contingent upon it. When that situation next occurs, the contingent spell effect triggers automatically and immediately, as if cast at that time. Examples of proper use: \"When I am touched or struck by any living creature that is not a Lawful or Neutral cleric, except for my friends Charlie McGonigle and Sally Silvernose (contingency), then cast charm monster on the creature touching or striking me (spell).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Create Any Monster",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "90'",
+      "duration": "3 turns",
+      "effect": "Creates one or more monsters",
+      "reversible": false,
+      "description": "Duration: 3 turns Effect: Creates one or more monsters This spell is similar to the 7th level spell create normal monsters and the 8th level spell create magical monsters, but with fewer limitations on the types of creatures appearing. The range and duration are triple those of the 7th level version. The spell cannot create humans and demihumans, but can create any other creature, regardless of the number of special abilities (asterisks). However, if the caster wants to create a creature with three or more asterisks, the caster must have carefully studied one (either alive or dead) for at least one hour to be able to create another with this spell.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Gate",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "30'",
+      "duration": "1d10 x 10(l-l00) turns or 1 turn",
+      "effect": "Opens a portal to another plane",
+      "reversible": false,
+      "description": "When the magic-user casts this spell, he must name one target: the Ethereal Plane, the Astral Plane, one of the four elemental planes, or one outer plane. He must also name a resident of that plane, usually that of an Immortal, a ruler of the plane. The spell opens a direct connection to the other plane of existence. A gate to an outer plane remains open for only one turn. Any other gate remains open for 1d10 x 10 (1-100) turns, and there is a 10% chance per turn that some other-planar creature will wander through the gate while it is open. A gate to an elemental plane actually creates a vortex and a wormhole, and a wish may be used to make them permanent.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Heal",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch (one creature)",
+      "duration": "Permanent",
+      "effect": "Cures anything",
+      "reversible": false,
+      "description": "This spell's effect is identical to that of the 6th level cleric spell cureall. When used to cure wounds, it cures nearly all of the damage, leaving only 1d6 points of damage remaining. It can instead remove a curse, neutralize a poison, cure a disease, cure blindness, or even remove a feeblemind effect.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Immunity",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "Touch (one creature)",
+      "duration": "One turn per level of the caster",
+      "effect": "Bestows immunity or resistance to some spells and weapons",
+      "reversible": false,
+      "description": "This spell gives the recipient total immunity to all 1st-, 2nd-, and 3rd level spells. Furthermore, 4th- and 5th level spells have only half normal effect, or one-quarter normal if the victim makes a successful saving throw. Any spell effect that is quantifiable is reduced in effect; these effects include reductions in duration, bonuses, penalties, damage, etc. Round fractions off in the recipient's favor. The recipient is also completely immune to all missiles (normal or magical), as well as normal and silver weapons; he takes half damage from magical hand-held weapons. This applies only to weapons; claws, bites, breath weapons, and other natural attack forms are not blocked.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Maze",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "See below (1d6 turns, 2d20 rounds, 2d4 rounds, or 1d4 rounds)",
+      "effect": "Traps one creature Meteor Swarm Range: 240' Duration: Instantaneous Effect: Creates four or eight meteor-fireballs",
+      "reversible": false,
+      "description": "This spell creates an indestructible maze in the Astral Plane and places one victim into the maze (he gets no saving throw). The intelligence of the victim determines the time he needs to escape the maze. ###### Maze Duration |Victim's|Time Required| |---|---| |Intelligence|To Escape| |Non-to Low(1-8)|1d6( 1-6) turns| |Average (9-12)|2d20 (2-40) rounds| |High (13-17)|2d4 (2-8) rounds| |Genius (18 + )|1d4 (1-4) rounds| When he escapes the maze, the victim returns to the exact place from which he originally disappeared. This spell creates either 4 or 8 meteors (at the caster's choice).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Power Word Kill",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "120'",
+      "duration": "Instantaneous",
+      "effect": "Slays or stuns one or more creatures",
+      "reversible": false,
+      "description": "This spell enables the caster to affect one or more victims within 120' (no saving throw). Exception: A magic-user, and any creature which can cast magic-user spells, may make a saving throw vs. spells to avoid this effect, with a — 4 penalty to the roll. A single victim with 1-60 hit points is automatically slain; one with 61-100 hit points is stunned (as power word stun) and unable to act for 1d4 turns. No creature with 101 or more hit points is affected. The spell can also be used to slay up to five victims if each has 20 hit points or less (again, no saving throw).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Prismatic Wall",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "60'",
+      "duration": "6 turns",
+      "effect": "Creates a multi-colored barrier",
+      "reversible": false,
+      "description": "This spell creates a barrier of many colors with a glittering appearance as if from light shining through a prism. This wall is 2\" thick, with 1/8 \" between the colors. The effect must be either a sphere with a radius of 10', centered on the caster, or a flat surface (vertical or horizontal) of up to 500 square feet in area. Whatever its form, the prismatic wall cannot be moved (even by a wish). The caster may pass through it freely and unharmed, with any items he chooses to carry. All other creatures and objects contacting or passing through the prismatic wall are affected by its magic, starting with the first color they contact. It takes powerful magic to break through the wall.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  },
+  {
+    "name": "Timestop",
+    "type": "spell",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "list": "magic-user"
+      }
+    },
+    "system": {
+      "spellLevel": 9,
+      "spellLists": [
+        "magic-user"
+      ],
+      "range": "0 (caster only)",
+      "duration": "2-5 rounds",
+      "effect": "Allows caster to act for 1d4 + l (2-5) rounds while everything else \"stops\" To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds.",
+      "reversible": false,
+      "description": "To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds. The caster may perform one action during each of these magical rounds. Normal and magical fire, cold, gas, etc. can still harm the caster. While the timestop is in effect, however, other creatures are invulnerable to the caster's attacks and spells. Spells with durations other than \"instantaneous\" may be created and left to take effect when time resumes.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": ""
+    }
+  }
+]

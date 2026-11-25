@@ -1,0 +1,30 @@
+{
+  "_id": "PKjDC6SXJkBBzpBF",
+  "_key": "!items!PKjDC6SXJkBBzpBF",
+  "name": "Confusion",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "12 rounds",
+    "effect": "3-18 creatures in an area 60' across",
+    "reversible": false,
+    "description": "This spell will confuse its victims, affecting all creatures within a 30' radius. Victims with less than 2 + 1 Hit Dice are not allowed a saving throw. Those with 2 + 1 or more Hit Dice must make a saving throw vs. spells every round of the spell's duration, if they remain in the area, or be confused. Confused creatures act randomly. The DM should roll 2d6 each round to determine each creature's action, using the following chart: ###### Confusion Results - 2d6 Roll Result - 2-5 Attack the spellcaster's party - 6-8 Do nothing 9-12 Attack the creature's own party",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

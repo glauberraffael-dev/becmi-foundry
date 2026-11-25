@@ -1,0 +1,26 @@
+{
+  "_id": "IRZoRFqhSqI6SyiR",
+  "_key": "!items!IRZoRFqhSqI6SyiR",
+  "name": "Chain Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "ac": 5,
+    "cost": "40",
+    "weight": 400,
+    "armorType": "Chain Mail"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "X8K43O94QT1mzv9c",
+  "_key": "!items!X8K43O94QT1mzv9c",
+  "name": "Wine",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "One quart, wineskin not included — 1gp — 30",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 30,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

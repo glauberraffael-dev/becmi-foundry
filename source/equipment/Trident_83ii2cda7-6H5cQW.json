@@ -1,0 +1,34 @@
+{
+  "_id": "83ii2cda7-6H5cQW",
+  "_key": "!items!83ii2cda7-6H5cQW",
+  "name": "Trident",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "s, t, M",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "s, t, M",
+    "damage": "1d6",
+    "range": 10,
+    "ranges": "10/20/30",
+    "cost": 5,
+    "weight": 25,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "s, t, M"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

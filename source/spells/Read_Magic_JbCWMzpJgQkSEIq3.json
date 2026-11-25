@@ -1,0 +1,30 @@
+{
+  "_id": "JbCWMzpJgQkSEIq3",
+  "_key": "!items!JbCWMzpJgQkSEIq3",
+  "name": "Read Magic",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0",
+    "duration": "1 turn",
+    "effect": "The spellcaster only",
+    "reversible": false,
+    "description": "When he casts this spell, the spellcaster will see a glow surround all magical objects, creatures, and places which are visible and within range of the spell. No saving throw is allowed.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

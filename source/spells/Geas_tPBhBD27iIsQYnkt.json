@@ -1,0 +1,30 @@
+{
+  "_id": "tPBhBD27iIsQYnkt",
+  "_key": "!items!tPBhBD27iIsQYnkt",
+  "name": "Geas",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "Until completed or removed",
+    "effect": "Compels one creature",
+    "reversible": false,
+    "description": "This spell forces a victim either to perform or avoid a stated action. For example, a character may be geased to bring back an object for the caster, to eat whenever the chance arises, or never to reveal certain information. The action must be possible and not directly fatal or else the geas will return and affect the caster instead! When the spell is first cast, the victim may make a saving throw vs. spells to avoid the spell's effect. If the victim ignores the geas, penalties (decided by the DM) are applied until the character either obeys the geas or dies. Suitable penalties include penalties in combat, lowered ability scores, loss of spells, pain and weakness, and so forth.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

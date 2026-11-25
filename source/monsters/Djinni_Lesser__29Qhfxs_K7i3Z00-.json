@@ -1,0 +1,48 @@
+{
+  "_id": "29Qhfxs_K7i3Z00-",
+  "_key": "!actors!29Qhfxs_K7i3Z00-",
+  "name": "Djinni (Lesser)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "7+1",
+    "hp": 71,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 (fist or whirlwind) + special",
+    "damage": "2d8 (fist) or 2d6 (whirlwind)",
+    "appearing": "1 (1)",
+    "saveAs": "F14",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 14,
+    "alignment": "Chaotic",
+    "xpValue": 1025,
+    "terrain": "plane of Air, Desert (preferred). _Load:_ A djinni can fly carrying 3,500 cn of weight at full speed or 7,000 cn of weight at half speed; in times of grave need, it can carry up to 12,000 cn of weight (for 3 turns walking or 1 turn flying) but the djinni must rest for 1 turn afterward.",
+    "monsterType": "Planar Monster, Enchanted (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 7 + 1* (L) Move: 90' (30') Flying: 240' (80') Attacks: 1 (fist or whirlwind) + special Damage: 2d8 (fist) or 2d6 (whirlwind) No. Appearing: 1 (1) Save As: F14 Morale: 12 Treasure Type: Nil Intelligence: 14 Alignment: Chaotic XP Value: 1,025 Monster Type: Planar Monster, Enchanted (Rare). Djinn are intelligent, free-willed, enchanted creatures from the elemental plane of Air. They appear as tall, humanlike beings; 50% of encountered djinn are male and 50% are female.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 71,
+        "max": 71
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Djinni (Lesser)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "sVmz4uQxdlkmP8G7",
+  "_key": "!items!sVmz4uQxdlkmP8G7",
+  "name": "Insect Plague",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "480'",
+    "duration": "1 day",
+    "effect": "Creates a swarm of 30' radius",
+    "reversible": false,
+    "description": "This spell summons a vast swarm of insects. The swarm obscures vision and drives off creatures of less than 3 Hit Dice (no saving throw). The swarm moves at up to 20' per round as directed by the cleric while it is within range. The caster must concentrate, without moving, to control the swarm. If the caster is disturbed, the. insects scatter and the spell ends. This spell only works outdoors and above-ground.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

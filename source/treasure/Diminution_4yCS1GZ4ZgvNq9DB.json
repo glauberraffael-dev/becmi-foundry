@@ -1,0 +1,27 @@
+{
+  "_id": "4yCS1GZ4ZgvNq9DB",
+  "_key": "!items!4yCS1GZ4ZgvNq9DB",
+  "name": "Diminution",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "Anyone taking this potion will immediately shrink to 6\" in height. He can only attack creatures smaller than 1' for normal damage. The user can slip through small cracks and has a 90% chance of not being seen when standing still. This potion will cancel a potion of growth without ill effects.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

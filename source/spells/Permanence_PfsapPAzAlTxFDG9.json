@@ -1,0 +1,30 @@
+{
+  "_id": "PfsapPAzAlTxFDG9",
+  "_key": "!items!PfsapPAzAlTxFDG9",
+  "name": "Permanence",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "Permanent until dispelled",
+    "effect": "Causes one magical effect to become permanent By means of this spell, the magic-user can cause one other magic-user spell effect of 7th level or less to become permanent.",
+    "reversible": false,
+    "description": "Duration: Permanent until dispelled Effect: Causes one magical effect to become permanent By means of this spell, the magic-user can cause one other magic-user spell effect of 7th level or less to become permanent. This spell will not make permanent any spell which has an \"instantaneous\" or \"permanent\" duration (such as dispel magic, fireball, lightning bolt, etc.); clerical spells and 8th or 9th level magic-user spells also cannot be made permanent. The DM can declare that the permanence spell will not work with any other specific spell. Whenever a character wishes to cast the spell, the DM should carefully consider whether permanence will affect the other spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

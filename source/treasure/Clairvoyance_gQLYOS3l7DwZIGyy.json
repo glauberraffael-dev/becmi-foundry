@@ -1,0 +1,27 @@
+{
+  "_id": "gQLYOS3l7DwZIGyy",
+  "_key": "!items!gQLYOS3l7DwZIGyy",
+  "name": "Clairvoyance",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user may see an area up to 60' away through the eyes of a creature in that area.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

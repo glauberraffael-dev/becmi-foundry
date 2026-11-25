@@ -1,0 +1,30 @@
+{
+  "_id": "lElj6Js_2vwA1LTC",
+  "_key": "!items!lElj6Js_2vwA1LTC",
+  "name": "Fly",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "1d6 (1-6) turns + 1 turn per level of the caster",
+    "effect": "One creature may fly",
+    "reversible": false,
+    "description": "Duration: 1d6 (1-6) turns + 1 turn per level of the caster Effect: One creature may fly This spell allows the target it is cast upon (possibly the spellcaster himself) to fly. The recipient can fly in any direction and at any speed up to 360' (120') by mere concentration. The recipient may also stop and hover at any point (as a levitate spell); this does not require concentration.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

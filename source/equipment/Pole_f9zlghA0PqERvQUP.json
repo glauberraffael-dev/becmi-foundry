@@ -1,0 +1,25 @@
+{
+  "_id": "f9zlghA0PqERvQUP",
+  "_key": "!items!f9zlghA0PqERvQUP",
+  "name": "Pole",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Wooden, 10' long — 1 gp — 100",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 100,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

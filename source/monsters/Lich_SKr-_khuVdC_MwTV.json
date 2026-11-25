@@ -1,0 +1,48 @@
+{
+  "_id": "SKr-_khuVdC_MwTV",
+  "_key": "!actors!SKr-_khuVdC_MwTV",
+  "name": "Lich",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 touch or 1 spell",
+    "damage": "1d10 + paralysis or by spell",
+    "appearing": "1 (1)",
+    "saveAs": "Character type and level",
+    "morale": 10,
+    "treasure": "See description below",
+    "intelligence": 18,
+    "alignment": "Chaotic",
+    "xpValue": 0,
+    "terrain": "Ruins.",
+    "monsterType": "Undead, Enchanted (Very Rare).",
+    "description": "|Lich Spellcaster|Levels, Hit Point|s, and XP Va|lues||| |---|---|---|---|---|---| |Cleric Lich |||Magic-User Lich ||| |Level|Hit Points |XP Value|Level|Hit Points |XP Value| |21|9d6 + 12|10,500|21*|9d4 +12|12,500| |22|9d6 + 13 |11,750|22*|9d4 + 13 |14,000| |23|9d6 + l4|13,000|23*|9d4 +14|15,500| |24|9d6 + 15|14,250|24*|9d4 + 15|17,000| |25|9d6 +16|15,500|25*|9d4 +16|18,500| |26|9d6 + 17|16,750 |26*|9d4 + 17|20,000 | |27|9d6 + 18|18,000|27*|9d4 +18|21,500| |28|9d6 + 19|19,250|28*|9d4 + 19|23,000| |29|9d6 + 20|20,50",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lich"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

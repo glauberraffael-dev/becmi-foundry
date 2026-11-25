@@ -1,0 +1,27 @@
+{
+  "_id": "zHmnsFPwAOI5aVRc",
+  "_key": "!items!zHmnsFPwAOI5aVRc",
+  "name": "Climbing",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user may climb sheer surfaces as if a spider, with only a 5 % chance of falling (checked per 100' of climbing, at least once per climb).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

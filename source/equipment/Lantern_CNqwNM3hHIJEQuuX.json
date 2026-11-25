@@ -1,0 +1,25 @@
+{
+  "_id": "CNqwNM3hHIJEQuuX",
+  "_key": "!items!CNqwNM3hHIJEQuuX",
+  "name": "Lantern",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Burns oil _'_ — 10 gp — 30",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "10 gp",
+    "weight": 30,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

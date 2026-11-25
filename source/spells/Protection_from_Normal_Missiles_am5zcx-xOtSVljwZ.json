@@ -1,0 +1,30 @@
+{
+  "_id": "am5zcx-xOtSVljwZ",
+  "_key": "!items!am5zcx-xOtSVljwZ",
+  "name": "Protection from Normal Missiles",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "12 turns",
+    "effect": "One creature",
+    "reversible": false,
+    "description": "Duration: 12 turns Effect: One creature This spell gives the recipient complete protection from all small nonmagical missiles (such as arrows, quarrels, thrown spears, etc.); the ranged attacks simply miss. Large or magical attacks, such as a catapult stone or a magic arrow, are not affected. The spellcaster can cast the spell on any one creature within the spell's range.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

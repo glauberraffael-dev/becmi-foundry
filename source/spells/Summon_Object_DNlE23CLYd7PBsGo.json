@@ -1,0 +1,30 @@
+{
+  "_id": "DNlE23CLYd7PBsGo",
+  "_key": "!items!DNlE23CLYd7PBsGo",
+  "name": "Summon Object",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Infinite",
+    "duration": "Instantaneous",
+    "effect": "Retrieves one object from caster's home By means of this spell, the magic-user can cause one nonliving object to leave the spellcasters's home and appear in his hand.",
+    "reversible": false,
+    "description": "Effect: Retrieves one object from caster's home By means of this spell, the magic-user can cause one nonliving object to leave the spellcasters's home and appear in his hand. The object must weigh no more than 500 cn (50 pounds), and may be no bigger than a staff or small chest. The spellcaster must be very familiar with the item and its exact location, or the spell will not work. The caster must also have prepared the item beforehand by sprinkling it with a special powder that costs 1,000 gold pieces per item prepared; the powder becomes invisible and does not interfere with the item in any way. The spell cannot summon items that have not been prepared in this fashion.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "-lDQ-NiUJIi7lzHO",
+  "_key": "!journal!-lDQ-NiUJIi7lzHO",
+  "name": "Chapter 14: Monsters",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 14
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>How to read monster descriptions and the alphabetical monster list with complete statistics.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 14. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "cALh88UeC_nkDvEa",
+      "_key": "!journal.pages!-lDQ-NiUJIi7lzHO.cALh88UeC_nkDvEa"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "Nq-F9Xe-tkfU2m6d",
+  "_key": "!items!Nq-F9Xe-tkfU2m6d",
+  "name": "Stunning",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Missile Talent Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The victim hit by a missile with this talent must make a saving throw vs. spells or be stunned for 1d6 rounds.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Missile Talent Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Missile Talent Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

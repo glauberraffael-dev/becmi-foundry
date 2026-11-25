@@ -1,0 +1,27 @@
+{
+  "_id": "HutgIkPPSulAug3E",
+  "_key": "!items!HutgIkPPSulAug3E",
+  "name": "Mirror of Life Trapping",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This unique item stores man-size or smaller creatures for an indefinite period. Any such creature who looks into the mirror must make a saving throw vs. spells or be sucked into it (complete with all equipment and treasure!). The mirror can store up to 20 creatures; when it is full, no more can be trapped. Creatures trapped in the mirror do not age or need food or air, but they are completely powerless.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

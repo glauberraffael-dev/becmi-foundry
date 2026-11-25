@@ -1,0 +1,48 @@
+{
+  "_id": "xgNBd2UDQw2qG85N",
+  "_key": "!actors!xgNBd2UDQw2qG85N",
+  "name": "Elemental Ruler",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "",
+    "damage": "|",
+    "appearing": "",
+    "saveAs": "",
+    "morale": 7,
+    "treasure": "",
+    "intelligence": 5,
+    "alignment": "Neutral",
+    "xpValue": 0,
+    "terrain": "Elemental Planes.",
+    "monsterType": "Planar Monster, Enchanted (Very Rare).",
+    "description": "|Armor Class:|See below| |---|---| |Hit Dice:|41* to 80* (L)| |Move:|120' (40')| |Attacks:|2 fists| |Damage:|See below (per fist)| |No. Appearing:|1d6| |Save As:|F36| |Morale:|11| |Treasure Type:|Special| |Intelligence:|15| |Alignment:|Lawful or Neutral| |XP Value:|28,500 at 41 Hit Dice,| ||plus 1,000 per Hit Die over 41| |Hit Dice:|Armor Class: Damage:| |31 to 48|-11 8dl2| |49 to 56|-12 9dl2| |57 to 64|-13 10dl2| |65 to 72|-14 11d12| |73 to 80|-15 12dl2| Monster Type: Planar Monster, Enchanted (Very Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Elemental Ruler"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

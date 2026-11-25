@@ -1,0 +1,25 @@
+{
+  "_id": "QfEsQ-a3TY6o_DKP",
+  "_key": "!items!QfEsQ-a3TY6o_DKP",
+  "name": "Cloak, long",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 1gp — 15**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 15,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

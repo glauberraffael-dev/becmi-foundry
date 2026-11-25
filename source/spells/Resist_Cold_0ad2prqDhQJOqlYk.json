@@ -1,0 +1,30 @@
+{
+  "_id": "0ad2prqDhQJOqlYk",
+  "_key": "!items!0ad2prqDhQJOqlYk",
+  "name": "Resist Cold",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0",
+    "duration": "6 turns",
+    "effect": "All creatures within 30'",
+    "reversible": false,
+    "description": "Duration: 6 turns Effect: All creatures within 30' The caster of this spell may discover the alignment (Lawful, Neutral, or Chaotic) of any one creature within 10'. The spell may also be used When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

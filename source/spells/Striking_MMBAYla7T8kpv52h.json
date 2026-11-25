@@ -1,0 +1,30 @@
+{
+  "_id": "MMBAYla7T8kpv52h",
+  "_key": "!items!MMBAYla7T8kpv52h",
+  "name": "Striking",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "30'",
+    "duration": "1 turn",
+    "effect": "1d6 bonus to damage on 1 weapon",
+    "reversible": false,
+    "description": "This spell allows any one weapon to inflict 1d6 additional points of damage per attack (like a magical staff of striking). The weapon will inflict this extra damage with every successful blow for as long as the spell lasts. This bonus does not apply to attack rolls, but only to damage rolls. If the cleric casts this spell on a normal weapon, the weapon may then damage creatures which are normally affected only by magic weapons; the weapon will do 1d6 points of damage per strike (regardless of the normal damage of the weapon).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "tKwWaNvQiKp2Z7g-",
+  "_key": "!items!tKwWaNvQiKp2Z7g-",
+  "name": "Lore",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (magic-user only)",
+    "duration": "Permanent",
+    "effect": "Reveals details of 1 item, place, or person By means of this spell, the magic-user may gain knowledge of one item, place, or person.",
+    "reversible": false,
+    "description": "By means of this spell, the magic-user may gain knowledge of one item, place, or person. If the caster holds the item being studied, the spell takes 1d4 turns to complete, and the magic-user learns the item's name, method of operation and command words (if any), and approximate number of charges (if any, within five of the correct number). If the item has more than one mode of operation, or more than one command word, only one function will be revealed for each lore spell used, and the spell will not even hint that the object has any other functions.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

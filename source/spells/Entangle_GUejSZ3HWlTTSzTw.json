@@ -1,0 +1,30 @@
+{
+  "_id": "GUejSZ3HWlTTSzTw",
+  "_key": "!items!GUejSZ3HWlTTSzTw",
+  "name": "Entangle",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "1 round per level",
+    "effect": "Controls ropes",
+    "reversible": false,
+    "description": "This spell allows the spellcaster to use any rope-like object of living or once-living material (roots, vines, leather ropes, plant-fibre ropes, etc.) to behave as he or she orders. About 50' of normal 1/2\" diameter vine plus 5' per level of the caster can be affected. The commands which can be given during an entangle spell include: coil (form a neat stack), coil and knot, loop, loop and knot, tie and knot, and the reverses of all the above. The vine or rope must be within 1' of any object it is to coil around or tie up, so it must often be thrown at the target.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

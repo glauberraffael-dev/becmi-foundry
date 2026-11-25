@@ -1,0 +1,48 @@
+{
+  "_id": "FNXGl0XdNmEUPJu1",
+  "_key": "!actors!FNXGl0XdNmEUPJu1",
+  "name": "Dragon",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "6",
+    "hp": 6,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+    "damage": "See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40'",
+    "appearing": "1d4(1d4) 1d3(1d3) 1d2 (1d2)",
+    "saveAs": "F6 F18 F36",
+    "morale": 8910,
+    "treasure": "H H X 2 , I H x 3 , 1 x 2",
+    "intelligence": 91215,
+    "alignment": "Neutral Neutral Neutral",
+    "xpValue": 725,
+    "terrain": "",
+    "monsterType": "",
+    "description": "White Small Large Huge Armor Class: 3 1 -1 Hit Dice: 6(L) 9*(L) 12(L) Move: 90' (30') 120' (40') 150' (50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 80' x 30' 80' x 40' 90' x 40' No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 6,
+        "max": 6
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Dragon"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

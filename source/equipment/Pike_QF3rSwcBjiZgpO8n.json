@@ -1,0 +1,34 @@
+{
+  "_id": "QF3rSwcBjiZgpO8n",
+  "_key": "!items!QF3rSwcBjiZgpO8n",
+  "name": "Pike",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "s, v, 2H, L",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "s, v, 2H, L",
+    "damage": "1d10",
+    "range": 0,
+    "ranges": "-",
+    "cost": 3,
+    "weight": 80,
+    "weaponType": "melee",
+    "hands": 2,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "s, v, 2H, L"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

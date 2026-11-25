@@ -1,0 +1,48 @@
+{
+  "_id": "WMCmiERRHjx7eL2p",
+  "_key": "!actors!WMCmiERRHjx7eL2p",
+  "name": "Adaptor",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "8",
+    "hp": 8,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 (sword) or see below",
+    "damage": "1d8 + 4 /1d8 + 4 or see below",
+    "appearing": "1d6(ldl2)",
+    "saveAs": "F8",
+    "morale": 10,
+    "treasure": "V",
+    "intelligence": 13,
+    "alignment": "Any",
+    "xpValue": 1200,
+    "terrain": "Open, Light Woods.",
+    "monsterType": "",
+    "description": "young flee while the males protect them. are known by a name which sounds like 9 \"haoou.\" They are only encountered on the 8* (M) Prime Plane when conjured by a cleric (see the 120' (40') clerical spell aerial servant). They don't care to 2 (sword) or see below be summoned for this slave labor; they do not 1d8 + 4 /1d8 + 4 or see below deliberately or maliciously misinterpret their 1d6(ldl2) summoners' orders, but they are hateful eneF8 mies of humans who visit the plane of Air.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 8,
+        "max": 8
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Adaptor"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

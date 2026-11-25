@@ -1,0 +1,31 @@
+{
+  "_id": "ivUJg1Sun-UzCCr4",
+  "_key": "!items!ivUJg1Sun-UzCCr4",
+  "name": "Animate Dead",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "60'",
+    "duration": "Permanent",
+    "effect": "Creates zombies or skeletons",
+    "reversible": false,
+    "description": "This spell allows the caster to make animated, enchanted skeletons or zombies from normal skeletons or dead bodies within range. These animated undead creatures will obey the cleric until they are destroyed by another cleric or a dispel magic spell. For each experience level of the cleric, he may animate one Hit Die of undead. A skeleton has the same Hit Dice as the original creature, but a zombie has one Hit Die more than the original. Note that this doesn't count character experience levels as Hit Dice: For purposes of this spell, all humans and demihumans are 1 HD creatures, so the remains of a 9th level thief would be animated as a zombie with 2 HD.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

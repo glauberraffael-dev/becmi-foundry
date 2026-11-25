@@ -1,0 +1,30 @@
+{
+  "_id": "q8kDXdITdvjNenNk",
+  "_key": "!items!q8kDXdITdvjNenNk",
+  "name": "Locate",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "6 turns",
+    "effect": "Detects 1 animal or plant within 120'",
+    "reversible": false,
+    "description": "This spell allows the druid to sense the direction of one known normal animal or plant. The druid can locate (similar to the locate object spell) any normal or giant-sized animal, but not fantastic creatures, plant monsters, nor any intelligent creature or plant. He must name the exact type of animal or plant, but does not need to see the specific one he wishes to locate. The animal or plant gets no saving throw. (This spell is most often used to find special rare plants.)",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

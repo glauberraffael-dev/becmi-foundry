@@ -1,0 +1,48 @@
+{
+  "_id": "Hm5YUMejmkxrBcYM",
+  "_key": "!actors!Hm5YUMejmkxrBcYM",
+  "name": "Berserker",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1+1",
+    "hp": 11,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "1d6 (3d10)",
+    "saveAs": "F1",
+    "morale": 12,
+    "treasure": "(P) B",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 19,
+    "terrain": "Any.",
+    "monsterType": "Human (Rare).",
+    "description": "Armor Class: 7 Hit Dice: 1 + 1*(M) Move: 120' (40') Attacks: 1 weapon Damage: By weapon No. Appearing: 1d6 (3d10) Save As: Fl Morale: 12 Treasure Type: (P) B Intelligence: 9 Alignment: Neutral XP Value: 19 Monster Type: Human (Rare). Berserkers are fighters who go mad in battle. Most belong to barbarian cultures—typically, northern seagoing cultures.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 11,
+        "max": 11
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Berserker"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

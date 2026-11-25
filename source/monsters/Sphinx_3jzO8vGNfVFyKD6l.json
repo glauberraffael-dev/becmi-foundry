@@ -1,0 +1,48 @@
+{
+  "_id": "3jzO8vGNfVFyKD6l",
+  "_key": "!actors!3jzO8vGNfVFyKD6l",
+  "name": "Sphinx",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12",
+    "hp": 12,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "3d6/3d6/2d8",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F24",
+    "morale": 10,
+    "treasure": "E",
+    "intelligence": 13,
+    "alignment": "Any",
+    "xpValue": 5625,
+    "terrain": "Any; especially Desert. _Load:_ 6,000 cn at full speed; 12,000 cn at half speed.",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 0 Hit Dice: 12* (L) Move: 180' (60') Flying: 360' (120') Attacks: 2 claws/1 bite Damage: 3d6/3d6/2d8 No. Appearing: 1d2 (1d4) Save As: F24 Morale: 10 Treasure Type: E Intelligence: 13 Alignment: Any XP Value: 5,625 Monster Type: Monster (Rare). A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 12,
+        "max": 12
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Sphinx"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "ncUDGz2S7fjEGwQe",
+  "_key": "!actors!ncUDGz2S7fjEGwQe",
+  "name": "Actaeon (Elk Centaur)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "11",
+    "hp": 11,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 spears/1 antler or breath (special)",
+    "damage": "1d6 + 6/1d6 + 6/2d8",
+    "appearing": "0(1)",
+    "saveAs": "C11",
+    "morale": 10,
+    "treasure": "B",
+    "intelligence": 12,
+    "alignment": "Neutral",
+    "xpValue": 2700,
+    "terrain": "Woods.",
+    "monsterType": "Monster (Rare).",
+    "description": "each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.). If the saving throw is successful, the transformation still occurs, but lasts for only 24 hours. Armor Class: 3 Hit Dice: 11 (L) Move: 150' (50') Attacks: 2 spears/1 antler or breath (special) Damage: ld6 + 6/ld6 + 6/2d8 No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 11,
+        "max": 11
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Actaeon (Elk Centaur)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

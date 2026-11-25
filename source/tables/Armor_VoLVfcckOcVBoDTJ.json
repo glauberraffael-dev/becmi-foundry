@@ -1,0 +1,103 @@
+{
+  "_id": "VoLVfcckOcVBoDTJ",
+  "_key": "!tables!VoLVfcckOcVBoDTJ",
+  "name": "Armor",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "9F0u6-73owAYSN41",
+      "type": "text",
+      "text": "Shield: AC -1, 10 gp, 100 cn",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.9F0u6-73owAYSN41"
+    },
+    {
+      "_id": "6s_Cz-7SO18oQV48",
+      "type": "text",
+      "text": "Leather Armor: AC 7, 20 gp, 200 cn; druid/thief allowed with conditions",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.6s_Cz-7SO18oQV48"
+    },
+    {
+      "_id": "2qIggBlnV7jm3VwY",
+      "type": "text",
+      "text": "Scale Mail: AC 6, 30 gp, 300 cn",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.2qIggBlnV7jm3VwY"
+    },
+    {
+      "_id": "PeXchjWTfo04RSL0",
+      "type": "text",
+      "text": "Chain Mail: AC 5, 40 gp, 400 cn",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.PeXchjWTfo04RSL0"
+    },
+    {
+      "_id": "F0SbwL5OTx860RpR",
+      "type": "text",
+      "text": "Banded Mail: AC 4, 50 gp, 450 cn",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.F0SbwL5OTx860RpR"
+    },
+    {
+      "_id": "mTNqdP6olOmixpo1",
+      "type": "text",
+      "text": "Plate Mail: AC 3, 60 gp, 500 cn",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.mTNqdP6olOmixpo1"
+    },
+    {
+      "_id": "7bOdU8rct7PKNeMa",
+      "type": "text",
+      "text": "Suit Armor: AC 0, 250 gp, 750 cn; -5 to missile attacks",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!VoLVfcckOcVBoDTJ.7bOdU8rct7PKNeMa"
+    }
+  ],
+  "formula": "1d7"
+}

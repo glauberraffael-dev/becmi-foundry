@@ -1,0 +1,48 @@
+{
+  "_id": "0gK-s7ZOyVn7Mume",
+  "_key": "!actors!0gK-s7ZOyVn7Mume",
+  "name": "Elemental (Earth,)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12",
+    "hp": 12,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "",
+    "damage": "",
+    "appearing": "",
+    "saveAs": "",
+    "morale": 7,
+    "treasure": "",
+    "intelligence": 5,
+    "alignment": "Neutral",
+    "xpValue": 0,
+    "terrain": "Any.",
+    "monsterType": "Planar Monster, Enchanted (Common).",
+    "description": "Air, Earth, Fire, Water Armor Class: 2, 0, or -2 (see below) Hit Dice: 8, 12, or 16 (see below) (L) Move: Air (Flying): 360'(120') Earth: 60 '1(20') Fire: 120' (40') Water: 60' (20') Swimming: 180' (60') Attacks: 1 or Special Damage: ld8, 2d8, or 3d8 (see below) No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 12,
+        "max": 12
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Elemental (Earth,)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

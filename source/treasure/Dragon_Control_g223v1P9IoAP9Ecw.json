@@ -1,0 +1,27 @@
+{
+  "_id": "g223v1P9IoAP9Ecw",
+  "_key": "!items!g223v1P9IoAP9Ecw",
+  "name": "Dragon Control",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "There are several different types of this potion, one corresponding to each dragon type. The user may control up to three small dragons at once, but the dragons do get saving throws. Large and huge dragons are not affected by these potions. The controlled dragons will do whatever is commanded of them except cast spells. They will be hostile when the control ends. Roll 1d20 to find the type of dragons affected.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

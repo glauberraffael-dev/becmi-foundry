@@ -1,0 +1,30 @@
+{
+  "_id": "H85iVLt8d3_fm_6K",
+  "_key": "!items!H85iVLt8d3_fm_6K",
+  "name": "Metal to Wood",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "120'",
+    "duration": "Permanent",
+    "effect": "Changes metal into dead wood",
+    "reversible": false,
+    "description": "This spell can be used to change any metal item or items into wood. The spell can transmute five pounds (50 cn weight) per level of the caster. Any magical metal item is 90% resistant to the magic. The effect is permanent, and the affected metal cannot be changed back with a dispel magic spell. Any armor changed to wood falls off the wearer and any weapons affected turn to nonmagical wooden clubs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

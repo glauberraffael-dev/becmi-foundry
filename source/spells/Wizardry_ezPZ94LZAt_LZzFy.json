@@ -1,0 +1,30 @@
+{
+  "_id": "ezPZ94LZAt_LZzFy",
+  "_key": "!items!ezPZ94LZAt_LZzFy",
+  "name": "Wizardry",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (cleric only)",
+    "duration": "One turn",
+    "effect": "Allows the use of one magic-user device or scroll spell",
+    "reversible": false,
+    "description": "The cleric using this spell gains the power to use one item normally restricted to magic-users: either a device (such as a wand) or a scroll containing a 1st or 2nd level magic-user spell. (The cleric cannot cast spells of 3rd or higher level, even though they may be present on the scroll.) This ability lasts for one turn, or until the scroll or device is used. The cleric magically gains knowledge of the proper use of the item, as if the character were a magic-user. For the duration and effect of the magic-user spell, the caster is treated as the minimum level necessary to cast the spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

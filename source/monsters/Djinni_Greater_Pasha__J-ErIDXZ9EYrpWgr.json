@@ -1,0 +1,48 @@
+{
+  "_id": "J-ErIDXZ9EYrpWgr",
+  "_key": "!actors!J-ErIDXZ9EYrpWgr",
+  "name": "Djinni (Greater; Pasha)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "15",
+    "hp": 15,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 fists or 1 whirlwind",
+    "damage": "3d10/3d10 or 3d12 + special",
+    "appearing": "1 (1)",
+    "saveAs": "M30",
+    "morale": 11,
+    "treasure": "Nil",
+    "intelligence": 14,
+    "alignment": "Chaotic",
+    "xpValue": 4800,
+    "terrain": "",
+    "monsterType": "Planar Monster, Enchanted (Very Rare).",
+    "description": "Armor Class: -2 Hit Dice: 15* (L) Move: 120' (40') Flying: 360' (120') Attacks: 2 fists or 1 whirlwind Damage: 3d10/3d10 or 3d12 + special No. Appearing: 1 (1) Save As: M30 Morale: 11 Treasure Type: Nil Intelligence: 14 Alignment: Chaotic XP Value: 4,800 Monster Type: Planar Monster, Enchanted (Very Rare). In the elemental plane of Air, the rulers of the djinn are known as pashas. They appear as very large normal djinn. A pasha cannot be affected by normal weapons, or even by weapons of less than +2 enchantment.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 15,
+        "max": 15
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Djinni (Greater; Pasha)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

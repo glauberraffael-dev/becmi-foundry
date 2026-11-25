@@ -1,0 +1,30 @@
+{
+  "_id": "8Udpn5qHYiYXknmF",
+  "_key": "!items!8Udpn5qHYiYXknmF",
+  "name": "Timestop",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (caster only)",
+    "duration": "2-5 rounds",
+    "effect": "Allows caster to act for 1d4 + l (2-5) rounds while everything else \"stops\" To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds.",
+    "reversible": false,
+    "description": "To the caster, this spell seems to stop time. It speeds the caster so greatly that all other creatures seem frozen at their Normal Speeds, in \"normal time.\" From the caster's point of view, the effect lasts for 1d4 + 1 (2-5) rounds. The caster may perform one action during each of these magical rounds. Normal and magical fire, cold, gas, etc. can still harm the caster. While the timestop is in effect, however, other creatures are invulnerable to the caster's attacks and spells. Spells with durations other than \"instantaneous\" may be created and left to take effect when time resumes.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

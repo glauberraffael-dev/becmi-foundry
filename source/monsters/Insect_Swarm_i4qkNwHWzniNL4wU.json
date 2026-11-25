@@ -1,0 +1,48 @@
+{
+  "_id": "i4qkNwHWzniNL4wU",
+  "_key": "!actors!i4qkNwHWzniNL4wU",
+  "name": "Insect Swarm",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 30,
+      "outdoor": 10
+    },
+    "attacks": "1 area effect",
+    "damage": "See below",
+    "appearing": "1 swarm (1d3 swarms)",
+    "saveAs": "Normal Man",
+    "morale": 11,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 25,
+    "terrain": "Plane of Earth.",
+    "monsterType": "Planar Monster (Very Rare). The kryst are intelligent beings made of crystalline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the elemental plane of Earth.",
+    "description": "An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Insect Swarm"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

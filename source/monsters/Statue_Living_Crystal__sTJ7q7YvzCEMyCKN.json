@@ -1,0 +1,48 @@
+{
+  "_id": "sTJ7q7YvzCEMyCKN",
+  "_key": "!actors!sTJ7q7YvzCEMyCKN",
+  "name": "Statue, Living (Crystal)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2",
+    "damage": "1d6/1d6",
+    "appearing": "1d6 (1d6)",
+    "saveAs": "F3",
+    "morale": 11,
+    "treasure": "Nil",
+    "intelligence": 7,
+    "alignment": "Lawful",
+    "xpValue": 35,
+    "terrain": "Any (especially Ruins).",
+    "monsterType": "Construct, Enchanted (Common).",
+    "description": "||Crystal|Iron|Rock| |---|---|---|---| |Armor Class:|4|2|4| |Hit Dice:|3 (M)|4*(L)|5*(L)| |Move:|90' (30')|30'(10')|60'(20')| |Attacks:|2|2|2| |Damage:|1d6/ld6|1d8/ 1d8 + special|2d6/2d6| |No. Appearing|1d6 (1d6)|1d4 (1d4)|1d3(ld3)| |Save As:|F3|F4|F5| |Morale:|11|11|11| |Treasure Type:|Nil|Nil|Nil| | Intelligence:|7|7|7| | Alignment:|Lawful|Neutral|Chaotic| | XP Value:|35|125|300| Iron: A living iron statue has a body that can absorb iron and steel.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "_Crystal_",
+      "key": "Statue, Living (Crystal)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

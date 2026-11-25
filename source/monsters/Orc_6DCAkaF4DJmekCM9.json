@@ -1,0 +1,48 @@
+{
+  "_id": "6DCAkaF4DJmekCM9",
+  "_key": "!actors!6DCAkaF4DJmekCM9",
+  "name": "Orc",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "2d4(1d6 x 10)",
+    "saveAs": "F1",
+    "morale": 86,
+    "treasure": "(P)D",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 10,
+    "terrain": "Wilderness (any).",
+    "monsterType": "Humanoid (Common).",
+    "description": "Armor Class: 6 Hit Dice: 1(M) Move: 120' (40') Attacks: 1 weapon Damage: By weapon No. Appearing: 2d4(ld6 x 10) Save As: F1 Morale: 8 or 6 (see below) Treasure Type: (P)D Intelligence: 7 Alignment: Chaotic XP Value: 10 6 with 8 hit points who gains a +1 bonus on dam1(M) age rolls. If this leader is killed, the morale of the 120' (40') group becomes 6 instead of 8. Orcs are afraid of 1 weapon anything larger or stronger than they are, but By weapon may be forced to fight by their leaders.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Orc"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

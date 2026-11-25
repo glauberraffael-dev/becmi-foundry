@@ -1,0 +1,30 @@
+{
+  "_id": "N2LroXkLlOeppFnT",
+  "_key": "!items!N2LroXkLlOeppFnT",
+  "name": "Passwall",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "3 turns",
+    "effect": "Creates a hole 10' deep",
+    "reversible": false,
+    "description": "This spell causes a hole 5' diameter, 10' deep to appear in solid rock or stone only. The hole may be horizontal or vertical. The stone reappears at the end of the duration. If someone is still in the tunnel when the stone reappears, he gets a saving throw vs. turn to stone. If he succeeds, he is hurled out the nearest end of the tunnel. If he fails, he is trapped within the reappearing stone, and dies.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

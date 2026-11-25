@@ -1,0 +1,30 @@
+{
+  "_id": "2KJt1cSxMAdMPFd1",
+  "_key": "!items!2KJt1cSxMAdMPFd1",
+  "name": "Know Alignment",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (Cleric only)",
+    "duration": "1 round",
+    "effect": "One creature within 10' to find the alignment of an enchanted item or area (if any).",
+    "reversible": false,
+    "description": "to find the alignment of an enchanted item or area (if any). The reverse of the spell, confuse alignment, lasts for one turn per level of the caster, and may be cast on any one creature, by touch. No saving throw is allowed. For as long as the spell lasts, a cleric trying to identify the alignment of the recipient by using the normal know alignment spell will get a false answer. That same false answer will be the result of any further attempts.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "RTyWKCJP98BXvoBY",
+  "_key": "!items!RTyWKCJP98BXvoBY",
+  "name": "Defense",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user gains a bonus to armor class, which lasts for 1 turn only. Roll 1d10 to find the power of the potion.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

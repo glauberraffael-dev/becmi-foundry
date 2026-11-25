@@ -1,0 +1,30 @@
+{
+  "_id": "yZEhs7sAT9sW_Y9o",
+  "_key": "!items!yZEhs7sAT9sW_Y9o",
+  "name": "Truesight",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (cleric only)",
+    "duration": "1 turn + 1 round per level of caster.",
+    "effect": "Reveals all things",
+    "reversible": false,
+    "description": "When he casts this spell, the cleric is able to see all things within 120'. The spell is quite powerful; the cleric can clearly see all hidden, invisible, and ethereal objects and creatures as with the magic-user detect invisible spell. In addition, any secret doors as well as things or creatures not in their true form—whether polymorphed, disguised, or otherwise—are seen as they truly are, with no possibility of deception. Alignment is also \"seen,\" as is experience and power.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

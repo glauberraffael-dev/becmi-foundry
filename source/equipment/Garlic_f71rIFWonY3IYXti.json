@@ -1,0 +1,25 @@
+{
+  "_id": "f71rIFWonY3IYXti",
+  "_key": "!items!f71rIFWonY3IYXti",
+  "name": "Garlic",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 5gp — 1",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 1,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

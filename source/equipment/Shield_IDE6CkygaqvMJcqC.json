@@ -1,0 +1,26 @@
+{
+  "_id": "IDE6CkygaqvMJcqC",
+  "_key": "!items!IDE6CkygaqvMJcqC",
+  "name": "Shield",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "D",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "D",
+    "ac": -1,
+    "cost": "10",
+    "weight": 100,
+    "armorType": "Shield"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "D"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

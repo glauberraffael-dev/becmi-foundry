@@ -1,0 +1,25 @@
+{
+  "_id": "qe3Z65hcsVCaKcLX",
+  "_key": "!items!qe3Z65hcsVCaKcLX",
+  "name": "Mirror",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Hand-sized, steel — 5gp — 5",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

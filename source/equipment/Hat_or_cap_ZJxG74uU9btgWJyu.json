@@ -1,0 +1,25 @@
+{
+  "_id": "ZJxG74uU9btgWJyu",
+  "_key": "!items!ZJxG74uU9btgWJyu",
+  "name": "Hat or cap",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 2sp — 3",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "2 sp",
+    "weight": 3,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

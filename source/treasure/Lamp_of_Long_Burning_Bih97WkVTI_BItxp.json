@@ -1,0 +1,27 @@
+{
+  "_id": "Bih97WkVTI_BItxp",
+  "_key": "!items!Bih97WkVTI_BItxp",
+  "name": "Lamp of Long Burning",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item is identical to a normal adventurer's lantern. It is made of metal, with a lower compartment for oil, a handle, and shutters around the body to protect the flame from wind. When filled with oil and lit as a normal lantern, it will burn and shed light without using oil. If the flame is ever doused by water, the lamp of long burning becomes nonmagical.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

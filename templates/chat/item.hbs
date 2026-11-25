@@ -1,0 +1,8 @@
+<div class="becmi-roll-card">
+  <h3 class="becmi-roll-card__title">{{item.name}}</h3>
+  <div class="becmi-roll-card__flavor">{{localize (concat 'BECMI.item.' item.type)}}</div>
+  {{#if system.range}}<div class="becmi-roll-card__detail"><strong>{{localize 'BECMI.labels.range'}}:</strong> {{system.range}}</div>{{/if}}
+  {{#if system.damage}}<div class="becmi-roll-card__detail"><strong>{{localize 'BECMI.labels.damage'}}:</strong> {{system.damage}}</div>{{/if}}
+  {{#if system.ac}}<div class="becmi-roll-card__detail"><strong>{{localize 'BECMI.labels.ac'}}:</strong> {{system.ac}}</div>{{/if}}
+  {{#if description}}<div class="becmi-roll-card__detail">{{{description}}}</div>{{/if}}
+</div>

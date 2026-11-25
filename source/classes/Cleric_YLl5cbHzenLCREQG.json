@@ -1,0 +1,65 @@
+{
+  "_id": "YLl5cbHzenLCREQG",
+  "_key": "!items!YLl5cbHzenLCREQG",
+  "name": "Cleric",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Wisdom",
+    "hitDice": "1d6",
+    "maxLevel": 36,
+    "requirements": "",
+    "xpTable": {
+      "1": 2,
+      "2": 1500,
+      "3": 3000,
+      "4": 6000,
+      "5": 12000,
+      "6": 25000,
+      "7": 50000,
+      "8": 100000,
+      "9": 200000,
+      "10": 300000,
+      "11": 400000,
+      "12": 500000,
+      "13": 600000,
+      "14": 700000,
+      "15": 800000,
+      "16": 900000,
+      "17": 1000000,
+      "18": 1100000,
+      "19": 1200000,
+      "20": 1300000,
+      "21": 1400000,
+      "22": 1500000,
+      "23": 1600000,
+      "24": 1700000,
+      "25": 1800000,
+      "26": 1900000,
+      "27": 2000000,
+      "28": 2100000,
+      "29": 2200000,
+      "30": 2300000,
+      "31": 2400000,
+      "32": 2500000,
+      "33": 2600000,
+      "34": 2700000,
+      "35": 2800000,
+      "36": 2900000
+    },
+    "saves": {},
+    "description": "Experience Bonus: 5% for Wisdom 13-15, 10% for Wisdom 16-18. Demihuman characters are more limited than human characters. They can't rise to very high levels of experience (dwarves are limited to 12th level, elves to 10th, halflings to 8th). Elves cannot learn very powerful magic; they can only learn up to 5th level spells, while humans can learn up to 9th level spells. At Higher Experience Levels: Finally, this text describes special characteristics and responsibilities the character acquires when he reaches higher levels of experience. Hit Dice: 1d6 per level up to 9th level. Starting with 10th level, +1 hit point per level, and Constitution adjustments no longer apply.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 36
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

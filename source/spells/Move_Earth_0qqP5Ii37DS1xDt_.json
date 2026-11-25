@@ -1,0 +1,30 @@
+{
+  "_id": "0qqP5Ii37DS1xDt_",
+  "_key": "!items!0qqP5Ii37DS1xDt_",
+  "name": "Move Earth",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "6 turns",
+    "effect": "Moves soil",
+    "reversible": false,
+    "description": "This spell causes soil (but not rock) to move. The caster can use the spell to move earth horizontally to make a hill, or vertically, to open a large hole (one up to 240' deep, unless it reaches solid rock). The spell moves the soil at up to 60' per turn, and at the end of the spell duration, the moved soil remains where it is put. This spell is helpful for constructing castles.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "zkDTWhkAbWHIsG83",
+  "_key": "!items!zkDTWhkAbWHIsG83",
+  "name": "Medallion of ESP, 30' Range",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This magical medallion is strung on a chain and worn around the neck. If the wearer concentrates for 1 round, he may read the thoughts of any one creature within 30'. The wearer may move normally but cannot fight or cast spells while concentrating. The DM must roll 1d6 each time this item is used; it will not work properly on a roll of 1.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

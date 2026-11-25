@@ -1,0 +1,103 @@
+{
+  "_id": "8ZjHqD0PGDdvYQV4",
+  "_key": "!tables!8ZjHqD0PGDdvYQV4",
+  "name": "Barding",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "1CQJoeEhceXqK02V",
+      "type": "text",
+      "text": "Leather: AC 7, 40 gp, 250 cn",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.1CQJoeEhceXqK02V"
+    },
+    {
+      "_id": "EqKzV9OG6Gw6nOXm",
+      "type": "text",
+      "text": "Scale: AC 6, 75 gp, 400 cn",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.EqKzV9OG6Gw6nOXm"
+    },
+    {
+      "_id": "AyqMwfYcFNFAhP5f",
+      "type": "text",
+      "text": "Chain: AC 5, 150 gp, 600 cn",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.AyqMwfYcFNFAhP5f"
+    },
+    {
+      "_id": "n3fZA0bpx_CEMQNA",
+      "type": "text",
+      "text": "Banded: AC 4, 400 gp, 1,500 cn",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.n3fZA0bpx_CEMQNA"
+    },
+    {
+      "_id": "0pBULah1NcDOAQeZ",
+      "type": "text",
+      "text": "Plate: AC 3, 500 gp, 3,000 cn",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.0pBULah1NcDOAQeZ"
+    },
+    {
+      "_id": "ZaQizzh4MEQFmssV",
+      "type": "text",
+      "text": "Field: AC 2, 600 gp, 4,000 cn",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.ZaQizzh4MEQFmssV"
+    },
+    {
+      "_id": "fFRpOnlQJSmLZtP3",
+      "type": "text",
+      "text": "Joust: AC 0, 700 gp, 5,000 cn",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8ZjHqD0PGDdvYQV4.fFRpOnlQJSmLZtP3"
+    }
+  ],
+  "formula": "1d7"
+}

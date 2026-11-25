@@ -1,0 +1,27 @@
+{
+  "_id": "OyziTLL3O6g-jAR-",
+  "_key": "!journal!OyziTLL3O6g-jAR-",
+  "name": "Chapter 4: Equipment",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 4
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Weapons, armor, adventuring gear, transportation and siege equipment with costs and encumbrance.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 4. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "O6U0mzRrOWO6EUZj",
+      "_key": "!journal.pages!OyziTLL3O6g-jAR-.O6U0mzRrOWO6EUZj"
+    }
+  ]
+}

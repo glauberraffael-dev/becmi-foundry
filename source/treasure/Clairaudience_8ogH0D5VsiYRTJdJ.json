@@ -1,0 +1,27 @@
+{
+  "_id": "8ogH0D5VsiYRTJdJ",
+  "_key": "!items!8ogH0D5VsiYRTJdJ",
+  "name": "Clairaudience",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user may listen to noises (including speech) in an area up to 60' away through the ears of a creature in that area.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

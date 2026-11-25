@@ -1,0 +1,34 @@
+{
+  "_id": "HjXsYozSG_ebfhts",
+  "_key": "!items!HjXsYozSG_ebfhts",
+  "name": "Bow, Long",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "a, m, 2H, L",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "a, m, 2H, L",
+    "damage": "1d6",
+    "range": 70,
+    "ranges": "70/140/210",
+    "cost": 40,
+    "weight": 30,
+    "weaponType": "missile",
+    "hands": 2,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "dex"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "a, m, 2H, L"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

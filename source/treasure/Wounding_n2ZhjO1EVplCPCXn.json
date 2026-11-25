@@ -1,0 +1,27 @@
+{
+  "_id": "n2ZhjO1EVplCPCXn",
+  "_key": "!items!n2ZhjO1EVplCPCXn",
+  "name": "Wounding",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Missile Talent Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "When a missile with the wounding talent strikes a target creature, it inflicts normal damage. In addition, however, it causes the loss of 1 hit point per round thereafter until magical curing is applied (a potion, cure spell of",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Missile Talent Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Missile Talent Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

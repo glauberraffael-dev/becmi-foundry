@@ -1,0 +1,48 @@
+{
+  "_id": "kOZqhEzTSgCnflRN",
+  "_key": "!actors!kOZqhEzTSgCnflRN",
+  "name": "Pterosaur ((Pterosaur))",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "240",
+    "hp": 240,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "1 beak 1 beak 1 beak",
+    "damage": "1d3 1d2 3d6",
+    "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
+    "saveAs": "F1 F3 F5",
+    "morale": 7,
+    "treasure": "Nil Nil Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 10,
+    "terrain": "Ethereal Plane, Wormholes (only).",
+    "monsterType": "Prehistoric Animal (Very Rare).",
+    "description": "Small Medium Large (Pterodactyl) (Pteranodon) (Pterosaur) Armor Class: 7 6 5 Hit Dice: 1 (S) 5(M) 10 (L) Move (Flying): 180' (60') 240' (120') 180' (60') Attacks: 1 beak 1 beak 1 beak Damage: 1d3 1dl2 3d6 No. Appearing: 2d4 (2d4) 0(1d4) 0(ld2) Save As: Fl F3 F5 Morale: 7 8 9 Treasure Type: Nil Nil Nil Intelligence: 2 2 2 Alignment: Neutral Neutral Neutral XP Value: 10 175 1,000 Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 240,
+        "max": 240
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Pterosaur ((Pterosaur))"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

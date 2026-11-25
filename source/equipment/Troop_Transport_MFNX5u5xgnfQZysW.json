@@ -1,0 +1,25 @@
+{
+  "_id": "MFNX5u5xgnfQZysW",
+  "_key": "!items!MFNX5u5xgnfQZysW",
+  "name": "Troop Transport",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "30,000 —  — **20** — 100 — 600,000 — 60 — 90 — 160-220 — **7**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 7,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

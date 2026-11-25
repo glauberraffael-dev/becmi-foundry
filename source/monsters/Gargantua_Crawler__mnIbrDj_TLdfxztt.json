@@ -1,0 +1,48 @@
+{
+  "_id": "mnIbrDj_TLdfxztt",
+  "_key": "!actors!mnIbrDj_TLdfxztt",
+  "name": "Gargantua (Crawler)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "32",
+    "hp": 32,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "8 4 3",
+    "damage": "1d4 + 1 each 4d3/4d3/ 4d6/4d6/ + Paralysis 4d6/4d4 4d10",
+    "appearing": "1(1) 1(1) 1(1)",
+    "saveAs": "F13 F32 F36",
+    "morale": 11,
+    "treasure": "B x 4 C X 4 D x 4",
+    "intelligence": 5,
+    "alignment": "Chaotic",
+    "xpValue": 500,
+    "terrain": "Same as the original species. _Load:_ Eight times normal.",
+    "monsterType": "Gargantua Carrion Crawler: Lowlife (Very Rare); Gargantua Gargoyle: Construct, Enchanted (Very Rare); Gargantua Troll: Giant Humanoid (Very Rare).",
+    "description": "Carrion Crawler Gargoyle* Troll Armor Class: 3 4 Hit Dice: 25* (L) 32* (L) 51(L) Move: . 240' (80') 180' (60') 240' (80') — Flying: 300' (100') Attacks: 8 4 3 Damage: 1d4 +l each 4d3/4d3/ 4d6/4d6/ + Paralysis 4d6/4d4 4d10 No. Appearing: 1(1) 1(1) 1(1) Save As: F13 F32 F36 Morale: 11 11(9) Treasure Type: B x 4 C X 4 D x 4 Intelligence: 0 5 6 Alignment: Neutral Chaotic Chaotic XP Value: 6,500 10,000 29,000 These monsters are extremely rare, the products of the mad wizard Gargantua.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gargantua (Crawler)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

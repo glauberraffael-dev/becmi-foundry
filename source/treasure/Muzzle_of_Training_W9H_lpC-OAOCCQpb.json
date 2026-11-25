@@ -1,0 +1,27 @@
+{
+  "_id": "W9H_lpC-OAOCCQpb",
+  "_key": "!items!W9H_lpC-OAOCCQpb",
+  "name": "Muzzle of Training",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item is a device of leather straps with metal buckles and may be fastened over the mouth of any animal or monster that has a bite attack. It will magically expand or contract to fit the creature, and the victim can breathe but cannot bite (or talk) while wearing the muzzle.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

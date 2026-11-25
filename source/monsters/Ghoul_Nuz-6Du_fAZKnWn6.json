@@ -1,0 +1,48 @@
+{
+  "_id": "Nuz-6Du_fAZKnWn6",
+  "_key": "!actors!Nuz-6Du_fAZKnWn6",
+  "name": "Ghoul",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d3/1d3/1d3 + special",
+    "appearing": "1d6 (2d8)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "B",
+    "intelligence": 3,
+    "alignment": "Chaotic",
+    "xpValue": 25,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Monster (Common).",
+    "description": "Armor Class: 6 Hit Dice: 2* (M) Move: 90' (30') Attacks: 2 claws/1 bite Damage: 1d3/ld3/ld3 + special No. Appearing: 1d6 (2d8) Save As: F2 Morale: 9 Treasure Type: B Intelligence: 3 Alignment: Chaotic XP Value: 25 Monster Type: Monster (Common). This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ghoul"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

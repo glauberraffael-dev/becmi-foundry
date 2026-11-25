@@ -1,0 +1,65 @@
+{
+  "_id": "maVvR4YGfW4fy-Dy",
+  "_key": "!items!maVvR4YGfW4fy-Dy",
+  "name": "Fighter",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Strength",
+    "hitDice": "1d8",
+    "maxLevel": 36,
+    "requirements": "",
+    "xpTable": {
+      "1": 0,
+      "2": 2000,
+      "3": 4000,
+      "4": 8000,
+      "5": 16000,
+      "6": 32000,
+      "7": 64000,
+      "8": 120000,
+      "9": 240000,
+      "10": 360000,
+      "11": 480000,
+      "12": 600000,
+      "13": 720000,
+      "14": 840000,
+      "15": 960000,
+      "16": 1080000,
+      "17": 1200000,
+      "18": 1320000,
+      "19": 1440000,
+      "20": 1560000,
+      "21": 1680000,
+      "22": 1800000,
+      "23": 1920000,
+      "24": 2040000,
+      "25": 2160000,
+      "26": 2280000,
+      "27": 2400000,
+      "28": 2520000,
+      "29": 2640000,
+      "30": 2760000,
+      "31": 2880000,
+      "32": 3000000,
+      "33": 3120000,
+      "34": 3240000,
+      "35": 3360000,
+      "36": 3480000
+    },
+    "saves": {},
+    "description": "A cleric who travels to the wilderness usually searches for enemies of the clerical order, to convert or destroy. This cleric normally travels with other characters as an adventuring party (though the others may all be NPCs). Prime Requisite: A fighter's prime requisite is Strength. If a fighter has a Strength score of 1315 or more, the character gains a 5% bonus to experience points earned in every adventure; if his Strength is 16-18, his bonus is 10%. Hit Dice: Roll an 8-sided die (1d8) to determine a fighter's hit points. A fighter starts with 1d8 (1-8) hit points (plus Constitution bonus, if any) and gains 1d8 more hit points (plus bonus) with each level of experience.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 36
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

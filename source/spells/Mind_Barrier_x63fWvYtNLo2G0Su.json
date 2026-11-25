@@ -1,0 +1,30 @@
+{
+  "_id": "x63fWvYtNLo2G0Su",
+  "_key": "!items!x63fWvYtNLo2G0Su",
+  "name": "Mind Barrier",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "1 hour per level of the caster",
+    "effect": "Protects against mind-affecting spells and items",
+    "reversible": false,
+    "description": "Duration: 1 hour per level of the caster Effect: Protects against mind-affecting spells and items This spell affects one creature; an unwilling recipient may make a saving throw vs. spells to avoid the effect. The spell prevents any form of ESP, clairvoyance, clairaudience, crystal ball gazing, or any other form of mental influence or information gathering (such as by a contact higher plane or summon object) from working on the target creature. The caster or recipient simply does not exist for the purposes of those and similar spell effects for the duration of the mind barrier spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "1jQvS6kCIVRMoyTi",
+  "_key": "!journal!1jQvS6kCIVRMoyTi",
+  "name": "Chapter 15: Immortals",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 15
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Immortal spheres, statistics and the paths by which mortals may become immortals.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 15. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "ReQzbze_fqOUmgop",
+      "_key": "!journal.pages!1jQvS6kCIVRMoyTi.ReQzbze_fqOUmgop"
+    }
+  ]
+}

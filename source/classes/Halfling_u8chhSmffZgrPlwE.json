@@ -1,0 +1,37 @@
+{
+  "_id": "u8chhSmffZgrPlwE",
+  "_key": "!items!u8chhSmffZgrPlwE",
+  "name": "Halfling",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Strength and Dexterity",
+    "hitDice": "1d6",
+    "maxLevel": 8,
+    "requirements": "Dexterity and Constitution 9+",
+    "xpTable": {
+      "1": 0,
+      "2": 2000,
+      "3": 4000,
+      "4": 8000,
+      "5": 16000,
+      "6": 32000,
+      "7": 64000,
+      "8": 120000
+    },
+    "saves": {},
+    "description": "Prime Requisite: Strength and Dexterity. Other Requirements: Dexterity of 9 or better, Constitution of 9 or better. Experience Bonus: 5% for either Strength or Dexterity of 13 or more, 10% for both Strength and Dexterity of 13 or more. Hit Dice: 1d6 per level up to 8th level. Maximum Level: 8. Armor: Any; shield is permitted; armor must be designed specifically for halflings. Weapons: Any Small melee weapon; short bow; light crossbow. Special Abilities: Fighter Maneuver (Set Spear vs. Charge); at 900,000 XP, Fighter Combat Options); Combat Bonuses (- 2 AC vs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 8
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "jkn6oH-jDGkRoGWk",
+  "_key": "!actors!jkn6oH-jDGkRoGWk",
+  "name": "Blackball (Deadly Sphere)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 30,
+      "outdoor": 10
+    },
+    "attacks": "1 touch",
+    "damage": "Disintegration",
+    "appearing": "1 (1)",
+    "saveAs": "See below",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "None (see below)",
+    "xpValue": 7500,
+    "terrain": "Any.",
+    "monsterType": "Planar Monster (Very Rare).",
+    "description": "Armor Class: 9 Hit Dice: None (see below) (M) Move: 30' (10') Attacks: 1 touch Damage: Disintegration No. Appearing: 1 (1) Save As: See below Morale: 12 Treasure Type: Nil Intelligence: 0 Alignment: None (see below) XP Value: 7,500 Monster Type: Planar Monster (Very Rare). It is not known what these curious beings are, or even if they are living creatures. A blackball (or \"deadly sphere\") is simply a featureless black globe, 5' in diameter. It moves slowly but usually randomly.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Blackball (Deadly Sphere)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

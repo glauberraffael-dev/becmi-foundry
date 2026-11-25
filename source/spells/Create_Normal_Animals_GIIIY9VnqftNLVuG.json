@@ -1,0 +1,30 @@
+{
+  "_id": "GIIIY9VnqftNLVuG",
+  "_key": "!items!GIIIY9VnqftNLVuG",
+  "name": "Create Normal Animals",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "30'",
+    "duration": "10 turns",
+    "effect": "Creates 1-6 loyal animals",
+    "reversible": false,
+    "description": "The cleric is able to create normal animals from thin air with this spell. The animals will appear at a point chosen (within 30'), but may thereafter be sent (by command) up to 240' away, if desired. The animals created will understand and obey the cleric at all times. They will fight if so commanded, and will perform other actions (carrying, watching, etc.) to the best of their abilities. They are normal animals, and may attack others unless their instructions are carefully worded. The cleric may choose the number of animals created, but not the exact type; the DM should decide, or even randomly determine, what sort of animals appear.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

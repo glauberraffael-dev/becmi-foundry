@@ -1,0 +1,25 @@
+{
+  "_id": "w5F7-_9MzqhuFMik",
+  "_key": "!items!w5F7-_9MzqhuFMik",
+  "name": "Ladder",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "1 gp/10' height — 30' tall — 900 — 4 — 0 — 3",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "1 gp",
+    "weight": 3,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

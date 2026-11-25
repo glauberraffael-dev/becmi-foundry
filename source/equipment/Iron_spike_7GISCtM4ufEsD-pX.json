@@ -1,0 +1,25 @@
+{
+  "_id": "7GISCtM4ufEsD-pX",
+  "_key": "!items!7GISCtM4ufEsD-pX",
+  "name": "Iron spike",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "One spike — 1 sp — 5",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 sp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

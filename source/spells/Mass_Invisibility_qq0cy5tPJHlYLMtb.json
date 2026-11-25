@@ -1,0 +1,30 @@
+{
+  "_id": "qq0cy5tPJHlYLMtb",
+  "_key": "!items!qq0cy5tPJHlYLMtb",
+  "name": "Mass Invisibility",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "Permanent until broken",
+    "effect": "Creatures or objects in 60' square area",
+    "reversible": false,
+    "description": "This bestows invisibility (as the 2nd level spell) on several creatures. All the recipients must be within an area 60' square within 240' of the magic-user. The spell will affect up to 6 dragon-sized creatures, or up to 300 man-sized creatures. After the spell is cast, each creature becomes invisible, along with all equipment it carries (as per the invisibility spell, above). An invisible creature will remain invisible until he or she attacks or casts any spell. The reverse of this spell, (appear), will cause all invisible creatures and objects in a 20' x 20' x 20' volume to become visible.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

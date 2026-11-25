@@ -1,0 +1,151 @@
+{
+  "_id": "CHlIr-PLqweNLzA2",
+  "_key": "!tables!CHlIr-PLqweNLzA2",
+  "name": "Monster Reactions (2d6)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "WsWL7rhdl6XTmrR4",
+      "type": "text",
+      "text": "Hostile, attacks immediately",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.WsWL7rhdl6XTmrR4"
+    },
+    {
+      "_id": "6s0-rAbNYLAICn39",
+      "type": "text",
+      "text": "Hostile, attacks immediately",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.6s0-rAbNYLAICn39"
+    },
+    {
+      "_id": "xsNLG896JVxoFV6p",
+      "type": "text",
+      "text": "Hostile, may attack",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.xsNLG896JVxoFV6p"
+    },
+    {
+      "_id": "n50HxkJdk23LWw-x",
+      "type": "text",
+      "text": "Hostile, may attack",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.n50HxkJdk23LWw-x"
+    },
+    {
+      "_id": "XXRAUmU9ADVGF22r",
+      "type": "text",
+      "text": "Neutral, uncertain",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.XXRAUmU9ADVGF22r"
+    },
+    {
+      "_id": "IPoQCe0cqnLnnES7",
+      "type": "text",
+      "text": "Neutral, uncertain",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.IPoQCe0cqnLnnES7"
+    },
+    {
+      "_id": "6En538rovOGb_AdF",
+      "type": "text",
+      "text": "No attack, may parley",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.6En538rovOGb_AdF"
+    },
+    {
+      "_id": "ymaGMT4yIxVPiJ2u",
+      "type": "text",
+      "text": "No attack, may parley",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.ymaGMT4yIxVPiJ2u"
+    },
+    {
+      "_id": "KLRJ_mGIUTf-Rx9t",
+      "type": "text",
+      "text": "Friendly, helpful",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.KLRJ_mGIUTf-Rx9t"
+    },
+    {
+      "_id": "ncG2JYznQwyesmyT",
+      "type": "text",
+      "text": "Friendly, helpful",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.ncG2JYznQwyesmyT"
+    },
+    {
+      "_id": "w-8niWeHnoBLHlqr",
+      "type": "text",
+      "text": "Friendly, enthusiastic",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!CHlIr-PLqweNLzA2.w-8niWeHnoBLHlqr"
+    }
+  ],
+  "formula": "2d6"
+}

@@ -1,0 +1,674 @@
+[
+  {
+    "name": "Animal Control",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user may control up to 3d6 Hit Dice of animals (normal or giant, but not fantastic or magical). When the control ends, the animals will be afraid and will leave the area if they can.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Antidote",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user becomes completely immune to certain poisons and gains a + 2 bonus to all saving throws vs. poison. The weakest type of antidote protects against the poison of all creatures with 3 Hit Dice or less; stronger antidotes counteract the poison of larger creatures. Poisons avoided during the duration of the potion (by",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Bug Repellent",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "\"Bug\" includes any form of arachnid (spider, tick, scorpion, etc.), insect (ant, beetle, fly, etc.), or chilopod (centipede, millipede, etc.). After using this potion, the user cannot be touched by any normal bug, and a giant-sized bug will ignore the user unless the bug makes a saving throw vs. spells. If the saving throw is successful, the potion does not affect the giant bug. The potion adds a +4.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Clairaudience",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user may listen to noises (including speech) in an area up to 60' away through the ears of a creature in that area.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Clairvoyance",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user may see an area up to 60' away through the eyes of a creature in that area.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Climbing",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user may climb sheer surfaces as if a spider, with only a 5 % chance of falling (checked per 100' of climbing, at least once per climb).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Defense",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user gains a bonus to armor class, which lasts for 1 turn only. Roll 1d10 to find the power of the potion.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Delusion",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The user will believe this potion to have the effect of any one other potion (roll again for the fake potion). However, it has no real effect.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Diminution",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "Anyone taking this potion will immediately shrink to 6\" in height. He can only attack creatures smaller than 1' for normal damage. The user can slip through small cracks and has a 90% chance of not being seen when standing still. This potion will cancel a potion of growth without ill effects.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Dragon Control",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Potion Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Potion Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "There are several different types of this potion, one corresponding to each dragon type. The user may control up to three small dragons at once, but the dragons do get saving throws. Large and huge dragons are not affected by these potions. The controlled dragons will do whatever is commanded of them except cast spells. They will be hostile when the control ends. Roll 1d20 to find the type of dragons affected.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Potion Descriptions"
+    }
+  },
+  {
+    "name": "Lamp of Long Burning",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item is identical to a normal adventurer's lantern. It is made of metal, with a lower compartment for oil, a handle, and shutters around the body to protect the flame from wind. When filled with oil and lit as a normal lantern, it will burn and shed light without using oil. If the flame is ever doused by water, the lamp of long burning becomes nonmagical.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Medallion of ESP, 30' Range",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This magical medallion is strung on a chain and worn around the neck. If the wearer concentrates for 1 round, he may read the thoughts of any one creature within 30'. The wearer may move normally but cannot fight or cast spells while concentrating. The DM must roll 1d6 each time this item is used; it will not work properly on a roll of 1.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Medallion of ESP, 90' Range",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item is identical to the medallion of ESP, 30' range, except that it has a greater range.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Mirror of Life Trapping",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This unique item stores man-size or smaller creatures for an indefinite period. Any such creature who looks into the mirror must make a saving throw vs. spells or be sucked into it (complete with all equipment and treasure!). The mirror can store up to 20 creatures; when it is full, no more can be trapped. Creatures trapped in the mirror do not age or need food or air, but they are completely powerless.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Gauntlets of Ogre Power",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "These gauntlets will give the wearer a Strength score of 18, gaining all normal bonuses. If the wearer is not using a weapon, he can strike with one fist each round, gaining a +3 on hit rolls, for 1d4 points of damage.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Helm of Teleportation",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "Usable by magic-users only, this helm allows the wearer to teleport (as the magic-user spell, including chances of error) himself or to attempt to teleport another creature or item. An unwilling victim can make a saving throw vs. spells to avoid the effect. After one use, the helm will no longer function.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Girdle of Giant Strength",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item gives the wearer the same chances to hit as a hill giant. The wearer does double damage with whatever weapon he is using.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Helm of Alignment Changing",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item looks like a fancy helmet. When the helm is put on, it will immediately change the wearer's alignment (the DM should determine the new alignment randomly). This device can only be taken off by using a remove curse spell, but the wearer will resist seeking the removal. Once it is removed, however, the wearer's original alignment will return.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Muzzle of Training",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item is a device of leather straps with metal buckles and may be fastened over the mouth of any animal or monster that has a bite attack. It will magically expand or contract to fit the creature, and the victim can breathe but cannot bite (or talk) while wearing the muzzle.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Horn of Blasting",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This horn creates a cone of sound, 100' long and 20' wide at the far end, when blown. Victims within this area take 2d6 points of damage and must make a saving throw vs. spells or be deafened for one turn; constructions and ships take 1d8 points of damage. The horn may be blown but once per turn.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Helm of Reading",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The wearer is able to read any writing, regardless of the language or magical properties of the script. This does not allow characters to use spell scrolls unless they can do so normally. This helm is fragile, however, and will be destroyed if the wearer is killed. Any hit on the wearer might (10% chance) destroy the helm.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Lamp, Hurricane",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item appears and functions as a lamp of long burning in all respects, but only after its storm has passed, as described hereafter.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Helm of Telepathy",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Item Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Item Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "This item looks like a fancy helmet. The wearer of this helm may send messages, by mere thought, to any creature within 90'. The creature receiving the thought messages will understand them. (The creature may refuse to respond.) The wearer may also read the thoughts of a living creature within range. To make the",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Item Descriptions"
+    }
+  },
+  {
+    "name": "Speaking",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Missile Talent Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Missile Talent Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "A missile with this talent will miss any creature at which it is shot. It is used for communication purposes only. The user may give the missile any message of 20 words or less and then shoot it, either naming a place within ten miles or aiming at a target. The missile will automatically land on the floor or ground in the target area and will repeat the message aloud twice.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Missile Talent Descriptions"
+    }
+  },
+  {
+    "name": "Stunning",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Missile Talent Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Missile Talent Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "The victim hit by a missile with this talent must make a saving throw vs. spells or be stunned for 1d6 rounds.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Missile Talent Descriptions"
+    }
+  },
+  {
+    "name": "Teleporting",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Missile Talent Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Missile Talent Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "A victim hit by a missile with this talent must make a saving throw vs. spells (at a + 2 bonus to the roll) or be teleported to a point 1d100 miles away, with the direction and distance determined randomly. Unlike the effect of the magic-user spell, the victim cannot arrive in the air or within a solid object.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Missile Talent Descriptions"
+    }
+  },
+  {
+    "name": "Transporting",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Missile Talent Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Missile Talent Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "A victim hit by a missile with this talent must make a saving throw vs. spells or be sent to a point up to 360' away, as determined by the user of the missile. The effect is identical to the magic-user spell dimension door, and it cannot cause the victim to appear within a solid object.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Missile Talent Descriptions"
+    }
+  },
+  {
+    "name": "Wounding",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Missile Talent Descriptions"
+      }
+    },
+    "system": {
+      "treasureType": "Missile Talent Descriptions",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "When a missile with the wounding talent strikes a target creature, it inflicts normal damage. In addition, however, it causes the loss of 1 hit point per round thereafter until magical curing is applied (a potion, cure spell of",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Missile Talent Descriptions"
+    }
+  },
+  {
+    "name": "Example",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "A 20th level, 18 Intelligence wizard makes a crystal bull with ESP. That requires two spell effects— clairvoyance and ESP. The initial enchantment cost is 5,000 gp (one is a 3rd level spell and the other is 2nd level; 1,000 gp x total number of spell levels). The wizard must roll for chance of success for both spells.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    }
+  },
+  {
+    "name": "Number of Attacks",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "A construct can have anywhere from one to four attacks in a round, as the DM decides.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    }
+  },
+  {
+    "name": "Reproduction",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "Constructs do not reproduce; there are never \"baby gargoyles,\" for example. For each construct a spellcaster wants to create, he will have to repeat the creation process at the same costs, length of time, and chance of success.",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    }
+  },
+  {
+    "name": "Special Attacks",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+      }
+    },
+    "system": {
+      "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+      "value": 0,
+      "quantity": 1,
+      "cost": "",
+      "weight": 0,
+      "description": "Some constructs have special, unusual attacks (such as poison-gas breath or crushing hugs). The DM can approve, veto, or modify any special attack chosen by the player creating the construct. Each special attack is worth another asterisk (*) and, as always, each asterisk increases the construct's cost).",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    }
+  }
+]

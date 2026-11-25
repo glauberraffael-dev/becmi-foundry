@@ -1,0 +1,30 @@
+{
+  "_id": "QIKBLcn-jp4wuuL7",
+  "_key": "!items!QIKBLcn-jp4wuuL7",
+  "name": "Anti-Magic Shell",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (Caster only)",
+    "duration": "12 turns",
+    "effect": "Personal barrier which blocks magic",
+    "reversible": false,
+    "description": "This spell creates an invisible barrier around the spellcaster's body (less than an inch away). The barrier stops all spells or spell effects, including the caster's. The caster may destroy the shell at will; otherwise, it lasts for the duration. Except for a wish, no magic (including a dispel magic spell) can cancel the barrier.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

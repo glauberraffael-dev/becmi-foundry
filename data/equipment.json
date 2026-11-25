@@ -1,0 +1,2724 @@
+[
+  {
+    "name": "Axe, Battle",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "r, 2H, M"
+      }
+    },
+    "system": {
+      "description": "r, 2H, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "r, 2H, M",
+      "damage": "1d8",
+      "range": 0,
+      "ranges": "-",
+      "cost": 7,
+      "weight": 60,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Axe, Hand",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "t, S"
+      }
+    },
+    "system": {
+      "description": "t, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "t, S",
+      "damage": "1d6",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 4,
+      "weight": 30,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Bow, Short",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, 2H, M"
+      }
+    },
+    "system": {
+      "description": "a, m, 2H, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, 2H, M",
+      "damage": "1d6",
+      "range": 50,
+      "ranges": "50/100/150",
+      "cost": 25,
+      "weight": 20,
+      "weaponType": "missile",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Bow, Long",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, 2H, L"
+      }
+    },
+    "system": {
+      "description": "a, m, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, 2H, L",
+      "damage": "1d6",
+      "range": 70,
+      "ranges": "70/140/210",
+      "cost": 40,
+      "weight": 30,
+      "weaponType": "missile",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Crossbow, Light",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, s, 2H, M"
+      }
+    },
+    "system": {
+      "description": "a, m, s, 2H, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, s, 2H, M",
+      "damage": "1d6",
+      "range": 60,
+      "ranges": "60/120/180",
+      "cost": 30,
+      "weight": 50,
+      "weaponType": "missile",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Crossbow, Heavy",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, s, 2H, L"
+      }
+    },
+    "system": {
+      "description": "a, m, s, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, s, 2H, L",
+      "damage": "2d4",
+      "range": 80,
+      "ranges": "80/160/240",
+      "cost": 50,
+      "weight": 80,
+      "weaponType": "missile",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Blackjack",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, s, S"
+      }
+    },
+    "system": {
+      "description": "c, r, s, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, s, S",
+      "damage": "1d2",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 5,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Club",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, M"
+      }
+    },
+    "system": {
+      "description": "c, r, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, M",
+      "damage": "1d4",
+      "range": 0,
+      "ranges": "-",
+      "cost": 3,
+      "weight": 50,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Hammer, Throwing",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, t, M"
+      }
+    },
+    "system": {
+      "description": "c, t, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, t, M",
+      "damage": "1d4",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 4,
+      "weight": 25,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Hammer, War",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, M"
+      }
+    },
+    "system": {
+      "description": "c, r, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, M",
+      "damage": "1d6",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 50,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Mace",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, M"
+      }
+    },
+    "system": {
+      "description": "c, r, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, M",
+      "damage": "1d6",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 30,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Staff",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, w, 2H, M"
+      }
+    },
+    "system": {
+      "description": "c, r, w, 2H, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, w, 2H, M",
+      "damage": "1d6",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 40,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Torch",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, r, S"
+      }
+    },
+    "system": {
+      "description": "c, r, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, r, S",
+      "damage": "1d4",
+      "range": 0,
+      "ranges": "-",
+      "cost": "-",
+      "weight": 20,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Dagger, Normal",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "t, w, S"
+      }
+    },
+    "system": {
+      "description": "t, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "t, w, S",
+      "damage": "1d4",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 3,
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Dagger, Silver",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "t, w, S"
+      }
+    },
+    "system": {
+      "description": "t, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "t, w, S",
+      "damage": "1d4",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 30,
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Halberd",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, 2H, L"
+      }
+    },
+    "system": {
+      "description": "s, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, 2H, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 7,
+      "weight": 150,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Javelin",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "t, M"
+      }
+    },
+    "system": {
+      "description": "t, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "t, M",
+      "damage": "1d6",
+      "range": 30,
+      "ranges": "30/60/90",
+      "cost": 1,
+      "weight": 20,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Lance",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, v, L"
+      }
+    },
+    "system": {
+      "description": "s, v, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, v, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 10,
+      "weight": 180,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Pike",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, v, 2H, L"
+      }
+    },
+    "system": {
+      "description": "s, v, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, v, 2H, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 3,
+      "weight": 80,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Polearm",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, 2H, L"
+      }
+    },
+    "system": {
+      "description": "s, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, 2H, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 7,
+      "weight": 150,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Poleaxe",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, 2H, L"
+      }
+    },
+    "system": {
+      "description": "s, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, 2H, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 120,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Spear",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "t, v, L"
+      }
+    },
+    "system": {
+      "description": "t, v, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "t, v, L",
+      "damage": "1d6",
+      "range": 20,
+      "ranges": "20/40/60",
+      "cost": 3,
+      "weight": 30,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Trident",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, t, M"
+      }
+    },
+    "system": {
+      "description": "s, t, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, t, M",
+      "damage": "1d6",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 5,
+      "weight": 25,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Shield, Horned",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, S"
+      }
+    },
+    "system": {
+      "description": "s, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, S",
+      "damage": "1d2",
+      "range": 0,
+      "ranges": "-",
+      "cost": 15,
+      "weight": 20,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Shield, Knife",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, S"
+      }
+    },
+    "system": {
+      "description": "s, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, S",
+      "damage": "1d4+1",
+      "range": 0,
+      "ranges": "-",
+      "cost": 65,
+      "weight": 70,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Shield, Sword",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, v, M"
+      }
+    },
+    "system": {
+      "description": "s, v, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, v, M",
+      "damage": "1d4+2",
+      "range": 0,
+      "ranges": "-",
+      "cost": 200,
+      "weight": 185,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Shield, Tusked",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, 2H, L"
+      }
+    },
+    "system": {
+      "description": "s, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, 2H, L",
+      "damage": "1d4+1",
+      "range": 0,
+      "ranges": "-",
+      "cost": 200,
+      "weight": 275,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sword, Short",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "r, S"
+      }
+    },
+    "system": {
+      "description": "r, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "r, S",
+      "damage": "1d6",
+      "range": 0,
+      "ranges": "-",
+      "cost": 7,
+      "weight": 30,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sword, Normal",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "r, M"
+      }
+    },
+    "system": {
+      "description": "r, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "r, M",
+      "damage": "1d8",
+      "range": 0,
+      "ranges": "-",
+      "cost": 10,
+      "weight": 60,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sword, Bastard (1H)",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "r, HH, L"
+      }
+    },
+    "system": {
+      "description": "r, HH, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "r, HH, L",
+      "damage": "1d6+1",
+      "range": 0,
+      "ranges": "-",
+      "cost": 15,
+      "weight": 80,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sword, Bastard (2H)",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "r, 2H, L"
+      }
+    },
+    "system": {
+      "description": "r, 2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "r, 2H, L",
+      "damage": "1d8+1",
+      "range": 0,
+      "ranges": "-",
+      "cost": 15,
+      "weight": 80,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sword, Two-Handed",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "2H, L"
+      }
+    },
+    "system": {
+      "description": "2H, L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "2H, L",
+      "damage": "1d10",
+      "range": 0,
+      "ranges": "-",
+      "cost": 15,
+      "weight": 100,
+      "weaponType": "melee",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Blowgun, up to 2'",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, s, w, S"
+      }
+    },
+    "system": {
+      "description": "a, m, s, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, s, w, S",
+      "damage": "Nil",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": 3,
+      "weight": 6,
+      "weaponType": "missile",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Blowgun, 2'+",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "a, m, s, w, 2H, M"
+      }
+    },
+    "system": {
+      "description": "a, m, s, w, 2H, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "a, m, s, w, 2H, M",
+      "damage": "Nil",
+      "range": 20,
+      "ranges": "20/25/30",
+      "cost": 6,
+      "weight": 15,
+      "weaponType": "missile",
+      "hands": 2,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Bola",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, t, M"
+      }
+    },
+    "system": {
+      "description": "s, t, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, t, M",
+      "damage": "1d2",
+      "range": 20,
+      "ranges": "20/40/60",
+      "cost": 5,
+      "weight": 5,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Cestus",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, S"
+      }
+    },
+    "system": {
+      "description": "s, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, S",
+      "damage": "1d3",
+      "range": 0,
+      "ranges": "-",
+      "cost": 5,
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Holy Water",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, s, t, w, S"
+      }
+    },
+    "system": {
+      "description": "c, s, t, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, s, t, w, S",
+      "damage": "1d8",
+      "range": 10,
+      "ranges": "10/30/50",
+      "cost": 25,
+      "weight": 1,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Net",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, t, w, M or L"
+      }
+    },
+    "system": {
+      "description": "s, t, w, M or L",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, t, w, M or L",
+      "damage": "Nil",
+      "range": 10,
+      "ranges": "10/20/30",
+      "cost": "1 sp/sq ft",
+      "weight": 1,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Oil, Burning",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, s, t, w, S"
+      }
+    },
+    "system": {
+      "description": "c, s, t, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, s, t, w, S",
+      "damage": "1d8",
+      "range": 10,
+      "ranges": "10/30/50",
+      "cost": 2,
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Rock, Thrown",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, t, w, S"
+      }
+    },
+    "system": {
+      "description": "c, t, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, t, w, S",
+      "damage": "1d3",
+      "range": 10,
+      "ranges": "10/30/50",
+      "cost": "-",
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Sling",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "c, m, w, S"
+      }
+    },
+    "system": {
+      "description": "c, m, w, S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "c, m, w, S",
+      "damage": "1d4",
+      "range": 40,
+      "ranges": "40/80/160",
+      "cost": 2,
+      "weight": 20,
+      "weaponType": "missile",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "dex"
+    }
+  },
+  {
+    "name": "Whip",
+    "type": "weapon",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "s, w, M"
+      }
+    },
+    "system": {
+      "description": "s, w, M",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "s, w, M",
+      "damage": "1d2",
+      "range": 0,
+      "ranges": "-",
+      "cost": "1 gp/ft",
+      "weight": 10,
+      "weaponType": "melee",
+      "hands": 1,
+      "rate": 1,
+      "attackBonus": 0,
+      "damageBonus": 0,
+      "magicBonus": 0,
+      "attackAbility": "str"
+    }
+  },
+  {
+    "name": "Shield",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "D"
+      }
+    },
+    "system": {
+      "description": "D",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "D",
+      "ac": -1,
+      "cost": "10",
+      "weight": 100,
+      "armorType": "Shield"
+    }
+  },
+  {
+    "name": "Leather Armor",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "D,T"
+      }
+    },
+    "system": {
+      "description": "D,T",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "D,T",
+      "ac": 7,
+      "cost": "20",
+      "weight": 200,
+      "armorType": "Leather Armor"
+    }
+  },
+  {
+    "name": "Scale Mail",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": ""
+      }
+    },
+    "system": {
+      "description": "",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "",
+      "ac": 6,
+      "cost": "30",
+      "weight": 300,
+      "armorType": "Scale Mail"
+    }
+  },
+  {
+    "name": "Chain Mail",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": ""
+      }
+    },
+    "system": {
+      "description": "",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "",
+      "ac": 5,
+      "cost": "40",
+      "weight": 400,
+      "armorType": "Chain Mail"
+    }
+  },
+  {
+    "name": "Banded Mail",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": ""
+      }
+    },
+    "system": {
+      "description": "",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "",
+      "ac": 4,
+      "cost": "50",
+      "weight": 450,
+      "armorType": "Banded Mail"
+    }
+  },
+  {
+    "name": "Plate Mail",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": ""
+      }
+    },
+    "system": {
+      "description": "",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "",
+      "ac": 3,
+      "cost": "60",
+      "weight": 500,
+      "armorType": "Plate Mail"
+    }
+  },
+  {
+    "name": "Suit Armor",
+    "type": "armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "S"
+      }
+    },
+    "system": {
+      "description": "S",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "S",
+      "ac": 0,
+      "cost": "250",
+      "weight": 750,
+      "armorType": "Suit Armor"
+    }
+  },
+  {
+    "name": "Adventuring Gear Table",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "---",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "--- — --- — ---",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Backpack",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Capacity 400 cn — 5gp — 20*",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 20,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Belt",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 2 sp — 5**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "2 sp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Boots, plain",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 1gp — 10**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Boots, riding or swash-topped",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 5gp — 15**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 15,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Cloak, short",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 5sp — 10**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 sp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Cloak, long",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 1gp — 15**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 15,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Clothes, plain",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Tunic and pants; blouse and skirt; —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Clothes, middle-class",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "See above — 5gp — 20**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 20,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Clothes, fine",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "See above — 20 gp — 20**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "20 gp",
+      "weight": 20,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Clothes, extravagant",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "See above — 50+gp — 30**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "",
+      "weight": 30,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Garlic",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 5gp — 1",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 1,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Grappling hook",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 25 gp — 80",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "25 gp",
+      "weight": 80,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Hammer",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Small — 2gp — 10",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "2 gp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Hat or cap",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 2sp — 3",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "2 sp",
+      "weight": 3,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Holy symbol",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 25 gp — 1",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "25 gp",
+      "weight": 1,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Iron spike",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "One spike — 1 sp — 5",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 sp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Iron spikes",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Twelve spikes — 1gp — 60",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 60,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Lantern",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Burns oil _'_ — 10 gp — 30",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "10 gp",
+      "weight": 30,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Mirror",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Hand-sized, steel — 5gp — 5",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Oil",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "One flask — 2gp — 10",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "2 gp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Pole",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Wooden, 10' long — 1 gp — 100",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 100,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Pouch, belt",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Capacity 50 cn — 5sp — 2* ***",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 sp",
+      "weight": 2,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Quiver",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "For arrows or quarrels — 1gp — 5",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Rations, iron",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Preserved food for one person for —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Rations, standard",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Unpreserved food for one person for one week — 5gp — 200",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 gp",
+      "weight": 200,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Rope",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "50' length — 1gp — 50",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 50,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Sack, small",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Capacity 200 cn — 1gp — 1*",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 1,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Sack, large",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Capacity 600 cn — 2gp — 5* **",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "2 gp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Shoes",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 5sp — 8",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "5 sp",
+      "weight": 8,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Stakes (3) and mallet",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": " — 3gp — 10",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "3 gp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Thieves' tools",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Lockpicks, wire, etc. — 25 gp — 10",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "25 gp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Tinder box",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Flint, steel, kindling — 3gp — 5",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "3 gp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Torches",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "Six torches — 1gp — 120",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 120,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Waterskin /wineskin",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "One-quart capacity; enc 30 when filled — 1gp — 5",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 5,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Wine",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "One quart, wineskin not included — 1gp — 30",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "1 gp",
+      "weight": 30,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Wolfsbane",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Adventuring gear"
+      }
+    },
+    "system": {
+      "description": "One bunch — 10 gp — 1",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Adventuring gear",
+      "cost": "10 gp",
+      "weight": 1,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Camel",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "100",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 100,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Horse:",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Draft",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "40",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 40,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Riding",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "75",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 75,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "War",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "250",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 250,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Mule",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "30",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 30,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Pony",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "35",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 35,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Sailing Vessels Table",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": " —  —  —  —  —  —  —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Boat, River",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "4,000 — 8 — 2 —  — 40,000 — 36 — 60 — 20-40 — 8",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 8,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Boat, Sailing",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "2,000 —  — 1 —  — 20,000 — 72 — 120 — 20-40 — 8",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 8,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Canoe",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "50 —  — 1 —  — 6,000 — 18 — 60 — 5-10 — 9",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 9,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Galleys:",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": " —  —  —  —  —  —  —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Large",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "30,000 — 180 — 20 — 50 — 60,000 — 18/72 — 90/120 — 100-120 — 7",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 7,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Small",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "10,000 — 60 — 10 — 20 — 40,000 — 18/90 — 90/150 — 80-100 — 8",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 8,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Lifeboat, Ship's",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "1,000 —  —  —  — 15,000 — 18 — 30 — 10-20 — 9",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 9,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Longship",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "15,000 —  — 75t —  — 30,000 — 18/90 — 90/150 — 60-80 — 8",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 8,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Rafts tt:",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": " —  —  —  —  —  —  —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Professional",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "1 gp/sq ft —  —  —  — 10,000 — 12 — 30 — 5 — 9",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "1 gp",
+      "weight": 9,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Built by PCs",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": " —  —  —  — 5,000 — 12 — 30 — 5 — 9",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 9,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Sailing Ships:",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": " —  —  —  —  —  —  —  — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Troop Transport",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "30,000 —  — **20** — 100 — 600,000 — 60 — 90 — 160-220 — **7**",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 7,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "First-Class",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "Miles/1 sp — 35 sp",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "1 sp",
+      "weight": 35,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Second-Class",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "Miles/5 sp — 10 sp",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "5 sp",
+      "weight": 10,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Third-Class",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "Miles/20 sp — 2 sp",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "20 sp",
+      "weight": 2,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Ballista",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "75 — 6,000* — 4 — 9 — **4** — 100/200/300 (Min: NA) — d10+6 — 1 per 2 — 2,000",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 2000,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Catapult, Light",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "150 — 12,000* — 4 — 18 — **6** — 200/250/300 (Min: 150) — d8 + 8 — Iper5 — 4,000",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 4000,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Catapult, Heavy",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "250 — 18,000* — 0 — 27 — 8 — 250/325/400 (Min: 175) — d10 + 10 — 1 per 6 — 6,000",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 6000,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Trebuchet",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "400 — 24,000* — 0 — 36 — 12 — 250/400/500 (Min: 100) — d12 + 13 — 1 per 6 — 8,000",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 8000,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Bore",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "150 — 3,000 — —_A_ — 50 — 10 —  — d6 + 14 — 1 per 2 — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Ram, Battering",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "100 — 3,000 — -4 — 50 — **10** —  — d6 + 8 — 1 per 2 — ",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "",
+      "weight": 0,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Belfry",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "25 gp/ft height — 30' tall — 250,000* — 0 — -8 — 75",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "25 gp",
+      "weight": 75,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Gallery Shed",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "15 gp/ft length — 10' x 10' X 20' — 8,000* — 4 — -12 — 40",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "15 gp",
+      "weight": 40,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Hoist",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "5 gp/ft height — 30' tall — 12,000* — 4 — 0 — 15",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "5 gp",
+      "weight": 15,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Ladder",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "1 gp/10' height — 30' tall — 900 — 4 — 0 — 3",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "1 gp",
+      "weight": 3,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Mantlet",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "2 gp/ft length — 8' long — 4,800* — 0 — -4 — 16",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "2 gp",
+      "weight": 16,
+      "quantity": 1
+    }
+  },
+  {
+    "name": "Timber Fort",
+    "type": "equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "notes": "Transportation / siege equipment"
+      }
+    },
+    "system": {
+      "description": "4 gp/ft length — 8' long — 7,200* — 0 — -8 — 32",
+      "source": "Rules Cyclopedia",
+      "page": 0,
+      "notes": "Transportation / siege equipment",
+      "cost": "4 gp",
+      "weight": 32,
+      "quantity": 1
+    }
+  }
+]

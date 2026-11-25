@@ -1,0 +1,48 @@
+{
+  "_id": "EwtWnj5Txf6m_2f1",
+  "_key": "!actors!EwtWnj5Txf6m_2f1",
+  "name": "Carrion Crawler",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3+1",
+    "hp": 31,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "8 tentacles or 1 bite",
+    "damage": "Paralysis or 1 point",
+    "appearing": "1d4 (0)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "B",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 75,
+    "terrain": "See the individual cat descriptions, above.",
+    "monsterType": "",
+    "description": "Armor Class: 7 Hit Dice: 3 + 1* (L) Move: 120' (40') Attacks: 8 tentacles or 1 bite Damage: Paralysis or 1 point No. Appearing: 1d4 (0) Save As: F2 Morale: 9 Treasure Type: B Intelligence: 0 Alignment: Neutral XP Value: 75 Terrain: See the individual cat descriptions, above. Panther: Panthers are found on plains, for-",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 31,
+        "max": 31
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Carrion Crawler"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

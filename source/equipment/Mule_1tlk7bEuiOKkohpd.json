@@ -1,0 +1,25 @@
+{
+  "_id": "1tlk7bEuiOKkohpd",
+  "_key": "!items!1tlk7bEuiOKkohpd",
+  "name": "Mule",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "30",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 30,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

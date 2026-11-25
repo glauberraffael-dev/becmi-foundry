@@ -1,0 +1,48 @@
+{
+  "_id": "RJrMkvs_cvnd1ndT",
+  "_key": "!actors!RJrMkvs_cvnd1ndT",
+  "name": "Scorpion, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 sting",
+    "damage": "1d0/ldl0/1d4 + poison",
+    "appearing": "1d6 (1d6) Save As* F2",
+    "saveAs": "",
+    "morale": 11,
+    "treasure": "V",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Cavern, Desert, Ruins.",
+    "monsterType": "Lowlife (Rare).",
+    "description": "Armor Class: 2 Hit Dice: 4* (L) Move: 150' (50') Attacks: 2 claws/1 sting Damage: 1dl0/ldl0/ld4 + poison No. Appearing: 1d6 (1d6) Save As* F2 Morale: 11 Treasure Type: V Intelligence: 0 Alignment: Neutral XP Value: 125 Monster Type: Lowlife (Rare). A giant scorpion looks just like the normal arachnid, but is the size of a small horse. It lives in deserts, caves, and ruins, preying on any animal over 2' in length. It usually attacks on sight. It fights by grasping a victim with its claws and stinging.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Scorpion, Giant"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

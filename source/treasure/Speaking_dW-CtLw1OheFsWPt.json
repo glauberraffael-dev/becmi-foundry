@@ -1,0 +1,27 @@
+{
+  "_id": "dW-CtLw1OheFsWPt",
+  "_key": "!items!dW-CtLw1OheFsWPt",
+  "name": "Speaking",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Missile Talent Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "A missile with this talent will miss any creature at which it is shot. It is used for communication purposes only. The user may give the missile any message of 20 words or less and then shoot it, either naming a place within ten miles or aiming at a target. The missile will automatically land on the floor or ground in the target area and will repeat the message aloud twice.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Missile Talent Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Missile Talent Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

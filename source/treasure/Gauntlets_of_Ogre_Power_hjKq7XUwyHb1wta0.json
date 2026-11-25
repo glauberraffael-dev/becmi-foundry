@@ -1,0 +1,27 @@
+{
+  "_id": "hjKq7XUwyHb1wta0",
+  "_key": "!items!hjKq7XUwyHb1wta0",
+  "name": "Gauntlets of Ogre Power",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "These gauntlets will give the wearer a Strength score of 18, gaining all normal bonuses. If the wearer is not using a weapon, he can strike with one fist each round, gaining a +3 on hit rolls, for 1d4 points of damage.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

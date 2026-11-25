@@ -1,0 +1,25 @@
+{
+  "_id": "p8E1ETwBcRRZWmwY",
+  "_key": "!items!p8E1ETwBcRRZWmwY",
+  "name": "Clothes, extravagant",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "See above — 50+gp — 30**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "",
+    "weight": 30,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

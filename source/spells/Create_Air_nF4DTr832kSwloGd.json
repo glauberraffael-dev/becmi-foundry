@@ -1,0 +1,30 @@
+{
+  "_id": "nF4DTr832kSwloGd",
+  "_key": "!items!nF4DTr832kSwloGd",
+  "name": "Create Air",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Immediate area, 8,000 cu. ft.",
+    "duration": "1 hour per level of caster",
+    "effect": "Provides breathable air",
+    "reversible": false,
+    "description": "This spell provides breathable air, especially in areas where otherwise there is none to be had. It is cast on a volume of 8,000 cubic feet (such as a 20' x 20' x 20' room) and, while it is in effect, everyone in that area has good air to breathe. Customarily, it's used when dungeon explorers are trapped where air is running out. When cast in this fashion, the spell effect stays in one place; it does not move with the caster. However, it does not have to be cast in only that way; it can be cast on enclosed vehicle interiors (such as the below-deck areas of ships), living creatures, or pieces of equipment.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

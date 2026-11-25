@@ -1,0 +1,103 @@
+{
+  "_id": "2c06177IEVerRZMn",
+  "_key": "!tables!2c06177IEVerRZMn",
+  "name": "Ammunition",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "mXJKmSBrieVAqelv",
+      "type": "text",
+      "text": "Blowgun dart: 5 shots, 1 gp, 5 shots/cn",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.mXJKmSBrieVAqelv"
+    },
+    {
+      "_id": "0FTh0Yh6gl2w-ie3",
+      "type": "text",
+      "text": "Bow arrow: 20 shots, 5 gp, 2 shots/cn",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.0FTh0Yh6gl2w-ie3"
+    },
+    {
+      "_id": "TywRuXJg2rCL8t1x",
+      "type": "text",
+      "text": "Silver-tipped arrow: 1 shot, 5 gp, 2 shots/cn",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.TywRuXJg2rCL8t1x"
+    },
+    {
+      "_id": "68djsxd2JImGE3SU",
+      "type": "text",
+      "text": "Crossbow quarrel: 30 shots, 10 gp, 3 shots/cn",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.68djsxd2JImGE3SU"
+    },
+    {
+      "_id": "mUTEyLiRXxyfCg02",
+      "type": "text",
+      "text": "Silver-tipped quarrel: 1 shot, 5 gp, 3 shots/cn",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.mUTEyLiRXxyfCg02"
+    },
+    {
+      "_id": "IVnxyzWSqrizKiXT",
+      "type": "text",
+      "text": "Sling stone or pellet: 30 shots, 1 gp, 5 shots/cn",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.IVnxyzWSqrizKiXT"
+    },
+    {
+      "_id": "uQ1Y64QtmLKxkiWm",
+      "type": "text",
+      "text": "Silver pellet: 1 shot, 5 gp, 5 shots/cn",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!2c06177IEVerRZMn.uQ1Y64QtmLKxkiWm"
+    }
+  ],
+  "formula": "1d7"
+}

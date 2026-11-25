@@ -1,0 +1,27 @@
+{
+  "_id": "M8eNQYbMWfd-TlXI",
+  "_key": "!journal!M8eNQYbMWfd-TlXI",
+  "name": "Chapter 7: Encounters and Evasion",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 7
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Encounter checks, surprise, monster reactions, wandering monsters and pursuit.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 7. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "tHwY92Ex1wsatEQQ",
+      "_key": "!journal.pages!M8eNQYbMWfd-TlXI.tHwY92Ex1wsatEQQ"
+    }
+  ]
+}

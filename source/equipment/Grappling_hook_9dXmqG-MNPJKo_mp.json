@@ -1,0 +1,25 @@
+{
+  "_id": "9dXmqG-MNPJKo_mp",
+  "_key": "!items!9dXmqG-MNPJKo_mp",
+  "name": "Grappling hook",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 25 gp — 80",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "25 gp",
+    "weight": 80,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

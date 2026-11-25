@@ -1,0 +1,25 @@
+{
+  "_id": "w8RKUnZZ5wn_hxAn",
+  "_key": "!items!w8RKUnZZ5wn_hxAn",
+  "name": "Galleys:",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " —  —  —  —  —  —  —  — ",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "0tn8T59RnxLL39t4",
+  "_key": "!journal!0tn8T59RnxLL39t4",
+  "name": "Chapter 11: Nonplayer Characters",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 11
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Retainers, mercenaries and specialists.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 11. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "k4lvXmvqIYaHLxvS",
+      "_key": "!journal.pages!0tn8T59RnxLL39t4.k4lvXmvqIYaHLxvS"
+    }
+  ]
+}

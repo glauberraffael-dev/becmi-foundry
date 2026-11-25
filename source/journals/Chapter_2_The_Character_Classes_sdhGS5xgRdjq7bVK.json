@@ -1,0 +1,27 @@
+{
+  "_id": "sdhGS5xgRdjq7bVK",
+  "_key": "!journal!sdhGS5xgRdjq7bVK",
+  "name": "Chapter 2: The Character Classes",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 2
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Cleric, fighter, magic-user, thief, dwarf, elf, halfling and the optional druid and mystic classes, with progression tables.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 2. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "kU842JKdGLGxFLmq",
+      "_key": "!journal.pages!sdhGS5xgRdjq7bVK.kU842JKdGLGxFLmq"
+    }
+  ]
+}

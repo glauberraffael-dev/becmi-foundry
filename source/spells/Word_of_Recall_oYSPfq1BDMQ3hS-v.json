@@ -1,0 +1,30 @@
+{
+  "_id": "oYSPfq1BDMQ3hS-v",
+  "_key": "!items!oYSPfq1BDMQ3hS-v",
+  "name": "Word of Recall",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (Cleric only)",
+    "duration": "Instantaneous",
+    "effect": "Teleports the caster to sanctuary Similar to a magic-user's _teleport_ spell, this spell carries the cleric and all equipment carried (but no other creatures) to the cleric's home, regardless of the distance.",
+    "reversible": false,
+    "description": "Duration: Instantaneous Effect: Teleports the caster to sanctuary Similar to a magic-user's teleport spell, this spell carries the cleric and all equipment carried (but no other creatures) to the cleric's home, regardless of the distance. The cleric must have a permanent home (such as a castle), and a meditation room within that home; this room is the destination when the spell is cast. During the round in which this spell is cast, the cleric automatically gains initiative unless surprised.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

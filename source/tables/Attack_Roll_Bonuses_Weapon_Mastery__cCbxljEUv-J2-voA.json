@@ -1,0 +1,91 @@
+{
+  "_id": "cCbxljEUv-J2-voA",
+  "_key": "!tables!cCbxljEUv-J2-voA",
+  "name": "Attack Roll Bonuses (Weapon Mastery)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Weapon Mastery"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "DJ35y7zLa3RQwFHf",
+      "type": "text",
+      "text": "Unskilled: No bonus vs. primary or secondary",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.DJ35y7zLa3RQwFHf"
+    },
+    {
+      "_id": "zm5ikYzkB3eFinny",
+      "type": "text",
+      "text": "Basic: No bonus vs. primary or secondary",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.zm5ikYzkB3eFinny"
+    },
+    {
+      "_id": "xoGMAy0gfiBvD-i9",
+      "type": "text",
+      "text": "Skilled: +2 vs. primary, +1 vs. secondary",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.xoGMAy0gfiBvD-i9"
+    },
+    {
+      "_id": "7yEsBlywck4m5Gi5",
+      "type": "text",
+      "text": "Expert: +4 vs. primary, +2 vs. secondary",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.7yEsBlywck4m5Gi5"
+    },
+    {
+      "_id": "DODbzXhrwjpZRvTz",
+      "type": "text",
+      "text": "Master: +6 vs. primary, +4 vs. secondary",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.DODbzXhrwjpZRvTz"
+    },
+    {
+      "_id": "DnYJXzZwZSLHLEBg",
+      "type": "text",
+      "text": "Grand Master: +8 vs. primary, +6 vs. secondary",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!cCbxljEUv-J2-voA.DnYJXzZwZSLHLEBg"
+    }
+  ],
+  "formula": "1d6"
+}

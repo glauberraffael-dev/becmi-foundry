@@ -1,0 +1,48 @@
+{
+  "_id": "uE-u-RDKpGEeOLKK",
+  "_key": "!actors!uE-u-RDKpGEeOLKK",
+  "name": "Horde",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 bite or special",
+    "damage": "Varies by Hit Dice",
+    "appearing": "2d4 (d100 x 10)",
+    "saveAs": "See below",
+    "morale": 12,
+    "treasure": "Special",
+    "intelligence": 13,
+    "alignment": "Lawful",
+    "xpValue": 3,
+    "terrain": "Plane of Earth.",
+    "monsterType": "Planar Monster (Very Rare).",
+    "description": "Armor Class: 3 Hit Dice: 3* to 21* (S-L, see below) Move: 150' (50') Attacks: 1 bite or special Damage: Varies by Hit Dice No. Appearing: 2d4 (d100 x 10) Save As: See below Morale: 12 Treasure Type: Special Intelligence: 13 Alignment: Lawful XP Value: By Hit Dice (see below) Hit Bite Dice Damage XP 3* 1d6 50 4* 1d6 125 5* 1d8 300 6* 1d8 500 7* 1d10 850 8* 1d10 1,200 9* 2d6 1,600 10* 2d6 1,750 11*-12* 2d8 1,900 13*-16* 3d6 2,300 17*-20* 4d6 3,150 21* 5d6 4,500 Monster Type: Planar Monster (Very Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Horde"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

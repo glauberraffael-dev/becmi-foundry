@@ -1,0 +1,30 @@
+{
+  "_id": "TiqCP6sXjFJGhZs-",
+  "_key": "!items!TiqCP6sXjFJGhZs-",
+  "name": "Polymorph Self",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (Caster only)",
+    "duration": "6 turns + 1 turn per level of the caster",
+    "effect": "Caster may change shapes",
+    "reversible": false,
+    "description": "This spell allows the caster to change shape, taking the physical form of another living creature. The Hit Dice of the new form must be equal to or less than the Hit Dice of the caster, or the spell will fail. The caster's armor class, hit points, attack rolls, and saving throws do not change, and he does not gain special abilities (such as ghouls' paralysis) or special immunities of the new form; however, he does gain the natural physical abilities of the new form. For example, a spellcaster polymorphed into a frost giant has the strength of a frost giant and the ability to hurl boulders, but not immunity from cold.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

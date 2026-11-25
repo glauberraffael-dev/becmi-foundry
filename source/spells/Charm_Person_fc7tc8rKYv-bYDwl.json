@@ -1,0 +1,30 @@
+{
+  "_id": "fc7tc8rKYv-bYDwl",
+  "_key": "!items!fc7tc8rKYv-bYDwl",
+  "name": "Charm Person",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "See below",
+    "effect": "One living person (see below)",
+    "reversible": false,
+    "description": "This spell will only affect humans, demihumans, and certain other creatures. The victim is allowed a saving throw vs. spells. If the saving throw is successful, the spell has no effect. If it fails, the victim will believe that the spellcaster is its \"best friend,\" and will try to defend the spellcaster against any threat, whether real or imagined. The victim is charmed. by a creature or object. The floating disc is created at the height of the spellcaster's waist, and will always remain at that height. It will automatically follow the spellcaster at his current movement rate, remaining within 6' of him at all times.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

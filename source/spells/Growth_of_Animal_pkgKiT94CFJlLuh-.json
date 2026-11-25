@@ -1,0 +1,30 @@
+{
+  "_id": "pkgKiT94CFJlLuh-",
+  "_key": "!items!pkgKiT94CFJlLuh-",
+  "name": "Growth of Animal",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "120'",
+    "duration": "12 turns",
+    "effect": "Doubles the size of one animal",
+    "reversible": false,
+    "description": "This spell doubles the size of one normal or giant animal. The animal then has twice its normal strength and inflicts double its normal damage. It may also carry twice its normal encumbrance. This spell does not change an animal's behavior, armor class, or hit points, and does not affect intelligent animal races or fantastic creatures.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

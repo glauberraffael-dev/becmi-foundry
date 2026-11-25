@@ -1,0 +1,48 @@
+{
+  "_id": "uPG6h4dMUrHfmEDE",
+  "_key": "!actors!uPG6h4dMUrHfmEDE",
+  "name": "Drolem",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "20",
+    "hp": 20,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "2d6/2d6/1d20 +10",
+    "appearing": "1 (1)",
+    "saveAs": "F10 (and see below)",
+    "morale": 12,
+    "treasure": "Special (see below)",
+    "intelligence": 3,
+    "alignment": "Neutral",
+    "xpValue": 11375,
+    "terrain": "Any.",
+    "monsterType": "Construct, Enchanted (Very Rare).",
+    "description": "Armor Class: - 3 Hit Dice: 20* (L) Move: 120' (40') Flying: 240' (80') Attacks: 2 claws/1 bite Damage: 2d6/2d6/1d20 +10 No. Appearing: 1 (1) Save As: F10 (and see below) Morale: 12 Treasure Type: Special (see below) Intelligence: 3 Alignment: Neutral XP Value: 11,375 Mandrake Wooddrake Colddrake Elemental* Armor Class: 0 0 0 0 Hit Dice: 3* (M) 4*(M) 5*(M) 6 (M) Move: 120' (40') 120' (40') 120' (40') 120' (40') Flying: 30' (10') 30'(10') 30'(10') 30'(10') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite 2 claws",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "max": 20
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Drolem"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

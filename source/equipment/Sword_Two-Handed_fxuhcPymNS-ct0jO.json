@@ -1,0 +1,34 @@
+{
+  "_id": "fxuhcPymNS-ct0jO",
+  "_key": "!items!fxuhcPymNS-ct0jO",
+  "name": "Sword, Two-Handed",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "2H, L",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "2H, L",
+    "damage": "1d10",
+    "range": 0,
+    "ranges": "-",
+    "cost": 15,
+    "weight": 100,
+    "weaponType": "melee",
+    "hands": 2,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "2H, L"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

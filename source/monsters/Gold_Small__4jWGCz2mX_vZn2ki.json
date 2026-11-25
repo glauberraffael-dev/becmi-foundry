@@ -1,0 +1,48 @@
+{
+  "_id": "4jWGCz2mX_vZn2ki",
+  "_key": "!actors!4jWGCz2mX_vZn2ki",
+  "name": "Gold (Small)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "11",
+    "hp": 11,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+    "damage": "See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30'",
+    "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+    "saveAs": "F11 F33 F36",
+    "morale": 10,
+    "treasure": "H H x 2 , I Hx3, I x 2",
+    "intelligence": 9,
+    "alignment": "Lawful",
+    "xpValue": 2,
+    "terrain": "",
+    "monsterType": "Dragon (Rare).",
+    "description": "Small Large Huge Armor Class: -2 -4 -6 Hit Dice: 11 (L) 16 + 3*(L) 22 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240' (80') 300' (100') 360' (120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath cone: 90'x 30' 135'x 30' 180'x 30 ' Breath cloud: 50'x 40'x 30' 50'x 40'x 30' 50'x 50'x 30' No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 11,
+        "max": 11
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gold (Small)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "LOJj5b82Xzyi-b2z",
+  "_key": "!items!LOJj5b82Xzyi-b2z",
+  "name": "Belt",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 2 sp — 5**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "2 sp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

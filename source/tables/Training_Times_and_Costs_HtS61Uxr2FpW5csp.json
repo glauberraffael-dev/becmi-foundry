@@ -1,0 +1,79 @@
+{
+  "_id": "HtS61Uxr2FpW5csp",
+  "_key": "!tables!HtS61Uxr2FpW5csp",
+  "name": "Training Times and Costs",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Weapon Mastery"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "ObxnkjGYgD94H8_P",
+      "type": "text",
+      "text": "Basic (new weapon): 1 week, 100 gp per week",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!HtS61Uxr2FpW5csp.ObxnkjGYgD94H8_P"
+    },
+    {
+      "_id": "4VLuou0rtgnRci5t",
+      "type": "text",
+      "text": "Skilled: 2 weeks, 250 gp per week",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!HtS61Uxr2FpW5csp.4VLuou0rtgnRci5t"
+    },
+    {
+      "_id": "gkimh561ulIWKnaW",
+      "type": "text",
+      "text": "Expert: 4 weeks, 500 gp per week",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!HtS61Uxr2FpW5csp.gkimh561ulIWKnaW"
+    },
+    {
+      "_id": "1EOr0JEaiCjRbhFF",
+      "type": "text",
+      "text": "Master: 8 weeks, 750 gp per week",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!HtS61Uxr2FpW5csp.1EOr0JEaiCjRbhFF"
+    },
+    {
+      "_id": "ZbLA70NLVm-KTqR1",
+      "type": "text",
+      "text": "Grand Master: 12 weeks, 1,000 gp per week",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!HtS61Uxr2FpW5csp.ZbLA70NLVm-KTqR1"
+    }
+  ],
+  "formula": "1d5"
+}

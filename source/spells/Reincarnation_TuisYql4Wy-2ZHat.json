@@ -1,0 +1,30 @@
+{
+  "_id": "TuisYql4Wy-2ZHat",
+  "_key": "!items!TuisYql4Wy-2ZHat",
+  "name": "Reincarnation",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "Permanent",
+    "effect": "Creates a new body To cast this spell, the magic-user must have a part (however small) of a dead body.",
+    "reversible": false,
+    "description": "To cast this spell, the magic-user must have a part (however small) of a dead body. The spell magically creates a new body, and the life force which was once in the dead body returns and inhabits the new one. The DM can choose what sort of body is created, or can refers to the tables below to decide. If the life force is reincarnated as a different race, all details of the new race apply, instead of the old. For example, a cleric reincarnated as an elf is no longer a cleric, but is able to cast magicuser spells and fight as an elf. The victim's level of experience does not change unless restricted by the maximum for demihumans.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

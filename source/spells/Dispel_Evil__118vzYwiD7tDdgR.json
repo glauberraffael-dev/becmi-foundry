@@ -1,0 +1,30 @@
+{
+  "_id": "_118vzYwiD7tDdgR",
+  "_key": "!items!_118vzYwiD7tDdgR",
+  "name": "Dispel Evil",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "30'",
+    "duration": "1 turn",
+    "effect": "Enchanted or undead monsters or one curse or _charm_",
+    "reversible": false,
+    "description": "This spell may affect all undead and enchanted (summoned, controlled, and animated) monsters within range. It will destroy the monster unless each victim makes a saving throw vs. spells. If cast at only one creature, that creature takes a —2 penalty to the saving throw. Any creature from another plane is banished (forced to return to its home plane) if it fails the saving throw. Even if the victims successfully roll their saving throws, they must flee the area, and will stay away as long as the caster concentrates; the caster cannot move while concentrating. This spell will also remove the curse from any one cursed item, or may be used to remove the influence of any magical charm.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

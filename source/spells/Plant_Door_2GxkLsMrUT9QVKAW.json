@@ -1,0 +1,30 @@
+{
+  "_id": "2GxkLsMrUT9QVKAW",
+  "_key": "!items!2GxkLsMrUT9QVKAW",
+  "name": "Plant Door",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "1 turn per level of the caster",
+    "effect": "Opens a path through growth",
+    "reversible": false,
+    "description": "For the duration of this spell, no plants can prevent the druid's passage, no matter how dense. Even trees will bend or magically open to allow the druid to pass. The druid can freely carry equipment while moving through such barriers, but no other creature can use the passage. Note that a druid can hide inside a large tree after casting this spell. The druid cannot see what is happening while he is in the tree.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

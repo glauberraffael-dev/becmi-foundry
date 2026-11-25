@@ -1,0 +1,2609 @@
+[
+  {
+    "name": "Monster Reactions (2d6)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Encounters"
+      }
+    },
+    "formula": "2d6",
+    "results": [
+      {
+        "_id": "reaction00000000",
+        "type": "text",
+        "text": "Hostile, attacks immediately",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction10000000",
+        "type": "text",
+        "text": "Hostile, attacks immediately",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction20000000",
+        "type": "text",
+        "text": "Hostile, may attack",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction30000000",
+        "type": "text",
+        "text": "Hostile, may attack",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction40000000",
+        "type": "text",
+        "text": "Neutral, uncertain",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction50000000",
+        "type": "text",
+        "text": "Neutral, uncertain",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction60000000",
+        "type": "text",
+        "text": "No attack, may parley",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction70000000",
+        "type": "text",
+        "text": "No attack, may parley",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction80000000",
+        "type": "text",
+        "text": "Friendly, helpful",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction90000000",
+        "type": "text",
+        "text": "Friendly, helpful",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "reaction10000000",
+        "type": "text",
+        "text": "Friendly, enthusiastic",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Weapons (Basic Stats)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d42",
+    "results": [
+      {
+        "_id": "weaponsbasic0000",
+        "type": "text",
+        "text": "Axe, Battle: damage 1d8; range -; 7 gp; 60 cn; notes r, 2H, M",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1000",
+        "type": "text",
+        "text": "Axe, Hand: damage 1d6; range 10/20/30; 4 gp; 30 cn; notes t, S",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2000",
+        "type": "text",
+        "text": "Bow, Short: damage 1d6; range 50/100/150; 25 gp; 20 cn; notes a, m, 2H, M",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3000",
+        "type": "text",
+        "text": "Bow, Long: damage 1d6; range 70/140/210; 40 gp; 30 cn; notes a, m, 2H, L",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic4000",
+        "type": "text",
+        "text": "Crossbow, Light: damage 1d6; range 60/120/180; 30 gp; 50 cn; notes a, m, s, 2H, M",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic5000",
+        "type": "text",
+        "text": "Crossbow, Heavy: damage 2d4; range 80/160/240; 50 gp; 80 cn; notes a, m, s, 2H, L",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic6000",
+        "type": "text",
+        "text": "Blackjack: damage 1d2; range -; 5 gp; 5 cn; notes c, r, s, S",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic7000",
+        "type": "text",
+        "text": "Club: damage 1d4; range -; 3 gp; 50 cn; notes c, r, M",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic8000",
+        "type": "text",
+        "text": "Hammer, Throwing: damage 1d4; range 10/20/30; 4 gp; 25 cn; notes c, t, M",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic9000",
+        "type": "text",
+        "text": "Hammer, War: damage 1d6; range -; 5 gp; 50 cn; notes c, r, M",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1000",
+        "type": "text",
+        "text": "Mace: damage 1d6; range -; 5 gp; 30 cn; notes c, r, M",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1100",
+        "type": "text",
+        "text": "Staff: damage 1d6; range -; 5 gp; 40 cn; notes c, r, w, 2H, M",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1200",
+        "type": "text",
+        "text": "Torch: damage 1d4; range -; - gp; 20 cn; notes c, r, S",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1300",
+        "type": "text",
+        "text": "Dagger, Normal: damage 1d4; range 10/20/30; 3 gp; 10 cn; notes t, w, S",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1400",
+        "type": "text",
+        "text": "Dagger, Silver: damage 1d4; range 10/20/30; 30 gp; 10 cn; notes t, w, S",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1500",
+        "type": "text",
+        "text": "Halberd: damage 1d10; range -; 7 gp; 150 cn; notes s, 2H, L",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1600",
+        "type": "text",
+        "text": "Javelin: damage 1d6; range 30/60/90; 1 gp; 20 cn; notes t, M",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1700",
+        "type": "text",
+        "text": "Lance: damage 1d10; range -; 10 gp; 180 cn; notes s, v, L",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1800",
+        "type": "text",
+        "text": "Pike: damage 1d10; range -; 3 gp; 80 cn; notes s, v, 2H, L",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic1900",
+        "type": "text",
+        "text": "Polearm: damage 1d10; range -; 7 gp; 150 cn; notes s, 2H, L",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2000",
+        "type": "text",
+        "text": "Poleaxe: damage 1d10; range -; 5 gp; 120 cn; notes s, 2H, L",
+        "range": [
+          21,
+          21
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2100",
+        "type": "text",
+        "text": "Spear: damage 1d6; range 20/40/60; 3 gp; 30 cn; notes t, v, L",
+        "range": [
+          22,
+          22
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2200",
+        "type": "text",
+        "text": "Trident: damage 1d6; range 10/20/30; 5 gp; 25 cn; notes s, t, M",
+        "range": [
+          23,
+          23
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2300",
+        "type": "text",
+        "text": "Shield, Horned: damage 1d2; range -; 15 gp; 20 cn; notes s, S",
+        "range": [
+          24,
+          24
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2400",
+        "type": "text",
+        "text": "Shield, Knife: damage 1d4+1; range -; 65 gp; 70 cn; notes s, S",
+        "range": [
+          25,
+          25
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2500",
+        "type": "text",
+        "text": "Shield, Sword: damage 1d4+2; range -; 200 gp; 185 cn; notes s, v, M",
+        "range": [
+          26,
+          26
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2600",
+        "type": "text",
+        "text": "Shield, Tusked: damage 1d4+1; range -; 200 gp; 275 cn; notes s, 2H, L",
+        "range": [
+          27,
+          27
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2700",
+        "type": "text",
+        "text": "Sword, Short: damage 1d6; range -; 7 gp; 30 cn; notes r, S",
+        "range": [
+          28,
+          28
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2800",
+        "type": "text",
+        "text": "Sword, Normal: damage 1d8; range -; 10 gp; 60 cn; notes r, M",
+        "range": [
+          29,
+          29
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic2900",
+        "type": "text",
+        "text": "Sword, Bastard (1H): damage 1d6+1; range -; 15 gp; 80 cn; notes r, HH, L",
+        "range": [
+          30,
+          30
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3000",
+        "type": "text",
+        "text": "Sword, Bastard (2H): damage 1d8+1; range -; 15 gp; 80 cn; notes r, 2H, L",
+        "range": [
+          31,
+          31
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3100",
+        "type": "text",
+        "text": "Sword, Two-Handed: damage 1d10; range -; 15 gp; 100 cn; notes 2H, L",
+        "range": [
+          32,
+          32
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3200",
+        "type": "text",
+        "text": "Blowgun, up to 2': damage Nil; range 10/20/30; 3 gp; 6 cn; notes a, m, s, w, S",
+        "range": [
+          33,
+          33
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3300",
+        "type": "text",
+        "text": "Blowgun, 2'+: damage Nil; range 20/25/30; 6 gp; 15 cn; notes a, m, s, w, 2H, M",
+        "range": [
+          34,
+          34
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3400",
+        "type": "text",
+        "text": "Bola: damage 1d2; range 20/40/60; 5 gp; 5 cn; notes s, t, M",
+        "range": [
+          35,
+          35
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3500",
+        "type": "text",
+        "text": "Cestus: damage 1d3; range -; 5 gp; 10 cn; notes s, S",
+        "range": [
+          36,
+          36
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3600",
+        "type": "text",
+        "text": "Holy Water: damage 1d8; range 10/30/50; 25 gp; 1 cn; notes c, s, t, w, S",
+        "range": [
+          37,
+          37
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3700",
+        "type": "text",
+        "text": "Net: damage Nil; range 10/20/30; 1 sp/sq ft gp; 1 cn/sq ft cn; notes s, t, w, M or L",
+        "range": [
+          38,
+          38
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3800",
+        "type": "text",
+        "text": "Oil, Burning: damage 1d8; range 10/30/50; 2 gp; 10 cn; notes c, s, t, w, S",
+        "range": [
+          39,
+          39
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic3900",
+        "type": "text",
+        "text": "Rock, Thrown: damage 1d3; range 10/30/50; - gp; 10 cn; notes c, t, w, S",
+        "range": [
+          40,
+          40
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic4000",
+        "type": "text",
+        "text": "Sling: damage 1d4; range 40/80/160; 2 gp; 20 cn; notes c, m, w, S",
+        "range": [
+          41,
+          41
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponsbasic4100",
+        "type": "text",
+        "text": "Whip: damage 1d2; range -; 1 gp/ft gp; 10 cn/ft cn; notes s, w, M",
+        "range": [
+          42,
+          42
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Weapon Special Effects (Basic Weapons)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "weaponspecia0000",
+        "type": "text",
+        "text": "Up to 1 HD: Save bonus None; Blackjack Knockout; Bola/Net/Whip Entangle; Blowgun By poison",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponspecia1000",
+        "type": "text",
+        "text": "1+1 to 3 HD: Save +1; Knockout; Entangle; By poison",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponspecia2000",
+        "type": "text",
+        "text": "3+1 to 6 HD: Save +2; Stun; Slow; By poison",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponspecia3000",
+        "type": "text",
+        "text": "6+1 to 9 HD: Save +3; Stun; Slow; By poison",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponspecia4000",
+        "type": "text",
+        "text": "9+1 to 12 HD: Save +4; Delay; Delay; By poison",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponspecia5000",
+        "type": "text",
+        "text": "12+ HD: Save +5; Delay; Delay; By poison",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Weapon Choices by Experience Level",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "weaponchoice0000",
+        "type": "text",
+        "text": "Level 1: Fighter 4 choices; all other classes 2",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice1000",
+        "type": "text",
+        "text": "Level 3: Fighter 5; all others 3",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice2000",
+        "type": "text",
+        "text": "Level 6: Fighter 6; all others 4",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice3000",
+        "type": "text",
+        "text": "Level 9: Fighter 7; all others 5",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice4000",
+        "type": "text",
+        "text": "Level 11: Fighter 8; all others 6",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice5000",
+        "type": "text",
+        "text": "Level 15: Fighter 9; all others 7",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice6000",
+        "type": "text",
+        "text": "Level 19: Fighter 10; all others 7",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice7000",
+        "type": "text",
+        "text": "Level 23: Fighter 11; all others 8",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice8000",
+        "type": "text",
+        "text": "Level 27: Fighter 12; all others 8",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice9000",
+        "type": "text",
+        "text": "Level 30: Fighter 13; all others 9",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice1000",
+        "type": "text",
+        "text": "Level 33: Fighter 14; all others 9",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponchoice1100",
+        "type": "text",
+        "text": "Level 36: Fighter 15; all others 10; +1 per 200,000 XP above maximum level",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Levels of Weapon Mastery",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "levelsofweap0000",
+        "type": "text",
+        "text": "Unskilled: 0 weapon choices spent; half damage with any weapon",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "levelsofweap1000",
+        "type": "text",
+        "text": "Basic: 1 choice; normal weapon characteristics",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "levelsofweap2000",
+        "type": "text",
+        "text": "Skilled: 2 choices; first attack and damage bonuses",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "levelsofweap3000",
+        "type": "text",
+        "text": "Expert: 3 choices; improved damage, range and special effects",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "levelsofweap4000",
+        "type": "text",
+        "text": "Master: 4 choices; stronger damage and defense",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "levelsofweap5000",
+        "type": "text",
+        "text": "Grand Master: 5 choices; best bonuses and special effects",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Training Times and Costs",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d5",
+    "results": [
+      {
+        "_id": "trainingtime0000",
+        "type": "text",
+        "text": "Basic (new weapon): 1 week, 100 gp per week",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "trainingtime1000",
+        "type": "text",
+        "text": "Skilled: 2 weeks, 250 gp per week",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "trainingtime2000",
+        "type": "text",
+        "text": "Expert: 4 weeks, 500 gp per week",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "trainingtime3000",
+        "type": "text",
+        "text": "Master: 8 weeks, 750 gp per week",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "trainingtime4000",
+        "type": "text",
+        "text": "Grand Master: 12 weeks, 1,000 gp per week",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Chance of Training Success",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "chanceoftrai0000",
+        "type": "text",
+        "text": "Student: None: Basic 60%, Skilled 80%, Expert 95%, Master 99%, Grand Master 99%",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "chanceoftrai1000",
+        "type": "text",
+        "text": "Student: Basic: Basic 1%, Skilled 50%, Expert 70%, Master 90%, Grand Master 95%",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "chanceoftrai2000",
+        "type": "text",
+        "text": "Student: Skilled: Skilled 1%, Expert 40%, Master 60%, Grand Master 80%",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "chanceoftrai3000",
+        "type": "text",
+        "text": "Student: Expert: Expert 1%, Master 30%, Grand Master 50%",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "chanceoftrai4000",
+        "type": "text",
+        "text": "Student: Master: Master 1%, Grand Master 20%",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "chanceoftrai5000",
+        "type": "text",
+        "text": "Student: Grand Master: Grand Master 1%",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Attack Roll Bonuses (Weapon Mastery)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "attackrollbo0000",
+        "type": "text",
+        "text": "Unskilled: No bonus vs. primary or secondary",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "attackrollbo1000",
+        "type": "text",
+        "text": "Basic: No bonus vs. primary or secondary",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "attackrollbo2000",
+        "type": "text",
+        "text": "Skilled: +2 vs. primary, +1 vs. secondary",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "attackrollbo3000",
+        "type": "text",
+        "text": "Expert: +4 vs. primary, +2 vs. secondary",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "attackrollbo4000",
+        "type": "text",
+        "text": "Master: +6 vs. primary, +4 vs. secondary",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "attackrollbo5000",
+        "type": "text",
+        "text": "Grand Master: +8 vs. primary, +6 vs. secondary",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Despair Effect",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d5",
+    "results": [
+      {
+        "_id": "despaireffec0000",
+        "type": "text",
+        "text": "Basic: No despair effect",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "despaireffec1000",
+        "type": "text",
+        "text": "Skilled: Up to 4 Hit Dice or levels",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "despaireffec2000",
+        "type": "text",
+        "text": "Expert: Up to 8 Hit Dice or levels",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "despaireffec3000",
+        "type": "text",
+        "text": "Master: Up to 12 Hit Dice or levels",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "despaireffec4000",
+        "type": "text",
+        "text": "Grand Master: Up to 16 Hit Dice or levels",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Mastery Limits for Weapon-Using Monsters",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d4",
+    "results": [
+      {
+        "_id": "masterylimit0000",
+        "type": "text",
+        "text": "Intelligence up to 11: Basic",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "masterylimit1000",
+        "type": "text",
+        "text": "Intelligence 12-15: Skilled",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "masterylimit2000",
+        "type": "text",
+        "text": "Intelligence 16-17: Expert",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "masterylimit3000",
+        "type": "text",
+        "text": "Intelligence 18+: Master (never Grand Master)",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Weapon Mastery Penalties",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "weaponmaster0000",
+        "type": "text",
+        "text": "Basic second weapon: Cannot be reduced below Basic",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1000",
+        "type": "text",
+        "text": "Unskilled second weapon: Cannot be used for the second attack",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2000",
+        "type": "text",
+        "text": "Second attack: -4 attack roll and -1 mastery level",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3000",
+        "type": "text",
+        "text": "Cestus / shield weapons: No off-hand penalty (horned, knife, sword shield)",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster4000",
+        "type": "text",
+        "text": "Tusked shield: Two attacks, neither at an off-hand penalty",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster5000",
+        "type": "text",
+        "text": "Maximum extra attacks: +1 attack per round from all optional rules combined",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Special Effects: Blowgun and Net",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "specialeffec0000",
+        "type": "text",
+        "text": "Up to 1 HD: Save None; Blowgun death; Net entangle",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec1000",
+        "type": "text",
+        "text": "1+1 to 3 HD: Save +1; Blowgun lose 75% hp + paralysis; Net entangle",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec2000",
+        "type": "text",
+        "text": "3+1 to 6 HD: Save +2; Blowgun lose 50% hp + paralysis; Net slow",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec3000",
+        "type": "text",
+        "text": "6+1 to 9 HD: Save +3; Blowgun lose 50% hp; Net slow",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec4000",
+        "type": "text",
+        "text": "9+1 to 12 HD: Save +4; Blowgun lose 25% hp; Net delay",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec5000",
+        "type": "text",
+        "text": "12+1 to 16 HD: Save +5; Blowgun lose 25% hp; Net delay",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec6000",
+        "type": "text",
+        "text": "16+1 HD: Save +5; Blowgun lose 10% hp; Net delay",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Special Effects: Blackjack",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "specialeffec0000",
+        "type": "text",
+        "text": "Up to 1 HD: Save None; knockout at all mastery levels",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec1000",
+        "type": "text",
+        "text": "1+1 to 3 HD: Save +1; knockout at all mastery levels",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec2000",
+        "type": "text",
+        "text": "3+1 to 6 HD: Save +2; Basic/Skilled stun, Expert/GM knockout",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec3000",
+        "type": "text",
+        "text": "6+1 to 9 HD: Save +3; Basic/Skilled stun, Expert stun, GM knockout",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec4000",
+        "type": "text",
+        "text": "9+1 to 12 HD: Save +4; Basic/Skilled delay, Expert stun, GM stun",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec5000",
+        "type": "text",
+        "text": "12+1 to 16 HD: Save +5; Basic/Skilled delay, Expert delay, GM stun",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec6000",
+        "type": "text",
+        "text": "16+1 HD: Save +5; delay at all mastery levels",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Special Effects: Bola and Whip",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "specialeffec0000",
+        "type": "text",
+        "text": "Up to 1 HD: Save None; entangle at all mastery levels",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec1000",
+        "type": "text",
+        "text": "1+1 to 3 HD: Save +1; entangle at all mastery levels",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec2000",
+        "type": "text",
+        "text": "3+1 to 6 HD: Save +2; Basic/Skilled slow, Expert/GM entangle",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec3000",
+        "type": "text",
+        "text": "6+1 to 9 HD: Save +3; Basic/Skilled slow, Expert slow, GM entangle",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec4000",
+        "type": "text",
+        "text": "9+1 to 12 HD: Save +4; Basic/Skilled delay, Expert slow, GM slow",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec5000",
+        "type": "text",
+        "text": "12+1 to 16 HD: Save +5; Basic/Skilled delay, Expert delay, GM slow",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "specialeffec6000",
+        "type": "text",
+        "text": "16+1 HD: Save +5; delay at all mastery levels",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Ammunition",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "ammunition000000",
+        "type": "text",
+        "text": "Blowgun dart: 5 shots, 1 gp, 5 shots/cn",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition100000",
+        "type": "text",
+        "text": "Bow arrow: 20 shots, 5 gp, 2 shots/cn",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition200000",
+        "type": "text",
+        "text": "Silver-tipped arrow: 1 shot, 5 gp, 2 shots/cn",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition300000",
+        "type": "text",
+        "text": "Crossbow quarrel: 30 shots, 10 gp, 3 shots/cn",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition400000",
+        "type": "text",
+        "text": "Silver-tipped quarrel: 1 shot, 5 gp, 3 shots/cn",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition500000",
+        "type": "text",
+        "text": "Sling stone or pellet: 30 shots, 1 gp, 5 shots/cn",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "ammunition600000",
+        "type": "text",
+        "text": "Silver pellet: 1 shot, 5 gp, 5 shots/cn",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Armor",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "armor00000000000",
+        "type": "text",
+        "text": "Shield: AC -1, 10 gp, 100 cn",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor10000000000",
+        "type": "text",
+        "text": "Leather Armor: AC 7, 20 gp, 200 cn; druid/thief allowed with conditions",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor20000000000",
+        "type": "text",
+        "text": "Scale Mail: AC 6, 30 gp, 300 cn",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor30000000000",
+        "type": "text",
+        "text": "Chain Mail: AC 5, 40 gp, 400 cn",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor40000000000",
+        "type": "text",
+        "text": "Banded Mail: AC 4, 50 gp, 450 cn",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor50000000000",
+        "type": "text",
+        "text": "Plate Mail: AC 3, 60 gp, 500 cn",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "armor60000000000",
+        "type": "text",
+        "text": "Suit Armor: AC 0, 250 gp, 750 cn; -5 to missile attacks",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Barding",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "barding000000000",
+        "type": "text",
+        "text": "Leather: AC 7, 40 gp, 250 cn",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding100000000",
+        "type": "text",
+        "text": "Scale: AC 6, 75 gp, 400 cn",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding200000000",
+        "type": "text",
+        "text": "Chain: AC 5, 150 gp, 600 cn",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding300000000",
+        "type": "text",
+        "text": "Banded: AC 4, 400 gp, 1,500 cn",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding400000000",
+        "type": "text",
+        "text": "Plate: AC 3, 500 gp, 3,000 cn",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding500000000",
+        "type": "text",
+        "text": "Field: AC 2, 600 gp, 4,000 cn",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "barding600000000",
+        "type": "text",
+        "text": "Joust: AC 0, 700 gp, 5,000 cn",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Nets",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d7",
+    "results": [
+      {
+        "_id": "nets000000000000",
+        "type": "text",
+        "text": "Very small: Up to 1'; 2' x 2' net",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets100000000000",
+        "type": "text",
+        "text": "Small: 1'+ to 3'; 4' x 4' net",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets200000000000",
+        "type": "text",
+        "text": "Medium: 3'+ to 6'; 6' x 6' net",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets300000000000",
+        "type": "text",
+        "text": "Large: 6'+ to 10'; 9' x 9' net",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets400000000000",
+        "type": "text",
+        "text": "Very large: 10'+ to 15'; 12' x 12' net",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets500000000000",
+        "type": "text",
+        "text": "Huge: 15'+ to 20'; 16' x 16' net",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "nets600000000000",
+        "type": "text",
+        "text": "Mammoth: 20'+ to 30'; 25' x 25' net",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Siege Weapons",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "siegeweapons0000",
+        "type": "text",
+        "text": "Ballista: 75 gp, 6,000 cn, AC 4, 9 hp, crew 4, 100/200/300, d10+6, 1/2 rounds",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "siegeweapons1000",
+        "type": "text",
+        "text": "Catapult, Light: 150 gp, 12,000 cn, AC 4, 18 hp, crew 6, 200/250/300, d8+8, 1/5 rounds",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "siegeweapons2000",
+        "type": "text",
+        "text": "Catapult, Heavy: 250 gp, 18,000 cn, AC 0, 27 hp, crew 8, 250/325/400, d10+10, 1/6 rounds",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "siegeweapons3000",
+        "type": "text",
+        "text": "Trebuchet: 400 gp, 24,000 cn, AC 0, 36 hp, crew 12, 250/400/500, d12+13, 1/6 rounds",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "siegeweapons4000",
+        "type": "text",
+        "text": "Bore: 150 gp, 3,000 cn, AC -4, 50 hp, crew 10, d6+14, 1/2 rounds",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "siegeweapons5000",
+        "type": "text",
+        "text": "Ram, Battering: 100 gp, 3,000 cn, AC -4, 50 hp, crew 10, d6+8, 1/2 rounds",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous Siege Equipment",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "miscellaneou0000",
+        "type": "text",
+        "text": "Belfry: 25 gp per foot, 30' tall, AC 0, AC -8, 75 hp",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "miscellaneou1000",
+        "type": "text",
+        "text": "Gallery Shed: 15 gp per foot, 10' x 10' x 20', AC 4, AC -12, 40 hp",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "miscellaneou2000",
+        "type": "text",
+        "text": "Hoist: 5 gp per foot, 30' tall, AC 4, 15 hp",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "miscellaneou3000",
+        "type": "text",
+        "text": "Ladder: 1 gp per 10', 30' tall, AC 4, 3 hp",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "miscellaneou4000",
+        "type": "text",
+        "text": "Mantlet: 2 gp per foot, 8' long, AC 0, AC -4, 16 hp",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "miscellaneou5000",
+        "type": "text",
+        "text": "Timber Fort: 4 gp per foot, 8' long, AC 0, AC -8, 32 hp",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Passage",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Equipment"
+      }
+    },
+    "formula": "1d3",
+    "results": [
+      {
+        "_id": "passage000000000",
+        "type": "text",
+        "text": "First class: 1 mile per sp, minimum 35 sp",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "passage100000000",
+        "type": "text",
+        "text": "Second class: 5 miles per sp, minimum 10 sp",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "passage200000000",
+        "type": "text",
+        "text": "Third class: 20 miles per sp, minimum 2 sp",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Weapon Mastery Lookup",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Weapon Mastery"
+      }
+    },
+    "formula": "1d40",
+    "results": [
+      {
+        "_id": "weaponmaster0000",
+        "type": "text",
+        "text": "Blackjack: BS 1d2; § knockout | SK 2d2; § knockout (save -1) | EX 1d4+1; § knockout (save -2) | MS P 1d4+3 / S 1d6+1; § knockout (save -3) | GM P 1d4+5 / S 1d6+2; § knockout (save -4)",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1000",
+        "type": "text",
+        "text": "Cestus: BS 1d3; no off-hand penalty | SK 1d4+1; no off-hand penalty | EX 2d4; no off-hand penalty | MS P 2d4 / S 1d4+3; no off-hand penalty | GM P 3d4 / S 2d4+3; no off-hand penalty",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2000",
+        "type": "text",
+        "text": "Club or Torch: BS 1d8; M -2AC/2; delay | SK 1d8+2; M -3AC/2; delay | EX 1d8+4; M -3AC/3; delay + stun | MS P 1d8+8 / S 1d8+6; M -4AC/4; delay + stun | GM P 1d10+10 / S 1d8+8; M -5AC/4; delay + stun",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3000",
+        "type": "text",
+        "text": "Halberd: BS 1d10 | SK 1d10+2; H -1AC/1; hook (save +1) + disarm | EX 1d10+5; H -2AC/1; hook (save -2) + disarm | MS P 1d8+10 / S 1d6+15; H -2AC/2; deflect (1) + disarm | GM P 1d10+14 / S 1d6+12; H -3AC/2; hook (save -4) + disarm",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster4000",
+        "type": "text",
+        "text": "Hammer, War: BS 1d6 | SK 1d6+2; H -1AC/1; second attack + breaks | EX 1d8+2; H -2AC/2; second attack + breaks | MS P 1d8+5 / S 1d4+5; H -3AC/2; second attack + breaks | GM P 1d8+7 / S 1d6+4; H -3AC/2; second attack + breaks",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster5000",
+        "type": "text",
+        "text": "Lance: BS 1d10; A -2AC; charge | SK 1d10+3; M -2AC/1; charge | EX 1d10+7; M -3AC/1; charge | MS P 1d8+12 / S 1d6+5; M -3AC/2; charge | GM P 1d8+16 / S 1d6+12; M -4AC/2; charge",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster6000",
+        "type": "text",
+        "text": "Mace: BS 1d6 | SK 2d4; H -1AC/1; deflect (1) | EX 2d4+2; H -2AC/2; deflect (1) | MS 2d4+4; H -3AC/3; deflect (2) | GM 2d4+6; H -4AC/4; deflect (2)",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster7000",
+        "type": "text",
+        "text": "Pike: BS 1d10; A -1AC/2; deflect (1) | SK 1d12+2; H -2AC/1; deflect (1) | EX 1d12+5; H -2AC/2; deflect (3) | MS P 1d12+9 / S 1d6+4; A -3AC/3; deflect (2) | GM P 1d10+14 / S 1d6+7; A -4AC/4; deflect (4)",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster8000",
+        "type": "text",
+        "text": "Polearm, Other: BS Uses halberd / pike / poleaxe stats | SK Uses halberd / pike / poleaxe stats | EX 2d6+1; stun + deflect (1) | MS P 3d6+3 / S 2d8+2; stun + deflect (2) | GM P 3d6+6 / S 3d6+2; stun + deflect (3)",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster9000",
+        "type": "text",
+        "text": "Poleaxe: BS 1d10 | SK 1d10+3; H -1AC/1; deflect (1) | EX 1d10+6; H -2AC/1; deflect (2) | MS P 1d8+10 / S 3d6+2; H -2AC/2; deflect (2) | GM P 1d8+16 / S 1d10+8; H -3AC/2; deflect (2)",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1000",
+        "type": "text",
+        "text": "Shield, Horned: BS 1d2; A -1AC/1; second attack | SK 2d2; A -1AC/1; second attack | EX 1d4+1; A -1AC/2; second attack | MS P 1d4+3 / S 1d6+1; A -1AC/4; second attack | GM P 1d4+5 / S 1d6+2; A -1AC/6; second attack",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1100",
+        "type": "text",
+        "text": "Shield, Knife: BS 1d4+1; A -1AC; second attack + breaks | SK 1d6+1; A -1AC; second attack + breaks | EX 2d4+1; A -2AC; second attack + breaks | MS P 3d4 / S 2d4+2; A -2AC; second attack + breaks | GM P 4d4 / S 3d4+1; A -2AC; second attack + breaks",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1200",
+        "type": "text",
+        "text": "Shield, Sword: BS 1d4+2; A -1AC/2; second attack + breaks | SK 1d6+3; A -1AC/2; second attack + breaks | EX 1d6+4; A -2AC/3; second attack + breaks | MS P 1d6+7 / S 1d4+7; A -2AC/3; second attack + breaks | GM P 1d6+9 / S 1d4+9; A -3AC/4; second attack + breaks",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1300",
+        "type": "text",
+        "text": "Shield, Tusked: BS 1d4+1; A -1AC; two attacks + breaks | SK 1d6+2; A -2AC; two attacks + breaks | EX 2d4+2; A -2AC; two attacks + breaks | MS P 2d4+4 / S 2d4+1; A -3AC; two attacks + breaks | GM P 2d4+6 / S 3d4+1; A -3AC; two attacks + breaks",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1400",
+        "type": "text",
+        "text": "Staff: BS 1d6 | SK 1d8+2; H -1AC/1; deflect (1) | EX 1d8+5; H -2AC/2; deflect (1) | MS P 1d8+8 / S 1d6+7; H -2AC/3; deflect (2) | GM P 1d8+10 / S 1d6+8; H -3AC/2; deflect (3)",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1500",
+        "type": "text",
+        "text": "Sword, Bastard (1H): BS 1d6+1; A -1AC/2; second attack | SK 1d6+3; H -1AC/1; deflect (1) | EX 1d8+5; H -2AC/2; deflect (1) | MS P 1d10+8 / S 1d6+7; H -2AC/2; deflect (2) | GM P 1d10+8 / S 1d6+7; H -2AC/3; deflect (2)",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1600",
+        "type": "text",
+        "text": "Sword, Bastard (2H): BS 1d8+1; H -1AC/1; deflect (1) | SK 1d8+3; H -2AC/2; deflect (1) | EX 1d8+5; H -2AC/2; deflect (1) | MS P 1d10+8 / S 1d8+8; H -2AC/2; deflect (2) | GM P 1d10+10 / S 1d10+8; H -3AC/2; deflect (3)",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1700",
+        "type": "text",
+        "text": "Sword, Normal: BS 1d8; H -1AC/1; deflect (1) | SK 1d12; H -2AC/1; deflect (1) + disarm | EX 2d8; H -2AC/2; deflect (2) + disarm | MS P 2d8+4 / S 2d6+4; H -3AC/3; deflect (2) + disarm | GM P 2d6+8 / S 1d8+8; H -3AC/3; deflect (3) + disarm",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1800",
+        "type": "text",
+        "text": "Sword, Short: BS 1d6; H -1AC/1; deflect (1) + disarm | SK 1d6+2; H -2AC/2; deflect (2) + disarm | EX 1d6+4; H -2AC/2; deflect (2) + disarm | MS P 1d6+7 / S 1d4+7; H -2AC/3; deflect (3) + disarm | GM P 1d6+9 / S 1d4+9; H -3AC/4; deflect (3) + disarm",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster1900",
+        "type": "text",
+        "text": "Sword, Two-Handed: BS 2d8; H -1AC/1; deflect (1) | SK 2d8+2; H -2AC/2; deflect (1) | EX 2d8+4; H -2AC/2; deflect (2) | MS P 2d8+6 / S 1d10+8; H -3AC/2; deflect (2) | GM P 1d12+10 / S 1d10+8; H -3AC/2; deflect (3)",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2000",
+        "type": "text",
+        "text": "Whip: BS 1d2; M -2AC/2; § entangle | SK 1d4; M -3AC/3; § entangle (save -1) | EX 1d4+1; M -3AC/3; § entangle (save -2) | MS P 1d4+3 / S 1d3+2; M -4AC/3; § entangle (save -3) | GM P 1d4+5 / S 1d3+3; M -4AC/4; § entangle (save -4)",
+        "range": [
+          21,
+          21
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2100",
+        "type": "text",
+        "text": "Axe, Battle: BS 1d8 | SK 1d8+2, range -/5/10 | EX 1d8+4, range -/5/10 | MS P 1d8+8 / S 1d8+6, range 5/10/15 | GM P 1d10+10 / S 1d8+8, range 5/10/15",
+        "range": [
+          22,
+          22
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2200",
+        "type": "text",
+        "text": "Club or Torch: BS 1d4 | SK 1d6+1, range -/15/25 | EX 1d8+2, range -/15/25 | MS P 1d6+5 / S 1d4+5, range 10/25/40 | GM P 1d6+6 / S 1d4+6, range 10/25/40",
+        "range": [
+          23,
+          23
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2300",
+        "type": "text",
+        "text": "Axe, Hand: BS 1d6, 10/20/30 | SK 1d6+2, 15/25/35; M -1AC/1 | EX 1d6+3, 25/35/45; M -2AC/2 | MS P 2d4+4 / S 1d6+4, 30/40/50; M -3AC/3 | GM P 2d4+7 / S 1d6+4, 40/50/60; M -3AC/3",
+        "range": [
+          24,
+          24
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2400",
+        "type": "text",
+        "text": "Dagger: BS 1d4, 10/20/30 | SK 1d6, 15/25/35; H -1AC/1; double damage (20) | EX 2d4, 20/30/45; H -2AC/2; double damage (19-20) | MS P 3d4 / S 2d4+2, 25/35/50; H -2AC/2; double damage (18-20) | GM P 4d4 / S 3d4+1, 30/40/50; H -3AC/3; double damage (17-20)",
+        "range": [
+          25,
+          25
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2500",
+        "type": "text",
+        "text": "Hammer, Throwing: BS 1d4, 10/20/30 | SK 1d4+2, 10/20/30; stun (s/m) | EX 1d6+2, 20/30/45; M -2AC/3; stun (s/m) | MS P 1d6+4 / S 1d4+4, 20/30/45; M -3AC/4; stun (s/m) | GM S 1d6+6, 20/30/45; M -4AC/5; stun (s/m)",
+        "range": [
+          26,
+          26
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2600",
+        "type": "text",
+        "text": "Javelin: BS 1d6, 30/60/90 | SK 1d6+2, 30/60/90; H -1AC/1; delay (s/m) | EX 1d6+4, 40/80/120; H -2AC/2; delay (s/m) | MS P 1d6+6 / S 1d10+6, 40/80/120; H -3AC/3; delay (s/m) | GM P 1d6+9 / S 1d10+6, 50/100/150; H -4AC/4; delay (s/m)",
+        "range": [
+          27,
+          27
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2700",
+        "type": "text",
+        "text": "Spear: BS 1d6, 20/40/60; set | SK 1d6+2, 20/40/60; set | EX 2d4+2, 40/60/75; set + stun | MS 2d4+4, 40/60/75; M -3AC/2; set + stun | GM 2d4+6, 60/75/90; M -3AC/3; set + stun",
+        "range": [
+          28,
+          28
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2800",
+        "type": "text",
+        "text": "Trident: BS 1d6, 10/20/30 | SK 1d8+1, 10/20/30; skewer up to 4 HD | EX 1d8+4, 20/30/45; skewer up to 7 HD | MS P 1d8+6 / S 2d4+5, 20/30/45; skewer up to 10 HD | GM P 1d8+7 / S 1d6+6, 25/35/50; skewer up to 15 HD",
+        "range": [
+          29,
+          29
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster2900",
+        "type": "text",
+        "text": "Blowgun, up to 2': BS Nil, 10/20/30; § by poison | SK Nil, 15/20/30; § by poison (save -1) | EX Nil, 15/25/35; § by poison (save -2) | MS Nil, 20/25/35; § by poison (save -3) | GM Nil, 25/30/40; § by poison (save -4)",
+        "range": [
+          30,
+          30
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3000",
+        "type": "text",
+        "text": "Blowgun, over 2': BS Nil, 20/25/30; § by poison | SK Nil, 20/25/30; § by poison (save -1) | EX Nil, 25/30/40; § by poison (save -2) | MS Nil, 30/35/40; § by poison (save -3) | GM Nil, 25/30/40; § by poison (save -4)",
+        "range": [
+          31,
+          31
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3100",
+        "type": "text",
+        "text": "Bola: BS 1d2, 20/40/60; strangle (20) | SK 1d3, 25/40/60; H -1AC/1; strangle (20) (save -1) | EX 1d3+1, 30/50/70; H -2AC/2; strangle (19-20) (save -2) | MS S 3d4+1, 35/50/70; H -3AC/3; strangle (18-20) | GM P 4d4 / S 3d4+1, 30/50/60; H -3AC/3; strangle (17-20)",
+        "range": [
+          32,
+          32
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3200",
+        "type": "text",
+        "text": "Bow, Long: BS 1d6, 70/140/210 | SK 1d8+1, 90/150/220; H -1AC/1; delay (s/m) | EX 1d10+2, 110/170/230; H -2AC/1; delay (s/m) | MS S 1d4+6, 110/170/230; H -3AC/2; delay (s/m) | GM P 1d6+6 / S 1d6+6, 130/190/250; M -4AC/5; delay (s/m)",
+        "range": [
+          33,
+          33
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3300",
+        "type": "text",
+        "text": "Bow, Short: BS 1d6, 50/100/150 | SK 1d6+2, 60/110/160; H -1AC/1; delay (s) | EX 1d6+4, 80/130/170; H -1AC/2; delay (s) | MS P 1d6+7 / S 1d4+8, 90/130/180; H -2AC/2; delay (s) | GM P 1d6+9 / S 1d4+8, 110/140/190; H -2AC/2; delay (s)",
+        "range": [
+          34,
+          34
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3400",
+        "type": "text",
+        "text": "Crossbow, Heavy: BS 2d4, 80/160/240 | SK 2d6, 90/160/240; M -1AC/1; stun (s/m) | EX 2d6+2, 100/170/240; M -2AC/2; stun (s/m) | MS P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s) | GM P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)",
+        "range": [
+          35,
+          35
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3500",
+        "type": "text",
+        "text": "Crossbow, Light: BS 1d6, 60/120/180 | SK 1d6+2, 60/120/180; M -1AC/1; stun (s) | EX 1d6+4, 75/130/180; M -2AC/2; stun (s) | MS P 1d8+6 / S 1d4+6, 75/130/180; M -2AC/3; stun (s) | GM P 1d8+6 / S 1d6+7, 75/130/180; M -2AC/3; stun (s)",
+        "range": [
+          36,
+          36
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3600",
+        "type": "text",
+        "text": "Net: BS Nil, 10/20/30; § entangle | SK Nil, 15/25/35; A -2AC/1; entangle (save -1) | EX Nil, 20/30/40; A -4AC/2; entangle (save -2) | MS Nil, 25/35/45; A -6AC/3; entangle (save -4) | GM Nil, 30/40/50; A -8AC/4; entangle (save -6)",
+        "range": [
+          37,
+          37
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3700",
+        "type": "text",
+        "text": "Sling: BS 1d4, 40/80/160 | SK 1d6, 40/80/160; H -1AC/2; stun (s/m) | EX 2d4, 60/110/170; H -2AC/3; stun (s/m) | MS P 3d4 / S 1d8+2, 60/110/170; H -3AC/3; stun (s/m) | GM P 4d4 / S 1d10+2, 80/130/180; H -4AC/4; stun (s/m)",
+        "range": [
+          38,
+          38
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3800",
+        "type": "text",
+        "text": "Stone, Thrown: BS 1d3, 10/30/50; stun (s) | SK Stone 1d3, 10/30/50; stun (s) | EX 1d6+2, 10/30/50; ignite | MS P 1d8+6, 75/130/180; stun (s) | GM P 1d8+6 / S 1d6+7, 75/130/180; stun (s)",
+        "range": [
+          39,
+          39
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "weaponmaster3900",
+        "type": "text",
+        "text": "Holy Water: BS 1d8, 10/30/50; ignite | SK 1d8, 10/30/50; stun (s) | EX 1d8+4, 10/30/50; stun (s) | MS P 1d8+6, 75/130/180; stun (s) | GM P 1d8+6 / S 1d6+7, 75/130/180; stun (s)",
+        "range": [
+          40,
+          40
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "_id": "wxAYiuYItFbOWMj7",
+  "_key": "!items!wxAYiuYItFbOWMj7",
+  "name": "Raise Dead",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "120'",
+    "duration": "Permanent",
+    "effect": "Body of one human or demihuman By means of this spell, the cleric can raise any human, dwarf, halfling, or elf from the dead.",
+    "reversible": false,
+    "description": "By means of this spell, the cleric can raise any human, dwarf, halfling, or elf from the dead. The body must be present, and if part is missing, the raised character will be disabled accordingly. An 8th level cleric can raise a body that has been dead for up to four days. For each level of the cleric above 8th, add four days to this time. Thus, a 10th level cleric can raise bodies that have been dead for up to twelve days. The recipient returns to life with 1 hit point, and cannot fight, cast spells, use abilities, carry heavy loads, or move at more than half speed. These penalties will disappear after two full weeks of complete bed rest, but the healing cannot be speeded by magic.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

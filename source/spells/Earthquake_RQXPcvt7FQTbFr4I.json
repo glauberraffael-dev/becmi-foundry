@@ -1,0 +1,30 @@
+{
+  "_id": "RQXPcvt7FQTbFr4I",
+  "_key": "!items!RQXPcvt7FQTbFr4I",
+  "name": "Earthquake",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "120 yards",
+    "duration": "1 turn",
+    "effect": "Causes earth tremors",
+    "reversible": false,
+    "description": "This powerful spell causes a section of earth to shake, and opens large cracks in the ground. A 17th level caster can affect an area up to 60' square, adding 5' to each dimension with each experience level above 17th. For example, an 18th level cleric affects an area up to 65' square; 19th level, 70' square; and so forth. Within the area of effect, all small dwellings are reduced to rubble, and larger constructions are cracked open. Earthen formations (hills, cliffsides, etc.) form rockslides.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

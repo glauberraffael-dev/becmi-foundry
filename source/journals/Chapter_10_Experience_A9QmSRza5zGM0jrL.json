@@ -1,0 +1,27 @@
+{
+  "_id": "A9QmSRza5zGM0jrL",
+  "_key": "!journal!A9QmSRza5zGM0jrL",
+  "name": "Chapter 10: Experience",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 10
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Awarding XP for role-playing, goals, monsters, treasure and exceptional actions; maximum hit points.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 10. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "XzAvxyrG82BjTOwx",
+      "_key": "!journal.pages!A9QmSRza5zGM0jrL.XzAvxyrG82BjTOwx"
+    }
+  ]
+}

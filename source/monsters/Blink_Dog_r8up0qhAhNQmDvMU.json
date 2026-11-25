@@ -1,0 +1,48 @@
+{
+  "_id": "r8up0qhAhNQmDvMU",
+  "_key": "!actors!r8up0qhAhNQmDvMU",
+  "name": "Blink Dog",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite",
+    "damage": "1d6",
+    "appearing": "1d6(1d6 + 3)",
+    "saveAs": "F4",
+    "morale": 6,
+    "treasure": "C",
+    "intelligence": 9,
+    "alignment": "Lawful",
+    "xpValue": 125,
+    "terrain": "Open, Woods, Desert.",
+    "monsterType": "Monster (Common).",
+    "description": "Armor Class: 5 Hit Dice: 4* (S) Move: 120' (40') Attacks: 1 bite Damage: ld6 No. Appearing: ld6(ld6 + 3) Save As: F4 Morale: 6 Treasure Type: C Intelligence: 9 Alignment: Lawful XP Value: 125 Monster Type: Monster (Common). This unusual creature is a small, brown-furred, rugged-looking canine with big jaws. It is not, however, a normal animal. It is intelligent, often travels in packs, and uses a limited teleportation ability. It can \"blink out\" of one spot and immediately appear (\"blink in\") at another.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Blink Dog"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

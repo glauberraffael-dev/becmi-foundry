@@ -1,0 +1,25 @@
+{
+  "_id": "vau-c9M68L4XjC7i",
+  "_key": "!items!vau-c9M68L4XjC7i",
+  "name": "Clothes, plain",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Tunic and pants; blouse and skirt; —  — ",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

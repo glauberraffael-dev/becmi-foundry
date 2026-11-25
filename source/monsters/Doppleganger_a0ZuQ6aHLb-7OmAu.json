@@ -1,0 +1,48 @@
+{
+  "_id": "a0ZuQ6aHLb-7OmAu",
+  "_key": "!actors!a0ZuQ6aHLb-7OmAu",
+  "name": "Doppleganger",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 head butt",
+    "damage": "2d4",
+    "appearing": "0 (1d20)",
+    "saveAs": "D6",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 15,
+    "alignment": "Lawful",
+    "xpValue": 50,
+    "terrain": "Ocean.",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 3* (L) Move (Swimming): 180' (60') Attacks: 1 head butt Damage: 2d4 No. Appearing: 0 (1d20) Save As: D6 Morale: 10 Treasure Type: Nil Intelligence: 15 Alignment: Lawful XP Value: 50 Armor Class: 5 Hit Dice: 4* (M) Move: 90' (30') Attacks: 1 bite Damage: 1dl2 No. Appearing: 1d6 (1d6) Save As: F8 Morale: 8 Treasure Type: E Intelligence: 9 Alignment: Chaotic XP Value: 125 Monster Type: Monster (Rare). These man-sized shape-changing creatures are intelligent and evil.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Doppleganger"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

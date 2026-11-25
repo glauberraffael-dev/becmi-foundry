@@ -1,0 +1,34 @@
+{
+  "_id": "ZRMt6qk_rMNjxiBn",
+  "_key": "!items!ZRMt6qk_rMNjxiBn",
+  "name": "Dagger, Silver",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "t, w, S",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "t, w, S",
+    "damage": "1d4",
+    "range": 10,
+    "ranges": "10/20/30",
+    "cost": 30,
+    "weight": 10,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "t, w, S"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

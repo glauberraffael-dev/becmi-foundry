@@ -1,0 +1,20 @@
+<header class="becmi-header">
+  <img class="becmi-avatar" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}">
+  <div class="becmi-header-fields">
+    <div class="becmi-field becmi-field--name">
+      <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'BECMI.labels.name'}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+    {{#if isCharacter}}
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.class'}}</label><input name="system.attributes.class" type="text" value="{{system.attributes.class}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.level'}}</label><input name="system.attributes.level" type="number" value="{{system.attributes.level}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.race'}}</label><input name="system.attributes.race" type="text" value="{{system.attributes.race}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.alignment'}}</label><input name="system.attributes.alignment" type="text" value="{{system.attributes.alignment}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.xp'}}</label><input name="system.attributes.xp" type="number" value="{{system.attributes.xp}}" {{#unless editable}}disabled{{/unless}}></div>
+    {{else}}
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}</label><input name="system.hd" type="text" value="{{system.hd}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.morale'}}</label><input name="system.morale" type="number" value="{{system.morale}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.xpValue'}}</label><input name="system.xpValue" type="number" value="{{system.xpValue}}" {{#unless editable}}disabled{{/unless}}></div>
+    <div class="becmi-field"><label>{{localize 'BECMI.labels.saveAs'}}</label><input name="system.saveAs" type="text" value="{{system.saveAs}}" {{#unless editable}}disabled{{/unless}}></div>
+    {{/if}}
+  </div>
+</header>

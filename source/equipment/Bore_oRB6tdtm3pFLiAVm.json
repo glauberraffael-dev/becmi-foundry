@@ -1,0 +1,25 @@
+{
+  "_id": "oRB6tdtm3pFLiAVm",
+  "_key": "!items!oRB6tdtm3pFLiAVm",
+  "name": "Bore",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "150 — 3,000 — —_A_ — 50 — 10 —  — d6 + 14 — 1 per 2 — ",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 0,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

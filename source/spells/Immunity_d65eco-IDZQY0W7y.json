@@ -1,0 +1,30 @@
+{
+  "_id": "d65eco-IDZQY0W7y",
+  "_key": "!items!d65eco-IDZQY0W7y",
+  "name": "Immunity",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch (one creature)",
+    "duration": "One turn per level of the caster",
+    "effect": "Bestows immunity or resistance to some spells and weapons",
+    "reversible": false,
+    "description": "This spell gives the recipient total immunity to all 1st-, 2nd-, and 3rd level spells. Furthermore, 4th- and 5th level spells have only half normal effect, or one-quarter normal if the victim makes a successful saving throw. Any spell effect that is quantifiable is reduced in effect; these effects include reductions in duration, bonuses, penalties, damage, etc. Round fractions off in the recipient's favor. The recipient is also completely immune to all missiles (normal or magical), as well as normal and silver weapons; he takes half damage from magical hand-held weapons. This applies only to weapons; claws, bites, breath weapons, and other natural attack forms are not blocked.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

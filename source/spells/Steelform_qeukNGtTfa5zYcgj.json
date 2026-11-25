@@ -1,0 +1,30 @@
+{
+  "_id": "qeukNGtTfa5zYcgj",
+  "_key": "!items!qeukNGtTfa5zYcgj",
+  "name": "Steelform",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "Creates up to 500 square feet of steel",
+    "reversible": false,
+    "description": "Effect: Creates up to 500 square feet of steel This spell is effectively identical to the 7th level ironform spell. However, the material created is of weapon-quality; a swordmaker with this spell could cast the spell and create a finelycrafted, high-quality sword in 12 turns (two hours) or less. Following the same general guidelines as ironform, a steel wall will have an AC of — 10(2) and about 20 hit points per 1\" thickness.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

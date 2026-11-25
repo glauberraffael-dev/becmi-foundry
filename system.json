@@ -1,0 +1,118 @@
+{
+  "id": "becmi",
+  "title": "BECMI — Rules Cyclopedia",
+  "description": "Unofficial Foundry VTT system for the Basic/Expert/Companion/Master/Immortal rules, based on the D&D Rules Cyclopedia. Requires the Rules Cyclopedia PDF for full rules text; compendia contain structured game data only.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13
+  },
+  "authors": [
+    {
+      "name": "Local conversion"
+    }
+  ],
+  "esmodules": [
+    "scripts/becmi.mjs"
+  ],
+  "styles": [
+    "styles/becmi.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": { "htmlFields": ["biography"] },
+      "npc": { "htmlFields": ["biography"] },
+      "monster": { "htmlFields": ["description", "special", "notes"] }
+    },
+    "Item": {
+      "weapon": { "htmlFields": ["description"] },
+      "armor": { "htmlFields": ["description"] },
+      "equipment": { "htmlFields": ["description"] },
+      "spell": { "htmlFields": ["description"] },
+      "class": { "htmlFields": ["description"] },
+      "feature": { "htmlFields": ["description"] },
+      "treasure": { "htmlFields": ["description"] }
+    }
+  },
+  "initiative": "1d6",
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "attributes.hp.value",
+  "secondaryTokenAttribute": "attributes.ac.value",
+  "socket": false,
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "BECMI Monsters",
+      "path": "packs/monsters",
+      "type": "Actor",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells",
+      "label": "BECMI Spells",
+      "path": "packs/spells",
+      "type": "Item",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "equipment",
+      "label": "BECMI Equipment",
+      "path": "packs/equipment",
+      "type": "Item",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "classes",
+      "label": "BECMI Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "treasure",
+      "label": "BECMI Treasure",
+      "path": "packs/treasure",
+      "type": "Item",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "tables",
+      "label": "BECMI Tables",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "journals",
+      "label": "BECMI Rules Reference",
+      "path": "packs/journals",
+      "type": "JournalEntry",
+      "system": "becmi",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "license": "MIT for code; game content is an unofficial fan conversion. See LICENSE and CREDITS.md."
+}

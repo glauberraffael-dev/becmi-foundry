@@ -1,0 +1,34 @@
+{
+  "_id": "TMFv8s3T3aW03ZTY",
+  "_key": "!items!TMFv8s3T3aW03ZTY",
+  "name": "Hammer, Throwing",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "c, t, M",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "c, t, M",
+    "damage": "1d4",
+    "range": 10,
+    "ranges": "10/20/30",
+    "cost": 4,
+    "weight": 25,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "c, t, M"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

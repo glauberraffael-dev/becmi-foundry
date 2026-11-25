@@ -1,0 +1,25 @@
+{
+  "_id": "JNO98eNZVoil-HFG",
+  "_key": "!items!JNO98eNZVoil-HFG",
+  "name": "Boots, riding or swash-topped",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 5gp — 15**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 15,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

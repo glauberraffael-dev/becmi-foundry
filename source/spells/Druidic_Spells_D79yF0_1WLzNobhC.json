@@ -1,0 +1,30 @@
+{
+  "_id": "D79yF0_1WLzNobhC",
+  "_key": "!items!D79yF0_1WLzNobhC",
+  "name": "Druidic Spells",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "",
+    "duration": "",
+    "effect": "",
+    "reversible": false,
+    "description": "Druids can learn and cast any spell that a cleric can—with the exception of spells that affect alignments (such as protection from evil). However, druids also have their own spells, spells which clerics and magic-users cannot utilize. The druid cannot cast more spells in a day than a cleric, but he has the advantage of being able to learn spells from two different sources, his own list and the cleric's spell list. Druidic spells tend to concern nature and the natural order of life rather than combat or power like many of the clerical and magical spells. Druidic spells are also not reversible.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

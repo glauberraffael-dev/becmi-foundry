@@ -1,0 +1,48 @@
+{
+  "_id": "p8QwnCPhhA6G-kAp",
+  "_key": "!actors!p8QwnCPhhA6G-kAp",
+  "name": "Dinosaur, Aquatic (Armored)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "9",
+    "hp": 9,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 30
+    },
+    "attacks": ". . 1 bite (+ 2 flippers).",
+    "damage": "1 to 2d4 2d4 to 4d8 1d4 to 2d8",
+    "appearing": "1d2 to 2d8 1d2 to 1d4 1d2 to 1d6",
+    "saveAs": "..F (level = 1/2 HD). .",
+    "morale": 6,
+    "treasure": "Nil Nil (U + V) Nil",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 0,
+    "terrain": "",
+    "monsterType": "",
+    "description": "Small Large Armored Armor Class: 7 5 to 7 2 to 4 Hit Dice: 2 to 8 (S to L) 9 to 24 (L) 6 to 9 (L) Move: 0 to 30' 0 to 60' 10' to 60' Swimming: 120'to 180' 150' to 240' 90' to 150' Attacks: . . 1 bite (+ 2 flippers). Damage: 1 to 2d4 2d4 to 4d8 1d4 to 2d8 No. Appearing: 1d2 to 2d8 1d2 to 1d4 1d2 to 1d6 Save As: ..F (level = 1/2 HD). . Morale: 3 to 6 6 to 11 7 to 9 Treasure Type: Nil Nil (U + V) Nil Intelligence: 1 to 3 1 to 3 1 to 3 Alignment: Neutral Neutral Neutral XP Value: Varies Varies Varies",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Dinosaur, Aquatic (Armored)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

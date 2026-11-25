@@ -1,0 +1,20 @@
+<div class="becmi-roll-card" data-outcome="{{outcome}}">
+  <div class="becmi-roll-card__flavor">{{flavor}}</div>
+  <h3 class="becmi-roll-card__title">{{title}}</h3>
+  {{#if showDice}}
+  <div class="becmi-roll-card__dice">
+    {{#each dice as |die|}}
+    <span class="becmi-die" title="d{{die.faces}}">
+      {{#each die.results as |face|}}<span class="becmi-die-face {{#unless face.active}}discarded{{/unless}}">{{face.result}}</span>{{/each}}
+    </span>
+    {{/each}}
+  </div>
+  {{/if}}
+  <div class="becmi-roll-card__result">
+    <span class="becmi-roll-card__total">{{total}}</span>
+    {{#if target}}<span class="becmi-roll-card__target">vs {{target}}</span>{{/if}}
+  </div>
+  {{#if result}}<div class="becmi-roll-card__detail">{{result}}</div>{{/if}}
+  {{#if isHit}}<div class="becmi-roll-card__outcome">{{localize "BECMI.rolls.hit"}}</div>{{else if isMiss}}<div class="becmi-roll-card__outcome">{{localize "BECMI.rolls.miss"}}</div>{{/if}}
+  <div class="becmi-roll-card__formula">{{formula}}</div>
+</div>

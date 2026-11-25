@@ -1,0 +1,27 @@
+{
+  "_id": "gZPKqUP-Qo9ck6Zy",
+  "_key": "!items!gZPKqUP-Qo9ck6Zy",
+  "name": "Bug Repellent",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "\"Bug\" includes any form of arachnid (spider, tick, scorpion, etc.), insect (ant, beetle, fly, etc.), or chilopod (centipede, millipede, etc.). After using this potion, the user cannot be touched by any normal bug, and a giant-sized bug will ignore the user unless the bug makes a saving throw vs. spells. If the saving throw is successful, the potion does not affect the giant bug. The potion adds a +4.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

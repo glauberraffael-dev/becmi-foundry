@@ -1,0 +1,27 @@
+{
+  "_id": "F9MlggzwDizo6ggh",
+  "_key": "!items!F9MlggzwDizo6ggh",
+  "name": "Horn of Blasting",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This horn creates a cone of sound, 100' long and 20' wide at the far end, when blown. Victims within this area take 2d6 points of damage and must make a saving throw vs. spells or be deafened for one turn; constructions and ships take 1d8 points of damage. The horn may be blown but once per turn.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

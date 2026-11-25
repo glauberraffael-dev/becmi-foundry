@@ -1,0 +1,48 @@
+{
+  "_id": "ZhWjf-moLc0UGzrx",
+  "_key": "!actors!ZhWjf-moLc0UGzrx",
+  "name": "Beholder, Undead",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "20",
+    "hp": 20,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite + special",
+    "damage": "2d0 + special",
+    "appearing": "1 (0)",
+    "saveAs": "M20",
+    "morale": 12,
+    "treasure": "L, N, O ( x 2)",
+    "intelligence": 16,
+    "alignment": "Chaotic",
+    "xpValue": 14975,
+    "terrain": "",
+    "monsterType": "Undead Construct, Enchanted (Very Rare).",
+    "description": "Armor Class: -4/-2/3 Hit Dice: 20* (hp special) (M) Move: 60' (20') Attacks: 1 bite + special Damage: 2dl0 + special No. Appearing: 1 (0) Save As: M20 Morale: 12 Treasure Type: L, N, O ( x 2) Intelligence: 16 Alignment: Chaotic XP Value: 14,975 Monster Type: Undead Construct, Enchanted (Very Rare). An undead beholder is similar to a living one, but is a construct created for some specific evil purpose. All undead beholders are constructs; \"real\" beholders never become undead.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "max": 20
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Beholder, Undead"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

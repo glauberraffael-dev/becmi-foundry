@@ -1,0 +1,31 @@
+{
+  "_id": "wOYqHWyoAXjBpCra",
+  "_key": "!items!wOYqHWyoAXjBpCra",
+  "name": "Survival",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "One hour per level of the caster",
+    "effect": "Protects one creature against all nonmagical environmental damage",
+    "reversible": false,
+    "description": "This spell is similar to the 4th level polymorph self spell, but is far more powerful. The caster actually becomes another creature or object in all respects except the mind, hit points, and saving throws. The caster takes his new armor class, attack rolls, special attack forms, immunities, and all other details from the form he has taken. This spell protects the recipient from adverse conditions of all types, including normal heat or cold, lack of air, and so forth. While the spell is in effect, the caster needs no air, food, water, or sleep. The spell does not protect against magical damage of any type, attack damage, poisons, breath weapons, or physical blows from creatures.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

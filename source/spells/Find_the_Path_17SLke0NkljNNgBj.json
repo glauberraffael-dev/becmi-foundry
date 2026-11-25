@@ -1,0 +1,30 @@
+{
+  "_id": "17SLke0NkljNNgBj",
+  "_key": "!items!17SLke0NkljNNgBj",
+  "name": "Find the Path",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (Cleric only)",
+    "duration": "6 turns + 1 turn per level of the caster",
+    "effect": "Shows the path to an area",
+    "reversible": false,
+    "description": "When casting this spell, the cleric must name a specific place, though it need not be a place he has visited before. For the duration of the spell, the cleric knows the direction to that place. In addition, the cleric will magically gain any special knowledge needed to get to the place; for example, he would know the location of secret doors, passwords, and so forth. When the spell's duration runs out, the caster only remembers the general direction to the place. All other special information is forgotten. The spell is instantly negated is the caster attempts to write down, record, or disclose that special knowledge to others. This spell is often used to find a fast escape route.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

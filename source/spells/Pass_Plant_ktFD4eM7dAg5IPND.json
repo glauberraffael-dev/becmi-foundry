@@ -1,0 +1,30 @@
+{
+  "_id": "ktFD4eM7dAg5IPND",
+  "_key": "!items!ktFD4eM7dAg5IPND",
+  "name": "Pass Plant",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "0 (druid only)",
+    "duration": "Instantaneous",
+    "effect": "Short-range teleportation With this spell, the druid can enter one tree, teleport, and immediately step out of another tree of the same type.",
+    "reversible": false,
+    "description": "With this spell, the druid can enter one tree, teleport, and immediately step out of another tree of the same type. The trees must be large enough to enclose the druid. The range a druid can teleport varies by the type of tree, as follows. Oak 600 yards Ash, Elm, Linden, Yew 360 yards Evergreen trees 240 yards Other trees 300 yards",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

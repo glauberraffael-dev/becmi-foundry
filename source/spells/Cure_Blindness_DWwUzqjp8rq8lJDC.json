@@ -1,0 +1,30 @@
+{
+  "_id": "DWwUzqjp8rq8lJDC",
+  "_key": "!items!DWwUzqjp8rq8lJDC",
+  "name": "Cure Blindness",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "One living creature",
+    "reversible": false,
+    "description": "This spell will cure nearly any form of blindness, including those caused by light or darkness spells (whether normal or continual). It will not, however, affect blindness caused by a curse.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

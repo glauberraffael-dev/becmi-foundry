@@ -1,0 +1,48 @@
+{
+  "_id": "-mgiHGcjHqB1CqB3",
+  "_key": "!actors!-mgiHGcjHqB1CqB3",
+  "name": "Hsiao (Guardian Owl)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 beak or 1 spell",
+    "damage": "1d6 /1d6 /1d4 or as spell",
+    "appearing": "1d4 (1d20)",
+    "saveAs": "C (level = HD)",
+    "morale": 9,
+    "treasure": "O",
+    "intelligence": 10,
+    "alignment": "Lawful XP Value by HD: `4** = 175` 10**** = 4,000 `5** = 425` 11**** = 4,300 `6*** = 950` 12**** = 4,750 `7*** = 1,650` 13**** = 5,150 `8*** = 2,300` 14**** = 5,500 `9*** = 3,000` 15**** = 5,850",
+    "xpValue": 0,
+    "terrain": "Woods.",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 4 to 15(L) Move: 90' (30') Flying: 210'(70') Attacks: 2 claws/1 beak or 1 spell Damage: 1d6 /1d6 /1d4 or as spell No. Appearing: ld4 (1d20) Save As: C (level = HD) Morale: 9 Treasure Type: O Intelligence: 10 Alignment: Lawful XP Value by HD: `4 = 175` 10 = 4,000 `5 = 425` 11 = 4,300 `6* = 950` 12 = 4,750 `7* = 1,650` 13 = 5,150 `8* = 2,300` 14 = 5,500 `9* = 3,000` 15 = 5,850 Monster Type: Monster (Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hsiao (Guardian Owl)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "rzTPOUXdCwlqtUP_",
+  "_key": "!items!rzTPOUXdCwlqtUP_",
+  "name": "Suit Armor",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "S",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "S",
+    "ac": 0,
+    "cost": "250",
+    "weight": 750,
+    "armorType": "Suit Armor"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "S"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

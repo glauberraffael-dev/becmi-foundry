@@ -1,0 +1,48 @@
+{
+  "_id": "46XWAVxfA97ke03g",
+  "_key": "!actors!46XWAVxfA97ke03g",
+  "name": "Hag",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "11",
+    "hp": 11,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws or 1 spell 1 dagger/1 touch + gaze",
+    "damage": "2d4 + poison or spell 1d6/l energy drain + special",
+    "appearing": "1(1) 1(1)",
+    "saveAs": "• C (level = HD) F8",
+    "morale": 1010,
+    "treasure": "C G + M",
+    "intelligence": 1212,
+    "alignment": "Chaotic Chaotic",
+    "xpValue": 2300,
+    "terrain": "Black Hag: Woods. Sea Hag: Ocean (coast).",
+    "monsterType": "Black Hag: Humanoid (Very Rare). Sea Hag: Humanoid, Enchanted (Very Rare).",
+    "description": "Black Sea* Armor Class: 4 4 Hit Dice: 11 to 20(M) 8* (M) Move: 150' (50') 120' (40') Swimming: 50' (20') 150' (50') Attacks: 2 claws or 1 spell 1 dagger/1 touch + gaze Damage: 2d4 + poison or spell 1d6/l energy drain + special No. Appearing: 1(1) 1(1) Save As: • C (level = HD) F8 Morale: 10 10 Treasure Type: C G + M Intelligence: 12 12 Alignment: Chaotic Chaotic XP Value: <u>See below</u> 2,300 Black Hag XP Value by HD: ity to control undead as if they were also undead 11 = 4,300 16* - 7,350 (though they are not un",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 11,
+        "max": 11
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hag"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

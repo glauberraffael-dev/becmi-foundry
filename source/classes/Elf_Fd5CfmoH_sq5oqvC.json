@@ -1,0 +1,39 @@
+{
+  "_id": "Fd5CfmoH_sq5oqvC",
+  "_key": "!items!Fd5CfmoH_sq5oqvC",
+  "name": "Elf",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Strength and Intelligence",
+    "hitDice": "1d6",
+    "maxLevel": 10,
+    "requirements": "Intelligence 9+",
+    "xpTable": {
+      "1": 2,
+      "2": 4000,
+      "3": 8000,
+      "4": 16000,
+      "5": 32000,
+      "6": 64000,
+      "7": 120000,
+      "8": 250000,
+      "9": 400000,
+      "10": 600000
+    },
+    "saves": {},
+    "description": "Prime Requisites: Strength and Intelligence. Other Requirements: Intelligence score of 9 or more. Experience Bonus: 5% for Strength of 13 or better and Intelligence of 13-15, 10% for Strength of 13 or better and Intelligence of 16-18. Hit Dice: 1d6 per level up to 9th level. 10th level, + 1 hit point, and Constitution adjustment does not apply. Maximum Level: 10. Armor: All; shields permitted. Weapons: Any. Special Abilities: Fighter Maneuvers (Lance Attack, Set Spear vs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 10
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

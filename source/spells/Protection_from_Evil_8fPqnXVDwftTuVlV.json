@@ -1,0 +1,31 @@
+{
+  "_id": "8fPqnXVDwftTuVlV",
+  "_key": "!items!8fPqnXVDwftTuVlV",
+  "name": "Protection from Evil",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "0",
+    "duration": "12 turns",
+    "effect": "The cleric only",
+    "reversible": false,
+    "description": "This spell creates an invisible magical barrier all around the cleric's body (less than an inch away). While the spell lasts, characters and monsters attacking the cleric are penalized by - 1 to their attack rolls, and the cleric gains a + 1 bonus to all saving throws. In addition, enchanted creatures cannot even touch the cleric! (An enchanted creature is one that normal weapons will not affect, one which only magical weapons can hit. A creature that can only be hit by a silver weapon—a werewolf, for example—is not an enchanted creature. Any creature that is magically summoned or controlled, such as a charmed character, is also considered to be an enchanted creature.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

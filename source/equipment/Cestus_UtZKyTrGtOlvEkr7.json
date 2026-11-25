@@ -1,0 +1,34 @@
+{
+  "_id": "UtZKyTrGtOlvEkr7",
+  "_key": "!items!UtZKyTrGtOlvEkr7",
+  "name": "Cestus",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "s, S",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "s, S",
+    "damage": "1d3",
+    "range": 0,
+    "ranges": "-",
+    "cost": 5,
+    "weight": 10,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "s, S"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

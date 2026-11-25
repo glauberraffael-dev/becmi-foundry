@@ -1,0 +1,163 @@
+{
+  "_id": "hVDQLHH0hEa6GvzL",
+  "_key": "!tables!hVDQLHH0hEa6GvzL",
+  "name": "Weapon Choices by Experience Level",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Weapon Mastery"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "FUjqUE5frn_r0Tp-",
+      "type": "text",
+      "text": "Level 1: Fighter 4 choices; all other classes 2",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.FUjqUE5frn_r0Tp-"
+    },
+    {
+      "_id": "923pWb0LcSaN9YRB",
+      "type": "text",
+      "text": "Level 3: Fighter 5; all others 3",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.923pWb0LcSaN9YRB"
+    },
+    {
+      "_id": "3Op0Yiq4pmMLSSbl",
+      "type": "text",
+      "text": "Level 6: Fighter 6; all others 4",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.3Op0Yiq4pmMLSSbl"
+    },
+    {
+      "_id": "Qecsdh3IX2zut2eX",
+      "type": "text",
+      "text": "Level 9: Fighter 7; all others 5",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.Qecsdh3IX2zut2eX"
+    },
+    {
+      "_id": "UCtJ6KCl3CqoqPkX",
+      "type": "text",
+      "text": "Level 11: Fighter 8; all others 6",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.UCtJ6KCl3CqoqPkX"
+    },
+    {
+      "_id": "OLSebcYElmrXGQZz",
+      "type": "text",
+      "text": "Level 15: Fighter 9; all others 7",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.OLSebcYElmrXGQZz"
+    },
+    {
+      "_id": "Mum_ujboKQQs_yoq",
+      "type": "text",
+      "text": "Level 19: Fighter 10; all others 7",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.Mum_ujboKQQs_yoq"
+    },
+    {
+      "_id": "Bd9B6WxFPiS63786",
+      "type": "text",
+      "text": "Level 23: Fighter 11; all others 8",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.Bd9B6WxFPiS63786"
+    },
+    {
+      "_id": "V3Msrxeqp12ujJig",
+      "type": "text",
+      "text": "Level 27: Fighter 12; all others 8",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.V3Msrxeqp12ujJig"
+    },
+    {
+      "_id": "EYslIGoltt7b6Tt-",
+      "type": "text",
+      "text": "Level 30: Fighter 13; all others 9",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.EYslIGoltt7b6Tt-"
+    },
+    {
+      "_id": "ZB3f43KyWa_jkdPb",
+      "type": "text",
+      "text": "Level 33: Fighter 14; all others 9",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.ZB3f43KyWa_jkdPb"
+    },
+    {
+      "_id": "7ZrE9oRuq57DDxJW",
+      "type": "text",
+      "text": "Level 36: Fighter 15; all others 10; +1 per 200,000 XP above maximum level",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!hVDQLHH0hEa6GvzL.7ZrE9oRuq57DDxJW"
+    }
+  ],
+  "formula": "1d12"
+}

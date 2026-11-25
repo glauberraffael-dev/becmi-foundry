@@ -1,0 +1,30 @@
+{
+  "_id": "Ts9eCUPNH_h-Of8l",
+  "_key": "!items!Ts9eCUPNH_h-Of8l",
+  "name": "Gate",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "1d10 x 10(l-l00) turns or 1 turn",
+    "effect": "Opens a portal to another plane",
+    "reversible": false,
+    "description": "When the magic-user casts this spell, he must name one target: the Ethereal Plane, the Astral Plane, one of the four elemental planes, or one outer plane. He must also name a resident of that plane, usually that of an Immortal, a ruler of the plane. The spell opens a direct connection to the other plane of existence. A gate to an outer plane remains open for only one turn. Any other gate remains open for 1d10 x 10 (1-100) turns, and there is a 10% chance per turn that some other-planar creature will wander through the gate while it is open. A gate to an elemental plane actually creates a vortex and a wormhole, and a wish may be used to make them permanent.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "w4GlS2zViHJMAWDO",
+  "_key": "!items!w4GlS2zViHJMAWDO",
+  "name": "Clothes, fine",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "See above — 20 gp — 20**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "20 gp",
+    "weight": 20,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

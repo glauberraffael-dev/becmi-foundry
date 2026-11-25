@@ -1,0 +1,48 @@
+{
+  "_id": "4aYhxp0_Bn9tQaR2",
+  "_key": "!actors!4aYhxp0_Bn9tQaR2",
+  "name": "Hydrax",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "5",
+    "hp": 5,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 claws or special",
+    "damage": "1d10/ 1d10 or see below",
+    "appearing": "1 (1)",
+    "saveAs": "F (level = 2 X HD)",
+    "morale": 9,
+    "treasure": "Special",
+    "intelligence": 9,
+    "alignment": "Lawful",
+    "xpValue": 0,
+    "terrain": "Any; Plane of Air. 60' (20') damage per round. Unarmored victims (and 180' (60') monsters with AC 6 or worse) take 4 points per **Kobold** round.",
+    "monsterType": "Humanoid (Common).",
+    "description": "\"area effect\" and automatically hits. All armored negotiation to combat, and have few enemies. 2 victims within the area (and any monsters with They fear earth-type creatures and attacks. 5 to 12 (L) AC 5 or better) automatically take 2 points of Terrain: Any; Plane of Air. 60' (20') damage per round. Unarmored victims (and 180' (60') monsters with AC 6 or worse) take 4 points per Kobold round.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hydrax"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

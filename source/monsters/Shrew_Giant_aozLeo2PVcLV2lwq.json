@@ -1,0 +1,48 @@
+{
+  "_id": "aozLeo2PVcLV2lwq",
+  "_key": "!actors!aozLeo2PVcLV2lwq",
+  "name": "Shrew, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "2 bites",
+    "damage": "1d6/1d6",
+    "appearing": "1d8 (1d4)",
+    "saveAs": "F1",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 13,
+    "terrain": "Open, Ruins, Woods.",
+    "monsterType": "Giant Animal (Rare).",
+    "description": "Armor Class: 4 Hit Dice: 1* (S) Move: 180' (60') Attacks: 2 bites Damage: 1d6/1d6 No. Appearing: 1d8 (1d4) Save As: Fl Morale: 10 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 13 Monster Type: Giant Animal (Rare). Giant shrews look like large, brown-furred rats with long snouts. They can burrow, climb, or jump (up to 5'). The eyes of a giant shrew are so weak that the creature is not affected by light or the lack of it.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Shrew, Giant"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

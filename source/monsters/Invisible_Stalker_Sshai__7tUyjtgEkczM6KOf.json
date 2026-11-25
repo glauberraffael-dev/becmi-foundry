@@ -1,0 +1,48 @@
+{
+  "_id": "7tUyjtgEkczM6KOf",
+  "_key": "!actors!7tUyjtgEkczM6KOf",
+  "name": "Invisible Stalker (Sshai)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "8",
+    "hp": 8,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 blow",
+    "damage": "4d4",
+    "appearing": "1(1)",
+    "saveAs": "F8",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 11,
+    "alignment": "Neutral",
+    "xpValue": 1200,
+    "terrain": "Cavern, Hill, Mountain, Wood.",
+    "monsterType": "Planar Monster, Enchanted (Very Rare).",
+    "description": "Armor Class: 3 Hit Dice: 8* (M) Move: 120' (40') Attacks: 1 blow Damage: 4d4 No. Appearing: 1(1) Save As: F8 Morale: 12 Treasure Type: Nil Intelligence: 11 Alignment: Neutral XP Value: 1,200 Monster Type: Planar Monster, Enchanted (Very Rare). A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 8,
+        "max": 8
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Invisible Stalker (Sshai)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

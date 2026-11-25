@@ -1,0 +1,30 @@
+{
+  "_id": "DcgeoD1ee0a23F98",
+  "_key": "!items!DcgeoD1ee0a23F98",
+  "name": "Control Winds",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "10' radius per level of the caster",
+    "duration": "1 turn per level of the caster",
+    "effect": "Calms or increases winds With this spell, the druid can cause all the air within range to behave as desired, either increasing to gale force or slowing to a dead calm.",
+    "reversible": false,
+    "description": "With this spell, the druid can cause all the air within range to behave as desired, either increasing to gale force or slowing to a dead calm. The druid must concentrate for one full turn of concentration (can't move or attack) to change the wind completely (calm to gale, for example). Any higher-level spellcaster using the same spell can easily counter the spell. The effect moves with the caster. If the spell is cast against an air creature (such as an elemental), the victim can make a saving throw vs. spells. If the victim fails its roll, the druid can slay or control the air creature by proper use of the wind force.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

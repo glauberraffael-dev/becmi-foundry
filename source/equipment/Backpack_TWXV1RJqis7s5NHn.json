@@ -1,0 +1,25 @@
+{
+  "_id": "TWXV1RJqis7s5NHn",
+  "_key": "!items!TWXV1RJqis7s5NHn",
+  "name": "Backpack",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Capacity 400 cn — 5gp — 20*",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 gp",
+    "weight": 20,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

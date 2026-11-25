@@ -1,0 +1,30 @@
+{
+  "_id": "uhMDWffIj3uTuYJS",
+  "_key": "!items!uhMDWffIj3uTuYJS",
+  "name": "Wall of Stone",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "60'",
+    "duration": "Special",
+    "effect": "Creates 1000 cubic feet of stone",
+    "reversible": false,
+    "description": "Effect: Creates 1000 cubic feet of stone This spell creates a vertical stone wall exactly 2' thick. The caster chooses the wall's dimensions and shape, but its total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 60' of the caster. The caster must create the wall where the wall will rest on the ground or similar support, and cannot create the wall in a space already occupied by another object. The wall lasts until it is dispelled or physically broken. If a wall of stone topples, it causes 10d10 points of damage to what it hits, and it shatters.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

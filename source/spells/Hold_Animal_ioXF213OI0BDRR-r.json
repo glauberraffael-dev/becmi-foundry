@@ -1,0 +1,30 @@
+{
+  "_id": "ioXF213OI0BDRR-r",
+  "_key": "!items!ioXF213OI0BDRR-r",
+  "name": "Hold Animal",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "180'",
+    "duration": "1 turn per level of the caster",
+    "effect": "Paralyzes several animals",
+    "reversible": false,
+    "description": "Duration: 1 turn per level of the caster Effect: Paralyzes several animals This spell will affect any normal or giant-sized animal, but will not affect any fantastic creature, nor one of greater than animal intelligence (2). Each victim must make a saving throw vs. spells or be paralyzed for the duration of the spell. The druid can affect 1 Hit Die of animals for each level of experience, ignoring \"pluses\" to Hit Dice. For example, a 20th level druid could cast the spell at 10 giant toads (which have 2 + 2 Hit Dice each). Note that the spell can affect summoned, conjured, or controlled animals.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "M5qQ-5aGuaL8lvpG",
+  "_key": "!items!M5qQ-5aGuaL8lvpG",
+  "name": "Pouch, belt",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Capacity 50 cn — 5sp — 2* ***",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 sp",
+    "weight": 2,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

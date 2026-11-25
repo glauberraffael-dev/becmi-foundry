@@ -1,0 +1,48 @@
+{
+  "_id": "9J-7GkooOZD693CN",
+  "_key": "!actors!9J-7GkooOZD693CN",
+  "name": "Black (Small)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "7",
+    "hp": 7,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below",
+    "damage": "See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5'",
+    "appearing": "1d4 (1d4) 1d3 (1d3) 1d2 (1d2)",
+    "saveAs": "F7 F21 F36",
+    "morale": 8,
+    "treasure": "H H x 2 , I H x 3 , I x 2",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 1,
+    "terrain": "",
+    "monsterType": "",
+    "description": "Small Large Huge Armor Class: 2 0 - 2 Hit Dice: 7 (L) 10 + 3*(L) 14 (L) Move: 90'(30') 120'(40') 150'(50') Flying: 240'(80') 300'(100') 360'(120') Attacks: Ground: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Air: Up to 6: Up to 6: Up to 6: See below See below See below Damage: See below See below See below Breath line: 60'x 5' 90'x 5' 120'x 5' No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 7,
+        "max": 7
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Black (Small)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

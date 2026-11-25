@@ -1,0 +1,25 @@
+{
+  "_id": "g39-nwzo7cCEft5T",
+  "_key": "!items!g39-nwzo7cCEft5T",
+  "name": "Professional",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "1 gp/sq ft —  —  —  — 10,000 — 12 — 30 — 5 — 9",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "1 gp",
+    "weight": 9,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

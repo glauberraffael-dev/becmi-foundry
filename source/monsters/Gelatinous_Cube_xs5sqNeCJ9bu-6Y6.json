@@ -1,0 +1,48 @@
+{
+  "_id": "xs5sqNeCJ9bu-6Y6",
+  "_key": "!actors!xs5sqNeCJ9bu-6Y6",
+  "name": "Gelatinous Cube",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1",
+    "damage": "2d4 + special",
+    "appearing": "1 (0)",
+    "saveAs": "F2",
+    "morale": 12,
+    "treasure": "(V)",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "",
+    "monsterType": "",
+    "description": "A form of undead; see Haunt. Armor Class: 8 Hit Dice: 4* (L) Move: 60' (20') Attacks: 1 Damage: 2d4 + special No. Appearing: 1 (0) Save As: F2 Morale: 12 Treasure Type: (V) Intelligence: 0 Alignment: Neutral XP Value: 125",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gelatinous Cube"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

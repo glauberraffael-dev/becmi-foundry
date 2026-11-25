@@ -1,0 +1,25 @@
+{
+  "_id": "QHVXCaDjXPJFT6H6",
+  "_key": "!items!QHVXCaDjXPJFT6H6",
+  "name": "Stakes (3) and mallet",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 3gp — 10",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "3 gp",
+    "weight": 10,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

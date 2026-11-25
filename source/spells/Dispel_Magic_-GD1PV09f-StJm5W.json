@@ -1,0 +1,31 @@
+{
+  "_id": "-GD1PV09f-StJm5W",
+  "_key": "!items!-GD1PV09f-StJm5W",
+  "name": "Dispel Magic",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "Permanent",
+    "effect": "Destroys spells in a 20' cube",
+    "reversible": false,
+    "description": "Duration: Permanent Effect: Destroys spells in a 20' cube This spell destroys other spell effects in a cubic volume of 20' x 20' x 20'. It does not affect magical items. Spell effects created by a caster (whether cleric, druid, magic-user, or elf) of a level equal to or lower than the spellcaster of the dispel magic are automatically and immediately destroyed. Spell effects created by a higher-level spellcaster might not be affected. The chance of failure is 5 % per level of difference between the spellcasters. For example, a 7th level magic-user trying to dispel a web spell cast by a 9th level cleric would have a 10% chance of failure.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "Cb3apbgU5j30CpKH",
+  "_key": "!journal!Cb3apbgU5j30CpKH",
+  "name": "Chapter 17: Campaigning",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 17
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Running an ongoing campaign and linking adventures together.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 17. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "W1Jw2I1L4Tc22XqZ",
+      "_key": "!journal.pages!Cb3apbgU5j30CpKH.W1Jw2I1L4Tc22XqZ"
+    }
+  ]
+}

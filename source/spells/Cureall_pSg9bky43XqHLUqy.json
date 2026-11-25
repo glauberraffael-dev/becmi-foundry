@@ -1,0 +1,30 @@
+{
+  "_id": "pSg9bky43XqHLUqy",
+  "_key": "!items!pSg9bky43XqHLUqy",
+  "name": "Cureall",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "Cures anything",
+    "reversible": false,
+    "description": "This spell is the most powerful of the healing spells. When used to cure wounds, it cures nearly all damage, leaving the recipient with only 1d6 points of damage. (Restore the victim to full starting hit points, then roll 1d6 and subtract that amount from the victim's hit point total.) The spell can remove a curse, neutralize a poison, cure paralysis, cure a disease, cure blindness, or even remove a feeblemind effect instead of healing. However, it will cure one thing only; if the recipient is suffering from two or more afflictions (such as wounds and a curse), the cleric must name the ailment the spell is intended to cure.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

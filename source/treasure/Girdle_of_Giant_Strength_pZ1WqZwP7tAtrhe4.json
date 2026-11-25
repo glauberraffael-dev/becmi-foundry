@@ -1,0 +1,27 @@
+{
+  "_id": "pZ1WqZwP7tAtrhe4",
+  "_key": "!items!pZ1WqZwP7tAtrhe4",
+  "name": "Girdle of Giant Strength",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item gives the wearer the same chances to hit as a hill giant. The wearer does double damage with whatever weapon he is using.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

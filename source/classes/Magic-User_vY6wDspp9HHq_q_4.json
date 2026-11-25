@@ -1,0 +1,65 @@
+{
+  "_id": "vY6wDspp9HHq_q_4",
+  "_key": "!items!vY6wDspp9HHq_q_4",
+  "name": "Magic-User",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Intelligence",
+    "hitDice": "1d4",
+    "maxLevel": 36,
+    "requirements": "",
+    "xpTable": {
+      "1": 2,
+      "2": 2500,
+      "3": 5000,
+      "4": 10000,
+      "5": 20000,
+      "6": 40000,
+      "7": 80000,
+      "8": 150000,
+      "9": 300000,
+      "10": 450000,
+      "11": 600000,
+      "12": 750000,
+      "13": 900000,
+      "14": 1050000,
+      "15": 1200000,
+      "16": 1350000,
+      "17": 1500000,
+      "18": 1650000,
+      "19": 1800000,
+      "20": 1950000,
+      "21": 2100000,
+      "22": 2250000,
+      "23": 2400000,
+      "24": 2550000,
+      "25": 2700000,
+      "26": 2850000,
+      "27": 3000000,
+      "28": 3150000,
+      "29": 3300000,
+      "30": 3450000,
+      "31": 3600000,
+      "32": 3750000,
+      "33": 3900000,
+      "34": 4050000,
+      "35": 4200000,
+      "36": 4350000
+    },
+    "saves": {},
+    "description": "Prime Requisite: Intelligence. Experience Bonus: 5% for Intelligence 1315, 10% for Intelligence 16-18. Hit Dice: 1d4 per level up to 9th level. Starting with 10th level, +1 hit point per level, and Constitution adjustments no longer apply. Maximum Level: 36. Armor: None; no shield permitted. Weapons: Dagger only. Optional (DM's discretion): staff, blowgun, flaming oil, holy water, net, thrown rock, sling, whip. Special Abilities: Magical spells. A magic-user is a human character who studies the powers of magic. Magic-users find spells, put them into books, and study those books to learn the spells. Magic-users have their own spells, entirely different from clerical spells.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 36
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

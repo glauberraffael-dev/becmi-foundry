@@ -1,0 +1,27 @@
+{
+  "_id": "QNR77ynND240HkHr",
+  "_key": "!items!QNR77ynND240HkHr",
+  "name": "Lamp, Hurricane",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item appears and functions as a lamp of long burning in all respects, but only after its storm has passed, as described hereafter.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

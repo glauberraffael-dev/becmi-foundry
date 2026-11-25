@@ -1,0 +1,48 @@
+{
+  "_id": "982NGLDawvE01qw5",
+  "_key": "!actors!982NGLDawvE01qw5",
+  "name": "Haunt",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1-1",
+    "hp": 1,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "3d6 (5d8)",
+    "saveAs": "H1",
+    "morale": 810,
+    "treasure": "(P + S) B",
+    "intelligence": 11,
+    "alignment": "Lawful",
+    "xpValue": 5,
+    "terrain": "",
+    "monsterType": "Demihuman (Common). Halflings can also appear as NPCs. Otherwise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or underbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
+    "description": "Armor Class: 7 (or 5, see below) Hit Dice: 1-1 Move: 90' (30') Attacks: 1 weapon Damage: By weapon No. Appearing: 3d6 (5d8) Save As: H1 Morale: 8 or 10 (see below) Treasure Type: (P + S) B Intelligence: 11 Alignment: Lawful XP Value: 5 ||Banshee*|Ghost*|Poltergeist*| |---|---|---|---| |Armor Class: |- 3 - |2 |-1 | |Hit Dice:|13|14|12| ||(M)|(M)|(M)| |Move (Flying):|60' (20')|90' (30')|60' (20')| |Attacks:|1 touch/ |1 touch/ |2 missiles| ||1 gaze |1 gaze || |Damage:|Age |Age |Age 10 | ||1d4 x 10|1d4 x 10|years +| ||",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Haunt"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "zs-CEexZvzSDPRVr",
+  "_key": "!items!zs-CEexZvzSDPRVr",
+  "name": "Dimension Door",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "1 round",
+    "effect": "Safely transport one creature",
+    "reversible": false,
+    "description": "This spell will transport one creature (either the caster or a victim up to 10' from the caster) to a place up to 360' away. The caster picks the desired destination. If he does not know the location, the caster may specify the direction and distance of travel, but the distance cannot exceed a total of 360' (for example, 360' straight up; or 200' west, 60' south, and 100' down). If this would cause the recipient to arrive at a location occupied by a solid object, the spell has no effect. An unwilling recipient may make a saving throw vs. spells to avoid the effect.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "wjsxIwICSF-ZINW6",
+  "_key": "!actors!wjsxIwICSF-ZINW6",
+  "name": "Minotaur",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "6",
+    "hp": 6,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 gore/1 bite or 1 weapon",
+    "damage": "1d6/ 1d6 or by weapon type + 2",
+    "appearing": "1d6(1d8)",
+    "saveAs": "F6",
+    "morale": 12,
+    "treasure": "C",
+    "intelligence": 5,
+    "alignment": "Chaotic",
+    "xpValue": 275,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Monster (Common).",
+    "description": "Armor Class: 6 Hit Dice: 6(L) Move: 120' (40') Attacks: 1 gore/1 bite or 1 weapon Damage: 1d6/ 1d6 or by weapon type + 2 No. Appearing: 1d6(ld8) Save As: F6 Morale: 12 Treasure Type: C Intelligence: 5 Alignment: Chaotic XP Value: 275 Monster Type: Monster (Common). A minotaur is a large man-shaped creature with the head, hide and temperament of a bull. It is larger than human size (standing 7-9' tall) and eats humans. It will attack anything its size or smaller and will pursue as long as its prey is in sight.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 6,
+        "max": 6
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Minotaur"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

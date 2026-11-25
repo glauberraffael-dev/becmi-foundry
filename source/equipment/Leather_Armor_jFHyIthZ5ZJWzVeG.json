@@ -1,0 +1,26 @@
+{
+  "_id": "jFHyIthZ5ZJWzVeG",
+  "_key": "!items!jFHyIthZ5ZJWzVeG",
+  "name": "Leather Armor",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "D,T",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "D,T",
+    "ac": 7,
+    "cost": "20",
+    "weight": 200,
+    "armorType": "Leather Armor"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "D,T"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

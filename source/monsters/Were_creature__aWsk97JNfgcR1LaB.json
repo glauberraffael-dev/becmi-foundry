@@ -1,0 +1,48 @@
+{
+  "_id": "aWsk97JNfgcR1LaB",
+  "_key": "!actors!aWsk97JNfgcR1LaB",
+  "name": "Were(creature)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1",
+    "damage": "Energy drain",
+    "appearing": "1d6(1d8)",
+    "saveAs": "F3",
+    "morale": 12,
+    "treasure": "B",
+    "intelligence": 5,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "",
+    "monsterType": "Undead, Enchanted (Common).",
+    "description": "See Lycanthrope. Wight* Armor Class: 5 Hit Dice: 3* (M) Move: 90' (30') Attacks: 1 Damage: Energy drain No. Appearing: 1d6(ld8) Save As: F3 Morale: 12 Treasure Type: B Intelligence: 5 Alignment: Chaotic XP Value: 50 Monster Type: Undead, Enchanted (Common). A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Were(creature)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

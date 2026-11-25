@@ -1,0 +1,48 @@
+{
+  "_id": "1AElAsNi7RvbwoqW",
+  "_key": "!actors!1AElAsNi7RvbwoqW",
+  "name": "Normal Human",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "Weapons and spells",
+    "damage": "1d6 or weapons and spell effects",
+    "appearing": "1d4+4 (1d4+4)",
+    "saveAs": "NPC class and level",
+    "morale": 8,
+    "treasure": "(U + V)",
+    "intelligence": 11,
+    "alignment": "Any",
+    "xpValue": 0,
+    "terrain": "Settled.",
+    "monsterType": "Human (Common).",
+    "description": "|Armor Class:|9| |---|---| |Hit Dice:|1-1 (M)| |Move:|120'(40')| |Attacks:|1 weapon| |Damage:|By weapon| |No. Appearing :|1d4 (3d20)| |Save As:|Normal Man| |Morale:|6| |Treasure Type:|(P)U| |Intelligence:|10| |Alignment:|Any| |XP Value:|5| Monster Type: Human (Common). \"Normal human\" is the game term for a human who does not seek adventure. A normal human does not have a character class, but might (optionally) have General Skills.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Normal Human"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

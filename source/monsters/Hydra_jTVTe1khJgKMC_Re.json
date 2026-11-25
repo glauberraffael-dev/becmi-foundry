@@ -1,0 +1,48 @@
+{
+  "_id": "jTVTe1khJgKMC_Re",
+  "_key": "!actors!jTVTe1khJgKMC_Re",
+  "name": "Hydra",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "5-12",
+    "hp": 1,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "5-12 bites (1 per head)",
+    "damage": "1d10 each",
+    "appearing": "1 (1)",
+    "saveAs": "F5-12",
+    "morale": 11,
+    "treasure": "B",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 175,
+    "terrain": "Hydra, Regenerating Hydra: Swamp. Sea Hydra: Lake, Ocean. Flying Hydra: Mountain.",
+    "monsterType": "Monster (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 5-12 (1 per head) (L) Move: 120' (40') Attacks: 5-12 bites (1 per head) Damage: 1d10 each No. Appearing: 1 (1) Save As: F5-12 Morale: 11 Treasure Type: B Intelligence: 2 Alignment: Neutral XP Value: 175, 275, 450, 650, 900, 1,000, 1,100, or 1,250 Monster Type: Monster (Rare). A hydra is a large creature with a dragonlike body and 5-12 snakelike heads. It has one Hit Die for each head, and each head has 8 hit points. Its saving throws are as a fighter level equal to the number of heads.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hydra"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

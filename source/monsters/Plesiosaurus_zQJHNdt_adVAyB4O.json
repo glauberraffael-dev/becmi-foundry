@@ -1,0 +1,48 @@
+{
+  "_id": "zQJHNdt_adVAyB4O",
+  "_key": "!actors!zQJHNdt_adVAyB4O",
+  "name": "Plesiosaurus",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "16",
+    "hp": 16,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 bite",
+    "damage": "4d6",
+    "appearing": "0 (1d3)",
+    "saveAs": "F8",
+    "morale": 9,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 1850,
+    "terrain": "",
+    "monsterType": "",
+    "description": "Armor Class: 7 Hit Dice: 16 (L) Move: 150' 50' Attacks: 1 bite Damage: 4d6 No. Appearing: 0 (1d3) Save As: F8 Morale: 9 Treasure Type: Nil Intelligence: 2 Alignment: Neutral XP Value: 1,850 Load: A pteranodon can carry 2,000 cn at full speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They Barding Multiplier: x 1.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 16,
+        "max": 16
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Plesiosaurus"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

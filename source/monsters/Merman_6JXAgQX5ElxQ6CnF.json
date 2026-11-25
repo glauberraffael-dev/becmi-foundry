@@ -1,0 +1,48 @@
+{
+  "_id": "6JXAgQX5ElxQ6CnF",
+  "_key": "!actors!6JXAgQX5ElxQ6CnF",
+  "name": "Merman",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3+1",
+    "hp": 31,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon or as form",
+    "damage": "By weapon type or form",
+    "appearing": "1d6(1d20)",
+    "saveAs": "M11",
+    "morale": 810,
+    "treasure": "Variable",
+    "intelligence": 14,
+    "alignment": "Any (often Chaotic)",
+    "xpValue": 100,
+    "terrain": "Ocean. Centipede Bird",
+    "monsterType": "Humanoid (Common).",
+    "description": "Armor Class: 5 (or as form) Hit Dice: 3 + 1 (M, or as form) Move: 120' (40') or as form Attacks: 1 weapon or as form Damage: By weapon type or form No. Appearing: 1d6(ld20) Save As: M11 Morale: 8 or 10 (see below) Treasure Type: Variable Intelligence: 14 Alignment: Any (often Chaotic) XP Value: 100 Monster Type: Humanoid (Common). Monster Type: Humanoid (Rare). Mermen are water-breathing humanoids. A merman has the upper body of a man and the lower body of a large fish.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 31,
+        "max": 31
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Merman"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "tnIOsBjtKYaWJWRq",
+  "_key": "!actors!tnIOsBjtKYaWJWRq",
+  "name": "Gargoyle",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 4,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 bite/1 horn",
+    "damage": "1d3/1d3/1d6/1d4",
+    "appearing": "1d6 (2d4)",
+    "saveAs": "F8",
+    "morale": 11,
+    "treasure": "C",
+    "intelligence": 5,
+    "alignment": "Chaotic",
+    "xpValue": 175,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Construct, Enchanted (Rare). Gargoyles are magical constructs, created by wizards for various tasks—especially as guards for treasure chambers and other sites. Many thousands have been created over the centuries; most of them eventually escape or outlive their masters and leave to form their own groups.",
+    "description": "Armor Class: 5 Hit Dice: 4 (L) Move: 90' (30') Flying: 150' (50') Attacks: 2 claws/1 bite/1 horn Damage: 1d3/ld3/ld6/ld4 No. Appearing: 1d6 (2d4) Save As: F8 Morale: 11 Treasure Type: C Intelligence: 5 Alignment: Chaotic XP Value: 175 Monster Type: Construct, Enchanted (Rare). Gargoyles are magical constructs, created by wizards for various tasks—especially as guards for treasure chambers and other sites.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gargoyle"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

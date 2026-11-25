@@ -1,0 +1,30 @@
+{
+  "_id": "H9uK1ZDKGzekNRRT",
+  "_key": "!items!H9uK1ZDKGzekNRRT",
+  "name": "Cure Disease",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "30'",
+    "duration": "Permanent",
+    "effect": "One living creature within range",
+    "reversible": false,
+    "description": "This spell will cure any living creature of one disease, such as those caused by a mummy or green slime. If cast by a cleric of llth level or greater, this spell will also cure lycanthropy. The reverse of this spell, cause disease, infects the victim with a hideous wasting disease unless he successfully makes a saving throw vs. spells. A diseased victim has a -2 penalty on all attack rolls. In addition, the victim's wounds cannot be magically cured, and natural healing takes twice as long as usual. The disease is fatal in 2dl2 (224) days unless removed by a cure disease spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

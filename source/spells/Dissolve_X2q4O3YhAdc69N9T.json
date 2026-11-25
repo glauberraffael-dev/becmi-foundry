@@ -1,0 +1,31 @@
+{
+  "_id": "X2q4O3YhAdc69N9T",
+  "_key": "!items!X2q4O3YhAdc69N9T",
+  "name": "Dissolve",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "druid",
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "3-18 days",
+    "effect": "Liquifies 3000 square feet",
+    "reversible": false,
+    "description": "This spell changes a volume of soil or rock (but not a construction) to a morass of mud. An area up to 10' deep or thick is affected, and may have up to 3,000 square feet of surface area. The magic-user may choose the exact width and length (20' x 150', 30' x 100', etc.), but the entire area of effect must be within 240' of the caster. Creatures moving through the mud are slowed to 10% of their normal movement rate at best, and may become stuck (at the DM's discretion, a victim must make saving throw vs. spells to avoid becoming stuck). The reverse of this spell (harden) will change the same volume of mud to rock, but permanently. A victim in the mud may make a saving throw vs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

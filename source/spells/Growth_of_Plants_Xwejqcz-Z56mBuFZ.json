@@ -1,0 +1,30 @@
+{
+  "_id": "Xwejqcz-Z56mBuFZ",
+  "_key": "!items!Xwejqcz-Z56mBuFZ",
+  "name": "Growth of Plants",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "Special",
+    "effect": "Enlarges 3000 square feet of plants",
+    "reversible": false,
+    "description": "This spell causes normal brush or woods to become thickly overgrown with vines, creepers, thorns, and briars (or types of small plant-life appropriate to the area). The spell affects an area of up to 3,000 square feet (the caster chooses the dimensions of the spell effect). The plants to be affected must be entirely within the spell's range. The area affected by the spell is impassable to all but giant-sized creatures. The effect lasts until removed by the reversed form of the spell or by a dispel magic spell. The reverse of this spell, shrink plants, causes all normal plants within the area of effect to shrink and become passable. It may be used to negate the effects of the normal spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

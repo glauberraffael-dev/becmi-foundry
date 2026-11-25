@@ -1,0 +1,27 @@
+{
+  "_id": "NVh5pkbGFqguQ0dg",
+  "_key": "!items!NVh5pkbGFqguQ0dg",
+  "name": "Medallion of ESP, 90' Range",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "This item is identical to the medallion of ESP, 30' range, except that it has a greater range.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

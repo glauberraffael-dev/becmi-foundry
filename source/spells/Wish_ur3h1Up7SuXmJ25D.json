@@ -1,0 +1,31 @@
+{
+  "_id": "ur3h1Up7SuXmJ25D",
+  "_key": "!items!ur3h1Up7SuXmJ25D",
+  "name": "Wish",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "Special",
+    "duration": "Special",
+    "effect": "Special",
+    "reversible": false,
+    "description": "A wish is the single most powerful spell a magic-user can have. It is never found on a scroll, but may be placed elsewhere (in a ring, for example) in rare cases. Only magic-users of 36th level and with an 18 (or greater) Wisdom score may cast the wish spell. Wording the Wish: The player must say or write the exact wish his character makes. The wording is very important. The wish will usually follow the literal wording, and whatever the intentions of the magic-user. The DM should try to maintain game balance, being neither too generous nor too stingy in deciding the effects of a wish. Even a badly phrased wish, made with good intentions, may have good results.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "ahQx2vHqUxo_hPrn",
+  "_key": "!items!ahQx2vHqUxo_hPrn",
+  "name": "Water Breathing",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "druid",
+      "magic-user"
+    ],
+    "range": "30'",
+    "duration": "1 day (24 hours)",
+    "effect": "One air-breathing creature",
+    "reversible": false,
+    "description": "This spell allows the recipient to breathe while underwater (at any depth). It does not affect his movement in any way, nor does it interfere with the breathing of air if the recipient emerges from the water.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

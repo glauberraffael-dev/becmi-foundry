@@ -1,0 +1,30 @@
+{
+  "_id": "RZiDWjCkmfPlCD3A",
+  "_key": "!items!RZiDWjCkmfPlCD3A",
+  "name": "Invisible Stalker",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (Caster only)",
+    "duration": "Until mission is accomplished",
+    "effect": "Summons one creature",
+    "reversible": false,
+    "description": "This spell summons an invisible stalker (from Chapter 14) which will perform one task for the caster. The creature will serve the caster regardless of the time or distance involved, until the task is completed or until the creature is slain. A dispel evil spell will force the creature to return to its home plane.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

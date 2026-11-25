@@ -1,0 +1,30 @@
+{
+  "_id": "0Q_ZHhs22bFKH5J0",
+  "_key": "!items!0Q_ZHhs22bFKH5J0",
+  "name": "Sleep",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "4d4 (4-16) turns",
+    "effect": "2-16 Hit Dice of living creatures within a 40' square area",
+    "reversible": false,
+    "description": "This spell will put creatures to sleep for up to 16 turns. It will only affect creatures with 4 + 1 Hit Dice or less—generally, small or man-sized creatures. The spell will not affect creatures outside the 40' X 40' area which the player chooses as the spell's target area. The spell will not work against undead or very large creatures, such as dragons. When a character is first hit with a sleep spell, falling or sagging to the ground will not wake him up. However, characters affected by a sleep spell are not in a deep sleep. Any sleeping character or creature will awaken if slapped, kicked, or shaken.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

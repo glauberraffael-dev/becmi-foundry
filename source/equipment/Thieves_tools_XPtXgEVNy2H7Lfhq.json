@@ -1,0 +1,25 @@
+{
+  "_id": "XPtXgEVNy2H7Lfhq",
+  "_key": "!items!XPtXgEVNy2H7Lfhq",
+  "name": "Thieves' tools",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Lockpicks, wire, etc. — 25 gp — 10",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "25 gp",
+    "weight": 10,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

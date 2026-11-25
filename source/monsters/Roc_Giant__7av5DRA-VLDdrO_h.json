@@ -1,0 +1,48 @@
+{
+  "_id": "7av5DRA-VLDdrO_h",
+  "_key": "!actors!7av5DRA-VLDdrO_h",
+  "name": "Roc (Giant)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12",
+    "hp": 12,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 claws/1 bite 2 claws/1 bite 2 claws/1 bite",
+    "damage": "1d4 + 1/1d4 + 1/2d6 `1d8/1d8/2d0 3d6/3d6/8d6`",
+    "appearing": "0(ldl2) 0(1d8) 0(1)",
+    "saveAs": "F3 F6 F18",
+    "morale": 10,
+    "treasure": "1 1",
+    "intelligence": 2,
+    "alignment": "Lawful",
+    "xpValue": 250,
+    "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
+    "monsterType": "Monster (Rare).",
+    "description": "Small Large Giant Armor Class: 4 2 0 Hit Dice: 6(1) 12 (L) 36 (L) Move: 60' (20') 60' (20') 60' (20') Flying: 480' (160') 480' (160') 480'(160') Attacks: 2 claws/1 bite 2 claws/1 bite 2 claws/1 bite Damage: 1d4 + l/ld4 + l/2d6 `1d8/ld8/2dl0 3d6/3d6/8d6` No. Appearing: 0(ldl2) 0(ld8) 0(1) Save As: F3 F6 F18 Morale: 8 9 10 Treasure Type: 1 1 Intelligence: 2 2 2 Alignment: Lawful Lawful Lawful XP Value: 275 1,250 6,250 Monster Type: Monster (Rare).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 12,
+        "max": 12
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Roc (Giant)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

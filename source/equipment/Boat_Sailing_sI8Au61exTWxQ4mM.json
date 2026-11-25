@@ -1,0 +1,25 @@
+{
+  "_id": "sI8Au61exTWxQ4mM",
+  "_key": "!items!sI8Au61exTWxQ4mM",
+  "name": "Boat, Sailing",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "2,000 —  — 1 —  — 20,000 — 72 — 120 — 20-40 — 8",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 8,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

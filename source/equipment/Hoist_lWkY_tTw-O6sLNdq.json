@@ -1,0 +1,25 @@
+{
+  "_id": "lWkY_tTw-O6sLNdq",
+  "_key": "!items!lWkY_tTw-O6sLNdq",
+  "name": "Hoist",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "5 gp/ft height — 30' tall — 12,000* — 4 — 0 — 15",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "5 gp",
+    "weight": 15,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

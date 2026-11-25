@@ -1,0 +1,27 @@
+{
+  "_id": "fecVbMf1ejr1PH8V",
+  "_key": "!items!fecVbMf1ejr1PH8V",
+  "name": "Antidote",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user becomes completely immune to certain poisons and gains a + 2 bonus to all saving throws vs. poison. The weakest type of antidote protects against the poison of all creatures with 3 Hit Dice or less; stronger antidotes counteract the poison of larger creatures. Poisons avoided during the duration of the potion (by",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

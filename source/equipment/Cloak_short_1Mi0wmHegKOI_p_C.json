@@ -1,0 +1,25 @@
+{
+  "_id": "1Mi0wmHegKOI_p_C",
+  "_key": "!items!1Mi0wmHegKOI_p_C",
+  "name": "Cloak, short",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": " — 5sp — 10**",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "5 sp",
+    "weight": 10,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

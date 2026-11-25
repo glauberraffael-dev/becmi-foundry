@@ -1,0 +1,91 @@
+{
+  "_id": "YRhppUo5tJHTzpvS",
+  "_key": "!tables!YRhppUo5tJHTzpvS",
+  "name": "Miscellaneous Siege Equipment",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "TdMzRP0xQ7anyfYT",
+      "type": "text",
+      "text": "Belfry: 25 gp per foot, 30' tall, AC 0, AC -8, 75 hp",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.TdMzRP0xQ7anyfYT"
+    },
+    {
+      "_id": "rANEl5qm08MLw1wf",
+      "type": "text",
+      "text": "Gallery Shed: 15 gp per foot, 10' x 10' x 20', AC 4, AC -12, 40 hp",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.rANEl5qm08MLw1wf"
+    },
+    {
+      "_id": "Imyu7OPi8pnpq7hp",
+      "type": "text",
+      "text": "Hoist: 5 gp per foot, 30' tall, AC 4, 15 hp",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.Imyu7OPi8pnpq7hp"
+    },
+    {
+      "_id": "Y922usU6zu5-Ms0s",
+      "type": "text",
+      "text": "Ladder: 1 gp per 10', 30' tall, AC 4, 3 hp",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.Y922usU6zu5-Ms0s"
+    },
+    {
+      "_id": "u28ktgRFohVCgV1e",
+      "type": "text",
+      "text": "Mantlet: 2 gp per foot, 8' long, AC 0, AC -4, 16 hp",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.u28ktgRFohVCgV1e"
+    },
+    {
+      "_id": "4lFvBz9S2by1-27V",
+      "type": "text",
+      "text": "Timber Fort: 4 gp per foot, 8' long, AC 0, AC -8, 32 hp",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YRhppUo5tJHTzpvS.4lFvBz9S2by1-27V"
+    }
+  ],
+  "formula": "1d6"
+}

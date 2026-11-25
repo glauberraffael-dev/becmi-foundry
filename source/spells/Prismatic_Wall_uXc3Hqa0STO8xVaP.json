@@ -1,0 +1,30 @@
+{
+  "_id": "uXc3Hqa0STO8xVaP",
+  "_key": "!items!uXc3Hqa0STO8xVaP",
+  "name": "Prismatic Wall",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "60'",
+    "duration": "6 turns",
+    "effect": "Creates a multi-colored barrier",
+    "reversible": false,
+    "description": "This spell creates a barrier of many colors with a glittering appearance as if from light shining through a prism. This wall is 2\" thick, with 1/8 \" between the colors. The effect must be either a sphere with a radius of 10', centered on the caster, or a flat surface (vertical or horizontal) of up to 500 square feet in area. Whatever its form, the prismatic wall cannot be moved (even by a wish). The caster may pass through it freely and unharmed, with any items he chooses to carry. All other creatures and objects contacting or passing through the prismatic wall are affected by its magic, starting with the first color they contact. It takes powerful magic to break through the wall.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

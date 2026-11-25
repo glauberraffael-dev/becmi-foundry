@@ -1,0 +1,27 @@
+{
+  "_id": "pV0kYJNxfCOv7vEc",
+  "_key": "!items!pV0kYJNxfCOv7vEc",
+  "name": "Delusion",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Potion Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "The user will believe this potion to have the effect of any one other potion (roll again for the fake potion). However, it has no real effect.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Potion Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Potion Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

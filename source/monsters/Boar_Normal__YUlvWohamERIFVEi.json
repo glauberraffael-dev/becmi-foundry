@@ -1,0 +1,48 @@
+{
+  "_id": "YUlvWohamERIFVEi",
+  "_key": "!actors!YUlvWohamERIFVEi",
+  "name": "Boar (Normal)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3",
+    "hp": 3,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 tusk",
+    "damage": "2d4",
+    "appearing": "1d6(1d6)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 50,
+    "terrain": "",
+    "monsterType": "Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare).",
+    "description": "||Normal|Great| |---|---|---| |Armor Class:|7|3| |Hit Dice:|3*(M)|10* (L)| |Move:|90'(30')|90'(30')| |Attacks:|1 tusk|1 tusk| |Damage:|2d4|2d8| |No. Appearing:|1d6(ld6)|1d6(ld6)| |Save As:|F2|F5| |Morale:|9|9| |Treasure Type:|Nil|Nil| |Intelligence:|2|2| |Alignment: |Neutral |Neutral | |XP Value:|50|1,750| Monster Type: Boar: Normal Animal (Common). Great Boar: Giant Animal (Rare). Wild boars generally prefer forested areas but can be found nearly everywhere.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "_Normal_",
+      "key": "Boar (Normal)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

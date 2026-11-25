@@ -1,0 +1,25 @@
+{
+  "_id": "vMUZf-F0iT-EH9Cx",
+  "_key": "!items!vMUZf-F0iT-EH9Cx",
+  "name": "First-Class",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "Miles/1 sp — 35 sp",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "1 sp",
+    "weight": 35,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "6tE-6I-Na066WzK8",
+  "_key": "!actors!6tE-6I-Na066WzK8",
+  "name": "Ape, Snow",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "3+1",
+    "hp": 31,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 club/1 hug",
+    "damage": "1d6/2d6",
+    "appearing": "0 (2d10)",
+    "saveAs": "F3",
+    "morale": 711,
+    "treasure": "K",
+    "intelligence": 4,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Anywhere humans are found.",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Adaptors are not the same as dopplegangers; they cannot turn into duplicates of specific people. Terrain: Anywhere humans are found. Monster Type: Normal Animal (Common). Armor Class: 6 Hit Dice: 3 +1 (M) Move: 90' (30') Attacks: 1 club/1 hug Damage: 1d6/2d6 No. Appearing: 0 (2d10) Save As: F3 Morale: 7(11) Treasure Type: K Intelligence: 4 Alignment: Chaotic XP Value: 50 This set of monster statistics represents most wild grazing creatures, such as caribou, deer, elk, goats, moose, and wild oxen.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 31,
+        "max": 31
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ape, Snow"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

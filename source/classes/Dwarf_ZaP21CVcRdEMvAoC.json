@@ -1,0 +1,41 @@
+{
+  "_id": "ZaP21CVcRdEMvAoC",
+  "_key": "!items!ZaP21CVcRdEMvAoC",
+  "name": "Dwarf",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Strength",
+    "hitDice": "1d8",
+    "maxLevel": 12,
+    "requirements": "Constitution 9+",
+    "xpTable": {
+      "1": 0,
+      "2": 2200,
+      "3": 4400,
+      "4": 8800,
+      "5": 17000,
+      "6": 35000,
+      "7": 70000,
+      "8": 140000,
+      "9": 270000,
+      "10": 400000,
+      "11": 530000,
+      "12": 660000
+    },
+    "saves": {},
+    "description": "Prime Requisite: Strength. Other Requirements: Constitution 9 or better. Experience Bonus: 5% for Strength 13-15, 10% for Strength 16-18. Hit Dice: 1d8 per level up to 9th level. Starting with 10th level, + 3 hp per level and Constitution adjustments no longer apply. Armor: Any; shields permitted. Weapons: Any Small or Medium melee weapon; short bows and crossbows permitted, but longbows forbidden. Special Abilities: Fighter Maneuvers (Lance Attack and Set Spear vs.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 12
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

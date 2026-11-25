@@ -1,0 +1,25 @@
+{
+  "_id": "10iCy0Hihwbz8ZhG",
+  "_key": "!items!10iCy0Hihwbz8ZhG",
+  "name": "Longship",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "15,000 —  — 75t —  — 30,000 — 18/90 — 90/150 — 60-80 — 8",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 8,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

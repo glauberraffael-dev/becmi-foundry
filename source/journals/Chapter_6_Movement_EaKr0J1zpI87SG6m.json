@@ -1,0 +1,27 @@
+{
+  "_id": "EaKr0J1zpI87SG6m",
+  "_key": "!journal!EaKr0J1zpI87SG6m",
+  "name": "Chapter 6: Movement",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 6
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Game time, distance, land, water and aerial travel rates.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 6. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "wbpT-NiS7m3td49t",
+      "_key": "!journal.pages!EaKr0J1zpI87SG6m.wbpT-NiS7m3td49t"
+    }
+  ]
+}

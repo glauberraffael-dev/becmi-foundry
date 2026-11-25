@@ -1,0 +1,30 @@
+{
+  "_id": "ueuB2zXso7E9bg9A",
+  "_key": "!items!ueuB2zXso7E9bg9A",
+  "name": "Find Traps",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0 (Cleric only)",
+    "duration": "2 turns",
+    "effect": "Traps within 30' glow",
+    "reversible": false,
+    "description": "This spell causes all mechanical and magical traps to glow with a dull blue light when the cleric comes within 30' of them. It does not reveal the types of traps, nor any method of removing them. Note that an ambush is not a trap, nor is a natural hazard, such as quicksand.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "LzuJFXL7bkT3MNad",
+  "_key": "!actors!LzuJFXL7bkT3MNad",
+  "name": "Baboon, Rock",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2",
+    "hp": 2,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 club/1 bite",
+    "damage": "1d6/1d3",
+    "appearing": "2d6 (5d6)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Arctic, Mountains (cold).",
+    "monsterType": "Normal Animal (Common). Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs.",
+    "description": "Armor Class: 6 Hit Dice: 2 (M) Move: 120' (40') Attacks: 1 club/1 bite Damage: 1d6/ld3 No. Appearing: 2d6 (5d6) Save As: F2 Morale: 8 Treasure Type: U Intelligence: 2 Alignment: Neutral XP Value: 20 Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 2,
+        "max": 2
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Baboon, Rock"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

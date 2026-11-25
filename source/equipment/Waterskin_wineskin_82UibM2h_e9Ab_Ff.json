@@ -1,0 +1,25 @@
+{
+  "_id": "82UibM2h_e9Ab_Ff",
+  "_key": "!items!82UibM2h_e9Ab_Ff",
+  "name": "Waterskin /wineskin",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "One-quart capacity; enc 30 when filled — 1gp — 5",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "S5VG6hr-eJHgbEJz",
+  "_key": "!items!S5VG6hr-eJHgbEJz",
+  "name": "Symbol",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Touch",
+    "duration": "Permanent",
+    "effect": "Creates one magical rune",
+    "reversible": false,
+    "description": "Effect: Creates one magical rune This spell creates a written magical drawing (a \"rune\") of great power. There are six kinds of symbols; the caster must select one when the spell is memorized. The rune may be placed on an object (such as a door or wall) or placed in mid-air. The rune cannot move; if placed on a creature or moving object, it will remain at that point when the surface moves (possibly floating in mid-air). When any living creature passes over or through the rune, or touches the object on which the rune is inscribed, or (foolishly) reads the rune, the rune's effect takes place immediately (no saving throw).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

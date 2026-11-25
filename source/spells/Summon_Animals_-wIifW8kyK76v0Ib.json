@@ -1,0 +1,30 @@
+{
+  "_id": "-wIifW8kyK76v0Ib",
+  "_key": "!items!-wIifW8kyK76v0Ib",
+  "name": "Summon Animals",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 4,
+    "spellLists": [
+      "druid"
+    ],
+    "range": "360'",
+    "duration": "3 turns",
+    "effect": "Calls and befriends normal animals With this spell, the druid can summon any or all normal animals within range. Only normal, nonmagical creatures of animal intelligence are affected, including mammals, reptiles, amphibians, etc.",
+    "reversible": false,
+    "description": "With this spell, the druid can summon any or all normal animals within range. Only normal, nonmagical creatures of animal intelligence are affected, including mammals, reptiles, amphibians, etc. The spell does not affect insects, arthropods, humans, and demihumans. The druid may choose one or more known animals, may call for specific types, or may summon everything within range. The total Hit Dice of the animals responding will equal the level of the druid. Treat normal small creatures (frogs, mice, squirrels, small birds, etc.) as 1/10 Hit Die each. Animals affected will come at their fastest movement rate, and will understand the druid's speech while the spell is in effect.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

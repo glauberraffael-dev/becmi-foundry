@@ -1,0 +1,48 @@
+{
+  "_id": "hyrRXgOC4TdBF4A-",
+  "_key": "!actors!hyrRXgOC4TdBF4A-",
+  "name": "Bear (Grizzly)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "5",
+    "hp": 5,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/ 1 bite",
+    "damage": "1d8/1d8/ldl0",
+    "appearing": "1 (1d4)",
+    "saveAs": "F4",
+    "morale": 10,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 175,
+    "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
+    "monsterType": "Black, Grizzly Bears: Normal Animal (Common). Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
+    "description": "||Black|Grizzly| |---|---|---| |Armor Class:|6|8| |Hit Dice:|4 (L) |5 (L) | |Move:|120' (40')|120' (40')| |Attacks:|2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d3/ld3/ld6|1d8/ld8/ldl0| |No. Appearing:|1-4 (1d4)|1 (1d4)| |Save As:|F2|F4| |Morale:|7|10| |Treasure Type:|U|U| |Intelligence:|2|2| |Alignment:|Neutral|Neutral| |XP Value:|75|175| ||Polar|Cave| |Armor Class:|6|5| |Hit Dice:|6 (L)|7 (L)| |Move:|120' (40)|120' (40')| |Attacks: |2 claws/ 1 bite|2 claws/ 1 bite| |Damage:|1d6/ld6/ldl0|2d4/2d4/2d6| |No.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "_Grizzly_",
+      "key": "Bear (Grizzly)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

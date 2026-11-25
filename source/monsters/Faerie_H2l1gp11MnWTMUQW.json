@@ -1,0 +1,48 @@
+{
+  "_id": "H2l1gp11MnWTMUQW",
+  "_key": "!actors!H2l1gp11MnWTMUQW",
+  "name": "Faerie",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "1+1",
+    "hp": 11,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon or spell",
+    "damage": "By weapon or spell",
+    "appearing": "1d6 (5d8 + 20)",
+    "saveAs": "E1 (or better)",
+    "morale": 9,
+    "treasure": "(Nil) Special",
+    "intelligence": 13,
+    "alignment": "Any",
+    "xpValue": 19,
+    "terrain": "Any.",
+    "monsterType": "Humanoid (Rare).",
+    "description": "Armor Class: 5 Hit Dice: 1 + 1* or more (S) Move: 120' (40') Flying: 240' (80') Attacks: 1 weapon or spell Damage: By weapon or spell No. Appearing: 1d6 (5d8 + 20) Save As: E1 (or better) Morale: 9 Treasure Type: (Nil) Special Intelligence: 13 Alignment: Any XP Value: 19 (or more) Monster Type: Humanoid (Rare). The faerie inhabit the air and clouds.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 11,
+        "max": 11
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Faerie"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

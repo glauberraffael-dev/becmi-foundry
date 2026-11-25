@@ -1,0 +1,48 @@
+{
+  "_id": "PGswC6Jpw3LJAt9X",
+  "_key": "!actors!PGswC6Jpw3LJAt9X",
+  "name": "Malfera",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "9",
+    "hp": 9,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 claws, bite + special",
+    "damage": "1d0/ldl0/1d6",
+    "appearing": "1 (1d2)",
+    "saveAs": "F13",
+    "morale": 11,
+    "treasure": "E",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 2300,
+    "terrain": "Any; Dimension of Nightmares.",
+    "monsterType": "Planar Monster, Enchanted (Very Rare).",
+    "description": "Armor Class: 3 Hit Dice: 9 (L) Move: 60' (20') Attacks: 2 claws, bite + special Damage: 1dl0/ldl0/ld6 No. Appearing: 1 (1d2) Save As: F13 Morale: 11 Treasure Type: E Intelligence: 10 Alignment: Chaotic XP Value: 2,300 Monster Type: Planar Monster, Enchanted (Very Rare). A malfera is a creature from the Dimension of Nightmares, where many evil dreams are bred and released into the minds of sleeping people.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Malfera"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

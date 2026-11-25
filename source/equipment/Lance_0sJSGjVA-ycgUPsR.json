@@ -1,0 +1,34 @@
+{
+  "_id": "0sJSGjVA-ycgUPsR",
+  "_key": "!items!0sJSGjVA-ycgUPsR",
+  "name": "Lance",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "s, v, L",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "s, v, L",
+    "damage": "1d10",
+    "range": 0,
+    "ranges": "-",
+    "cost": 10,
+    "weight": 180,
+    "weaponType": "melee",
+    "hands": 1,
+    "rate": 1,
+    "attackBonus": 0,
+    "damageBonus": 0,
+    "magicBonus": 0,
+    "attackAbility": "str"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "s, v, L"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

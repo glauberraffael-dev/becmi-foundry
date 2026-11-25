@@ -1,0 +1,30 @@
+{
+  "_id": "DQqjWdIkST6UuYdu",
+  "_key": "!items!DQqjWdIkST6UuYdu",
+  "name": "Projected Image",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "6 turns",
+    "effect": "Creates one image",
+    "reversible": false,
+    "description": "This spell creates an image of the caster up to 240' away; the image will last without concentration. The projected image cannot be distinguished from the original except by touch. Any spell the spellcaster casts will seem to come from the image, but the caster must still be able to see the target. Spells and missile attacks will not appear to affect the image. If the image is touched or struck by a hand-to-hand weapon, it disappears.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

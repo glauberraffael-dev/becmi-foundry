@@ -1,0 +1,30 @@
+{
+  "_id": "YQHo5E2WJEL88ReM",
+  "_key": "!items!YQHo5E2WJEL88ReM",
+  "name": "Silence 15' Radius",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "180'",
+    "duration": "12 turns",
+    "effect": "Sphere of silence 30' across",
+    "reversible": false,
+    "description": "This spell makes the area of effect totally silent. Conversation and spellcasting in this area are impossible for the duration of the spell. This spell does not prevent a person within the area from hearing noises outside the area. If cast on a creature, the victim must make a saving throw vs. spells or the spell effects will move with the creature. If the saving throw is successful, the spell remains in the area in which it was cast, and the victim may move out of the area.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

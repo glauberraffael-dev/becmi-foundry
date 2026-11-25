@@ -1,0 +1,31 @@
+{
+  "_id": "uGgSoCtCWb3xZdeT",
+  "_key": "!items!uGgSoCtCWb3xZdeT",
+  "name": "Locate Object",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 3,
+    "spellLists": [
+      "cleric",
+      "magic-user"
+    ],
+    "range": "60' + 10' per level of the spellcaster",
+    "duration": "2 turns",
+    "effect": "One object within range",
+    "reversible": false,
+    "description": "The spellcaster casts this spell to find an object within the spell's range. For this spell to work, the spellcaster must know exactly what the object looks like. He can specify a common type of object, such as \"any flight of stairs,\" instead. The spell will point to the nearest designated object within range, giving the direction but not the distance. The spell's range increases as the spellcaster gains levels of experience. For example, a 2nd level spellcaster can locate objects up to 80' away; a 3rd level spellcaster, up to 90'.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

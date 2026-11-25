@@ -1,0 +1,30 @@
+{
+  "_id": "aZMsmJYXA_YsgDF-",
+  "_key": "!items!aZMsmJYXA_YsgDF-",
+  "name": "Mass Charm",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 8,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "Special (as _charm person_ spell)",
+    "effect": "30 Levels of creatures",
+    "reversible": false,
+    "description": "This spell creates the same effect as a charm person or charm monster spell, except that the spell affects 30 levels (or Hit Dice) at once. Each victim may make a saving throw vs. spells to avoid the charm, but with a -2 penalty to the roll. The spell will not affect a creature of 31 or more levels or Hit Dice. The duration of each charm is determined by the victim's Intelligence (see charm person, above). If the magic-user attacks one of the charmed victims, only that one creature's charm is automatically broken. Any other charmed creatures seeing the attack may make another saving throw, but other creatures' charms are not affected.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "AjtsYgF1Y_hYqj-N",
+  "_key": "!items!AjtsYgF1Y_hYqj-N",
+  "name": "Helm of Teleportation",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Item Descriptions",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "Usable by magic-users only, this helm allows the wearer to teleport (as the magic-user spell, including chances of error) himself or to attempt to teleport another creature or item. An unwilling victim can make a saving throw vs. spells to avoid the effect. After one use, the helm will no longer function.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Item Descriptions"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Item Descriptions"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

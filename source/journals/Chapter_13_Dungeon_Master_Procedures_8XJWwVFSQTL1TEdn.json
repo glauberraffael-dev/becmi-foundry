@@ -1,0 +1,27 @@
+{
+  "_id": "8XJWwVFSQTL1TEdn",
+  "_key": "!journal!8XJWwVFSQTL1TEdn",
+  "name": "Chapter 13: Dungeon Master Procedures",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 13
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>Ability checks, aging, alignment changes, anti-magic and ICC rulings.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 13. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "ikFPWtXGyU9SS5kh",
+      "_key": "!journal.pages!8XJWwVFSQTL1TEdn.ikFPWtXGyU9SS5kh"
+    }
+  ]
+}

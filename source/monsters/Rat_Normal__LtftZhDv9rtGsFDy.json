@@ -1,0 +1,48 @@
+{
+  "_id": "LtftZhDv9rtGsFDy",
+  "_key": "!actors!LtftZhDv9rtGsFDy",
+  "name": "Rat (Normal)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "1",
+    "hp": 1,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite 1 bite per pack each",
+    "damage": "1d6 + 1d3 + disease disease",
+    "appearing": "1d10 x 5 3d6 (1d10 x 2) (3dlO)",
+    "saveAs": "Normal Man Normal Man",
+    "morale": 5,
+    "treasure": "L L",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 2,
+    "terrain": "Normal Rats: Any. Giant Rats: Cavern, Ruins.",
+    "monsterType": "Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
+    "description": "Normal Giant Armor Class: 9 7 Hit Dice: 1 hit 1/2(l-4 hit point(S) points) (S) Move: 60' (20') 120' (40') Swimming: 30' (10') 60' (20') Attacks: 1 bite 1 bite per pack each Damage: 1d6 + 1d3 + disease disease No. Appearing: 1d10 x 5 3d6 (1d10 x 2) (3dlO) Save As: Normal Man Normal Man Morale: 5 8 Treasure Type: L L Intelligence: 2 2 Alignment: Neutral Neutral XP Value: 2 5 Monster Type: Normal Rat: Normal Animal (Common). Giant Rat: Giant Animal (Common).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Rat (Normal)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "mCN_4wLWl5RY2OFS",
+  "_key": "!items!mCN_4wLWl5RY2OFS",
+  "name": "Statue",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "0 (Magic-user only)",
+    "duration": "2 turns per level of the caster",
+    "effect": "Allows caster to turn to stone",
+    "reversible": false,
+    "description": "This allows the magic-user to change into a statue, along with all nonliving equipment he carries, up to once per round (to or from statue form) for the duration of the spell. The caster can concentrate on other spells while in statue for, though he can cast no new spells while in this form. Although this spell does not give him immunity to \"turn to stone\" effects (from a gorgon's attack), the caster may simply turn back to normal one round after becoming petrified. While in statue form, the magic-user is armor class -4, but cannot move. He cannot be damaged by cold or fire (whether normal or magical) or by normal weapons.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "HMmDOIm2sJujJm7U",
+  "_key": "!actors!HMmDOIm2sJujJm7U",
+  "name": "Rust Monster (Flame*)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "8",
+    "hp": 8,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/I bite 4 claws/1 bite",
+    "damage": "`1d4/1d4/1d8` 1d6(x4)/2d6 No. Appearing 1d4 + 1 (2d4) 1d3(1d3)",
+    "appearing": "",
+    "saveAs": "F8 F12",
+    "morale": 8,
+    "treasure": "F E",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 1,
+    "terrain": "Ruins.",
+    "monsterType": "",
+    "description": "Terrain: Ruins. Flame* Frost* Armor Class: 2 3 Hit Dice: 8*(L) 12* (L) Move: 120' (40') 120' (40') Attacks: 2 claws/I bite 4 claws/1 bite Damage: `1d4/ld4/ld8` 1d6(x4)/2d6 No. Appearing 1d4 + l (2d4) 1d3(ld3) Save As: F8 F12 Morale: 8 9 Treasure Type: F E Intelligence: 1 1 Alignment: Neutral Chaotic XP Value: 1,200 2,125",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 8,
+        "max": 8
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Rust Monster (Flame*)"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

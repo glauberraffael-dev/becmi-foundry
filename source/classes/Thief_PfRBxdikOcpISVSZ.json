@@ -1,0 +1,65 @@
+{
+  "_id": "PfRBxdikOcpISVSZ",
+  "_key": "!items!PfRBxdikOcpISVSZ",
+  "name": "Thief",
+  "type": "class",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "primeRequisite": "Dexterity",
+    "hitDice": "1d4",
+    "maxLevel": 36,
+    "requirements": "",
+    "xpTable": {
+      "1": 0,
+      "2": 1200,
+      "3": 2400,
+      "4": 4800,
+      "5": 9600,
+      "6": 20000,
+      "7": 40000,
+      "8": 80000,
+      "9": 160000,
+      "10": 280000,
+      "11": 400000,
+      "12": 520000,
+      "13": 640000,
+      "14": 760000,
+      "15": 880000,
+      "16": 1000000,
+      "17": 1120000,
+      "18": 1240000,
+      "19": 1360000,
+      "20": 1480000,
+      "21": 1600000,
+      "22": 1720000,
+      "23": 1840000,
+      "24": 1960000,
+      "25": 2080000,
+      "26": 2200000,
+      "27": 2320000,
+      "28": 2440000,
+      "29": 2560000,
+      "30": 2680000,
+      "31": 2800000,
+      "32": 2920000,
+      "33": 3040000,
+      "34": 3160000,
+      "35": 3280000,
+      "36": 3400000
+    },
+    "saves": {},
+    "description": "Weapons: A thief may use any missile weapon, and any other weapon usable with one hand (two-handed weapons are prohibited). Prime Requisite: Dexterity. Experience Bonus: 5% for Dexterity 1315, 10% for Dexterity 16-18. Find Traps (FT): With successful use of this special ability, the thief may examine a room or an object and determine whether it is rigged with traps. He may check only once per trap, and failure prevents the character from finding any trap in or on the object searched. (Since the DM actually does the rolling, the player doesn't know how many traps he's rolling to find.) If the thief finds a trap, he may use his Remove Traps ability to remove or deactivate it.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "xpLevels": 36
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "7pv3HIgL2V3xSmuW",
+  "_key": "!items!7pv3HIgL2V3xSmuW",
+  "name": "Canoe",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "50 —  — 1 —  — 6,000 — 18 — 60 — 5-10 — 9",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 9,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

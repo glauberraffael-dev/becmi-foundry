@@ -1,0 +1,103 @@
+{
+  "_id": "qOxrFBvuid9zGIUq",
+  "_key": "!tables!qOxrFBvuid9zGIUq",
+  "name": "Special Effects: Blowgun and Net",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Weapon Mastery"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "results": [
+    {
+      "_id": "ySXG6QvzKitZxQKu",
+      "type": "text",
+      "text": "Up to 1 HD: Save None; Blowgun death; Net entangle",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.ySXG6QvzKitZxQKu"
+    },
+    {
+      "_id": "zEhIa8-miuMzYUI8",
+      "type": "text",
+      "text": "1+1 to 3 HD: Save +1; Blowgun lose 75% hp + paralysis; Net entangle",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.zEhIa8-miuMzYUI8"
+    },
+    {
+      "_id": "AATVzlqbkuSipMX_",
+      "type": "text",
+      "text": "3+1 to 6 HD: Save +2; Blowgun lose 50% hp + paralysis; Net slow",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.AATVzlqbkuSipMX_"
+    },
+    {
+      "_id": "k0UbuBf8pOVH3OjO",
+      "type": "text",
+      "text": "6+1 to 9 HD: Save +3; Blowgun lose 50% hp; Net slow",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.k0UbuBf8pOVH3OjO"
+    },
+    {
+      "_id": "qMRXtqOJpZB9gpaR",
+      "type": "text",
+      "text": "9+1 to 12 HD: Save +4; Blowgun lose 25% hp; Net delay",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.qMRXtqOJpZB9gpaR"
+    },
+    {
+      "_id": "OC_AQ07d-hFymRLn",
+      "type": "text",
+      "text": "12+1 to 16 HD: Save +5; Blowgun lose 25% hp; Net delay",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.OC_AQ07d-hFymRLn"
+    },
+    {
+      "_id": "Hh3qa1pv5UDlpnmZ",
+      "type": "text",
+      "text": "16+1 HD: Save +5; Blowgun lose 10% hp; Net delay",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!qOxrFBvuid9zGIUq.Hh3qa1pv5UDlpnmZ"
+    }
+  ],
+  "formula": "1d7"
+}

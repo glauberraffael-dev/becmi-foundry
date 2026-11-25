@@ -1,0 +1,25 @@
+{
+  "_id": "2QqPfisE_fGutV-1",
+  "_key": "!items!2QqPfisE_fGutV-1",
+  "name": "Boat, River",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "4,000 — 8 — 2 —  — 40,000 — 36 — 60 — 20-40 — 8",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Transportation / siege equipment",
+    "cost": "",
+    "weight": 8,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Transportation / siege equipment"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

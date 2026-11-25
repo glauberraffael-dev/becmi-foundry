@@ -1,0 +1,31 @@
+{
+  "_id": "UiDu4OxUdbXhxyfL",
+  "_key": "!items!UiDu4OxUdbXhxyfL",
+  "name": "Weather Control",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "druid",
+      "magic-user"
+    ],
+    "range": "0 (druid only)",
+    "duration": "Concentration",
+    "effect": "All weather within 240 yards",
+    "reversible": false,
+    "description": "This spell allows the druid to create one special weather condition in the surrounding area (within a 240 yard radius). The caster may select the weather condition. The spell only works outdoors, and the weather will affect all creatures in the area (including the caster). The effects last as long as the caster concentrates, without moving; if the caster is being moved (for example, aboard a ship), the effect moves also. The spell's effects vary, but the following results are typical: Rain: -2 penalty to attack rolls applies to all missile fire. After three turns, the ground becomes muddy, reducing movement to half the normal rate.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "druid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

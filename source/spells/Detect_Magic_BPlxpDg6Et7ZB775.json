@@ -1,0 +1,30 @@
+{
+  "_id": "BPlxpDg6Et7ZB775",
+  "_key": "!items!BPlxpDg6Et7ZB775",
+  "name": "Detect Magic",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "0",
+    "duration": "2 turns",
+    "effect": "Everything within 60'",
+    "reversible": false,
+    "description": "When this spell is cast, the cleric will see a glow surround magical objects, creatures, and places within the spell's effect. The glow will not last very long; clerics should normally use the spell only when they want to know if particular objects already within sight are, in fact, magical. For example, a door may be held shut magically, a stranger might actually be an enchanted monster, or a treasure might be enchanted.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

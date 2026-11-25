@@ -1,0 +1,25 @@
+{
+  "_id": "U4SFVD-1pAT1Xqqb",
+  "_key": "!items!U4SFVD-1pAT1Xqqb",
+  "name": "Quiver",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "For arrows or quarrels — 1gp — 5",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Adventuring gear",
+    "cost": "1 gp",
+    "weight": 5,
+    "quantity": 1
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "notes": "Adventuring gear"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

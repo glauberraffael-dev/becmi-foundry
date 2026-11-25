@@ -1,0 +1,27 @@
+{
+  "_id": "JfLlaHovTurb58nV",
+  "_key": "!items!JfLlaHovTurb58nV",
+  "name": "Reproduction",
+  "type": "equipment",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "treasureType": "Miscellaneous Magical Item Enchantment Cost Checklist",
+    "value": 0,
+    "quantity": 1,
+    "cost": "",
+    "weight": 0,
+    "description": "Constructs do not reproduce; there are never \"baby gargoyles,\" for example. For each construct a spellcaster wants to create, he will have to repeat the creation process at the same costs, length of time, and chance of success.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "Miscellaneous Magical Item Enchantment Cost Checklist"
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Miscellaneous Magical Item Enchantment Cost Checklist"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "g94rLIoE70ORCn3r",
+  "_key": "!journal!g94rLIoE70ORCn3r",
+  "name": "Chapter 9: Mass Combat",
+  "img": "icons/svg/book.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "chapter": 9
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    {
+      "name": "Summary",
+      "type": "text",
+      "text": {
+        "content": "<p>The War Machine and Siege Machine for resolving large-scale battles.</p><p><em>Reference: D&amp;D Rules Cyclopedia, Chapter 9. Full rules text is not reproduced here.</em></p>"
+      },
+      "_id": "Ox_JAdLsLqtkeOj7",
+      "_key": "!journal.pages!g94rLIoE70ORCn3r.Ox_JAdLsLqtkeOj7"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "YkGo2bcol4Hxa3o7",
+  "_key": "!actors!YkGo2bcol4Hxa3o7",
+  "name": "Archon",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "20",
+    "hp": 20,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "See below",
+    "damage": "See below",
+    "appearing": "1d2 (1d2)",
+    "saveAs": "C20",
+    "morale": 11,
+    "treasure": "Nil",
+    "intelligence": 16,
+    "alignment": "Lawful",
+    "xpValue": 13175,
+    "terrain": "Any (usually wilderness along main roads).",
+    "monsterType": "Giant Humanoid (Rare).",
+    "description": "Monster Type: Giant Humanoid (Rare). Armor Class: —6 Hit Dice: 20 (L) Move: 120' (40') Flying: 360' (120') Attacks: See below Damage: See below No. Appearing: 1d2 (1d2) Save As: C20 Morale: 11 Treasure Type: Nil Intelligence: 16 Alignment: Lawful XP Value: 13,175 Athachs are humanoid and stand 18' tall. Each has hideous but recognizable features, a malformed body, and a third arm in the center of its chest. Treasure Type A is only found in the bandits' wilderness lair.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "max": 20
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Archon"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "GjT_n_cU9hEOHVaf",
+  "_key": "!items!GjT_n_cU9hEOHVaf",
+  "name": "Teleport",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 5,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "10'",
+    "duration": "Instantaneous",
+    "effect": "Transports one creature with equipment",
+    "reversible": false,
+    "description": "Duration: Instantaneous Effect: Transports one creature with equipment This spell instantly transports the spellcaster or another recipient to any unoccupied destination on the same plane of existence. Distance does not matter so long as the destination is on the same plane. The recipient arrives at the destination with all equipment he was carrying. An unwilling victim can make a saving throw vs. spell to avoid the spell effects. The caster may not deliberately choose a destination he knows to be occupied by a solid object, and he must choose to appear on a surface (such as ground level or the top of a building); he cannot choose to appear far up in the air.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

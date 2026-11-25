@@ -1,0 +1,30 @@
+{
+  "_id": "Y5MRgd7sSjLolrTq",
+  "_key": "!items!Y5MRgd7sSjLolrTq",
+  "name": "Raise Dead Fully",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "60'",
+    "duration": "Permanent",
+    "effect": "Raises any living creature",
+    "reversible": false,
+    "description": "This spell is similar to the 5th level spell raise dead, except that it can raise any living creature—not just humans and demihumans. Any human or demihuman recipient awakens immediately, with full hit points, and is able to fight, use abilities, spells known, etc., without any penalties— except those penalties the creature already possessed at the time of death. For example, a victim cursed or diseased at death would still suffer the affliction when raised fully. If any other living creature (other than a human or demihuman) is the recipient, the guide- lines given in the raise dead spell apply (including time limitations, rest needed, etc.).",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": ""
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}
