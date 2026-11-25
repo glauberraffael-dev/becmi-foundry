@@ -1,4 +1,5 @@
-import { abilityCheck, initiativeRoll, moraleCheck, savingThrow, hitDiceRoll } from "../rolls.mjs";
+import { abilityCheck, freeRoll, hitDiceRoll, initiativeRoll, moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll } from "../rolls.mjs";
+import { computeArmorClass } from "../rules-rc.mjs";
 
 export class BECMIActor extends Actor {
   /** Flat roll data so formulas can reference @str, @thac0, @ac, @level, etc. */
@@ -17,7 +18,15 @@ export class BECMIActor extends Actor {
     super.prepareDerivedData();
     const attrs = this.system?.attributes;
     if (attrs?.ac && !Number.isFinite(attrs.ac.value)) {
-      attrs.ac.value = (attrs.ac.base ?? 0) + (attrs.acBonus ?? 0);
+      const armor = attrs.armor ?? {};
+      attrs.ac.value = computeArmorClass({
+        type: armor.type,
+        shield: armor.shield,
+        dexAdj: attrs.adjustments?.dex ?? 0,
+        magicArmor: armor.magicBonus,
+        magicShield: armor.shieldMagic,
+        itemBonus: attrs.acBonus
+      }).value;
     }
   }
 
@@ -39,6 +48,18 @@ export class BECMIActor extends Actor {
 
   async rollHitDice(options = {}) {
     return hitDiceRoll(this, options);
+  }
+
+  async rollFree(expression, options = {}) {
+    return freeRoll(this, expression, options);
+  }
+
+  async rollThiefSkill(skill, options = {}) {
+    return thiefSkillRoll(this, skill, options);
+  }
+
+  async rollTurnUndead(typeName, options = {}) {
+    return turnUndeadRoll(this, typeName, options);
   }
 
   /** Total XP needed for the next level, from the class compendium table. */

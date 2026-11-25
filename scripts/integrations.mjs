@@ -23,6 +23,8 @@ function clone(value) {
   return value == null ? value : JSON.parse(JSON.stringify(value));
 }
 
+import { normalizeClassKey } from "./rules-rc.mjs";
+
 export function spellListsForClass(classInfo) {
   const name = String(classInfo?.name ?? "").toLowerCase();
   return CLASS_SPELL_LISTS[name] ? [...CLASS_SPELL_LISTS[name]] : [];
@@ -79,6 +81,7 @@ export async function applyClassToActor(actor, classItem) {
   const level = Number(getProperty(actor.system, "attributes.level")) || 1;
   const changes = changesFor(actor, {
     "system.attributes.class": snapshot.name,
+    "system.attributes.classKey": normalizeClassKey(snapshot.name) ?? "",
     "system.attributes.classUuid": snapshot.uuid,
     "system.attributes.hd": snapshot.hitDice,
     "system.attributes.primeRequisite": snapshot.primeRequisite,

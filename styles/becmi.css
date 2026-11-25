@@ -384,3 +384,53 @@
   background: rgba(255, 255, 255, 0.5);
 }
 .becmi-die-face.discarded { opacity: 0.4; text-decoration: line-through; }
+
+/* ------------------------------------------------- reference table panels */
+.becmi-tab-panel { overflow-x: auto; }
+
+.becmi-table--attack,
+.becmi-table--undead,
+.becmi-table--mastery,
+.becmi-table--mastery-ref,
+.becmi-table--spells,
+.becmi-table--slots,
+.becmi-table--memorized {
+  max-width: none;
+  font-size: 0.74rem;
+}
+
+.becmi-table--attack th,
+.becmi-table--attack td,
+.becmi-table--undead td,
+.becmi-table--slots td,
+.becmi-table--mastery td,
+.becmi-table--mastery-ref td {
+  padding: 0.1rem 0.2rem;
+  text-align: center;
+}
+
+.becmi-table--undead tbody th,
+.becmi-table--mastery tbody th,
+.becmi-table--mastery-ref tbody th {
+  white-space: normal;
+}
+
+.becmi-table .becmi-active {
+  background: rgba(123, 45, 32, 0.16);
+  box-shadow: inset 0 0 0 1px var(--becmi-accent);
+  font-weight: 700;
+}
+
+.becmi-hint {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.becmi-table tfoot th,
+.becmi-table tfoot td {
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-parchment-dark);
+  font-weight: 700;
+}

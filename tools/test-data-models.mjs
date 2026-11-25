@@ -69,9 +69,17 @@ withoutAc.system = { attributes: { hp: { value: 1, max: 1 } } };
 withoutAc.prepareDerivedData();
 
 const withAc = new BECMIActor();
-withAc.system = { attributes: { ac: { base: 2, value: undefined }, acBonus: 1 } };
+withAc.system = {
+  attributes: {
+    ac: { base: 9, value: undefined },
+    acBonus: 1,
+    armor: { type: "malha", shield: true, magicBonus: 0, shieldMagic: 0 },
+    adjustments: { dex: 1 }
+  }
+};
 withAc.prepareDerivedData();
-if (withAc.system.attributes.ac.value !== 3) {
-  throw new Error(`Derived AC expected 3, got ${withAc.system.attributes.ac.value}`);
+// Chain mail (5), shield (-1), DEX adjustment (-1), item bonus (-1).
+if (withAc.system.attributes.ac.value !== 2) {
+  throw new Error(`Derived AC expected 2, got ${withAc.system.attributes.ac.value}`);
 }
 console.log("Actor prepareDerivedData OK (with and without AC).");

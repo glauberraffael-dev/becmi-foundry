@@ -1,0 +1,128 @@
+/**
+ * Foundry-independent tests for the Rules Cyclopedia tables and automations.
+ *
+ * Usage: node tools/test-rc-rules.mjs
+ */
+import assert from "node:assert/strict";
+import {
+  RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
+  baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
+  finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
+  normalizeClassKey, planAbilityAdjustment, resolveTurnResult, rollExpression,
+  spellKey, spellSlotsForLevel, spellsFor, sumDamage, turnUndeadCell,
+  turnUndeadColumn, turnUndeadTable
+} from "../scripts/rules-rc.mjs";
+
+const check = (name, fn) => {
+  fn();
+  console.log(`ok - ${name}`);
+};
+
+check("extracted data has the expected reference tables", () => {
+  assert.equal(Object.keys(RC.classes).length, 7);
+  assert.equal(RC.spells.length, 201);
+  assert.equal(RC.mastery.weapons.length, 37);
+  assert.equal(RC.thief.length, 36);
+  assert.equal(RC.turnUndead.rows.length, 14);
+  assert.equal(RC.attack.sequence.length, 71);
+});
+
+check("class aliases normalize to RC keys", () => {
+  assert.equal(normalizeClassKey("Mage"), "magic-user");
+  assert.equal(normalizeClassKey("Warrior"), "fighter");
+  assert.equal(normalizeClassKey("Rogue"), "thief");
+  assert.equal(normalizeClassKey("not a class"), null);
+});
+
+check("attack table maps specs and AC values", () => {
+  assert.equal(attackNeeded(19, 0), "19");
+  assert.equal(attackNeeded("2k3", 0), "2");
+  assert.equal(attackNeeded("1", 0), "1");
+  const info = attackInfo("19", -1, 0);
+  assert.equal(info.needed, 20);
+  const rows = attackRows(19, 9, -10);
+  assert.equal(rows.length, 20);
+  assert.equal(rows.at(-1).ac, -10);
+});
+
+check("attack column follows level and XP rank", () => {
+  assert.equal(attackSpecFor("fighter", 1).spec, 19);
+  assert.equal(attackSpecFor("fighter", 30).spec, "2k3");
+  assert.equal(attackSpecFor("magic-user", 5).spec, 19);
+  assert.equal(attackSpecFor("magic-user", 6).spec, 17);
+  assert.equal(attackSpecFor("halfling", 36, 120000).spec, 15);
+});
+
+check("saves and thief skills come from the level tables", () => {
+  assert.deepEqual(baseSaves("fighter", 3), {
+    deathRay: 12, magicWand: 13, paralysis: 14, breath: 15, spells: 16
+  });
+  assert.equal(baseThiefSkills(5).climbWalls, 91);
+  assert.equal(baseThiefSkills(5).openLocks, 35);
+});
+
+check("spell slots and spell lists use the extracted tables", () => {
+  assert.deepEqual(spellSlotsForLevel("cleric", 3), [2, 0, 0, 0, 0, 0, 0]);
+  assert.deepEqual(spellSlotsForLevel("magic-user", 5).slice(0, 3), [2, 2, 1]);
+  assert.equal(spellsFor("cleric", 1).length, 8);
+  const key = spellKey(spellsFor("cleric", 1)[0]);
+  assert.ok(spellsFor("magic-user", 1, { grimoire: [key] }).length >= 0);
+  assert.equal(spellsFor("fighter", 1).length, 0);
+});
+
+check("ability adjustments and creation swap follow the RC bands", () => {
+  assert.equal(adjustment(3), -3);
+  assert.equal(adjustment(9), 0);
+  assert.equal(adjustment(13), 1);
+  assert.equal(adjustment(18), 3);
+  const plan = planAbilityAdjustment("fighter", { str: 15, int: 12, wis: 12 }, 1);
+  assert.equal(plan.scores.str, 16);
+  assert.equal(plan.scores.int, 10);
+  assert.equal(plan.swaps, 1);
+});
+
+check("armor class and load are derived from equipment", () => {
+  assert.equal(armorBase("malha"), 5);
+  assert.equal(computeArmorClass({ type: "malha", shield: true, dexAdj: 1, magicArmor: 1, itemBonus: 1 }).value, 1);
+  const load = computeLoad({ armor: "placas", shield: true, coins: 1000 });
+  assert.equal(load.total, 1600);
+  assert.equal(load.movementTurn, 30);
+  assert.equal(load.movementRound, 10);
+});
+
+check("turn undead resolves the highlighted column", () => {
+  assert.equal(turnUndeadColumn(1), 0);
+  assert.equal(turnUndeadColumn(9), 8);
+  assert.equal(turnUndeadColumn(33), 16);
+  assert.equal(turnUndeadCell(5, "Skeleton"), "D");
+  assert.equal(turnUndeadCell(1, "Skeleton"), "7");
+  assert.equal(resolveTurnResult("D+", 7).dice, "3d6");
+  assert.equal(resolveTurnResult("7", 6).kind, "failure");
+  assert.equal(turnUndeadTable(5).length, 17);
+  assert.equal(turnUndeadTable(5)[4].active, true);
+});
+
+check("weapon mastery resolves ranks and damage options", () => {
+  const weapon = masteryWeapon("Cassetete");
+  assert.equal(weapon.name, "Blackjack");
+  assert.equal(masteryData(weapon, "gm").damage, "P=1d4+5; S=1d6+2");
+  assert.equal(masteryData(weapon, "sem").damage, "—");
+  assert.equal(masteryData(weapon, "gm").attack[0], 8);
+  assert.equal(chooseDamage("P=1d4+3; S=1d6+1", "sec"), "1d6+1");
+  assert.equal(sumDamage("1d6", 2), "1d6+2");
+  assert.equal(finalDamage("1d6", 1, true), "½(1d6)+1");
+  assert.equal(masteryChoices("fighter", 5), 5);
+  assert.equal(masteryChoices("fighter", 36, 660000), 15);
+});
+
+check("hit points use dice up to level 9 and fixed values after", () => {
+  assert.equal(hpForLevel("fighter", 2, 2, () => 0).gain, 3);
+  assert.equal(hpForLevel("fighter", 10, 2, () => 0).gain, 2);
+});
+
+check("the free roller supports dice, modifiers and half expressions", () => {
+  assert.equal(rollExpression("2d6+3", () => 0).total, 5);
+  assert.equal(rollExpression("½(2d6+4)+3", () => 0).total, 6);
+  assert.equal(rollExpression("10-2-1").total, 7);
+  assert.equal(rollExpression("not dice").valid, false);
+});

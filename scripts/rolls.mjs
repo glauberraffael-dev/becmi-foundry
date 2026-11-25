@@ -6,12 +6,15 @@
  * a natural (modified) roll of T - X or better.
  */
 
+import { attackInfo, resolveTurnResult, rollExpression } from "./rules-rc.mjs";
+
 const ABILITY_BONUS = { str: "str", dex: "dex", wis: "wis" };
 
 function modifierFor(actor, ability) {
   const ab = actor?.system?.abilities?.[ability];
   if (!ab) return 0;
-  return Number(ab.bonus ?? ab.mod ?? 0);
+  const derived = Number(actor?.system?.attributes?.adjustments?.[ability] ?? 0);
+  return derived + Number(ab.bonus ?? ab.mod ?? 0);
 }
 
 function clampedRoll(value, min = 1, max = 20) {
@@ -75,14 +78,24 @@ export async function attackRoll(actor, item, { targetAC, rollMode } = {}) {
     return null;
   }
 
-  const needed = clampedRoll(thac0 - ac - bonus, 1, 20);
+  const spec = attrs.attackSpec;
+  let needed = clampedRoll(thac0 - ac - bonus, 1, 20);
+  let auto = false;
+  if (spec) {
+    const info = attackInfo(spec, ac, bonus);
+    if (Number.isFinite(info.needed)) {
+      needed = clampedRoll(info.needed - bonus, 1, 20);
+      auto = info.auto;
+    }
+  }
   const formula = `1d20${bonus >= 0 ? " + " : " - "}${Math.abs(bonus)}`;
   const roll = await new Roll(formula).evaluate({ async: true });
   const total = Math.round(roll.total);
-  // BECMI: a natural 1 always misses, a natural 20 always hits.
-  const hit = total === 20 ? true : total === 1 ? false : total >= needed;
+  const natural = total - Math.round(bonus);
+  // BECMI: a natural 1 always misses, a natural 20 always hits; † also hits.
+  const hit = natural === 20 || (natural !== 1 && (auto || total >= needed));
 
-  const result = `${total} vs AC ${ac} (needed ${needed}+)`;
+  const result = `${total} vs AC ${ac} (needed ${auto ? `${needed}†` : `${needed}+`})`;
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.attack"),
     flavor: `${actor.name} — ${item?.name ?? "Attack"}`,
@@ -96,13 +109,13 @@ export async function attackRoll(actor, item, { targetAC, rollMode } = {}) {
   if (hit && item?.system?.damage) {
     await damageRoll(actor, item, { rollMode });
   }
-  return { roll, hit, needed };
+  return { roll, hit, needed, auto };
 }
 
 /** Roll damage for a weapon or natural attack. */
-export async function damageRoll(actor, item, { rollMode } = {}) {
+export async function damageRoll(actor, item, { rollMode, bonusDamage = 0 } = {}) {
   const formula = item?.system?.damage || "1d6";
-  const bonus = modifierFor(actor, "str") + Number(item?.system?.damageBonus ?? 0);
+  const bonus = modifierFor(actor, "str") + Number(item?.system?.damageBonus ?? 0) + Number(bonusDamage || 0);
   const roll = await new Roll(`${formula}${bonus ? ` + ${bonus}` : ""}`).evaluate({ async: true });
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.damage"),
@@ -128,8 +141,8 @@ export async function savingThrow(actor, type, { rollMode } = {}) {
   }[type] ?? type;
 
   const saves = actor.system.saves ?? {};
-  let target = Number(saves[key] ?? saves.value ?? 10);
-  if (key === "spells") target += modifierFor(actor, "wis");
+  // The derived target already includes Wisdom, equipped items and the manual modifier.
+  const target = Number(saves[key] ?? saves.value ?? 10);
 
   const roll = await new Roll("1d20").evaluate({ async: true });
   const success = roll.total >= target;
@@ -211,4 +224,61 @@ export async function hitDiceRoll(actor, { rollMode } = {}) {
     actor
   });
   return roll;
+}
+
+/** Roll an arbitrary BECMI expression (NdM, +/- and half(...) are supported). */
+export async function freeRoll(actor, expression, { rollMode } = {}) {
+  const parsed = rollExpression(expression);
+  if (!parsed.valid) {
+    ui.notifications.warn(game.i18n.format("BECMI.notification.badExpression", { expression: String(expression) }));
+    return null;
+  }
+  const roll = await new Roll(String(parsed.total)).evaluate({ async: true });
+  await toChat(roll, {
+    title: game.i18n.localize("BECMI.rolls.free"),
+    flavor: `${actor.name} — ${parsed.formula}`,
+    result: String(parsed.total),
+    rollMode,
+    actor
+  });
+  return { roll, total: parsed.total };
+}
+
+/** d100 <= skill chance, as in the Rules Cyclopedia thief table. */
+export async function thiefSkillRoll(actor, skill, { rollMode } = {}) {
+  const chance = Number(actor.system.thiefSkills?.[skill] ?? 0);
+  const roll = await new Roll("1d100").evaluate({ async: true });
+  const success = roll.total <= chance;
+  await toChat(roll, {
+    title: `${game.i18n.localize("BECMI.rolls.skill")}: ${game.i18n.localize(`BECMI.thief.${skill}`)}`,
+    flavor: actor.name,
+    result: `${Math.round(roll.total)} vs ${chance}% — ${game.i18n.localize(success ? "BECMI.rolls.success" : "BECMI.rolls.failure")}`,
+    outcome: success ? "hit" : "miss",
+    rollMode,
+    actor
+  });
+  return { roll, success };
+}
+
+/** Turn Undead: 2d6 against the level column, then roll the HD dice. */
+export async function turnUndeadRoll(actor, typeName, { rollMode } = {}) {
+  const { turnUndeadCell, resolveTurnResult } = await import("./rules-rc.mjs");
+  const level = Number(actor.system.attributes?.level ?? 1);
+  const cell = turnUndeadCell(level, typeName);
+  const check = await new Roll("2d6").evaluate({ async: true });
+  const outcome = resolveTurnResult(cell, check.total);
+  let result = `${cell} — ${game.i18n.localize(`BECMI.undead.outcome.${outcome.kind}`)}`;
+  if (outcome.dice) {
+    const dice = await new Roll(outcome.dice).evaluate({ async: true });
+    result += ` (${dice.total} HD)`;
+  }
+  await toChat(check, {
+    title: `${game.i18n.localize("BECMI.rolls.turnUndead")}: ${typeName}`,
+    flavor: `${actor.name} — ${game.i18n.localize("BECMI.labels.level")} ${level}`,
+    result,
+    outcome: outcome.kind === "failure" || outcome.kind === "impossible" ? "miss" : "hit",
+    rollMode,
+    actor
+  });
+  return { roll: check, cell, outcome };
 }
