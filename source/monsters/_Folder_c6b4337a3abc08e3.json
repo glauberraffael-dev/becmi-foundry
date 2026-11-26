@@ -3,9 +3,11 @@
   "_key": "!folders!c6b4337a3abc08e3",
   "name": "Unclassified",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 8,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

@@ -1,7 +1,8 @@
 /* BECMI system styles — parchment / ink character sheet. */
 
 :root {
-  --becmi-ink: #2b2118;
+  --becmi-ink: #211810;
+  --becmi-muted: #4a3826;
   --becmi-parchment: #fbe6c3;
   --becmi-parchment-dark: #efd7a8;
   --becmi-border: #8a704a;
@@ -80,7 +81,8 @@
 
 .becmi.sheet input:disabled,
 .becmi.sheet textarea:disabled {
-  opacity: 0.75;
+  color: var(--becmi-muted);
+  background: rgba(255, 252, 244, 0.4);
 }
 
 /* ---------------------------------------------------------------- header */
@@ -92,13 +94,45 @@
   border-bottom: 2px solid var(--becmi-border);
 }
 
+.becmi-image-wrap {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
 .becmi-portrait {
   width: 64px;
   height: 64px;
   object-fit: cover;
   border: 2px solid var(--becmi-border);
   border-radius: 3px;
-  flex: 0 0 auto;
+}
+
+.becmi-image-edit {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  font-size: 0.85rem;
+  color: #fff8e8;
+  background: var(--becmi-accent);
+  border: 1px solid var(--becmi-ink);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.becmi-image-edit:hover {
+  background: #5c2017;
+}
+
+.becmi-image-edit:disabled {
+  display: none;
 }
 
 .becmi-title-block {
@@ -341,12 +375,14 @@
 
 .becmi-feature {
   border: 1px solid var(--becmi-border);
-  background: rgba(255, 252, 244, 0.45);
+  background: #fff8e8;
+  color: var(--becmi-ink);
   padding: 0.25rem 0.5rem 0.4rem;
 }
 
 .becmi-feature.is-locked {
-  opacity: 0.65;
+  background: #f5e5c6;
+  color: var(--becmi-muted);
   border-style: dashed;
 }
 
@@ -414,7 +450,7 @@
 .becmi-empty {
   text-align: center;
   font-style: italic;
-  opacity: 0.7;
+  color: var(--becmi-muted);
   padding: 0.75rem;
 }
 
@@ -554,12 +590,12 @@
 .becmi-roll-card[data-outcome="miss"] .becmi-roll-card__outcome { color: var(--becmi-bad); }
 
 .becmi-roll-card__title { margin: 0 0 0.25rem; font-size: 1.05rem; }
-.becmi-roll-card__flavor { font-size: 0.8rem; font-style: italic; opacity: 0.85; }
+.becmi-roll-card__flavor { font-size: 0.8rem; font-style: italic; color: var(--becmi-muted); }
 .becmi-roll-card__result { display: flex; align-items: baseline; gap: 0.6rem; margin: 0.35rem 0; }
 .becmi-roll-card__total { font-size: 1.6rem; font-weight: 700; }
 .becmi-roll-card__outcome { font-weight: 700; text-transform: uppercase; }
 .becmi-roll-card__detail, .becmi-roll-card__formula { font-size: 0.85rem; }
-.becmi-roll-card__formula { opacity: 0.7; }
+.becmi-roll-card__formula { color: var(--becmi-muted); }
 .becmi-die { margin-right: 0.35rem; }
 .becmi-die-face {
   display: inline-block;
@@ -610,9 +646,9 @@
 
 .becmi-hint {
   margin: 0.2rem 0 0.35rem;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-style: italic;
-  opacity: 0.85;
+  color: var(--becmi-muted);
 }
 
 .becmi-table tfoot th,

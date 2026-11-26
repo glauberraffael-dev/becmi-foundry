@@ -3,9 +3,11 @@
   "_key": "!folders!65abff4b71ab6a77",
   "name": "Normal Animals",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

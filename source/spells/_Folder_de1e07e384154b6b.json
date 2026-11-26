@@ -3,9 +3,11 @@
   "_key": "!folders!de1e07e384154b6b",
   "name": "Magic-User Spells",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 16,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

@@ -30,6 +30,8 @@ short paraphrases; the PDF and OCR export are **not** included.
   as the manual Level Up button; manually adjusted levels are never overwritten.
 - A Class Features tab and sidebar list every class and racial ability, including
   backstab, elven/dwarven/halfling abilities and the Mystic's martial arts.
+- Click the small pencil badge on the portrait (or item image) to change artwork
+  through the Foundry FilePicker.
 - Every sheet tab and long table scrolls inside the window, so nothing requires
   resizing the Foundry window.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling, 16 mystic,
@@ -49,7 +51,10 @@ short paraphrases; the PDF and OCR export are **not** included.
 | BECMI Rules Reference | JournalEntry | 26 |
 
 `BECMI Spells` has folders for Cleric, Druid and Magic-User spells, each with a
-subfolder per spell level. `BECMI Equipment`
+subfolder per spell level. The seven packs are also grouped in the sidebar under
+`BECMI Rules Cyclopedia`; if an older world keeps the previous sidebar layout, run
+`game.settings.set("core", "compendiumConfiguration", {})` in the console and reload
+twice. `BECMI Equipment`
 contains **42 weapons**, 7 armor types and 57 other equipment entries, organized in
 folders for Weapons, Armor & Shields, Adventuring Gear and Transport & Siege.
 `BECMI Classes` keeps the Druid entry in a Subclasses folder.
@@ -84,8 +89,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.14`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.14.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.15`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.15.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder
@@ -163,8 +168,8 @@ under `packs/`.
   cell alignment before relying on a specific mastery entry.
 - Treasure and class descriptions are short paraphrases, not verbatim rules.
 - Monsters use a single AC/HP value per entry; variant stat blocks are separate actors.
-- Compatibility is checked against Foundry v14, but the automated checks are structural;
-  live playtesting in a Foundry instance is not yet documented.
+- Compatibility was exercised in a live Foundry v14 instance; the automated checks
+  are structural and do not replace playtesting.
 
 ## License and credits
 

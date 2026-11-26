@@ -3,9 +3,11 @@
   "_key": "!folders!15c341ade7785c67",
   "name": "Lowlife",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 1,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

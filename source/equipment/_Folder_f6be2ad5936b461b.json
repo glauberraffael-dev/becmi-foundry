@@ -3,9 +3,11 @@
   "_key": "!folders!f6be2ad5936b461b",
   "name": "Adventuring Gear",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 2,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

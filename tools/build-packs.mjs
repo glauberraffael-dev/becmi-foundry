@@ -60,18 +60,23 @@ async function main() {
     await mkdir(outDir, { recursive: true });
 
     let foldersWritten = 0;
-    for (const definition of folderDefinitions[pack] ?? []) {
+    for (const [index, definition] of (folderDefinitions[pack] ?? []).entries()) {
       const key = folderDefinitionKey(definition);
       const id = folderId(pack, key);
+      // FolderData calls the parent reference "folder". "parent" is an
+      // immutable reverse-reference on the client and is ignored on import,
+      // which made every spell level appear as a top-level folder.
       const parent = definition.parentKey ? folderId(pack, definition.parentKey) : null;
       const folder = {
         _id: id,
         _key: `!folders!${id}`,
         name: definition.name,
         type: definition.type ?? "Item",
-        parent,
+        folder: parent,
+        sort: index,
         sorting: "m",
         color: null,
+        description: "",
         flags: {},
         ownership: { default: 0 }
       };

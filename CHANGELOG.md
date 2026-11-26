@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.15
+
+- Fixed compendium folder nesting: level folders now use the `folder` field that
+  Foundry reads, so Cleric/Druid/Magic-User folders contain their spell-level
+  subfolders. Added sidebar `packFolders` grouping for all seven packs.
+- Added a visible image-edit badge to actor and item sheets using the ApplicationV2
+  `editImage` action.
+- Dropping classes, equipment and other non-spell items onto an actor now uses the
+  standard Foundry handler instead of being rejected; malformed drag payloads no
+  longer raise an unhandled `fromDropData` error.
+- Increased text contrast on class/racial abilities, locked features, hints, empty
+  states and roll cards.
+- An empty Target AC field again falls back to AC 9 instead of being read as AC 0.
+
 ## 0.1.14
 
 - Added 18 curated random encounter RollTables from Rules Cyclopedia chapter 7:

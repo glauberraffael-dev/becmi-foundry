@@ -3,9 +3,11 @@
   "_key": "!folders!288ea6004fab2830",
   "name": "Spell Level 8",
   "type": "Item",
-  "parent": "de1e07e384154b6b",
+  "folder": "de1e07e384154b6b",
+  "sort": 24,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

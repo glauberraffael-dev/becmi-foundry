@@ -3,9 +3,11 @@
   "_key": "!folders!82a2fd094addcf18",
   "name": "Potions",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

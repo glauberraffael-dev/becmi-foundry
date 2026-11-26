@@ -25,7 +25,8 @@ for (const pack of packs) {
         key.startsWith("!items!") || key.startsWith("!actors!")) docs.push(value);
     else embedded.push([key, value]);
   }
-  const folders = embedded.filter(([key]) => key.startsWith("!folders!")).map(([, value]) => value.name);
+  const folderDocs = embedded.filter(([key]) => key.startsWith("!folders!")).map(([, value]) => value);
+  const folders = folderDocs.map((folder) => folder.name);
   console.log(`${pack}: ${docs.length} documents, ${embedded.length} embedded keys${folders.length ? `, folders: ${folders.join(", ")}` : ""}`);
 
   if (!docs.length) throw new Error(`${pack}: compiled pack has no documents`);
@@ -33,8 +34,43 @@ for (const pack of packs) {
   if (docs.some((doc) => !doc._id || !doc.name)) {
     throw new Error(`${pack}: compiled document without _id or name`);
   }
-  if (["monsters", "spells", "equipment", "classes", "treasure"].includes(pack) && !folders.length) {
+  if (["monsters", "spells", "equipment", "classes", "treasure", "tables"].includes(pack) && !folders.length) {
     throw new Error(`${pack}: compiled pack has no folders`);
+  }
+  const folderIds = new Set(folderDocs.map((folder) => folder._id));
+  for (const folder of folderDocs) {
+    if ("parent" in folder) {
+      throw new Error(`${pack}: folder ${folder.name} uses "parent" instead of "folder"`);
+    }
+    if (folder.folder && !folderIds.has(folder.folder)) {
+      throw new Error(`${pack}: folder ${folder.name} points to a missing parent`);
+    }
+  }
+  for (const doc of docs) {
+    if (doc.folder && !folderIds.has(doc.folder)) {
+      throw new Error(`${pack}: ${doc.name} points to a missing folder`);
+    }
+  }
+
+  if (pack === "spells") {
+    const lists = folderDocs.filter((folder) => !folder.folder);
+    const levels = folderDocs.filter((folder) => folder.folder);
+    if (lists.length !== 3 || levels.length !== 23) {
+      throw new Error(`spells: expected 3 list folders and 23 level folders, found ${lists.length}/${levels.length}`);
+    }
+    for (const folder of levels) {
+      const parent = folderDocs.find((entry) => entry._id === folder.folder);
+      if (!parent || !/^Spell Level [1-9]$/.test(folder.name)) {
+        throw new Error(`spells: invalid level folder ${folder.name}`);
+      }
+    }
+    for (const doc of docs) {
+      if (!folderIds.has(doc.folder)) throw new Error(`spells: ${doc.name} has no folder`);
+      if (!folderDocs.find((folder) => folder._id === doc.folder)?.folder) {
+        throw new Error(`spells: ${doc.name} is not inside a level folder`);
+      }
+    }
+    console.log(`  folder tree: ${lists.length} spell lists, ${levels.length} level folders`);
   }
 
   if (pack === "monsters") {

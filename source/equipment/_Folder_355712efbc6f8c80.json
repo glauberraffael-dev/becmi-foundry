@@ -3,9 +3,11 @@
   "_key": "!folders!355712efbc6f8c80",
   "name": "Weapons",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

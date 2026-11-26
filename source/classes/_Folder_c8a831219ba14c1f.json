@@ -3,9 +3,11 @@
   "_key": "!folders!c8a831219ba14c1f",
   "name": "Subclasses",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 1,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

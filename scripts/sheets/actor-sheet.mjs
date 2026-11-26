@@ -104,17 +104,22 @@ const byName = (a, b) => String(a.name ?? "").localeCompare(String(b.name ?? "")
 const bySpellLevelThenName = (a, b) =>
   (Number(a.system?.spellLevel) || 0) - (Number(b.system?.spellLevel) || 0) || byName(a, b);
 
-/** Read the raw document UUID before ActorSheetV2 resolves the drop. */
-function draggedDocumentUuid(event) {
+/** Read the raw drag payload without assuming it contains a resolvable document. */
+function dragEventData(event) {
   try {
     const TextEditor = foundry.applications.ux.TextEditor.implementation
       ?? foundry.applications.ux.TextEditor;
-    const data = TextEditor.getDragEventData(event);
-    const uuid = data?.uuid ?? data?.documentUuid;
-    return typeof uuid === "string" ? uuid : "";
+    return TextEditor.getDragEventData(event) ?? {};
   } catch {
-    return "";
+    return {};
   }
+}
+
+/** Read the raw document UUID before ActorSheetV2 resolves the drop. */
+function draggedDocumentUuid(event) {
+  const data = dragEventData(event);
+  const uuid = data.uuid ?? data.documentUuid;
+  return typeof uuid === "string" ? uuid : "";
 }
 
 /** Normalize the compendium UUID variants used by Foundry v13 and v14. */
@@ -179,27 +184,33 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   /** Capture the drag UUID, then let ActorSheetV2 resolve the dropped document. */
   async _onDrop(event) {
+    const data = dragEventData(event);
+    // Folder headers and partial drag payloads have no document to resolve.
+    // Passing them to ActorSheetV2 would throw inside Item.fromDropData.
+    if (!data.uuid && !data.documentUuid && !data.data) return null;
     const uuid = draggedDocumentUuid(event);
     if (uuid) this.#dropUuidByEvent.set(event, uuid);
     try {
       return await super._onDrop(event);
+    } catch (error) {
+      console.warn("BECMI | Ignored an unsupported drop", error);
+      if (globalThis.ui?.notifications?.warn) {
+        ui.notifications.warn(game.i18n.localize("BECMI.notification.dropInvalid"));
+      }
+      return null;
     } finally {
       this.#dropUuidByEvent.delete(event);
     }
   }
 
-  /** Import compendium spells as owned spell Items instead of duplicating them. */
+  /** Import compendium spells as owned Items; let core handle every other Item. */
   async _onDropItem(event, item) {
     if (!this.isEditable || item?.documentName !== "Item") return null;
 
-    // Dropping an owned Item back onto its Actor is reordering, not importing.
-    if (item.parent === this.actor) return super._onDropItem(event, item);
-
-    if (item.type !== "spell") {
-      if (globalThis.ui?.notifications?.warn) {
-        ui.notifications.warn(game.i18n.localize("BECMI.notification.spellDropInvalid"));
-      }
-      return null;
+    // Owned items (reordering), classes, equipment and treasure all use the
+    // standard ActorSheetV2 creation path. Only spells need the grimoire merge.
+    if (item.parent === this.actor || item.type !== "spell") {
+      return super._onDropItem(event, item);
     }
 
     const droppedUuid = canonicalCompendiumUuid(this.#dropUuidByEvent.get(event));
@@ -437,7 +448,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   #targetAC() {
-    const value = Number(this.element?.querySelector("[data-target-ac]")?.value);
+    const raw = this.element?.querySelector("[data-target-ac]")?.value;
+    const value = String(raw ?? "").trim() === "" ? NaN : Number(raw);
     this.targetAC = Number.isFinite(value) ? value : 9;
     return this.targetAC;
   }

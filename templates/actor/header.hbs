@@ -1,5 +1,8 @@
 <header class="becmi-sheet-header">
-  <img class="becmi-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}">
+  <div class="becmi-image-wrap">
+    <img class="becmi-portrait" src="{{actor.img}}" alt="{{actor.name}}">
+    <button type="button" class="becmi-image-edit" data-action="editImage" data-field="img" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}" aria-label="{{localize 'BECMI.sheet.editImage'}}" {{#unless editable}}disabled{{/unless}}>✎</button>
+  </div>
   <div class="becmi-title-block">
     <h1 class="becmi-sheet-title">D&amp;D BECMI - Character Sheet</h1>
     <div class="becmi-top-fields">

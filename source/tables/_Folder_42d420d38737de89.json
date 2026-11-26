@@ -3,9 +3,11 @@
   "_key": "!folders!42d420d38737de89",
   "name": "Reactions",
   "type": "RollTable",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

@@ -3,9 +3,11 @@
   "_key": "!folders!032370bc632ec516",
   "name": "Planar Monsters",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 6,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

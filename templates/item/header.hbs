@@ -1,5 +1,8 @@
 <header class="becmi-header">
-  <img class="becmi-avatar" src="{{item.img}}" data-edit="img" title="{{item.name}}" alt="{{item.name}}">
+  <div class="becmi-image-wrap">
+    <img class="becmi-avatar" src="{{item.img}}" alt="{{item.name}}">
+    <button type="button" class="becmi-image-edit" data-action="editImage" data-field="img" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}" aria-label="{{localize 'BECMI.sheet.editImage'}}" {{#unless editable}}disabled{{/unless}}>✎</button>
+  </div>
   <div class="becmi-header-fields">
     <div class="becmi-field becmi-field--name">
       <input name="name" type="text" value="{{item.name}}" {{#unless editable}}disabled{{/unless}}>

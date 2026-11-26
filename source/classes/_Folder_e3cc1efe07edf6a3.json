@@ -3,9 +3,11 @@
   "_key": "!folders!e3cc1efe07edf6a3",
   "name": "Classes",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

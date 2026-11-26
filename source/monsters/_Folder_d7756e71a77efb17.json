@@ -3,9 +3,11 @@
   "_key": "!folders!d7756e71a77efb17",
   "name": "Undead",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 7,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

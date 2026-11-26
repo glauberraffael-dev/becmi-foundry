@@ -277,7 +277,7 @@
   "BECMI.notification.noSpellSlot": "No free spell slot of that level is available.",
   "BECMI.notification.spellImported": "Added {name} to the spell list.",
   "BECMI.notification.spellAlreadyKnown": "{name} is already in the spell list.",
-  "BECMI.notification.spellDropInvalid": "Only spell items can be dropped here.",
+  "BECMI.notification.dropInvalid": "That item could not be added to this character.",
   "BECMI.notification.spellImportFailed": "The spell could not be added to this character.",
   "BECMI.notification.noSpells": "This class does not cast spells.",
   "BECMI.notification.badExpression": "Invalid dice expression: {expression}",
@@ -289,6 +289,7 @@
   "BECMI.sheet.druidDisable": "Disable Druid spells",
 
   "BECMI.sheet.tab.features": "Class Features",
+  "BECMI.sheet.editImage": "Change image",
   "BECMI.sheet.featureUnlocked": "Available now",
   "BECMI.sheet.featureLocked": "Not yet available",
   "BECMI.sheet.noFeatures": "No class abilities are defined for this character.",

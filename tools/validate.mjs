@@ -36,6 +36,17 @@ if (system.compatibility?.minimum !== 13 || system.compatibility?.verified !== 1
   note("system.json compatibility should be minimum 13, verified 14");
 }
 if (!system.esmodules?.length) note("system.json has no esmodules entry");
+const folderPackNames = (system.packFolders ?? []).flatMap((folder) => [
+  ...(folder.packs ?? []), ...folderPackNamesFrom(folder.folders ?? [])
+]);
+function folderPackNamesFrom(folders) {
+  return folders.flatMap((folder) => [
+    ...(folder.packs ?? []), ...folderPackNamesFrom(folder.folders ?? [])
+  ]);
+}
+for (const pack of system.packs ?? []) {
+  if (!folderPackNames.includes(pack.name)) note(`system.json: pack ${pack.name} is not assigned to a pack folder`);
+}
 // A versioned archive name prevents GitHub's raw cache from serving an old ZIP.
 if (!system.download?.endsWith(`-${system.version}.zip`)) {
   note(`download must end with -${system.version}.zip to avoid stale caches`);
@@ -382,6 +393,22 @@ for (const doc of monsterDocs) {
   }
 }
 if (monsterDocs.length < 150) note(`monsters: only ${monsterDocs.length} documents extracted`);
+
+// --- Sheet interactions ----------------------------------------------------
+for (const template of ["templates/actor/header.hbs", "templates/item/header.hbs"]) {
+  const source = await readFile(join(root, template), "utf8");
+  if (!source.includes('data-action="editImage"')) note(`${template}: missing the editImage action`);
+}
+if (!lang["BECMI.sheet.editImage"]) note("lang: missing BECMI.sheet.editImage");
+if (!lang["BECMI.notification.dropInvalid"]) note("lang: missing BECMI.notification.dropInvalid");
+const actorSheetSource = await readFile(join(root, "scripts/sheets/actor-sheet.mjs"), "utf8");
+if (!actorSheetSource.includes("item.type !== \"spell\"") ||
+    !actorSheetSource.includes("super._onDropItem(event, item)")) {
+  note("actor-sheet: non-spell drops must use the standard Foundry handler");
+}
+if (actorSheetSource.includes("spellDropInvalid")) {
+  note("actor-sheet: non-spell drops still show the obsolete rejection message");
+}
 
 if (problems.length) {
   console.error(`\n${problems.length} problem(s):`);

@@ -3,9 +3,11 @@
   "_key": "!folders!67c22146c87ff0fe",
   "name": "Dungeon Encounters",
   "type": "RollTable",
-  "parent": null,
+  "folder": null,
+  "sort": 1,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

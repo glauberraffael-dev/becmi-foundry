@@ -3,9 +3,11 @@
   "_key": "!folders!16fd91cd0a6fe9d1",
   "name": "Cleric Spells",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 0,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

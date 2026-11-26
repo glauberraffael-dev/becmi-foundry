@@ -3,9 +3,11 @@
   "_key": "!folders!0faee670a0a96f76",
   "name": "Armor & Shields",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 1,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

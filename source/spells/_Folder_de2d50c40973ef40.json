@@ -3,9 +3,11 @@
   "_key": "!folders!de2d50c40973ef40",
   "name": "Spell Level 3",
   "type": "Item",
-  "parent": "155d3a8550bb1e67",
+  "folder": "155d3a8550bb1e67",
+  "sort": 11,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

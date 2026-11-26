@@ -3,9 +3,11 @@
   "_key": "!folders!dcce6907d7c5e86b",
   "name": "Transport & Siege",
   "type": "Item",
-  "parent": null,
+  "folder": null,
+  "sort": 3,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0

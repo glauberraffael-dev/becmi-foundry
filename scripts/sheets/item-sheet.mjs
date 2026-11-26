@@ -57,7 +57,8 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   }
 
   #targetAC() {
-    const value = Number(this.element?.querySelector("[data-target-ac]")?.value);
+    const raw = this.element?.querySelector("[data-target-ac]")?.value;
+    const value = String(raw ?? "").trim() === "" ? NaN : Number(raw);
     this.targetAC = Number.isFinite(value) ? value : 9;
     return this.targetAC;
   }

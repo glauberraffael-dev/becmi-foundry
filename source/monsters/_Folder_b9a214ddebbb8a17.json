@@ -3,9 +3,11 @@
   "_key": "!folders!b9a214ddebbb8a17",
   "name": "Dragons",
   "type": "Actor",
-  "parent": null,
+  "folder": null,
+  "sort": 3,
   "sorting": "m",
   "color": null,
+  "description": "",
   "flags": {},
   "ownership": {
     "default": 0
