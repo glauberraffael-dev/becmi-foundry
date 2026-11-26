@@ -14,7 +14,7 @@
     "duration": "Permanent",
     "effect": "Removes any one curse",
     "reversible": false,
-    "description": "This spell removes one curse, whether on a character, item, or area. Some curses—especially those on magical items—may only be temporarily removed, at the DM's discretion, requiring a clerical dispel evil spell for permanently removing the effects (or possibly a remove curse cast by a high-level spellcaster). The reverse of this spell, curse, causes a misfortune or penalty to affect the recipient. Curses are limited only by the caster's imagination, but if an attempted curse is too powerful, it may return to the caster (DM's discretion)! Safe limits to curses may include: - 4 penalty on attack rolls; - 2 penalty to all saving throws; prime requisite reduced to half normal.",
+    "description": "This spell removes one curse, whether on a character, item, or area. Some curses—especially those on magical items—may only be removed for a short time, at the DM's discretion; such curses would require a dispel evil spell for permanent removal (or possibly a remove curse cast by a high level cleric or magic-user, again at DM's discretion). The reverse of this spell, curse, causes a misfortune or penalty to affect the victim. Curses are limited only by the caster's imagination, but if an attempted curse is too powerful, it may return to the caster (DM's discretion)! Safe limits to curses may include: -4 penalty on attack rolls; — 2 penalty on saving throws; prime requisite reduced to half normal; — 4 penalty on others' reaction rolls to him. The victim may make a saving throw vs. spells to avoid the curse.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

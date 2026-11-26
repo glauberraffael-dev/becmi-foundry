@@ -13,7 +13,7 @@
     "duration": "Instantaneous",
     "effect": "Bolt 60' long, 5' wide",
     "reversible": false,
-    "description": "Duration: Instantaneous Effect: Bolt 60' long, 5' wide This spell creates a bolt of lightning, starting up to 180' away from the caster and extending 60' in a straight line further away. All creatures within the area of effect take 1d6 points of damage per level of the spellcaster. (Thus a 6th level elf would cast a lightning bolt doing 6d6 points of damage.) Each victim may make a saving throw vs. spells; if successful, he takes only half damage. If the lightning bolt strikes a solid surface (such as a wall), it will bounce back toward the caster until the total length of the bolt is 60'.",
+    "description": "This spell creates a bolt of lightning, starting up to 180' away from the caster and extending 60' in a straight line further away. All creatures within the area of effect take 1d6 points of damage per level of the spellcaster. (Thus a 6th level elf would cast a lightning bolt doing 6d6 points of damage.) Each victim may make a saving throw vs. spells; if successful, he takes only half damage. If the lightning bolt strikes a solid surface (such as a wall), it will bounce back toward the caster until the total length of the bolt is 60'.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "1d6 lightning damage per caster level; a successful save halves the total.",

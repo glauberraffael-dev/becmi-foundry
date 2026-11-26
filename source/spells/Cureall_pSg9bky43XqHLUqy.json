@@ -13,7 +13,7 @@
     "duration": "Permanent",
     "effect": "Cures anything",
     "reversible": false,
-    "description": "This spell is the most powerful of the healing spells. When used to cure wounds, it cures nearly all damage, leaving the recipient with only 1d6 points of damage. (Restore the victim to full starting hit points, then roll 1d6 and subtract that amount from the victim's hit point total.) The spell can remove a curse, neutralize a poison, cure paralysis, cure a disease, cure blindness, or even remove a feeblemind effect instead of healing. However, it will cure one thing only; if the recipient is suffering from two or more afflictions (such as wounds and a curse), the cleric must name the ailment the spell is intended to cure.",
+    "description": "This spell is the most powerful of the healing spells. When used to cure wounds, it cures nearly all damage, leaving the recipient with only 1d6 points of damage. (Restore the victim to full starting hit points, then roll 1d6 and subtract that amount from the victim's hit point total.) The spell can remove a curse, neutralize a poison, cure paralysis, cure a disease, cure blindness, or even remove a feeblemind effect instead of healing. However, it will cure one thing only; if the recipient is suffering from two or more afflictions (such as wounds and a curse), the cleric must name the ailment the spell is intended to cure. If cast on the recipient of a raise dead spell, the cureall eliminates the need for two weeks of bed rest; the recipient can immediately function normally. This is the only form of magical curing that will work on a newly-raised creature.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

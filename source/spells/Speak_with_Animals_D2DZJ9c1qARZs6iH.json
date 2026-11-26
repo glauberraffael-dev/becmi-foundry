@@ -13,7 +13,7 @@
     "duration": "6 turns",
     "effect": "Conversation within 30'",
     "reversible": false,
-    "description": "The cleric can converse with animals within 30' for the duration of the spell.",
+    "description": "When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures. The creatures spoken to usually have favorable reactions ( + 2 bonus to the reaction roll), and they can be talked into doing a favor for the cleric if the reaction roll is high enough. The animal must be able to understand the request and must be able to perform it.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

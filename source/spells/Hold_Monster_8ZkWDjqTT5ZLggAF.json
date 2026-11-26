@@ -13,7 +13,7 @@
     "duration": "6 turns + 1 turn per level of the caster",
     "effect": "Paralyzes 1d4 creatures",
     "reversible": false,
-    "description": "Duration: 6 turns + 1 turn per level of the caster Effect: Paralyzes 1d4 creatures This spell has an effect identical to that of a hold person spell, but will affect any living creature. (It does not affect the undead.) Each victim must make a saving throw vs. spells or be paralyzed. The spell may be cast at a single creature or a group. If cast at a single creature, the victim takes a - 2 penalty to his saving throw. If cast at a group, it will affect 1d4 creatures (of the spellcaster's choice, and within spell range), but with no penalties to the saving throw. The reverse of this spell, free monster, removes the paralysis of up to four victims of hold person or hold monster spells.",
+    "description": "This spell has an effect identical to that of a hold person spell, but will affect any living creature. (It does not affect the undead.) Each victim must make a saving throw vs. spells or be paralyzed. The spell may be cast at a single creature or a group. If cast at a single creature, the victim takes a - 2 penalty to his saving throw. If cast at a group, it will affect 1d4 creatures (of the spellcaster's choice, and within spell range), but with no penalties to the saving throw. The reverse of this spell, free monster, removes the paralysis of up to four victims of hold person or hold monster spells. It has no other ef- fect.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

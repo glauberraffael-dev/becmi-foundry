@@ -13,7 +13,7 @@
     "duration": "1 turn per level of the caster",
     "effect": "Protects against lightning attack",
     "reversible": false,
-    "description": "Any recipient of this spell is immune to a given amount of electrical damage. The druid's experience level determines the amount of damage: for each level of experience, one die (1d6) of damage is negated. Subtract the number of dice from the number of dice of damage that would be done to him. Example: A 20th level druid casts this spell. He is protected against 20d6 lightning damage. For example, this would negate the effects of two full call lightning attacks (of 8 dice each)on him, plus half of a third (8 + 8 + 4 = 20).",
+    "description": "Any recipient of this spell is immune to a given amount of electrical damage. The druid's experience level determines the amount of damage: for each level of experience, one die (1d6) of damage is negated. Subtract the number of dice from the number of dice of damage that would be done to him. Example: A 20th level druid casts this spell. He is protected against 20d6 lightning damage. For example, this would negate the effects of two full call lightning attacks (of 8 dice each)on him, plus half of a third (8 + 8 + 4 = 20). The third call lightning inflicts 4d6 points of damage on him (but he does get his saving throw against it), and any subsequent call lightning attacks made against him will do full damage.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

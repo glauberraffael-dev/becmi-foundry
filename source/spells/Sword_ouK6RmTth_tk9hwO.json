@@ -13,7 +13,7 @@
     "duration": "1 round per level of the caster",
     "effect": "Creates a magical sword",
     "reversible": false,
-    "description": "Duration: 1 round per level of the caster Effect: Creates a magical sword When this spell is cast, a glowing sword made of magic, rather than metal, appears next to the caster. The magic-user may cause it to attack any creature within 30', simply by concentrating; the sword flies to the target and attacks. If the caster's concentration is broken, the sword merely stops attacking. It remains in existence for one round per level of the spellcaster. The sword moves very quickly, attacking twice per round and making its attack rolls at the caster's level.",
+    "description": "When this spell is cast, a glowing sword made of magic, rather than metal, appears next to the caster. The magic-user may cause it to attack any creature within 30', simply by concentrating; the sword flies to the target and attacks. If the caster's concentration is broken, the sword merely stops attacking. It remains in existence for one round per level of the spellcaster. The sword moves very quickly, attacking twice per round and making its attack rolls at the caster's level. Damage is the same as a two-handed sword (1d10), but this magical creation is capable of hitting any target (even those hit only by powerful magical weapons). The sword cannot be destroyed before the duration ends, except by a dispel magic spell effect (at normal chances of success) or a wish.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

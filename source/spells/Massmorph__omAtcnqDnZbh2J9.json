@@ -10,10 +10,10 @@
       "magic-user"
     ],
     "range": "240'",
-    "duration": "See below The spell lasts until the illusion is touched by an intelligent creature, or until dispelled.",
+    "duration": "See below",
     "effect": "Causes illusion of trees within 240' range",
     "reversible": false,
-    "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
+    "description": "This spell will affect up to 100 human or mansized creatures in a 240' diameter, making them appear to be the trees of an orchard, dense woods, or other large plant life appropriate to the region. (Unless the campaign's deserts feature very large cactus, the spell won't work in the desert.) Unwilling creatures are not affected. Creatures larger than man-size (such as horses) may be included, counting as two or three men each. The illusion will hide the recipients from creatures moving through the area affected. The spell lasts until a dispel magic is cast on it or until the caster decides to drop the illusion. The appearance of each disguised creature returns to normal if the creature moves out of the affected area. However, movement within the area does not destroy the illusion.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

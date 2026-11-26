@@ -13,7 +13,7 @@
     "duration": "Concentration",
     "effect": "Summons one 16 HD elemental",
     "reversible": false,
-    "description": "Duration: Concentration Effect: Summons one 16 HD elemental This spell allows the caster to summon any one elemental (AC -2, HD 16, Damage 3d8; see the description of elementals in Chapter 14). The caster can only summon one of each type of elemental (earth, air, fire, water) in one day. The elemental will perform any tasks within its power (carrying, attacking, etc.) as long as the caster maintains control by concentrating. The caster cannot fight, cast other spells, or move over half Normal Speed, else he will lose control of the elemental. If he loses control, he cannot regain it.",
+    "description": "This spell allows the caster to summon any one elemental (AC -2, HD 16, Damage 3d8; see the description of elementals in Chapter 14). The caster can only summon one of each type of elemental (earth, air, fire, water) in one day. The elemental will perform any tasks within its power (carrying, attacking, etc.) as long as the caster maintains control by concentrating. The caster cannot fight, cast other spells, or move over half Normal Speed, else he will lose control of the elemental. If he loses control, he cannot regain it. An uncontrolled elemental will try to slay its summoner, and may attack anyone in its path while pursuing him. The spell's caster may return a controlled elemental to its home plane simply by concentration. A dispel magic or dispel evil spell can return an uncontrolled elemental to its plane.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

@@ -14,7 +14,7 @@
     "duration": "1 day (24 hours)",
     "effect": "One air-breathing creature",
     "reversible": false,
-    "description": "This spell allows the recipient to breathe while underwater (at any depth). It does not affect his movement in any way, nor does it interfere with the breathing of air if the recipient emerges from the water.",
+    "description": "This spell allows the recipient to breathe while under water (at any depth). It does not affect movement in any way, nor does it interfere with the breathing of air.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

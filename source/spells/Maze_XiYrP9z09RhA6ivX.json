@@ -13,7 +13,7 @@
     "duration": "See below (1d6 turns, 2d20 rounds, 2d4 rounds, or 1d4 rounds)",
     "effect": "Traps one creature",
     "reversible": false,
-    "description": "This spell creates an indestructible maze in the Astral Plane and places one victim into the maze (he gets no saving throw). The intelligence of the victim determines the time he needs to escape the maze. ###### Maze Duration |Victim's|Time Required| |---|---| |Intelligence|To Escape| |Non-to Low(1-8)|1d6( 1-6) turns| |Average (9-12)|2d20 (2-40) rounds| |High (13-17)|2d4 (2-8) rounds| |Genius (18 + )|1d4 (1-4) rounds| When he escapes the maze, the victim returns to the exact place from which he originally disappeared.",
+    "description": "This spell creates an indestructible maze in the Astral Plane and places one victim into the maze (he gets no saving throw). The intelligence of the victim determines the time he needs to escape the maze. Maze Duration Victim's Intelligence Non- to Low (1-8) Average (9-12) High (13-17) Genius (18 + ) Time Required To Escape 1d6( 1-6) turns 2d20 (2-40) rounds 2d4 (2-8) rounds 1d4 (1-4) rounds When he escapes the maze, the victim returns to the exact place from which he originally disappeared.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

@@ -11,7 +11,7 @@
     ],
     "range": "60'",
     "duration": "12 turns",
-    "effect": "See through another's eyes With this spell, the caster may see through the eyes of any single creature in spell range. \"Seeing\" through a creature's eyes takes one full turn, after which the caster can change to another creature, even one in another direction; he does not have to cast the spell again to do so. Two feet of rock or a thin coating of lead blocks the effects of this spell. No saving throw is allowed.",
+    "effect": "See through another's eyes",
     "reversible": false,
     "description": "With this spell, the caster may see through the eyes of any single creature in spell range. \"Seeing\" through a creature's eyes takes one full turn, after which the caster can change to another creature, even one in another direction; he does not have to cast the spell again to do so. Two feet of rock or a thin coating of lead blocks the effects of this spell. No saving throw is allowed.",
     "source": "Rules Cyclopedia",

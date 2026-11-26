@@ -13,7 +13,7 @@
     "duration": "1 turn",
     "effect": "Causes earth tremors",
     "reversible": false,
-    "description": "This powerful spell causes a section of earth to shake, and opens large cracks in the ground. A 17th level caster can affect an area up to 60' square, adding 5' to each dimension with each experience level above 17th. For example, an 18th level cleric affects an area up to 65' square; 19th level, 70' square; and so forth. Within the area of effect, all small dwellings are reduced to rubble, and larger constructions are cracked open. Earthen formations (hills, cliffsides, etc.) form rockslides.",
+    "description": "This powerful spell causes a section of earth to shake, and opens large cracks in the ground. A 17th level caster can affect an area up to 60' square, adding 5' to each dimension with each experience level above 17th. For example, an 18th level cleric affects an area up to 65' square; 19th level, 70' square; and so forth. Within the area of effect, all small dwellings are reduced to rubble, and larger constructions are cracked open. Earthen formations (hills, cliffsides, etc.) form rockslides. Cracks in the earth may open and engulf 1 creature in 6 (determined randomly), crushing them (when the die roll randomly determines that a character is in danger of falling into a crack and being crushed, the character gets a saving throw vs. death to escape falling in).",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

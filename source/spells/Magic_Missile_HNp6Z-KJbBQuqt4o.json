@@ -13,7 +13,7 @@
     "duration": "1 round",
     "effect": "Creates 1 or more arrows",
     "reversible": false,
-    "description": "This spell will allow the spellcaster to read, not speak, any magical words or runes, such as those found on scrolls and other items. A spellcaster cannot understand unfamiliar magic writings without using this spell. However, once a spellcaster reads a scroll or runes with this spell, he can read or speak that magic later without using a spell. Example: Shortly after casting this spell, a magic-user walks into a room containing a door locked by magic, a magical potion lying nearby, and a treasure chest containing a magical wand. All the magic will glow, but the spellcaster can see only the door and potion; the light of the glowing wand is hidden by the treasure chest.",
+    "description": "A magic missile is a glowing arrow, created and shot by magic, which inflicts 1d6 + 1 (2-7) points of damage to any creature it strikes. After the spell is cast, the arrow appears next to the spellcaster and hovers there (moving with him) until the spellcaster causes it to shoot. When shot, the magic missile will automatically hit any one visible target the spellcaster specifies. The magic missile actually has no solid form, and cannot be touched. A magic missile never misses its target and the target is not allowed a saving throw. For every 5 levels of experience of the caster, two more missiles are created by the same spell. Thus a 6th level spellcaster may create three missiles. The spellcaster may shoot the missiles all at one target or at different targets.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

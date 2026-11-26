@@ -13,7 +13,7 @@
     "duration": "Permanent",
     "effect": "Creates 500 square feet of iron",
     "reversible": false,
-    "description": "Creates a permanent wall of iron covering 500 square feet.",
+    "description": "This spell creates a vertical wall of iron exactly 2' thick. The magic-user may choose any length and width, but the total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 120' of the caster. The caster must create the wall so it rests on the ground or similar support. It cannot be cast in a space occupied by another object. It lasts until dispelled, disintegrated, or physically broken (though it will resist all but giant-sized physical attacks). Most other spell effects, including fire- ball, lightning bolt, etc., have no effect on a wall of iron. If the wall is made to topple, it causes 10d10 (10-100) points of damage to whatever it hits, and shatters. If the wall is attacked, it has a number of hit points equal to the level of the caster. A rust monster can destroy a wall of iron with a single touch. Otherwise, the wall can only be damaged by battering; see Chapter 9 (page 118) for more on battering attacks.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

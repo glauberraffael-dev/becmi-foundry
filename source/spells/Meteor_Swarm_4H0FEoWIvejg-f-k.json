@@ -13,7 +13,7 @@
     "duration": "Instantaneous",
     "effect": "Creates four or eight meteor-fireballs",
     "reversible": false,
-    "description": "This spell creates either 4 or 8 meteors (at the caster's choice). Each meteor is a fireball that strikes a target within 240'. A saving throw is allowed.",
+    "description": "This spell creates either 4 or 8 meteors (at the caster's choice). Each meteor can be aimed at a different target within range, but only one meteor can be aimed at any one creature. Each meteor slams into its target and explodes like a fireball (affecting all creatures within a 20' radius). If the caster creates four meteors, each strikes for 8d6 (8-48) points of damage and then explodes for 8d6 (8-48) points of fire damage. If the caster creates eight smaller meteors, each strikes for 4d6 (4-24) points and then explodes for 4d6 more points of fire damage. Note that if the meteors are aimed accurately, a victim or area might find itself within overlapping blasts and thus take explosion damage multiple times. The player rolls damage for each strike and blast separately. A meteor never misses its target. Any victim struck by a meteor takes full \"strike\" damage (no saving throw). Each victim within a blast radius may make a saving throw vs. spells to take only half of the given blast damage. Even fire-resistant and fire-using creatures are fully affected by strikes from a meteor swarm, although they might be resistant to the fiery explosions. A separate saving throw must be made for each blast the character contacts.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

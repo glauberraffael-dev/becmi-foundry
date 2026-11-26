@@ -13,7 +13,7 @@
     "duration": "Permanent",
     "effect": "Any one living creature",
     "reversible": false,
-    "description": "Effect: Any one living creature This spell is similar to a cure light wounds spell, but will cure one creature of 2d6 + 2 (4-14) points of damage. The reverse of this spell, cause serious wounds, causes 2d6 + 2 points of damage to any creature or character touched (no saving throw). The caster must make a normal attack roll to successfully cast the cause serious wounds spell.",
+    "description": "This spell is similar to a cure light wounds spell, but will cure one creature of 2d6 + 2 (4-14) points of damage. The reverse of this spell, cause serious wounds, causes 2d6 + 2 points of damage to any creature or character touched (no saving throw). The caster must make a normal attack roll to successfully cast the cause serious wounds spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

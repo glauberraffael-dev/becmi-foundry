@@ -13,7 +13,7 @@
     "duration": "1d6 (1-6) turns + 1 turn per level of the caster",
     "effect": "One creature may fly",
     "reversible": false,
-    "description": "Duration: 1d6 (1-6) turns + 1 turn per level of the caster Effect: One creature may fly This spell allows the target it is cast upon (possibly the spellcaster himself) to fly. The recipient can fly in any direction and at any speed up to 360' (120') by mere concentration. The recipient may also stop and hover at any point (as a levitate spell); this does not require concentration.",
+    "description": "This spell allows the target it is cast upon (possibly the spellcaster himself) to fly. The recipient can fly in any direction and at any speed up to 360' (120') by mere concentration. The recipient may also stop and hover at any point (as a levi- tate spell); this does not require concentration.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

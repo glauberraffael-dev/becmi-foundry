@@ -13,7 +13,7 @@
     "duration": "1 turn",
     "effect": "The spellcaster only",
     "reversible": false,
-    "description": "When he casts this spell, the spellcaster will see a glow surround all magical objects, creatures, and places which are visible and within range of the spell. No saving throw is allowed.",
+    "description": "This spell will allow the spellcaster to read, not speak, any magical words or runes, such as those found on scrolls and other items. A spellcaster cannot understand unfamiliar magic writings without using this spell. However, once a spellcaster reads a scroll or runes with this spell, he can read or speak that magic later without using a spell. All spell books are written in magical words, and only their owners may read them without using this spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

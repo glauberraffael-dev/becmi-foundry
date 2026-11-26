@@ -13,7 +13,7 @@
     "duration": "1/5 round (2 seconds)",
     "effect": "Causes victims in a 30' cubic volume to fall upward",
     "reversible": false,
-    "description": "This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.",
+    "description": "This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.\" Note that after the two seconds have elapsed, gravity returns to normal and all victims will fall back to their original places, suffering more falling damage. The DM should make a morale check for each NPC victim of this spell. Example: A magic-user casts this spell at a group of approaching giants in a 40' tall room. The giants \"fall\" to the ceiling and then back to the floor, each taking a total of 8d6 points of damage in the process: 4d6 from \"falling\" up and hitting the ceiling, and another 4d6 from falling back down to the floor.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

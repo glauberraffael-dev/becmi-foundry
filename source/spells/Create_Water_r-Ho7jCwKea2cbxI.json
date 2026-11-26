@@ -11,7 +11,7 @@
     ],
     "range": "10'",
     "duration": "6 turns",
-    "effect": "Creates one magical spring With this spell, the cleric summons forth an enchanted spring from the ground or a wall.",
+    "effect": "Creates one magical spring",
     "reversible": false,
     "description": "With this spell, the cleric summons forth an enchanted spring from the ground or a wall. The spring will flow for an hour, creating enough water for 12 men and their mounts (for that day, about 50 gallons). For each of the cleric's experience levels above 8, water for twelve additional men and mounts is created; thus a 10th level cleric could create water for 36 men and horses. The cleric doesn't have to create the maximum amount of water if he doesn't wish to. He might wish to create a spring which will flow for half an hour, or a few minutes; the player need only tell the GM how many gallons he wants the spell to create, up to the spell's maximum.",
     "source": "Rules Cyclopedia",

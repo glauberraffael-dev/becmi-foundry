@@ -14,7 +14,7 @@
     "duration": "One hour per level of the caster",
     "effect": "Protects one creature against all nonmagical environmental damage",
     "reversible": false,
-    "description": "This spell is similar to the 4th level polymorph self spell, but is far more powerful. The caster actually becomes another creature or object in all respects except the mind, hit points, and saving throws. The caster takes his new armor class, attack rolls, special attack forms, immunities, and all other details from the form he has taken. This spell protects the recipient from adverse conditions of all types, including normal heat or cold, lack of air, and so forth. While the spell is in effect, the caster needs no air, food, water, or sleep. The spell does not protect against magical damage of any type, attack damage, poisons, breath weapons, or physical blows from creatures.",
+    "description": "Protects one creature against all nonmagical damage from the environment This spell protects the recipient from adverse conditions of all types, including normal heat or cold, lack of air, and so forth. While die spell is in effect, the caster needs no air, food, water, or sleep. The spell does not protect against magical damage of any type, attack damage, poisons, breath weapons, or physical blows from creatures. It does protect against all damage caused by natural conditions on other planes of existence. For example, a cleric might use this spell: in a desert or blizzard to prevent damage from the natural conditions; underground or underwater, enabling survival without air; in space, to magically survive in vacuum; or on the elemental plane of Fire, to protect against conditional fire damage.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

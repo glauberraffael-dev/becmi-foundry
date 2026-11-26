@@ -13,7 +13,7 @@
     "duration": "2-12 (2d6) turns",
     "effect": "One door, gate, or similar portal",
     "reversible": false,
-    "description": "If the spellcaster can speak a language that the charmed victim understands, the spellcaster may give orders to the victim. These orders should sound like suggestions, as if \"just between friends.\" The charmed victim will usually obey, but the victim may resist orders that are contrary to the victim's nature (alignment and habits)— he doesn't need to roll anything to resist. A victim will refuse to obey if ordered to kill itself. In addition, enchanted creatures cannot attack the spellcaster in hand-to-hand or melee combat. (An enchanted creature is one that normal weapons cannot hurt; only magical weapons can hit the creature.",
+    "description": "This spell will magically hold shut any portal—for example, a door or gate. A knock spell will open the hold portal. Any creature three or more Hit Dice greater than the caster (and characters three or more levels higher) may break open a held portal in one round, but the portal will relock if allowed to close within the duration of the spell. Example: Any 5th level character can break through a hold portal spell cast by a 2nd level spellcaster.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

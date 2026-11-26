@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.30
+
+- Rebuilt the spell descriptions from the Rules Cyclopedia PDF text layer. The
+  old two-column OCR interleaved stacked headings, so *Shield* carried the
+  *Floating Disc* text and other spells had prose or stat lines from their
+  neighbours. All 184 compendium spells now use the prose that belongs to their
+  own heading, including *Stone to Flesh*, *Wall of Iron*, *Stoneform*,
+  *Reverse Gravity*, *Timestop*, *Maze* and *Permanence*.
+- Cleaned leaked prose out of the Range/Duration/Effect fields (for example
+  *Shield*, *Stone to Flesh*, *Know Alignment* and *Massmorph*).
+- Added `tools/extract-spell-prose.py` and `tools/repair-spell-prose.mjs` so the
+  repair is reproducible from a local PDF, plus regression checks in
+  `tools/test-spell-index.mjs` for mixed descriptions and stat leaks.
+
 ## 0.1.29
 
 - Added the Rules Cyclopedia's optional **General Skills** as a per-character

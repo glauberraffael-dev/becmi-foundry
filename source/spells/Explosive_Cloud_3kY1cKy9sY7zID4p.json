@@ -13,7 +13,7 @@
     "duration": "6 turns",
     "effect": "Creates a moving poisonous cloud",
     "reversible": false,
-    "description": "Effect: Creates a moving poisonous cloud This spell creates an effect which looks identical to the 5th level cloudkill spell (a 20' tall cloud of greenish gas 30' in diameter appearing next to the caster). The cloud is only mildly poisonous; all victims within it must make a saving throw vs. spells or be paralyzed that round. Each victim within the cloud makes a new saving throw each round. The cloud is filled with sparkling lights (visible only to those within it), which are small explosions. Each round, all those within the cloud take damage from the explosions, with no saving throw allowed.",
+    "description": "This spell creates an effect which looks identical to the 5th level cloudkill spell (a 20' tall cloud of greenish gas 30' in diameter appearing next to the caster). The cloud is only mildly poisonous; all victims within it must make a saving throw vs. spells or be paralyzed that round. Each victim within the cloud makes a new saving throw each round. The cloud is filled with sparkling lights (visible only to those within it), which are small explosions. Each round, all those within the cloud take damage from the explosions, with no saving throw allowed. This damage is 1 point for each two levels of experience of the magic-user, rounded down (9 points at 18th or 19th level, 10 points at 20th or 21st level, etc.). This explosive damage will affect any creature, including those immune to fire, gas, electricity, and other special attacks.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",

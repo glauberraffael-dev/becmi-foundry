@@ -14,7 +14,7 @@
     "duration": "6 turns + 1 turn/level of the caster",
     "effect": "Volume of 30' diameter",
     "reversible": false,
-    "description": "This spell will not affect a magic missile, either incoming or outgoing. If the spellcaster attacks (hand-to-hand) anything during the spell's duration, the effect changes slightly. Enchanted creatures are then able to touch the spellcaster, but the attack roll and saving throw adjustments still apply until the spell duration ends. A more complex system for determining the duration of a charm spell appears in Chapter 13, on page 144. This spell creates a large ball of light, much like a bright torchlight. If the spell is cast on an object (such as a coin), the light will move with the object. If cast at a creature's eyes, the creature must make a saving throw vs. spells.",
+    "description": "This spell creates a large ball of light, as if cast by a bright torch or lamp. If the spell is cast on an object (such as the cleric's weapon), the light will move with the object. If the spell is cast at a creature's eyes, the victim must make a saving throw vs. spell. If he fails the saving throw, the victim will be blinded by the light for the duration of the spell, or until the spell effect is canceled. When reversed, this spell, darkness, creates a circle of darkness 30' in diameter. It will block all sight except infravision. Darkness will cancel a light spell if cast upon it, but may itself be canceled by another light spell. If cast at an opponent's eyes, darkness causes blindness for the duration of the spell or until canceled. If the target makes a successful saving throw vs. spell, the spell misses.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",
