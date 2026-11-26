@@ -338,6 +338,28 @@
   </table>
 </section>
 
+<!-- ========================= GENERAL SKILLS ======================== -->
+<section class="becmi-tab-panel{{#if (eq activeTab "general")}} is-active{{/if}}" data-tab="general">
+  <h2 class="becmi-section-title">{{localize 'BECMI.sheet.generalSkills'}}</h2>
+  <p class="becmi-hint">{{localize 'BECMI.sheet.generalHint'}}</p>
+  <p class="becmi-hint">{{localize 'BECMI.sheet.generalSlots'}}: {{generalSlots.used}} / {{generalSlots.total}} ({{generalSlots.remaining}} {{localize 'BECMI.sheet.generalAvailable'}})</p>
+  <table class="becmi-table becmi-table--skills">
+    <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.sheet.ability'}}</th><th>{{localize 'BECMI.sheet.trained'}}</th><th>{{localize 'BECMI.sheet.modifier'}}</th><th>{{localize 'BECMI.sheet.specialization'}}</th><th></th></tr></thead>
+    <tbody>
+      {{#each generalSkills as |skill|}}
+      <tr>
+        <th>{{skill.label}}</th>
+        <td>{{#if (eq skill.key "art")}}<select name="system.generalSkills.rows.{{skill.key}}.ability" {{#unless ../editable}}disabled{{/unless}}><option value="int" {{#if (eq skill.ability "int")}}selected{{/if}}>INT</option><option value="wis" {{#if (eq skill.ability "wis")}}selected{{/if}}>WIS</option></select>{{else}}{{skill.abilityLabel}}{{/if}}</td>
+        <td><input type="checkbox" name="system.generalSkills.rows.{{skill.key}}.trained" {{#if skill.trained}}checked{{/if}} {{#unless ../editable}}disabled{{/unless}}></td>
+        <td><input name="system.generalSkills.rows.{{skill.key}}.modifier" type="number" value="{{skill.modifier}}" {{#unless ../editable}}disabled{{/unless}}></td>
+        <td>{{#if skill.choice}}<input name="system.generalSkills.rows.{{skill.key}}.note" type="text" value="{{skill.note}}" {{#unless ../editable}}disabled{{/unless}}>{{else}}—{{/if}}</td>
+        <td><button type="button" class="becmi-roll" data-action="rollGeneral" data-skill="{{skill.key}}">{{localize 'BECMI.rolls.skill'}}</button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>
+
 <!-- ============================ UNDEAD ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "undead")}} is-active{{/if}}" data-tab="undead">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.turnUndead'}}</h2>
@@ -622,6 +644,8 @@
     {{#if canTurn}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="undead">{{localize 'BECMI.sheet.tab.undead'}}</button>{{/if}}
     {{#if canMastery}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="mastery">{{localize 'BECMI.sheet.tab.mastery'}}</button>{{/if}}
     {{#if isCharacter}}<button type="button" class="becmi-roll" data-action="toggleMastery">{{masteryToggleLabel}}</button>{{/if}}
+    {{#if canGeneral}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="general">{{localize 'BECMI.sheet.tab.general'}}</button>{{/if}}
+    {{#if isCharacter}}<button type="button" class="becmi-roll" data-action="toggleGeneral">{{generalToggleLabel}}</button>{{/if}}
     <button type="button" class="becmi-roll" data-action="switchTab" data-tab="notes">{{localize 'BECMI.sheet.tab.notes'}}</button>
   </div>
 </aside>

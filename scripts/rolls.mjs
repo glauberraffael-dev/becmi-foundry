@@ -10,7 +10,8 @@
  */
 
 import {
-  attackInfo, monsterAttackRows, monsterHpFormula, parseMonsterHitDice, rollExpression
+  attackInfo, generalSkillInfo, monsterAttackRows, monsterHpFormula, parseMonsterHitDice,
+  rollExpression
 } from "./rules-rc.mjs";
 import {
   masteryAttackBonus, masteryDamageFormula, masteryLabel, weaponMasteryFor
@@ -369,6 +370,38 @@ export async function thiefSkillRoll(actor, skill, { rollMode } = {}) {
     actor
   });
   return { roll, success };
+}
+
+/**
+ * RC general skill check: 1d20 <= the associated ability score, with the
+ * player's/DM's stored modifier. A natural 1 succeeds and a natural 20 fails.
+ */
+export async function generalSkillRoll(actor, skillKey, { rollMode, bonus } = {}) {
+  const selected = generalSkillInfo(skillKey);
+  if (!selected) return null;
+  const row = actor?.system?.generalSkills?.rows?.[selected.key] ?? {};
+  if (!row.trained) {
+    ui.notifications.warn(game.i18n.localize("BECMI.notification.generalSkillMissing"));
+    return null;
+  }
+  const skill = generalSkillInfo(selected.key, row.ability);
+  const score = Number(actor?.system?.abilities?.[skill.ability]?.value ?? 10);
+  const modifier = Number(bonus ?? row.modifier ?? 0) || 0;
+  const target = score + modifier;
+  const roll = await new Roll("1d20").evaluate();
+  const raw = Math.round(roll.total);
+  const success = raw === 1 || (raw !== 20 && raw <= target);
+  const label = game.i18n.localize(`BECMI.general.${skill.key}`);
+  const ability = game.i18n.localize(`BECMI.abilities.${skill.ability}Abbr`);
+  await toChat(roll, {
+    title: `${game.i18n.localize("BECMI.rolls.generalSkill")}: ${label} (${ability})`,
+    flavor: rollName(actor),
+    result: `${raw} vs ${target} — ${game.i18n.localize(success ? "BECMI.rolls.success" : "BECMI.rolls.failure")}`,
+    outcome: success ? "hit" : "miss",
+    rollMode,
+    actor
+  });
+  return { roll, success, target, skill };
 }
 
 /** Turn Undead: 2d6 against the level column, then roll the HD dice. */

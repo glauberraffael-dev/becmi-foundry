@@ -1,6 +1,7 @@
 import {
-  abilityCheck, detectEvilRoll, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll,
-  monsterDamageRoll, monsterHpRoll, moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
+  abilityCheck, detectEvilRoll, freeRoll, generalSkillRoll, hitDiceRoll, initiativeRoll,
+  monsterAttackRoll, monsterDamageRoll, monsterHpRoll, moraleCheck, savingThrow,
+  thiefSkillRoll, turnUndeadRoll
 } from "../rolls.mjs";
 import { computeArmorClass, equippedAcBonus } from "../rules-rc.mjs";
 
@@ -72,6 +73,10 @@ export class BECMIActor extends Actor {
 
   async rollThiefSkill(skill, options = {}) {
     return thiefSkillRoll(this, skill, options);
+  }
+
+  async rollGeneralSkill(skill, options = {}) {
+    return generalSkillRoll(this, skill, options);
   }
 
   async rollTurnUndead(typeName, options = {}) {

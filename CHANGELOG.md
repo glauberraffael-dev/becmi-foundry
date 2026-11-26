@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.29
+
+- Added the Rules Cyclopedia's optional **General Skills** as a per-character
+  opt-in tab: all 61 sample skills from the RC ability table, trained flags,
+  specialty notes, per-skill DM modifiers and 1d20 checks against the linked
+  ability (natural 1 succeeds, natural 20 fails). Art can use Wisdom instead of
+  Intelligence. Skill slots are derived from Intelligence, level and XP using
+  the human and demihuman acquisition tables.
+- The Chapter 5 reference journal now carries the sample-skill and slot tables.
+- Tests cover the catalog, slot math, derived actor data, sheet actions and the
+  use-mode read-only rule. Stale 0.1.27 example URLs in the README and publishing
+  notes were corrected.
+
 ## 0.1.28
 
 - The monster compendium now includes the 49 iconic Rules Cyclopedia creatures

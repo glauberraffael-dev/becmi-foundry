@@ -1,10 +1,11 @@
 import {
   RC, adjustment, attackSpecFor, baseSaves, baseThiefSkills, computeArmorClass,
-  computeLoad, equippedAcBonus, equippedSaveBonuses, getRCClass, monsterSaveTargets,
-  monsterThac0, normalizeClassKey, xpForNextLevel
+  computeLoad, equippedAcBonus, equippedSaveBonuses, generalSkillSlots, getRCClass,
+  monsterSaveTargets, monsterThac0, normalizeClassKey, GENERAL_SKILLS, xpForNextLevel
 } from "../rules-rc.mjs";
 
 const fields = () => foundry.data.fields;
+const GENERAL_SKILL_KEYS = new Set(GENERAL_SKILLS.map((skill) => skill.key));
 
 function abilitySchema() {
   const f = fields();
@@ -38,6 +39,21 @@ function thiefSkillSchema() {
     hideInShadows: skill(),
     hearNoise: skill(),
     backstab: skill()
+  });
+}
+
+/**
+ * General skills are an opt-in RC rule. The catalog lives in rules-rc.mjs;
+ * only the player's picks, per-skill DM modifiers and specialty notes are
+ * stored here. `slots` and `used` are recalculated on every prepare cycle.
+ */
+function generalSkillsSchema() {
+  const f = fields();
+  return new f.SchemaField({
+    enabled: new f.BooleanField({ initial: false, label: "BECMI.sheet.generalEnable" }),
+    slots: new f.NumberField({ initial: 4, integer: true, min: 0, label: "BECMI.sheet.generalSlots" }),
+    used: new f.NumberField({ initial: 0, integer: true, min: 0 }),
+    rows: new f.ObjectField({ initial: {} })
   });
 }
 
@@ -199,6 +215,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       saves: savingThrowSchema(),
       saveDetail: characterSaveSchema(),
       thiefSkills: thiefSkillSchema(),
+      generalSkills: generalSkillsSchema(),
       spellbook: spellbookSchema(),
       mastery: masterySchema(),
       magicItems: magicItemsSchema(),
@@ -233,6 +250,24 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     }, level);
     // At the level cap there is no next threshold; clear any stale saved value.
     attrs.xpNext = nextXp ?? 0;
+
+    const general = this.generalSkills;
+    if (general) {
+      general.slots = generalSkillSlots(className, level, xp, this.abilities?.int?.value ?? 10);
+      const rows = general.rows ?? (general.rows = {});
+      let used = 0;
+      for (const [skillKey, row] of Object.entries(rows)) {
+        if (!GENERAL_SKILL_KEYS.has(skillKey) || !row || typeof row !== "object") {
+          delete rows[skillKey];
+          continue;
+        }
+        row.trained = Boolean(row.trained);
+        row.modifier = Number(row.modifier) || 0;
+        row.note = String(row.note ?? "");
+        if (row.trained) used++;
+      }
+      general.used = used;
+    }
 
     const armor = attrs.armor ?? {};
     const items = this.parent?.items ?? [];

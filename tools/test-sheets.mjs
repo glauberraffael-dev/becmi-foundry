@@ -124,7 +124,8 @@ await submit.call(sheet, {}, {}, {
     "system.attributes.hp.value": "7",
     "system.attributes.hp.max": "12",
     "system.attributes.xp": "5000",
-    "system.attributes.xpNext": "9999"
+    "system.attributes.xpNext": "9999",
+    "system.generalSkills.rows.tracking.trained": "true"
   }
 });
 if (updates.length !== 1 || Object.keys(updates[0]).join() !== "system.attributes.hp.value"
@@ -283,6 +284,37 @@ if (masteryUpdate?.["system.mastery.enabled"] !== true) {
   throw new Error("the mastery toggle did not opt the character in");
 }
 
+// General skills are opt-in for every class, stored per skill and rollable in
+// use mode like the thief skills.
+if (!body.includes('data-action="rollGeneral" data-skill="{{skill.key}}"')
+  || !body.includes('name="system.generalSkills.rows.{{skill.key}}.trained"')
+  || !body.includes('name="system.generalSkills.rows.{{skill.key}}.modifier"')
+  || !body.includes('name="system.generalSkills.rows.{{skill.key}}.note"')
+  || !body.includes('name="system.generalSkills.rows.{{skill.key}}.ability"')
+  || !body.includes('data-action="toggleGeneral"')
+  || !body.includes("{{generalSlots.used}} / {{generalSlots.total}}")) {
+  throw new Error("the general-skill tab, fields, toggle or roll button are missing from the sheet");
+}
+const generalRolls = [];
+sheet.editMode = false;
+sheet.actor = {
+  async rollGeneralSkill(skill) { generalRolls.push(skill); }
+};
+await actions.rollGeneral.call(sheet, {}, { dataset: { skill: "tracking" } });
+if (generalRolls.join() !== "tracking") {
+  throw new Error(`general skill roll did not reach the actor: ${JSON.stringify(generalRolls)}`);
+}
+let generalUpdate = null;
+sheet.editMode = true;
+sheet.actor = {
+  system: { generalSkills: { enabled: false } },
+  async update(data) { generalUpdate = data; }
+};
+await actions.toggleGeneral.call(sheet, {}, {});
+if (generalUpdate?.["system.generalSkills.enabled"] !== true) {
+  throw new Error("the general-skills toggle did not opt the character in");
+}
+
 // Spell slots are consumed once, blocked on recast and restored only by an
 // owner-triggered Rest action; Auto AC must disable the manual target field.
 if (!body.includes('data-action="toggleTargetAcAuto"')
@@ -332,4 +364,4 @@ if (slotUpdates.length !== 1 || Object.keys(slotUpdates[0]["system.spellbook.use
   throw new Error(`rest did not clear slots and log to chat: ${JSON.stringify({ slotUpdates, chats })}`);
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level, optional mastery, spell slots and Auto AC).");
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level, optional mastery and general skills, spell slots and Auto AC).");

@@ -323,7 +323,7 @@ for (const token of [
   if (!integrationsSource.includes(token)) note(`integrations.mjs: missing ${token}`);
 }
 const rulesSource = await readFile(join(root, "scripts/rules-rc.mjs"), "utf8");
-for (const token of ["xpForNextLevel", "levelForXp", "normalizeClassKey"]) {
+for (const token of ["xpForNextLevel", "levelForXp", "normalizeClassKey", "generalSkillSlots", "GENERAL_SKILLS"]) {
   if (!rulesSource.includes(token)) note(`rules-rc.mjs: missing ${token}`);
 }
 
@@ -350,6 +350,11 @@ for (const token of [
 }
 if (!actorBody.includes("spellDropHint")) note("actor sheet: missing spell drop hint");
 if (!actorBody.includes('data-tab="features"')) note("actor sheet: missing class abilities tab");
+if (!actorBody.includes('data-tab="general"')
+  || !actorBody.includes('data-action="rollGeneral"')
+  || !actorBody.includes("system.generalSkills.rows.")) {
+  note("actor sheet: optional general skills tab, fields or roll button are missing");
+}
 if (!actorBody.includes("becmi-feature-grid")) note("actor sheet: missing class ability grid");
 if (!css.includes(".becmi-tab-panel.is-active")) note("CSS: tab panels cannot scroll");
 if (!css.includes(".becmi-scroll-y")) note("CSS: reusable scroll container is missing");

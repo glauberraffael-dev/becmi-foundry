@@ -13,7 +13,8 @@ import {
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
-  equippedAcBonus, equippedSaveBonuses, finalDamage, hpForLevel, masteryChoices, masteryData,
+  equippedAcBonus, equippedSaveBonuses, finalDamage, generalSkillInfo, generalSkillSlots,
+  GENERAL_SKILLS, hpForLevel, masteryChoices, masteryData,
   masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
   monsterSaveTargets, monsterSpellcasterInfo, monsterThac0, normalizeClassKey,
   parseMonsterHitDice, parseMonsterSaveAs,
@@ -110,6 +111,30 @@ check("saves and thief skills come from the level tables", () => {
   });
   assert.equal(baseThiefSkills(5).climbWalls, 91);
   assert.equal(baseThiefSkills(5).openLocks, 35);
+});
+
+check("general skills follow the RC sample table and slot acquisition", () => {
+  assert.equal(GENERAL_SKILLS.length, 61);
+  assert.equal(new Set(GENERAL_SKILLS.map((skill) => skill.key)).size, GENERAL_SKILLS.length);
+  assert.equal(generalSkillInfo("riding").ability, "dex");
+  assert.equal(generalSkillInfo("tracking").ability, "int");
+  assert.equal(generalSkillInfo("art", "wis").ability, "wis");
+  assert.equal(generalSkillInfo("riding", "cha").ability, "dex");
+  assert.equal(generalSkillInfo("not-a-skill"), null);
+
+  // Four starting slots plus the Intelligence bonus.
+  assert.equal(generalSkillSlots("fighter", 1, 0, 10), 4);
+  assert.equal(generalSkillSlots("fighter", 1, 0, 14), 5);
+  assert.equal(generalSkillSlots("fighter", 1, 0, 17), 6);
+  assert.equal(generalSkillSlots("fighter", 1, 0, 18), 7);
+  // Humans gain one slot at levels 5, 9, 13, 17, 21, 25, 29 and 33.
+  assert.equal(generalSkillSlots("fighter", 5, 0, 10), 5);
+  assert.equal(generalSkillSlots("fighter", 36, 0, 10), 12);
+  // Demihumans use their own level/XP table instead of the human levels.
+  assert.equal(generalSkillSlots("dwarf", 5, 0, 10), 5);
+  assert.equal(generalSkillSlots("dwarf", 9, 1200000, 10), 7);
+  assert.equal(generalSkillSlots("elf", 10, 2350000, 10), 8);
+  assert.equal(generalSkillSlots("halfling", 8, 1500000, 10), 7);
 });
 
 check("spell slots and spell lists use the extracted tables", () => {

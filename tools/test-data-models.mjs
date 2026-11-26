@@ -112,6 +112,47 @@ if (!mastery?.enabled || mastery.enabled.options.initial !== false
 }
 console.log("Optional mastery schema fields OK.");
 
+// General skills are opt-in, catalog-backed and derive their slot budget.
+const general = characterSchema.generalSkills?.options;
+if (!general?.enabled || general.enabled.options.initial !== false
+  || !general.rows || !general.slots || !general.used) {
+  throw new Error("CharacterData.generalSkills must be an opt-in rule with derived slots");
+}
+console.log("Optional general-skill schema fields OK.");
+
+const saves = Object.fromEntries(["deathRay", "magicWand", "paralysis", "breath", "spells"]
+  .map((key) => [key, { base: 10, auto: 0, mod: 0, item: 0, target: 10 }]));
+const generalActor = {
+  attributes: {
+    classKey: "fighter", level: 5, xp: 1000, xpNext: 0,
+    adjustments: { dex: 0, wis: 0 },
+    ac: { base: 9, value: 9 }, armor: { type: "nenhuma", shield: false },
+    gold: { pp: 0, gp: 0, ep: 0, sp: 0, cp: 0 },
+    load: { equipment: 0, gems: 0, jewels: 0, weapons: 0 },
+    movement: {}, savingThrows: {}, thac0: 19
+  },
+  abilities: { int: { value: 14 }, dex: { value: 10 }, wis: { value: 10 } },
+  saves: Object.fromEntries(Object.keys(saves).map((key) => [key, 10])),
+  saveDetail: structuredClone(saves),
+  thiefSkills: {
+    pickPockets: 0, openLocks: 0, findTraps: 0, removeTraps: 0, climbWalls: 0,
+    moveSilently: 0, hideInShadows: 0, hearNoise: 0, backstab: 0
+  },
+  generalSkills: {
+    enabled: true, slots: 4, used: 0,
+    rows: { tracking: { trained: true, modifier: 1, note: "forest" }, bogus: { trained: true } }
+  },
+  magicItems: []
+};
+actorModels.CharacterData.prototype.prepareDerivedData.call(generalActor);
+if (generalActor.generalSkills.slots !== 6 || generalActor.generalSkills.used !== 1) {
+  throw new Error(`general skill slots must derive from INT and level, got ${JSON.stringify(generalActor.generalSkills)}`);
+}
+if ("bogus" in generalActor.generalSkills.rows) {
+  throw new Error("unknown general skills must not survive preparation");
+}
+console.log("General skills derive slots and discard unknown rows OK.");
+
 // Monster-like actors have no system.attributes.ac; preparation must not throw.
 const { BECMIActor } = await import("../scripts/documents/actor.mjs");
 const withoutAc = new BECMIActor();

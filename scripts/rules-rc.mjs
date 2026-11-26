@@ -270,6 +270,83 @@ export function baseThiefSkills(level) {
   return Object.fromEntries(THIEF_KEYS.map((key, index) => [key, Number(row[index] ?? 0)]));
 }
 
+/* ------------------------------------------------------------------ *
+ * Optional general skills (RC pp. 81-87)                              *
+ * ------------------------------------------------------------------ */
+
+/**
+ * Sample Skills Table. `choice` marks entries the RC prints as
+ * "choose type/terrain/immortal/culture"; the sheet gives those rows a free
+ * text field so the player can record the chosen specialty. `Art` appears in
+ * both the Intelligence and Wisdom columns; the default is Intelligence and
+ * the stored row can override the ability when the DM allows it.
+ */
+export const GENERAL_SKILLS = Object.freeze([
+  ["intimidation", "str"], ["muscle", "str"], ["wrestling", "str"],
+
+  ["alchemy", "int"], ["alternateMagics", "int"], ["art", "int", true],
+  ["artillery", "int"], ["craft", "int", true], ["disguise", "int"],
+  ["engineering", "int"], ["fireBuilding", "int"], ["healing", "int"],
+  ["hunting", "int"], ["knowledge", "int", true], ["labor", "int"],
+  ["language", "int", true], ["lipReading", "int"], ["magicalEngineering", "int"],
+  ["mapping", "int"], ["militaryTactics", "int"], ["mimicry", "int"],
+  ["natureLore", "int"], ["navigation", "int"], ["planarGeography", "int"],
+  ["profession", "int", true], ["science", "int", true], ["shipbuilding", "int"],
+  ["signaling", "int", true], ["snares", "int"], ["survival", "int", true],
+  ["tracking", "int"], ["veterinaryHealing", "int"],
+
+  ["animalTraining", "wis", true], ["bravery", "wis"], ["caving", "wis"],
+  ["ceremony", "wis", true], ["dangerSense", "wis"], ["detectDeception", "wis"],
+  ["gambling", "wis"], ["lawAndJustice", "wis", true], ["mysticism", "wis"],
+
+  ["acrobatics", "dex"], ["alertness", "dex"], ["blindShooting", "dex"],
+  ["cheating", "dex"], ["escape", "dex"], ["mountaineering", "dex"],
+  ["piloting", "dex", true], ["quickDraw", "dex"], ["riding", "dex", true],
+  ["stealth", "dex", true],
+
+  ["endurance", "con"], ["foodTasting", "con"],
+
+  ["acting", "cha"], ["bargaining", "cha"], ["deception", "cha"],
+  ["leadership", "cha"], ["music", "cha", true], ["persuasion", "cha"],
+  ["singing", "cha"], ["storytelling", "cha"]
+].map(([key, ability, choice]) => Object.freeze({ key, ability, choice: Boolean(choice) })));
+
+export const GENERAL_SKILL_KEYS = Object.freeze(GENERAL_SKILLS.map((skill) => skill.key));
+
+const GENERAL_SKILL_BY_KEY = new Map(GENERAL_SKILLS.map((skill) => [skill.key, skill]));
+
+/** Resolve a catalog entry, allowing only the RC's Wisdom-based Art choice. */
+export function generalSkillInfo(key, ability) {
+  const skill = GENERAL_SKILL_BY_KEY.get(String(key ?? ""));
+  if (!skill) return null;
+  return skill.key === "art" && ability === "wis" ? { ...skill, ability: "wis" } : skill;
+}
+
+const HUMAN_SKILL_LEVELS = [5, 9, 13, 17, 21, 25, 29, 33];
+const DEMIHUMAN_SKILL_XP = {
+  dwarf: [1200000, 2000000],
+  elf: [1350000, 2350000],
+  halfling: [300000, 1500000]
+};
+
+/** Starting slots (4 + INT bonus) plus the level/XP acquisitions in the RC. */
+export function generalSkillSlots(className, level = 1, xp = 0, intelligence = 10) {
+  const score = Number(intelligence) || 10;
+  const bonus = score >= 18 ? 3 : score >= 16 ? 2 : score >= 13 ? 1 : 0;
+  let slots = 4 + bonus;
+  const key = normalizeClassKey(className);
+  const earned = Math.max(0, Number(xp) || 0);
+  const current = Math.max(1, Number(level) || 1);
+  if (DEMIHUMAN_SKILL_XP[key]) {
+    if (current >= 5) slots++;
+    if (key !== "halfling" && current >= 9) slots++;
+    for (const threshold of DEMIHUMAN_SKILL_XP[key]) if (earned >= threshold) slots++;
+  } else {
+    for (const minimum of HUMAN_SKILL_LEVELS) if (current >= minimum) slots++;
+  }
+  return slots;
+}
+
 export function spellSlotsForLevel(className, level) {
   const cls = getRCClass(className);
   if (!cls?.spells) return [];

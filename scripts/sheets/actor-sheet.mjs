@@ -7,9 +7,10 @@ import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
 import { hasMasteryRows } from "../mastery.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
-  RC, SPELL_LISTS, attackRows, adjustment, equippedAcBonus, getRCClass, hpForLevel, masteryData,
-  masteryRanks, masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo,
-  normalizeClassKey, spellKey, spellSlotsForLevel, spellsFor, turnUndeadColumn
+  RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, equippedAcBonus, getRCClass,
+  generalSkillInfo, hpForLevel, masteryData, masteryRanks, masteryWeapon, masteryChoices,
+  monsterAttackRows, monsterSpellcasterInfo, normalizeClassKey, spellKey, spellSlotsForLevel,
+  spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -53,6 +54,7 @@ const SHEET_TABS = [
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
+  ["general", "BECMI.sheet.tab.general"],
   ["undead", "BECMI.sheet.tab.undead"],
   ["attack", "BECMI.sheet.tab.attack"],
   ["mastery", "BECMI.sheet.tab.mastery"],
@@ -88,6 +90,9 @@ const THIEF_SKILLS = [
   ["hearNoise", "BECMI.thief.hearNoise"],
   ["backstab", "BECMI.thief.backstab"]
 ];
+
+const hasGeneralSkillRows = (actor) => Object.values(actor?.system?.generalSkills?.rows ?? {})
+  .some((row) => row?.trained || Number(row?.modifier) || row?.note);
 
 const UNDEAD_EN = [
   "Skeleton", "Zombie", "Ghoul", "Wight", "Wraith", "Mummy", "Spectre", "Vampire",
@@ -219,6 +224,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollFree: BECMIActorSheet.#rollFree,
       rollDice: BECMIActorSheet.#rollDice,
       rollThief: BECMIActorSheet.#rollThief,
+      rollGeneral: BECMIActorSheet.#rollGeneral,
+      toggleGeneral: BECMIActorSheet.#toggleGeneral,
       rollTurnUndead: BECMIActorSheet.#rollTurnUndead,
       detectEvil: BECMIActorSheet.#detectEvil,
       createCharacter: BECMIActorSheet.#createCharacter,
@@ -361,6 +368,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // Keep the tab reachable for sheets that already stored mastery rows.
     const masteryEnabled = Boolean(actor.system.mastery?.enabled);
     const canMastery = isCharacter && (masteryEnabled || Boolean(capabilities.mastery) || hasMasteryRows(actor));
+    // General skills are optional for every character class, like mastery.
+    const generalEnabled = Boolean(actor.system.generalSkills?.enabled);
+    const canGeneral = isCharacter && (generalEnabled || hasGeneralSkillRows(actor));
 
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
@@ -371,9 +381,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
+      generalToggleLabel: game.i18n.localize(generalEnabled
+        ? "BECMI.sheet.generalDisable" : "BECMI.sheet.generalEnable"),
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
@@ -424,6 +436,29 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       label: game.i18n.localize(label),
       value: actor.system.thiefSkills?.[key] ?? 0
     }));
+
+    const generalRows = actor.system.generalSkills?.rows ?? {};
+    context.generalSkills = GENERAL_SKILLS.map((entry) => {
+      const row = generalRows[entry.key] ?? {};
+      const skill = generalSkillInfo(entry.key, row.ability);
+      return {
+        key: entry.key,
+        label: game.i18n.localize(`BECMI.general.${entry.key}`),
+        ability: skill.ability,
+        abilityLabel: game.i18n.localize(`BECMI.abilities.${skill.ability}Abbr`),
+        trained: Boolean(row.trained),
+        modifier: Number(row.modifier) || 0,
+        note: String(row.note ?? ""),
+        choice: Boolean(entry.choice)
+      };
+    });
+    const generalSlots = Number(actor.system.generalSkills?.slots ?? 4);
+    const generalUsed = Object.values(generalRows).filter((row) => row?.trained).length;
+    context.generalSlots = {
+      used: generalUsed,
+      total: generalSlots,
+      remaining: Math.max(0, generalSlots - generalUsed)
+    };
 
     const undeadColumn = turnUndeadColumn(turnUndeadLevel);
     context.undeadColumns = RC.turnUndead.columns.map((label, index) => ({ label, active: index === undeadColumn }));
@@ -634,6 +669,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const definitions = isCharacter ? SHEET_TABS.filter(([id]) => {
       if (id === "spells") return canCast;
       if (id === "thief") return canThief;
+      if (id === "general") return canGeneral;
       if (id === "undead") return canTurn;
       if (id === "mastery") return canMastery;
       return true;
@@ -834,6 +870,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.actor.rollThiefSkill(target.dataset.skill);
   }
 
+  static async #rollGeneral(event, target) {
+    await this.actor.rollGeneralSkill(target.dataset.skill);
+  }
+
   static async #rollTurnUndead(event, target) {
     await this.actor.rollTurnUndead(target.dataset.undead, {
       level: this.turnUndeadLevel,
@@ -974,6 +1014,15 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
     const enabled = !Boolean(this.actor.system.mastery?.enabled);
     await this.actor.update({ "system.mastery.enabled": enabled });
+  }
+
+  static async #toggleGeneral() {
+    if (!this.isEditable || !this.editMode) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.editModeRequired"));
+      return;
+    }
+    const enabled = !Boolean(this.actor.system.generalSkills?.enabled);
+    await this.actor.update({ "system.generalSkills.enabled": enabled });
   }
 
   static async #addMasteryRow() {

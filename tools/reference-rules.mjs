@@ -94,7 +94,23 @@ ${htmlTable(["Armor", "AC", "Cost", "Weight"], [
 <p>Weapons list damage, range, cost and encumbrance; two-handed and missile weapons have the usual restrictions. Adventuring gear, transport and siege equipment are bought from the Equipment compendium.</p>`,
   5: `<h2>Other Character Abilities</h2>
 <p>Weapon Mastery is optional. Humans receive weapon choices by level; demihumans begin with Basic skill in class-approved weapons. The five ranks are Basic, Skilled, Expert, Master and Grand Master. Each rank improves damage, range, attack bonus, defense or special effects as shown in the Weapon Mastery journal.</p>
-<p>The optional General Skills system lets a character buy noncombat skills with weapon choices or skill points. The DM sets the characteristic and difficulty, then the player rolls d20 against the resulting target.</p>`,
+<p>The optional General Skills system lets a character choose noncombat skills. Every 1st-level character starts with four blank slots; Intelligence 13-15 grants one extra slot, 16-17 grants two and 18 grants three. A slot is spent when a skill is chosen. Art may be based on Intelligence or Wisdom; skills marked "choose type" record the player's specialty on the sheet.</p>
+${htmlTable(["Ability", "Sample skills (RC pp. 82-83)"], [
+  ["Strength", "Intimidation, Muscle, Wrestling"],
+  ["Intelligence", "Alchemy, Alternate Magics, Art, Artillery, Craft, Disguise, Engineering, Fire-Building, Healing, Hunting, Knowledge, Labor, Language, Lip Reading, Magical Engineering, Mapping, Military Tactics, Mimicry, Nature Lore, Navigation, Planar Geography, Profession, Science, Shipbuilding, Signaling, Snares, Survival, Tracking, Veterinary Healing"],
+  ["Wisdom", "Animal Training, Art, Bravery, Caving, Ceremony, Danger Sense, Detect Deception, Gambling, Law and Justice, Mysticism"],
+  ["Dexterity", "Acrobatics, Alertness, Blind Shooting, Cheating, Escape, Mountaineering, Piloting, Quick Draw, Riding, Stealth"],
+  ["Constitution", "Endurance, Food Tasting"],
+  ["Charisma", "Acting, Bargaining, Deception, Leadership, Music, Persuasion, Singing, Storytelling"]
+])}
+<p>When the DM decides a skill applies, roll 1d20 against the listed ability score plus any circumstance modifier. A natural 1 is an automatic success and a natural 20 is an automatic failure.</p>
+${htmlTable(["Character", "Additional slots"], [
+  ["Human levels 5, 9, 13, 17, 21, 25, 29, 33", "+1 slot at each level"],
+  ["Dwarf level 5, level 9, 1,200,000 XP, +800,000 XP", "+1 slot at each step"],
+  ["Elf level 5, level 9, 1,350,000 XP, +1,000,000 XP", "+1 slot at each step"],
+  ["Halfling level 5, 300,000 XP, +1,200,000 XP", "+1 slot at each step"]
+])}
+<p>The character sheet's General Skills tab stores trained skills, specialties and modifiers, and derives the current slot budget from class, level, XP and Intelligence.</p>`,
   6: `<h2>Movement</h2>
 <p>Exploration movement is measured in turns (10 minutes) and dungeon movement in rounds. Encumbered characters move more slowly; the movement rate is derived from total carried weight. Running increases speed but makes stealth impossible and can cause fatigue.</p>
 ${htmlTable(["Encumbrance (cn)", "Movement / turn", "Movement / round"], [

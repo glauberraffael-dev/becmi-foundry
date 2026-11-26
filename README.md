@@ -20,6 +20,10 @@ short paraphrases; the PDF and OCR export are **not** included.
   for classes that have them. Weapon Mastery is an optional switch available to
   every character: when enabled, trained weapon ranks modify attack bonuses and
   damage; when disabled, rolls use the plain BECMI rules.
+- Optional General Skills use the 61 sample skills from the Rules Cyclopedia: a
+  per-character toggle, ability-based 1d20 checks, stored specialties and DM
+  modifiers, and slot budgets derived from Intelligence, level and XP. The
+  Chapter 5 reference journal carries the sample-skill and slot-acquisition tables.
 - Name Level choices are on the character sheet: Land Owner or Travelling, holding
   style, and fighter specialization by alignment. The sheet derives the title and
   shows the RC advantages and obligations; paladins/avengers get cleric-level spells,
@@ -102,8 +106,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.27`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.27.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.29`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.29.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder
