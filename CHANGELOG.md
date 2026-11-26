@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.22
+
+- Fixed the ordinal text in the Name Level guidance: effective cleric levels now
+  read `1st`, `2nd`, `3rd` and so on instead of `1th`, `2th`, `3th`.
+
 ## 0.1.21
 
 - Added Name Level mechanics from the Rules Cyclopedia. At 9th level (8th for

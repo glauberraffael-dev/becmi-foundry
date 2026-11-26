@@ -285,6 +285,7 @@ check("name level derives titles, cleric levels, hireling limits and spell cost"
   assert.equal(paladin.canDetectEvil, true);
   assert.equal(paladin.canTurnUndead, true);
   assert.ok(paladin.pros.some((line) => line.includes("Detect Evil")));
+  assert.ok(paladin.pros.some((line) => line.includes("3rd level cleric")));
   assert.ok(paladin.cons.some((line) => line.includes("hirelings")));
 
   const lowWis = nameLevelDetails({

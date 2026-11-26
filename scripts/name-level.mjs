@@ -62,6 +62,12 @@ export function nameLevelOptions(classKey, alignment = "") {
   };
 }
 
+function ordinal(value) {
+  const n = Math.max(0, Number(value) || 0);
+  if (n % 100 >= 11 && n % 100 <= 13) return `${n}th`;
+  return `${n}${({ 1: "st", 2: "nd", 3: "rd" })[n % 10] ?? "th"}`;
+}
+
 function alignmentKey(value) {
   const text = String(value ?? "").toLowerCase();
   if (text.startsWith("law")) return "lawful";
@@ -182,13 +188,13 @@ function guidanceFor({ classKey, druid, path, specialization, clericalLevel, spe
       cons.push("No dominion or political power; special abilities come from alignment and are not automatic.");
       if (specialization === "paladin") {
         pros.push("Detect Evil once per round by concentrating (120').");
-        pros.push(`Turn undead and cast cleric spells as a ${clericalLevel}th level cleric.`);
+        pros.push(`Turn undead and cast cleric spells as a ${ordinal(clericalLevel)} level cleric.`);
         cons.push("Swear fealty to a Lawful clerical order and obey summons that aid Good.");
         cons.push(`No more than ${hirelingCap} hirelings; no attack in a round spent detecting evil.`);
         cons.push("Must help anyone who asks, except evildoers, unless already on a higher mission.");
       } else if (specialization === "avenger") {
         pros.push("Detect Evil once per round by concentrating (120').");
-        pros.push(`Turn undead as a ${clericalLevel}th level cleric and may control a turned/destroyed result for one turn per level.`);
+        pros.push(`Turn undead as a ${ordinal(clericalLevel)} level cleric and may control a turned/destroyed result for one turn per level.`);
         pros.push("Can demand sanctuary in a Chaotic monster's lair with the alignment tongue.");
         if (followerRange) pros.push(`Chaotic monster hirelings allowed: ${followerRange[0]}-${followerRange[1]} by Charisma.`);
         cons.push("Alliance with a Chaotic order; disobedience removes all benefits.");
