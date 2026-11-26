@@ -2,7 +2,7 @@
   "id": "becmi",
   "title": "BECMI — Rules Cyclopedia",
   "description": "Unofficial Foundry VTT system for the Basic/Expert/Companion/Master/Immortal rules, based on the D&D Rules Cyclopedia. Compendia contain structured game data and a condensed rules reference; the PDF is not included.",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "compatibility": {
     "minimum": 13,
     "verified": 14
@@ -115,7 +115,7 @@
     }
   ],
   "url": "https://github.com/glauberraffael-dev/becmi-foundry",
-  "manifest": "https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json?v=0.1.13",
-  "download": "https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry-0.1.13.zip",
+  "manifest": "https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json?v=0.1.14",
+  "download": "https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry-0.1.14.zip",
   "license": "MIT for code; game content is an unofficial fan conversion. See LICENSE and CREDITS.md."
 }

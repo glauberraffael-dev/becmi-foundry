@@ -1,0 +1,164 @@
+{
+  "_id": "S58PI8cntmdps4AC",
+  "_key": "!tables!S58PI8cntmdps4AC",
+  "name": "Wilderness Subtable 5: Swimmers (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "o7EcK85hRoXy3PuE",
+      "type": "text",
+      "text": "River/Lake: Crab, Giant; Ocean: Giant, Storm; Swamp: Crab, Giant",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.o7EcK85hRoXy3PuE"
+    },
+    {
+      "_id": "j0vVIu8j3wH4cabZ",
+      "type": "text",
+      "text": "River/Lake: Crocodile; Ocean: Hydra, Sea; Swamp: Crocodile",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.j0vVIu8j3wH4cabZ"
+    },
+    {
+      "_id": "OFWAwtAjp0XjiE8j",
+      "type": "text",
+      "text": "River/Lake: Crocodile, Large; Ocean: Hydra, Sea; Swamp: Crocodile",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.OFWAwtAjp0XjiE8j"
+    },
+    {
+      "_id": "zEmfsxAxvDL2iOkl",
+      "type": "text",
+      "text": "River/Lake: Fish, Giant Bass; Ocean: Hydra, Sea; Swamp: Crocodile, Large",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.zEmfsxAxvDL2iOkl"
+    },
+    {
+      "_id": "H0_4_UbahvRx_Atx",
+      "type": "text",
+      "text": "River/Lake: Fish, Sturgeon; Ocean: Merman; Swamp: Crocodile, Large",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.H0_4_UbahvRx_Atx"
+    },
+    {
+      "_id": "E6PnrZDKSnC9q3z4",
+      "type": "text",
+      "text": "River/Lake: Leech, Giant; Ocean: Snake, Sea; Swamp: Leech, Giant",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.E6PnrZDKSnC9q3z4"
+    },
+    {
+      "_id": "f0X-Vxkvvy8mFR9Y",
+      "type": "text",
+      "text": "River/Lake: Leech, Giant; Ocean: Snake, Sea; Swamp: Leech, Giant",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.f0X-Vxkvvy8mFR9Y"
+    },
+    {
+      "_id": "gcPId_8wBZDaMSYk",
+      "type": "text",
+      "text": "River/Lake: Lizard Man; Ocean: Snake, Sea; Swamp: Leech, Giant",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.gcPId_8wBZDaMSYk"
+    },
+    {
+      "_id": "HF8rfKnbzYFEtrnI",
+      "type": "text",
+      "text": "River/Lake: Lizard Man; Ocean: Snake, Sea; Swamp: Lizard Man",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.HF8rfKnbzYFEtrnI"
+    },
+    {
+      "_id": "TTomOLtS3O9301x-",
+      "type": "text",
+      "text": "River/Lake: Merman; Ocean: Termite, Water; Swamp: Lizard Man",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.TTomOLtS3O9301x-"
+    },
+    {
+      "_id": "IpMsz0JL-MXL802M",
+      "type": "text",
+      "text": "River/Lake: Nixie; Ocean: Termite, Water; Swamp: Termite, Water",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC.IpMsz0JL-MXL802M"
+    },
+    {
+      "_id": "_T7WuMgQtm3LjOUi",
+      "type": "text",
+      "text": "River/Lake: Termite, Water; Ocean: Termite, Water; Swamp: Termite, Water",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!S58PI8cntmdps4AC._T7WuMgQtm3LjOUi"
+    }
+  ],
+  "formula": "1d12"
+}

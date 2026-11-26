@@ -12,6 +12,7 @@ import { ocrInput } from "./ocr-input.mjs";
 import { EQUIPMENT_JOURNAL, MASTERY_JOURNAL } from "./mastery-data.mjs";
 import { normalizeTreasureDocument } from "./pack-layout.mjs";
 import { buildReferenceJournals } from "./reference-rules.mjs";
+import { ENCOUNTER_TABLES, REACTION_TABLE } from "./encounter-tables.mjs";
 
 const require = createRequire(import.meta.url);
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -65,37 +66,9 @@ function treasureSection(lines) {
 }
 
 function tables() {
-  const reactions = [
-    [2, "Hostile, attacks immediately"],
-    [3, "Hostile, attacks immediately"],
-    [4, "Hostile, may attack"],
-    [5, "Hostile, may attack"],
-    [6, "Neutral, uncertain"],
-    [7, "Neutral, uncertain"],
-    [8, "No attack, may parley"],
-    [9, "No attack, may parley"],
-    [10, "Friendly, helpful"],
-    [11, "Friendly, helpful"],
-    [12, "Friendly, enthusiastic"]
-  ];
-  const built = [{
-    name: "Monster Reactions (2d6)",
-    flags: { becmi: { source: "Rules Cyclopedia", category: "Encounters" } },
-    formula: "2d6",
-    results: reactions.map(([range, text], i) => ({
-      _id: `reaction${i}`.padEnd(16, "0"),
-      type: "text",
-      text: text,
-      range: [range, range],
-      weight: 1,
-      drawn: false
-    }))
-  }];
-
-  // Only the Monster Reactions table has an explicit 2d6 roll instruction.
-  // All other reference tables are journal text in the Rules Reference and
-  // Equipment Tables compendia.
-  return built;
+  // Chapter 7 encounters are genuinely random (1d20/1d8/1d12) and are kept as
+  // RollTables. Castle/city procedures and static lookups stay in the journals.
+  return [REACTION_TABLE, ...ENCOUNTER_TABLES];
 }
 
 function journals() {

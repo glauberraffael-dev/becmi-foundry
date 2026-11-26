@@ -1,0 +1,248 @@
+{
+  "_id": "xMRselfl4ukMHb2h",
+  "_key": "!tables!xMRselfl4ukMHb2h",
+  "name": "Dungeon Encounters Level 3 (1d20)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Dungeon Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67c22146c87ff0fe",
+  "results": [
+    {
+      "_id": "Zy00_0fpDwQ01nBw",
+      "type": "text",
+      "text": "Ape, White - 1d4",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.Zy00_0fpDwQ01nBw"
+    },
+    {
+      "_id": "TBxKeunfvB2QgcHD",
+      "type": "text",
+      "text": "Beetle, Tiger - 1d4",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.TBxKeunfvB2QgcHD"
+    },
+    {
+      "_id": "z8Mnjdyim4-BMsb_",
+      "type": "text",
+      "text": "Bugbear - 1d6",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.z8Mnjdyim4-BMsb_"
+    },
+    {
+      "_id": "nUjYR9MVI-Bcan4q",
+      "type": "text",
+      "text": "Carrion Crawler - 1d3",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.nUjYR9MVI-Bcan4q"
+    },
+    {
+      "_id": "tIo5I75qkGR8babG",
+      "type": "text",
+      "text": "Doppelganger - 1d2",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.tIo5I75qkGR8babG"
+    },
+    {
+      "_id": "IwdFJ2lgoSTcqZPj",
+      "type": "text",
+      "text": "Gargoyle - 1d3",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.IwdFJ2lgoSTcqZPj"
+    },
+    {
+      "_id": "BaiGcchWm5pSes-c",
+      "type": "text",
+      "text": "Gelatinous Cube - 1",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.BaiGcchWm5pSes-c"
+    },
+    {
+      "_id": "CZ-5QTNcetVUZFU-",
+      "type": "text",
+      "text": "Harpy - 1d3",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.CZ-5QTNcetVUZFU-"
+    },
+    {
+      "_id": "_st7rmqtWNVQVuKi",
+      "type": "text",
+      "text": "Human - 1d3",
+      "range": [
+        9,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h._st7rmqtWNVQVuKi"
+    },
+    {
+      "_id": "sCxMCcei8kYHaZNG",
+      "type": "text",
+      "text": "Living Statue, Crystal - 1d4",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.sCxMCcei8kYHaZNG"
+    },
+    {
+      "_id": "W9Xrb9x_GwJi8pzC",
+      "type": "text",
+      "text": "Lycanthrope, Wererat - 1d6",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.W9Xrb9x_GwJi8pzC"
+    },
+    {
+      "_id": "qfZaieUJ_6aJrnSq",
+      "type": "text",
+      "text": "Medusa - 1",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.qfZaieUJ_6aJrnSq"
+    },
+    {
+      "_id": "C384LQWeTSrnAwPk",
+      "type": "text",
+      "text": "NPC Party - 1 party",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.C384LQWeTSrnAwPk"
+    },
+    {
+      "_id": "Wp6qggEJ60mMaGJt",
+      "type": "text",
+      "text": "Ochre Jelly - 1",
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.Wp6qggEJ60mMaGJt"
+    },
+    {
+      "_id": "OTxc0TXwKrygsl3l",
+      "type": "text",
+      "text": "Ogre - 1d3",
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.OTxc0TXwKrygsl3l"
+    },
+    {
+      "_id": "Nel2E_pLbVjzs_bI",
+      "type": "text",
+      "text": "Shadow - 1d4",
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.Nel2E_pLbVjzs_bI"
+    },
+    {
+      "_id": "rOQqKeELEMFvnY9g",
+      "type": "text",
+      "text": "Spider, Tarantella - 1",
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.rOQqKeELEMFvnY9g"
+    },
+    {
+      "_id": "5QtiE01U_5h1uMzH",
+      "type": "text",
+      "text": "Thoul - 1d4",
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.5QtiE01U_5h1uMzH"
+    },
+    {
+      "_id": "8Jm6lFCQZm8Z5r73",
+      "type": "text",
+      "text": "Wight - 1d3",
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!xMRselfl4ukMHb2h.8Jm6lFCQZm8Z5r73"
+    }
+  ],
+  "formula": "1d20"
+}

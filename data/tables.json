@@ -4,7 +4,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "category": "Encounters"
+        "category": "Reactions"
       }
     },
     "formula": "2d6",
@@ -123,6 +123,2907 @@
         "_id": "reaction10000000",
         "type": "text",
         "text": "Friendly, enthusiastic",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Level 1 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000001",
+        "type": "text",
+        "text": "Bandit - 1d6",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000002",
+        "type": "text",
+        "text": "Beetle, Fire - 1d6",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000003",
+        "type": "text",
+        "text": "Cave Locust - 1d6",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000004",
+        "type": "text",
+        "text": "Centipede, Giant - 1d6",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000005",
+        "type": "text",
+        "text": "Ghoul - 1d2",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000006",
+        "type": "text",
+        "text": "Goblin - 1d6",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000007",
+        "type": "text",
+        "text": "Human - 1d3",
+        "range": [
+          7,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000008",
+        "type": "text",
+        "text": "Kobold - 2d6",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000009",
+        "type": "text",
+        "text": "Lizard, Gecko - 1d2",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000010",
+        "type": "text",
+        "text": "NPC Party - 1 party",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000011",
+        "type": "text",
+        "text": "Orc - 1d6",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000012",
+        "type": "text",
+        "text": "Skeleton - 1d10",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000013",
+        "type": "text",
+        "text": "Snake, Racer - 1d2",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000014",
+        "type": "text",
+        "text": "Spider, Crab - 1d2",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000015",
+        "type": "text",
+        "text": "Stirge - 1d8",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000016",
+        "type": "text",
+        "text": "Troglodyte - 1d3",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000017",
+        "type": "text",
+        "text": "Zombie - 1d3",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Level 2 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000018",
+        "type": "text",
+        "text": "Beetle, Oil - 1d6",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000019",
+        "type": "text",
+        "text": "Carrion Crawler - 1",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000020",
+        "type": "text",
+        "text": "Ghoul - 1d4",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000021",
+        "type": "text",
+        "text": "Gnoll - 1d4",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000022",
+        "type": "text",
+        "text": "Goblin - 2d4",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000023",
+        "type": "text",
+        "text": "Gray Ooze - 1",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000024",
+        "type": "text",
+        "text": "Hobgoblin - 1d6",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000025",
+        "type": "text",
+        "text": "Human - 1d3",
+        "range": [
+          8,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000026",
+        "type": "text",
+        "text": "Lizard, Draco - 1",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000027",
+        "type": "text",
+        "text": "Lizard Man - 1d6",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000028",
+        "type": "text",
+        "text": "Neanderthal - 2d4",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000029",
+        "type": "text",
+        "text": "NPC Party - 1 party",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000030",
+        "type": "text",
+        "text": "Orc - 1d10",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000031",
+        "type": "text",
+        "text": "Skeleton - 2d6",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000032",
+        "type": "text",
+        "text": "Snake, Pit Viper - 1d6",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000033",
+        "type": "text",
+        "text": "Spider, Black Widow - 1",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000034",
+        "type": "text",
+        "text": "Troglodyte - 1d6",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000035",
+        "type": "text",
+        "text": "Zombie - 1d6",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Level 3 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000036",
+        "type": "text",
+        "text": "Ape, White - 1d4",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000037",
+        "type": "text",
+        "text": "Beetle, Tiger - 1d4",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000038",
+        "type": "text",
+        "text": "Bugbear - 1d6",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000039",
+        "type": "text",
+        "text": "Carrion Crawler - 1d3",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000040",
+        "type": "text",
+        "text": "Doppelganger - 1d2",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000041",
+        "type": "text",
+        "text": "Gargoyle - 1d3",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000042",
+        "type": "text",
+        "text": "Gelatinous Cube - 1",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000043",
+        "type": "text",
+        "text": "Harpy - 1d3",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000044",
+        "type": "text",
+        "text": "Human - 1d3",
+        "range": [
+          9,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000045",
+        "type": "text",
+        "text": "Living Statue, Crystal - 1d4",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000046",
+        "type": "text",
+        "text": "Lycanthrope, Wererat - 1d6",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000047",
+        "type": "text",
+        "text": "Medusa - 1",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000048",
+        "type": "text",
+        "text": "NPC Party - 1 party",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000049",
+        "type": "text",
+        "text": "Ochre Jelly - 1",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000050",
+        "type": "text",
+        "text": "Ogre - 1d3",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000051",
+        "type": "text",
+        "text": "Shadow - 1d4",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000052",
+        "type": "text",
+        "text": "Spider, Tarantella - 1",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000053",
+        "type": "text",
+        "text": "Thoul - 1d4",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000054",
+        "type": "text",
+        "text": "Wight - 1d3",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Levels 4-5 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000055",
+        "type": "text",
+        "text": "Blink Dog - 1d4",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000056",
+        "type": "text",
+        "text": "Bugbear - 1d6+4",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000057",
+        "type": "text",
+        "text": "Caecilia - 1",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000058",
+        "type": "text",
+        "text": "Cockatrice - 1d2",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000059",
+        "type": "text",
+        "text": "Displacer Beast - 1",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000060",
+        "type": "text",
+        "text": "Gargoyle - 1d4+1",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000061",
+        "type": "text",
+        "text": "Giant, Hill - 1",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000062",
+        "type": "text",
+        "text": "Harpy - 1d4+1",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000063",
+        "type": "text",
+        "text": "Hellhound (1d3+2 HD) - 1d4",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000064",
+        "type": "text",
+        "text": "Hydra (5-headed) - 1",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000065",
+        "type": "text",
+        "text": "Lycanthrope, Werewolf - 1d4",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000066",
+        "type": "text",
+        "text": "Medusa - 1d2",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000067",
+        "type": "text",
+        "text": "Mummy - 1d3",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000068",
+        "type": "text",
+        "text": "NPC Party - 1",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000069",
+        "type": "text",
+        "text": "Ochre Jelly - 1",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000070",
+        "type": "text",
+        "text": "Rhagodessa - 1d3",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000071",
+        "type": "text",
+        "text": "Rust Monster - 1d2",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000072",
+        "type": "text",
+        "text": "Scorpion, Giant - 1d3",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000073",
+        "type": "text",
+        "text": "Troll - 1d2",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000074",
+        "type": "text",
+        "text": "Wraith - 1d2",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Levels 6-7 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000075",
+        "type": "text",
+        "text": "Basilisk - 1d3",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000076",
+        "type": "text",
+        "text": "Caecilia - 1d4",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000077",
+        "type": "text",
+        "text": "Cockatrice - 1d3",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000078",
+        "type": "text",
+        "text": "Giant, Hill - 1d2",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000079",
+        "type": "text",
+        "text": "Giant, Stone - 1d2",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000080",
+        "type": "text",
+        "text": "Hellhound (5-7 HD) - 1d4",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000081",
+        "type": "text",
+        "text": "Hydra (6-8 heads) - 1",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000082",
+        "type": "text",
+        "text": "Lycanthrope (weretiger or werebear) - 1d3",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000083",
+        "type": "text",
+        "text": "Manticore - 1",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000084",
+        "type": "text",
+        "text": "Minotaur - 1d4",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000085",
+        "type": "text",
+        "text": "Mummy - 1d4",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000086",
+        "type": "text",
+        "text": "NPC Party - 1",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000087",
+        "type": "text",
+        "text": "Ochre Jelly - 1",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000088",
+        "type": "text",
+        "text": "Ogre - 2d4",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000089",
+        "type": "text",
+        "text": "Rust Monster - 1d3+1",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000090",
+        "type": "text",
+        "text": "Spectre - 1d3",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000091",
+        "type": "text",
+        "text": "Spider, Tarantella - 1d3",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000092",
+        "type": "text",
+        "text": "Salamander, Flame - 1d2",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000093",
+        "type": "text",
+        "text": "Troll - 1d4+1",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000094",
+        "type": "text",
+        "text": "Vampire - 1",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Encounters Levels 8-10 (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Dungeon Encounters"
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000095",
+        "type": "text",
+        "text": "Basilisk - 1d6",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000096",
+        "type": "text",
+        "text": "Black Pudding - 1",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000097",
+        "type": "text",
+        "text": "Chimera - 1",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000098",
+        "type": "text",
+        "text": "Devil Swine - 1d2",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000099",
+        "type": "text",
+        "text": "Dragon - 1d2",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000100",
+        "type": "text",
+        "text": "Giant (select a type; adjust the number for level) - 1d6",
+        "range": [
+          6,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000101",
+        "type": "text",
+        "text": "Golem (select a type; adjust the number for level) - 1",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000102",
+        "type": "text",
+        "text": "Hydra (7-12 heads) - 1",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000103",
+        "type": "text",
+        "text": "Living Statue (select a type; adjust the number for level) - 1d4+1",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000104",
+        "type": "text",
+        "text": "Lycanthrope (select a type; adjust the number for level) - 1d6+1",
+        "range": [
+          11,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000105",
+        "type": "text",
+        "text": "NPC Party - 1",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000106",
+        "type": "text",
+        "text": "Purple Worm - 1",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000107",
+        "type": "text",
+        "text": "Rust Monster - 1d4+1",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000108",
+        "type": "text",
+        "text": "Salamander (select a type; adjust the number for level) - 1d4",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000109",
+        "type": "text",
+        "text": "Snake (select a type; adjust the number for level) - 1d4+1",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000110",
+        "type": "text",
+        "text": "Spectre - 1d3",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000111",
+        "type": "text",
+        "text": "Spider (select a type; adjust the number for level) - 1d4+1",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000112",
+        "type": "text",
+        "text": "Vampire - 1d2",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Encounters: Barren/Mountain/Hill, Desert, Settled (1d8)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d8",
+    "results": [
+      {
+        "_id": "enc0000000000121",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Human; Desert: Human; Settled: Castle (Subtable 10)",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000122",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Flyer; Desert: Flyer; Settled: Flyer",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000123",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Humanoid; Desert: Humanoid; Settled: Humanoid",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000124",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Unusual; Desert: Human; Settled: Human",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000125",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Animal; Desert: Animal; Settled: Human",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000126",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Humanoid; Desert: Dragon; Settled: Animal",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000127",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Dragon; Desert: Undead; Settled: Animal",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000128",
+        "type": "text",
+        "text": "Barren, Mountain, Hill: Dragon; Desert: Animal; Settled: Dragon",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Encounters: City, Ocean, Jungle (1d8)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d8",
+    "results": [
+      {
+        "_id": "enc0000000000129",
+        "type": "text",
+        "text": "City: Human; Ocean: Human; Jungle: Human",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000130",
+        "type": "text",
+        "text": "City: Undead; Ocean: Flyer; Jungle: Flyer",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000131",
+        "type": "text",
+        "text": "City: Humanoid; Ocean: Swimmer; Jungle: Insect",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000132",
+        "type": "text",
+        "text": "City: Human; Ocean: Swimmer; Jungle: Insect",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000133",
+        "type": "text",
+        "text": "City: Human; Ocean: Swimmer; Jungle: Humanoid",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000134",
+        "type": "text",
+        "text": "City: Human; Ocean: Swimmer; Jungle: Animal",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000135",
+        "type": "text",
+        "text": "City: Human; Ocean: Swimmer; Jungle: Animal",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000136",
+        "type": "text",
+        "text": "City: Special (Subtable 11); Ocean: Dragon; Jungle: Dragon",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Encounters: Clear/Grassland, Woods, River, Swamp (1d8)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d8",
+    "results": [
+      {
+        "_id": "enc0000000000113",
+        "type": "text",
+        "text": "Clear, Grassland: Human; Woods: Human; River: Human; Swamp: Human",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000114",
+        "type": "text",
+        "text": "Clear, Grassland: Flyer; Woods: Flyer; River: Flyer; Swamp: Flyer",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000115",
+        "type": "text",
+        "text": "Clear, Grassland: Humanoid; Woods: Humanoid; River: Humanoid; Swamp: Humanoid",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000116",
+        "type": "text",
+        "text": "Clear, Grassland: Animal; Woods: Insect; River: Insect; Swamp: Swimmer",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000117",
+        "type": "text",
+        "text": "Clear, Grassland: Animal; Woods: Unusual; River: Swimmer; Swamp: Undead",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000118",
+        "type": "text",
+        "text": "Clear, Grassland: Unusual; Woods: Animal; River: Swimmer; Swamp: Undead",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000119",
+        "type": "text",
+        "text": "Clear, Grassland: Dragon; Woods: Animal; River: Animal; Swamp: Insect",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000120",
+        "type": "text",
+        "text": "Clear, Grassland: Insect; Woods: Dragon; River: Dragon; Swamp: Dragon",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 1: Animals (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000137",
+        "type": "text",
+        "text": "Clear, Grassland: Animal Herd; Woods: Animal Herd; River: Animal Herd; Barren, Mountain, Hill: Animal Herd; Desert: Animal Herd; Settled: Animal Herd; Jungle: Animal Herd; Prehistoric: Bear, Cave",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000138",
+        "type": "text",
+        "text": "Clear, Grassland: Baboon, Rock; Woods: Boar; River: Boar; Barren, Mountain, Hill: Ape, Snow; Desert: Animal Herd; Settled: Animal Herd; Jungle: Boar; Prehistoric: Cat, Sabretooth",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000139",
+        "type": "text",
+        "text": "Clear, Grassland: Boar; Woods: Cat, Panther; River: Cat, Panther; Barren, Mountain, Hill: Ape, White; Desert: Camel; Settled: Boar; Jungle: Cat, Panther; Prehistoric: Crocodile, Giant",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000140",
+        "type": "text",
+        "text": "Clear, Grassland: Cat, Lion; Woods: Cat, Tiger; River: Cat, Tiger; Barren, Mountain, Hill: Baboon, Rock; Desert: Camel; Settled: Cat, Tiger; Jungle: Lizard, Draco; Prehistoric: Elephant, Mastodon",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000141",
+        "type": "text",
+        "text": "Clear, Grassland: Elephant; Woods: Lizard, Gecko; River: Crab, Giant; Barren, Mountain, Hill: Bear, Cave; Desert: Cat, Lion; Settled: Ferret, Giant; Jungle: Lizard, Gecko; Prehistoric: Pterodactyl",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000142",
+        "type": "text",
+        "text": "Clear, Grassland: Ferret, Giant; Woods: Lizard, Draco; River: Crocodile; Barren, Mountain, Hill: Bear, Grizzly; Desert: Cat, Lion; Settled: Horse, Riding; Jungle: Lizard, Horned; Prehistoric: Pteranodon",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000143",
+        "type": "text",
+        "text": "Clear, Grassland: Horse, Riding; Woods: Lizard, Tuatara; River: Crocodile, Large; Barren, Mountain, Hill: Cat, Mountain Lion; Desert: Lizard, Gecko; Settled: Rat, Giant; Jungle: Rat, Giant; Prehistoric: Snake, Racer",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000144",
+        "type": "text",
+        "text": "Clear, Grassland: Lizard, Draco; Woods: Snake, Viper; River: Fish, Rock; Barren, Mountain, Hill: Mule; Desert: Lizard, Tuatara; Settled: Shrew, Giant; Jungle: Shrew, Giant; Prehistoric: Snake, Viper",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000145",
+        "type": "text",
+        "text": "Clear, Grassland: Mule; Woods: Spider, Crab; River: Leech, Giant; Barren, Mountain, Hill: Snake, Viper; Desert: Snake, Viper; Settled: Snake, Racer; Jungle: Snake, Viper; Prehistoric: Triceratops",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000146",
+        "type": "text",
+        "text": "Clear, Grassland: Snake, Viper; Woods: Unicorn; River: Rat, Giant; Barren, Mountain, Hill: Snake, Rattler; Desert: Snake, Rattler; Settled: Snake, Viper; Jungle: Snake, Python; Prehistoric: Triceratops",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000147",
+        "type": "text",
+        "text": "Clear, Grassland: Snake, Rattler; Woods: Wolf; River: Shrew, Giant; Barren, Mountain, Hill: Wolf; Desert: Spider, Widow; Settled: Spider, Tarantella; Jungle: Snake, Spitting; Prehistoric: Tyrannosaurus",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000148",
+        "type": "text",
+        "text": "Clear, Grassland: Weasel, Giant; Woods: Wolf, Dire; River: Toad, Giant; Barren, Mountain, Hill: Wolf, Dire; Desert: Spider, Tarantella; Settled: Wolf; Jungle: Spider, Crab; Prehistoric: Wolf, Dire",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 2: Humanoids (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000149",
+        "type": "text",
+        "text": "Clear, Grassland: Bugbear; Woods: Bugbear; River: Bugbear; Swamp: Gnoll; Barren, Mountain, Hill: Dwarf; Desert: Giant, Fire; City and Inhabited: Dwarf; Jungle: Bugbear",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000150",
+        "type": "text",
+        "text": "Clear, Grassland: Elf; Woods: Cyclops; River: Elf; Swamp: Goblin; Barren, Mountain, Hill: Giant, Cloud; Desert: Goblin; City and Inhabited: Elf; Jungle: Cyclops",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000151",
+        "type": "text",
+        "text": "Clear, Grassland: Giant, Hill; Woods: Dryad; River: Gnoll; Swamp: Hobgoblin; Barren, Mountain, Hill: Giant, Frost; Desert: Hobgoblin; City and Inhabited: Giant, Hill; Jungle: Elf",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000152",
+        "type": "text",
+        "text": "Clear, Grassland: Gnoll; Woods: Elf; River: Hobgoblin; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Hill; Desert: Hobgoblin; City and Inhabited: Gnome; Jungle: Giant, Fire",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000153",
+        "type": "text",
+        "text": "Clear, Grassland: Goblin; Woods: Giant, Hill; River: Lizard Man; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Stone; Desert: Ogre; City and Inhabited: Gnoll; Jungle: Giant, Hill",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000154",
+        "type": "text",
+        "text": "Clear, Grassland: Halfling; Woods: Gnoll; River: Lizard Man; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Storm; Desert: Ogre; City and Inhabited: Goblin; Jungle: Gnoll",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000155",
+        "type": "text",
+        "text": "Clear, Grassland: Hobgoblin; Woods: Goblin; River: Nixie; Swamp: Nixie; Barren, Mountain, Hill: Gnome; Desert: Ogre; City and Inhabited: Halfling; Jungle: Goblin",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000156",
+        "type": "text",
+        "text": "Clear, Grassland: Ogre; Woods: Hobgoblin; River: Ogre; Swamp: Ogre; Barren, Mountain, Hill: Goblin; Desert: Orc; City and Inhabited: Hobgoblin; Jungle: Lizard Man",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000157",
+        "type": "text",
+        "text": "Clear, Grassland: Orc; Woods: Ogre; River: Orc; Swamp: Orc; Barren, Mountain, Hill: Kobold; Desert: Orc; City and Inhabited: Ogre; Jungle: Ogre",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000158",
+        "type": "text",
+        "text": "Clear, Grassland: Pixie; Woods: Orc; River: Sprite; Swamp: Troglodyte; Barren, Mountain, Hill: Orc; Desert: Pixie; City and Inhabited: Orc; Jungle: Orc",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000159",
+        "type": "text",
+        "text": "Clear, Grassland: Thoul; Woods: Thoul; River: Thoul; Swamp: Troll; Barren, Mountain, Hill: Troglodyte; Desert: Sprite; City and Inhabited: Pixie; Jungle: Troglodyte",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000160",
+        "type": "text",
+        "text": "Clear, Grassland: Troll; Woods: Troll; River: Troll; Swamp: Troll; Barren, Mountain, Hill: Troll; Desert: Thoul; City and Inhabited: Sprite; Jungle: Troll",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 3: Humans (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000161",
+        "type": "text",
+        "text": "Clear, Grassland: Adventurer; Woods: Adventurer; River: Adventurer; Hill: Adventurer; Desert: Adventurer; Settled: Acolyte; Ocean: Adventurer; Jungle: Adventurer; Swamp: Adventurer",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000162",
+        "type": "text",
+        "text": "Clear, Grassland: Bandit; Woods: Bandit; River: Bandit; Hill: Bandit; Desert: Cleric; Settled: Adventurer; Ocean: Buccaneer; Jungle: Adventurer; Swamp: Adventurer",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000163",
+        "type": "text",
+        "text": "Clear, Grassland: Bandit; Woods: Bandit; River: Buccaneer; Hill: Berserker; Desert: Dervish; Settled: Bandit; Ocean: Buccaneer; Jungle: Bandit; Swamp: Bandit",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000164",
+        "type": "text",
+        "text": "Clear, Grassland: Berserker; Woods: Berserker; River: Buccaneer; Hill: Berserker; Desert: Dervish; Settled: Bandit; Ocean: Merchant; Jungle: Berserker; Swamp: Bandit",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000165",
+        "type": "text",
+        "text": "Clear, Grassland: Brigand; Woods: Brigand; River: Buccaneer; Hill: Brigand; Desert: Fighter; Settled: Cleric; Ocean: Merchant; Jungle: Brigand; Swamp: Berserker",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000166",
+        "type": "text",
+        "text": "Clear, Grassland: Cleric; Woods: Brigand; River: Cleric; Hill: Caveman; Desert: Magic-User; Settled: Fighter; Ocean: Merchant; Jungle: Brigand; Swamp: Brigand",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000167",
+        "type": "text",
+        "text": "Clear, Grassland: Fighter; Woods: Brigand; River: Cleric; Hill: Caveman; Desert: Merchant; Settled: Magic-User; Ocean: Merchant; Jungle: Brigand; Swamp: Cleric",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000168",
+        "type": "text",
+        "text": "Clear, Grassland: Magic-User; Woods: Cleric; River: Fighter; Hill: Caveman; Desert: Noble; Settled: Merchant; Ocean: Merchant; Jungle: Caveman; Swamp: Fighter",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000169",
+        "type": "text",
+        "text": "Clear, Grassland: Merchant; Woods: Fighter; River: Magic-User; Hill: Cleric; Desert: Nomad; Settled: Noble; Ocean: Pirate; Jungle: Cleric; Swamp: Magic-User",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000170",
+        "type": "text",
+        "text": "Clear, Grassland: Merchant; Woods: Magic-User; River: Merchant; Hill: Fighter; Desert: Nomad; Settled: NPC Party; Ocean: Pirate; Jungle: Fighter; Swamp: Merchant",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000171",
+        "type": "text",
+        "text": "Clear, Grassland: Noble; Woods: Merchant; River: Merchant; Hill: Magic-User; Desert: Nomad; Settled: Trader; Ocean: Pirate; Jungle: Magic-User; Swamp: NPC Party",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000172",
+        "type": "text",
+        "text": "Clear, Grassland: Nomad; Woods: NPC Party; River: NPC Party; Hill: Merchant; Desert: Nomad; Settled: Veteran; Ocean: Pirate; Jungle: Merchant; Swamp: Trader",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 4: Flyers (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000173",
+        "type": "text",
+        "text": "Mountain: Bee, Giant; Desert: Gargoyle; All Other: Bee, Giant",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000174",
+        "type": "text",
+        "text": "Mountain: Gargoyle; Desert: Gargoyle; All Other: Cockatrice",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000175",
+        "type": "text",
+        "text": "Mountain: Griffon; Desert: Griffon; All Other: Gargoyle",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000176",
+        "type": "text",
+        "text": "Mountain: Harpy; Desert: Harpy; All Other: Griffon",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000177",
+        "type": "text",
+        "text": "Mountain: Hippogriff; Desert: Insect Swarm; All Other: Hippogriff",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000178",
+        "type": "text",
+        "text": "Mountain: Insect Swarm; Desert: Lizard, Draco; All Other: Lizard, Draco",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000179",
+        "type": "text",
+        "text": "Mountain: Manticore; Desert: Manticore; All Other: Pegasus",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000180",
+        "type": "text",
+        "text": "Mountain: Pegasus; Desert: Manticore; All Other: Pixie",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000181",
+        "type": "text",
+        "text": "Mountain: Robber Fly; Desert: Manticore; All Other: Robber Fly",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000182",
+        "type": "text",
+        "text": "Mountain: Roc, Small; Desert: Roc, Small; All Other: Roc, Small",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000183",
+        "type": "text",
+        "text": "Mountain: Roc, Large; Desert: Roc, Large; All Other: Sprite",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000184",
+        "type": "text",
+        "text": "Mountain: Roc, Giant; Desert: Roc, Giant; All Other: Stirge",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 5: Swimmers (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000185",
+        "type": "text",
+        "text": "River/Lake: Crab, Giant; Ocean: Giant, Storm; Swamp: Crab, Giant",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000186",
+        "type": "text",
+        "text": "River/Lake: Crocodile; Ocean: Hydra, Sea; Swamp: Crocodile",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000187",
+        "type": "text",
+        "text": "River/Lake: Crocodile, Large; Ocean: Hydra, Sea; Swamp: Crocodile",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000188",
+        "type": "text",
+        "text": "River/Lake: Fish, Giant Bass; Ocean: Hydra, Sea; Swamp: Crocodile, Large",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000189",
+        "type": "text",
+        "text": "River/Lake: Fish, Sturgeon; Ocean: Merman; Swamp: Crocodile, Large",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000190",
+        "type": "text",
+        "text": "River/Lake: Leech, Giant; Ocean: Snake, Sea; Swamp: Leech, Giant",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000191",
+        "type": "text",
+        "text": "River/Lake: Leech, Giant; Ocean: Snake, Sea; Swamp: Leech, Giant",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000192",
+        "type": "text",
+        "text": "River/Lake: Lizard Man; Ocean: Snake, Sea; Swamp: Leech, Giant",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000193",
+        "type": "text",
+        "text": "River/Lake: Lizard Man; Ocean: Snake, Sea; Swamp: Lizard Man",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000194",
+        "type": "text",
+        "text": "River/Lake: Merman; Ocean: Termite, Water; Swamp: Lizard Man",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000195",
+        "type": "text",
+        "text": "River/Lake: Nixie; Ocean: Termite, Water; Swamp: Termite, Water",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000196",
+        "type": "text",
+        "text": "River/Lake: Termite, Water; Ocean: Termite, Water; Swamp: Termite, Water",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 6: Dragons (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters",
+        "note": "At sea, roll 1d10 instead of 1d12."
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000197",
+        "type": "text",
+        "text": "Roll: Chimera",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000198",
+        "type": "text",
+        "text": "Roll: Dragon, Black",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000199",
+        "type": "text",
+        "text": "Roll: Dragon, Blue",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000200",
+        "type": "text",
+        "text": "Roll: Dragon, Gold",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000201",
+        "type": "text",
+        "text": "Roll: Dragon, Green",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000202",
+        "type": "text",
+        "text": "Roll: Dragon, Red",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000203",
+        "type": "text",
+        "text": "Roll: Dragon, White",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000204",
+        "type": "text",
+        "text": "Roll: Hydra",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000205",
+        "type": "text",
+        "text": "Roll: Hydra",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000206",
+        "type": "text",
+        "text": "Roll: Wyvern",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000207",
+        "type": "text",
+        "text": "Roll: Salamander, Flame",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000208",
+        "type": "text",
+        "text": "Roll: Salamander, Frost",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 7: Insects (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000209",
+        "type": "text",
+        "text": "Roll: Ant, Giant",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000210",
+        "type": "text",
+        "text": "Roll: Bee, Giant",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000211",
+        "type": "text",
+        "text": "Roll: Beetle, Fire",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000212",
+        "type": "text",
+        "text": "Roll: Beetle, Oil",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000213",
+        "type": "text",
+        "text": "Roll: Beetle, Tiger",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000214",
+        "type": "text",
+        "text": "Roll: Insect Swarm",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000215",
+        "type": "text",
+        "text": "Roll: Rhagodessa",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000216",
+        "type": "text",
+        "text": "Roll: Robber Fly",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000217",
+        "type": "text",
+        "text": "Roll: Scorpion, Giant",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000218",
+        "type": "text",
+        "text": "Roll: Spider, Black Widow",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000219",
+        "type": "text",
+        "text": "Roll: Spider, Crab",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000220",
+        "type": "text",
+        "text": "Roll: Spider, Tarantella",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 8: Undead (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000221",
+        "type": "text",
+        "text": "Roll: Ghoul",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000222",
+        "type": "text",
+        "text": "Roll: Ghoul",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000223",
+        "type": "text",
+        "text": "Roll: Ghoul",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000224",
+        "type": "text",
+        "text": "Roll: Mummy",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000225",
+        "type": "text",
+        "text": "Roll: Skeleton",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000226",
+        "type": "text",
+        "text": "Roll: Skeleton",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000227",
+        "type": "text",
+        "text": "Roll: Spectre",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000228",
+        "type": "text",
+        "text": "Roll: Wight",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000229",
+        "type": "text",
+        "text": "Roll: Wraith",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000230",
+        "type": "text",
+        "text": "Roll: Vampire",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000231",
+        "type": "text",
+        "text": "Roll: Zombie",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000232",
+        "type": "text",
+        "text": "Roll: Zombie",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 9: Unusual (1d12)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters"
+      }
+    },
+    "formula": "1d12",
+    "results": [
+      {
+        "_id": "enc0000000000233",
+        "type": "text",
+        "text": "Roll: Basilisk",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000234",
+        "type": "text",
+        "text": "Roll: Blink Dog",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000235",
+        "type": "text",
+        "text": "Roll: Centaur",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000236",
+        "type": "text",
+        "text": "Roll: Displacer Beast",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000237",
+        "type": "text",
+        "text": "Roll: Gorgon",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000238",
+        "type": "text",
+        "text": "Roll: Lycanthrope, Werebear",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000239",
+        "type": "text",
+        "text": "Roll: Lycanthrope, Wereboar",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000240",
+        "type": "text",
+        "text": "Roll: Lycanthrope, Wererat",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000241",
+        "type": "text",
+        "text": "Roll: Lycanthrope, Weretiger",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000242",
+        "type": "text",
+        "text": "Roll: Lycanthrope, Werewolf",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000243",
+        "type": "text",
+        "text": "Roll: Medusa",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000244",
+        "type": "text",
+        "text": "Roll: Treant",
         "range": [
           12,
           12

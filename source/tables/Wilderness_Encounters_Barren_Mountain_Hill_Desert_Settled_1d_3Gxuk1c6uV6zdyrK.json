@@ -1,0 +1,116 @@
+{
+  "_id": "3Gxuk1c6uV6zdyrK",
+  "_key": "!tables!3Gxuk1c6uV6zdyrK",
+  "name": "Wilderness Encounters: Barren/Mountain/Hill, Desert, Settled (1d8)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "AO_wlkTDXE81B4UM",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Human; Desert: Human; Settled: Castle (Subtable 10)",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.AO_wlkTDXE81B4UM"
+    },
+    {
+      "_id": "R2ErQocgiHl7ex0J",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Flyer; Desert: Flyer; Settled: Flyer",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.R2ErQocgiHl7ex0J"
+    },
+    {
+      "_id": "X-7KLcR288QpOb8r",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Humanoid; Desert: Humanoid; Settled: Humanoid",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.X-7KLcR288QpOb8r"
+    },
+    {
+      "_id": "pIgCL1kvLqDmF_D4",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Unusual; Desert: Human; Settled: Human",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.pIgCL1kvLqDmF_D4"
+    },
+    {
+      "_id": "Ljsz4UV8vQwO3Z4F",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Animal; Desert: Animal; Settled: Human",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.Ljsz4UV8vQwO3Z4F"
+    },
+    {
+      "_id": "iDDejFEUD69ypcSM",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Humanoid; Desert: Dragon; Settled: Animal",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.iDDejFEUD69ypcSM"
+    },
+    {
+      "_id": "xIm7gQpGYSctC9wf",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Dragon; Desert: Undead; Settled: Animal",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.xIm7gQpGYSctC9wf"
+    },
+    {
+      "_id": "F2v9ZHk7xDpEE9Hk",
+      "type": "text",
+      "text": "Barren, Mountain, Hill: Dragon; Desert: Animal; Settled: Dragon",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!3Gxuk1c6uV6zdyrK.F2v9ZHk7xDpEE9Hk"
+    }
+  ],
+  "formula": "1d8"
+}

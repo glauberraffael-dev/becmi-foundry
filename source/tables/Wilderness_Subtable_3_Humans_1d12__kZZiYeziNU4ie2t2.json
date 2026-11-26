@@ -1,0 +1,164 @@
+{
+  "_id": "kZZiYeziNU4ie2t2",
+  "_key": "!tables!kZZiYeziNU4ie2t2",
+  "name": "Wilderness Subtable 3: Humans (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "4gigEhiN9ZSdW2Pt",
+      "type": "text",
+      "text": "Clear, Grassland: Adventurer; Woods: Adventurer; River: Adventurer; Hill: Adventurer; Desert: Adventurer; Settled: Acolyte; Ocean: Adventurer; Jungle: Adventurer; Swamp: Adventurer",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.4gigEhiN9ZSdW2Pt"
+    },
+    {
+      "_id": "yiQLzcPQSgW3G9BV",
+      "type": "text",
+      "text": "Clear, Grassland: Bandit; Woods: Bandit; River: Bandit; Hill: Bandit; Desert: Cleric; Settled: Adventurer; Ocean: Buccaneer; Jungle: Adventurer; Swamp: Adventurer",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.yiQLzcPQSgW3G9BV"
+    },
+    {
+      "_id": "GigRKp6DOq8I1OIb",
+      "type": "text",
+      "text": "Clear, Grassland: Bandit; Woods: Bandit; River: Buccaneer; Hill: Berserker; Desert: Dervish; Settled: Bandit; Ocean: Buccaneer; Jungle: Bandit; Swamp: Bandit",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.GigRKp6DOq8I1OIb"
+    },
+    {
+      "_id": "mvIqZ0hDUf5PyqaZ",
+      "type": "text",
+      "text": "Clear, Grassland: Berserker; Woods: Berserker; River: Buccaneer; Hill: Berserker; Desert: Dervish; Settled: Bandit; Ocean: Merchant; Jungle: Berserker; Swamp: Bandit",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.mvIqZ0hDUf5PyqaZ"
+    },
+    {
+      "_id": "5e0bwMB-0nAe-FyL",
+      "type": "text",
+      "text": "Clear, Grassland: Brigand; Woods: Brigand; River: Buccaneer; Hill: Brigand; Desert: Fighter; Settled: Cleric; Ocean: Merchant; Jungle: Brigand; Swamp: Berserker",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.5e0bwMB-0nAe-FyL"
+    },
+    {
+      "_id": "psHoQ8CvR1jgpCni",
+      "type": "text",
+      "text": "Clear, Grassland: Cleric; Woods: Brigand; River: Cleric; Hill: Caveman; Desert: Magic-User; Settled: Fighter; Ocean: Merchant; Jungle: Brigand; Swamp: Brigand",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.psHoQ8CvR1jgpCni"
+    },
+    {
+      "_id": "oCOSTdDDfVgkD66s",
+      "type": "text",
+      "text": "Clear, Grassland: Fighter; Woods: Brigand; River: Cleric; Hill: Caveman; Desert: Merchant; Settled: Magic-User; Ocean: Merchant; Jungle: Brigand; Swamp: Cleric",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.oCOSTdDDfVgkD66s"
+    },
+    {
+      "_id": "Loltvj9N2a7FNh8m",
+      "type": "text",
+      "text": "Clear, Grassland: Magic-User; Woods: Cleric; River: Fighter; Hill: Caveman; Desert: Noble; Settled: Merchant; Ocean: Merchant; Jungle: Caveman; Swamp: Fighter",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.Loltvj9N2a7FNh8m"
+    },
+    {
+      "_id": "agYCn0ADkAdshMZ6",
+      "type": "text",
+      "text": "Clear, Grassland: Merchant; Woods: Fighter; River: Magic-User; Hill: Cleric; Desert: Nomad; Settled: Noble; Ocean: Pirate; Jungle: Cleric; Swamp: Magic-User",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.agYCn0ADkAdshMZ6"
+    },
+    {
+      "_id": "e0aZWlR2Z59L5lUt",
+      "type": "text",
+      "text": "Clear, Grassland: Merchant; Woods: Magic-User; River: Merchant; Hill: Fighter; Desert: Nomad; Settled: NPC Party; Ocean: Pirate; Jungle: Fighter; Swamp: Merchant",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.e0aZWlR2Z59L5lUt"
+    },
+    {
+      "_id": "u5novlGTfbgI7a8a",
+      "type": "text",
+      "text": "Clear, Grassland: Noble; Woods: Merchant; River: Merchant; Hill: Magic-User; Desert: Nomad; Settled: Trader; Ocean: Pirate; Jungle: Magic-User; Swamp: NPC Party",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.u5novlGTfbgI7a8a"
+    },
+    {
+      "_id": "5kOmQS25wNmE5yLb",
+      "type": "text",
+      "text": "Clear, Grassland: Nomad; Woods: NPC Party; River: NPC Party; Hill: Merchant; Desert: Nomad; Settled: Veteran; Ocean: Pirate; Jungle: Merchant; Swamp: Trader",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!kZZiYeziNU4ie2t2.5kOmQS25wNmE5yLb"
+    }
+  ],
+  "formula": "1d12"
+}

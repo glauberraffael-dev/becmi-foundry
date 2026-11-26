@@ -1,0 +1,164 @@
+{
+  "_id": "aOpEsU8hjmXzBsJf",
+  "_key": "!tables!aOpEsU8hjmXzBsJf",
+  "name": "Wilderness Subtable 7: Insects (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "m6rzb0hkW1gtGrab",
+      "type": "text",
+      "text": "Roll: Ant, Giant",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.m6rzb0hkW1gtGrab"
+    },
+    {
+      "_id": "TGir0rNfF08CXUU3",
+      "type": "text",
+      "text": "Roll: Bee, Giant",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.TGir0rNfF08CXUU3"
+    },
+    {
+      "_id": "vMNMJUD0k0C_FQBt",
+      "type": "text",
+      "text": "Roll: Beetle, Fire",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.vMNMJUD0k0C_FQBt"
+    },
+    {
+      "_id": "YPqZv6CLG8fFVs74",
+      "type": "text",
+      "text": "Roll: Beetle, Oil",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.YPqZv6CLG8fFVs74"
+    },
+    {
+      "_id": "UxuBgcFc4qnMmSlF",
+      "type": "text",
+      "text": "Roll: Beetle, Tiger",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.UxuBgcFc4qnMmSlF"
+    },
+    {
+      "_id": "qamCBGQOBJ2MBzwz",
+      "type": "text",
+      "text": "Roll: Insect Swarm",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.qamCBGQOBJ2MBzwz"
+    },
+    {
+      "_id": "iuEf7jzxhCyJSvLu",
+      "type": "text",
+      "text": "Roll: Rhagodessa",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.iuEf7jzxhCyJSvLu"
+    },
+    {
+      "_id": "hBfvTVD3MbRfu-7s",
+      "type": "text",
+      "text": "Roll: Robber Fly",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.hBfvTVD3MbRfu-7s"
+    },
+    {
+      "_id": "-6bswfMnYzc5T5Gt",
+      "type": "text",
+      "text": "Roll: Scorpion, Giant",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.-6bswfMnYzc5T5Gt"
+    },
+    {
+      "_id": "PpyV8-oWMvPHMTY1",
+      "type": "text",
+      "text": "Roll: Spider, Black Widow",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.PpyV8-oWMvPHMTY1"
+    },
+    {
+      "_id": "3Xy6guwc6weQ7q9Q",
+      "type": "text",
+      "text": "Roll: Spider, Crab",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.3Xy6guwc6weQ7q9Q"
+    },
+    {
+      "_id": "gCYVKE8IcYKC62Uq",
+      "type": "text",
+      "text": "Roll: Spider, Tarantella",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!aOpEsU8hjmXzBsJf.gCYVKE8IcYKC62Uq"
+    }
+  ],
+  "formula": "1d12"
+}

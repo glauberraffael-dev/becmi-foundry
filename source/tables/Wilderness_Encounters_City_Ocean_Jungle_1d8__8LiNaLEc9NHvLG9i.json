@@ -1,0 +1,116 @@
+{
+  "_id": "8LiNaLEc9NHvLG9i",
+  "_key": "!tables!8LiNaLEc9NHvLG9i",
+  "name": "Wilderness Encounters: City, Ocean, Jungle (1d8)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "BKBRNsJE8G__1maU",
+      "type": "text",
+      "text": "City: Human; Ocean: Human; Jungle: Human",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.BKBRNsJE8G__1maU"
+    },
+    {
+      "_id": "QyiKFiICHAUg-aTw",
+      "type": "text",
+      "text": "City: Undead; Ocean: Flyer; Jungle: Flyer",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.QyiKFiICHAUg-aTw"
+    },
+    {
+      "_id": "ZD7hPZeCRocoFD2p",
+      "type": "text",
+      "text": "City: Humanoid; Ocean: Swimmer; Jungle: Insect",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.ZD7hPZeCRocoFD2p"
+    },
+    {
+      "_id": "xLZpZQA-OskUj9wS",
+      "type": "text",
+      "text": "City: Human; Ocean: Swimmer; Jungle: Insect",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.xLZpZQA-OskUj9wS"
+    },
+    {
+      "_id": "5nvNVhJilxEVY-XF",
+      "type": "text",
+      "text": "City: Human; Ocean: Swimmer; Jungle: Humanoid",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.5nvNVhJilxEVY-XF"
+    },
+    {
+      "_id": "9POAEuQRbDmYMM13",
+      "type": "text",
+      "text": "City: Human; Ocean: Swimmer; Jungle: Animal",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.9POAEuQRbDmYMM13"
+    },
+    {
+      "_id": "tNv40-MqgxzLioRk",
+      "type": "text",
+      "text": "City: Human; Ocean: Swimmer; Jungle: Animal",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.tNv40-MqgxzLioRk"
+    },
+    {
+      "_id": "O8OFrNjA1npkoUgo",
+      "type": "text",
+      "text": "City: Special (Subtable 11); Ocean: Dragon; Jungle: Dragon",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!8LiNaLEc9NHvLG9i.O8OFrNjA1npkoUgo"
+    }
+  ],
+  "formula": "1d8"
+}

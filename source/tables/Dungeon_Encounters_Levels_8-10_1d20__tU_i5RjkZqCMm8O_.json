@@ -1,0 +1,236 @@
+{
+  "_id": "tU_i5RjkZqCMm8O_",
+  "_key": "!tables!tU_i5RjkZqCMm8O_",
+  "name": "Dungeon Encounters Levels 8-10 (1d20)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Dungeon Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67c22146c87ff0fe",
+  "results": [
+    {
+      "_id": "c6ta9q2aqOLh96Rc",
+      "type": "text",
+      "text": "Basilisk - 1d6",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.c6ta9q2aqOLh96Rc"
+    },
+    {
+      "_id": "SUXiiKiBFlqDTFfB",
+      "type": "text",
+      "text": "Black Pudding - 1",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.SUXiiKiBFlqDTFfB"
+    },
+    {
+      "_id": "PlGxRo2nAx9rIfIt",
+      "type": "text",
+      "text": "Chimera - 1",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.PlGxRo2nAx9rIfIt"
+    },
+    {
+      "_id": "sIkXR6yX9s0kzMLx",
+      "type": "text",
+      "text": "Devil Swine - 1d2",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.sIkXR6yX9s0kzMLx"
+    },
+    {
+      "_id": "Xhx708RvnTCSvAp9",
+      "type": "text",
+      "text": "Dragon - 1d2",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.Xhx708RvnTCSvAp9"
+    },
+    {
+      "_id": "glTnO_goeHMJRdD3",
+      "type": "text",
+      "text": "Giant (select a type; adjust the number for level) - 1d6",
+      "range": [
+        6,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.glTnO_goeHMJRdD3"
+    },
+    {
+      "_id": "ltnG0zqGEuRRXVgf",
+      "type": "text",
+      "text": "Golem (select a type; adjust the number for level) - 1",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.ltnG0zqGEuRRXVgf"
+    },
+    {
+      "_id": "ZWygL44xBxNmI41M",
+      "type": "text",
+      "text": "Hydra (7-12 heads) - 1",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.ZWygL44xBxNmI41M"
+    },
+    {
+      "_id": "G-dT3_QAtFZrgAMG",
+      "type": "text",
+      "text": "Living Statue (select a type; adjust the number for level) - 1d4+1",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.G-dT3_QAtFZrgAMG"
+    },
+    {
+      "_id": "_NU8GbfomB0UvYX2",
+      "type": "text",
+      "text": "Lycanthrope (select a type; adjust the number for level) - 1d6+1",
+      "range": [
+        11,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_._NU8GbfomB0UvYX2"
+    },
+    {
+      "_id": "HBiuvPXNzPs4R_6p",
+      "type": "text",
+      "text": "NPC Party - 1",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.HBiuvPXNzPs4R_6p"
+    },
+    {
+      "_id": "5jGZZLl9wKhjZ1x0",
+      "type": "text",
+      "text": "Purple Worm - 1",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.5jGZZLl9wKhjZ1x0"
+    },
+    {
+      "_id": "987V-OaU1X07BvkS",
+      "type": "text",
+      "text": "Rust Monster - 1d4+1",
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.987V-OaU1X07BvkS"
+    },
+    {
+      "_id": "VZonrUF-erDf_CP5",
+      "type": "text",
+      "text": "Salamander (select a type; adjust the number for level) - 1d4",
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.VZonrUF-erDf_CP5"
+    },
+    {
+      "_id": "wuqU-0JAhyvTO_EO",
+      "type": "text",
+      "text": "Snake (select a type; adjust the number for level) - 1d4+1",
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.wuqU-0JAhyvTO_EO"
+    },
+    {
+      "_id": "TgFIQAMN0kvU4nBp",
+      "type": "text",
+      "text": "Spectre - 1d3",
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.TgFIQAMN0kvU4nBp"
+    },
+    {
+      "_id": "CUDYNyTmHPPhMTar",
+      "type": "text",
+      "text": "Spider (select a type; adjust the number for level) - 1d4+1",
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.CUDYNyTmHPPhMTar"
+    },
+    {
+      "_id": "hMNeVZ26I9Xs_tRH",
+      "type": "text",
+      "text": "Vampire - 1d2",
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!tU_i5RjkZqCMm8O_.hMNeVZ26I9Xs_tRH"
+    }
+  ],
+  "formula": "1d20"
+}

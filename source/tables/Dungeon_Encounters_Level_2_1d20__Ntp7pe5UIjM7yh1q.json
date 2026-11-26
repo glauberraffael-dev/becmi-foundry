@@ -1,0 +1,236 @@
+{
+  "_id": "Ntp7pe5UIjM7yh1q",
+  "_key": "!tables!Ntp7pe5UIjM7yh1q",
+  "name": "Dungeon Encounters Level 2 (1d20)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Dungeon Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67c22146c87ff0fe",
+  "results": [
+    {
+      "_id": "nMSsxEB7hJN6dYRC",
+      "type": "text",
+      "text": "Beetle, Oil - 1d6",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.nMSsxEB7hJN6dYRC"
+    },
+    {
+      "_id": "cWmw5rfAkNS-hBt1",
+      "type": "text",
+      "text": "Carrion Crawler - 1",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.cWmw5rfAkNS-hBt1"
+    },
+    {
+      "_id": "3GUIdmGSfYtclXcw",
+      "type": "text",
+      "text": "Ghoul - 1d4",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.3GUIdmGSfYtclXcw"
+    },
+    {
+      "_id": "o-ZMVy3jhis0A9b9",
+      "type": "text",
+      "text": "Gnoll - 1d4",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.o-ZMVy3jhis0A9b9"
+    },
+    {
+      "_id": "rKFYN9CGxoal_5DL",
+      "type": "text",
+      "text": "Goblin - 2d4",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.rKFYN9CGxoal_5DL"
+    },
+    {
+      "_id": "ZXYfPn-U1gnUVrxA",
+      "type": "text",
+      "text": "Gray Ooze - 1",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.ZXYfPn-U1gnUVrxA"
+    },
+    {
+      "_id": "Qk5WaTHWkCy5SlM5",
+      "type": "text",
+      "text": "Hobgoblin - 1d6",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.Qk5WaTHWkCy5SlM5"
+    },
+    {
+      "_id": "tuTk2512pDpruxvI",
+      "type": "text",
+      "text": "Human - 1d3",
+      "range": [
+        8,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.tuTk2512pDpruxvI"
+    },
+    {
+      "_id": "UtkohWB3ja61PTyb",
+      "type": "text",
+      "text": "Lizard, Draco - 1",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.UtkohWB3ja61PTyb"
+    },
+    {
+      "_id": "1yiI0JSaToEKel4n",
+      "type": "text",
+      "text": "Lizard Man - 1d6",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.1yiI0JSaToEKel4n"
+    },
+    {
+      "_id": "7ftv06Pn75_FrF2f",
+      "type": "text",
+      "text": "Neanderthal - 2d4",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.7ftv06Pn75_FrF2f"
+    },
+    {
+      "_id": "EKwY5TmzrjFQ7vmp",
+      "type": "text",
+      "text": "NPC Party - 1 party",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.EKwY5TmzrjFQ7vmp"
+    },
+    {
+      "_id": "gQtcW92Er4tadP86",
+      "type": "text",
+      "text": "Orc - 1d10",
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.gQtcW92Er4tadP86"
+    },
+    {
+      "_id": "qBsZRqK1UQTO7ahS",
+      "type": "text",
+      "text": "Skeleton - 2d6",
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.qBsZRqK1UQTO7ahS"
+    },
+    {
+      "_id": "CU1zKmUXQiOqJWFs",
+      "type": "text",
+      "text": "Snake, Pit Viper - 1d6",
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.CU1zKmUXQiOqJWFs"
+    },
+    {
+      "_id": "v-MmL1Fgpcq6epZn",
+      "type": "text",
+      "text": "Spider, Black Widow - 1",
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.v-MmL1Fgpcq6epZn"
+    },
+    {
+      "_id": "PTd9lGf-6Xfk6y9U",
+      "type": "text",
+      "text": "Troglodyte - 1d6",
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.PTd9lGf-6Xfk6y9U"
+    },
+    {
+      "_id": "U0c-jYfxOzno7-3R",
+      "type": "text",
+      "text": "Zombie - 1d6",
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!Ntp7pe5UIjM7yh1q.U0c-jYfxOzno7-3R"
+    }
+  ],
+  "formula": "1d20"
+}

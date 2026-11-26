@@ -1,0 +1,13 @@
+{
+  "_id": "67c22146c87ff0fe",
+  "_key": "!folders!67c22146c87ff0fe",
+  "name": "Dungeon Encounters",
+  "type": "RollTable",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

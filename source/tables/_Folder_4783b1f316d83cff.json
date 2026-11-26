@@ -1,0 +1,13 @@
+{
+  "_id": "4783b1f316d83cff",
+  "_key": "!folders!4783b1f316d83cff",
+  "name": "Wilderness Encounters",
+  "type": "RollTable",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

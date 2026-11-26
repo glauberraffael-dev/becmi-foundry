@@ -7,6 +7,7 @@
 import { ClassicLevel } from "classic-level";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ENCOUNTER_TABLES, REACTION_TABLE } from "./encounter-tables.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const packs = process.argv.slice(2).length ? process.argv.slice(2) : ["tables", "journals"];
@@ -53,16 +54,26 @@ for (const pack of packs) {
   }
 
   if (pack === "tables") {
-    // Only tables with an explicit die instruction are RollTables. All static
-    // reference tables live as text pages in the journals compendium.
-    if (docs.length !== 1 || docs[0].name !== "Monster Reactions (2d6)") {
-      throw new Error(`tables: expected only the 2d6 reaction table, found ${docs.map((d) => d.name).join(", ")}`);
+    const expected = [REACTION_TABLE, ...ENCOUNTER_TABLES];
+    if (docs.length !== expected.length) {
+      throw new Error(`tables: expected ${expected.length} documents, found ${docs.length}`);
     }
-    const table = docs[0];
-    if (table.formula !== "2d6") throw new Error("tables: Monster Reactions must roll 2d6");
-    const results = embedded.filter(([key]) => key.startsWith(`!tables.results!${table._id}.`)).length;
-    if (results !== 11) throw new Error(`tables: expected 11 reaction results, found ${results}`);
-    console.log(`  ${table.name}: ${results} results (${table.formula})`);
+    for (const wanted of expected) {
+      const table = docs.find((doc) => doc.name === wanted.name);
+      if (!table) throw new Error(`tables: missing ${wanted.name}`);
+      if (table.formula !== wanted.formula) {
+        throw new Error(`tables: ${wanted.name} must roll ${wanted.formula}, found ${table.formula}`);
+      }
+      const results = embedded.filter(([key]) =>
+        key.startsWith(`!tables.results!${table._id}.`)).length;
+      if (results !== wanted.results.length) {
+        throw new Error(`tables: ${wanted.name} expected ${wanted.results.length} results, found ${results}`);
+      }
+      console.log(`  ${table.name}: ${results} results (${table.formula})`);
+    }
+    for (const folder of ["Reactions", "Dungeon Encounters", "Wilderness Encounters"]) {
+      if (!folders.includes(folder)) throw new Error(`tables: missing folder ${folder}`);
+    }
   }
 
   if (pack === "journals") {

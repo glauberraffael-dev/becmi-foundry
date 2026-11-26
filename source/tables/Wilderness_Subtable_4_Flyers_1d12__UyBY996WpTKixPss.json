@@ -1,0 +1,164 @@
+{
+  "_id": "UyBY996WpTKixPss",
+  "_key": "!tables!UyBY996WpTKixPss",
+  "name": "Wilderness Subtable 4: Flyers (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "CmADw4iViDGK3p4k",
+      "type": "text",
+      "text": "Mountain: Bee, Giant; Desert: Gargoyle; All Other: Bee, Giant",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.CmADw4iViDGK3p4k"
+    },
+    {
+      "_id": "7hPkA7coLpqWTuaf",
+      "type": "text",
+      "text": "Mountain: Gargoyle; Desert: Gargoyle; All Other: Cockatrice",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.7hPkA7coLpqWTuaf"
+    },
+    {
+      "_id": "vtQjxTSGddh5gWWo",
+      "type": "text",
+      "text": "Mountain: Griffon; Desert: Griffon; All Other: Gargoyle",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.vtQjxTSGddh5gWWo"
+    },
+    {
+      "_id": "akjetPWYe4o2IqGn",
+      "type": "text",
+      "text": "Mountain: Harpy; Desert: Harpy; All Other: Griffon",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.akjetPWYe4o2IqGn"
+    },
+    {
+      "_id": "QPEIDNUGJLhFc2Fd",
+      "type": "text",
+      "text": "Mountain: Hippogriff; Desert: Insect Swarm; All Other: Hippogriff",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.QPEIDNUGJLhFc2Fd"
+    },
+    {
+      "_id": "WAreJgPMlKbyVDZe",
+      "type": "text",
+      "text": "Mountain: Insect Swarm; Desert: Lizard, Draco; All Other: Lizard, Draco",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.WAreJgPMlKbyVDZe"
+    },
+    {
+      "_id": "xGCRlWasXb-LeQmB",
+      "type": "text",
+      "text": "Mountain: Manticore; Desert: Manticore; All Other: Pegasus",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.xGCRlWasXb-LeQmB"
+    },
+    {
+      "_id": "6wD39SZXL2TXTA3U",
+      "type": "text",
+      "text": "Mountain: Pegasus; Desert: Manticore; All Other: Pixie",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.6wD39SZXL2TXTA3U"
+    },
+    {
+      "_id": "Q9pmQPK2FrPWZI9K",
+      "type": "text",
+      "text": "Mountain: Robber Fly; Desert: Manticore; All Other: Robber Fly",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.Q9pmQPK2FrPWZI9K"
+    },
+    {
+      "_id": "SppJMI_T2iqQSqRK",
+      "type": "text",
+      "text": "Mountain: Roc, Small; Desert: Roc, Small; All Other: Roc, Small",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.SppJMI_T2iqQSqRK"
+    },
+    {
+      "_id": "hk4GDMi-nO66SH60",
+      "type": "text",
+      "text": "Mountain: Roc, Large; Desert: Roc, Large; All Other: Sprite",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.hk4GDMi-nO66SH60"
+    },
+    {
+      "_id": "z73cg7zfW7pQvJH_",
+      "type": "text",
+      "text": "Mountain: Roc, Giant; Desert: Roc, Giant; All Other: Stirge",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!UyBY996WpTKixPss.z73cg7zfW7pQvJH_"
+    }
+  ],
+  "formula": "1d12"
+}

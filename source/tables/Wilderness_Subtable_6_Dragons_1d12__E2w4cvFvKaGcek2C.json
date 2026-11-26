@@ -1,0 +1,165 @@
+{
+  "_id": "E2w4cvFvKaGcek2C",
+  "_key": "!tables!E2w4cvFvKaGcek2C",
+  "name": "Wilderness Subtable 6: Dragons (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters",
+      "note": "At sea, roll 1d10 instead of 1d12."
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "4cby5bjmg7tF9bQK",
+      "type": "text",
+      "text": "Roll: Chimera",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.4cby5bjmg7tF9bQK"
+    },
+    {
+      "_id": "EZFgs4DTaOb_zG-q",
+      "type": "text",
+      "text": "Roll: Dragon, Black",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.EZFgs4DTaOb_zG-q"
+    },
+    {
+      "_id": "UzXgpr6Niamv1VXw",
+      "type": "text",
+      "text": "Roll: Dragon, Blue",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.UzXgpr6Niamv1VXw"
+    },
+    {
+      "_id": "_n6oGsmra141zISk",
+      "type": "text",
+      "text": "Roll: Dragon, Gold",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C._n6oGsmra141zISk"
+    },
+    {
+      "_id": "kssMoSAIbjEKzd9g",
+      "type": "text",
+      "text": "Roll: Dragon, Green",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.kssMoSAIbjEKzd9g"
+    },
+    {
+      "_id": "MOWX8b40bc7oWICI",
+      "type": "text",
+      "text": "Roll: Dragon, Red",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.MOWX8b40bc7oWICI"
+    },
+    {
+      "_id": "40RjyCHYy5Y_bpvF",
+      "type": "text",
+      "text": "Roll: Dragon, White",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.40RjyCHYy5Y_bpvF"
+    },
+    {
+      "_id": "n5SOQbnsdIDuxYeT",
+      "type": "text",
+      "text": "Roll: Hydra",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.n5SOQbnsdIDuxYeT"
+    },
+    {
+      "_id": "oxdUBXNOdxXTSMWd",
+      "type": "text",
+      "text": "Roll: Hydra",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.oxdUBXNOdxXTSMWd"
+    },
+    {
+      "_id": "WCULgqP5Gz-XJfT7",
+      "type": "text",
+      "text": "Roll: Wyvern",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.WCULgqP5Gz-XJfT7"
+    },
+    {
+      "_id": "s7QFfDLYp8y4xbuN",
+      "type": "text",
+      "text": "Roll: Salamander, Flame",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C.s7QFfDLYp8y4xbuN"
+    },
+    {
+      "_id": "_wg_YSq0eUdhbLbt",
+      "type": "text",
+      "text": "Roll: Salamander, Frost",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!E2w4cvFvKaGcek2C._wg_YSq0eUdhbLbt"
+    }
+  ],
+  "formula": "1d12"
+}

@@ -53,5 +53,10 @@
     { "key": "Miscellaneous Magical Items", "name": "Miscellaneous Magical Items", "type": "Item" },
     { "key": "Missile Talents", "name": "Missile Talents", "type": "Item" },
     { "key": "Magic Item Enchantment Rules", "name": "Magic Item Enchantment Rules", "type": "Item" }
+  ],
+  "tables": [
+    { "key": "tables:Reactions", "name": "Reactions", "type": "RollTable" },
+    { "key": "tables:Dungeon Encounters", "name": "Dungeon Encounters", "type": "RollTable" },
+    { "key": "tables:Wilderness Encounters", "name": "Wilderness Encounters", "type": "RollTable" }
   ]
 }

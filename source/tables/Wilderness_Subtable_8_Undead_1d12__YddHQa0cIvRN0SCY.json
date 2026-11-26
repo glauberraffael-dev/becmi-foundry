@@ -1,0 +1,164 @@
+{
+  "_id": "YddHQa0cIvRN0SCY",
+  "_key": "!tables!YddHQa0cIvRN0SCY",
+  "name": "Wilderness Subtable 8: Undead (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "wRBZSsvjUYdWPM7k",
+      "type": "text",
+      "text": "Roll: Ghoul",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.wRBZSsvjUYdWPM7k"
+    },
+    {
+      "_id": "DhIUtrkm1sIrqIyt",
+      "type": "text",
+      "text": "Roll: Ghoul",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.DhIUtrkm1sIrqIyt"
+    },
+    {
+      "_id": "F-WgKkBNL0cSeJ6t",
+      "type": "text",
+      "text": "Roll: Ghoul",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.F-WgKkBNL0cSeJ6t"
+    },
+    {
+      "_id": "WUWJ_henbtljLrUh",
+      "type": "text",
+      "text": "Roll: Mummy",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.WUWJ_henbtljLrUh"
+    },
+    {
+      "_id": "Em20gux3HXojJU8A",
+      "type": "text",
+      "text": "Roll: Skeleton",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.Em20gux3HXojJU8A"
+    },
+    {
+      "_id": "bMb0pEx1hr9uxDK5",
+      "type": "text",
+      "text": "Roll: Skeleton",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.bMb0pEx1hr9uxDK5"
+    },
+    {
+      "_id": "hKOJMzuVW8zJ2lEK",
+      "type": "text",
+      "text": "Roll: Spectre",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.hKOJMzuVW8zJ2lEK"
+    },
+    {
+      "_id": "sCRBtEy92xDmqODp",
+      "type": "text",
+      "text": "Roll: Wight",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.sCRBtEy92xDmqODp"
+    },
+    {
+      "_id": "4tY37FmlU5et8T6P",
+      "type": "text",
+      "text": "Roll: Wraith",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.4tY37FmlU5et8T6P"
+    },
+    {
+      "_id": "R1Hv-8aFwmN8a5Fy",
+      "type": "text",
+      "text": "Roll: Vampire",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.R1Hv-8aFwmN8a5Fy"
+    },
+    {
+      "_id": "EiNg6HwJRtEFvmIQ",
+      "type": "text",
+      "text": "Roll: Zombie",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.EiNg6HwJRtEFvmIQ"
+    },
+    {
+      "_id": "T0_X0dyVmrREsw66",
+      "type": "text",
+      "text": "Roll: Zombie",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!YddHQa0cIvRN0SCY.T0_X0dyVmrREsw66"
+    }
+  ],
+  "formula": "1d12"
+}

@@ -1,0 +1,260 @@
+{
+  "_id": "x8L51H0qT19jI33Q",
+  "_key": "!tables!x8L51H0qT19jI33Q",
+  "name": "Dungeon Encounters Levels 4-5 (1d20)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Dungeon Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67c22146c87ff0fe",
+  "results": [
+    {
+      "_id": "dSx9xNGSQLfATcEm",
+      "type": "text",
+      "text": "Blink Dog - 1d4",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.dSx9xNGSQLfATcEm"
+    },
+    {
+      "_id": "-4WPwEY78rQ9pF6i",
+      "type": "text",
+      "text": "Bugbear - 1d6+4",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.-4WPwEY78rQ9pF6i"
+    },
+    {
+      "_id": "WxInnOERxC6_qJqB",
+      "type": "text",
+      "text": "Caecilia - 1",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.WxInnOERxC6_qJqB"
+    },
+    {
+      "_id": "FlFfmx96Is5J1YRw",
+      "type": "text",
+      "text": "Cockatrice - 1d2",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.FlFfmx96Is5J1YRw"
+    },
+    {
+      "_id": "Gh6qTBc66jtaBnMI",
+      "type": "text",
+      "text": "Displacer Beast - 1",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.Gh6qTBc66jtaBnMI"
+    },
+    {
+      "_id": "5cm5C707Wb5cr8tr",
+      "type": "text",
+      "text": "Gargoyle - 1d4+1",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.5cm5C707Wb5cr8tr"
+    },
+    {
+      "_id": "zBUjj4S8S3j_JH2F",
+      "type": "text",
+      "text": "Giant, Hill - 1",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.zBUjj4S8S3j_JH2F"
+    },
+    {
+      "_id": "8AD8l2WrFRzAjetx",
+      "type": "text",
+      "text": "Harpy - 1d4+1",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.8AD8l2WrFRzAjetx"
+    },
+    {
+      "_id": "f_IHgqPng17TvO08",
+      "type": "text",
+      "text": "Hellhound (1d3+2 HD) - 1d4",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.f_IHgqPng17TvO08"
+    },
+    {
+      "_id": "iLZkUF-bHugiQy8E",
+      "type": "text",
+      "text": "Hydra (5-headed) - 1",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.iLZkUF-bHugiQy8E"
+    },
+    {
+      "_id": "iKj5bC5ixYm9kP08",
+      "type": "text",
+      "text": "Lycanthrope, Werewolf - 1d4",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.iKj5bC5ixYm9kP08"
+    },
+    {
+      "_id": "py9QRgWkfzS2YnuP",
+      "type": "text",
+      "text": "Medusa - 1d2",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.py9QRgWkfzS2YnuP"
+    },
+    {
+      "_id": "mDOAxNjkLgQYRbVI",
+      "type": "text",
+      "text": "Mummy - 1d3",
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.mDOAxNjkLgQYRbVI"
+    },
+    {
+      "_id": "omrgCfUsfIicWeT2",
+      "type": "text",
+      "text": "NPC Party - 1",
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.omrgCfUsfIicWeT2"
+    },
+    {
+      "_id": "sGz2zQlnP1URk5ev",
+      "type": "text",
+      "text": "Ochre Jelly - 1",
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.sGz2zQlnP1URk5ev"
+    },
+    {
+      "_id": "Cj6CrRGK79s4SvFs",
+      "type": "text",
+      "text": "Rhagodessa - 1d3",
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.Cj6CrRGK79s4SvFs"
+    },
+    {
+      "_id": "mZBViJwQS-nNm2I8",
+      "type": "text",
+      "text": "Rust Monster - 1d2",
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.mZBViJwQS-nNm2I8"
+    },
+    {
+      "_id": "pzb82wgW98jlglND",
+      "type": "text",
+      "text": "Scorpion, Giant - 1d3",
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.pzb82wgW98jlglND"
+    },
+    {
+      "_id": "xNpTe6NvkICCAFHn",
+      "type": "text",
+      "text": "Troll - 1d2",
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.xNpTe6NvkICCAFHn"
+    },
+    {
+      "_id": "Y2xvStBUYxZo7TYB",
+      "type": "text",
+      "text": "Wraith - 1d2",
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!x8L51H0qT19jI33Q.Y2xvStBUYxZo7TYB"
+    }
+  ],
+  "formula": "1d20"
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "42d420d38737de89",
+  "_key": "!folders!42d420d38737de89",
+  "name": "Reactions",
+  "type": "RollTable",
+  "parent": null,
+  "sorting": "m",
+  "color": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

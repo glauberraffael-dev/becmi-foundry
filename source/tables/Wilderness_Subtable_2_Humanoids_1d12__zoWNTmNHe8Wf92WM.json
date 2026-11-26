@@ -1,0 +1,164 @@
+{
+  "_id": "zoWNTmNHe8Wf92WM",
+  "_key": "!tables!zoWNTmNHe8Wf92WM",
+  "name": "Wilderness Subtable 2: Humanoids (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "Y3g59MMTPkFbWWQA",
+      "type": "text",
+      "text": "Clear, Grassland: Bugbear; Woods: Bugbear; River: Bugbear; Swamp: Gnoll; Barren, Mountain, Hill: Dwarf; Desert: Giant, Fire; City and Inhabited: Dwarf; Jungle: Bugbear",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.Y3g59MMTPkFbWWQA"
+    },
+    {
+      "_id": "Yp_-a0vojjvgPLuu",
+      "type": "text",
+      "text": "Clear, Grassland: Elf; Woods: Cyclops; River: Elf; Swamp: Goblin; Barren, Mountain, Hill: Giant, Cloud; Desert: Goblin; City and Inhabited: Elf; Jungle: Cyclops",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.Yp_-a0vojjvgPLuu"
+    },
+    {
+      "_id": "6ixa7DV0Mrae-X_V",
+      "type": "text",
+      "text": "Clear, Grassland: Giant, Hill; Woods: Dryad; River: Gnoll; Swamp: Hobgoblin; Barren, Mountain, Hill: Giant, Frost; Desert: Hobgoblin; City and Inhabited: Giant, Hill; Jungle: Elf",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.6ixa7DV0Mrae-X_V"
+    },
+    {
+      "_id": "OmyhGFl3ECnkNpiP",
+      "type": "text",
+      "text": "Clear, Grassland: Gnoll; Woods: Elf; River: Hobgoblin; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Hill; Desert: Hobgoblin; City and Inhabited: Gnome; Jungle: Giant, Fire",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.OmyhGFl3ECnkNpiP"
+    },
+    {
+      "_id": "dhZG3XHFKZA7V4J1",
+      "type": "text",
+      "text": "Clear, Grassland: Goblin; Woods: Giant, Hill; River: Lizard Man; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Stone; Desert: Ogre; City and Inhabited: Gnoll; Jungle: Giant, Hill",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.dhZG3XHFKZA7V4J1"
+    },
+    {
+      "_id": "9mg64Vjmo2P3Fu0-",
+      "type": "text",
+      "text": "Clear, Grassland: Halfling; Woods: Gnoll; River: Lizard Man; Swamp: Lizard Man; Barren, Mountain, Hill: Giant, Storm; Desert: Ogre; City and Inhabited: Goblin; Jungle: Gnoll",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.9mg64Vjmo2P3Fu0-"
+    },
+    {
+      "_id": "kLz9Of3Hv0AbNL17",
+      "type": "text",
+      "text": "Clear, Grassland: Hobgoblin; Woods: Goblin; River: Nixie; Swamp: Nixie; Barren, Mountain, Hill: Gnome; Desert: Ogre; City and Inhabited: Halfling; Jungle: Goblin",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.kLz9Of3Hv0AbNL17"
+    },
+    {
+      "_id": "d-fWxBZmqoOsHYZT",
+      "type": "text",
+      "text": "Clear, Grassland: Ogre; Woods: Hobgoblin; River: Ogre; Swamp: Ogre; Barren, Mountain, Hill: Goblin; Desert: Orc; City and Inhabited: Hobgoblin; Jungle: Lizard Man",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.d-fWxBZmqoOsHYZT"
+    },
+    {
+      "_id": "zdeyvjprWYwlk6Ll",
+      "type": "text",
+      "text": "Clear, Grassland: Orc; Woods: Ogre; River: Orc; Swamp: Orc; Barren, Mountain, Hill: Kobold; Desert: Orc; City and Inhabited: Ogre; Jungle: Ogre",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.zdeyvjprWYwlk6Ll"
+    },
+    {
+      "_id": "ytqxQhAWQpeGQEIH",
+      "type": "text",
+      "text": "Clear, Grassland: Pixie; Woods: Orc; River: Sprite; Swamp: Troglodyte; Barren, Mountain, Hill: Orc; Desert: Pixie; City and Inhabited: Orc; Jungle: Orc",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.ytqxQhAWQpeGQEIH"
+    },
+    {
+      "_id": "xFD6zpeEf8ZrYv1K",
+      "type": "text",
+      "text": "Clear, Grassland: Thoul; Woods: Thoul; River: Thoul; Swamp: Troll; Barren, Mountain, Hill: Troglodyte; Desert: Sprite; City and Inhabited: Pixie; Jungle: Troglodyte",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.xFD6zpeEf8ZrYv1K"
+    },
+    {
+      "_id": "dZPXRZLWo0qkp8L7",
+      "type": "text",
+      "text": "Clear, Grassland: Troll; Woods: Troll; River: Troll; Swamp: Troll; Barren, Mountain, Hill: Troll; Desert: Thoul; City and Inhabited: Sprite; Jungle: Troll",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!zoWNTmNHe8Wf92WM.dZPXRZLWo0qkp8L7"
+    }
+  ],
+  "formula": "1d12"
+}

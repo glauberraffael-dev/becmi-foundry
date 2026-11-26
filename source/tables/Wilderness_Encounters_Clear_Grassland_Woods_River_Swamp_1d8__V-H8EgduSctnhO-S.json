@@ -1,0 +1,116 @@
+{
+  "_id": "V-H8EgduSctnhO-S",
+  "_key": "!tables!V-H8EgduSctnhO-S",
+  "name": "Wilderness Encounters: Clear/Grassland, Woods, River, Swamp (1d8)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "f8-9U70hwkPxWoqh",
+      "type": "text",
+      "text": "Clear, Grassland: Human; Woods: Human; River: Human; Swamp: Human",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.f8-9U70hwkPxWoqh"
+    },
+    {
+      "_id": "7cY6esmoyrIYLDUF",
+      "type": "text",
+      "text": "Clear, Grassland: Flyer; Woods: Flyer; River: Flyer; Swamp: Flyer",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.7cY6esmoyrIYLDUF"
+    },
+    {
+      "_id": "nML_ig6DHzwrzuxN",
+      "type": "text",
+      "text": "Clear, Grassland: Humanoid; Woods: Humanoid; River: Humanoid; Swamp: Humanoid",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.nML_ig6DHzwrzuxN"
+    },
+    {
+      "_id": "dAaT_708KEHxq4A-",
+      "type": "text",
+      "text": "Clear, Grassland: Animal; Woods: Insect; River: Insect; Swamp: Swimmer",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.dAaT_708KEHxq4A-"
+    },
+    {
+      "_id": "QNc3oXjpovGA0MpW",
+      "type": "text",
+      "text": "Clear, Grassland: Animal; Woods: Unusual; River: Swimmer; Swamp: Undead",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.QNc3oXjpovGA0MpW"
+    },
+    {
+      "_id": "3zHhIrJHWQyAy0Gb",
+      "type": "text",
+      "text": "Clear, Grassland: Unusual; Woods: Animal; River: Swimmer; Swamp: Undead",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.3zHhIrJHWQyAy0Gb"
+    },
+    {
+      "_id": "3uGSf1b8rCEUFTMi",
+      "type": "text",
+      "text": "Clear, Grassland: Dragon; Woods: Animal; River: Animal; Swamp: Insect",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.3uGSf1b8rCEUFTMi"
+    },
+    {
+      "_id": "IqaNZcSmPqBiWoiT",
+      "type": "text",
+      "text": "Clear, Grassland: Insect; Woods: Dragon; River: Dragon; Swamp: Dragon",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!V-H8EgduSctnhO-S.IqaNZcSmPqBiWoiT"
+    }
+  ],
+  "formula": "1d8"
+}

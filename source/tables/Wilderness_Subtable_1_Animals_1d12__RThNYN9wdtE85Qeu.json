@@ -1,0 +1,164 @@
+{
+  "_id": "RThNYN9wdtE85Qeu",
+  "_key": "!tables!RThNYN9wdtE85Qeu",
+  "name": "Wilderness Subtable 1: Animals (1d12)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "7pqSzN3idPSpPjdj",
+      "type": "text",
+      "text": "Clear, Grassland: Animal Herd; Woods: Animal Herd; River: Animal Herd; Barren, Mountain, Hill: Animal Herd; Desert: Animal Herd; Settled: Animal Herd; Jungle: Animal Herd; Prehistoric: Bear, Cave",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.7pqSzN3idPSpPjdj"
+    },
+    {
+      "_id": "NZUqRkdYcezCmvss",
+      "type": "text",
+      "text": "Clear, Grassland: Baboon, Rock; Woods: Boar; River: Boar; Barren, Mountain, Hill: Ape, Snow; Desert: Animal Herd; Settled: Animal Herd; Jungle: Boar; Prehistoric: Cat, Sabretooth",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.NZUqRkdYcezCmvss"
+    },
+    {
+      "_id": "oXecoQ8YoVKBIb5Y",
+      "type": "text",
+      "text": "Clear, Grassland: Boar; Woods: Cat, Panther; River: Cat, Panther; Barren, Mountain, Hill: Ape, White; Desert: Camel; Settled: Boar; Jungle: Cat, Panther; Prehistoric: Crocodile, Giant",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.oXecoQ8YoVKBIb5Y"
+    },
+    {
+      "_id": "I2MtR_b7TZUR2Tlo",
+      "type": "text",
+      "text": "Clear, Grassland: Cat, Lion; Woods: Cat, Tiger; River: Cat, Tiger; Barren, Mountain, Hill: Baboon, Rock; Desert: Camel; Settled: Cat, Tiger; Jungle: Lizard, Draco; Prehistoric: Elephant, Mastodon",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.I2MtR_b7TZUR2Tlo"
+    },
+    {
+      "_id": "JRUVK3GYDm151wbr",
+      "type": "text",
+      "text": "Clear, Grassland: Elephant; Woods: Lizard, Gecko; River: Crab, Giant; Barren, Mountain, Hill: Bear, Cave; Desert: Cat, Lion; Settled: Ferret, Giant; Jungle: Lizard, Gecko; Prehistoric: Pterodactyl",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.JRUVK3GYDm151wbr"
+    },
+    {
+      "_id": "1IyTHPwge5gXe5xq",
+      "type": "text",
+      "text": "Clear, Grassland: Ferret, Giant; Woods: Lizard, Draco; River: Crocodile; Barren, Mountain, Hill: Bear, Grizzly; Desert: Cat, Lion; Settled: Horse, Riding; Jungle: Lizard, Horned; Prehistoric: Pteranodon",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.1IyTHPwge5gXe5xq"
+    },
+    {
+      "_id": "qbaMbyQA2S4xQbp0",
+      "type": "text",
+      "text": "Clear, Grassland: Horse, Riding; Woods: Lizard, Tuatara; River: Crocodile, Large; Barren, Mountain, Hill: Cat, Mountain Lion; Desert: Lizard, Gecko; Settled: Rat, Giant; Jungle: Rat, Giant; Prehistoric: Snake, Racer",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.qbaMbyQA2S4xQbp0"
+    },
+    {
+      "_id": "EsbDRiK5qn-uMYRE",
+      "type": "text",
+      "text": "Clear, Grassland: Lizard, Draco; Woods: Snake, Viper; River: Fish, Rock; Barren, Mountain, Hill: Mule; Desert: Lizard, Tuatara; Settled: Shrew, Giant; Jungle: Shrew, Giant; Prehistoric: Snake, Viper",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.EsbDRiK5qn-uMYRE"
+    },
+    {
+      "_id": "94cbz3F9LHAv5t9y",
+      "type": "text",
+      "text": "Clear, Grassland: Mule; Woods: Spider, Crab; River: Leech, Giant; Barren, Mountain, Hill: Snake, Viper; Desert: Snake, Viper; Settled: Snake, Racer; Jungle: Snake, Viper; Prehistoric: Triceratops",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.94cbz3F9LHAv5t9y"
+    },
+    {
+      "_id": "bqVV8zOhKW8-nAKd",
+      "type": "text",
+      "text": "Clear, Grassland: Snake, Viper; Woods: Unicorn; River: Rat, Giant; Barren, Mountain, Hill: Snake, Rattler; Desert: Snake, Rattler; Settled: Snake, Viper; Jungle: Snake, Python; Prehistoric: Triceratops",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.bqVV8zOhKW8-nAKd"
+    },
+    {
+      "_id": "qPIfzWU5UzDI-ALi",
+      "type": "text",
+      "text": "Clear, Grassland: Snake, Rattler; Woods: Wolf; River: Shrew, Giant; Barren, Mountain, Hill: Wolf; Desert: Spider, Widow; Settled: Spider, Tarantella; Jungle: Snake, Spitting; Prehistoric: Tyrannosaurus",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.qPIfzWU5UzDI-ALi"
+    },
+    {
+      "_id": "EUo7flgkiWf3wDBI",
+      "type": "text",
+      "text": "Clear, Grassland: Weasel, Giant; Woods: Wolf, Dire; River: Toad, Giant; Barren, Mountain, Hill: Wolf, Dire; Desert: Spider, Tarantella; Settled: Wolf; Jungle: Spider, Crab; Prehistoric: Wolf, Dire",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!RThNYN9wdtE85Qeu.EUo7flgkiWf3wDBI"
+    }
+  ],
+  "formula": "1d12"
+}

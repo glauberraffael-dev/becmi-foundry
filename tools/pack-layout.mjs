@@ -47,6 +47,7 @@ export const TREASURE_FOLDER_ORDER = [
 
 export const EQUIPMENT_GROUP_ORDER = ["weapons", "armor", "adventuring", "transport"];
 export const CLASS_FOLDER_ORDER = ["Classes", "Subclasses"];
+export const TABLE_CATEGORY_ORDER = ["Reactions", "Dungeon Encounters", "Wilderness Encounters"];
 export const MONSTER_CATEGORY_ORDER = [
   "Normal Animal", "Lowlife", "Construct", "Dragon", "Humanoid", "Monster",
   "Planar Monster", "Undead", "Unclassified"
@@ -135,6 +136,10 @@ export function folderKeyForDocument(pack, doc) {
       ?? "Adventuring Gear";
   }
   if (pack === "classes") return doc.type === "feature" ? "Subclasses" : "Classes";
+  if (pack === "tables") {
+    const category = doc.flags?.becmi?.category ?? "Reactions";
+    return `tables:${TABLE_CATEGORY_ORDER.includes(category) ? category : "Reactions"}`;
+  }
   if (pack === "monsters") return `monsters:${monsterCategory(doc)}`;
   if (pack === "treasure") return treasureCategory(doc.flags?.becmi?.category ?? doc.system?.treasureType);
   return null;
@@ -181,6 +186,10 @@ export function compareDocuments(pack, a, b) {
   if (pack === "classes") {
     const folder = (doc) => doc.type === "feature" ? "Subclasses" : "Classes";
     return rank(folder(a), CLASS_FOLDER_ORDER) - rank(folder(b), CLASS_FOLDER_ORDER) || byName(a, b);
+  }
+  if (pack === "tables") {
+    const category = (doc) => doc.flags?.becmi?.category ?? "Reactions";
+    return rank(category(a), TABLE_CATEGORY_ORDER) - rank(category(b), TABLE_CATEGORY_ORDER) || byName(a, b);
   }
   if (pack === "monsters") {
     return rank(monsterCategory(a), MONSTER_CATEGORY_ORDER)

@@ -8,8 +8,9 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   compareDocuments, folderDefinitionKey, folderId, spellFolderKey,
-  SPELL_LIST_LEVELS, TREASURE_CATEGORIES
+  SPELL_LIST_LEVELS, TABLE_CATEGORY_ORDER, TREASURE_CATEGORIES
 } from "./pack-layout.mjs";
+import { ENCOUNTER_TABLES, REACTION_TABLE } from "./encounter-tables.mjs";
 import { SPELL_MATH_OVERRIDES } from "./spell-math.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -138,11 +139,48 @@ for (const [name, override] of Object.entries(SPELL_MATH_OVERRIDES)) {
   }
 }
 
-// --- Only explicitly rollable tables are RollTables ------------------------
+// --- Rollable encounter tables --------------------------------------------
 const tableDocs = await readJson("data/tables.json");
-if (tableDocs.length !== 1 || tableDocs[0].name !== "Monster Reactions (2d6)" ||
-    tableDocs[0].formula !== "2d6") {
-  note("tables: only the Monster Reactions (2d6) RollTable should remain");
+const expectedTables = [REACTION_TABLE, ...ENCOUNTER_TABLES];
+if (tableDocs.length !== expectedTables.length) {
+  note(`tables: expected ${expectedTables.length} RollTables, found ${tableDocs.length}`);
+}
+for (const expected of expectedTables) {
+  const actual = tableDocs.find((doc) => doc.name === expected.name);
+  if (!actual) { note(`tables: missing ${expected.name}`); continue; }
+  if (actual.formula !== expected.formula) {
+    note(`tables: ${expected.name} should roll ${expected.formula}, got ${actual.formula}`);
+  }
+  const category = actual.flags?.becmi?.category;
+  if (!TABLE_CATEGORY_ORDER.includes(category)) {
+    note(`tables: unknown category ${category} on ${expected.name}`);
+  }
+  const signature = (doc) => JSON.stringify(
+    (doc.results ?? []).map((result) => [result.range, result.type, result.text])
+  );
+  if (signature(actual) !== signature(expected)) {
+    note(`tables: ${expected.name} differs from the curated encounter data`);
+  }
+  const faces = new Set();
+  for (const result of actual.results ?? []) {
+    const [low, high] = result.range ?? [];
+    if (!Number.isInteger(low) || !Number.isInteger(high) || low > high) {
+      note(`tables: bad result range on ${expected.name}`);
+      continue;
+    }
+    for (let face = low; face <= high; face++) {
+      if (faces.has(face)) note(`tables: duplicate face ${face} on ${expected.name}`);
+      faces.add(face);
+    }
+    if (result.type !== "text" || !result.text) {
+      note(`tables: empty result on ${expected.name}`);
+    }
+  }
+  const die = Number(expected.formula.match(/d(\d+)/)?.[1] ?? 0);
+  const first = expected.formula === "2d6" ? 2 : 1;
+  for (let face = first; face <= die; face++) {
+    if (!faces.has(face)) note(`tables: face ${face} is missing from ${expected.name}`);
+  }
 }
 const rollableJournalDocs = await readJson("data/journals.json");
 const equipmentJournal = rollableJournalDocs.find((doc) => doc.name === "Equipment Tables");
