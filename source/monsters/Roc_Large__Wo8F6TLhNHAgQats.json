@@ -23,6 +23,7 @@
     "xpValue": 1250,
     "terrain": "Any",
     "monsterType": "Monster (Rare)",
+    "spellcasting": "",
     "special": [
       "Flying: 480' (160')."
     ],

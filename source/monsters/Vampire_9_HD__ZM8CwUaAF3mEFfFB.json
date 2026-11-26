@@ -23,6 +23,7 @@
     "xpValue": 2300,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Rare)",
+    "spellcasting": "",
     "special": [
       "Flying 180' (60'); immune to charms and cold; magical weapon needed to hit."
     ],

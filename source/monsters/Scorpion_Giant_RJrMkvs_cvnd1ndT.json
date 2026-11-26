@@ -23,6 +23,7 @@
     "xpValue": 125,
     "terrain": "Desert, Cavern, Ruins",
     "monsterType": "Lowlife (Rare)",
+    "spellcasting": "",
     "special": [
       "The sting carries poison."
     ],

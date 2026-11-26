@@ -424,9 +424,15 @@
     <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.monsterAttacks'}}</h3>
     <div class="becmi-monster-attacks">
       {{#each monsterAttacks as |attack|}}
-      <button type="button" class="becmi-roll becmi-monster-attack" data-action="monsterAttack" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollAttackAndDamage'}}">
-        <strong>{{attack.name}}</strong>{{#if attack.damage}} <span>{{attack.damage}}</span>{{/if}}{{#if attack.note}} <small>{{attack.note}}</small>{{/if}}
-      </button>
+      <div class="becmi-monster-attack">
+        <div class="becmi-monster-attack__label">
+          <strong>{{attack.name}}</strong>{{#if attack.damage}} <span>{{attack.damage}}</span>{{/if}}{{#if attack.note}} <small>{{attack.note}}</small>{{/if}}
+        </div>
+        <div class="becmi-monster-attack__buttons">
+          <button type="button" class="becmi-roll" data-action="monsterAttack" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollMonsterAttack'}}">{{localize 'BECMI.rolls.attack'}}</button>
+          {{#if attack.damage}}<button type="button" class="becmi-roll" data-action="monsterDamage" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollMonsterDamage'}}">{{localize 'BECMI.rolls.damage'}}</button>{{/if}}
+        </div>
+      </div>
       {{else}}
       <p class="becmi-empty">{{localize 'BECMI.sheet.noMonsterAttacks'}}</p>
       {{/each}}
@@ -450,6 +456,43 @@
     <div class="becmi-editor">{{{system.notes}}}</div>
   </div>
 </section>
+
+{{#if monsterSpellcaster}}
+<section class="becmi-tab-panel{{#if (eq activeTab "spells")}} is-active{{/if}}" data-tab="spells">
+  <div class="becmi-scroll-y">
+    <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.spells'}}</h2>
+    {{#if monsterSpellcastingText}}<p class="becmi-hint">{{monsterSpellcastingText}}</p>{{/if}}
+    <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.spellcasting'}}:</label><input name="system.spellcasting" type="text" value="{{system.spellcasting}}" {{#unless editable}}disabled{{/unless}}></div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.importSpell'}}</h3>
+    <div class="becmi-import-row">
+      <select multiple size="7" data-spell-import {{#unless editable}}disabled{{/unless}}>
+        {{#each importSpellOptions as |spell|}}
+        <option value="{{spell.uuid}}" {{#if spell.known}}disabled{{/if}}>{{localize 'BECMI.labels.level'}} {{spell.level}} · {{spell.list}} · {{spell.name}}{{#if spell.known}} ({{localize 'BECMI.sheet.known'}}){{/if}}</option>
+        {{/each}}
+      </select>
+      <button type="button" class="becmi-roll" data-action="importSpell" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.importSelected'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.monsterSpells'}}</h3>
+    <p class="becmi-hint">{{localize 'BECMI.sheet.monsterSpellHint'}} {{localize 'BECMI.sheet.spellDropHint'}}</p>
+    <ul class="becmi-items">
+      {{#each classSpells as |item|}}
+      <li class="becmi-item">
+        <span class="becmi-badge">{{item.level}}</span>
+        <button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button>
+        <button type="button" class="becmi-roll" data-action="itemCast" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.cast'}}</button>
+        {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
+        <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
+      </li>
+      {{else}}
+      <li class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</li>
+      {{/each}}
+    </ul>
+    {{#if editable}}<button type="button" class="becmi-roll" data-action="addItem">{{localize 'BECMI.sheet.addSpell'}}</button>{{/if}}
+  </div>
+</section>
+{{/if}}
 {{/if}}
 
 </div>
@@ -505,7 +548,7 @@
 
   <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.sidebar.reference'}}</h3>
   <div class="becmi-sidebar-links">
-    <button type="button" class="becmi-roll" data-action="switchTab" data-tab="attack">{{localize 'BECMI.sheet.tab.attack'}}</button>
+    {{#if isCharacter}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="attack">{{localize 'BECMI.sheet.tab.attack'}}</button>{{/if}}
     {{#if canTurn}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="undead">{{localize 'BECMI.sheet.tab.undead'}}</button>{{/if}}
     {{#if canMastery}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="mastery">{{localize 'BECMI.sheet.tab.mastery'}}</button>{{/if}}
     <button type="button" class="becmi-roll" data-action="switchTab" data-tab="notes">{{localize 'BECMI.sheet.tab.notes'}}</button>

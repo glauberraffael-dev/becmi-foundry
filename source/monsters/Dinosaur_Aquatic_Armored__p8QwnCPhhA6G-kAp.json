@@ -23,6 +23,7 @@
     "xpValue": 2300,
     "terrain": "River/Lake, Ocean",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [
       "Swimming 90' to 150'; AC 2 to 4 by age."
     ],

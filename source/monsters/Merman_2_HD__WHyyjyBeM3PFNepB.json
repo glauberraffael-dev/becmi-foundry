@@ -1,0 +1,58 @@
+{
+  "_id": "WHyyjyBeM3PFNepB",
+  "_key": "!actors!WHyyjyBeM3PFNepB",
+  "name": "Merman (2 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "0 (1d20)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "A",
+    "intelligence": 12,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Ocean",
+    "monsterType": "Humanoid (Common), Leader",
+    "spellcasting": "",
+    "special": [
+      "One 2 HD leader for every ten mermen."
+    ],
+    "description": "Merman (2 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Merman (2 HD)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

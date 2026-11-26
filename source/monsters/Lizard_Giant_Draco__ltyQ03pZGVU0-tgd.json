@@ -23,6 +23,7 @@
     "xpValue": 125,
     "terrain": "Any",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [
       "Glide: 150' (50')."
     ],

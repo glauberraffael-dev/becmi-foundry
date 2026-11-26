@@ -23,6 +23,7 @@
     "xpValue": 1250,
     "terrain": "Plane of Fire",
     "monsterType": "Planar Monster, Enchanted (Common)",
+    "spellcasting": "",
     "special": [
       "Ignores normal weapons."
     ],

@@ -23,6 +23,7 @@
     "xpValue": 1,
     "terrain": "Any",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [
       "Echolocation: normal bats confuse intruders in darkness."
     ],

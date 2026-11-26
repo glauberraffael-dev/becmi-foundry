@@ -1,0 +1,58 @@
+{
+  "_id": "nh2L8I59So6ThiFB",
+  "_key": "!actors!nh2L8I59So6ThiFB",
+  "name": "Devilfish (Vampire)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 120
+    },
+    "attacks": "1 tail/1 bite",
+    "damage": "1d4/1d6 + energy drain",
+    "appearing": "20 (1d6 X 20)",
+    "saveAs": "C (level = HD)",
+    "morale": 8,
+    "treasure": "A x 2 + F per 20",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 425,
+    "terrain": "Ocean",
+    "monsterType": "Monster, Enchanted (Rare)",
+    "spellcasting": "",
+    "special": [
+      "Vampiric: double energy drain per hit; harmed only by magical or silver weapons (or holy items); turnable by clerics; charm and regenerate as vampires."
+    ],
+    "description": "Devilfish (Vampire) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Devilfish (Vampire)",
+      "category": "Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

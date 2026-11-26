@@ -23,6 +23,7 @@
     "xpValue": 6100,
     "terrain": "Any",
     "monsterType": "Humanoid (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Swimming 50' (20'); controls undead as a 2x-HD liege."
     ],

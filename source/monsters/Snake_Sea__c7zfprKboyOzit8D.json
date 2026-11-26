@@ -23,6 +23,7 @@
     "xpValue": 50,
     "terrain": "Ocean",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Snake (Sea) — Rules Cyclopedia stat block.",
     "notes": "",

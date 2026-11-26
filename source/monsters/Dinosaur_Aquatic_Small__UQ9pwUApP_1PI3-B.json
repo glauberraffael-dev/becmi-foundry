@@ -23,6 +23,7 @@
     "xpValue": 30,
     "terrain": "River/Lake, Ocean",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [
       "Swimming 120' to 180'."
     ],

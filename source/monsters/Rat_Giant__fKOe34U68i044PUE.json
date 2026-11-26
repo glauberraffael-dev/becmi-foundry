@@ -23,6 +23,7 @@
     "xpValue": 5,
     "terrain": "Any",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Rat (Giant) — Rules Cyclopedia stat block.",
     "notes": "",

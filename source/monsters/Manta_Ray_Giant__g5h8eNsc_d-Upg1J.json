@@ -23,7 +23,7 @@
     "xpValue": 1750,
     "terrain": "Ocean",
     "monsterType": "Giant Animal (Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Paralysis:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; A tail hit requires a saving throw vs. poison or the victim is paralysed.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Paralysis: A tail hit requires a saving throw vs. poison or the victim is paralysed.</p>",
     "description": "Giant manta rays grow to about 40 feet wide and 75 feet long. Besides their poisonous tail, they can buffet a creature for 3d4 damage and sometimes swallow treasure from the ocean floor.",
     "notes": "",
     "source": "Rules Cyclopedia",

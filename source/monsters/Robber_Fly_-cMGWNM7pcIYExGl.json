@@ -23,7 +23,7 @@
     "xpValue": 20,
     "terrain": "Open, Ruins, Woods",
     "monsterType": "Lowlife (Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Flying:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 180' (60').&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Surprise: 1-4 on 1d6.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Immunity: Giant bee poison.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Flying: 180' (60').</p><p>Surprise: 1-4 on 1d6.</p><p>Immunity: Giant bee poison.</p>",
     "description": "A robber fly is a 3-foot giant fly with black and yellow stripes. It prefers giant bees as food and is immune to their poison. Patient hunters, robber flies hide in shadows to surprise prey on 1-4 of a d6 and can leap up to 30 feet to bite.",
     "notes": "",
     "source": "Rules Cyclopedia",

@@ -23,6 +23,7 @@
     "xpValue": 300,
     "terrain": "Any",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Snake (Rock Python) — Rules Cyclopedia stat block.",
     "notes": "",

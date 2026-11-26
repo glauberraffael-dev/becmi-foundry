@@ -23,6 +23,7 @@
     "xpValue": 1900,
     "terrain": "Plane of Earth",
     "monsterType": "Planar Monster (Very Rare)",
+    "spellcasting": "",
     "special": [
       "ESP and telekinesis; normally fails saving throws voluntarily."
     ],

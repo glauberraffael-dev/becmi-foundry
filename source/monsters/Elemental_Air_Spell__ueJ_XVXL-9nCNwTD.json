@@ -23,6 +23,7 @@
     "xpValue": 1850,
     "terrain": "Plane of Air",
     "monsterType": "Planar Monster, Enchanted (Common)",
+    "spellcasting": "",
     "special": [
       "Flying 360' (120')."
     ],

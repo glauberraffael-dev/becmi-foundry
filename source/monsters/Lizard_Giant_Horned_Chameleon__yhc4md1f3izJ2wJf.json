@@ -23,6 +23,7 @@
     "xpValue": 300,
     "terrain": "Any",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Lizard, Giant (Horned Chameleon) — Rules Cyclopedia stat block.",
     "notes": "",

@@ -23,6 +23,7 @@
     "xpValue": 5500,
     "terrain": "Any",
     "monsterType": "Dragon",
+    "spellcasting": "",
     "special": [
       "Acid line; flying 360' (120')."
     ],

@@ -6,8 +6,8 @@ import { classFeaturesFor } from "../class-features.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
-  masteryWeapon, masteryChoices, monsterAttackRows, normalizeClassKey, spellKey,
-  spellSlotsForLevel, spellsFor, turnUndeadColumn
+  masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo,
+  normalizeClassKey, spellKey, spellSlotsForLevel, spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -212,6 +212,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollMorale: BECMIActorSheet.#rollMorale,
       rollHitDice: BECMIActorSheet.#rollHitDice,
       monsterAttack: BECMIActorSheet.#monsterAttack,
+      monsterDamage: BECMIActorSheet.#monsterDamage,
       rollFree: BECMIActorSheet.#rollFree,
       rollDice: BECMIActorSheet.#rollDice,
       rollThief: BECMIActorSheet.#rollThief,
@@ -323,6 +324,13 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const capabilities = CLASS_CAPABILITIES[classKey] ?? {};
     const isDruid = classKey === "cleric" && Boolean(flags.druid);
     const canCast = Boolean(capabilities.spells);
+    const casterInfo = isCharacter ? null : monsterSpellcasterInfo(actor.system, flags);
+    const monsterSpellcaster = !isCharacter && Boolean(
+      casterInfo || flags.spellcaster || actor.items.some((item) => item.type === "spell")
+    );
+    const hasSpellsTab = canCast || monsterSpellcaster;
+    const spellClassKey = canCast ? classKey : casterInfo?.classKey ?? "magic-user";
+    const spellLevel = canCast ? level : casterInfo?.level ?? level;
     const canTurn = Boolean(capabilities.turn);
     const canThief = Boolean(capabilities.thief);
     const canMastery = Boolean(capabilities.mastery);
@@ -333,7 +341,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       editMode: this.editMode,
       editable: this.isEditable && this.editMode,
       darkMode: isDarkMode(),
-      level, xp, classKey, rcClass, isDruid, canCast, canTurn, canThief, canMastery,
+      level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
+      spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
+      canTurn, canThief, canMastery,
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
@@ -405,23 +415,29 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const extraLists = isDruid ? ["druid"] : [];
     const grimoire = String(actor.system.spellbook?.grimoire ?? "").split(",").map((key) => key.trim()).filter(Boolean);
     const className = rcClass?.name ?? attrs.class ?? flags.classInfo?.name ?? "";
-    const spellLists = canCast ? spellListsForClass({ name: className }, { druid: isDruid }) : [];
+    const spellLists = canCast
+      ? spellListsForClass({ name: className }, { druid: isDruid })
+      : monsterSpellcaster && casterInfo
+        ? [...new Set(casterInfo.classKeys.flatMap((key) => key === "druid"
+          ? ["druid"] : spellListsForClass({ name: getRCClass(key)?.name ?? key })))]
+        : monsterSpellcaster ? SPELL_LISTS.map((entry) => entry.key) : [];
+    const selectableLists = canCast ? spellLists : SPELL_LISTS.map((entry) => entry.key);
     const ownedSpells = actor.items.filter((item) => item.type === "spell");
     const knownUuids = new Set(ownedSpells.map((item) => spellSourceUuid(item)).filter(Boolean));
     const filterLevel = Math.max(0, Math.min(9, Number(this.spellPicker.level) || 0));
     const search = String(this.spellPicker.search ?? "").trim();
-    const listFilter = spellLists.includes(this.spellPicker.list) ? this.spellPicker.list : "";
+    const listFilter = selectableLists.includes(this.spellPicker.list) ? this.spellPicker.list : "";
     const needle = search.toLowerCase();
 
     context.grimoire = actor.system.spellbook?.grimoire ?? "";
-    context.spellSlots = canCast ? spellSlotsForLevel(classKey, level) : [];
+    context.spellSlots = hasSpellsTab ? spellSlotsForLevel(spellClassKey, spellLevel) : [];
     const maxSpellLevel = Math.max(1, Math.min(9,
-      Number(rcClass?.spells?.levels) || context.spellSlots.length || 9));
+      Number(getRCClass(spellClassKey)?.spells?.levels) || context.spellSlots.length || 9));
     context.spellLevels = Array.from({ length: maxSpellLevel }, (_, index) => index + 1);
     context.spellSlots = context.spellSlots.slice(0, maxSpellLevel);
 
     const rcOptionsByLevel = context.spellLevels.map((spellLevel) =>
-      spellsFor(classKey, spellLevel, { grimoire, extraLists })
+      spellsFor(spellClassKey, spellLevel, { grimoire, extraLists })
         .map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level, itemId: "" })));
     const itemOptionsByLevel = context.spellLevels.map((spellLevel) =>
       ownedSpells
@@ -472,7 +488,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         .map((entry) => ({ key: entry.key, name: game.i18n.localize(`BECMI.sheet.list.${entry.key}`) }))
     ];
     context.spellListFilter = listFilter;
-    const rcList = canCast ? spellsFor(classKey, filterLevel, { grimoire, search, extraLists, listFilter }) : [];
+    const rcList = hasSpellsTab
+      ? spellsFor(spellClassKey, filterLevel, { grimoire, search, extraLists, listFilter })
+      : [];
     const rcRows = rcList.map((spell) => ({
       key: spellKey(spell),
       itemId: "",
@@ -504,7 +522,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.spellFilterLevel = filterLevel;
 
     context.importSpellOptions = [];
-    if (canCast) {
+    if (hasSpellsTab) {
       const pack = game.packs?.get("becmi.spells");
       const docs = pack ? await pack.getDocuments() : [];
       context.importSpellOptions = docs
@@ -578,7 +596,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       if (id === "undead") return canTurn;
       if (id === "mastery") return canMastery;
       return true;
-    }) : SHEET_TABS.filter(([id]) => ["main", "notes"].includes(id));
+    }) : SHEET_TABS.filter(([id]) => ["main", ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
     context.tabs = definitions.map(([id, label]) => ({
       id, label: game.i18n.localize(label), active: id === this.activeTab
     }));
@@ -739,7 +757,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #monsterAttack(event, target) {
     const index = Number(target.dataset.attackIndex);
-    await this.actor.rollMonsterAttack(index, { targetAC: this.#targetAC() });
+    await this.actor.rollMonsterAttack(index, { targetAC: this.#targetAC(), mode: "attack" });
+  }
+
+  static async #monsterDamage(event, target) {
+    const index = Number(target.dataset.attackIndex);
+    await this.actor.rollMonsterDamage(index);
   }
 
   static async #rollFree() {

@@ -23,6 +23,7 @@
     "xpValue": 10,
     "terrain": "Any",
     "monsterType": "Normal Animal (Common)",
+    "spellcasting": "",
     "special": [],
     "description": "Animal Herd (1 HD) — Rules Cyclopedia stat block.",
     "notes": "",

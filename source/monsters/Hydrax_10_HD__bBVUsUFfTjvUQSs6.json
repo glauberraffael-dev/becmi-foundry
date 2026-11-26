@@ -23,6 +23,7 @@
     "xpValue": 2500,
     "terrain": "Plane of Water",
     "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Swimming 180' (60'); immune to normal weapons."
     ],

@@ -15,6 +15,34 @@ const NAME_FIXES = new Map([
   ["Variant 2", "Mystic (Leader)"]
 ]);
 
+/**
+ * Single-row OCR repairs verified against the page-ordered Rules Cyclopedia.
+ * These sheets are not separate variants; their table cells were truncated or
+ * misread (for example `ldl0` for `1d10`), so only the listed fields change.
+ */
+const STAT_FIXES = new Map([
+  ["Athach", { saveAs: "F14", damage: "2d12/2d12/2d12/2d10 + poison (special)" }],
+  ["Bear (Grizzly)", { damage: "1d8/1d8/1d10" }],
+  ["Bear (Polar)", { damage: "1d6/1d6/1d10" }],
+  ["Whales (Killer)", { damage: "2d10" }],
+  ["Beholder, Undead", { damage: "2d10 + special" }],
+  ["Malfera", { damage: "1d10/1d10/1d6" }],
+  ["Golem (Amber)", { attacks: "2 claws/1 bite", damage: "2d6/2d6/2d10" }],
+  ["Golem (Obsidian)", { attacks: "1 weapon or 1 fist" }],
+  ["Elephant (Normal)", { attacks: "2 tusks or 1 trample" }],
+  ["Elephant (Prehistoric)", { attacks: "2 tusks or 1 trample" }],
+  ["Devilfish", {
+    attacks: "1 tail/1 bite",
+    damage: "1/1",
+    xpValue: 10,
+    special: [
+      "Normal devilfish of 1-4 HD each inflict 1 point of damage with tail and bite.",
+      "Vampire devilfish of 5+ HD use 1d4/1d6, cause double energy drain, and can be harmed only by magical or silver weapons (or holy items).",
+      "Matriarchs have 6 HD and cast cleric spells as 10th- to 16th-level characters, but cannot cast 7th-level spells."
+    ]
+  }]
+]);
+
 const XP_BY_HD = {
   1: 16, 2: 30, 3: 65, 4: 175, 5: 425, 6: 950, 7: 1650, 8: 2850,
   9: 3700, 10: 4750, 11: 5100, 12: 6500
@@ -180,7 +208,7 @@ export function normalizeMonsterDocument(doc) {
   const name = NAME_FIXES.get(sourceName) ?? sourceName;
   if (!name || /^(?:DM Checklist|Variant \d+)$/i.test(name)) return null;
 
-  const raw = doc.system ?? {};
+  const raw = { ...(doc.system ?? {}), ...(STAT_FIXES.get(name) ?? {}) };
   const hd = clean(raw.hd) || "1";
   const type = splitMonsterType(raw.monsterType);
   const statFallback = [

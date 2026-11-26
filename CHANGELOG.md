@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.20
+
+- Each monster attack now has two explicit roll buttons: one for the attack roll
+  and one for its damage. Different natural attacks (for example claws versus
+  bite) stay separate, and the old combined roll remains available internally.
+- Spellcasting monsters have a Spells tab. Liches, sphinxes and devilfish
+  matriarchs carry their character level/caster class in the bestiary, so their
+  spell lists and normal spell casting flow work directly from the monster sheet.
+- Rebuilt the remaining flattened variants: mermen are now 1 HD/2 HD/4 HD sheets
+  separate from the Metamorph, and devilfish are split into normal, vampire and
+  matriarch forms. Repaired truncated or misread statistics for Athach, bears,
+  killer whales, undead beholder, Malfera, amber/obsidian golems and elephants.
+
 ## 0.1.19
 
 - Monsters now derive saving-throw targets from their `Save As` entry using the

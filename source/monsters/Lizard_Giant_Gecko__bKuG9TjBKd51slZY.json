@@ -23,6 +23,7 @@
     "xpValue": 50,
     "terrain": "Any",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Lizard, Giant (Gecko) — Rules Cyclopedia stat block.",
     "notes": "",

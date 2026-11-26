@@ -23,6 +23,7 @@
     "xpValue": 5500,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "+2 weapon or better to hit; immune to 1st-3rd level spells."
     ],

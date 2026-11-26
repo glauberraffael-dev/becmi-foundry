@@ -23,6 +23,7 @@
     "xpValue": 36500,
     "terrain": "Elemental Planes",
     "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Immune to 1st-5th level spells, poison and mental effects; 2' tall per Hit Die."
     ],

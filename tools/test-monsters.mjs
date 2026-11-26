@@ -118,6 +118,30 @@ check("special undead and planar variants have usable saves and attacks", () => 
   expectStats("Salamander (Frost)", { hd: "12", hp: 54, saveAs: "F12", xpValue: 2125 });
 });
 
+check("coastal variants and OCR stat repairs are playable", () => {
+  expectStats("Merman (1 HD)", { hd: "1", hp: 5, ac: 6, saveAs: "F1", xpValue: 10, damage: "By weapon" });
+  expectStats("Merman (2 HD)", { hd: "2", hp: 9, saveAs: "F2", xpValue: 20 });
+  expectStats("Merman (4 HD)", { hd: "4", hp: 18, saveAs: "F4", xpValue: 75 });
+  expectStats("Metamorph", { hd: "3+1", hp: 15, ac: 5, saveAs: "M11", xpValue: 100 });
+  expectStats("Devilfish", { hd: "1", hp: 5, damage: "1/1", xpValue: 10 });
+  expectStats("Devilfish (Vampire)", {
+    hd: "5", hp: 23, saveAs: "C (level = HD)", damage: "1d4/1d6 + energy drain"
+  });
+  const matriarch = byName.get("Devilfish (Matriarch)");
+  assert.ok(matriarch, "missing Devilfish (Matriarch)");
+  assert.match(String(matriarch.system.spellcasting), /cleric spells/i);
+  expectStats("Athach", { saveAs: "F14", damage: "2d12/2d12/2d12/2d10 + poison (special)" });
+  expectStats("Bear (Grizzly)", { damage: "1d8/1d8/1d10" });
+  expectStats("Bear (Polar)", { damage: "1d6/1d6/1d10" });
+  expectStats("Whales (Killer)", { damage: "2d10" });
+  expectStats("Beholder, Undead", { damage: "2d10 + special" });
+  expectStats("Malfera", { damage: "1d10/1d10/1d6" });
+  expectStats("Golem (Amber)", { attacks: "2 claws/1 bite", damage: "2d6/2d6/2d10" });
+  expectStats("Golem (Obsidian)", { attacks: "1 weapon or 1 fist" });
+  expectStats("Elephant (Normal)", { attacks: "2 tusks or 1 trample" });
+  expectStats("Elephant (Prehistoric)", { attacks: "2 tusks or 1 trample" });
+});
+
 check("range and table monsters have one sheet per Rules Cyclopedia row", () => {
   expectStats("Dinosaur, Aquatic (Small)", { hd: "2-8", hp: 9, ac: 7, saveAs: "F (level = 1/2 HD)", xpValue: 30 });
   expectStats("Dinosaur, Aquatic (Large)", { hd: "9-24", hp: 41, ac: 5, saveAs: "F (level = 1/2 HD)", xpValue: 3700 });

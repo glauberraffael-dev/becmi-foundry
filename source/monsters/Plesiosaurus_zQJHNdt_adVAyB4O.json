@@ -24,7 +24,7 @@
     "terrain": "Any",
     "monsterType": "Normal Animal",
     "description": "After crying out for ld3 rounds, the creatures in the vision start to rise (materializing) and attack, continuing their awful wailing. No single individual has any hit points; the vision as a whole has 12 Hit Dice, and all damage inflicted on all individuals is counted against that total. The vision attacks once per individual phantom within it, each individual attacking as a 12 HD monster and inflicting 1d8 points of damage per hit. (Each is typically armed with a normal sword; the DM may equip the phantoms otherwise, using the appropriate damage by weapon type. However, no magical weapons or other magical items will be used.) Within their restricted area, phantoms of a vision move at 40' per round. If a vision is successfully turned, it disappears for ld6 hours before returning; it cannot move away from the given location.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;However, no magical weapons or other magical items will be used.) Within their restricted area, phantoms of a vision move at 40' per round.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>However, no magical weapons or other magical items will be used.) Within their restricted area, phantoms of a vision move at 40' per round.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,

@@ -23,6 +23,7 @@
     "xpValue": 9000,
     "terrain": "Any",
     "monsterType": "Dragon-Kin (Rare)",
+    "spellcasting": "",
     "special": [
       "Steam breath cloud 50' x 40', damage equal to a dragon's breath weapon."
     ],

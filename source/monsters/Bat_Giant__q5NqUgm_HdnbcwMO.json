@@ -23,6 +23,7 @@
     "xpValue": 20,
     "terrain": "Any",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Bat (Giant) — Rules Cyclopedia stat block.",
     "notes": "",

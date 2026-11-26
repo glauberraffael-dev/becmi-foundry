@@ -43,6 +43,7 @@ function sheet(name, fields) {
       xpValue: fields.xp ?? 1,
       terrain: fields.terrain ?? "Any",
       monsterType: fields.monsterType ?? "Monster",
+      spellcasting: String(fields.spellcasting ?? ""),
       special,
       description: String(fields.description ?? `${name} — Rules Cyclopedia stat block.`).replace(/\s+/g, " ").trim(),
       notes: "",
@@ -251,6 +252,7 @@ const liches = [["Magic-User", "M", "4"], ["Cleric", "C", "6"]].flatMap(([type, 
       alignment: "Chaotic",
       xp,
       terrain: "Ruins",
+      spellcasting: `${type} spells by character level (level ${level}).`,
       special: "Magical weapon needed to hit; touch paralyzes (save vs. paralysis); spells by character level."
     });
   })
@@ -365,18 +367,40 @@ const specials = group([
   ["Scorpion, Giant", { category: "Lowlife", monsterType: "Lowlife (Rare)", ac: 2, hd: "4", move: [150, 50], attacks: "2 claws/1 sting", damage: "1d10/1d10/1d4 + poison", saveAs: "F2", morale: 11, appearing: "1d6 (1d6)", treasure: "V", xp: 125, intelligence: 0, terrain: "Desert, Cavern, Ruins", special: "The sting carries poison." }]
 ]);
 
+/** Merman leaders and the metamorph were flattened into one OCR row. */
+const coastalFolk = group([
+  ["Merman (1 HD)", { category: "Humanoid", monsterType: "Humanoid (Common)", ac: 6, hd: "1", move: [120, 40], attacks: "1 weapon", damage: "By weapon", saveAs: "F1", morale: 8, appearing: "0 (1d20)", treasure: "A", intelligence: 12, alignment: "Neutral", xp: 10, terrain: "Ocean", special: "All ordinary mermen have 1 Hit Die and save as 1st-level fighters." }],
+  ["Merman (2 HD)", { category: "Humanoid", monsterType: "Humanoid (Common), Leader", ac: 6, hd: "2", move: [120, 40], attacks: "1 weapon", damage: "By weapon", saveAs: "F2", morale: 8, appearing: "0 (1d20)", treasure: "A", intelligence: 12, alignment: "Neutral", xp: 20, terrain: "Ocean", special: "One 2 HD leader for every ten mermen." }],
+  ["Merman (4 HD)", { category: "Humanoid", monsterType: "Humanoid (Common), Leader", ac: 6, hd: "4", move: [120, 40], attacks: "1 weapon", damage: "By weapon", saveAs: "F4", morale: 8, appearing: "0 (1d20)", treasure: "A", intelligence: 12, alignment: "Neutral", xp: 75, terrain: "Ocean", special: "One 4 HD leader for every fifty mermen." }],
+  ["Metamorph", { category: "Humanoid", monsterType: "Humanoid (Rare)", ac: 5, hd: "3+1", move: [120, 40], attacks: "1 weapon or as form", damage: "By weapon type or form", saveAs: "M11", morale: 8, appearing: "1d6 (1d20)", treasure: "Variable", intelligence: 14, alignment: "Any (often Chaotic)", xp: 100, terrain: "Any", special: "Shapeshifts up to 11 times; AC, HD and damage can change with the assumed form." }],
+  ["Devilfish (Vampire)", { category: "Monster", monsterType: "Monster, Enchanted (Rare)", ac: 6, hd: "5", move: [0, 120], attacks: "1 tail/1 bite", damage: "1d4/1d6 + energy drain", saveAs: "C (level = HD)", morale: 8, appearing: "20 (1d6 X 20)", treasure: "A x 2 + F per 20", intelligence: 9, alignment: "Chaotic", xp: 425, terrain: "Ocean", special: "Vampiric: double energy drain per hit; harmed only by magical or silver weapons (or holy items); turnable by clerics; charm and regenerate as vampires." }],
+  ["Devilfish (Matriarch)", { category: "Monster", monsterType: "Monster, Enchanted (Rare)", ac: 6, hd: "6", move: [0, 120], attacks: "1 tail/1 bite", damage: "1d4/1d6 + energy drain", saveAs: "C (level = HD)", morale: 8, appearing: "20 (1d6 X 20)", treasure: "A x 2 + F per 20", intelligence: 9, alignment: "Chaotic", xp: 950, terrain: "Ocean", spellcasting: "Cleric spells as a 10th- to 16th-level character (no 7th-level spells).", special: "Vampiric abilities and cleric spellcasting must be resolved together; matriarchs are indistinguishable from other devilfish until they cast." }]
+]);
+
 export const RC_VARIANT_SHEETS = [
   ...animals, ...lowlife, ...monsters, ...dragonSheets, ...undead, ...hags,
   ...hydras, ...vampires, ...slugs, ...variableGiants, ...hordes, ...liches,
   ...humanoid, ...planar, ...aquaticDinosaurs, ...elementals, ...elementalRulers,
-  ...hydraxes, ...herds, ...specials
+  ...hydraxes, ...herds, ...specials, ...coastalFolk
 ];
+
+/** Spellcasting noted in the prose of sheets that are otherwise kept as-is. */
+const SPELLCASTING_BY_NAME = new Map([
+  ["Sphinx", "Female: 12th-level cleric spells; male: 12th-level magic-user spells. Saves vs. their spells are at -4."]
+]);
 
 /** Curated sheets replace OCR artifacts; existing unrelated docs are kept. */
 export function mergeCuratedMonsterVariants(docs) {
   if (!Array.isArray(docs)) return docs;
   const curated = new Map(RC_VARIANT_SHEETS.map((doc) => [doc.name, doc]));
-  const kept = docs.filter((doc) => !curated.has(doc.name) && !OBSOLETE_VARIANT_NAMES.has(doc.name));
+  const kept = docs
+    .filter((doc) => !curated.has(doc.name) && !OBSOLETE_VARIANT_NAMES.has(doc.name))
+    .map((doc) => {
+      const spellcasting = SPELLCASTING_BY_NAME.get(doc.name);
+      return spellcasting
+        ? { ...doc, system: { ...doc.system, spellcasting } }
+        : doc;
+    });
   return [...kept, ...RC_VARIANT_SHEETS.map((doc) => structuredClone(doc))];
 }
 
@@ -385,7 +409,7 @@ export const OBSOLETE_VARIANT_NAMES = new Set([
   "Bat (Normal)", "Bat (Giant)", "Rat (Normal)", "Rat (Giant)",
   "Snake (Cobra)", "Snake (Giant)", "Snake (Racer)", "Snake (Spitting)",
   "Toad (Giant)", "Toad (Rock/Cave)",
-  "Lizard, Giant",
+  "Lizard, Giant", "Merman",
   "Fish, Giant (Bass)", "Fish, Giant (Giant)", "Fish, Giant (Rockfish)", "Fish, Giant (Sturgeon)",
   "Spider, Giant (Black)", "Spider, Giant (Crab)", "Spider, Giant (Spider)", "Spider, Giant (Tarantella)", "Spider, Giant (Widow)",
   "Gargantua (Carrion)", "Gargantua (Crawler)", "Gargantua (Gargoyle*)", "Gargantua (Troll)",

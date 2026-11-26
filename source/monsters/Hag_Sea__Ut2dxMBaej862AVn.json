@@ -23,6 +23,7 @@
     "xpValue": 2300,
     "terrain": "Any",
     "monsterType": "Humanoid, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Swimming 150' (50'); gaze and touch drain energy."
     ],

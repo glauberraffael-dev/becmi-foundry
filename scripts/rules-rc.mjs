@@ -224,6 +224,37 @@ export function parseMonsterSaveAs(saveAs, hd = "1") {
   return { classKey, level: Math.max(1, Math.min(36, Number(match[2]))), label: raw };
 }
 
+const MONSTER_CASTER_PATTERNS = [
+  ["magic-user", /\bmagic[\s-]?user\b|\bwizard\b/i],
+  ["cleric", /\bcleric\b|\bpriest\b/i],
+  ["druid", /\bdruid\b/i],
+  ["elf", /\belf\b|\belves\b/i]
+];
+
+/**
+ * Identify the spell lists and caster level described by a monster's
+ * Spellcasting note. Drag-and-drop spells alone also enable the tab, in which
+ * case the save-as entry supplies a safe fallback for the level.
+ */
+export function monsterSpellcasterInfo(system = {}, flags = {}) {
+  const text = String(system.spellcasting ?? flags.spellcaster ?? "").replace(/\s+/g, " ").trim();
+  const parsed = parseMonsterSaveAs(system.saveAs, system.hd);
+  const detected = text
+    ? MONSTER_CASTER_PATTERNS.filter(([, pattern]) => pattern.test(text)).map(([key]) => key)
+    : [];
+  const saveClass = ["cleric", "magic-user", "elf"].includes(parsed?.classKey) ? parsed.classKey : null;
+  const classKeys = detected.length ? detected : saveClass ? [saveClass] : [];
+  if (!classKeys.length) return null;
+  const levelText = text.match(/\b(\d{1,2})(?:st|nd|rd|th)?[\s-]*level\b|\blevel\s*(\d{1,2})\b/i);
+  const level = Number(levelText?.[1] ?? levelText?.[2] ?? parsed?.level ?? 1);
+  return {
+    text,
+    classKeys,
+    classKey: classKeys[0],
+    level: Math.max(1, Math.min(36, Number.isFinite(level) ? level : 1))
+  };
+}
+
 /** Saving-throw targets a monster uses on the character save table. */
 export function monsterSaveTargets(saveAs, hd = "1") {
   const parsed = parseMonsterSaveAs(saveAs, hd);

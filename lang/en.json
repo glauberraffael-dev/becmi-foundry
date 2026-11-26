@@ -318,6 +318,11 @@
   "BECMI.sheet.hpCurrentHint": "Current HP — editable at any time, including from the token.",
   "BECMI.sheet.monsterAttacks": "Attack Macros",
   "BECMI.sheet.rollAttackAndDamage": "Roll attack and damage for this natural attack",
+  "BECMI.sheet.rollMonsterAttack": "Roll this natural attack only",
+  "BECMI.sheet.rollMonsterDamage": "Roll this natural attack's damage only",
   "BECMI.sheet.noMonsterAttacks": "No natural attacks are defined for this monster.",
-  "BECMI.notification.noMonsterAttack": "This monster has no attack with that index."
+  "BECMI.notification.noMonsterAttack": "This monster has no attack with that index.",
+  "BECMI.labels.spellcasting": "Spellcasting",
+  "BECMI.sheet.monsterSpells": "Spells Known",
+  "BECMI.sheet.monsterSpellHint": "Describe the spellcasting ability, then drag spells here or import them from the compendium."
 }

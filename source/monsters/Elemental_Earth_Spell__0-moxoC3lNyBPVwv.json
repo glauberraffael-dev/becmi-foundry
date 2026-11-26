@@ -23,6 +23,7 @@
     "xpValue": 1850,
     "terrain": "Plane of Earth",
     "monsterType": "Planar Monster, Enchanted (Common)",
+    "spellcasting": "",
     "special": [
       "Burrows through earth."
     ],

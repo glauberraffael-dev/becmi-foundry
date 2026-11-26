@@ -23,7 +23,7 @@
     "xpValue": 650,
     "terrain": "Mountain",
     "monsterType": "Monster (Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Tail Spikes:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 24 spikes; fires up to six per round at ranges 50/100/180, even while flying. Regrows two spikes per day.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Flying: 180' (60').&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Tail Spikes: 24 spikes; fires up to six per round at ranges 50/100/180, even while flying. Regrows two spikes per day.</p><p>Flying: 180' (60').</p>",
     "description": "A manticore has a lion's body, leathery bat wings, a spiked tail and a man's face with large fangs. It lives in wild mountain ranges and preys on humans, often ambushing a resting group with spikes or stalking a lone victim like a great cat. It flies at 180' (60').",
     "notes": "",
     "source": "Rules Cyclopedia",

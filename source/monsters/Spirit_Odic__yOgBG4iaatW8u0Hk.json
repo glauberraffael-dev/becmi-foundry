@@ -23,6 +23,7 @@
     "xpValue": 6250,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Travels up to 24 miles from its body; +2 weapon or better to hit."
     ],

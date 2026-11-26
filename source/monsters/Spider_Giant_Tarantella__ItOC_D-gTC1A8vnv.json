@@ -23,6 +23,7 @@
     "xpValue": 125,
     "terrain": "Any",
     "monsterType": "Lowlife (Rare)",
+    "spellcasting": "",
     "special": [
       "Poison: save vs. poison or dance for 2d6 turns; observers save vs. spells."
     ],

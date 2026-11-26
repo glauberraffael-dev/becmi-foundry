@@ -13,7 +13,7 @@
       "outdoor": 40
     },
     "attacks": "2 claws/ 1 bite",
-    "damage": "1d6/1d6/ldl0",
+    "damage": "1d6/1d6/1d10",
     "appearing": "1 (1d2)",
     "saveAs": "F3",
     "morale": 8,
@@ -24,8 +24,8 @@
     "terrain": "Hill, Mountain, Woods. (Cave Bear: Same, but prehistoric.)",
     "monsterType": "Black, Grizzly Bears: Normal Animal (Common).",
     "description": "Animal (Common). Polar Bear: Normal Animal Rare). Bears are well known to all adventurers. If any bear hits one victim with both paws in one round, the bear hugs its victim and inflicts 2d8 points of additional damage in that same round. Black Bear: Black bears have black fur and stand about 6' tall. They are omnivores but prefer roots and berries. A black bear will not usually attack unless it is cornered and cannot escape. Adult black bears will fight to the death to protect their young. They have been known to raid camps, seeking food. They are especially fond of such treats as fresh fish and sweets. Grizzly Bear: Grizzly bears have silver-tipped brown or reddish brown fur and stand about 9' tall. They are fond of meat and are much more likely to attack than black bears. Grizzlies are found in most climates, but are most common in mountains and forests. Polar Bear: Polar bears have white fur and stand about 11' tall. They live in cold regions. They usually eat fish, but often attack adventurers. These huge bears are good swimmers, and their wide feet allow them to run across snow without sinking. Cave Bear: These enormous bears stand about well by scent. If hungry, they will fol",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Grizzly Bear:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; Grizzly bears have silver-tipped brown or reddish brown fur and stand about 9' tall.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "special": "<p>Grizzly Bear: Grizzly bears have silver-tipped brown or reddish brown fur and stand about 9' tall.</p>",
+    "notes": "Polar Bear: Normal Animal (Rare). Cave Bear: Prehistoric Animal (Very Rare).",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {

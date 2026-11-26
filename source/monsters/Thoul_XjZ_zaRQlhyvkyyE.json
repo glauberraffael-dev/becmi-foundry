@@ -23,7 +23,7 @@
     "xpValue": 65,
     "terrain": "Any",
     "monsterType": "Monster (Very Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Paralysis:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; The touch of a thoul paralyses as a ghoul does.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Regeneration: If damaged, it regains 1 hit point per round while alive.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Paralysis: The touch of a thoul paralyses as a ghoul does.</p><p>Regeneration: If damaged, it regains 1 hit point per round while alive.</p>",
     "description": "A thoul is a magical combination of a ghoul, a hobgoblin and a troll, and is not Undead. Except up close it looks exactly like a hobgoblin, so thouls often serve as guards to hobgoblin kings and Chaotic rulers.",
     "notes": "",
     "source": "Rules Cyclopedia",

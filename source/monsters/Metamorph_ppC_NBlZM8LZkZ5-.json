@@ -1,0 +1,58 @@
+{
+  "_id": "ppC_NBlZM8LZkZ5-",
+  "_key": "!actors!ppC_NBlZM8LZkZ5-",
+  "name": "Metamorph",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3+1",
+    "hp": 15,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon or as form",
+    "damage": "By weapon type or form",
+    "appearing": "1d6 (1d20)",
+    "saveAs": "M11",
+    "morale": 8,
+    "treasure": "Variable",
+    "intelligence": 14,
+    "alignment": "Any (often Chaotic)",
+    "xpValue": 100,
+    "terrain": "Any",
+    "monsterType": "Humanoid (Rare)",
+    "spellcasting": "",
+    "special": [
+      "Shapeshifts up to 11 times; AC, HD and damage can change with the assumed form."
+    ],
+    "description": "Metamorph — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 15,
+        "max": 15
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Metamorph",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

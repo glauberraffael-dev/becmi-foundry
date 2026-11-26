@@ -23,6 +23,7 @@
     "xpValue": 400,
     "terrain": "Ocean",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Fish, Giant (Rockfish) — Rules Cyclopedia stat block.",
     "notes": "",

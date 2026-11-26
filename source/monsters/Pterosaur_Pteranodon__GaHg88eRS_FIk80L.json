@@ -23,7 +23,7 @@
     "xpValue": 175,
     "terrain": "Hill, Mountain, Jungle (prehistoric)",
     "monsterType": "Prehistoric Animal (Very Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Flying:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 240' (120').&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Carrying: 2,000 cn at full speed; 3,000 cn at half speed.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Flying: 240' (120').</p><p>Carrying: 2,000 cn at full speed; 3,000 cn at half speed.</p>",
     "description": "Pteranodons are larger, more aggressive pterosaurs with wingspans of up to 50 feet. They often attack and carry off man-sized creatures, and can carry 2,000 cn at full speed or 3,000 cn at half speed.",
     "notes": "",
     "source": "Rules Cyclopedia",

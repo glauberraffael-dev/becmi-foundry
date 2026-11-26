@@ -23,6 +23,7 @@
     "xpValue": 50,
     "terrain": "Any",
     "monsterType": "Lowlife (Rare)",
+    "spellcasting": "",
     "special": [
       "Poison: save vs. poison or die in 1 turn. Webbing acts as the web spell."
     ],

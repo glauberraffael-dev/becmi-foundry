@@ -1,0 +1,58 @@
+{
+  "_id": "CiNXIyFy5Eog3Xke",
+  "_key": "!actors!CiNXIyFy5Eog3Xke",
+  "name": "Devilfish (Matriarch)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 120
+    },
+    "attacks": "1 tail/1 bite",
+    "damage": "1d4/1d6 + energy drain",
+    "appearing": "20 (1d6 X 20)",
+    "saveAs": "C (level = HD)",
+    "morale": 8,
+    "treasure": "A x 2 + F per 20",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 950,
+    "terrain": "Ocean",
+    "monsterType": "Monster, Enchanted (Rare)",
+    "spellcasting": "Cleric spells as a 10th- to 16th-level character (no 7th-level spells).",
+    "special": [
+      "Vampiric abilities and cleric spellcasting must be resolved together; matriarchs are indistinguishable from other devilfish until they cast."
+    ],
+    "description": "Devilfish (Matriarch) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Devilfish (Matriarch)",
+      "category": "Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

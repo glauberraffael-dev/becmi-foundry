@@ -24,8 +24,8 @@
     "terrain": "Cavern; Hill, Mountain, Woods.",
     "monsterType": "Humanoid (Common).",
     "description": "Goblins are a humanoid race, small (3 1/2' to They have pointed ears and misshapen teeth. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light. Goblins live underground in caves and caverns and have well-developed infravision, with a 90' range. In full daylight they fight with a penalty of1 on their attack rolls. They normally send hunting parties out at night to scavenge food and attack poorly-defended groups of humans. There is a 20% chance that when goblins are encountered outdoors, 1 of every 4 will be riding a dire wolf. Goblins hate dwarves and will attack them on sight. In the goblin lair lives a goblin king with 15 gains a +1 bonus to damage rolls. The goblin king has a bodyguard of 2d6 goblins who fight as each. The king and his bodyguard may fight in full daylight without a penalty. The goblin morale is 9 rather than 7 as long as their king is with them and still alive. There can be goblin spellcasters; see \"Monster Spellcasters\" later in this chapter.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;There can be goblin spellcasters; see \"Monster Spellcasters\" later in this chapter.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "special": "<p>There can be goblin spellcasters; see \"Monster Spellcasters\" later in this chapter.</p>",
+    "notes": "Goblins are a humanoid race, small (3 1/2' to 4 1/2' tall) and very ugly by human standards. They have pointed ears and misshapen teeth. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light. Goblins live underground in caves and caverns",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {

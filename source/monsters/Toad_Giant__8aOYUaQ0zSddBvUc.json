@@ -23,6 +23,7 @@
     "xpValue": 25,
     "terrain": "Any",
     "monsterType": "Giant Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Toad (Giant) — Rules Cyclopedia stat block.",
     "notes": "",

@@ -23,6 +23,7 @@
     "xpValue": 3250,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Rare)",
+    "spellcasting": "",
     "special": [
       "Ethereal at first; magical weapons needed to hit."
     ],

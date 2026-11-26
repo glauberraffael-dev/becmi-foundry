@@ -23,6 +23,7 @@
     "xpValue": 33500,
     "terrain": "Ruins",
     "monsterType": "Undead, Enchanted (Very Rare)",
+    "spellcasting": "Magic-User spells by character level (level 35).",
     "special": [
       "Magical weapon needed to hit; touch paralyzes (save vs. paralysis); spells by character level."
     ],

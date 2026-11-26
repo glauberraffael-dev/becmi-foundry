@@ -277,9 +277,29 @@
   margin-bottom: 0.5rem;
 }
 
+.becmi-monster-attack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 10rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--becmi-border);
+  border-radius: 3px;
+}
+
+.becmi-monster-attack__label {
+  font-size: 0.85rem;
+}
+
 .becmi-monster-attack small {
   font-weight: 400;
   opacity: 0.75;
+}
+
+.becmi-monster-attack__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
 /* ------------------------------------------------------------------ tabs */

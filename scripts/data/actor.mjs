@@ -328,6 +328,10 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       }),
       terrain: new f.StringField({ initial: "", label: "BECMI.labels.terrain" }),
       monsterType: new f.StringField({ initial: "" }),
+      // Non-empty for spellcasting monsters; enables the monster Spells tab.
+      spellcasting: new f.StringField({ initial: "", label: "BECMI.labels.spellcasting" }),
+      // Imported spells and memorized slots use the same shape as characters.
+      spellbook: spellbookSchema(),
       saves: savingThrowSchema(),
       special: new f.HTMLField({ initial: "" }),
       description: new f.HTMLField({ initial: "" }),

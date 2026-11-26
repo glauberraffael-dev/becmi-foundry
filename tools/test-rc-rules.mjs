@@ -10,7 +10,8 @@ import {
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
   levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
-  monsterSaveTargets, monsterThac0, normalizeClassKey, parseMonsterHitDice, parseMonsterSaveAs,
+  monsterSaveTargets, monsterSpellcasterInfo, monsterThac0, normalizeClassKey,
+  parseMonsterHitDice, parseMonsterSaveAs,
   planAbilityAdjustment, resolveTurnResult,
   rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
   turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
@@ -212,6 +213,20 @@ check("monster Save As resolves to character saving-throw targets", () => {
   assert.deepEqual(monsterSaveTargets("F7 F21 F36", "9"), baseSaves("fighter", 7));
   assert.equal(parseMonsterSaveAs("See below"), null);
   assert.equal(monsterSaveTargets("Character type and level"), null);
+});
+
+check("monster spellcasting notes resolve to RC caster lists and levels", () => {
+  const lich = monsterSpellcasterInfo({
+    spellcasting: "Magic-User spells by character level (level 21).", saveAs: "M21", hd: "9d4+12"
+  });
+  assert.equal(lich.classKey, "magic-user");
+  assert.equal(lich.level, 21);
+  const sphinx = monsterSpellcasterInfo({
+    spellcasting: "Female: 12th-level cleric spells; male: 12 level magic-user spells.", saveAs: "F24", hd: "12"
+  });
+  assert.deepEqual(sphinx.classKeys, ["magic-user", "cleric"]);
+  assert.equal(sphinx.level, 12);
+  assert.equal(monsterSpellcasterInfo({ saveAs: "F5", hd: "5" }), null);
 });
 
 check("each natural attack becomes its own rollable monster macro", () => {

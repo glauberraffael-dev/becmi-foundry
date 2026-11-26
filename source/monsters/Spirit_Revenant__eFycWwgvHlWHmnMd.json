@@ -23,6 +23,7 @@
     "xpValue": 7525,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "All attacks carry poison; +2 weapon or better to hit."
     ],

@@ -23,6 +23,7 @@
     "xpValue": 450,
     "terrain": "Any",
     "monsterType": "Monster (Rare)",
+    "spellcasting": "",
     "special": [
       "One head (and 8 hp) is destroyed for every 8 damage taken."
     ],

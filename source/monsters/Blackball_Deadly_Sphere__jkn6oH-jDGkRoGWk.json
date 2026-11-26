@@ -23,6 +23,7 @@
     "xpValue": 7500,
     "terrain": "Any",
     "monsterType": "Planar Monster (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Whatever it touches disintegrates with no saving throw."
     ],

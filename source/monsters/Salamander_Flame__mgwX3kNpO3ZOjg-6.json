@@ -23,6 +23,7 @@
     "xpValue": 1200,
     "terrain": "Any",
     "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Immune to normal weapons."
     ],

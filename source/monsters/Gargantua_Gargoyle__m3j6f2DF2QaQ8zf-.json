@@ -23,6 +23,7 @@
     "xpValue": 10000,
     "terrain": "Any",
     "monsterType": "Construct, Enchanted (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Can be hit only by magical weapons."
     ],

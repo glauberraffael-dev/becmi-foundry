@@ -23,6 +23,7 @@
     "xpValue": 16,
     "terrain": "Any",
     "monsterType": "Humanoid",
+    "spellcasting": "",
     "special": [],
     "description": "Normal Human — Rules Cyclopedia stat block.",
     "notes": "",

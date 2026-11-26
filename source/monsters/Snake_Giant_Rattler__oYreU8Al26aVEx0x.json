@@ -23,6 +23,7 @@
     "xpValue": 125,
     "terrain": "Any",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Snake (Giant Rattler) — Rules Cyclopedia stat block.",
     "notes": "",

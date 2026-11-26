@@ -23,6 +23,7 @@
     "xpValue": 9575,
     "terrain": "Any",
     "monsterType": "Dragon",
+    "spellcasting": "",
     "special": [
       "Fire cone; flying 360' (120')."
     ],

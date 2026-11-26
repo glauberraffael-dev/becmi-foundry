@@ -23,7 +23,7 @@
     "xpValue": 1900,
     "terrain": "Mountain",
     "monsterType": "Giant Humanoid",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Immunity:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; Cold-based attacks.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Thrown Boulders: 3d6 damage; range 60/130/200 yards.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Immunity: Cold-based attacks.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
     "description": "Frost giants stand 18 feet tall with pale skin, light hair and iron armor. They build castles above the timberline, are immune to cold-based attacks, and keep polar bears or wolves as guards.",
     "notes": "",
     "source": "Rules Cyclopedia",

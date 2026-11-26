@@ -23,7 +23,7 @@
     "xpValue": 10,
     "terrain": "Hill, Mountain, Jungle (prehistoric)",
     "monsterType": "Prehistoric Animal (Very Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Flying:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 180' (60').&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Flying: 180' (60').</p>",
     "description": "Small pterosaurs are batlike reptiles with 8- to 10-foot wingspans. They hunt insects, birds and small animals by gliding on air currents, attacking human-sized creatures only when driven by great hunger.",
     "notes": "",
     "source": "Rules Cyclopedia",

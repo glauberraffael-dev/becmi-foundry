@@ -23,6 +23,7 @@
     "xpValue": 1900,
     "terrain": "Ocean",
     "monsterType": "Giant Humanoid",
+    "spellcasting": "",
     "special": [
       "Amphibious; can hold its breath for 1 hour."
     ],

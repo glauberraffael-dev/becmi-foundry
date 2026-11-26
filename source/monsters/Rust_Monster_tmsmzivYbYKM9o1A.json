@@ -23,6 +23,7 @@
     "xpValue": 300,
     "terrain": "Cavern, Ruins",
     "monsterType": "Monster (Rare)",
+    "spellcasting": "",
     "special": [
       "Antenna rusts nonmagical metal; magical metal loses one plus per hit."
     ],

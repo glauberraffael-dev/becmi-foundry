@@ -85,7 +85,7 @@ function resolveTargetAC(targetAC) {
  * Roll an attack. Accepts an explicit target AC, otherwise uses a targeted
  * token, otherwise assumes the unarmoured AC 9. No token is required.
  */
-export async function attackRoll(actor, item, { targetAC, rollMode } = {}) {
+export async function attackRoll(actor, item, { targetAC, rollMode, skipDamage = false } = {}) {
   const system = actor?.system ?? {};
   const attrs = system.attributes ?? system;
   const thac0 = Number(attrs.thac0?.value ?? attrs.thac0 ?? 10);
@@ -126,7 +126,7 @@ export async function attackRoll(actor, item, { targetAC, rollMode } = {}) {
     actor
   });
 
-  if (hit && item?.system?.damage) {
+  if (hit && !skipDamage && item?.system?.damage) {
     await damageRoll(actor, item, { rollMode });
   }
   return { roll, hit, needed, auto, targetAC: ac };
@@ -148,21 +148,40 @@ export async function damageRoll(actor, item, { rollMode, bonusDamage = 0 } = {}
 }
 
 /**
- * One macro per monster attack. Every natural attack gets its own button; the
- * sheet passes the index so two claws and a bite never share a single roll.
+ * One button per natural attack, with separate attack-only and damage-only
+ * rolls. `mode: "both"` is kept for callers that still want the old combined
+ * behaviour; the sheet uses the two explicit modes.
  */
-export async function monsterAttackRoll(actor, index, options = {}) {
-  const rows = monsterAttackRows(actor?.system ?? {});
-  const row = rows[Number(index)];
-  if (!row) {
-    ui.notifications.warn(game.i18n.localize("BECMI.notification.noMonsterAttack"));
+export async function monsterAttackRoll(actor, index, { mode = "attack", ...options } = {}) {
+  const row = monsterAttackRow(actor, index);
+  if (!row) return null;
+  const pseudoItem = monsterAttackItem(row);
+  if (mode === "damage") return monsterDamageRoll(actor, index, options);
+  return attackRoll(actor, pseudoItem, { ...options, skipDamage: mode !== "both" });
+}
+
+/** Damage-only roll for one natural attack, independent of its attack roll. */
+export async function monsterDamageRoll(actor, index, options = {}) {
+  const row = monsterAttackRow(actor, index);
+  if (!row) return null;
+  if (!row.damage) {
+    ui.notifications.warn(game.i18n.localize("BECMI.notification.noFormula"));
     return null;
   }
-  const pseudoItem = {
+  return damageRoll(actor, monsterAttackItem(row), options);
+}
+
+function monsterAttackRow(actor, index) {
+  const row = monsterAttackRows(actor?.system ?? {})[Number(index)];
+  if (!row) ui.notifications.warn(game.i18n.localize("BECMI.notification.noMonsterAttack"));
+  return row ?? null;
+}
+
+function monsterAttackItem(row) {
+  return {
     name: row.note ? `${row.name} (${row.note})` : row.name,
     system: { damage: row.damage }
   };
-  return attackRoll(actor, pseudoItem, options);
 }
 
 /** Roll an arbitrary item formula (spell effect, treasure value, etc.). */

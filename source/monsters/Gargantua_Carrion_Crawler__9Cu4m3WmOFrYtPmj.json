@@ -23,6 +23,7 @@
     "xpValue": 6500,
     "terrain": "Any",
     "monsterType": "Lowlife (Very Rare)",
+    "spellcasting": "",
     "special": [
       "Paralysis: victims failing a save vs. paralysis are paralysed."
     ],

@@ -23,6 +23,7 @@
     "xpValue": 2500,
     "terrain": "Mountains",
     "monsterType": "Giant Humanoid",
+    "spellcasting": "",
     "special": [],
     "description": "Giant (Mountain, 14 HD) — Rules Cyclopedia stat block.",
     "notes": "",

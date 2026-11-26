@@ -23,6 +23,7 @@
     "xpValue": 27500,
     "terrain": "Ruins",
     "monsterType": "Undead, Enchanted (Very Rare)",
+    "spellcasting": "Cleric spells by character level (level 31).",
     "special": [
       "Magical weapon needed to hit; touch paralyzes (save vs. paralysis); spells by character level."
     ],

@@ -23,6 +23,7 @@
     "xpValue": 20,
     "terrain": "Any",
     "monsterType": "Normal Animal",
+    "spellcasting": "",
     "special": [],
     "description": "Snake (Giant Racer) — Rules Cyclopedia stat block.",
     "notes": "",

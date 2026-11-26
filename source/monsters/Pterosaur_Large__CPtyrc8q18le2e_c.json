@@ -23,7 +23,7 @@
     "xpValue": 1000,
     "terrain": "Mountain (prehistoric)",
     "monsterType": "Prehistoric Animal (Very Rare)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Flying:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 180' (60').&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Swoop: Double damage when attacking with surprise.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Carrying: 4,000 cn at full speed; 8,000 cn at half speed.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "special": "<p>Flying: 180' (60').</p><p>Swoop: Double damage when attacking with surprise.</p><p>Carrying: 4,000 cn at full speed; 8,000 cn at half speed.</p>",
     "description": "Large pterosaurs have wingspans over 50 feet and can carry off a creature as large as a warhorse. A surprise attack is a swoop for double damage. They carry 4,000 cn at full speed or 8,000 cn at half speed.",
     "notes": "",
     "source": "Rules Cyclopedia",

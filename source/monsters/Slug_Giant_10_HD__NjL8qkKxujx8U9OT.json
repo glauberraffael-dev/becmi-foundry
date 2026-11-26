@@ -23,6 +23,7 @@
     "xpValue": 2500,
     "terrain": "Cavern, Ruins",
     "monsterType": "Giant Animal (Rare)",
+    "spellcasting": "",
     "special": [
       "Burrowing 30' (10'); blunt weapons do no damage and edged weapons deal half damage."
     ],

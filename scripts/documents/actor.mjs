@@ -1,6 +1,6 @@
 import {
-  abilityCheck, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll, moraleCheck,
-  savingThrow, thiefSkillRoll, turnUndeadRoll
+  abilityCheck, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll, monsterDamageRoll,
+  moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
 } from "../rolls.mjs";
 import { computeArmorClass } from "../rules-rc.mjs";
 
@@ -53,9 +53,14 @@ export class BECMIActor extends Actor {
     return hitDiceRoll(this, options);
   }
 
-  /** Roll one natural attack by index; the sheet renders one macro per row. */
+  /** Roll one natural attack by index; each row has its own attack button. */
   async rollMonsterAttack(index, options = {}) {
     return monsterAttackRoll(this, index, options);
+  }
+
+  /** Roll damage for one natural attack without rolling the attack first. */
+  async rollMonsterDamage(index, options = {}) {
+    return monsterDamageRoll(this, index, options);
   }
 
   async rollFree(expression, options = {}) {
