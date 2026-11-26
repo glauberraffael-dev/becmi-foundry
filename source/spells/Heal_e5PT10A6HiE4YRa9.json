@@ -16,7 +16,10 @@
     "description": "This spell's effect is identical to that of the 6th level cleric spell cureall. When used to cure wounds, it cures nearly all of the damage, leaving only 1d6 points of damage remaining. It can instead remove a curse, neutralize a poison, cure a disease, cure blindness, or even remove a feeblemind effect.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
   },
   "flags": {
     "becmi": {

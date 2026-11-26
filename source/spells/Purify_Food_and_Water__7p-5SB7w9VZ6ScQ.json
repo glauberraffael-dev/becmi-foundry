@@ -16,7 +16,10 @@
     "description": "This spell will make spoiled or poisoned food and water safe and usable. It will purify one ration of preserved food (either iron or standard rations)., or six waterskins of water, or enough normal food to feed a dozen people. If cast at mud, the spell will cause the dirt to settle, leaving a pool of pure, clear water. The spell will not affect any living creature.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 1
+    }
   },
   "flags": {
     "becmi": {

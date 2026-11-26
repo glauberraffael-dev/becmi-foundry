@@ -17,7 +17,10 @@
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",
-    "rollFormula": "2d8"
+    "rollFormula": "2d8",
+    "spellLevels": {
+      "cleric": 4
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "This spell causes all mechanical and magical traps to glow with a dull blue light when the cleric comes within 30' of them. It does not reveal the types of traps, nor any method of removing them. Note that an ambush is not a trap, nor is a natural hazard, such as quicksand.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2
+    }
   },
   "flags": {
     "becmi": {

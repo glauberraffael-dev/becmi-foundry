@@ -16,7 +16,10 @@
     "description": "This spell will allow the spellcaster to read, not speak, any unknown languages or codes, including treasure maps, secret symbols, and so forth, until the duration ends. When reversed, this spell, darkness, creates a circle of darkness 30' in diameter. It will block all sight except infravision. Darkness will cancel a light spell if cast upon it (but may itself be canceled by another light spell). If cast at an opponent's eyes, it will cause blindness until canceled, or until the duration ends; as before, the victim does get a saving throw.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 1
+    }
   },
   "flags": {
     "becmi": {

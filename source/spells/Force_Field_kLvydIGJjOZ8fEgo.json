@@ -16,7 +16,10 @@
     "description": "Effect: Creates an invisible barrier This spell creates an invisible, immovable barrier or object of pure force. It has almost no thickness, but cannot be broken or destroyed by any means except a disintegrate spell or a wish; even a dispel magic spell cannot affect it. A force field's shape is limited to a sphere, hemisphere, a flat surface, a cylinder, a square or rectangular box with flat sides, or part of such a box. The sphere's radius can be a maximum of 20'. The flat surface or combinations thereof may be up to 5,000 square feet in total area. The force field cannot be irregular in shape, and its surface must be perfectly smooth. It can be as small as the caster desires.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

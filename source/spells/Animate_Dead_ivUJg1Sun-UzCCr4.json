@@ -17,7 +17,11 @@
     "description": "This spell allows the caster to make animated, enchanted skeletons or zombies from normal skeletons or dead bodies within range. These animated undead creatures will obey the cleric until they are destroyed by another cleric or a dispel magic spell. For each experience level of the cleric, he may animate one Hit Die of undead. A skeleton has the same Hit Dice as the original creature, but a zombie has one Hit Die more than the original. Note that this doesn't count character experience levels as Hit Dice: For purposes of this spell, all humans and demihumans are 1 HD creatures, so the remains of a 9th level thief would be animated as a zombie with 2 HD.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 4,
+      "magic-user": 5
+    }
   },
   "flags": {
     "becmi": {

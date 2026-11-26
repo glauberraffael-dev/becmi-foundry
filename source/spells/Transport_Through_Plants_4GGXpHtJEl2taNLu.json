@@ -16,7 +16,10 @@
     "description": "Duration: Instantaneous Effect: Long-range teleportation This spell may be used a maximum of once per day. The druid must be near a plant (of any size), and must choose either a general location or a specific known plant elsewhere. After casting the spell, the druid magically enters the nearby plant and steps out of a plant at the destination (if the druid could not specify the exact plant, he appears from a plant determined randomly by the DM). There is no limit to the range, but the plants must both be living for the spell to work, and must both be on the same plane of existence. If either plant is dead, the spell fails. Otherwise, the caster immediately reappears at the new location.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 6
+    }
   },
   "flags": {
     "becmi": {

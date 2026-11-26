@@ -16,7 +16,10 @@
     "description": "For the duration of this spell, normal fire and heat cannot harm the spell's recipient. The recipient also gains a +2 bonus on all saving throws against magical fire (dragon's breath, fireball, etc.). Furthermore, damage from such fire is reduced by 1 point per die of damage (though each die will inflict at least 1 point of damage, regardless of adjustments). Red dragon breath damage is reduced by 1 point per Hit Die of the creature (again, to no less than 1 point of damage per Hit Die).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2
+    }
   },
   "flags": {
     "becmi": {

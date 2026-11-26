@@ -16,7 +16,10 @@
     "description": "Similar to a charm person spell, this effect causes one tree, six medium-sized bushes, 12 small shrubs, or 24 small plants to become friends of the magic-user (no saving throw). However, a plant-like monster (treant, shrieker, etc.) may make a saving throw vs. spells to resist the effect. The charmed plants will understand and obey all commands of the magic-user, as long as the tasks are within their ability (including the entangling of passers-by within range, but not including movement, sensing alignment, etc.). The plants will remain charmed for six months, until the charm is dispelled, or until winter (when they sleep).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

@@ -17,7 +17,11 @@
     "description": "This spell creates an invisible magical barrier all around the caster, extending for a 10' radius in all directions. The spell serves as protection from attacks by monsters of an alignment other than the caster's. Each creature within the barrier gains a +1 to all saving throws, and all attacks against those within are penalized by - 1 to the attacker's attack roll while the spell lasts. In addition, enchanted creatures cannot attack those within the barrier in hand-to-hand (melee) combat. (An enchanted creature is any creature which is magically summoned or controlled, such as a charmed character, or one that is not harmed by normal weapons.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 4,
+      "magic-user": 3
+    }
   },
   "flags": {
     "becmi": {

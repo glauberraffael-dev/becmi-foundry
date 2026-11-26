@@ -16,7 +16,10 @@
     "description": "This spell allows the spellcaster to contact one of the outer planes of existence to seek knowledge from an Immortal creature—a powerful magical being played by the DM. The wisest and most powerful Immortals live on the most distant outer planes. However, mental contact with an Immortal may cause a mortal to go insane. The more distant the plane, the greater the chance of a correct answer—but the greater the chance of insanity as well. The number of questions the spellcaster may ask is equal to the \"distance\" to the outer plane. \"Distance\" to any other plane of existence is measured in the number of planes the character would have to cross in order to visit that plane.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 5
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "When he casts this spell, the cleric is able to see all things within 120'. The spell is quite powerful; the cleric can clearly see all hidden, invisible, and ethereal objects and creatures as with the magic-user detect invisible spell. In addition, any secret doors as well as things or creatures not in their true form—whether polymorphed, disguised, or otherwise—are seen as they truly are, with no possibility of deception. Alignment is also \"seen,\" as is experience and power.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 5
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "This spell causes a small flame to appear in the druid's hand. It does not harm the caster in any way, and sheds light as if a normal torch. The flame can be used to ignite combustible materials touched to it (a lantern, torch, oil, etc.) without harming the magical flame. While holding the flame, the caster can cause it to disappear and reappear by concentration once per round, until the duration ends. Other items may be held and used in the hand while the fire is out. If desired, the fire may be dropped or thrown to a 30' range, but disappears 1 round after leaving the druid's hand. (Any fire it ignites during that round remains burning.)",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 2
+    }
   },
   "flags": {
     "becmi": {

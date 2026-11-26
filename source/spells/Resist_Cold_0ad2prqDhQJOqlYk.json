@@ -5,7 +5,7 @@
   "type": "spell",
   "img": "icons/svg/book.svg",
   "system": {
-    "spellLevel": 2,
+    "spellLevel": 1,
     "spellLists": [
       "cleric"
     ],
@@ -16,7 +16,10 @@
     "description": "Duration: 6 turns Effect: All creatures within 30' The caster of this spell may discover the alignment (Lawful, Neutral, or Chaotic) of any one creature within 10'. The spell may also be used When casting this spell, the cleric must name one type of animal (such as wolves). For the duration of the spell, the cleric may speak with all animals of that type if they are within 30'; the effect moves with the caster. The cleric can speak to any normal or giant forms of the specific animal type named, but only to one type at a time. The caster may not use this spell to speak to intelligent animals and fantastic creatures.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 1
+    }
   },
   "flags": {
     "becmi": {
@@ -27,5 +30,5 @@
   "ownership": {
     "default": 0
   },
-  "folder": "f8f539eab175ce76"
+  "folder": "5a5e34e105297f4c"
 }

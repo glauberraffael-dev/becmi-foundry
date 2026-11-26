@@ -236,7 +236,7 @@
     </tbody>
   </table>
   <div class="becmi-combat-fields">
-    <button type="button" class="becmi-roll" data-action="restSpells">{{localize 'BECMI.sheet.rest'}}</button>
+    {{#if canEdit}}<button type="button" class="becmi-roll" data-action="restSpells">{{localize 'BECMI.sheet.rest'}}</button>{{/if}}
     {{#if isDruid}}<button type="button" class="becmi-roll" data-action="toggleDruid">{{localize 'BECMI.sheet.druidDisable'}}</button>{{/if}}
   </div>
 
@@ -257,7 +257,7 @@
             {{/each}}
           </select></td>
           <td><input type="checkbox" name="system.spellbook.used.{{entry.key}}" {{#if entry.used}}checked{{/if}} {{#unless ../editable}}disabled{{/unless}}></td>
-          <td>{{#if entry.spell}}<button type="button" class="becmi-roll" data-action="castSpell" data-slot="{{entry.key}}" data-spell-key="{{entry.spell}}" data-item-id="{{entry.itemId}}">{{localize 'BECMI.rolls.cast'}}</button>{{/if}}</td>
+          <td>{{#if entry.spell}}<button type="button" class="becmi-roll" data-action="castSpell" data-slot="{{entry.key}}" data-spell-key="{{entry.spell}}" data-item-id="{{entry.itemId}}" {{#if entry.used}}disabled title="{{localize 'BECMI.notification.spellSlotSpent'}}"{{/if}}>{{localize 'BECMI.rolls.cast'}}</button>{{/if}}</td>
         </tr>
         {{/each}}
       </tbody>
@@ -572,7 +572,9 @@
   </div>
 
   <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.sidebar.quickRolls'}}</h3>
-  <div class="becmi-field"><label>{{localize 'BECMI.labels.targetAC'}}:</label><input data-target-ac type="number" value="{{targetAC}}" min="-10" max="20"></div>
+  <div class="becmi-field"><label>{{localize 'BECMI.labels.targetAC'}}:</label>
+    <button type="button" class="becmi-roll{{#if targetAcAuto}} is-active{{/if}}" data-action="toggleTargetAcAuto" aria-pressed="{{targetAcAuto}}" title="{{localize 'BECMI.labels.targetAcAuto'}}">{{localize 'BECMI.labels.targetAcAuto'}}</button>
+    <input data-target-ac type="number" value="{{targetAC}}" min="-10" max="20" {{#if targetAcAuto}}disabled{{/if}}></div>
   <div class="becmi-sidebar-roll">
     <input type="text" data-roll-expression value="1d20" aria-label="{{localize 'BECMI.sheet.expression'}}">
     <button type="button" class="becmi-roll" data-action="rollFree">{{localize 'BECMI.sheet.roll'}}</button>

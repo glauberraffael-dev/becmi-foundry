@@ -16,7 +16,10 @@
     "description": "Duration: Two turns Effect: Creates one or more monsters This spell is similar to the 7th level create normal monsters spell, except that it can create monsters with some special abilities (up to two asterisks). The range and duration are double those of the lesser spell. All other details are the same: the creatures are chosen by the caster, appear out of thin air, and vanish at the end of the spell duration. The total number of Hit Dice of monsters appearing is equal to the level of the magic-user casting the spell (again, dropping fractions if the caster's level is not an exact multiple of the creatures' Hit Dice). The spell does not create humans or demihumans, but can create undead.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

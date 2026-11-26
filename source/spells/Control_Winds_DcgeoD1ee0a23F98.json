@@ -16,7 +16,10 @@
     "description": "With this spell, the druid can cause all the air within range to behave as desired, either increasing to gale force or slowing to a dead calm. The druid must concentrate for one full turn of concentration (can't move or attack) to change the wind completely (calm to gale, for example). Any higher-level spellcaster using the same spell can easily counter the spell. The effect moves with the caster. If the spell is cast against an air creature (such as an elemental), the victim can make a saving throw vs. spells. If the victim fails its roll, the druid can slay or control the air creature by proper use of the wind force.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 5
+    }
   },
   "flags": {
     "becmi": {

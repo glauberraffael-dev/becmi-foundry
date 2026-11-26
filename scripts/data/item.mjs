@@ -76,6 +76,7 @@ export class SpellData extends SourceData {
       ...super.defineSchema(),
       spellLevel: new f.NumberField({ initial: 1, integer: true, min: 1, max: 9, label: "BECMI.labels.spellLevel" }),
       spellLists: new f.ArrayField(new f.StringField(), { initial: [] }),
+      spellLevels: new f.ObjectField({ initial: {} }),
       range: new f.StringField({ initial: "", label: "BECMI.labels.range" }),
       duration: new f.StringField({ initial: "", label: "BECMI.labels.duration" }),
       effect: new f.StringField({ initial: "", label: "BECMI.labels.effect" }),

@@ -16,7 +16,10 @@
     "description": "Duration: 1 round per level of the caster Effect: Creates a magical sword When this spell is cast, a glowing sword made of magic, rather than metal, appears next to the caster. The magic-user may cause it to attack any creature within 30', simply by concentrating; the sword flies to the target and attacks. If the caster's concentration is broken, the sword merely stops attacking. It remains in existence for one round per level of the spellcaster. The sword moves very quickly, attacking twice per round and making its attack rolls at the caster's level.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

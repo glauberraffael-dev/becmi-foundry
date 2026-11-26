@@ -16,7 +16,10 @@
     "description": "This spell creates enough normal food to feed up to 12 men and their mounts for one day. For every level of the cleric above 8th, the spell creates enough food for 12 additional men and mounts. The cleric doesn't have to create the maximum amount of food if he doesn't wish to; he can create a lesser amount. Created food spoils after 24 hours; therefore it is impossible to lay in a big store of food created by this spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 5
+    }
   },
   "flags": {
     "becmi": {

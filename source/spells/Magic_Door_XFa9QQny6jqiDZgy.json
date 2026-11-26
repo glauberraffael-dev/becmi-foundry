@@ -16,7 +16,10 @@
     "description": "This spell may be cast on any wall, floor, ceiling, or section of ground. It creates a magical, invisible doorway that only the spellcaster may use. It also creates a passage through up to 10' of non-living solid material beyond the doorway itself. It cannot be created in a living object of any kind. The door is undetectable except by a detect magic spell, and cannot be destroyed except by a dispel magic spell (at normal chances for success). The magic door lasts until dispelled, or until it has been used seven times. Note that each oneway passage through the door is counted as a separate use.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

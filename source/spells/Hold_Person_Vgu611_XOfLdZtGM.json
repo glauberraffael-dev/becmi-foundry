@@ -17,7 +17,11 @@
     "description": "The hold person spell will affect any human, demihuman, or human-like creature (bugbear, dryad, gnoll, hobgoblin, kobold, lizard man, ogre, orc, nixie, pixie or sprite, for instance). It will not affect the undead or creatures larger than ogres. Each victim must make a saving throw vs. spells or be paralyzed for nine turns. The spell may be cast at a single person or at a group. If cast at a single person, the victim suffers a — 2 penalty to the saving throw. If cast at a group, it will affect up to four persons (of the cleric's choice), but with no penalty to their rolls. The paralysis may only be removed by the reversed form of the spell, or by a dispel magic spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2,
+      "magic-user": 3
+    }
   },
   "flags": {
     "becmi": {

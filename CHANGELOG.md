@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.27
+
+- The spell compendium now matches the Rules Cyclopedia spell index: seven
+  missing spells were restored (*Cure Light Wounds*, *Speak with Animals*,
+  *Floating Disc*, *Wall of Iron*, *Reverse Gravity*, *Meteor Swarm*,
+  *Shapechange*), prose swallowed by other spells was separated, three section
+  headings are no longer listed as spells, and each spell records its level per
+  class so clerics and magic-users can receive the same spell at different
+  levels.
+- Monster reaction text now matches the 2d6 RollTable bands.
+- The Target AC field has an Auto mode that reads the targeted token's AC;
+  manual AC remains available as a fallback.
+- Initiative rolls now set the tracker value for any combatant, not only the
+  active character. Spent spell slots can no longer be recast, and resting
+  posts a chat log and requires actor ownership.
+
 ## 0.1.26
 
 - Fixed cleric spell slots being read one level too low. The cleric table now

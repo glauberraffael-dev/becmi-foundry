@@ -16,7 +16,10 @@
     "description": "This spell enables the druid to learn the accurate weather to come for the next 12 hours. It affects an area 1 mile in diameter per level of the druid; for example, a 20th level druid would learn the weather within a 20 mile diameter (a 10 mile radius). The spell does not give the druid any control over the weather; it merely predicts what is to come.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 1
+    }
   },
   "flags": {
     "becmi": {

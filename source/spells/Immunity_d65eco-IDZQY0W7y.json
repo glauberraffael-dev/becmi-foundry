@@ -16,7 +16,10 @@
     "description": "This spell gives the recipient total immunity to all 1st-, 2nd-, and 3rd level spells. Furthermore, 4th- and 5th level spells have only half normal effect, or one-quarter normal if the victim makes a successful saving throw. Any spell effect that is quantifiable is reduced in effect; these effects include reductions in duration, bonuses, penalties, damage, etc. Round fractions off in the recipient's favor. The recipient is also completely immune to all missiles (normal or magical), as well as normal and silver weapons; he takes half damage from magical hand-held weapons. This applies only to weapons; claws, bites, breath weapons, and other natural attack forms are not blocked.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
   },
   "flags": {
     "becmi": {

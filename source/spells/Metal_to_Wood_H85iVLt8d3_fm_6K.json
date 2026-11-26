@@ -16,7 +16,10 @@
     "description": "This spell can be used to change any metal item or items into wood. The spell can transmute five pounds (50 cn weight) per level of the caster. Any magical metal item is 90% resistant to the magic. The effect is permanent, and the affected metal cannot be changed back with a dispel magic spell. Any armor changed to wood falls off the wearer and any weapons affected turn to nonmagical wooden clubs.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 7
+    }
   },
   "flags": {
     "becmi": {

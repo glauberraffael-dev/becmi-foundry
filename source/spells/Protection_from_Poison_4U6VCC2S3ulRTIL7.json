@@ -16,7 +16,10 @@
     "description": "For the duration of this spell, the recipient is completely immune to the effects of poisons of all types, including gas traps and cloudkill spells. This protection extends to items carried (thus protecting against a spirit's poisonous presence, for example). Furthermore, the recipient gains a + 4 bonus on saving throws vs. poisonous breath weapons (such as green dragon breath), but not petrification breath (such as a gorgon's).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 3
+    }
   },
   "flags": {
     "becmi": {

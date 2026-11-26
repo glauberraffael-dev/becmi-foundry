@@ -16,7 +16,10 @@
     "description": "Duration: Storm, 1 round; Wall, 12 turns Effect: Storm in 20' x 20' x 20' volume; or Wall of 1,200 square feet This spell will affect up to 100 human or mansized creatures in a 240' diameter, making them appear to be the trees of an orchard, dense woods, or other large plant life appropriate to the region. (Unless the campaign's deserts feature very large cactus, the spell won't work in the desert.) Unwilling creatures are not affected. Creatures larger than man-size (such as horses) may be included, counting as two or three men This spell may be cast in either of two ways: either as an icy blast, ice storm, or wall of ice. An ice storm fills a 20' x 20' x 20' cube.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

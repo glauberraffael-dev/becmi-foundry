@@ -17,7 +17,10 @@
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "1d6 fire damage per caster level; a successful save halves the total.",
-    "rollFormula": "@level d6"
+    "rollFormula": "@level d6",
+    "spellLevels": {
+      "magic-user": 3
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "This spell causes monsters to appear out of thin air. All monsters appearing will understand and obey the caster's commands—fighting, carrying or fetching things, etc. They will faithfully obey all commands to the best of their abilities. Each monster will appear carrying its normal weapons and wearing its normal armor (if any), but arrives otherwise unequipped. At the end of one turn, all the monsters created vanish back into thin air, along with all their equipment. (If a monster has dropped a weapon while fighting and then vanishes, the weapon disappears, too.) The total number of Hit Dice of monsters appearing is equal to the level of the magic-user casting the spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

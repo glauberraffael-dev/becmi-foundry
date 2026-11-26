@@ -16,7 +16,10 @@
     "description": "This spell enables the cleric to talk to plants as though they are intelligent. The cleric may request a simple favor, and the plants will grant it if it is within the plants' power to understand and perform. This spell may be used to allow the cleric and party to pass through otherwise impenetrable undergrowth. It will also allow the cleric to communicate with plantlike monsters (such as treants).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 4
+    }
   },
   "flags": {
     "becmi": {

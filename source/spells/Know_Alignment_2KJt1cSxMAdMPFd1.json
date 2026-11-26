@@ -16,7 +16,10 @@
     "description": "to find the alignment of an enchanted item or area (if any). The reverse of the spell, confuse alignment, lasts for one turn per level of the caster, and may be cast on any one creature, by touch. No saving throw is allowed. For as long as the spell lasts, a cleric trying to identify the alignment of the recipient by using the normal know alignment spell will get a false answer. That same false answer will be the result of any further attempts.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2
+    }
   },
   "flags": {
     "becmi": {

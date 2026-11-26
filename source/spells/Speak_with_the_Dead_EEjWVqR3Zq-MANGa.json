@@ -16,7 +16,10 @@
     "description": "By means of this spell, a cleric may ask three questions of a deceased spirit if the body is within range. A cleric of 6th or 7th level can contact recently deceased spirits (those dead up to 4 days). Clerics of levels 8-14 have slightly more power (contacting spirits up to 4 months dead), and clerics of levels 15-20 have even more (speaking with corpses up to 4 years dead). No time limits apply to clerics of 21st level or greater. The spirit will always reply in a tongue known to the cleric, but can only offer knowledge of things up to the time of its death.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 3
+    }
   },
   "flags": {
     "becmi": {

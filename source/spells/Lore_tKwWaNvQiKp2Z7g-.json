@@ -16,7 +16,10 @@
     "description": "By means of this spell, the magic-user may gain knowledge of one item, place, or person. If the caster holds the item being studied, the spell takes 1d4 turns to complete, and the magic-user learns the item's name, method of operation and command words (if any), and approximate number of charges (if any, within five of the correct number). If the item has more than one mode of operation, or more than one command word, only one function will be revealed for each lore spell used, and the spell will not even hint that the object has any other functions.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

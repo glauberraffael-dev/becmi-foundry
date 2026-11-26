@@ -16,7 +16,10 @@
     "description": "This spell creates a vertical wall of iron exactly 2' thick. The magic-user may choose any length and width, but the total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 120' of the caster. The caster must create the wall so it rests on the ground or similar support. It cannot be cast in a space occupied by another object. It lasts until dispelled, disintegrated, or physically broken (though it will resist all but giant-sized physical attacks). Most other spell effects, including fireball, lightning bolt, etc., have no effect on a wall of iron.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 6
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "Duration: Instantaneous Effect: Destroys one creature or object This spell causes one creature or nonmagical object to crumble to dust. A victim may make a saving throw vs. death ray to avoid the effect. (The spell can disintegrate a dragon, a ship, or a 10' section of wall, for example.) The spell does not affect magical items or spell effects.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 6
+    }
   },
   "flags": {
     "becmi": {

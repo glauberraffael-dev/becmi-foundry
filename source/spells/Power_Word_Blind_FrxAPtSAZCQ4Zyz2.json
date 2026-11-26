@@ -17,7 +17,10 @@
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "1-40 HP: blinded for 1d4 days; 41-80 HP: blinded for 2d4 hours.",
-    "rollFormula": "1d4"
+    "rollFormula": "1d4",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

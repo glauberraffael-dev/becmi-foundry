@@ -16,7 +16,10 @@
     "description": "When this spell is cast, the spellcaster can see all invisible creatures and objects within range. The range is 10' for each level of the spellcaster. For example, a 3rd level spellcaster can use this spell to see invisible things within 30'.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 2
+    }
   },
   "flags": {
     "becmi": {

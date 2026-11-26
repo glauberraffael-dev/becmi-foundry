@@ -17,7 +17,11 @@
     "description": "This spell creates an invisible magical barrier all around the cleric's body (less than an inch away). While the spell lasts, characters and monsters attacking the cleric are penalized by - 1 to their attack rolls, and the cleric gains a + 1 bonus to all saving throws. In addition, enchanted creatures cannot even touch the cleric! (An enchanted creature is one that normal weapons will not affect, one which only magical weapons can hit. A creature that can only be hit by a silver weapon—a werewolf, for example—is not an enchanted creature. Any creature that is magically summoned or controlled, such as a charmed character, is also considered to be an enchanted creature.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 1,
+      "magic-user": 1
+    }
   },
   "flags": {
     "becmi": {

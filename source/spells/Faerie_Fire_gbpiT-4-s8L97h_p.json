@@ -16,7 +16,10 @@
     "description": "Duration: 1 round per level of caster Effect: Illuminates creatures or objects With this spell, the druid can outline one or more creatures or objects with a pale, flickering, greenish fire. The fire does not inflict any damage. The objects or creatures need only be detected in some way (such as by sight, or a detect invisible spell) to be the object of this spell. All attacks against the outlined creature or object gain a +2 bonus to attack rolls. The druid can outline one man-sized creature (about 12' of fire) for each 5 levels of experience. Thus, at 20th level, 48' of fire can be produced (outlining one dragon-sized creature, two horse-sized, or four man-sized creatures).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 1
+    }
   },
   "flags": {
     "becmi": {

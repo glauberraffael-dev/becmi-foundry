@@ -17,7 +17,10 @@
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "Level 6-8: stunned 2d10 turns; level 9-12: deafened 1d6 turns; level 13+: stunned 1d10 rounds.",
-    "rollFormula": "2d10"
+    "rollFormula": "2d10",
+    "spellLevels": {
+      "cleric": 7
+    }
   },
   "flags": {
     "becmi": {

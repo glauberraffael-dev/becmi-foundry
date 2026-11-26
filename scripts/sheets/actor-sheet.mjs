@@ -228,6 +228,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       memorizeSpell: BECMIActorSheet.#memorizeSpell,
       addMasteryRow: BECMIActorSheet.#addMasteryRow,
       toggleMastery: BECMIActorSheet.#toggleMastery,
+      toggleTargetAcAuto: BECMIActorSheet.#toggleTargetAcAuto,
       itemAttack: BECMIActorSheet.#itemAttack,
       itemDamage: BECMIActorSheet.#itemDamage,
       itemFormula: BECMIActorSheet.#itemFormula,
@@ -376,7 +377,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
-      targetAC: this.targetAC,
+      targetAC: this.manualTargetAC ?? this.targetAC ?? 9,
+      targetAcAuto: Boolean(this.actor.flags?.becmi?.targetAcAuto),
       classOptions: Object.values(RC.classes).map((cls) => ({ key: cls.key, name: cls.name })).sort(byName),
       armorOptions: Object.entries(RC.armor.types).map(([key, value]) => ({ key, name: ARMOR_EN[key] ?? value.name, ac: value.ac })),
       masteryGrades: masteryRanks().map((grade) => ({ key: grade.key, name: grade.nome })),
@@ -479,7 +481,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         .map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level, itemId: "" })));
     const itemOptionsByLevel = context.spellLevels.map((spellLevel) =>
       ownedSpells
-        .filter((item) => (Number(item.system?.spellLevel) || 0) === spellLevel
+        .filter((item) => (Number(item.system?.spellLevels?.[spellClassKey] ?? item.system?.spellLevel) || 0) === spellLevel
           && (!spellLists.length || (item.system?.spellLists ?? []).some((list) => spellLists.includes(list))))
         .map((item) => ({ key: `item:${item.id}`, name: item.name, level: spellLevel, itemId: item.id })));
     context.spellOptions = context.spellLevels.map((spellLevel, index) => {
@@ -723,8 +725,18 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   #targetAC() {
     const raw = this.element?.querySelector("[data-target-ac]")?.value;
     const value = String(raw ?? "").trim() === "" ? NaN : Number(raw);
-    this.targetAC = Number.isFinite(value) ? value : 9;
+    if (Number.isFinite(value)) this.manualTargetAC = value;
+    // In auto mode the roll helper reads the targeted token's AC. Returning
+    // undefined keeps that path instead of forcing the sidebar value.
+    this.targetAC = this.actor?.flags?.becmi?.targetAcAuto
+      ? undefined : (this.manualTargetAC ?? 9);
     return this.targetAC;
+  }
+
+  /** Usable in play mode: it is an action, not a form edit. */
+  static async #toggleTargetAcAuto() {
+    const enabled = !Boolean(this.actor.flags?.becmi?.targetAcAuto);
+    await this.actor.update({ "flags.becmi.targetAcAuto": enabled });
   }
 
   static async #setClass(event, target) {
@@ -873,7 +885,14 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #restSpells() {
+    if (!this.isEditable) return;
     await this.actor.update({ "system.spellbook.used": {} });
+    const escape = (value) => foundry.utils.escapeHTML(String(value ?? ""));
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: game.i18n.localize("BECMI.sheet.rest"),
+      content: `<div class="becmi-roll-card"><p>${escape(this.actor.name)} — ${escape(game.i18n.localize("BECMI.notification.spellsRested"))}</p></div>`
+    });
   }
 
   static async #castSpell(event, target) {
@@ -883,6 +902,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = itemId ? this.actor.items.get(itemId) : null;
     if (!spell && item?.type !== "spell") {
       ui.notifications.warn(game.i18n.localize("BECMI.notification.spellImportFailed"));
+      return;
+    }
+
+    if (slot && this.actor.system.spellbook?.used?.[slot]) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.spellSlotSpent"));
       return;
     }
 

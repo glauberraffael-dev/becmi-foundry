@@ -304,6 +304,11 @@
   width: 100%;
 }
 
+.becmi-field .becmi-roll {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .becmi-derived {
   font-weight: 700;
   min-width: 1.5rem;

@@ -16,7 +16,10 @@
     "description": "This spell allows the caster to summon any one elemental per spell (see Chapter 14). The druid may only summon one of each type of elemental (air, earth, fire, water) in one day. The elemental will understand the druid's spoken commands and will perform any tasks within its power (carrying, attacking, etc.) as directed by the caster. Unlike the magic-user's version of the spell, the druid does not need to concentrate to control the creature. The caster may send it back to its own plane with a simple command, and someone else may send it back by the use of a dispel magic or dispel evil spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 7
+    }
   },
   "flags": {
     "becmi": {

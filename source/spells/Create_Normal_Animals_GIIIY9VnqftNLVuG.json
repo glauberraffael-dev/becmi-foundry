@@ -16,7 +16,10 @@
     "description": "The cleric is able to create normal animals from thin air with this spell. The animals will appear at a point chosen (within 30'), but may thereafter be sent (by command) up to 240' away, if desired. The animals created will understand and obey the cleric at all times. They will fight if so commanded, and will perform other actions (carrying, watching, etc.) to the best of their abilities. They are normal animals, and may attack others unless their instructions are carefully worded. The cleric may choose the number of animals created, but not the exact type; the DM should decide, or even randomly determine, what sort of animals appear.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 6
+    }
   },
   "flags": {
     "becmi": {

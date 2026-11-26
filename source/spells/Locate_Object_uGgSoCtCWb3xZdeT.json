@@ -17,7 +17,11 @@
     "description": "The spellcaster casts this spell to find an object within the spell's range. For this spell to work, the spellcaster must know exactly what the object looks like. He can specify a common type of object, such as \"any flight of stairs,\" instead. The spell will point to the nearest designated object within range, giving the direction but not the distance. The spell's range increases as the spellcaster gains levels of experience. For example, a 2nd level spellcaster can locate objects up to 80' away; a 3rd level spellcaster, up to 90'.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 3,
+      "magic-user": 2
+    }
   },
   "flags": {
     "becmi": {

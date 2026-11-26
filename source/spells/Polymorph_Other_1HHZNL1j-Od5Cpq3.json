@@ -16,7 +16,10 @@
     "description": "This spell changes the victim into another living creature. The new form may have no more than twice as many Hit Dice as the original, or the spell will fail. The victim's hit points remain the same; an 8th level prince with 32 hit points could end up as a frog with 32 hit points. Unlike the polymorph self spell, the polymorph others spell actually turns the victim into the new creature, giving him any and all special abilities of the new form, plus its tendencies and behavior. For example, a hobgoblin polymorphed into a mule will think and act like a mule. This spell cannot create a duplicate of a specific individual, only a race or monster type.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "This spell effect is identical to that of a charm person spell, but will affect any creature except an undead monster. If cast on victims with 3 Hit Dice or less, the spell will charm 3d6 (3-18) victims. Otherwise, it will charm only one victim. Each victim may make a saving throw vs. spells to avoid the effects.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

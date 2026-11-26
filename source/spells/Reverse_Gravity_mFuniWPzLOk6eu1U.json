@@ -1,0 +1,34 @@
+{
+  "_id": "mFuniWPzLOk6eu1U",
+  "_key": "!items!mFuniWPzLOk6eu1U",
+  "name": "Reverse Gravity",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 7,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "90'",
+    "duration": "1/5 round (2 seconds)",
+    "effect": "Causes victims in a 30' cubic volume to fall upward",
+    "reversible": false,
+    "description": "This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "30eee009a13addc3"
+}

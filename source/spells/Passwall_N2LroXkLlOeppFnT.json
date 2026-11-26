@@ -16,7 +16,10 @@
     "description": "This spell causes a hole 5' diameter, 10' deep to appear in solid rock or stone only. The hole may be horizontal or vertical. The stone reappears at the end of the duration. If someone is still in the tunnel when the stone reappears, he gets a saving throw vs. turn to stone. If he succeeds, he is hurled out the nearest end of the tunnel. If he fails, he is trapped within the reappearing stone, and dies.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 5
+    }
   },
   "flags": {
     "becmi": {

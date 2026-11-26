@@ -17,7 +17,10 @@
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",
-    "rollFormula": "4d8"
+    "rollFormula": "4d8",
+    "spellLevels": {
+      "magic-user": 6
+    }
   },
   "flags": {
     "becmi": {

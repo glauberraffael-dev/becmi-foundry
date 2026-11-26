@@ -16,7 +16,10 @@
     "description": "This spell creates an image of the caster up to 240' away; the image will last without concentration. The projected image cannot be distinguished from the original except by touch. Any spell the spellcaster casts will seem to come from the image, but the caster must still be able to see the target. Spells and missile attacks will not appear to affect the image. If the image is touched or struck by a hand-to-hand weapon, it disappears.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 6
+    }
   },
   "flags": {
     "becmi": {

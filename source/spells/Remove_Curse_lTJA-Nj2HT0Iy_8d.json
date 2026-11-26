@@ -17,7 +17,11 @@
     "description": "This spell removes one curse, whether on a character, item, or area. Some curses—especially those on magical items—may only be temporarily removed, at the DM's discretion, requiring a clerical dispel evil spell for permanently removing the effects (or possibly a remove curse cast by a high-level spellcaster). The reverse of this spell, curse, causes a misfortune or penalty to affect the recipient. Curses are limited only by the caster's imagination, but if an attempted curse is too powerful, it may return to the caster (DM's discretion)! Safe limits to curses may include: - 4 penalty on attack rolls; - 2 penalty to all saving throws; prime requisite reduced to half normal.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 3,
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

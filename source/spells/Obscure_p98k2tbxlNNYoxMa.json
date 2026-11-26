@@ -16,7 +16,10 @@
     "description": "This spell causes a misty vapor to arise from the ground around the druid, forming a huge cloud. The cloud is 1' high per level of the druid, and is 10' in diameter for each level. For example, a 20th level druid could cast an obscure 20' tall and 200' diameter (100' radius). The cloud has no ill effects except to block vision. The caster, and all creatures able to see invisible things, will be able to see dimly through the cloud. All other creatures within the cloud will be delayed and confused by the effect. While within the cloud, these creatures are effectively blind.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 2
+    }
   },
   "flags": {
     "becmi": {

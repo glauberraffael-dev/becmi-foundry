@@ -16,7 +16,10 @@
     "description": "This spell creates quantities of cloth up to 30'x30'. The cloth created by a single spell must appear in one piece. Unlike many creationtype spells, this one creates cloth that is nonmagical and cannot be dispelled. If the campaign uses the optional general skills and the caster has an appropriate Craft skill, he may shape the cloth as he creates it. He may thus create a tent, a sail, a single garment, a drape, 60' of common rope, etc. If the campaign doesn't use the skills rules, the character could have been defined earlier as one who knows how to work cloth in order for him to do this.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

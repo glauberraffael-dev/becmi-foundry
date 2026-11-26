@@ -16,7 +16,10 @@
     "description": "This spell forces the victim to perform some special task or quest, as commanded by the caster. The victim may make a saving throw vs. spells; if he succeeds, the spell does not affect him. A typical task might involve slaying a certain monster, rescuing a prisoner, obtaining a magical item for the caster, or going on a pilgrimage. If the task is impossible or suicidal, the spell has no effect. Once the task is completed, the spell ends. The spell forces the victim to undertake a task, but doesn't force him to like it. Once the task is accomplished, the victim might wish to exact revenge on the cleric, just depending on the circumstances of the adventure.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 5
+    }
   },
   "flags": {
     "becmi": {

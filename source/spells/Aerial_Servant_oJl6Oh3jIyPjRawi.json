@@ -16,7 +16,10 @@
     "description": "An aerial servant is a very intelligent being from the elemental plane. With this spell, the cleric summons one of these beings, which appears immediately. The cleric must then describe one creature or item and its location to the servant, or else it will depart. When it hears this description and location, the aerial servant leaves, trying to find the item or creature and bring it to the cleric. The servant will take as much time as needed, up to the limit of the duration. If the spell's duration lapses before the task is completed, even if the aerial servant is already bringing the target back to the caster, the aerial servant has failed to accomplish its task.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 6
+    }
   },
   "flags": {
     "becmi": {

@@ -17,7 +17,11 @@
     "description": "When this spell is cast, the spellcaster will see a glow surround all evilly-enchanted objects within 60'. It will also cause creatures that want to harm the spellcaster to glow when they are within range. The spell, however, does not allow the spellcaster to hear the actual thoughts of the creatures. Remember that Chaotic alignment is not automatically the same as evil, although many Chaotic monsters have evil intentions. Traps and poison are neither good nor evil, but merely dangerous.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 1,
+      "magic-user": 2
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "When casting this spell, the cleric must name a specific place, though it need not be a place he has visited before. For the duration of the spell, the cleric knows the direction to that place. In addition, the cleric will magically gain any special knowledge needed to get to the place; for example, he would know the location of secret doors, passwords, and so forth. When the spell's duration runs out, the caster only remembers the general direction to the place. All other special information is forgotten. The spell is instantly negated is the caster attempts to write down, record, or disclose that special knowledge to others. This spell is often used to find a fast escape route.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 6
+    }
   },
   "flags": {
     "becmi": {

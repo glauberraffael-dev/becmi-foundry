@@ -16,7 +16,10 @@
     "description": "Effect: Creates 1,000 cubic feet of wood This spell creates a mass of wood equal to 1,000 cubic feet; it may be arranged in any fashion the caster desires (10' x 10' x 10' block, 25'x 20'x 2' wall, etc.) Casting time varies depending on the complexity of the design. A simple wall and other simple shapes take 1 round. A simple staircase may take 10 rounds (1 turn). A complicated design which is supposed to adhere to very tight specifications—such as the keel of a ship—could take the maximum time allowable, 12 turns (2 hours) just to work up in rough form. When the caster wants to try a complicated design, the DM decides how long the casting will take.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 5
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "Duration: 3 turns Effect: Creates one or more monsters This spell is similar to the 7th level spell create normal monsters and the 8th level spell create magical monsters, but with fewer limitations on the types of creatures appearing. The range and duration are triple those of the 7th level version. The spell cannot create humans and demihumans, but can create any other creature, regardless of the number of special abilities (asterisks). However, if the caster wants to create a creature with three or more asterisks, the caster must have carefully studied one (either alive or dead) for at least one hour to be able to create another with this spell.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
   },
   "flags": {
     "becmi": {

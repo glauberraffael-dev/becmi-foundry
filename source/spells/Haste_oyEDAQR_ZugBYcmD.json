@@ -16,7 +16,10 @@
     "description": "Effect: Up to 24 creatures move double speed This spell allows up to 24 creatures in a 60' diameter circle to perform actions at double speed for half an hour (3 turns). Those affected may move at up to twice normal speed and make double the normal number of missile or handto-hand attacks. This spell does not affect the rate at which magic works, so a hasted spellcaster can still not cast more than one spell per round, and the use of magical devices (such as wands) cannot be speeded up. The reverse of this spell, slow, will remove the effects of a haste spell, or will cause the victims to move and attack at half normal speed.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 3
+    }
   },
   "flags": {
     "becmi": {

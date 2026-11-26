@@ -1,14 +1,14 @@
 {
   "name": "becmi-foundry",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "private": true,
   "description": "Foundry VTT v13+ system for BECMI / Rules Cyclopedia, verified on v14",
   "type": "module",
   "scripts": {
-    "extract": "node tools/extract-all.mjs && node tools/normalize-compendia.mjs",
+    "extract": "node tools/extract-all.mjs && node tools/normalize-compendia.mjs && node tools/repair-spell-index.mjs",
     "sources": "node tools/build-packs.mjs",
     "pack": "npm run sources && fvtt package pack -n monsters --id becmi --type System --in source/monsters --out packs && fvtt package pack -n spells --id becmi --type System --in source/spells --out packs && fvtt package pack -n equipment --id becmi --type System --in source/equipment --out packs && fvtt package pack -n classes --id becmi --type System --in source/classes --out packs && fvtt package pack -n treasure --id becmi --type System --in source/treasure --out packs && fvtt package pack -n tables --id becmi --type System --in source/tables --out packs && fvtt package pack -n journals --id becmi --type System --in source/journals --out packs",
-    "verify": "node tools/validate.mjs && node tools/test-data-models.mjs && node tools/test-integrations.mjs && node tools/test-sheets.mjs && node tools/test-rc-rules.mjs && node tools/test-monsters.mjs && node tools/verify-packs.mjs monsters spells equipment classes treasure tables journals"
+    "verify": "node tools/validate.mjs && node tools/test-data-models.mjs && node tools/test-integrations.mjs && node tools/test-sheets.mjs && node tools/test-rc-rules.mjs && node tools/test-spell-index.mjs && node tools/test-monsters.mjs && node tools/verify-packs.mjs monsters spells equipment classes treasure tables journals"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.5"

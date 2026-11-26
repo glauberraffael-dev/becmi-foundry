@@ -16,7 +16,10 @@
     "description": "This spell will cure nearly any form of blindness, including those caused by light or darkness spells (whether normal or continual). It will not, however, affect blindness caused by a curse.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 3
+    }
   },
   "flags": {
     "becmi": {

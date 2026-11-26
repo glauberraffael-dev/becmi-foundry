@@ -1,0 +1,34 @@
+{
+  "_id": "D2DZJ9c1qARZs6iH",
+  "_key": "!items!D2DZJ9c1qARZs6iH",
+  "name": "Speak with Animals",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 2,
+    "spellLists": [
+      "cleric"
+    ],
+    "range": "Self (cleric only)",
+    "duration": "6 turns",
+    "effect": "Conversation within 30'",
+    "reversible": false,
+    "description": "The cleric can converse with animals within 30' for the duration of the spell.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "cleric"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "f8f539eab175ce76"
+}

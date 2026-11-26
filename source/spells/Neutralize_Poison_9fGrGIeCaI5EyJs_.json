@@ -16,7 +16,10 @@
     "description": "This spell will make poison harmless either in a creature, a container (such as a bottle), or on one object (such as a chest). It will even revive a victim slain by poison if cast within 10 rounds of the poisoning! The spell will affect any and all poisons present at the time it is cast, but does not cure any damage (and will thus not revive a poisoned victim who has died of wounds). The reverse of this spell, create poison, may be cast, by touch, on a creature or container. A cleric cannot cast it on any other object. A victim must make a saving throw vs. poison or be immediately slain by the poison.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 4
+    }
   },
   "flags": {
     "becmi": {

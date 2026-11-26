@@ -16,7 +16,10 @@
     "description": "This spell makes the area of effect totally silent. Conversation and spellcasting in this area are impossible for the duration of the spell. This spell does not prevent a person within the area from hearing noises outside the area. If cast on a creature, the victim must make a saving throw vs. spells or the spell effects will move with the creature. If the saving throw is successful, the spell remains in the area in which it was cast, and the victim may move out of the area.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 2
+    }
   },
   "flags": {
     "becmi": {

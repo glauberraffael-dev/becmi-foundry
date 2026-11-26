@@ -16,7 +16,10 @@
     "description": "This spell causes one victim to prance madly about, performing a jig or other dance, for 3 or more rounds. The magic-user must touch the victim for the spell to take effect (a normal attack roll). The victim gets no saving throw, and can- not attack, use spells (or spell-like abilities), or flee. While dancing, the victim suffers a —4 penalty to his saving throws, and a +4 penalty to his armor class. The duration is three rounds for a caster of 18th to 20th level; four rounds for levels 21-24, five rounds at levels 25-28, six rounds at levels 29-32, and seven rounds at levels 33-36.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

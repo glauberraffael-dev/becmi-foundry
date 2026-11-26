@@ -16,7 +16,10 @@
     "description": "This spell gives the caster the power to ask questions of any and all living and undead creatures within 30'. Even unintelligent monsters will understand and respond to the cleric. Those spoken to will not attack the cleric while engaged in conversation, but may defend themselves or flee if attacked. The cleric may ask only one question per round, and the spell lasts one round per level of the caster. The reverse of this spell, babble, has a 60' range, a duration of 1 turn per level of the caster, and affects one target within spell range. The victim may make a saving throw vs. spells to avoid the effect, but with a — 2 penalty to the roll.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 6
+    }
   },
   "flags": {
     "becmi": {

@@ -16,7 +16,10 @@
     "description": "This spell creates the same effect as a charm person or charm monster spell, except that the spell affects 30 levels (or Hit Dice) at once. Each victim may make a saving throw vs. spells to avoid the charm, but with a -2 penalty to the roll. The spell will not affect a creature of 31 or more levels or Hit Dice. The duration of each charm is determined by the victim's Intelligence (see charm person, above). If the magic-user attacks one of the charmed victims, only that one creature's charm is automatically broken. Any other charmed creatures seeing the attack may make another saving throw, but other creatures' charms are not affected.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

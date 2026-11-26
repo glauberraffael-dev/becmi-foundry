@@ -16,7 +16,10 @@
     "description": "When the druid casts this spell, some known nearby weather condition is pulled to the druid's location. The druid does not have control of the weather, but merely summons it. Only a druid of 25th level or greater may summon severe weather (hurricane, severe heat wave, etc.). The range of summoning is 5 miles at levels 12 to 15, adding 1 mile for each level of the caster above 15th. (A 20th level druid could summon weather from up to 10 miles away.)",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 6
+    }
   },
   "flags": {
     "becmi": {

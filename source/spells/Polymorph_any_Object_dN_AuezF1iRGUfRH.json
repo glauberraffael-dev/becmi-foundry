@@ -16,7 +16,10 @@
     "description": "Duration: See below Effect: Changes form of one object or creature This spell is similar to the 4th level polymorph others spell, except that it will affect objects as well as creatures. If the object is part of a greater whole (such as a section of wall), the spell will affect up to a 10' x 10' X 10' volume. A creature may avoid the effects if it successfully makes a saving throw vs. spells is made at a -4 penalty to the roll. The duration of the polymorph depends on the degree of the change. There are three basic kingdoms of all things—animal, vegetable, and mineral.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

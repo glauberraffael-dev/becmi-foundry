@@ -238,6 +238,7 @@
   "BECMI.labels.useMastery": "Use Weapon Mastery",
   "BECMI.labels.weight": "Weight",
   "BECMI.labels.targetAC": "Target AC",
+  "BECMI.labels.targetAcAuto": "Auto (targeted token)",
   "BECMI.labels.rollFormula": "Dice formula",
 
   "BECMI.sheet.tab.roller": "Roller",
@@ -296,6 +297,8 @@
 
   "BECMI.notification.noClass": "Choose a character class first.",
   "BECMI.notification.noSpellSlot": "No free spell slot of that level is available.",
+  "BECMI.notification.spellSlotSpent": "That spell slot is already spent. Rest to restore it.",
+  "BECMI.notification.spellsRested": "Spell slots restored.",
   "BECMI.notification.spellImported": "Added {name} to the spell list.",
   "BECMI.notification.spellAlreadyKnown": "{name} is already in the spell list.",
   "BECMI.notification.dropInvalid": "That item could not be added to this character.",

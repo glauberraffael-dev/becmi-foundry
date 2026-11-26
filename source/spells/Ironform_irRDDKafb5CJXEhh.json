@@ -16,7 +16,10 @@
     "description": "Duration: Permanent Effect: Creates 500 square feet of iron This spell creates a wall of iron 2\" thick (or less) with an area equal to 500 square feet; it may be arranged in any fashion the caster desires (10'x 50' wall, or 25' X 20' wall, etc.) Casting time varies depending on the complexity of the design. A simple wall and other simple shapes take 1 round. A simple staircase may take 10 rounds (1 turn). A complicated design which is supposed to adhere to very tight specifications—such as a giant portcullis—could take the maximum time allowable, 12 turns (2 hours) just to create in rough form.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

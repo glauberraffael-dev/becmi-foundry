@@ -16,7 +16,10 @@
     "description": "Duration: Permanent Effect: Grows one duplicate creature from a piece of the original creature A clone is an exact duplicate of another living creature, grown from a piece of the original through the use of this spell. The piece need not be alive at the time the spell is cast. A human or demihuman clone is rare and may be very dangerous. A clone of any other living creature is a more common thing called a simulacrum. A character can have only one clone at a time; attempts at making multiple clones of a single character automatically fail. Undead and constructs cannot be cloned, because they are not living creatures.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

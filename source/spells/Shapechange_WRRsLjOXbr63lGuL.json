@@ -1,0 +1,34 @@
+{
+  "_id": "WRRsLjOXbr63lGuL",
+  "_key": "!items!WRRsLjOXbr63lGuL",
+  "name": "Shapechange",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Self (caster only)",
+    "duration": "1 turn per caster level",
+    "effect": "The caster can change form",
+    "reversible": false,
+    "description": "The caster can change form for one turn per level.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "0cf7a07f8a895a34"
+}

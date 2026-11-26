@@ -16,7 +16,10 @@
     "description": "This spell enables the caster to affect one or more victims within 120' (no saving throw). Exception: A magic-user, and any creature which can cast magic-user spells, may make a saving throw vs. spells to avoid this effect, with a — 4 penalty to the roll. A single victim with 1-60 hit points is automatically slain; one with 61-100 hit points is stunned (as power word stun) and unable to act for 1d4 turns. No creature with 101 or more hit points is affected. The spell can also be used to slay up to five victims if each has 20 hit points or less (again, no saving throw).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
   },
   "flags": {
     "becmi": {

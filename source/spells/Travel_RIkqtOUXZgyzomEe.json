@@ -17,7 +17,11 @@
     "description": "This spell allows the magic-user to move quickly and freely, even between the planes of existence. The caster (only) may fly in the same manner as given by the magic-user's spell, at a rate of 360' (120'). The caster can also enter a nearby plane of existence, simply by concentrating for one round. He may enter a maximum of one plane per turn. The magic-user may bring one other creature for every five levels of experience (rounded down; for example, a 28th level magic-user could bring five other creatures on the journey). To bring others, he must touch them, or they must touch him, while the spell is cast and the shift is made. Any unwilling creature can make a saving throw vs.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 7,
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

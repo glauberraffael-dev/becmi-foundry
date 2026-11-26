@@ -1,0 +1,34 @@
+{
+  "_id": "4H0FEoWIvejg-f-k",
+  "_key": "!items!4H0FEoWIvejg-f-k",
+  "name": "Meteor Swarm",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 9,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "240'",
+    "duration": "Instantaneous",
+    "effect": "Creates four or eight meteor-fireballs",
+    "reversible": false,
+    "description": "This spell creates either 4 or 8 meteors (at the caster's choice). Each meteor is a fireball that strikes a target within 240'. A saving throw is allowed.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 9
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "0cf7a07f8a895a34"
+}

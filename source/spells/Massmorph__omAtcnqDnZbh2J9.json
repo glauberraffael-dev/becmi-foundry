@@ -16,7 +16,10 @@
     "description": "The spell lasts until the illusion is touched by an intelligent creature, or until dispelled. Effect: Causes illusion of trees within 240' range",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

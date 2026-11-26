@@ -269,9 +269,11 @@ export async function initiativeRoll(actor, { rollMode } = {}) {
     rollMode,
     actor
   });
-  if (actor?.type === "character" && game.combat?.combatant?.actor === actor) {
-    await game.combat.setInitiative(game.combat.combatant.id, roll.total);
-  }
+  // Any combatant can roll initiative, not only the currently active character.
+  const combat = game.combat;
+  const combatant = combat?.combatants?.find((entry) =>
+    entry.actor === actor || entry.token?.actor === actor || entry.actor?.id === actor?.id);
+  if (combatant) await combat.setInitiative(combatant.id, roll.total);
   return roll;
 }
 

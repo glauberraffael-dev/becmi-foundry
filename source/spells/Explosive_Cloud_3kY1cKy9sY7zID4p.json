@@ -16,7 +16,10 @@
     "description": "Effect: Creates a moving poisonous cloud This spell creates an effect which looks identical to the 5th level cloudkill spell (a 20' tall cloud of greenish gas 30' in diameter appearing next to the caster). The cloud is only mildly poisonous; all victims within it must make a saving throw vs. spells or be paralyzed that round. Each victim within the cloud makes a new saving throw each round. The cloud is filled with sparkling lights (visible only to those within it), which are small explosions. Each round, all those within the cloud take damage from the explosions, with no saving throw allowed.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 8
+    }
   },
   "flags": {
     "becmi": {

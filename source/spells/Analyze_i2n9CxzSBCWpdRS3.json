@@ -16,7 +16,10 @@
     "description": "lower-level spells. The PC should gain only one or two new spells out of such an encounter. A new spell is a rare find, and a spell book is an even rarer treasure; the books are always well hidden and protected. PCs using someone else's spell book may find magical traps and curses within before they find any new spells. In many campaigns, that's the point at which the teacher stops instructing the character. The character has gone from apprentice to journeyman, and now he must journey in order to learn more of magic. A spellcaster using this spell can handle one item and learn the enchantment on it.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 1
+    }
   },
   "flags": {
     "becmi": {

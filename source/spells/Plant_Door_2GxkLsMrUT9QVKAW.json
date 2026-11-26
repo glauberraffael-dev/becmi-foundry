@@ -16,7 +16,10 @@
     "description": "For the duration of this spell, no plants can prevent the druid's passage, no matter how dense. Even trees will bend or magically open to allow the druid to pass. The druid can freely carry equipment while moving through such barriers, but no other creature can use the passage. Note that a druid can hide inside a large tree after casting this spell. The druid cannot see what is happening while he is in the tree.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 4
+    }
   },
   "flags": {
     "becmi": {

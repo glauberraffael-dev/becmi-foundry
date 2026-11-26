@@ -250,6 +250,13 @@ export async function importSpellToActor(actor, spell) {
   const data = spellItemData(spell);
   if (!data.name) return { status: "invalid", item: null };
 
+  // A spell can have a different level for each class in the RC index.
+  // Store the level that applies to this actor on the owned item as well.
+  const classKey = normalizeClassKey(getProperty(actor, "system.attributes.classKey")
+    ?? getProperty(actor, "system.attributes.class"));
+  const levelForActor = Number(data.system?.spellLevels?.[classKey]);
+  if (Number.isFinite(levelForActor) && levelForActor > 0) data.system.spellLevel = levelForActor;
+
   const uuid = spellSourceUuid(data);
   const signature = spellSignature(data);
   const existing = (actor.items ?? []).find((item) => item.type === "spell" && (
@@ -270,8 +277,13 @@ export async function importSpellToActor(actor, spell) {
 export async function syncGrimoireFromImportedSpell(actor, spell) {
   if (!actor || !spell) return false;
   const name = String(spell.name ?? spell.system?.name ?? "").trim().toLowerCase();
-  const level = Number(spell.system?.spellLevel ?? spell.system?.level) || 0;
-  const lists = spell.system?.spellLists ?? [];
+  const classKey = normalizeClassKey(getProperty(actor, "system.attributes.classKey")
+    ?? getProperty(actor, "system.attributes.class"));
+  // A spell can be a different level for each class; prefer the level that
+  // applies to the actor importing it, falling back to the item's main level.
+  const levels = spell.system?.spellLevels ?? {};
+  const level = Number(levels[classKey] ?? spell.system?.spellLevel ?? spell.system?.level) || 0;
+  const lists = Object.keys(levels).length ? Object.keys(levels) : (spell.system?.spellLists ?? []);
   const rc = RC.spells.find((entry) =>
     String(entry.name).trim().toLowerCase() === name
     && Number(entry.level) === level

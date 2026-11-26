@@ -16,7 +16,10 @@
     "description": "This spell creates a circular cloud of poisonous vapor, 30' across and 20' tall, which appears next to the spellcaster. It moves away at the rate of 60' (20' per round) in any one direction (with the wind, if any; otherwise, in the direction chosen by the caster). This cloud is heavier than air and will sink when possible (going down holes, sliding downhill, etc.). The cloud will evaporate if it hits trees or thick vegetation. If cast in a small area (such as in a 10' tall dungeon corridor), the cloud may be of smaller than normal size. All living creatures within the cloud take 1 point of damage per round. Any victim of less than 5 Hit Dice must make a saving throw vs.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 5
+    }
   },
   "flags": {
     "becmi": {

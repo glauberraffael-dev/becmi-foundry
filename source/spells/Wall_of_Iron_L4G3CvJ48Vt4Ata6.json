@@ -1,0 +1,34 @@
+{
+  "_id": "L4G3CvJ48Vt4Ata6",
+  "_key": "!items!L4G3CvJ48Vt4Ata6",
+  "name": "Wall of Iron",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 6,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "120'",
+    "duration": "Permanent",
+    "effect": "Creates 500 square feet of iron",
+    "reversible": false,
+    "description": "Creates a permanent wall of iron covering 500 square feet.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 6
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b9b4c88711f5c00e"
+}

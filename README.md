@@ -56,7 +56,7 @@ short paraphrases; the PDF and OCR export are **not** included.
 | Compendium | Type | Documents |
 |---|---|---:|
 | BECMI Monsters | Actor | 311 |
-| BECMI Spells | Item | 180 |
+| BECMI Spells | Item | 184 |
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
 | BECMI Treasure | Item | 32 |
@@ -102,8 +102,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.24`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.24.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.27`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.27.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

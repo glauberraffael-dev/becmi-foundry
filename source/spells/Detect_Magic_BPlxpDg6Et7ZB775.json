@@ -7,7 +7,8 @@
   "system": {
     "spellLevel": 1,
     "spellLists": [
-      "cleric"
+      "cleric",
+      "magic-user"
     ],
     "range": "0",
     "duration": "2 turns",
@@ -16,7 +17,11 @@
     "description": "When this spell is cast, the cleric will see a glow surround magical objects, creatures, and places within the spell's effect. The glow will not last very long; clerics should normally use the spell only when they want to know if particular objects already within sight are, in fact, magical. For example, a door may be held shut magically, a stranger might actually be an enchanted monster, or a treasure might be enchanted.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 1,
+      "magic-user": 1
+    }
   },
   "flags": {
     "becmi": {

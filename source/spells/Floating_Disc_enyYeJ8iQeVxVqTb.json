@@ -1,0 +1,34 @@
+{
+  "_id": "enyYeJ8iQeVxVqTb",
+  "_key": "!items!enyYeJ8iQeVxVqTb",
+  "name": "Floating Disc",
+  "type": "spell",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "spellLevel": 1,
+    "spellLists": [
+      "magic-user"
+    ],
+    "range": "Self",
+    "duration": "6 turns",
+    "effect": "Disc stays within 6'",
+    "reversible": false,
+    "description": "Creates a rigid disc that floats within 6' of the caster and can carry equipment.",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 1
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "list": "magic-user"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "c1993f93a901d6cf"
+}

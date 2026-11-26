@@ -16,7 +16,10 @@
     "description": "This spell summons a vast swarm of insects. The swarm obscures vision and drives off creatures of less than 3 Hit Dice (no saving throw). The swarm moves at up to 20' per round as directed by the cleric while it is within range. The caster must concentrate, without moving, to control the swarm. If the caster is disturbed, the. insects scatter and the spell ends. This spell only works outdoors and above-ground.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "cleric": 5
+    }
   },
   "flags": {
     "becmi": {

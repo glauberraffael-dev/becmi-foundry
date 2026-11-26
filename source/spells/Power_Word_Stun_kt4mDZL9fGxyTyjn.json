@@ -11,13 +11,16 @@
     ],
     "range": "120'",
     "duration": "2d6 or 1d6 turns",
-    "effect": "Stuns 1 creature of 70 hp or less Reverse Gravity Range: 90' Duration: 1/5 round (2 seconds) Effect: Causes victims in a 30' cubic volume to",
+    "effect": "Stuns 1 creature of 70 hp or less",
     "reversible": false,
-    "description": "This lets the caster stun one victim within 120' (no saving throw). A victim with 1-35 hit points is stunned for 2d6 turns; a victim with 36-70 hit points is stunned for 1d6 turns. No creature with 71 or greater hit points is affected. fall upward This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.",
+    "description": "This lets the caster stun one victim within 120' (no saving throw). A victim with 1-35 hit points is stunned for 2d6 turns; a victim with 36-70 hit points is stunned for 1d6 turns. No creature with 71 or greater hit points is affected.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "notes": "",
-    "rollFormula": "2d6"
+    "rollFormula": "2d6",
+    "spellLevels": {
+      "magic-user": 7
+    }
   },
   "flags": {
     "becmi": {

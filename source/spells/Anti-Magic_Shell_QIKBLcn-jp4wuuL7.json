@@ -16,7 +16,10 @@
     "description": "This spell creates an invisible barrier around the spellcaster's body (less than an inch away). The barrier stops all spells or spell effects, including the caster's. The caster may destroy the shell at will; otherwise, it lasts for the duration. Except for a wish, no magic (including a dispel magic spell) can cancel the barrier.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 6
+    }
   },
   "flags": {
     "becmi": {

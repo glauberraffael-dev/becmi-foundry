@@ -16,7 +16,10 @@
     "description": "This spell creates the illusion of a terrain feature, either indoors (such as a pit, stairs, etc.) or outdoors (hill, swamp, grove of trees, etc.), possibly hiding a real feature. The caster could create the illusion of solid ground over a series of pits or quicksand pools, or he could create the image of dense forest over his army's camp, etc. A wall of ice is a thin vertical wall of any dimensions and shape determined by the spellcaster totalling 1,200 square feet or less (10' x 120', 30'x40', etc.). The wall is opaque and will block sight. The wall must be cast to rest on the ground or similar support, and cannot be cast in a space occupied by another object.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "magic-user": 4
+    }
   },
   "flags": {
     "becmi": {

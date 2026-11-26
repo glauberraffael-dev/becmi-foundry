@@ -16,7 +16,10 @@
     "description": "This spell creates an invisible barrier around the druid's body (less than an inch away). The barrier stops all attacks by animals, both normal and giant-sized, as well as insects and all other nonfantastic creatures of animal intelligence or less (0-2). The druid cannot attack animals while protected except by use of other spells; the animals are protected from the druid's physical attacks, just as the druid is protected from theirs.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 6
+    }
   },
   "flags": {
     "becmi": {

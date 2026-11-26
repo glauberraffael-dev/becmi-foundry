@@ -17,7 +17,11 @@
     "description": "This spell allows the recipient to breathe while underwater (at any depth). It does not affect his movement in any way, nor does it interfere with the breathing of air if the recipient emerges from the water.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 3,
+      "magic-user": 3
+    }
   },
   "flags": {
     "becmi": {

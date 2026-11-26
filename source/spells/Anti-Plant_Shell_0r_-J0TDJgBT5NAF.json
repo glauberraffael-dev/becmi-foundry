@@ -16,7 +16,10 @@
     "description": "This spell creates an invisible barrier around the druid's body (less than an inch away). The barrier stops all attacks by plants and plant-like monsters, so that they can inflict no damage. If the caster pushes through normal but dense growth while protected, he will open a path that others can pass through. While protected, the druid cannot attack plants except by spells; the plants are protected from the druid's physical attacks, just as the druid is protected from theirs.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "spellLevels": {
+      "druid": 5
+    }
   },
   "flags": {
     "becmi": {
