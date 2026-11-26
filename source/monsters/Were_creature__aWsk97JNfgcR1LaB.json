@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "3",
-    "hp": 3,
+    "hp": 14,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Any",
     "monsterType": "Undead, Enchanted (Common).",
-    "description": "See Lycanthrope. A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy. Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim. Each hit drains one level of experience or Hit Die. Any person totally drained of life energy by a wight will become a wight in 1d4 days, and will be under control of the slayer.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy. Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim. Each hit drains one level of experience or Hit Die. Any person totally drained of life energy by a wight will become a wight in 1d4 days, and will be under control of the slayer.",
+    "special": "<p>Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 3,
-        "max": 3
+        "value": 14,
+        "max": 14
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

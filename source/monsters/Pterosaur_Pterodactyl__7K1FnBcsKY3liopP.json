@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "180",
-    "hp": 180,
+    "hp": 810,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 6500,
     "terrain": "Ethereal Plane, Wormholes (only).",
     "monsterType": "Prehistoric Animal (Very Rare).",
-    "description": "Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons. Each blow from a magical weapon inflicts only its magic damage (\"plusses\"), ignoring normal weapon damage and strength bonuses. For example, a sword +4 would inflict 4 points of damage on a plasm. A plasm can only be damaged by magical weapons (as given above) and by attack forms based on elemental dominance. Once per turn, a plasm can \"spend\" 10 of its hit points to create an acid cloud based on its element. This cloud is a 30' diameter sphere, which inflicts 20 points of damage to all within it (except the plasm); each victim may make a saving throw vs. dragon breath to take half damage. The cloud lasts for 1d6 rounds. A plasm normally saves this attack form to use when fleeing. Terrain: Ethereal Plane, Wormholes (only). have a wingspan of up to 50'.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Plasms are immune to poison and normal weapons, and are only slightly damaged by magical weapons. Each blow from a magical weapon inflicts only its magic damage (\"plusses\"), ignoring normal weapon damage and strength bonuses. A plasm can only be damaged by magical weapons (as given above) and by attack forms based on elemental dominance.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
+    "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 180,
-        "max": 180
+        "value": 810,
+        "max": 810
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

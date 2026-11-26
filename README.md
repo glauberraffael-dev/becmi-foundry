@@ -32,6 +32,13 @@ short paraphrases; the PDF and OCR export are **not** included.
   backstab, elven/dwarven/halfling abilities and the Mystic's martial arts.
 - Click the small pencil badge on the portrait (or item image) to change artwork
   through the Foundry FilePicker.
+- Actor and item sheets open in use mode; switch to edit mode to change fields.
+  Rolls and item actions stay available in both modes. Each sheet also has a button
+  to switch between the black-and-white light theme and the dark theme.
+- Spell slots are grouped by level with prepared/maximum bars; imported compendium
+  spells are added to the character's grimoire and can be memorized immediately.
+- Monster Hit Dice count d8 (for example `11` means `11d8`), and their average HP
+  is derived from that formula rather than from the HD number.
 - Every sheet tab and long table scrolls inside the window, so nothing requires
   resizing the Foundry window.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling, 16 mystic,
@@ -89,8 +96,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.15`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.15.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.16`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.16.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

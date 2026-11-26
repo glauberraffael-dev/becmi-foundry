@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "4+2",
-    "hp": 42,
+    "hp": 20,
     "move": {
       "dungeon": 150,
       "outdoor": 50
@@ -23,15 +23,15 @@
     "xpValue": 125,
     "terrain": "Cavern, Ruins; Hill, Mountain, Woods, (after dark).",
     "monsterType": "Monster (Rare).",
-    "description": "A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust. A rust monster is attracted by the smell of metal, and eats the rust created by its attacks. The rust monster can be hit by any type of weapon. A successful attack roll indicates that the rust monster's body is hit, which does not harm the weapon. A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. For example, a shield + 1 has a 10% chance of surviving the attack. Salamanders are free-willed beings from the elemental planes, common there but rare elsewhere. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A rhagodessa is a giant spiderlike carnivore, about the size of a small horse. It has an oversized head and jaws (mandibles) colored yellow, and a dark brown thorax. It has five pairs of legs; the front pair end in suckers which help the creature grasp its prey. A hit with a leg does no damage but means that the victim is stuck. In the next round of combat, the victim is pulled to the mandibles and bitten (automatic hit). Rhagodessae are nocturnal carnivores, hunting only in the dark. They are normally found in caves, and can climb walls. Woods, (after dark).",
+    "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 42,
-        "max": 42
+        "value": 20,
+        "max": 20
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 0,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 16,
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Very Rare).",
-    "description": "plus the amounts of coins, gems, and jewelry given for Treasure Type H in Chapter 16 (but at 90% chance for each type). The number and severity of traps and other dangers to intruders should be appropriate to protect such a hoard. A magic-user lich normally has ld2 spells on it of permanent nature—most often detect invisible or fly. A clerical lich normally has 3d4 types of other undead nearby, acting as servants. A full lair of each type (maximum number appearing) is usually present. Either type of lich can summon other powerful undead for aid. The summons can be made simply by concentrating, and the creature(s) responding arrive 1d100 rounds later, depending on their distance. The summons may be made as often as desired, but any one type of creature will respond only once per day at most.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A magic-user lich normally has ld2 spells on it of permanent nature—most often detect invisible or fly.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A lich is a powerful undead monster of magical origin. It looks like a skeleton wearing fine garments, and was once an evil and chaotic magic-user or cleric of level 21 or greater (often while alive, so it is extremely dangerous. A lich is not normally found wandering, but instead remains in or very near a well-defended lair. Such a lair might be a dungeon, catacomb, tomb, or necropolis (\"city of the dead\"). The very sight of a lich causes fear in all characters below 5th level (no saving throw). Its merest touch causes 1d10 points of damage, and can paralyze any creature for 1d100 days (though a saving throw applies, and the paralysis is magically dispellable). Before any encounter with a lich, the DM should select spells for the creature. This should be done with care, as a lich is extremely intelligent and uses them to its best advantage. Note that the lich's morale is given as 10, but a lich flees if in actual danger. Liches are undead, and can be turned (but not destroyed) by clerics. They are immune to charm, sleep, feeblemind, polymorph, cold, lightning, and death spells, and can be harmed only by magical weapons. They are also immune to the effects of all spells of less tha",
+    "special": "<p>A lich is a powerful undead monster of magical origin. It looks like a skeleton wearing fine garments, and was once an evil and chaotic magic-user or cleric of level 21 or greater (often while alive, so it is extremely dangerous. The very sight of a lich causes fear in all characters below 5th level (no saving throw).</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

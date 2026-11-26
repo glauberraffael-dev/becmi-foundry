@@ -1,18 +1,37 @@
-/* BECMI system styles — parchment / ink character sheet. */
+/* BECMI system styles — black-and-white sheet with an optional dark theme. */
 
 :root {
-  --becmi-ink: #211810;
-  --becmi-muted: #4a3826;
-  --becmi-parchment: #fbe6c3;
-  --becmi-parchment-dark: #efd7a8;
-  --becmi-border: #8a704a;
-  --becmi-accent: #7b2d20;
-  --becmi-good: #2f6b3c;
-  --becmi-bad: #8b2020;
+  --becmi-ink: #000;
+  --becmi-muted: #333;
+  --becmi-paper: #fff;
+  --becmi-paper-alt: #f2f2f2;
+  --becmi-border: #000;
+  --becmi-accent: #000;
+  --becmi-good: #000;
+  --becmi-bad: #000;
+  --becmi-input: #fff;
+  --becmi-input-disabled: #e6e6e6;
+  --becmi-overlay: var(--becmi-overlay);
+  --becmi-active: rgba(0, 0, 0, 0.14);
+}
+
+.becmi-dark {
+  --becmi-ink: #fff;
+  --becmi-muted: #ddd;
+  --becmi-paper: #000;
+  --becmi-paper-alt: #1a1a1a;
+  --becmi-border: #fff;
+  --becmi-accent: #fff;
+  --becmi-good: #fff;
+  --becmi-bad: #fff;
+  --becmi-input: #111;
+  --becmi-input-disabled: #222;
+  --becmi-overlay: rgba(255, 255, 255, 0.08);
+  --becmi-active: rgba(255, 255, 255, 0.2);
 }
 
 .becmi.sheet {
-  background: var(--becmi-parchment);
+  background: var(--becmi-paper);
   color: var(--becmi-ink);
   font-family: "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 13px;
@@ -63,7 +82,7 @@
 
 .becmi.sheet .window-header,
 .becmi.sheet .window-title {
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
   color: var(--becmi-ink);
 }
 
@@ -71,7 +90,7 @@
 .becmi.sheet select,
 .becmi.sheet textarea {
   color: var(--becmi-ink);
-  background: rgba(255, 252, 244, 0.6);
+  background: var(--becmi-input);
   border: 1px solid var(--becmi-border);
   border-radius: 2px;
   padding: 1px 3px;
@@ -82,7 +101,7 @@
 .becmi.sheet input:disabled,
 .becmi.sheet textarea:disabled {
   color: var(--becmi-muted);
-  background: rgba(255, 252, 244, 0.4);
+  background: var(--becmi-input-disabled);
 }
 
 /* ---------------------------------------------------------------- header */
@@ -109,30 +128,56 @@
   border-radius: 3px;
 }
 
-.becmi-image-edit {
+.becmi-image-wrap[data-editable="true"] .becmi-portrait,
+.becmi-image-wrap.has-image-action .becmi-portrait,
+.becmi.sheet .becmi-image-wrap img[data-action="editImage"] {
+  cursor: pointer;
+}
+
+.becmi-image-hint {
   position: absolute;
   right: -4px;
   bottom: -4px;
   width: 22px;
   height: 22px;
-  padding: 0;
   display: grid;
   place-items: center;
   line-height: 1;
   font-size: 0.85rem;
-  color: #fff8e8;
-  background: var(--becmi-accent);
-  border: 1px solid var(--becmi-ink);
+  color: var(--becmi-paper);
+  background: var(--becmi-ink);
+  border: 1px solid var(--becmi-border);
   border-radius: 50%;
+  pointer-events: none;
+}
+
+.becmi-sheet-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.becmi-sheet-tools--item {
+  grid-column: 1 / -1;
+  justify-content: flex-start;
+}
+
+.becmi-mode-toggle {
+  background: var(--becmi-paper);
+  border: 1px solid var(--becmi-border);
+  border-radius: 2px;
+  color: var(--becmi-ink);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
   cursor: pointer;
 }
 
-.becmi-image-edit:hover {
-  background: #5c2017;
-}
-
-.becmi-image-edit:disabled {
-  display: none;
+.becmi-mode-toggle:hover {
+  background: var(--becmi-paper-alt);
 }
 
 .becmi-title-block {
@@ -193,7 +238,7 @@
   gap: 2px;
   padding: 0.25rem 0.5rem 0;
   border-bottom: 2px solid var(--becmi-border);
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
 }
 
 .becmi-tab {
@@ -210,11 +255,11 @@
 }
 
 .becmi-tab:hover {
-  background: rgba(255, 252, 244, 0.5);
+  background: var(--becmi-overlay);
 }
 
 .becmi-tab.is-active {
-  background: var(--becmi-parchment);
+  background: var(--becmi-paper);
   border-color: var(--becmi-border);
   box-shadow: inset 0 2px 0 var(--becmi-accent);
 }
@@ -252,7 +297,7 @@
 
 .becmi-sidebar {
   border-left: 2px solid var(--becmi-border);
-  background: rgba(255, 252, 244, 0.35);
+  background: var(--becmi-overlay);
   padding: 0.25rem 0.5rem 1rem;
   max-height: calc(100vh - 9rem);
   overflow-y: auto;
@@ -300,7 +345,7 @@
 
 .becmi-roll.is-active {
   background: var(--becmi-accent);
-  color: #fff;
+  color: var(--becmi-paper);
 }
 
 .becmi-actions {
@@ -311,7 +356,7 @@
 .becmi-section-title {
   margin: 0.4rem 0 0.25rem;
   padding: 0.2rem 0.4rem;
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
   border: 1px solid var(--becmi-border);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -375,13 +420,13 @@
 
 .becmi-feature {
   border: 1px solid var(--becmi-border);
-  background: #fff8e8;
+  background: var(--becmi-paper);
   color: var(--becmi-ink);
   padding: 0.25rem 0.5rem 0.4rem;
 }
 
 .becmi-feature.is-locked {
-  background: #f5e5c6;
+  background: var(--becmi-paper-alt);
   color: var(--becmi-muted);
   border-style: dashed;
 }
@@ -416,7 +461,7 @@
 }
 
 .becmi-table thead th {
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
   font-size: 0.78rem;
   text-transform: uppercase;
   text-align: center;
@@ -484,7 +529,7 @@
 }
 
 .becmi-roll {
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
   border: 1px solid var(--becmi-border);
   border-radius: 2px;
   color: var(--becmi-ink);
@@ -495,7 +540,7 @@
 }
 
 .becmi-roll:hover {
-  background: #e3c79a;
+  background: var(--becmi-paper-alt);
 }
 
 .becmi-editor {
@@ -580,7 +625,7 @@
 /* ----------------------------------------------------------- chat cards */
 .becmi-roll-card {
   border: 1px solid var(--becmi-border);
-  background: var(--becmi-parchment);
+  background: var(--becmi-paper);
   color: var(--becmi-ink);
   padding: 0.5rem;
   font-family: "Palatino Linotype", Palatino, Georgia, serif;
@@ -604,7 +649,7 @@
   text-align: center;
   border: 1px solid var(--becmi-border);
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--becmi-overlay);
 }
 .becmi-die-face.discarded { opacity: 0.4; text-decoration: line-through; }
 
@@ -639,7 +684,7 @@
 }
 
 .becmi-table .becmi-active {
-  background: rgba(123, 45, 32, 0.16);
+  background: var(--becmi-active);
   box-shadow: inset 0 0 0 1px var(--becmi-accent);
   font-weight: 700;
 }
@@ -654,6 +699,57 @@
 .becmi-table tfoot th,
 .becmi-table tfoot td {
   border: 1px solid var(--becmi-border);
-  background: var(--becmi-parchment-dark);
+  background: var(--becmi-paper-alt);
   font-weight: 700;
 }
+
+/* ------------------------------------------------------ spell preparation */
+.becmi-slot-bar {
+  height: 0.55rem;
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-input);
+  overflow: hidden;
+}
+
+.becmi-slot-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--becmi-accent);
+}
+
+.becmi-table--slot-bars td:last-child {
+  min-width: 8rem;
+}
+
+.becmi-table--slot-bars small {
+  display: block;
+  text-align: right;
+  font-size: 0.68rem;
+}
+
+.becmi-spell-level {
+  margin-top: 0.45rem;
+  padding-top: 0.15rem;
+  border-top: 1px solid var(--becmi-border);
+}
+
+.becmi-import-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.becmi-import-row select {
+  flex: 1 1 20rem;
+  min-height: 7rem;
+  color: var(--becmi-ink) !important;
+  background: var(--becmi-input) !important;
+  border: 1px solid var(--becmi-border) !important;
+}
+
+.becmi-import-row button {
+  align-self: flex-start;
+}
+

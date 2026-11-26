@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "2+1",
-    "hp": 21,
+    "hp": 10,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 25,
     "terrain": "Cavern, River/Lake, Swamps.",
     "monsterType": "Humanoid (Common).",
-    "description": "Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. One in ten will speak a little Common. PCs can negotiate with lizard men that can talk. If they are hungry enough, though, and the PCs can't deliver them a lot of food, the lizard men will still prefer to eat the characters. Lizard men live hard lives, hunting most of their waking hours. Sometimes they hire themselves out to other races as warriors or scouts. They have no interest in other races other than what those races can do for them (i.e., provide food in one way or another). Some varieties of lizard men are just drab green or brown in color, while others may be dramatically colorful: Bright reds, blues, yellows, or greens, like some other reptiles.",
+    "description": "By weapon + 1 F2 D Neutral These water-dwelling creatures resemble men with lizard heads and claws, scaly hides, and tails. Lizard men are often found in swamps, rivers, and along seacoasts as well as in dungeons. They live in tribes and often try to capture humans and demihumans and take the victims back to the tribal lair as the main course of a feast. Lizard men are semi-intelligent and use spears and large clubs (treat the clubs as maces), gaining a bonus of + 1 on damage rolls due to their great strength. One in ten will speak a little Common. PCs can negotiate with lizard men that can talk. If they are hungry enough, though, and the PCs can't deliver them a lot of food, the lizard men will still prefer to eat the characters. Lizard men live hard lives, hunting most of their waking hours. Sometimes they hire themselves out to other races as warriors or scouts. They have no interest in other races other than what those races can do for them (i.e., provide food in one way or another). Some varieties of lizard men are just drab green or brown in color, while others may be dramatically colorful: Bright reds, blues, yellows, or greens, like some other reptiles. There can be lizard",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 21,
-        "max": 21
+        "value": 10,
+        "max": 10
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

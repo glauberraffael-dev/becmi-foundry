@@ -107,6 +107,12 @@ async function main() {
         })(),
         flags: doc.flags ?? {},
         ownership: { default: 0 },
+        ...(pack === "monsters" ? {
+          prototypeToken: {
+            ...(doc.prototypeToken ?? {}),
+            bar1: { attribute: "attributes.hp.value" }
+          }
+        } : {}),
         ...(() => {
           const key = folderKeyForDocument(pack, doc);
           return key ? { folder: folderId(pack, key) } : {};

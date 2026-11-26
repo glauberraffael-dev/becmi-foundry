@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 175,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Construct, Enchanted (Rare).",
-    "description": "As pictured in medieval architecture, they are humanoid creatures with horns, claws, fangs, and batlike wings; they are considered hideouslooking beasts. Their skin often looks exactly like stone and they are often mistaken for statues. Gargoyles are very cunning, at least semiintelligent, and incredibly patient. Never needing food or drink, they can sit and watch a site literally for years. Because of the purposes for which they were created, gargoyles tend to be very territorial creatures. If not still commanded by a wizard, they will normally choose a place (such as a ruined building, a cave complex, or a mountain) and defend it from all intruders, attacking nearly anything that encroaches on their territory. Gargoyles can only be hit with magic or magical weapons and are not affected by sleep or charm spells.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Gargoyles can only be hit with magic or magical weapons and are not affected by sleep or charm spells.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Gargoyles are magical constructs, created by wizards for various tasks—especially as guards for treasure chambers and other sites. Many thousands have been created over the centuries; most of them eventually escape or outlive their masters and leave to form their own groups. As pictured in medieval architecture, they are humanoid creatures with horns, claws, fangs, and batlike wings; they are considered hideouslooking beasts. Their skin often looks exactly like stone and they are often mistaken for statues. Gargoyles are very cunning, at least semiintelligent, and incredibly patient. Never needing food or drink, they can sit and watch a site literally for years. Because of the purposes for which they were created, gargoyles tend to be very territorial creatures. If not still commanded by a wizard, they will normally choose a place (such as a ruined building, a cave complex, or a mountain) and defend it from all intruders, attacking nearly anything that encroaches on their territory. Gargoyles can only be hit with magic or magical weapons and are not affected by sleep or charm spells. The DM should not use gargoyles unless the player characters have at least one magical weapon. spee",
+    "special": "<p>Gargoyles are magical constructs, created by wizards for various tasks—especially as guards for treasure chambers and other sites. Gargoyles can only be hit with magic or magical weapons and are not affected by sleep or charm spells. The DM should not use gargoyles unless the player characters have at least one magical weapon. spee</p>",
+    "notes": "Gargoyles are magical constructs, created by wizards for various tasks—especially as guards for treasure chambers and other sites. Many thousands have been created over the centuries; most of them eventually escape or outlive their masters and leave to form their own groups.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "5374a5e70e59d6d6"
 }

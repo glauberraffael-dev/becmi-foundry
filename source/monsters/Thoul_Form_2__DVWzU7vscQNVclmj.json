@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "1+1",
-    "hp": 11,
+    "hp": 6,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 15,
     "terrain": "Barren Lands, Cavern.",
     "monsterType": "Monster (Very Rare).",
-    "description": "must be made. A victim hit by the spray must make a saving throw vs. poison or be paralyzed for 1 turn. If the creature is frightened underwater, its ink does not paralyze, but merely provides an inky cover for the creature's retreat. The real terror of these creatures is the destruction they bring to ships. They cling to hulls, each causing points of hull damage equal to their bite before letting go. Once any damage has been inflicted, there is a 50% chance per round that someone will notice the leakage. A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. Except when very close, thouls look exactly like hobgoblins, and are sometimes found as part of the bodyguard of a hobgoblin king or Chaotic ruler. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A victim hit by the spray must make a saving throw vs. poison or be paralyzed for 1 turn. If the creature is frightened underwater, its ink does not paralyze, but merely provides an inky cover for the creature's retreat. A thoul is a magical combination of a ghoul, a hobgoblin, and a troll.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. Except when very close, thouls look exactly like hobgoblins, and are sometimes found as part of the bodyguard of a hobgoblin king or Chaotic ruler. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive. There can be thoul spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+    "special": "<p>A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive.</p>",
+    "notes": "These creatures are not Undead.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 11,
-        "max": 11
+        "value": 6,
+        "max": 6
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 2,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 150,
       "outdoor": 50
@@ -23,15 +23,15 @@
     "xpValue": 125,
     "terrain": "Cavern, Desert, Ruins.",
     "monsterType": "Lowlife (Rare).",
-    "description": "A giant scorpion looks just like the normal arachnid, but is the size of a small horse. It lives in deserts, caves, and ruins, preying on any animal over 2' in length. It usually attacks on sight. It fights by grasping a victim with its claws and stinging. If either claw hits, the attack roll for the stinger gains a + 2 bonus. Anyone struck by the stinger must make a successful saving throw vs. poison or die.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Anyone struck by the stinger must make a successful saving throw vs. poison or die.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "This monster appears as a human figure with skeletal hands and a skull head with flowing, white hair. A revener prowls dark, underground caverns and dust-filled tombs and crypts. When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). The lost sense may be chosen or randomly determined; subsequent hits always drain different senses. A restore spell will restore one lost sense. Taste: Victim cannot identify tastes (such as potions). Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls. Hearing: Victim cannot hear and loses the ability to speak clearly (may ruin spell casting). Touch: Victim's Dexterity drops by 4 points (and, if an elf, cannot find secret doors).",
+    "special": "<p>When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). A restore spell will restore one lost sense. Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

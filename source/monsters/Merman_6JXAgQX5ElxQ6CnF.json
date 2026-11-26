@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "3+1",
-    "hp": 31,
+    "hp": 15,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 100,
     "terrain": "Ocean. Centipede Bird",
     "monsterType": "Humanoid (Common).",
-    "description": "Mermen are water-breathing humanoids. A merman has the upper body of a man and the lower body of a large fish. Mermen are armed with spears, tridents, or daggers. They live in coastal waters and hunt fish and harvest kelp. Except for leaders, all mermen have 1 Hit Die and save as 1st level fighters. Metamorphs look very similar to humans, but have pointed ears and pure white eyes. They are closely related to humans but, as a species, are masters of the ancient art of shapeshifting. They are not lycanthropes, though they are sometimes mistaken for them. A metamorph can shapeshift up to 11 times each day, but only into certain forms. Unlike the polymorph self spell effect, this nonmagical shapeshift gives the metamorph all the abilities of the new form; even special attacks (such as a skunk's spray) are gained.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Mermen are water-breathing humanoids. Unlike the polymorph self spell effect, this nonmagical shapeshift gives the metamorph all the abilities of the new form; even special attacks (such as a skunk's spray) are gained.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Mermen are water-breathing humanoids. A merman has the upper body of a man and the lower body of a large fish. Mermen are armed with spears, tridents, or daggers. They live in coastal waters and hunt fish and harvest kelp. Except for leaders, all mermen have 1 Hit Die and save as 1st level fighters. The number appearing represents a small hunting party, although mermen often form underwater villages of ld3 x 100 members. For every ten mermen encountered, there is an additional leader with 2 Hit Dice. For every 50 there is one leader with 4 Hit Dice. Mermen leaders save as fighters of a level equal to their Hit Dice. Mermen often keep trained marine monsters and animals to help guard their homes. Mermen are the people of the sea, and a DM can use them the same way as NPC humans. There can be merman spellcasters; see \"Monster Spellcasters.\" Metamorph By weapon type or form M11 Variable Any (often Chaotic) Metamorphs look very similar to humans, but have pointed ears and pure white eyes. They are closely related to humans but, as a species, are masters of the ancient art of shapeshifting. They are not lycanthropes, though they are sometimes mistaken for them. A metamorph can shapeshif",
+    "special": "<p>Mermen are water-breathing humanoids. There can be merman spellcasters; see \"Monster Spellcasters.\" Metamorph By weapon type or form M11 Variable Any (often Chaotic) Metamorphs look very similar to humans, but have pointed ears and pure white eyes.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 31,
-        "max": 31
+        "value": 15,
+        "max": 15
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

@@ -46,9 +46,11 @@ Hooks.once("init", () => {
   });
 
   CONFIG.Actor.trackableAttributes = {
-    character: { bar: ["attributes.hp"], value: ["attributes.level", "attributes.xp"] },
-    npc: { bar: ["attributes.hp"], value: ["attributes.level"] },
-    monster: { bar: ["attributes.hp.value"], value: ["ac", "morale"] }
+    character: { bar: ["attributes.hp.value"], value: ["attributes.level", "attributes.xp"] },
+    npc: { bar: ["attributes.hp.value"], value: ["attributes.level"] },
+    // Monsters store the canonical HD-derived total in `system.hp` and mirror
+    // it into `system.attributes.hp` for the token bar.
+    monster: { bar: ["attributes.hp.value", "hp"], value: ["ac", "morale"] }
   };
 
   foundry.documents.collections.Actors.registerSheet("becmi", BECMIActorSheet, {
@@ -60,6 +62,15 @@ Hooks.once("init", () => {
     types: ITEM_TYPES,
     makeDefault: true,
     label: "BECMI.title"
+  });
+
+  game.settings.register("becmi", "darkMode", {
+    name: "BECMI.settings.darkMode.name",
+    hint: "BECMI.settings.darkMode.hint",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: false
   });
 
   foundry.applications.handlebars.loadTemplates([

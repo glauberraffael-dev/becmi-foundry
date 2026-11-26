@@ -7,7 +7,7 @@
   "system": {
     "ac": 0,
     "hd": "14",
-    "hp": 14,
+    "hp": 63,
     "move": {
       "dungeon": 180,
       "outdoor": 60
@@ -23,15 +23,15 @@
     "xpValue": 2500,
     "terrain": "Cavern, Hill, Mountain, Ruin.",
     "monsterType": "Human (Common).",
-    "description": "They do not go out of their way to attack characters; if approached by humans and demihumans and given a chance to flee, they will do so. But if creatures approach their lair, the apes will threaten the intruders. If their threats are ignored, they will attack. They may throw one stone per round for 1d6 points each. White apes are not intelligent and are sometimes kept as pets by Neanderthals (cavemen). Normally, in the wild, they live in caves in family groups of 2-8 members. Bandits are NPC thieves who have joined together for the purpose of robbing others. Frequently, they have small communities of 3-30 members and send out raiding groups of 2-4 bandits. Bandits will act as normal men so they can surprise their intended victims.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Bandits will act as normal men so they can surprise their intended victims.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Athachs are humanoid and stand 18' tall. Each has hideous but recognizable features, a malformed body, and a third arm in the center of its chest. These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns.",
+    "special": "<p>Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 14,
-        "max": 14
+        "value": 63,
+        "max": 63
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

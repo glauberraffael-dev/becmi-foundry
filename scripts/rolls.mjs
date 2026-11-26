@@ -9,7 +9,7 @@
  * and the target AC can be supplied by the sheet or falls back to AC 9.
  */
 
-import { attackInfo, rollExpression } from "./rules-rc.mjs";
+import { attackInfo, monsterHpFormula, parseMonsterHitDice, rollExpression } from "./rules-rc.mjs";
 
 const ABILITY_BONUS = { str: "str", dex: "dex", wis: "wis" };
 const DEFAULT_TARGET_AC = 9;
@@ -235,19 +235,17 @@ export async function moraleCheck(actor, { rollMode } = {}) {
   return { roll, success };
 }
 
-/** Roll monster hit dice to generate hit points. */
+/** Roll monster hit dice to generate hit points (RC p. 152: HD counts d8). */
 export async function hitDiceRoll(actor, { rollMode } = {}) {
-  const hd = String(actor?.system?.hd || "1").replace(/\*+$/, "").trim();
-  let formula;
-  if (hd.includes("/")) formula = "1"; // fractional Hit Dice have 1 hit point
-  else if (/^\d+(?:\s*[-+]\s*\d+)?$/.test(hd)) formula = hd.replace(/^(\d+)/, "$1d8");
-  else if (/^\d+d\d+/.test(hd)) formula = hd;
-  else formula = "1d8";
+  const hd = String(actor?.system?.hd ?? actor?.system?.attributes?.hd ?? "1");
+  const parsed = parseMonsterHitDice(hd);
+  const formula = monsterHpFormula(hd);
   const roll = await new Roll(formula).evaluate({ async: true });
+  const result = parsed.kind === "fraction" ? "1 HP" : `${Math.round(roll.total)} HP`;
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.hitDice"),
     flavor: rollName(actor),
-    result: `${Math.round(roll.total)} HP`,
+    result,
     rollMode,
     actor
   });

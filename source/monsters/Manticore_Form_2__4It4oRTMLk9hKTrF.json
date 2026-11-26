@@ -7,7 +7,7 @@
   "system": {
     "ac": 2,
     "hd": "3-8",
-    "hp": 1,
+    "hp": 14,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 65,
     "terrain": "Any.",
     "monsterType": "Monster (Rare).",
-    "description": "Anyone who tries to attack a medusa without looking at her must subtract 4 from the attack roll, and the snakes may attack with a +2 bonus to the attack roll. A medusa also gains +2 on all saving throws vs. spells due to her magical nature. Meks are not intelligent, but respond to simple verbal commands from their masters. A cold-based attack will slow a mek to half speed, but they are immune to all other spells except disintegrate. Many medusae are evil. Others are reclusive scholars, ancient sages who can guide heroes on their quests and who conceal their deadly visages under veils. There are also medusa spellcasters (see \"Monster Spellcasters\" later in this chapter). Medusae are native to both the Prime Plane and their original home, the elemental plane of Earth.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A medusa also gains +2 on all saving throws vs. spells due to her magical nature. A cold-based attack will slow a mek to half speed, but they are immune to all other spells except disintegrate. There are also medusa spellcasters (see \"Monster Spellcasters\" later in this chapter).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges. The manticore has 24 tail spikes, and can shoot six each round even when flying (ranges per day. Its favorite food is man. Manticores frequently track humans, ambushing them with spike attacks when the human group stops to rest. Another tactic is to stalk its prey like a great cat, creeping up close on an unsuspecting victim. When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down. The manticore then eats the victim. Less frequently, a pack of manticores will stalk and attack a group of victims. at up to half speed. Barding Multiplier: x 2.",
+    "special": "<p>When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down.</p>",
+    "notes": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 14,
+        "max": 14
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

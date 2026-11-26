@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "1-1",
-    "hp": 1,
+    "hp": 4,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 5,
     "terrain": "Any",
     "monsterType": "Demihuman (Common).",
-    "description": "A harpy has the lower body of a giant eagle and the upper body and head of a hideouslooking woman. Harpies can sing with enchanting, mesmerizing voices. By singing, harpies lure creatures to them, to be killed and devoured. Any creature hearing the harpies' songs must make a saving throw vs. spells or be charmed. If a victim makes a saving throw against the songs of a group of harpies, the victim will not be affected by any of their songs during the encounter.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Any creature hearing the harpies' songs must make a saving throw vs. spells or be charmed.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Move (Flying): 60' (20') 90' (30') 60' (20') Age Age 10 years/ see below paralysis paralysis See below See below See below Chaotic Any Chaotic Aging damage per blow. Defenses: Immune to all spells except those affecting evil; harmed only by +2 or better weapons; saving throw vs. turning/destruction Rare). A haunt is an undead soul of some creature often encountered near the spots where their mortal bodies died—often a bog, old forest, or dungeon. They avoid, but are not harmed by, sunlight and magical light. Haunts can only be harmed by magical weapons of + 2 or greater enchantment. They are immune to all spells except those which affect evil. Each haunt has its own special attack form, given in the descriptions. Haunts do not inflict normal damage; they cause aging with their physical blows. Each haunt can create an ectoplasmic net while doing other things, and all haunts can use a gaze attack as well as its special or physical attacks. If seriously threatened (or if morale fails), a haunt will escape into the Ethereal Plane and not return for times per day, but can leave it at any time. Net: When first encountered, a haunt will normally start oozing ectoplasm. This appears as wis",
+    "special": "<p><strong>Defenses:</strong> Immune to all spells except those affecting evil; harmed only by +2 or better weapons; saving throw vs. turning/destruction Rare). A haunt is an undead soul of some creature often encountered near the spots where their mortal bodies died—often a bog, old forest, or dungeon. They avoid, but are not harmed by, sunlight and magical light. Haunts can only be harmed by magical weapons of + 2 or greater enchantment. They are immune to all spells except those which affect evil. Each haunt has its own special attack form, given in the descriptions. Haunts do not inflict normal damage; they cause aging with their physical blows. Each haunt can create an ectoplasmic net while doing other things, and all haunts can use a gaze attack as well as its special or physical attacks. If seriously threatened (or if morale fails), a haunt will escape into the Ethereal Plane and not return for times per day, but can leave it at any time. Net: When first encountered, a haunt will normally start oozing ectoplasm. This appears as wis</p><p>Move (Flying): 60' (20') 90' (30') 60' (20') Age Age 10 years/ see below paralysis paralysis See below See below See below Chaotic Any Chaotic Aging damage per blow. Defenses: Immune to all spells except those affecting evil; harmed only by +2 or better weapons; saving throw vs. turning/destruction Rare). They avoid, but are not harmed by, sunlight and magical light.</p>",
+    "notes": "Halflings can also appear as NPCs. Otherwise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or underbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 4,
+        "max": 4
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

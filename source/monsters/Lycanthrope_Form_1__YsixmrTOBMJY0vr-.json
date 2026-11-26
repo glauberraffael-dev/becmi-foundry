@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "3",
-    "hp": 3,
+    "hp": 14,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Any",
     "monsterType": "Monster, Enchanted (Common).",
-    "description": "t The number in parentheses is the creature's armor class when in human form. Lycanthropes are humans who can change into beasts (or in the case of wererats, beasts who can change into humans). They normally wear no armor, since it would interfere with their shapechanging. Any lycanthrope can summon 1d2 normal animals of its type: werebears can summon normal bears, werewolves can summon normal wolves, and so forth. Summoned animals will arrive in 1d4 rounds. Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. The sprig of wolfsbane must be swung or thrown as a weapon, using normal combat procedures. A lycanthrope returns to its \"normal\" form when killed.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Lycanthropes are humans who can change into beasts (or in the case of wererats, beasts who can change into humans). They normally wear no armor, since it would interfere with their shapechanging. Any lycanthrope can summon 1d2 normal animals of its type: werebears can summon normal bears, werewolves can summon normal wolves, and so forth. Summoned animals will arrive in 1d4 rounds. Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. The sprig of wolfsbane must be swung or thrown as a weapon, using normal combat procedures. A lycanthrope returns to its \"normal\" form when killed. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. The lycanthrope cannot speak normal languages, though it can speak with normal animals of its weretype. Human Form: In human form, a lycanthrope often looks somewhat like its wereform. Wererats have longer noses, werebears are hairy, werebats have long arms, werefoxes are sly and nimble, and so forth. In this form, they can be attacked with normal weapons, and t",
+    "special": "<p>Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 3,
-        "max": 3
+        "value": 14,
+        "max": 14
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

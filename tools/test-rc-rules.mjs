@@ -9,7 +9,8 @@ import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
-  levelForXp, normalizeClassKey, planAbilityAdjustment, resolveTurnResult,
+  levelForXp, monsterHpFormula, monsterHpFromHitDice, normalizeClassKey, parseMonsterHitDice,
+  planAbilityAdjustment, resolveTurnResult,
   rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
   turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
 } from "../scripts/rules-rc.mjs";
@@ -179,4 +180,17 @@ check("the free roller supports dice, modifiers and half expressions", () => {
   assert.equal(rollExpression("½(2d6+4)+3", () => 0).total, 6);
   assert.equal(rollExpression("10-2-1").total, 7);
   assert.equal(rollExpression("not dice").valid, false);
+});
+
+check("monster Hit Dice count d8 and never equal the HP total", () => {
+  assert.deepEqual(parseMonsterHitDice("11"), {
+    kind: "dice", count: 11, faces: 8, adjustment: 0, formula: "11d8", hp: 50
+  });
+  assert.equal(monsterHpFormula("3 + 1"), "3d8+1");
+  assert.equal(monsterHpFromHitDice("3 + 1"), 15);
+  assert.equal(monsterHpFormula("1-1"), "1d8-1");
+  assert.equal(monsterHpFromHitDice("5 + 5"), 28);
+  assert.equal(monsterHpFromHitDice("8* (M)"), 36);
+  assert.equal(monsterHpFromHitDice("1/4 (S)"), 1);
+  assert.equal(monsterHpFromHitDice("1-4"), 5, "ranges use the lower d8 count");
 });

@@ -7,9 +7,10 @@
  */
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { ocrInput } from "./ocr-input.mjs";
+import { defaultOraclePath } from "./order-ocr.mjs";
+import { resolveBuildInput } from "./ocr-input.mjs";
 
-const input = ocrInput();
+const input = await resolveBuildInput();
 const scripts = [
   "extract-monsters.mjs",
   "extract-spells.mjs",
@@ -18,9 +19,15 @@ const scripts = [
   "extract-extras.mjs"
 ];
 
-for (const file of scripts) {
+function run(file, args = []) {
   const path = fileURLToPath(new URL(file, import.meta.url));
-  const result = spawnSync(process.execPath, [path, input], { stdio: "inherit" });
+  const result = spawnSync(process.execPath, [path, ...args], { stdio: "inherit" });
   if (result.error) throw result.error;
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
+
+for (const file of scripts) run(file, [input]);
+
+// The ordered scratch copy keeps extractor anchors stable; descriptions are
+// then replaced by the page-ordered oracle so every name keeps its own lore.
+run("repair-monster-prose.mjs", [process.env.BECMI_OCR_ORACLE || defaultOraclePath()]);

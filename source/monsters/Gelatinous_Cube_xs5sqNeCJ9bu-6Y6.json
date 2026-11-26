@@ -7,7 +7,7 @@
   "system": {
     "ac": 8,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -22,16 +22,16 @@
     "alignment": "Neutral",
     "xpValue": 125,
     "terrain": "Any",
-    "monsterType": "Undead",
-    "description": "A form of undead; see Haunt.",
-    "special": "",
+    "monsterType": "Unclassified",
+    "description": "This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6). A gelatinous cube moves through the rooms and corridors of a dungeon, sweeping the halls clean of all living and dead material. In the process, it may pick up items it cannot dissolve nous cube will attack any living creature it encounters. Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured. An attack on a paralyzed target automatically hits (only a damage roll is needed). The gelatinous cube will continue attacking creatures until it dies or they do; if it wins, it sweeps up the dead with all the other trash and continues on its path. A gelatinous cube may be harmed by fire and weapons, but not by cold or lightning. The lair of these strange monsters may contain ld4 cubes tional treasure). The lair will not have any \"young\" gelatinous cubes; adults split into two fully grown cubes. Ghost A form of undead; see Haunt.",
+    "special": "<p>It is hard to see, and it surprises often (1-4 on 1d6). Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -40,11 +40,16 @@
       "source": "Rules Cyclopedia",
       "variant": "",
       "key": "Gelatinous Cube",
-      "category": "Undead"
+      "category": "Unclassified"
     }
   },
   "ownership": {
     "default": 0
   },
-  "folder": "d7756e71a77efb17"
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
 }

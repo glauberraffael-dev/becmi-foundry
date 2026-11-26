@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "3+1",
-    "hp": 31,
+    "hp": 15,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Cavern, Hill, Mountain, Woods.",
     "monsterType": "Humanoid (Common).",
-    "description": "Bugbears are giant hairy goblins—humanoids that grow to about 8' tall and are covered with bristly dark fur. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can. They surprise on a roll of 1-3 (on 1d6) due to their stealth. When using weapons, they add + 1 to all attack and damage rolls because of their strength. In the wilderness, they live in small communities of 5-20 members, and send out hunting packs of 2-16 fighters. They kill and eat herd animals whenever possible and sometimes raid farmers' grain storage sheds and meat-smoking sheds for food; in times of great hardship, they may kill humans for food. They are basically intelligent, using crude knives, clubs, and spears they make themselves; they know how to use the superior weapons they sometimes steal from humans. There can be bugbear spellcasters; see \"Monster Spellcasters.\"",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They surprise on a roll of 1-3 (on 1d6) due to their stealth. There can be bugbear spellcasters; see \"Monster Spellcasters.\"&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "By weapon + 1 F3 Chaotic Bugbears are giant hairy goblins—humanoids that grow to about 8' tall and are covered with bristly dark fur. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can. They surprise on a roll of 1-3 ons, they add + 1 to all attack and damage rolls because of their strength. In the wilderness, they live in small communities of 5-20 members, and send out hunting packs of 2-16 fighters. They kill and eat herd animals whenever possible and sometimes raid farmers' grain storage sheds and meat-smoking sheds for food; in times of great hardship, they may kill humans for food. They are basically intelligent, using crude knives, clubs, and spears they make themselves; they know how to use the superior weapons they sometimes steal from humans. There can be bugbear spellcasters; see \"Monster Spellcasters.\"",
+    "special": "<p>They surprise on a roll of 1-3 ons, they add + 1 to all attack and damage rolls because of their strength. There can be bugbear spellcasters; see \"Monster Spellcasters.\"</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 31,
-        "max": 31
+        "value": 15,
+        "max": 15
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

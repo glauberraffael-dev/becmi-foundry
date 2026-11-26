@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 180,
       "outdoor": 60
@@ -23,15 +23,15 @@
     "xpValue": 75,
     "terrain": "Ocean.",
     "monsterType": "Normal Animal (Common).",
-    "description": "Sharks are predators, feeding mostly on fish. They have little intelligence and are unpredictable. They are attracted to the scent of blood within 300' and it will drive them into a feeding frenzy (they attack but make no morale checks). Sharks are found in salt water. Bull Shark:These are 8' long and brown in color. Bull sharks will ram their prey first to stun it (save vs. paralysis or be stunned for three rounds), and then attack the helpless prey the next round. Mako Shark:These are 12' long and blue-gray or tan in color. Mako sharks are very unpredictable, ignoring prey one moment and attacking another. Great White Shark:These are 30' long or larger and gray with a white underside. They have been known to destroy small boats.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Bull sharks will ram their prey first to stun it (save vs. paralysis or be stunned for three rounds), and then attack the helpless prey the next round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Sharks are predators, feeding mostly on fish. They have little intelligence and are unpredictable. They are attracted to the scent of blood within 300' and it will drive them into a feeding frenzy (they attack but make no morale checks). Sharks are found in salt water. Bull Shark:These are 8' long and brown in color. Bull sharks will ram their prey first to stun it rounds), and then attack the helpless prey the next round. Mako Shark:These are 12' long and blue-gray or tan in color. Mako sharks are very unpredictable, ignoring prey one moment and attacking another. Great White Shark:These are 30' long or larger and gray with a white underside. They have been known to destroy small boats.",
+    "special": "",
+    "notes": "Great White: Normal Animal (Rare).",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

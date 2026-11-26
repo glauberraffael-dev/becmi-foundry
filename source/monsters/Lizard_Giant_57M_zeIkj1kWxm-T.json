@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "3+1",
-    "hp": 31,
+    "hp": 15,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Cavern, Desert, Woods.",
     "monsterType": "Giant Animal (Common).",
-    "description": "sects, but will settle for human prey in lean times. The creature can also attack with its horn (for 1d6 points of damage) and may use its tail to knock other attackers down (make another attack roll, not doing any damage but preventing the target struck from attacking that round). Draco: A draco is a 6' long lizard with wide flaps of skin between its legs. It spreads these flaps to glide through the air, like a flying squirrel. Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather. They are carnivores and have been known to attack adventurers. Tuatara: A tuatara is an 8' long carnivore which looks like a cross between an iguana and a toad. It has pebble-colored olive skin with white spikes along its back.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Geckos are nocturnal carnivores. They hunt by climbing walls or trees with their specially adapted feet, then dropping on their prey to attack. Draco: A draco is a 6' long lizard with wide flaps of skin between its legs. It spreads these flaps to glide through the air, like a flying squirrel. Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather. They are carnivores and have been known to attack adventurers. Homed Chameleon: A horned chameleon is a into its surroundings. It surprises on a roll of 1-5 sticky tongue up to 5' long. A successful hit means that the victim is pulled to the horned chameleon's mouth and bitten for 2d4 points of damage. Horned chameleons prefer giant insects, but will settle for human prey in lean times. The creature can also attack with its horn knock other attackers down (make another attack roll, not doing any damage but preventing the target struck from attacking that round). Tuatara: A tuatara is an 8' long carnivore which looks like a cross between an iguana and a toad. It has pebble-colored olive skin with white s",
+    "special": "<p>Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or hot weather. It surprises on a roll of 1-5 sticky tongue up to 5' long.</p>",
+    "notes": "Gecko: A gecko is a 5' long lizard colored pale blue with orange-brown spots. Geckos are nocturnal carnivores. They hunt by climbing walls or trees with their specially adapted feet, then dropping on their prey to attack.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 31,
-        "max": 31
+        "value": 15,
+        "max": 15
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

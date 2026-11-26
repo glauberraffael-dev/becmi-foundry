@@ -31,9 +31,8 @@
       </table>
       <h2 class="becmi-section-title">{{localize 'BECMI.sheet.creation'}}</h2>
       <div class="becmi-combat-fields">
-        <button type="button" class="becmi-roll" data-action="createCharacter">{{localize 'BECMI.sheet.createCharacter'}}</button>
-        <button type="button" class="becmi-roll" data-action="rollLevelHP">{{localize 'BECMI.sheet.rollLevelHP'}}</button>
-        <button type="button" class="becmi-roll" data-action="levelUp">{{localize 'BECMI.sheet.levelUp'}}</button>
+        <button type="button" class="becmi-roll" data-action="createCharacter" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.createCharacter'}}</button>
+        <button type="button" class="becmi-roll" data-action="levelUp" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.levelUp'}}</button>
       </div>
       {{#if rcClass}}
       <p class="becmi-hint">{{rcClass.name}} — {{localize 'BECMI.labels.hd'}} 1d{{rcClass.hitDie}}, {{localize 'BECMI.labels.maxLevel'}} {{rcClass.maxLevel}}.</p>
@@ -160,42 +159,69 @@
 <section class="becmi-tab-panel{{#if (eq activeTab "spells")}} is-active{{/if}}" data-tab="spells">
   {{#if canCast}}
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.spellsPerDay'}}</h2>
-  {{#if classKey}}
-  <table class="becmi-table becmi-table--slots">
-    <thead><tr><th>{{localize 'BECMI.labels.spellLevel'}}</th>{{#each spellLevels as |level|}}<th>{{level}}</th>{{/each}}</tr></thead>
-    <tbody><tr><th>{{localize 'BECMI.sheet.memorized'}}</th>{{#each spellSlots as |slots|}}<td>{{slots}}</td>{{/each}}</tr></tbody>
+  <table class="becmi-table becmi-table--slot-bars">
+    <thead><tr><th>{{localize 'BECMI.labels.spellLevel'}}</th><th>{{localize 'BECMI.sheet.preparedSlots'}}</th><th>{{localize 'BECMI.sheet.available'}}</th></tr></thead>
+    <tbody>
+      {{#each spellGroups as |group|}}
+      <tr>
+        <th>{{group.level}}</th>
+        <td>{{group.prepared}}/{{group.max}}</td>
+        <td><div class="becmi-slot-bar" role="meter" aria-valuemin="0" aria-valuemax="{{group.max}}" aria-valuenow="{{group.remaining}}"><span style="width: {{group.percent}}%"></span></div><small>{{group.remaining}}</small></td>
+      </tr>
+      {{/each}}
+    </tbody>
   </table>
-  {{/if}}
   <div class="becmi-combat-fields">
     <button type="button" class="becmi-roll" data-action="restSpells">{{localize 'BECMI.sheet.rest'}}</button>
     {{#if isDruid}}<button type="button" class="becmi-roll" data-action="toggleDruid">{{localize 'BECMI.sheet.druidDisable'}}</button>{{/if}}
   </div>
+
+  {{#each spellGroups as |group|}}
+  <section class="becmi-spell-level">
+    <h3 class="becmi-subtitle">{{localize 'BECMI.labels.spellLevel'}} {{group.level}} — {{group.prepared}}/{{group.max}}</h3>
+    {{#if group.max}}
+    <table class="becmi-table becmi-table--memorized">
+      <thead><tr><th>#</th><th>{{localize 'BECMI.item.spell'}}</th><th>{{localize 'BECMI.sheet.used'}}</th><th>{{localize 'BECMI.sheet.actions'}}</th></tr></thead>
+      <tbody>
+        {{#each group.entries as |entry|}}
+        <tr>
+          <td>{{entry.number}}</td>
+          <td><select name="system.spellbook.memorized.{{entry.key}}" {{#unless ../editable}}disabled{{/unless}}>
+            <option value="">—</option>
+            {{#each entry.options as |option|}}
+            <option value="{{option.key}}" {{#if (eq option.key entry.spell)}}selected{{/if}}>{{option.name}}</option>
+            {{/each}}
+          </select></td>
+          <td><input type="checkbox" name="system.spellbook.used.{{entry.key}}" {{#if entry.used}}checked{{/if}} {{#unless ../editable}}disabled{{/unless}}></td>
+          <td>{{#if entry.spell}}<button type="button" class="becmi-roll" data-action="castSpell" data-slot="{{entry.key}}" data-spell-key="{{entry.spell}}" data-item-id="{{entry.itemId}}">{{localize 'BECMI.rolls.cast'}}</button>{{/if}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    <p class="becmi-hint">{{localize 'BECMI.sheet.noSlotsAtLevel'}}</p>
+    {{/if}}
+  </section>
+  {{/each}}
+
   <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.grimoire'}}</h3>
   <textarea class="becmi-editor" name="system.spellbook.grimoire" {{#unless editable}}disabled{{/unless}}>{{grimoire}}</textarea>
-  <table class="becmi-table becmi-table--memorized">
-    <thead><tr><th>{{localize 'BECMI.labels.spellLevel'}}</th><th>#</th><th>{{localize 'BECMI.item.spell'}}</th><th>{{localize 'BECMI.sheet.used'}}</th><th>{{localize 'BECMI.sheet.actions'}}</th></tr></thead>
-    <tbody>
-      {{#each spellRows as |row|}}
-      {{#each row.entries as |entry|}}
-      <tr>
-        <th>{{row.level}}</th><td>{{entry.key}}</td>
-        <td><select name="system.spellbook.memorized.{{entry.key}}" {{#unless ../editable}}disabled{{/unless}}>
-          <option value="">—</option>
-          {{#each entry.options as |option|}}
-          <option value="{{option.key}}" {{#if (eq option.key entry.spell)}}selected{{/if}}>{{option.name}}</option>
-          {{/each}}
-        </select></td>
-        <td><input type="checkbox" name="system.spellbook.used.{{entry.key}}" {{#if entry.used}}checked{{/if}} {{#unless ../editable}}disabled{{/unless}}></td>
-        <td>{{#if entry.spell}}<button type="button" class="becmi-roll" data-action="castSpell" data-slot="{{entry.key}}" data-spell-key="{{entry.spell}}">{{localize 'BECMI.rolls.cast'}}</button>{{/if}}</td>
-      </tr>
+
+  <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.importSpell'}}</h3>
+  <p class="becmi-hint">{{localize 'BECMI.sheet.importHint'}}</p>
+  <div class="becmi-import-row">
+    <select multiple size="7" data-spell-import {{#unless editable}}disabled{{/unless}}>
+      {{#each importSpellOptions as |spell|}}
+      <option value="{{spell.uuid}}" {{#if spell.known}}disabled{{/if}}>{{localize 'BECMI.labels.level'}} {{spell.level}} · {{spell.list}} · {{spell.name}}{{#if spell.known}} ({{localize 'BECMI.sheet.known'}}){{/if}}</option>
       {{/each}}
-      {{/each}}
-    </tbody>
-  </table>
+    </select>
+    <button type="button" class="becmi-roll" data-action="importSpell" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.importSelected'}}</button>
+  </div>
+
   <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.spellList'}}</h3>
   <div class="becmi-filter-row">
-    <input type="number" name="flags.becmi.spellFilterLevel" value="{{flags.spellFilterLevel}}" min="0" max="9" placeholder="{{localize 'BECMI.labels.spellLevel'}}">
-    <input type="text" name="flags.becmi.spellSearch" value="{{spellSearch}}" placeholder="{{localize 'BECMI.sheet.search'}}">
+    <input type="number" name="spellFilterLevel" value="{{spellFilterLevel}}" min="0" max="9" placeholder="{{localize 'BECMI.labels.spellLevel'}}">
+    <input type="text" name="spellSearch" value="{{spellSearch}}" placeholder="{{localize 'BECMI.sheet.search'}}">
   </div>
   <div class="becmi-filter-row">
     {{#each spellFilterOptions as |option|}}
@@ -208,7 +234,7 @@
       {{#each spellList as |spell|}}
       <tr>
         <td>{{spell.listName}}</td><td>{{spell.level}}</td><th>{{spell.name}}</th><td>{{spell.range}}</td><td>{{spell.duration}}</td><td>{{spell.effect}}</td><td>{{spell.notes}}</td>
-        <td><button type="button" class="becmi-roll" data-action="memorizeSpell" data-spell-key="{{spell.key}}">+</button></td>
+        <td><button type="button" class="becmi-roll" data-action="memorizeSpell" data-spell-key="{{spell.key}}" data-item-id="{{spell.itemId}}" {{#unless ../editable}}disabled{{/unless}}>+</button></td>
       </tr>
       {{else}}
       <tr><td colspan="8" class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</td></tr>
@@ -228,7 +254,7 @@
     </li>
     {{/each}}
   </ul>
-  <button type="button" class="becmi-roll" data-action="addItem">{{localize 'BECMI.sheet.addSpell'}}</button>
+  {{#if editable}}<button type="button" class="becmi-roll" data-action="addItem">{{localize 'BECMI.sheet.addSpell'}}</button>{{/if}}
   {{else}}
   <p class="becmi-hint">{{localize 'BECMI.notification.noSpells'}}</p>
   {{/if}}

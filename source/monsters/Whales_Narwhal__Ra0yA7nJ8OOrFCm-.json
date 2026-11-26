@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "12",
-    "hp": 12,
+    "hp": 54,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 1250,
     "terrain": "Any",
     "monsterType": "Killer Whale: Normal Animal (Common); Great Whale: Giant Animal (Very Rare); Nar",
-    "description": "They live by hunting other sea creatures. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed.",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Killer Whale:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; These are 25' long and are found mainly in cold waters. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Rare); Narwhal: Monster (Rare). Killer Whale: These are 25' long and are found mainly in cold waters. They live by hunting other sea creatures. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed. Great Whale: This huge whale is about 60' long on the average. It preys on the most feared denizens of the deep (such as the giant octopus and giant squid). Man-sized or smaller creatures will be swallowed whole on a die roll that is 4 or more than the score needed to hit. A swallowed creature will take 3d6 points of acid damage per round. Great whales will sometimes (10%) attack ships, attempting to ram. The monster whale does 6d6 hull points of damage in a successful ram. Extremely rare great whales might grow to double or triple this size, with a corresponding increase in Hit Dice and damage. There are rumors of monster whales large enough to swallow an entire harbor of ships! Narwhal: The narwhal is 15' long, gray to white in color, and has an 8' long spiral horn on its head (like that of a unicorn). It is an intelligent magical creatu",
+    "special": "<p>Killer Whale: These are 25' long and are found mainly in cold waters. Creatures of halfling size or smaller will be swallowed whole if the killer whale scores a 20 on its hit roll. Those swallowed take 1d6 points of damage per round and will drown in 10 rounds unless freed.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 12,
-        "max": 12
+        "value": 54,
+        "max": 54
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

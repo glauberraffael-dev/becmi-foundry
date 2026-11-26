@@ -21,6 +21,7 @@ import {
   toNumber
 } from "./normalize.mjs";
 import { ocrInput } from "./ocr-input.mjs";
+import { monsterHpFromHitDice } from "../scripts/rules-rc.mjs";
 
 const require = createRequire(import.meta.url);
 const root = fileURLToPath(new URL("..", import.meta.url));
@@ -53,12 +54,9 @@ function cleanName(raw) {
     .trim();
 }
 
+/** Average HP from the HD count, never the HD number itself (RC p. 152). */
 function estimateHp(hd) {
-  const cleaned = fixDice(String(hd ?? ""));
-  if (/^\d+\/\d+$/.test(cleaned)) return 1;
-  const m = cleaned.match(/(\d+)d(\d+)/);
-  if (!m) return toNumber(cleaned, 1) ?? 1;
-  return Math.round((Number(m[1]) * (Number(m[2]) + 1)) / 2);
+  return monsterHpFromHitDice(hd);
 }
 
 function normaliseStats(raw) {

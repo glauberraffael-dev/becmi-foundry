@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "7+1",
-    "hp": 71,
+    "hp": 33,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 1025,
     "terrain": "plane of Air, Desert (preferred). _Load:_ A djinni can fly carrying 3,500 cn of weight at full speed or 7,000 cn of weight at half speed; in times of grave need, it can carry up to 12,000 cn of weight (for 3 turns walking or 1 turn flying) but the djinni must rest for 1 turn afterward.",
     "monsterType": "Planar Monster, Enchanted (Rare).",
-    "description": "Djinn are intelligent, free-willed, enchanted creatures from the elemental plane of Air. They appear as tall, humanlike beings; 50% of encountered djinn are male and 50% are female. Djinn are basically good-hearted, in spite of their Chaotic alignment. Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. A djinn can use each of its seven powers three times each day. These powers are: - Create food and drink (as a 7th level cleric). - Create metallic objects of up to 1,000 cn weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). - Create soft goods and wooden objects of up to 1,000 cn weight (of permanent duration). - Become invisible. - Assume gaseous form. - Form a whirlwind. - Create illusions (which affect both sight and hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them).",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. These powers are:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; - Create food and drink (as a 7th level cleric). - Create metallic objects of up to 1,000 cn weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). - Create soft goods and wooden objects of up to 1,000 cn weight (of permanent duration). - Become invisible. - Assume gaseous form. - Form a whirlwind. - Create illusions (which affect both sight and hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Djinn are intelligent, free-willed, enchanted creatures from the elemental plane of Air. They appear as tall, humanlike beings; 50% of encountered djinn are male and 50% are female. Djinn are basically good-hearted, in spite of their Chaotic alignment. Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. A djinn can use each of its seven powers three times weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). to 1,000 cn weight (of permanent duration). hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them). A djinni has two forms of attack. In normal form, it strikes with its fist. It may also transform itself into a whirlwind—a cone 70' tall, 20' diameter at the top, 10' diameter at the base, movement rate 120' (40'). The transformation takes five rounds. The djirmi-whirlwind inflicts sweeps aside all creatures with fewer than 2 HD unless they make a saving throw vs. death ray. If a djinni is slain, its spirit returns to its own plane. Djinn normally appear on the Prime Plane when summoned or when bound into a magical item. On their own plane, they live in cities similar to",
+    "special": "<p>Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. A djinn can use each of its seven powers three times weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). to 1,000 cn weight (of permanent duration). hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them). Djinn normally appear on the Prime Plane when summoned or when bound into a magical item.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 71,
-        "max": 71
+        "value": 33,
+        "max": 33
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

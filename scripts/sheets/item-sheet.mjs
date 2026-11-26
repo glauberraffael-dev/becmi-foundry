@@ -1,4 +1,5 @@
 import { applyClassToActor } from "../integrations.mjs";
+import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;
@@ -20,7 +21,9 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       rollFormula: BECMIItemSheet.#rollFormula,
       castSpell: BECMIItemSheet.#castSpell,
       sendToChat: BECMIItemSheet.#sendToChat,
-      applyClass: BECMIItemSheet.#applyClass
+      applyClass: BECMIItemSheet.#applyClass,
+      toggleEditMode: BECMIItemSheet.#toggleEditMode,
+      toggleDarkMode: BECMIItemSheet.#toggleDarkMode
     }
   }, { inplace: false }));
 
@@ -30,13 +33,22 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   };
 
   targetAC = 9;
+  editMode = false;
+
+  async _onRender(context, options) {
+    await super._onRender(context, options);
+    applySheetTheme(this.element, isDarkMode());
+  }
 
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
     const item = this.document;
     context.item = item;
     context.system = item.system;
-    context.editable = this.isEditable;
+    context.canEdit = this.isEditable;
+    context.editMode = this.editMode;
+    context.editable = this.isEditable && this.editMode;
+    context.darkMode = isDarkMode();
     context.isWeapon = item.type === "weapon";
     context.isSpell = item.type === "spell";
     context.isArmor = item.type === "armor";
@@ -52,8 +64,23 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     return context;
   }
 
+  static async #toggleEditMode() {
+    if (!this.isEditable) return;
+    this.editMode = !this.editMode;
+    await this.render();
+  }
+
+  static async #toggleDarkMode() {
+    const dark = !isDarkMode();
+    await setDarkMode(dark);
+    applySheetTheme(this.element, dark);
+    await this.render();
+  }
+
   static async #onSubmit(event, form, formData) {
-    await this.document.update(formData.object);
+    if (!this.isEditable || !this.editMode) return;
+    const changes = sanitizeImageUpdate(formData.object);
+    if (Object.keys(changes).length) await this.document.update(changes);
   }
 
   #targetAC() {
@@ -84,6 +111,7 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   }
 
   static async #applyClass() {
+    if (!this.isEditable || !this.editMode) return;
     const actor = canvas.tokens.controlled[0]?.actor ?? game.user.character;
     if (!actor) {
       ui.notifications.warn(game.i18n.localize("BECMI.notification.noActor"));

@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "1-4",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 240,
       "outdoor": 80
@@ -23,15 +23,15 @@
     "xpValue": 10,
     "terrain": "Any except Arctic.",
     "monsterType": "Normal Animal",
-    "description": "Giant ants behave just like their smaller cousins. They wander all over the landscape, finding sources of ready food (grain warehouses, watering-holes, villages), communicate their finds to the nest, and set up a trail from the nest to the food and back. There are legends of giant ants mining gold, and there is a 30% chance that a lair will contain 1d10 thousand gp worth of nuggets. Terrain: Any except Arctic.",
+    "description": "This set of monster statistics represents most wild grazing creatures, such as caribou, deer, elk, goats, moose, and wild oxen. All but the most inhospitable climates in the world will feature at least one type of herd beast. PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are. Here are some sample herd Hit Dice Damage Antelope, Deer, Goats 1-2 (M) ld4 Wild Horses, Zebras ld4 + 1 Caribou, Oxen Elk, Moose, Cattle ld8 The DM may add other herd animals within these ranges. In any given herd only one animal in four is male; the rest are females and young. A male has at least 3 hit points per Hit Die; females have normal hit points, Young have only 1-4 hit young flee while the males protect them. Any group of 16 or more may panic when attacked, running toward the disturbance 40% of the time (trampling all in their path for 1d20 points of damage; no attack roll needed). Ant, Giant F2 U (and see below) Neutral Giant ants are black ants about 6' long. They are omnivores and will attack anything edible that lies in their path (no reaction roll); if they win, they carry their kills back to the",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

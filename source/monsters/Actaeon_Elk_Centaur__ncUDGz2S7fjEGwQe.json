@@ -7,7 +7,7 @@
   "system": {
     "ac": 3,
     "hd": "11",
-    "hp": 11,
+    "hp": 50,
     "move": {
       "dungeon": 150,
       "outdoor": 50
@@ -23,15 +23,15 @@
     "xpValue": 2700,
     "terrain": "Woods.",
     "monsterType": "Monster (Rare).",
-    "description": "each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.). If the saving throw is successful, the transformation still occurs, but lasts for only 24 hours. Once per day an actaeon may summon woodland creatures to assist it; 1d6 creatures arrive in 1d4 turns. Choose or randomly determine the types of creatures appearing: This solitary creature is a protector of woodland creatures. The actaeon is 9' tall, with the arms, torso, and facial features of a human but the antlers and lower legs of an elk; its whole body is covered with brown elklike hide. Actaeons are members of the woodland community along with centaurs, dryads, etc. They are sufficiently bold and rare that they are renowned heroes of these forest folk.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "This solitary creature is a protector of woodland creatures. The actaeon is 9' tall, with the arms, torso, and facial features of a human but the antlers and lower legs of an elk; its whole body is covered with brown elklike hide. It can camouflage itself perfectly (as if invisible) in light or dense woods. When angered by the wanton slaying of woodland creatures (or similar vile acts), the actaeon springs out of hiding, usually with surprise (1-5 on ld6). It often uses large wood and bone spears to punish or slay the defilers of the woods. It has a powerful breath weapon that can be used once per day, filling a 10' X 10' x 10' cube; each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.). If the saving throw is successful, the transformation still occurs, but lasts for only 24 hours. Once per day an actaeon may summon woodland creatures to assist it; 1d6 creatures arrive in griffon Actaeons are members of the woodland community along with centaurs, dryads, etc. They are sufficiently bold and rare that they are renowned heroes of these forest folk. Actaeon sometimes work with druids to preserve the",
+    "special": "<p>It can camouflage itself perfectly (as if invisible) in light or dense woods. When angered by the wanton slaying of woodland creatures (or similar vile acts), the actaeon springs out of hiding, usually with surprise (1-5 on ld6). It has a powerful breath weapon that can be used once per day, filling a 10' X 10' x 10' cube; each victim within it must make a saving throw vs. dragon breath or be polymorphed into a normal forest creature (owl, squirrel, deer, etc.).</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 11,
-        "max": 11
+        "value": 50,
+        "max": 50
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

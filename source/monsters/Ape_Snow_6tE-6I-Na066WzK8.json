@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "3+1",
-    "hp": 31,
+    "hp": 15,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Anywhere humans are found.",
     "monsterType": "Normal Animal (Common).",
-    "description": "Adaptors are not the same as dopplegangers; they cannot turn into duplicates of specific people. Terrain: Anywhere humans are found. This set of monster statistics represents most wild grazing creatures, such as caribou, deer, elk, goats, moose, and wild oxen. All but the most inhospitable climates in the world will feature at least one type of herd beast.",
-    "special": "",
+    "description": "Snow apes are squat, baboonlike creatures with shaggy white fur. They are somewhat intelligent, and often make simple tools like clubs or sharpened bones. They cannot, however, grasp more complicated concepts, such as the use of a bow and arrow. Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4). The snow ape uses one arm to attack with a weapon and attempts to hug its victim with the other. Because the snow ape is so strong, any creature caught in its hug takes 2d6 points of damage each round until freed. The ape will maintain its hug until it is slain or its morale fails. Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case). Although they cannot make intelligible sounds, snow apes communicate with each other using a complex sign language. In addition, snow apes often leave messages for each other using a system of stacked rocks and snowballs. Snow apes are omnivores; they like giant insects and red meat (such as humans), but will not attack very large monsters or la",
+    "special": "<p>Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4).</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 31,
-        "max": 31
+        "value": 15,
+        "max": 15
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 75,
     "terrain": "Hill, Mountain, Open.",
     "monsterType": "Normal Animal",
-    "description": "Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs. Rock baboons will not go out of their way to attack travelers, but will try to scare intruders out of their hunting grounds. Archons live in small families of one mated pair and 1d3 young. Archons are encountered alone or in mated pairs; adventurers almost never encounter archon young.",
+    "description": "White apes have lost their color due to many years of living in caves. They are nocturnal herbivores, looking for fruits and vegetables at night. They do not go out of their way to attack characters; if approached by humans and demihumans and given a chance to flee, they will do so. But if creatures approach their lair, the apes will threaten the intruders. If their threats are ignored, they will attack. They may throw one stone per round for 1d6 points each. White apes are not intelligent and are sometimes kept as pets by Neanderthals (cavemen). Normally, in the wild, they live in caves in family groups of 2-8 members.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

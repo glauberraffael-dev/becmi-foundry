@@ -7,7 +7,7 @@
   "system": {
     "ac": 2,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 240,
       "outdoor": 80
@@ -23,15 +23,15 @@
     "xpValue": 125,
     "terrain": "Woods. _Load:_ 2,000 cn at full speed; 4,000 cn at half speed.",
     "monsterType": "Monster (Rare).",
-    "description": "A unicorn looks like a slender horse with a horn growing from its forehead. Unicorns are always very beautiful animals; no one has ever seen an ugly one. Unicorns are shy creatures, but fierce when cornered. Only a pure maiden can talk to or ride one. A unicorn can magically teleport itself (with a rider) to a distance of 360' once per day. A unicorn's morale is improved (9) if it has a rider. These creatures live in the deep forests, far away from sentient creatures. They are often hunted by evil wizards, who prize their horns for their alchemical potions and spell researches. Barding Multiplier: x 1.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A unicorn can magically teleport itself (with a rider) to a distance of 360' once per day. They are often hunted by evil wizards, who prize their horns for their alchemical potions and spell researches.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A unicorn looks like a slender horse with a horn growing from its forehead. Unicorns are always very beautiful animals; no one has ever seen an ugly one. Unicorns are shy creatures, but fierce when cornered. Only a pure maiden can talk to or ride one. A unicorn can magically teleport itself (with a rider) to a distance of 360' once per day. A unicorn's morale is improved (9) if it has a rider. These creatures live in the deep forests, far away from sentient creatures. They are often hunted by evil wizards, who prize their horns for their alchemical potions and spell researches. at full speed; 4,000 cn at half speed. Barding Multiplier: x 1.",
+    "special": "<p>A unicorn can magically teleport itself (with a rider) to a distance of 360' once per day. They are often hunted by evil wizards, who prize their horns for their alchemical potions and spell researches. at full speed; 4,000 cn at half speed.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 9,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 2,
     "terrain": "Normal Rats: Any. Giant Rats: Cavern, Ruins.",
     "monsterType": "Normal Rat: Normal Animal (Common).",
-    "description": "Rats are clever rodents that can eat meat, grain, sawdust, almost anything. Rats usually avoid humans and will not attack unless summoned (by a wererat, for example) or defending their lair. Rats are good swimmers and may attack while in water. They are afraid of fire, and will run from it unless forced to fight by a summoning creature. Some rats carry diseases. Anyone bitten by a rat has a 1 in 20 chance of being infected. (This chance should be checked each time a rat successfully hits. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison. If failed, the victim may die in 1d6 days (1 in 4 chance) or may be sick in bed for 1 month, unable to adventure. Normal Rats: Normal rats have gray or brown fur, and are from 6\" to 2' long. They attack in \"packs\" of 5-10 rats per pack.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;They are afraid of fire, and will run from it unless forced to fight by a summoning creature. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Rats are clever rodents that can eat meat, grain, sawdust, almost anything. Rats usually avoid humans and will not attack unless summoned (by a wererat, for example) or defending their lair. Rats are good swimmers and may attack while in water. They are afraid of fire, and will run from it unless forced to fight by a summoning creature. Some rats carry diseases. Anyone bitten by a rat has a 1 in 20 chance of being infected. (This chance should be checked each time a rat successfully hits. If a rat is diseased, its XP award is making a saving throw vs. poison. If failed, the victim may die in 1d6 days (1 in 4 chance) or may be sick in bed for 1 month, unable to adventure. Normal Rats: Normal rats have gray or brown fur, and are from 6\" to 2' long. They attack in \"packs\" of 5-10 rats per pack. If there are more than 10 rats they will divide into packs of 10 or less and attack several creatures; one pack will only attack one creature at a time and makes one attack per round. Rats climb all over the creature they are attacking, often knocking the victim down. Giant Rats: These creatures are very similar to the normal varieties, but are 3' long or more, and have gray or black fur. They",
+    "special": "<p>They are afraid of fire, and will run from it unless forced to fight by a summoning creature. If a rat is diseased, its XP award is making a saving throw vs. poison.</p>",
+    "notes": "Giant Rat: Giant Animal (Common).",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

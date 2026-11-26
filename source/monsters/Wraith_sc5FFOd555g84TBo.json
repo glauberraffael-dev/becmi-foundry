@@ -7,7 +7,7 @@
   "system": {
     "ac": 3,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 175,
     "terrain": "Ocean.",
     "monsterType": "Undead (Rare, Enchanted).",
-    "description": "It preys on the most feared denizens of the deep (such as the giant octopus and giant squid). Man-sized or smaller creatures will be swallowed whole on a die roll that is 4 or more than the score needed to hit. A swallowed creature will take 3d6 points of acid damage per round. Great whales will sometimes (10%) attack ships, attempting to ram. The monster whale does 6d6 hull points of damage in a successful ram. Extremely rare great whales might grow to double or triple this size, with a corresponding increase in Hit Dice and damage. There are rumors of monster whales large enough to swallow an entire harbor of ships! Narwhal: The narwhal is 15' long, gray to white in color, and has an 8' long spiral horn on its head (like that of a unicorn). It is an intelligent magical creature, very independent and secretive.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It preys on the most feared denizens of the deep (such as the giant octopus and giant squid). Man-sized or smaller creatures will be swallowed whole on a die roll that is 4 or more than the score needed to hit. A swallowed creature will take 3d6 points of acid damage per round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "A wraith is an undead monster with no physical body, appearing as a pale, almost transparent, manlike figure of thick mist. A wraith is a spirit of the unhappy dead, selfishly holding itself to the Prime Plane by draining life from the living. Wraiths dwell in deserted lands or in the dwellings of creatures they have slain or driven away. Wraiths are immune to sleep, charm, and hold spells. A wraith can only be hit by silver or magical weapons, but silver weapons will only do half damage. The touch of a wraith is an energy drain of 1 level, in addition to causing 1d6 points of damage. A victim slain by a wraith will become a wraith in one day, under the control of the slayer. Terrain/Barren Lands, Ruins. Wyvern F4 E Chaotic A wyvern looks like a two-legged dragon with a long tail. Unlike dragons, wyverns are mostly brown, red, or rust-red in hue. These beasts prefer to live on cliffs or in forests, but may be found anywhere. In combat, the wyvern will bite and arch its tail over its head to hit opponents in front of it. Those stung by the tail must make a saving throw vs. poison or die. Like most dragon-kin, wyverns are carnivores. They prefer the taste of large herd-beasts such as",
+    "special": "<p>Wraiths are immune to sleep, charm, and hold spells. A wraith can only be hit by silver or magical weapons, but silver weapons will only do half damage. The touch of a wraith is an energy drain of 1 level, in addition to causing 1d6 points of damage.</p>",
+    "notes": "A wraith is an undead monster with no physi-",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "1+1",
-    "hp": 11,
+    "hp": 6,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 19,
     "terrain": "Any.",
     "monsterType": "Human (Rare).",
-    "description": "Berserkers are fighters who go mad in battle. Most belong to barbarian cultures—typically, northern seagoing cultures. Berserker reactions are determined normally outside of combat, but once a battle starts they will always fight to the death—sometimes attacking their comrades in their blind rage. When fighting humans or humanlike creatures (such as kobolds, goblins or orcs), they add + 2 to their attack rolls due to their ferocity. They never retreat, surrender, or take prisoners. Berserkers do not look different from any other members of their culture. In a village of the appropriate culture, 10% of all fighters will be berserkers. The DM can create societies where all fighters are berserkers.",
+    "description": "Berserkers are fighters who go mad in battle. Most belong to barbarian cultures—typically, northern seagoing cultures. Berserker reactions are determined normally outside of combat, but once a battle starts they will always fight to the death—sometimes attacking their comrades in their blind rage. When fighting humans or humanlike creatures (such as kobolds, goblins or orcs), they add + 2 to their attack rolls due to their ferocity. They never retreat, surrender, or take prisoners. Berserkers do not look different from any other members of their culture. In a village of the appropriate culture, 10% of all fighters will be berserkers. The DM can create societies where all fighters are berserkers. Black Pudding* F5 See below Neutral A black pudding is a nonintelligent black blob 5 to 30 feet in diameter. Puddings are always hungry; they will attack any creature they come across. With their corrosive touch, they inflict 3d8 points of damage to living things, and can dissolve wood and corrode metal in one turn. They cannot affect stone. They can travel on ceilings and walls, and can pass through small openings. (Passing through a small opening is very slow and usually takes a full turn",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 11,
-        "max": 11
+        "value": 6,
+        "max": 6
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

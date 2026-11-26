@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 9,
       "outdoor": 3
@@ -23,15 +23,15 @@
     "xpValue": 20,
     "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
     "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
-    "description": "Bats are nocturnal flying insectivores. They often live in caves or abandoned buildings and find their way about by echolocation (a type of radar using hearing and echoes to locate objects). Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Normal bats: These very small mammals weigh only a few ounces. They will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character. Characters who are confused have a - 2 penalty on their attack rolls and saving throws and cannot cast spells. Normal bats must check morale each round unless they are controlled or summoned. Giant Bats: Giant bats are much larger cousins of normal bat species.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Characters who are confused have a - 2 penalty on their attack rolls and saving throws and cannot cast spells.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die. However, the creature can choose to bite without using the poison, if desired. Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers.",
+    "special": "<p>Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

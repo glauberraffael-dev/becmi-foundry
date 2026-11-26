@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 30,
       "outdoor": 10
@@ -23,15 +23,15 @@
     "xpValue": 25,
     "terrain": "Plane of Earth.",
     "monsterType": "Planar Monster (Very Rare).",
-    "description": "An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task. The race of \"invisible stalkers\" (which is the human name for the species) lives on the elemental plane of Air. They call themselves the \"sshai.\" Invisible stalkers are much faster speed on their home plane: 360' (120'). Kryst are immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on air.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An invisible stalker is most often used to track and slay enemies. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1- 5 (on 1d6). A creature with the ability to detect invisible things receives a +4 bonus when attacking an invisible stalker.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "An insect swarm is not a single creature, but rather a group of small insects acting together. It may be attracted to light or strange smells, or may be defending its lair. Use these characteristics for the occasions when a character stumbles into a beehive or wasp's nest, for instance. The swarm may fill a 10' x 10' x 30' area or more. The insects are normal-sized, either crawlers (ants, centipedes, or spiders), flyers (bees or wasps), or both (beetles or locusts). No attack roll is made for the swarm; it is an \"area effect\" and automatically hits. All armored victims within the area (and any monsters with AC 5 or better) automatically take 2 points of damage per round. Unarmored victims (and monsters with AC 6 or worse) take 4 points per round. Any victim who runs out of the swarm, or who swats the insects instead of making another attack or taking another action, takes only 1 point per round. To swat at the insects, the victim must use a weapon or torch; attempts to swat with hands or arms have no effect. If the swarm is damaged, it will pursue its attacker nearly without fail (ML 11). A victim can still escape either by disappearing from sight (invisible, around a corner, etc.)",
+    "special": "<p>A victim can still escape either by disappearing from sight (invisible, around a corner, etc.)</p>",
+    "notes": "The kryst are intelligent beings made of crystalline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the elemental plane of Earth.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

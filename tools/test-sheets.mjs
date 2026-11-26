@@ -24,6 +24,8 @@ class FakeActorSheet {
     this.superItems.push(item);
     return item;
   }
+
+  async render() {}
 }
 
 let dragPayload = {};
@@ -50,6 +52,7 @@ if (typeof BECMIActorSheet.DEFAULT_OPTIONS.actions.editImage !== "function") {
   throw new Error("the inherited editImage action was dropped from actor sheet options");
 }
 const sheet = new BECMIActorSheet({});
+sheet.editMode = true; // drops are edit actions; use mode is tested below
 const event = {};
 const classItem = { documentName: "Item", type: "class", name: "Magic-User" };
 
@@ -76,4 +79,19 @@ if (await sheet._onDrop(event) !== "super-drop" || sheet.superDrops.length !== 1
   throw new Error("document drag payload was not forwarded to ActorSheetV2");
 }
 
-console.log("Sheet drop handling OK (classes, owned items, invalid and valid payloads).");
+// Use mode must not submit actor changes through edit actions.
+const actions = BECMIActorSheet.DEFAULT_OPTIONS.actions;
+sheet.editMode = false;
+sheet.actor = {
+  async update() { throw new Error("read-only sheet tried to update the actor"); }
+};
+if (sheet.editMode) throw new Error("sheets must open in use mode");
+await actions.levelUp.call(sheet);
+await actions.memorizeSpell.call(sheet, {}, { dataset: { itemId: "spell" } });
+await actions.setClass.call(sheet, {}, { dataset: { classKey: "fighter" } });
+await actions.toggleEditMode.call(sheet);
+if (!sheet.editMode) throw new Error("edit mode toggle did not enable editing");
+await actions.toggleEditMode.call(sheet);
+if (sheet.editMode) throw new Error("edit mode toggle did not return to use mode");
+
+console.log("Sheet handling OK (drops, invalid payloads and edit/use mode).");

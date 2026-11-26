@@ -40,7 +40,7 @@
 </div>
 
 {{#if isClass}}
-<div class="becmi-section-title">{{localize 'BECMI.sheet.xpTable'}} <button type="button" class="becmi-roll" data-action="applyClass">{{localize 'BECMI.sheet.applyClass'}}</button></div>
+<div class="becmi-section-title">{{localize 'BECMI.sheet.xpTable'}} <button type="button" class="becmi-roll" data-action="applyClass" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.applyClass'}}</button></div>
 <table class="becmi-table becmi-table--xp">
   <thead><tr><th>{{localize 'BECMI.labels.level'}}</th><th>{{localize 'BECMI.labels.xp'}}</th></tr></thead>
   <tbody>

@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "14",
-    "hp": 14,
+    "hp": 63,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 5,
     "terrain": "Any (usually Barren Lands and Ruins).",
     "monsterType": "Undead, Enchanted (Very Rare).",
-    "description": "Druj: Druj appear as body parts, floating or crawling about in a horrible way. A druj is usually encountered in the form of a hand, eye, or skull. Druj are very intelligent and strongly evil, far more dangerous than they may seem. DM Checklist: A druj can split its essence, creating four (identical) forms instead of one. This can be performed only once per night. Each of the forms can attack separately, but only one of the forms is able to cast spells (as given above). The form using the spells can often be distinguished, as it will hover nearby while the other forms attack. If that form is slain, one of the surviving forms immediately gains all unused spellcasting abilities. All four forms are poisonous. Druj only: First successful turn attempt forces druj components to reunite; subsequent turn rolls handled normally.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Each of the forms can attack separately, but only one of the forms is able to cast spells (as given above). The form using the spells can often be distinguished, as it will hover nearby while the other forms attack. If that form is slain, one of the surviving forms immediately gains all unused spellcasting abilities.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "See below (all + poison) F14 I, O, V Chaotic Odic* F16 I, O, V Chaotic Rcvcnant* F18 I, O, V Chaotic spells; other specials Defenses: +2 weapon or better to hit; immune to lst-3rd level spells Druj only: First successful turn attempt forces druj components to reunite; subsequent turn rolls handled normally. Rare). Spirits are powerful evil beings inhabiting the bodies (or body parts) of others; they are among the nastiest of undead monsters. They are immune to spells below 4th level, and cannot be harmed by normal weapons or magical weapons of less than +2 enchantment. All spirits are travelers, never staying in one place for more than one night; they become invisible and nearly powerless (except to move) with the light of dawn, regaining their powers at dusk. In daylight, any spirit can travel up to 24 miles per day (1 hex). All spirits are poisonous. When hit by a spirit in hand-to-hand combat, the victim must make a saving throw vs. poison or die immediately. A new saving throw must be made for each hit by the spirit. The poisonous presence of a spirit causes all consumable items within 30', including normal food and water, holy water, all rations (even iron) and even magical po",
+    "special": "<p><strong>Defenses:</strong> +2 weapon or better to hit; immune to lst-3rd level spells Druj only: First successful turn attempt forces druj components to reunite; subsequent turn rolls handled normally. Rare). Spirits are powerful evil beings inhabiting the bodies (or body parts) of others; they are among the nastiest of undead monsters. They are immune to spells below 4th level, and cannot be harmed by normal weapons or magical weapons of less than +2 enchantment. All spirits are travelers, never staying in one place for more than one night; they become invisible and nearly powerless (except to move) with the light of dawn, regaining their powers at dusk. In daylight, any spirit can travel up to 24 miles per day (1 hex). All spirits are poisonous. When hit by a spirit in hand-to-hand combat, the victim must make a saving throw vs. poison or die immediately. A new saving throw must be made for each hit by the spirit. The poisonous presence of a spirit causes all consumable items within 30', including normal food and water, holy water, all rations (even iron) and even magical po</p><p>See below (all + poison) F14 I, O, V Chaotic Odic* F16 I, O, V Chaotic Rcvcnant* F18 I, O, V Chaotic spells; other specials Defenses: +2 weapon or better to hit; immune to lst-3rd level spells Druj only: First successful turn attempt forces druj components to reunite; subsequent turn rolls handled normally. They are immune to spells below 4th level, and cannot be harmed by normal weapons or magical weapons of less than +2 enchantment. All spirits are travelers, never staying in one place for more than one night; they become invisible and nearly powerless (except to move) with the light of dawn, regaining their powers at dusk.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 14,
-        "max": 14
+        "value": 63,
+        "max": 63
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

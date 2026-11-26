@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 175,
     "terrain": "Woods.",
     "monsterType": "Monster (Rare).",
-    "description": "The hsiao (sh-HOW) are a race of peaceful cleric-philosophers who inhabit woodlands and forests. Hsiao look like giant owls with broad feathered wings and large intelligent golden eyes. These creatures live in trees, making earthen nests and tunnels high above the forest floor. The hsiao know and work closely with other woodland creatures (including actaeons, centaurs, dryads, elves, treants, and unicorns), and may call on them for aid. Their goals include the preservation of woodland wilderness against intrusions by dangerous humanoids. They will not interfere with passing PCs who do no damage to the woodlands or the races of the forest. Most of these avian clerics are 4th level; 25% are higher levels (as given above; maximum level is 15th).",
-    "special": "",
+    "description": "C (level = HD) O Lawful The hsiao (sh-HOW) are a race of peaceful cleric-philosophers who inhabit woodlands and forests. Hsiao look like giant owls with broad feathered wings and large intelligent golden eyes. These creatures live in trees, making earthen nests and tunnels high above the forest floor. The hsiao know and work closely with other woodland creatures (including actaeons, centaurs, dryads, elves, treants, and unicorns), and may call on them for aid. Their goals include the preservation of woodland wilderness against intrusions by dangerous humanoids. They will not interfere with passing PCs who do no damage to the woodlands or the races of the forest. Most of these avian clerics are 4th level; 25% are higher levels (as given above; maximum level is 15th). Although able to physically defend themselves with their sharp claws and beak, these creatures depend on their spells and the assistance of their woodland allies for protection. The hsiao are known to some druids, though their philosophies (alignments) obviously differ greatly. No one knows where these creatures come from, but their alignment and clerical powers suggest that they were created to serve the ends of Lawful",
+    "special": "<p>Although able to physically defend themselves with their sharp claws and beak, these creatures depend on their spells and the assistance of their woodland allies for protection.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

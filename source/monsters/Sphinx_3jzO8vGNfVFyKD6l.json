@@ -7,7 +7,7 @@
   "system": {
     "ac": 0,
     "hd": "12",
-    "hp": 12,
+    "hp": 54,
     "move": {
       "dungeon": 180,
       "outdoor": 60
@@ -23,15 +23,15 @@
     "xpValue": 5625,
     "terrain": "Any; especially Desert. _Load:_ 6,000 cn at full speed; 12,000 cn at half speed.",
     "monsterType": "Monster (Rare).",
-    "description": "A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard. Some Chaotic sphinxes are very territorial, settling on a hilltop near a road and preventing all travelers from passing along that road. Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar. The roar is usable only twice per day, but is quite powerful. Each victim within 120' must make a saving throw vs. spells at a —4 penalty or flee in fear for 1d6 turns. Each victim within 60' must check for fear (as above) and must also make a saving throw vs.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard. Some Chaotic sphinxes are very territorial, settling on a hilltop near a road and preventing all travelers from passing along that road. Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar. The roar is usable only twice per day, but is quite powerful. Each victim within 120' must make a saving throw vs. spells at a —4 penalty or flee in fear for 1d6 turns. Each victim within 60' must check for fear (as above) and must also make a saving throw vs. paralysis or be stunned for 1-6 rounds. (See the \"Special Character Conditions\" section of Chapter 13 for more on the effects of stunning.) Each victim within 10' must check for fear and stun (as above), but also takes turns (no saving throw). The sphinx is immune to all 1st, 2nd, and 3rd level spells and",
+    "special": "<p>Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 12,
-        "max": 12
+        "value": 54,
+        "max": 54
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

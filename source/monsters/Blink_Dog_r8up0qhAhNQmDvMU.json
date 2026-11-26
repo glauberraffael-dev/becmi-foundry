@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 125,
     "terrain": "Open, Woods, Desert.",
     "monsterType": "Monster (Common).",
-    "description": "This unusual creature is a small, brown-furred, rugged-looking canine with big jaws. It is not, however, a normal animal. It is intelligent, often travels in packs, and uses a limited teleportation ability. It can \"blink out\" of one spot and immediately appear (\"blink in\") at another. It has instincts that prevent it from appearing in a solid object. When attacking, it \"blinks\" close to an enemy, attacks, and then reappears 1d4 x 10' away. If seriously threatened, an entire pack will \"blink\" out and not reappear. Though as intelligent as many humans, blink dogs do not speak human or demihuman languages; they can communicate only among themselves. They like to live free the way wolves do and tend to come in conflict with humans only when settlers encroach on their territories. They are carnivores, living on wild elk, moose, and other herd-beasts.",
+    "description": "This unusual creature is a small, brown-furred, rugged-looking canine with big jaws. It is not, however, a normal animal. It is intelligent, often travels in packs, and uses a limited teleportation ability. It can \"blink out\" of one spot and immediately appear (\"blink in\") at another. It has instincts that prevent it from appearing in a solid object. When attacking, it \"blinks\" close to an enemy, attacks, and then reappears 1d4 x 10' away. If seriously threatened, an entire pack will \"blink\" out and not reappear. Though as intelligent as many humans, blink dogs do not speak human or demihuman languages; they can communicate only among themselves. They like to live free the way wolves do and tend to come in conflict with humans only when settlers encroach on their territories. They are carnivores, living on wild elk, moose, and other herd-beasts. Blink dogs also hate and attack displacer beasts, their natural enemies. It is suspected that blink dogs and displacer beasts both come from some distant plane of existence.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

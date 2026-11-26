@@ -7,7 +7,7 @@
   "system": {
     "ac": 9,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 30,
       "outdoor": 10
@@ -23,15 +23,15 @@
     "xpValue": 7500,
     "terrain": "Any.",
     "monsterType": "Planar Monster (Very Rare).",
-    "description": "It is not known what these curious beings are, or even if they are living creatures. A blackball (or \"deadly sphere\") is simply a featureless black globe, 5' in diameter. It moves slowly but usually randomly. Whatever it touches simply disintegrates (no saving throw), so it moves freely through anything. When encountered, the blackball moves toward the nearest intelligent creature within 60'. It has no recognizable mind or intelligence and is immune to everything except Immortal control. An Immortal can command a blackball, but it is beyond mortal control; fortunately, it is extremely rare. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It has no recognizable mind or intelligence and is immune to everything except Immortal control. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "None (see below) (M) Disintegration See below Nil None (see below) It is not known what these curious beings are, or even if they are living creatures. A blackball globe, 5' in diameter. It moves slowly but usually randomly. Whatever it touches simply disintegrates (no saving throw), so it moves freely through anything. When encountered, the blackball moves toward the nearest intelligent creature within 60'. It has no recognizable mind or intelligence and is immune to everything except Immortal control. An Immortal can command a blackball, but it is beyond mortal control; fortunately, it is extremely rare. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish. Blast Spore Disease only F1 Nil Neutral A blast spore looks almost exactly like a beholder (see Beholder, above). However, it is a type of floating fungus. When seen in dim light, a blast spore is usually mistaken for a beholder; a character must roll 10% or less on 1d100 to tell the difference. When characters come within 10', their chance for detection improves to 25%. If a blast spore is damaged in any way, it explodes for 6-36 (6d6) points of damage to all within 20'; each victi",
+    "special": "<p>It has no recognizable mind or intelligence and is immune to everything except Immortal control. It may be defeated by a gate spell, sending it to some other plane, or by a carefully worded wish.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

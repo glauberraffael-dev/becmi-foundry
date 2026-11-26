@@ -7,7 +7,7 @@
   "system": {
     "ac": 1,
     "hd": "8",
-    "hp": 8,
+    "hp": 36,
     "move": {
       "dungeon": 240,
       "outdoor": 80
@@ -23,15 +23,15 @@
     "xpValue": 1750,
     "terrain": "Cavern, Desert, Mountain.",
     "monsterType": "Monster (Rare).",
-    "description": "The manscorpion is an evil combination of man and arachnid. The upper body is like that of a human, but its lower parts are those of a giant scorpion (with stinging tail). It may be found in nearly any climate, but most frequently in deserts, mountains, and dungeons. This arachnid warrior normally wields a huge pole arm (damage 3d6 points), but may use a long bow or any other weapon available. It may also strike with its dreaded deadly poisonous tail; the victim hit takes 1d10 points of damage, and must make a saving throw vs. poison or die. Even if the saving throw is successful, the victim is paralyzed for 0-7 rounds (ld8-l). Only victims immune to paralysis or poison can avoid this effect, so the monsters are greatly feared. They are immune to their own poison and to the poison of all scorpions.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It may also strike with its dreaded deadly poisonous tail; the victim hit takes 1d10 points of damage, and must make a saving throw vs. poison or die. Even if the saving throw is successful, the victim is paralyzed for 0-7 rounds (ld8-l). Only victims immune to paralysis or poison can avoid this effect, so the monsters are greatly feared.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "The manscorpion is an evil combination of man and arachnid. The upper body is like that of a human, but its lower parts are those of a giant scorpion (with stinging tail). It may be found in nearly any climate, but most frequently in deserts, mountains, and dungeons. This arachnid warrior normally wields a huge pole arm (damage 3d6 points), but may use a long bow or any other weapon available. It may also strike with its dreaded deadly poisonous tail; the victim hit takes 1d10 points of damage, and must make a saving throw vs. poison or die. Even if the saving throw is successful, the victim is paralyzed for 0-7 rounds (ld8-l). Only victims immune to paralysis or poison can avoid this effect, so the monsters are greatly feared. They are immune to their own poison and to the poison of all scorpions. Some (1 in 20) of the arachnid creatures are clerics, of 8th-13th level (with the corresponding added Hit Dice). However, these are normally found only in their lair. Manscorpions are intelligent warlike beings whose main interests involve acquiring food and destroying creatures different from them. They do not make friends with other sentient races and make pets only of giant scorpions.",
+    "special": "<p>It may also strike with its dreaded deadly poisonous tail; the victim hit takes 1d10 points of damage, and must make a saving throw vs. poison or die. Even if the saving throw is successful, the victim is paralyzed for 0-7 rounds (ld8-l). Only victims immune to paralysis or poison can avoid this effect, so the monsters are greatly feared.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 8,
-        "max": 8
+        "value": 36,
+        "max": 36
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

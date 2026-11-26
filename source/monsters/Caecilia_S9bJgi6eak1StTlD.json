@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "6",
-    "hp": 6,
+    "hp": 27,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 500,
     "terrain": "Any except Arctic.",
     "monsterType": "Lowlife (Rare).",
-    "description": "This giant gray wormlike creature is about 30' long. They are meat-eaters and can be found nearly anywhere. Caecilia often lie in wait in loose soil just below the surface. Whenever a small party of animals or humans pass, they shoot up out of the ground and begin biting with their large mouths and sharp teeth. An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole. A victim takes 1d8 points of damage each round until the victim or the caecilia is dead.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "This giant gray wormlike creature is about 30' long. They are meat-eaters and can be found nearly anywhere. Caecilia often lie in wait in loose soil just below the surface. Whenever a small party of animals or humans pass, they shoot up out of the ground and begin biting with their large mouths and sharp teeth. An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole. A victim takes 1d8 points of damage each round until the victim or the caecilia is dead. Camel l/ld4 F1 Nil Neutral The camel is an ill-tempered beast, apt to bite or kick any creature that gets in its way— including its owner. It often kicks with one leg. Camels are used as pack and riding animals in deserts and barren lands (with movement as if in clear terrain). A well-watered camel may travel for two weeks without drinking. Camels are herbivores, preferring grasses and grains, but will eat animal skin and bones when very hungry. A camel with one hump is called a dromedary, and one with two humps is a Bactrian camel. speed. Barding Multiplier: x 1.",
+    "special": "<p>An unadjusted attack roll of 19 or 20 means that the caecilia has swallowed its prey whole.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 6,
-        "max": 6
+        "value": 27,
+        "max": 27
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 20,
     "terrain": "Arctic, Mountains (cold).",
     "monsterType": "Normal Animal (Common).",
-    "description": "Although generally reclusive, the snow ape is clever and cruel, preferring to ambush its victims whenever possible. If trapped or cornered, the snow ape fights viciously (use the morale in parentheses in this case). Although they cannot make intelligible sounds, snow apes communicate with each other using a complex sign language. In addition, snow apes often leave messages for each other using a system of stacked rocks and snowballs. Both male and female archons have the bodies like that of giant eagles, with golden-feathered wings. The male archon has a head, arms, and torso like a huge muscular man; the female has no torso, but has a dragonlike neck and three heads: two bull's heads flanking a beautiful female human's. In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs. Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs. Rock baboons will not go out of their way to attack travelers, but will try to scare intruders out of their hunting grounds.",
+    "special": "",
+    "notes": "Rock baboons are larger versions of normal baboons and are more intelligent. They are omnivores but prefer meat. They are not inclined to eat humans, preferring small herd animals when they can catch such beasts. They do not make tools or weapons but will pick up bones or branches to use as clubs.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 8,
     "hd": "4",
-    "hp": 4,
+    "hp": 18,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 175,
     "terrain": "Ocean.",
     "monsterType": "Normal: Normal Animal XP Value: 175 13** = 3,250 (Common); Giant: Giant Animal (",
-    "description": "Manta rays are aquatic creatures, flat fish whose bodies are shaped like broad wings or sails. They flap their \"wings\" to propel them through the water. When a manta ray lies in the sand on the ocean floor it is completely invisible. A medusa looks like a human female with live snakes growing from her head instead of hair. Medusae are very magical, and the mere sight of a medusa will turn a creature to stone unless the victim makes a saving throw vs. turn to stone. However, this will affect only one character per round, and characters may watch the reflection of a medusa in a mirror without danger. If a medusa sees Normal Manta Ray: Normal manta rays can grow to be 7' in width and 12' in length. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. They attack with this tail. A saving throw vs. poison will prevent paralysis.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;When a manta ray lies in the sand on the ocean floor it is completely invisible. Medusae are very magical, and the mere sight of a medusa will turn a creature to stone unless the victim makes a saving throw vs. turn to stone. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Manta rays are aquatic creatures, flat fish whose bodies are shaped like broad wings or sails. They flap their \"wings\" to propel them through the water. When a manta ray lies in the sand on the ocean floor it is completely invisible. Normal Manta Ray: Normal manta rays can grow to be 7' in width and 12' in length. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. They attack with this tail. A saving throw vs. poison will prevent paralysis. Giant Manta Ray: Giant manta rays can be up to about 40' in width and 75' in length. Beside the poisonous tail, they can also buffet (ram) a creature for 3d4 points of damage. They feed from the ocean floor and sometimes swallow treasure that has settled there.",
+    "special": "<p>When a manta ray lies in the sand on the ocean floor it is completely invisible. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. A saving throw vs. poison will prevent paralysis.</p>",
+    "notes": "14** = 3,500 Manta rays are aquatic creatures, flat fish _Monster Type:_ Monster (Rare). Planar Mon15** = 3,750 whose bodies are shaped like broad wings or ster (Very Rare). 16** = 4,050",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 4,
-        "max": 4
+        "value": 18,
+        "max": 18
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

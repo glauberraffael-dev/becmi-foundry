@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "3",
-    "hp": 3,
+    "hp": 14,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 50,
     "terrain": "Crab: Cavern, Ruins. Black Widow, Tarantella: Ruins. Woods.",
     "monsterType": "Lowlife (Rare).",
-    "description": "trapped. The webs may also be burned away. Any victim of the bite of a black widow spider must make a saving throw vs. poison or die in 1 turn. Tarantella: A tarantella is a huge hairy magical spider that looks like a 7' long tarantula. Its bite does not kill; instead, it causes the victim (if a saving throw vs. poison is failed) to have painful spasms that resemble a frantic dance. This dance has a magical effect on onlookers. Anyone watching the dance must make a saving throw vs. spells or start to dance in the same way. Dancing victims have a penalty of - 4 on their attack rolls, and attackers gain +4 on their attack rolls. The effects of the bite last for 2d6 turns. However, dancers will drop from exhaustion in 5 turns, and they will then be helpless against attacks. Those caught while watching will dance as long as the original victim. (A dispel magic spell will stop the dance.",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;The webs may also be burned away. Any victim of the bite of a black widow spider must make a saving throw vs. poison or die in 1 turn. Tarantella:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; A tarantella is a huge hairy magical spider that looks like a 7' long tarantula.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "Giant spiders are simply huge versions of normal spider species. All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire. Three examples of giant spiders are given here. Crab Spider: This is a 5' long spider with a chameleonlike ability to blend into its surroundings, surprising on a roll of 1-4 (on 1d6). It clings to walls or ceilings and drops onto its prey. After the first attack, it can be seen and attacked normally. Any victim of its bite must make a saving throw vs. poison or die in 1d4 turns. However, the poison is weak, and the victim gains a + 2 bonus to the saving throw roll. Black Widow Spider: This vicious arachnid is belly. It usually stays close to its webbed lair. The webs should be treated as the magic-user's web spell for the chances of breaking free, once entrapped. The webs may also be burned away. Any victim of the bite of a black widow spider must make a saving throw vs. poison or die in 1 turn. Tarantella: A tarantella is a huge hairy magical spider that looks like a 7' long tarantula. Its bite does n",
+    "special": "<p>All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire.</p>",
+    "notes": "Giant spiders are simply huge versions of normal spider species. All giant spiders can be dangerous, and many are poisonous. All are carnivores, either trapping their prey in webs or jumping at victims by surprise. However, they are rarely intelligent, and will often flee from fire. Three examples of giant spiders are given here. Crab Spider: This is a 5' long spider with a chameleonlike ability to blend into its surroundings, surprising on a roll of 1-4 (on 1d6). It clings to walls or ceilings and drops onto its prey. After the first attack, it can be seen and attacked normally. Any victim of its bite must make a saving throw vs. poison or die in 1d4 turns. However, the poison is weak, and the victim gains a + 2 bonus to the saving throw roll.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 3,
-        "max": 3
+        "value": 14,
+        "max": 14
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

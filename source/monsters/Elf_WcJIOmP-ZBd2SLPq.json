@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 6,
     "terrain": "Woods. Sea Elves: Ocean.",
     "monsterType": "Demihuman (Rare).",
-    "description": "Elves can also appear as NPCs. Otherwise, they might be encountered as travelers or wilderness patrols. In hand-to-hand combat, they attack as first level fighters. Each elf will have one 1st level spell (chosen at random). If 15 or more elves appear, one of them will be a leader (level 2-7). To check for possible items the leader may have, multiply the leader's level by 5. The result is the percent chance for that leader to own a magical item from any one particular subtable. Roll separately for each subtable, checking them all. As long as their leader is alive and fighting with them, elven morale is 10 rather than 8. Elves cannot be paralyzed by ghouls. Terrain: Woods. Sea Elves: Ocean.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Each elf will have one 1st level spell (chosen at random). The result is the percent chance for that leader to own a magical item from any one particular subtable. Elves cannot be paralyzed by ghouls.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Elves can also appear as NPCs. Otherwise, they might be encountered as travelers or wilderness patrols. In hand-to-hand combat, they attack as first level fighters. Each elf will have one elves appear, one of them will be a leader (level have, multiply the leader's level by 5. The result is the percent chance for that leader to own a magical item from any one particular subtable. Roll separately for each subtable, checking them all. As long as their leader is alive and fighting with them, elven morale is 10 rather than 8. Elves cannot be paralyzed by ghouls.",
+    "special": "<p>The result is the percent chance for that leader to own a magical item from any one particular subtable. Elves cannot be paralyzed by ghouls.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

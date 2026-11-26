@@ -7,7 +7,7 @@
   "system": {
     "ac": 2,
     "hd": "8",
-    "hp": 8,
+    "hp": 36,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 1,
     "terrain": "Ruins.",
     "monsterType": "Monster",
-    "description": "AC 2; HD 8; Attacks: 2 claws/I bite 4 claws/1 bite; Damage: `1d4/1d4/1d8` 1d6(x4)/2d6 No. Appearing 1d4 + 1 (2d4) 1d3(1d3)",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Attacks:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; 2 claws/I bite 4 claws/1 bite;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A rust monster has a body like a giant armadillo with a long tail, and two long front antennae. If a rust monster hits a target with its antenna, any nonmagical metal armor or weapon hit immediately crumbles to rust. A rust monster is attracted by the smell of metal, and eats the rust created by its attacks. The rust monster can be hit by any type of weapon. A successful attack roll indicates that the rust monster's body is hit, which does not harm the weapon. A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. For example, a shield + 1 has a 10% chance of surviving the attack. Salamander* No. Appearing Flame* F8 F Neutral Frost* F12 E Chaotic Salamanders are free-willed beings from the elemental planes, common there but rare elsewhere. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air. The two types are mortal enemies, and will attack each other on sight. Both are immune to normal weapons. Flame salamander: This monster is a snakelike lizard, 12'-16' long, with bright orange-yellow and orange-red scales. When not on its own plane, it pref",
+    "special": "<p>A magical piece of metal struck usually loses one \"plus\" per hit, but has a 10% chance per \"plus\" of resisting the effect. Both look like giant lizards; flame salamanders are from the plane of Fire, and frost salamanders are from the plane of Air. Both are immune to normal weapons.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 8,
-        "max": 8
+        "value": 36,
+        "max": 36
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

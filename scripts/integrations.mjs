@@ -23,7 +23,8 @@ function clone(value) {
 }
 
 import {
-  adjustment, getRCClass, hpForLevel, levelForXp, normalizeClassKey, xpForNextLevel
+  RC, adjustment, getRCClass, hpForLevel, levelForXp, monsterHpFromHitDice,
+  normalizeClassKey, parseMonsterHitDice, spellKey, xpForNextLevel
 } from "./rules-rc.mjs";
 
 export function spellListsForClass(classInfo, { druid = false } = {}) {
@@ -194,6 +195,31 @@ export async function importSpellToActor(actor, spell) {
   return { status: "imported", item: created[0] };
 }
 
+/**
+ * Make an imported compendium spell immediately memorizable by adding its RC
+ * grimoire key. The compendium uses English names; the grimoire uses the
+ * Portuguese-derived RC key, so the two need an explicit bridge.
+ */
+export async function syncGrimoireFromImportedSpell(actor, spell) {
+  if (!actor || !spell) return false;
+  const name = String(spell.name ?? spell.system?.name ?? "").trim().toLowerCase();
+  const level = Number(spell.system?.spellLevel ?? spell.system?.level) || 0;
+  const lists = spell.system?.spellLists ?? [];
+  const rc = RC.spells.find((entry) =>
+    String(entry.name).trim().toLowerCase() === name
+    && Number(entry.level) === level
+    && (!lists.length || lists.includes(entry.class))
+  ) ?? RC.spells.find((entry) => String(entry.name).trim().toLowerCase() === name && Number(entry.level) === level);
+  if (!rc) return false;
+  const key = spellKey(rc);
+  const current = String(getProperty(actor, "system.spellbook.grimoire") ?? "");
+  const keys = current.split(",").map((value) => value.trim()).filter(Boolean);
+  if (keys.includes(key)) return false;
+  keys.push(key);
+  await actor.update({ "system.spellbook.grimoire": keys.join(",") });
+  return true;
+}
+
 /** Re-derive XP and remove duplicates from an Actor that already has a class. */
 export async function refreshActorFromClass(actor) {
   const classes = actor.items.filter((item) => item.type === "class");
@@ -303,6 +329,9 @@ export function registerIntegrations() {
 
   Hooks.on("createActor", (actor, options, userId) => {
     if (game.userId !== userId) return;
+    if (actor.type === "monster") {
+      repairMonsterHitPoints(actor).catch((err) => console.error("BECMI | repairMonsterHitPoints", err));
+    }
     const classItem = actor.items.find((item) => item.type === "class");
     if (classItem) {
       applyClassToActor(actor, classItem).catch((err) => console.error("BECMI | applyClassToActor", err));
@@ -315,7 +344,31 @@ export function registerIntegrations() {
 
   Hooks.once("ready", () => {
     for (const actor of game.actors) {
+      if (actor.type === "monster") repairMonsterHitPoints(actor);
       refreshActorFromClass(actor).catch((err) => console.error("BECMI | refreshActorFromClass", err));
     }
   });
+}
+
+/**
+ * Older compendium entries stored the HD number as hit points. Repair only
+ * values that still look like that mistake; never overwrite a rolled total.
+ */
+export async function repairMonsterHitPoints(actor) {
+  const hd = String(getProperty(actor.system, "hd") ?? "");
+  const parsed = parseMonsterHitDice(hd);
+  if (parsed.kind === "fraction" || parsed.kind === "unknown") return 0;
+  const current = Number(getProperty(actor.system, "hp"));
+  const expected = monsterHpFromHitDice(hd);
+  if (!Number.isFinite(current) || expected === current) return 0;
+  // The old export wrote either the HD count (8) or the digits glued together
+  // (3+1 -> 31). Anything else is a real rolled total and must be preserved.
+  const glued = Number(hd.replace(/\s/g, "").replace(/\D/g, ""));
+  const suspect = current === parsed.count || (Number.isFinite(glued) && current === glued);
+  if (!suspect) return 0;
+  await actor.update({
+    "system.hp": expected,
+    "system.attributes.hp": { value: expected, max: expected }
+  });
+  return 1;
 }

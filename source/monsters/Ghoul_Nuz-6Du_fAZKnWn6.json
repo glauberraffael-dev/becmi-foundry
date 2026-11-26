@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 25,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Monster (Common).",
-    "description": "This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6). A gelatinous cube moves through the rooms and corridors of a dungeon, sweeping the halls clean of all living and dead material. In the process, it may pick up items it cannot dissolve (such as weapons, coins, and gems). The gelatinous cube will attack any living creature it encounters. Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured. An attack on a paralyzed target automatically hits (only a damage roll is needed). The gelatinous cube will continue attacking creatures until it dies or they do; if it wins, it sweeps up the dead with all the other trash and continues on its path.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;It is hard to see, and it surprises often (1-4 on 1d6). Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Ghouls are undead creatures, immune to sleep and charm spells. They are hideous, beastlike creatures who will attack and eat any living thing. They have no real memories of their former lives; they do not talk, and have little more than animal intelligence. Any hit from a ghoul will paralyze any creature of ogre-size or smaller throw vs. paralysis. Once an opponent is paralyzed, the ghoul will turn and attack another opponent, continuing until either the ghoul or all the opponents are paralyzed or dead. This paralysis lasts 2d4 turns unless magically cured. These creatures do not like the sun. They tend to live in graveyards, clustering in empty tombs when not hunting. Ghouls are also scavengers, feeding on carrion when living prey is scarce. Giant Hill F8 E + 5,000 gp Chaotic Cloud F12 E + 5,000 gp Neutral Stone F9 E + 5,000 gp Neutral Storm F15 E + 5,000 gp Lawful Frost F10 E + 5,000gp Chaotic Mountain I weapon F (level = HD) E + 5,000 gp Neutral By HD Fire F11 E + 5,000gp Chaotic Sea See below F (level = HD) E + 5,000 gp Neutral By HD Giant Humanoid (Hill Giants—Common, Others—Rare) Giants are huge humanlike monsters. The \"lesser\" forms of giants (fire, frost, hill and stone) ar",
+    "special": "<p>Ghouls are undead creatures, immune to sleep and charm spells. Any hit from a ghoul will paralyze any creature of ogre-size or smaller throw vs. paralysis. Once an opponent is paralyzed, the ghoul will turn and attack another opponent, continuing until either the ghoul or all the opponents are paralyzed or dead.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

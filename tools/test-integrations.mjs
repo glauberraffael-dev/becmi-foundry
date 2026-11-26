@@ -28,7 +28,9 @@ const {
   advanceActorLevels,
   autoLevelFromXp,
   importSpellToActor,
-  spellItemData
+  repairMonsterHitPoints,
+  spellItemData,
+  syncGrimoireFromImportedSpell
 } = await import("../scripts/integrations.mjs");
 
 const xpTable = { 1: 2, 2: 2500, 3: 5000, 36: 4350000 };
@@ -135,4 +137,34 @@ if (await advanceActorLevels(leveling, { targetLevel: 2, announce: false }) !== 
   throw new Error("manual level downgrade must be ignored");
 }
 
-console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, spell import, auto level).");
+const grimoireActor = {
+  system: { spellbook: { grimoire: "" } },
+  async update(changes) {
+    for (const [path, value] of Object.entries(changes)) setProperty(this, path, value);
+  }
+};
+if (await syncGrimoireFromImportedSpell(grimoireActor, sleepSource) !== true) {
+  throw new Error("imported spell was not added to the RC grimoire");
+}
+if (!getProperty(grimoireActor, "system.spellbook.grimoire").includes("m1-sono")) {
+  throw new Error("Sleep did not resolve to the Portuguese RC key");
+}
+if (await syncGrimoireFromImportedSpell(grimoireActor, sleepSource) !== false) {
+  throw new Error("grimoire key was duplicated");
+}
+
+const staleMonster = {
+  system: { hd: "3 + 1", hp: 31, attributes: { hp: { value: 31, max: 31 } } },
+  async update(changes) {
+    for (const [path, value] of Object.entries(changes)) setProperty(this, path, value);
+  }
+};
+if (await repairMonsterHitPoints(staleMonster) !== 1) throw new Error("OCR monster HP was not repaired");
+if (getProperty(staleMonster, "system.hp") !== 15) throw new Error("3+1 HD should average 15 HP");
+const rolledMonster = {
+  system: { hd: "3 + 1", hp: 14, attributes: { hp: { value: 14, max: 14 } } },
+  async update() { throw new Error("a rolled monster HP must not be overwritten"); }
+};
+if (await repairMonsterHitPoints(rolledMonster) !== 0) throw new Error("a rolled monster HP was changed");
+
+console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, spell import, grimoire sync, auto level, monster HP).");

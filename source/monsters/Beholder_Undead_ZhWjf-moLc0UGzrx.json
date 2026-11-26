@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "20",
-    "hp": 20,
+    "hp": 90,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 14975,
     "terrain": "Any",
     "monsterType": "Undead Construct, Enchanted (Very Rare).",
-    "description": "An undead beholder is similar to a living one, but is a construct created for some specific evil purpose. All undead beholders are constructs; \"real\" beholders never become undead. This monster looks quite similar to a normal beholder—a large floating ball, about four feet in diameter, covered with tough armor-plated skin. Atop the monster are ten small eyes on stalks, each with its own magical power. A large central eye is on the front of the body, with a toothy mouth below it. The creature moves about by magical flight, a natural (nonmagical) ability. It is extremely intelligent, and speaks many languages. Any cleric of 25th level or greater will recognize the creature as undead when he sees it. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Atop the monster are ten small eyes on stalks, each with its own magical power. The creature moves about by magical flight, a natural (nonmagical) ability. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "L, N, O ( x 2) Chaotic An undead beholder is similar to a living one, but is a construct created for some specific evil purpose. All undead beholders are constructs; \"real\" beholders never become undead. This monster looks quite similar to a normal beholder—a large floating ball, about four feet in diameter, covered with tough armor-plated skin. Atop the monster are ten small eyes on stalks, each with its own magical power. A large central eye is on the front of the body, with a toothy mouth below it. The creature moves about by magical flight, a natural (nonmagical) ability. It is extremely intelligent, and speaks many languages. Any cleric of 25th level or greater will recognize the creature as undead when he sees it. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it. It is immune to all charm, hold, and s7eep effects, all illusions, death rays, and poison. The monster's body regenerates 3 hit points per round as soon as it is damaged. If reduced to cannot regenerate; it must rest for 1 hour in total darkness before the regeneration starts once again. The monster usually keeps se",
+    "special": "<p>Atop the monster are ten small eyes on stalks, each with its own magical power. The creature moves about by magical flight, a natural (nonmagical) ability. An undead beholder cannot be harmed by normal, silver, or even +1 magical weapons; a magical weapon of + 2 or better enchantment is needed to damage it.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 20,
-        "max": 20
+        "value": 90,
+        "max": 90
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

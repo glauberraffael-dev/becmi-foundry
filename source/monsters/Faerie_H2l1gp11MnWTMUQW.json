@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "1+1",
-    "hp": 11,
+    "hp": 6,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 19,
     "terrain": "Any.",
     "monsterType": "Humanoid (Rare).",
-    "description": "The faerie inhabit the air and clouds. Faeries are close relatives of the demihumans, with features of each race: They appear as halfling-sized humanoids with gossamer wings, dwarvish noses and beards, and elvish ears and eyes. Faeries' bodies are light and they fly with little effort. They build their homes of \"clouds,\" and enjoy basking in the sun while storms rage below. They have their own great empire of the wind far above the earth, commonly known only to themselves and a few air creatures. Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "By weapon or spell E1 (or better) Any The faerie inhabit the air and clouds. Faeries are close relatives of the demihumans, with features of each race: They appear as halfling-sized humanoids with gossamer wings, dwarvish noses and beards, and elvish ears and eyes. Faeries' bodies are light and they fly with little effort. They build their homes of \"clouds,\" and enjoy basking in the sun while storms rage below. They have their own great empire of the wind far above the earth, commonly known only to themselves and a few air creatures. Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily. The following abilities are common to all faeries, usable at will, up to once per round: assume gaseous form (like the potion), create fog(a 10' cube around the faerie), condense fog (causing drizzle within fog), return to normal form (from gaseous), summon breeze (causes open flames to flicker, blows out candles, and enables the faerie to move at a 360' (120')) rate). Common faeries have 1 + 1 Hit Dice, but leaders have up to 9 Hit Dice. Spellcasters are rare but do exist (magic-users and clerics); see \"Monster Spellcasters\" later i",
+    "special": "<p>By weapon or spell E1 (or better) Any The faerie inhabit the air and clouds. Faeries are naturally invisible at all times, and never appear to normal sight. Faeries can see invisible things easily.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 11,
-        "max": 11
+        "value": 6,
+        "max": 6
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

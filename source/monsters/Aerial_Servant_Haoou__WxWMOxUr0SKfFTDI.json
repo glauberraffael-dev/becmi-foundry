@@ -7,7 +7,7 @@
   "system": {
     "ac": 0,
     "hd": "16",
-    "hp": 16,
+    "hp": 72,
     "move": {
       "dungeon": 240,
       "outdoor": 80
@@ -23,15 +23,15 @@
     "xpValue": 4050,
     "terrain": "Any",
     "monsterType": "Normal Animal (Rare).",
-    "description": "PCs might attack members of a herd in order to acquire meat. The Hit Dice of and damage done by herd creatures depend on the type of creatures they are. Here are some sample herd creatures: Snow apes are squat, baboonlike creatures with shaggy white fur. They are somewhat intelligent, and often make simple tools like clubs or sharpened bones. They cannot, however, grasp more complicated concepts, such as the use of a bow and arrow. The DM may add other herd animals within these ranges. Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4). The snow ape uses one arm to attack with a weapon and attempts to hug its vic- Aerial servants are humanoid in shape. They appear to be man-shaped figures of roiling fog; they are eerie and menacing. In any given herd only one animal in four is male; the rest are females and young.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Because of their camouflage, they are extremely difficult to see in snowy conditions (surprising on a 1-4).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Aerial servants are humanoid in shape. They appear to be man-shaped figures of roiling fog; they are eerie and menacing. Aerial servants are beings native to the elemental plane of Air. On their home plane, they are known by a name which sounds like \"haoou.\" They are only encountered on the Prime Plane when conjured by a cleric (see the clerical spell aerial servant). They don't care to be summoned for this slave labor; they do not deliberately or maliciously misinterpret their summoners' orders, but they are hateful enemies of humans who visit the plane of Air. Clerics can summon aerial servants to perform tasks for them. Summoned aerial servants will not fight; they only accept orders to seize things or prisoners and bring them back to the cleric. They can only be harmed by spells or magical weapons. They travel at super-speed, often surprising their prey (1-7 on 1d8). The percentage chance of breaking free of the servant's grip is equal to the victim's Hit Dice or experience level break free of the grip). Plane of Air: On their home plane, the haoou have their own evil empire, which reigns in places where there are few or no other creatures. Their enemies are the helions and the",
+    "special": "<p>On their home plane, they are known by a name which sounds like \"haoou.\" They are only encountered on the Prime Plane when conjured by a cleric (see the clerical spell aerial servant). They can only be harmed by spells or magical weapons.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 16,
-        "max": 16
+        "value": 72,
+        "max": 72
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 2,
     "hd": "8",
-    "hp": 8,
+    "hp": 36,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 2850,
     "terrain": "Any.",
     "monsterType": "Planar Monster, Enchanted (Common).",
-    "description": "An elemental is a magical, enchanted creature that lives on another plane of existence (one of the elemental planes). It can be harmed only by magic or magical weapons. Staff Elementals (the weakest) are summoned by a magic-user with a special staff. Device Elementals are summoned with the However, an elemental cannot pass a protection from evil spell effect. use of a special miscellaneous magical item. Conjured Elementals are summoned by the casting of the 5th level magic-user spell. An elemental will vanish if it or its summoner is slain, or when the summoner sends it back to its plane (which requires control), or if a dispel magic is cast upon it. To summon an elemental, a character must have a large amount of the element nearby (such as open air, bare earth, a pool of water or a bonfire). When the elemental arrives, it is hostile, and must be controlled by concentration at all times.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;An elemental is a magical, enchanted creature that lives on another plane of existence (one of the elemental planes). It can be harmed only by magic or magical weapons. Staff Elementals (the weakest) are summoned by a magic-user with a special staff.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A drake is a man-sized creature that looks much like a dragon in its normal form. However, it is most often encountered polymorphed into a human or demihuman form. Drakes have no breath weapons or spellcasting abilities, but they can talk. They may be evil or good (50% chance of each) but, except for Elemental forms, are always very Chaotic. Drakes are extremely intelligent and clever; they tell lies as needed, and surrender rather than fight to the death. Drakes are immune to all spells of 4th level or less, but may cancel this immunity for 1 round by concentrating—to receive the benefits of a cure wounds spell, for example. In normal form, a drake looks similar to a small dragon without front legs and with tiny wings. These wings can only support slow flight, and only for an hour at a time. All drakes can polymorph themselves into humanoid form (and back) as often as desired. In human or demihuman form, a drake can use any weapon permitted to thieves. The attacks and damage given above apply to normal (dragon-kin) form only. All drakes are thieves, having all the special abilities of a 5th level thief. Some mandrakes may actua",
+    "special": "<p>Drakes have no breath weapons or spellcasting abilities, but they can talk. Drakes are immune to all spells of 4th level or less, but may cancel this immunity for 1 round by concentrating—to receive the benefits of a cure wounds spell, for example.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 8,
-        "max": 8
+        "value": 36,
+        "max": 36
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

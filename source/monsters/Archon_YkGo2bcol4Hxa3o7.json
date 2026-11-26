@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "20",
-    "hp": 20,
+    "hp": 90,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 13175,
     "terrain": "Any (usually wilderness along main roads).",
     "monsterType": "Giant Humanoid (Rare).",
-    "description": "Athachs are humanoid and stand 18' tall. Each has hideous but recognizable features, a malformed body, and a third arm in the center of its chest. Treasure Type A is only found in the bandits' wilderness lair. These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Bandits may have an NPC leader of any hu- • man character class who is one or more levels of experience greater than the bandits.",
-    "special": "",
+    "description": "Archons are extremely lawful beings whose sole purpose is to oppose chaos and preserve all that is good. They do this by learning about evil and chaotic people and monsters, persuading adventurers to attack those evils, and sometimes directly helping the adventurers who are advancing their goals. Both male and female archons have the bodies like that of giant eagles, with golden-feathered wings. The male archon has a head, arms, and torso like a huge muscular man; the female has no torso, but has a dragonlike neck and three heads: two bull's heads flanking a beautiful female human's. In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage. A male may use any human weapon, and many have enchanted weapons. Archons are immune to fire, poison, and 1st through 4th level spells of all types. Archons may use spells as 12th level clerics and can teleport at will. Once per day, each may use one bolt of purity and may create one sword of flame. The boh appears similar to a lightning boh (with the same size and range), but causes all victims to become Lawful and peaceful for 2d6 turns (no saving throw). It removes all e",
+    "special": "<p>In combat, each female's bull head may gore for 3d10 points of damage or breathe a cone of fire 10' long for 4d6 points of damage. Archons are immune to fire, poison, and 1st through 4th level spells of all types. Archons may use spells as 12th level clerics and can teleport at will.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 20,
-        "max": 20
+        "value": 90,
+        "max": 90
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

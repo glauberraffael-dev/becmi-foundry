@@ -7,7 +7,7 @@
   "system": {
     "ac": 3,
     "hd": "15",
-    "hp": 15,
+    "hp": 68,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 1650,
     "terrain": "Modern Elephants: Open, Woods (subtropical). Mastodons: Open, Woods (prehistoric).",
     "monsterType": "Elephant: Normal Animal (Rare).",
-    "description": "Elephants are large, ponderous four-legged mammals. Though they are herbivores, they are very dangerous creatures when frightened or when defending their young. These mighty creatures dwell at the edges of sub-tropical forests, living in medium to large herds. Both males and females have tusks, which are valued at 100-600 gp per tusk for the ivory. In combat, elephants attack with a charge, if possible, for double tusk damage. In the following rounds of combat they will either strike with their tusks (75%) or trample (25%). Elephants can be used as draft and riding animals. Sometimes they are equipped with barding and used as war-mounts. Prehistoric (Mastodon): This creature is a large, shaggy elephant. It has two mighty tusks that slope downward and then curve up and backward toward the elephant; they are a mighty battering weapon. Each tusk is worth 200-800 gp.",
+    "description": "Elephants are large, ponderous four-legged mammals. Though they are herbivores, they are very dangerous creatures when frightened or when defending their young. These mighty creatures dwell at the edges of sub-tropical forests, living in medium to large herds. Both males and females have tusks, which are valued at 100-600 gp per tusk for the ivory. In combat, elephants attack with a charge, if possible, for double tusk damage. In the following rounds of combat they will either strike with their tusks (75%) or trample (25%). Elephants can be used as draft and riding animals. Sometimes they are equipped with barding and used as war-mounts. Prehistoric (Mastodon): This creature is a large, shaggy elephant. It has two mighty tusks that slope downward and then curve up and backward toward the elephant; they are a mighty battering weapon. Each tusk is worth \"lost worlds.\" toric). cn at half speed. Mastodon: 7,500 cn at full speed; 15,000 cn at half speed. Barding Multiplier: x3.",
     "special": "",
-    "notes": "",
+    "notes": "Prehistoric: Prehistoric Animal (Very Rare).",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 15,
-        "max": 15
+        "value": 68,
+        "max": 68
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

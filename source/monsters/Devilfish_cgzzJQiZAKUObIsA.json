@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 16,
     "terrain": "Ocean.",
     "monsterType": "Monster, Enchanted (Rare).",
-    "description": "The tail and bite of a normal devilfish of 1-4 Hit Dice each inflict 1 point of damage. However, those of 5 or more Hit Dice have the abilities of vampires as well (see Vampire). These vampire devilfish inflict more damage (1d4/ld6) and a double energy drain with each hit. They can only be harmed by magical or silver weapons (or holy items, as vampires), but can be turned by a cleric, like regular vampires. They can charm and regenerate as normal vampires, but cannot change shape. level spells. It is nearly impossible for characters to tell which devilfish in a group are casting spells; thus, if the PCs defeat the entire group, they get the experience listed in the table as \"Entire group.\" Devilfish matriarchs can have 10th to 16th level spell ability.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;These vampire devilfish inflict more damage (1d4/ld6) and a double energy drain with each hit. They can only be harmed by magical or silver weapons (or holy items, as vampires), but can be turned by a cleric, like regular vampires. They can charm and regenerate as normal vampires, but cannot change shape. level spells.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
-    "notes": "",
+    "description": "C (level = HD) A x 2 + F per 20 Chaotic See below Devilfish are a race of Chaotic undersea clerics resembling manta rays in shape, size and appearance (see Manta Ray). Outside their lairs, they are always found in groups of 20 or more. This standard group is outlined in the table. Other leader types that exist (in the lair, for example) are outlined in the Leader table. The tail and bite of a normal devilfish of 1-4 Hit Dice each inflict 1 point of damage. However, those of 5 or more Hit Dice have the abilities of vampires as well (see Vampire). These vampire devilfish inflict more damage hit. They can only be harmed by magical or silver weapons (or holy items, as vampires), but can be turned by a cleric, like regular vampires. They can charm and regenerate as normal vampires,",
+    "special": "<p>They can only be harmed by magical or silver weapons (or holy items, as vampires), but can be turned by a cleric, like regular vampires. They can charm and regenerate as normal vampires,</p>",
+    "notes": "Devilfish are a race of Chaotic undersea clerics resembling manta rays in shape, size and appearance (see Manta _Ray)._ Outside their lairs, they are always found in groups of 20 or more. This standard group is outlined in the table. Other leader types that exist (in the lair, for example) are outlined in the Leader table.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

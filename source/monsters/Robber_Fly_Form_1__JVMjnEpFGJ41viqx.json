@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 90,
       "outdoor": 30
@@ -23,15 +23,15 @@
     "xpValue": 20,
     "terrain": "Open, Ruins, Woods. Treasure Type: Nil XP Value: 20",
     "monsterType": "Lowlife (Rare).",
-    "description": "A form of undead; see Spirit. A robber fly is a 3' long giant fly with black and yellow stripes. From a distance, robber flies look like giant bees. They are carnivores, and may attack adventurers. However, they prefer giant bees as food, and are immune to their poison.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;However, they prefer giant bees as food, and are immune to their poison.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A robber fly is a 3' long giant fly with black and yellow stripes. From a distance, robber flies look like giant bees. They are carnivores, and may attack adventurers. However, they prefer giant bees as food, and are immune to their poison. Robber flies are patient hunters. They often hide in shadows and wait to surprise prey (1-4 on with its bite.",
+    "special": "<p>However, they prefer giant bees as food, and are immune to their poison. They often hide in shadows and wait to surprise prey (1-4 on with its bite.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

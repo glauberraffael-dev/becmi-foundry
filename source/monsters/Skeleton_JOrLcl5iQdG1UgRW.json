@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 10,
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Common).",
-    "description": "Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Skeletons are often found near graveyards, dungeons, and other deserted places. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading. Skeletons will always fight until \"killed.\" Terrain: Ruins.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Skeletons are often found near graveyards, dungeons, and other deserted places. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading. Skeletons will always fight until \"killed.\" Snail, Giant A form of giant slug; see Slug, Giant.",
+    "special": "<p>Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "d7756e71a77efb17"
 }

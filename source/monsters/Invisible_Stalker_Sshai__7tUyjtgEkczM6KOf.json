@@ -7,7 +7,7 @@
   "system": {
     "ac": 3,
     "hd": "8",
-    "hp": 8,
+    "hp": 36,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 1200,
     "terrain": "Cavern, Hill, Mountain, Wood.",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The bodyguards each have 6 hit points and fight as 1 +1 Hit Dice monsters. As long as the chieftain is alive, all kobolds with him have a morale of 8 rather than 6. A hydrax is an intelligent crablike creature made of ice. It is native to the elemental plane of Water, and is almost never found on the Prime Plane. The hydrax looks like a giant crab with a body 8' long, with six legs and three claws equally positioned around its body. Although the hydrax are Lawful in behavior, most are evil. Kobolds hate gnomes and will attack them on sight. Hydrax are immune to normal weapons, all 1st and 2nd level spells, and to all attacks based on fire.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Hydrax are immune to normal weapons, all 1st and 2nd level spells, and to all attacks based on fire.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "An invisible stalker is a magical humanlike monster from another plane of existence, summoned by the magic-user spell invisible stalker. If the summoned stalker is given a simple task that is clear and can be swiftly completed, it will obey promptly. If the task is complex or lengthy, the creature will try to distort the intent while obeying the literal command. For example, if ordered to guard a treasure longer than a week, the stalker may take it away to its own plane of existence and guard it there forever. An invisible stalker is most often used to track and slay enemies. It is highly intelligent, and a faultless tracker. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1invisible things receives a +4 bonus when attacking an invisible stalker. The stalker will return to its own plane once it is slain, dispelled, or has completed its task. The race of \"invisible stalkers\" (which is the human name for the species) lives on the elemental plane of Air. They call themselves the \"sshai.\" Invisible stalkers are much faster speed on their home plane: 360' (120'). Plane of Air: On their home plane, the sshai are much like dopplegangers; they can use ESP",
+    "special": "<p>An invisible stalker is a magical humanlike monster from another plane of existence, summoned by the magic-user spell invisible stalker. An invisible stalker is most often used to track and slay enemies. If a victim cannot detect invisible things, the stalker will surprise on a roll of 1invisible things receives a +4 bonus when attacking an invisible stalker.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 8,
-        "max": 8
+        "value": 36,
+        "max": 36
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 9,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 850,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Lowlife (Common).",
-    "description": "This deadly fungus covers an area of 100 square feet (a 10' x 10' area counts as one monster, and many may be found together). Yellow mold can only be killed by fire: a torch will do 1d4 points of damage to it each round. It can eat through wood and leather but cannot harm metal or stone. It does not actually attack, but if it is touched, even by a torch, the touch may (50% chance per touch) cause the mold to squirt out a 10' x 10' x 10' cloud of spores. Anyone caught within the cloud will take 1d6 points of damage and must make a saving throw vs. death ray or choke to death within 6 rounds. A wyvern looks like a two-legged dragon with a long tail. Unlike dragons, wyverns are mostly brown, red, or rust-red in hue. These beasts prefer to live on cliffs or in forests, but may be found anywhere. In combat, the wyvern will bite and arch its tail over its head to hit opponents in front of it.",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Yellow mold can only be killed by fire:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; a torch will do 1d4 points of damage to it each round.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Can always be hit Spores F2 Not applicable Nil Neutral",
+    "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

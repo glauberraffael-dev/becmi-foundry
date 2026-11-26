@@ -403,6 +403,79 @@ export function hpForLevel(className, level, conAdj = 0, rng = Math.random) {
   return { gain: cls.hpAfterFixed, text: `+${cls.hpAfterFixed} fixed HP (no CON bonus)` };
 }
 
+/**
+ * Monster Hit Dice are a count of d8, not a hit-point total (RC p. 152):
+ * "Hit Dice: 11" means 11d8 and "3 + 1" means 3d8+1. Asterisks mark special
+ * abilities and the (S)/(M)/(L) size code is informational; neither changes HP.
+ *
+ * Fractions (1/4, 1/2) have a single hit point. Ranges (1-4, 5-12) describe
+ * several creatures in a group, so the lower bound is used as a representative
+ * die count. An equal/lower trailing number is a negative adjustment: 1-1 is
+ * 1d8-1, not a range.
+ */
+export function parseMonsterHitDice(value) {
+  const text = String(value ?? "")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\*+$/g, "")
+    .trim();
+
+  if (/^\d+\s*\/\s*\d+$/.test(text)) {
+    return { kind: "fraction", count: 0, faces: 8, adjustment: 0, formula: "1", hp: 1 };
+  }
+
+  const range = text.match(/^(\d+)\s*-\s*(\d+)$/);
+  if (range && Number(range[2]) > Number(range[1])) {
+    const count = Number(range[1]);
+    return {
+      kind: "range", count, faces: 8, adjustment: 0, min: count, max: Number(range[2]),
+      formula: `${count}d8`, hp: averageHitPoints(count, 8, 0)
+    };
+  }
+
+  const dice = text.match(/^(\d+)d(\d+)(?:\s*([+-])\s*(\d+))?$/i);
+  if (dice) {
+    const count = Number(dice[1]);
+    const faces = Number(dice[2]);
+    const adjustment = Number(dice[4] ?? 0) * (dice[3] === "-" ? -1 : 1);
+    return {
+      kind: "dice", count, faces, adjustment,
+      formula: `${count}d${faces}${adjustment ? `${adjustment > 0 ? "+" : "-"}${Math.abs(adjustment)}` : ""}`,
+      hp: averageHitPoints(count, faces, adjustment)
+    };
+  }
+
+  const simple = text.match(/^(\d+)(?:\s*([+-])\s*(\d+))?$/);
+  if (simple) {
+    const count = Number(simple[1]);
+    const adjustment = Number(simple[3] ?? 0) * (simple[2] === "-" ? -1 : 1);
+    return {
+      kind: "dice", count, faces: 8, adjustment,
+      formula: `${count}d8${adjustment ? `${adjustment > 0 ? "+" : "-"}${Math.abs(adjustment)}` : ""}`,
+      hp: averageHitPoints(count, 8, adjustment)
+    };
+  }
+
+  return { kind: "unknown", count: 1, faces: 8, adjustment: 0, formula: "1d8", hp: 1 };
+}
+
+/** Rounded average of `count` dice of `faces` sides plus a fixed adjustment. */
+export function averageHitPoints(count, faces = 8, adjustment = 0) {
+  const value = Math.round(Number(count) * (Number(faces) + 1) / 2 + Number(adjustment));
+  return Math.max(1, Number.isFinite(value) ? value : 1);
+}
+
+/** Average hit points for a monster Hit Dice expression. */
+export function monsterHpFromHitDice(hd) {
+  return parseMonsterHitDice(hd).hp;
+}
+
+/** Rollable Foundry formula for a monster Hit Dice expression. */
+export function monsterHpFormula(hd) {
+  return parseMonsterHitDice(hd).formula;
+}
+
 /* ------------------------------------------------------------------ *
  * Spell helpers                                                      *
  * ------------------------------------------------------------------ */

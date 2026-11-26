@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "32",
-    "hp": 32,
+    "hp": 144,
     "move": {
       "dungeon": 240,
       "outdoor": 80
@@ -23,15 +23,15 @@
     "xpValue": 500,
     "terrain": "Same as the original species. _Load:_ Eight times normal.",
     "monsterType": "Gargantua Carrion Crawler: Lowlife (Very Rare); Gargantua Gargoyle: Construct, E",
-    "description": "These monsters are extremely rare, the products of the mad wizard Gargantua. Three examples of Gargantuan creatures are given above. A gargantua is a very large variety of some other monster. A gargantua is the same type of monster as its smaller form, thus a gargantuan gargoyle is a construct, a gargantuan troll is a giant humanoid, and so on. Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. The statistics for any gargantuan monster are calculated as follows: - Height: 2 times normal - Movement rate: 2 times normal - Number Appearing: 1 Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. The statistics for any gargantuan monster are calculated as follows:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; - Height: 2 times normal - Movement rate: 2 times normal - Number Appearing: 1 Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "A gargantua is a very large variety of some other monster. A gargantua is the same type of monster as its smaller form, thus a gargantuan gargoyle is a construct, a gargantuan troll is a giant humanoid, and so on. These monsters are extremely rare, the products of the mad wizard Gargantua. Three examples of Gargantuan creatures are given above. Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. \"plus\" as one Hit Die added Dice; half level if unintelligent times normal percentages Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).",
+    "special": "<p>Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. \"plus\" as one Hit Die added Dice; half level if unintelligent times normal percentages Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 32,
-        "max": 32
+        "value": 144,
+        "max": 144
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "15c341ade7785c67"
 }

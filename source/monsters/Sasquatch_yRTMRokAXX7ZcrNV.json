@@ -7,7 +7,7 @@
   "system": {
     "ac": 6,
     "hd": "5",
-    "hp": 5,
+    "hp": 23,
     "move": {
       "dungeon": 150,
       "outdoor": 50
@@ -23,15 +23,15 @@
     "xpValue": 300,
     "terrain": "Mountain, Woods.",
     "monsterType": "Humanoid (Rare).",
-    "description": "The sasquatch are a very shy race of low intelligence who dwell deep within dark woods and in high mountains. The creature is a tall apelike creature with a crested head, large feet, and a thick mat of hair (dark brown in woods, white in mountains). It is omnivorous, occasionally slaying animal prey but usually eating plants and berries. Although not aggressive, it will defend itself and its cavern lair ferociously (morale 11), attacking with clublike fists. In combat, it can also throw boulders to a 50' range (damage 2d8 points). Also, if both hands hit one victim, the sasquatch hugs for an additional 4d6 points of damage. Common names for sasquatch include \"Bigfoot\" (the woodland variety) and \"Yeti\" or \"Abominable Snowman\" (the mountain folk). Snow apes (q.v.) are also often called by the latter two names.",
-    "special": "",
+    "description": "Some rats carry diseases. Anyone bitten by a rat has a 1 in 20 chance of being infected. (This chance should be checked each time a rat successfully hits. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison. If failed, the victim may die in 1d6 days (1 in 4 chance) or may be sick in bed for 1 month, unable to adventure. Normal Rats: Normal rats have gray or brown fur, and are from 6\" to 2' long. They attack in \"packs\" of 5-10 rats per pack. If there are more than 10 rats they will divide into packs of 10 or less and attack several creatures; one pack will only attack one creature at a time and makes one attack per round. Rats climb all over the creature they are attacking, often knocking the victim down.",
+    "special": "<p>If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 5,
-        "max": 5
+        "value": 23,
+        "max": 23
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

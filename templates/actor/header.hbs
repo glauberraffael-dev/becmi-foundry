@@ -1,9 +1,15 @@
 <header class="becmi-sheet-header">
   <div class="becmi-image-wrap">
-    <img class="becmi-portrait" src="{{actor.img}}" alt="{{actor.name}}">
-    <button type="button" class="becmi-image-edit" data-action="editImage" data-field="img" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}" aria-label="{{localize 'BECMI.sheet.editImage'}}" {{#unless editable}}disabled{{/unless}}>✎</button>
+    <img class="becmi-portrait" src="{{actor.img}}" alt="{{actor.name}}" {{#if editable}}data-action="editImage" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}"{{/if}}>
+    {{#if editable}}<span class="becmi-image-hint" aria-hidden="true">✎</span>{{/if}}
   </div>
   <div class="becmi-title-block">
+    <div class="becmi-sheet-tools">
+      {{#if canEdit}}
+      <button type="button" class="becmi-mode-toggle" data-action="toggleEditMode">{{#if editMode}}{{localize 'BECMI.sheet.useMode'}}{{else}}{{localize 'BECMI.sheet.editMode'}}{{/if}}</button>
+      {{/if}}
+      <button type="button" class="becmi-mode-toggle" data-action="toggleDarkMode">{{#if darkMode}}{{localize 'BECMI.sheet.lightMode'}}{{else}}{{localize 'BECMI.sheet.darkMode'}}{{/if}}</button>
+    </div>
     <h1 class="becmi-sheet-title">D&amp;D BECMI - Character Sheet</h1>
     <div class="becmi-top-fields">
       <div class="becmi-field becmi-field--wide">

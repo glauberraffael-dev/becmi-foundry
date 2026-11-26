@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 25,
     "terrain": "Cavern, Ruins.",
     "monsterType": "Humanoid (Rare).",
-    "description": "A troglodyte is an intelligent humanoid reptile. It has a short tail, long legs, and a spiny \"comb\" on its head and arms. Troglodytes walk upright and use their hands as well as humans. They hate most other creatures. The \"tyrant lizard\" is the largest hunting dinosaur found. It's at least 40' long (and can be longer), weighing in at 8 tons; when standing, it is about 20' high. It inhabits \"lost world\" areas. Troglodytes have the chameleonlike ability to change colors, and use it to hide by rock walls, surprising often (1-4 on 1d6). A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made. Nauseated characters have a - 2 penalty on their attack rolls while in handto-hand combat with the troglodytes. The tyrannosaurus walks on its hind legs, with its heavy tail held out behind as a counterbalance.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "The \"tyrant lizard\" is the largest hunting dinosaur found. It's at least 40' long (and can be longer), weighing in at 8 tons; when standing, it is about 20' high. It inhabits \"lost world\" areas. The tyrannosaurus walks on its hind legs, with its heavy tail held out behind as a counterbalance. Its forelimbs are small, bearing two claws each, but are next to useless in combat. However, its mighty jaws, bearing teeth up to 6\" long, more than make up for that deficit. It will attack anything man-sized or larger, usually attacking the largest creature first. It can swallow a man-sized opponent if its attack roll is 19-20; the victim takes 2d4 points of damage each round until removed. Undine* F16 Nil Chaotic An undine is an intelligent creature made of water. It is rare even on the elemental plane of Water, its home, and is almost never encountered on the Prime Plane. Undines are Chaotic in behavior, but (similar to djinn) have very good intentions and despise evil. On its home plane, an undine normally has a form like a featureless transparent snake. It can easily change shape, sometimes using a form with many tentacles to handle objects. Once per turn, it can swim quickly in the form",
+    "special": "<p>It can swallow a man-sized opponent if its attack roll is 19-20; the victim takes 2d4 points of damage each round until removed.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "e02bba7eeaaaa851"
 }

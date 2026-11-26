@@ -7,7 +7,7 @@
   "system": {
     "ac": 3,
     "hd": "20",
-    "hp": 20,
+    "hp": 90,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 11375,
     "terrain": "Any.",
     "monsterType": "Construct, Enchanted (Very Rare).",
-    "description": "###### townsfolk. Wooddrake: These dark green drakes can change themselves into elf or halfling forms. They are otherwise very similar in habits to mandrakes, and are sometimes discovered amidst elven or halfling communities. A drolem is a type of golem that looks like a dragon; it can be made to look like a dragon of any color, or may simply be a dragon skeleton. Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. Drolems are extremely rare, made and used only to guard a special item or area. A special book and several rare materials are needed to make a drolem. A drake is a man-sized creature that looks much like a dragon in its normal form. However, it is most often encountered polymorphed into a human or demihuman form. Drakes have no breath weapons or spellcasting abilities, but they can talk.",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. Drakes have no breath weapons or spellcasting abilities, but they can talk.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "F10 (and see below) Special (see below) Neutral Rare). A drolem is a type of golem that looks like a dragon; it can be made to look like a dragon of any color, or may simply be a dragon skeleton. Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. Drolems are extremely rare, made and used only to guard a special item or area. A special book and several rare materials are needed to make a drolem. A drolem is nonintelligent, and obeys its instructions exactly. It can see invisible things within 60', and is immune to charm, hold, sleep, and all other mind-affecting spells, all forms of fire and cold, and all gases. It is also immune to all spells of 4th level or less, to normal and silver weapons, and even magical weapons of + 2 or lesser enchantment. The drolem's claws inflict 2d6 points of damage each, and its huge jaws cause 11-30 so breathe three times per day. Its breath is a small poisonous cloud, 20' x 20' x 20'; all within it must make a saving throw vs. dragon breath or die. to half speed. Druj A form of undead; see Spirit.",
+    "special": "<p>Like other golems, it is not alive, but a construct made by a high level magic-user or cleric. It can see invisible things within 60', and is immune to charm, hold, sleep, and all other mind-affecting spells, all forms of fire and cold, and all gases. It is also immune to all spells of 4th level or less, to normal and silver weapons, and even magical weapons of + 2 or lesser enchantment.</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 20,
-        "max": 20
+        "value": 90,
+        "max": 90
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "5374a5e70e59d6d6"
 }

@@ -7,7 +7,7 @@
   "system": {
     "ac": 7,
     "hd": "2",
-    "hp": 2,
+    "hp": 9,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 20,
     "terrain": "Any.",
     "monsterType": "Normal Animal (Common).",
-    "description": "Mules are very strong for their number of Hit Dice, and can carry great amounts of weight for their owners. They become somewhat more stubborn when loaded down enough that they move at half normal speed. Mules may be taken into dungeons, if allowed by the DM. If encountered alone in a dungeon, the mules may belong to an NPC party nearby.",
+    "description": "A mule is a crossbreed between a horse and a donkey. Mules are stubborn, and if bothered or excited they may either bite or kick. Mules cannot be trained to attack, but will fight in their own defense. Mules are very strong for their number of Hit Dice, and can carry great amounts of weight for their owners. They become somewhat more stubborn when loaded down enough that they move at half normal speed. Mules may be taken into dungeons, if allowed by the DM. If encountered alone in a dungeon, the mules may belong to an NPC party nearby. at up to half speed.",
     "special": "",
-    "notes": "",
+    "notes": "A mule is a crossbreed between a horse and a donkey. Mules are stubborn, and if bothered or excited they may either bite or kick. Mules cannot be trained to attack, but will fight in their own defense.",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 2,
-        "max": 2
+        "value": 9,
+        "max": 9
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

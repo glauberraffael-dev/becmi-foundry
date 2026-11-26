@@ -7,7 +7,7 @@
   "system": {
     "ac": 4,
     "hd": "6",
-    "hp": 6,
+    "hp": 27,
     "move": {
       "dungeon": 60,
       "outdoor": 20
@@ -23,15 +23,15 @@
     "xpValue": 275,
     "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
     "monsterType": "Monster (Rare).",
-    "description": "This monster appears as a human figure with skeletal hands and a skull head with flowing, white hair. A revener prowls dark, underground caverns and dust-filled tombs and crypts. When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). The lost sense may be chosen or randomly determined; subsequent hits always drain different senses. A restore spell will restore one lost sense. Taste: Victim cannot identify tastes (such as potions). never check morale if encountered in their lair. If hatched or captured as chicks, young rocs can be trained as riding-beasts. Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls. Hearing: Victim cannot hear and loses the ability to speak clearly (may ruin spell casting).",
-    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). A restore spell will restore one lost sense. Smell:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls.&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "Rocs are huge birds of prey resembling eagles. They are very lawful, and are often unfriendly toward neutrals (-1 on reaction rolls) and chaotics (-2 on reactions). Rocs prefer solitude and will swoop to attack any intruders unless carefully approached. Their nests are in the highest mountains, and may Large F6 Lawful Giant F18 Lawful never check morale if encountered in their lair. If hatched or captured as chicks, young rocs can be trained as riding-beasts. at full flying speed; 2,000 cn x its HD at half flying speed. Barding Multiplier: Small Roc: x 3. Large Roc: x 5. Giant Roc: X 10.",
+    "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 6,
-        "max": 6
+        "value": 27,
+        "max": 27
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }

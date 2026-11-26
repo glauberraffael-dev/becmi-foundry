@@ -1,9 +1,15 @@
 <header class="becmi-header">
   <div class="becmi-image-wrap">
-    <img class="becmi-avatar" src="{{item.img}}" alt="{{item.name}}">
-    <button type="button" class="becmi-image-edit" data-action="editImage" data-field="img" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}" aria-label="{{localize 'BECMI.sheet.editImage'}}" {{#unless editable}}disabled{{/unless}}>✎</button>
+    <img class="becmi-avatar" src="{{item.img}}" alt="{{item.name}}" {{#if editable}}data-action="editImage" data-edit="img" title="{{localize 'BECMI.sheet.editImage'}}"{{/if}}>
+    {{#if editable}}<span class="becmi-image-hint" aria-hidden="true">✎</span>{{/if}}
   </div>
   <div class="becmi-header-fields">
+    <div class="becmi-sheet-tools becmi-sheet-tools--item">
+      {{#if canEdit}}
+      <button type="button" class="becmi-mode-toggle" data-action="toggleEditMode">{{#if editMode}}{{localize 'BECMI.sheet.useMode'}}{{else}}{{localize 'BECMI.sheet.editMode'}}{{/if}}</button>
+      {{/if}}
+      <button type="button" class="becmi-mode-toggle" data-action="toggleDarkMode">{{#if darkMode}}{{localize 'BECMI.sheet.lightMode'}}{{else}}{{localize 'BECMI.sheet.darkMode'}}{{/if}}</button>
+    </div>
     <div class="becmi-field becmi-field--name">
       <input name="name" type="text" value="{{item.name}}" {{#unless editable}}disabled{{/unless}}>
     </div>

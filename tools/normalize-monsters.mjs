@@ -7,6 +7,7 @@
  * turns the long "Monster Type" paragraph into useful notes.
  */
 import { monsterCategory } from "./pack-layout.mjs";
+import { monsterHpFromHitDice } from "../scripts/rules-rc.mjs";
 
 const NAME_FIXES = new Map([
   ["Shark (Great_ _White)", "Shark (Great White)"],
@@ -192,7 +193,9 @@ export function normalizeMonsterDocument(doc) {
       ...raw,
       ac: numberInRange(raw.ac, -10, 20, 9),
       hd,
-      hp: Math.max(1, Number(raw.hp) || hdNumber(hd)),
+      // HD is a d8 count, so HP must be derived from it — OCR often stored
+      // the HD number (or a concatenated "3+1" -> 31) directly in this field.
+      hp: monsterHpFromHitDice(hd),
       move: {
         dungeon: numberInRange(raw.move?.dungeon, 0, 1000, 120),
         outdoor: numberInRange(raw.move?.outdoor, 0, 1000, 40)

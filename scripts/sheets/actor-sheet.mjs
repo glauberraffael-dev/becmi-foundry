@@ -1,5 +1,8 @@
-import { advanceActorLevels, importSpellToActor, spellListsForClass } from "../integrations.mjs";
+import {
+  advanceActorLevels, importSpellToActor, spellListsForClass, syncGrimoireFromImportedSpell
+} from "../integrations.mjs";
 import { classFeaturesFor } from "../class-features.mjs";
+import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
   masteryWeapon, masteryChoices, normalizeClassKey, spellKey, spellSlotsForLevel,
@@ -101,8 +104,25 @@ function masteryRowsFor(actor) {
 }
 
 const byName = (a, b) => String(a.name ?? "").localeCompare(String(b.name ?? ""), "en", { sensitivity: "base", numeric: true });
-const bySpellLevelThenName = (a, b) =>
-  (Number(a.system?.spellLevel) || 0) - (Number(b.system?.spellLevel) || 0) || byName(a, b);
+const spellLevelOf = (spell) => Number(spell?.system?.spellLevel ?? spell?.level) || 0;
+const bySpellLevelThenName = (a, b) => spellLevelOf(a) - spellLevelOf(b) || byName(a, b);
+
+const spellSourceUuid = (item) => String(
+  item?.flags?.becmi?.sourceUuid ?? item?.flags?.core?.sourceId ?? item?.uuid ?? ""
+);
+
+function notifySpellImport(sheet, result, name) {
+  if (!globalThis.ui?.notifications) return;
+  if (result.status === "imported") {
+    ui.notifications.info(game.i18n.format("BECMI.notification.spellImported", {
+      name: result.item?.name ?? name
+    }));
+  } else if (result.status === "duplicate") {
+    ui.notifications.info(game.i18n.format("BECMI.notification.spellAlreadyKnown", { name }));
+  } else if (result.status === "failed" || result.status === "invalid") {
+    ui.notifications.warn(game.i18n.format("BECMI.notification.spellImportFailedName", { name }));
+  }
+}
 
 /** Read the raw drag payload without assuming it contains a resolvable document. */
 function dragEventData(event) {
@@ -132,6 +152,8 @@ function canonicalCompendiumUuid(uuid) {
 export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   activeTab = "main";
   sidebarCollapsed = false;
+  editMode = false;
+  spellPicker = { level: 0, search: "", list: "" };
   targetAC = 9;
   #dropUuidByEvent = new WeakMap();
 
@@ -148,9 +170,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     actions: {
       switchTab: BECMIActorSheet.#switchTab,
       toggleSidebar: BECMIActorSheet.#toggleSidebar,
+      toggleEditMode: BECMIActorSheet.#toggleEditMode,
+      toggleDarkMode: BECMIActorSheet.#toggleDarkMode,
       setClass: BECMIActorSheet.#setClass,
       toggleDruid: BECMIActorSheet.#toggleDruid,
       setSpellList: BECMIActorSheet.#setSpellList,
+      importSpell: BECMIActorSheet.#importSpell,
       rollAbility: BECMIActorSheet.#rollAbility,
       rollSave: BECMIActorSheet.#rollSave,
       rollInitiative: BECMIActorSheet.#rollInitiative,
@@ -161,7 +186,6 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollThief: BECMIActorSheet.#rollThief,
       rollTurnUndead: BECMIActorSheet.#rollTurnUndead,
       createCharacter: BECMIActorSheet.#createCharacter,
-      rollLevelHP: BECMIActorSheet.#rollLevelHP,
       levelUp: BECMIActorSheet.#levelUp,
       restSpells: BECMIActorSheet.#restSpells,
       castSpell: BECMIActorSheet.#castSpell,
@@ -182,8 +206,14 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     body: { template: "systems/becmi/templates/actor/body.hbs" }
   };
 
+  async _onRender(context, options) {
+    await super._onRender(context, options);
+    applySheetTheme(this.element, isDarkMode());
+  }
+
   /** Capture the drag UUID, then let ActorSheetV2 resolve the dropped document. */
   async _onDrop(event) {
+    if (!this.isEditable || !this.editMode) return null;
     const data = dragEventData(event);
     // Folder headers and partial drag payloads have no document to resolve.
     // Passing them to ActorSheetV2 would throw inside Item.fromDropData.
@@ -205,7 +235,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   /** Import compendium spells as owned Items; let core handle every other Item. */
   async _onDropItem(event, item) {
-    if (!this.isEditable || item?.documentName !== "Item") return null;
+    if (!this.isEditable || !this.editMode || item?.documentName !== "Item") return null;
 
     // Owned items (reordering), classes, equipment and treasure all use the
     // standard ActorSheetV2 creation path. Only spells need the grimoire merge.
@@ -232,6 +262,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     const result = await importSpellToActor(this.actor, source);
+    if (result.status === "imported") await syncGrimoireFromImportedSpell(this.actor, item);
     if (globalThis.ui?.notifications) {
       if (result.status === "imported") {
         ui.notifications.info(game.i18n.format("BECMI.notification.spellImported", {
@@ -266,7 +297,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const canMastery = Boolean(capabilities.mastery);
 
     Object.assign(context, {
-      actor, system: actor.system, flags, editable: this.isEditable, isCharacter,
+      actor, system: actor.system, flags, isCharacter,
+      canEdit: this.isEditable,
+      editMode: this.editMode,
+      editable: this.isEditable && this.editMode,
+      darkMode: isDarkMode(),
       level, xp, classKey, rcClass, isDruid, canCast, canTurn, canThief, canMastery,
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
@@ -327,45 +362,123 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     const extraLists = isDruid ? ["druid"] : [];
     const grimoire = String(actor.system.spellbook?.grimoire ?? "").split(",").map((key) => key.trim()).filter(Boolean);
-    const search = String(flags.spellSearch ?? "");
-    const listFilter = String(flags.spellList ?? "");
     const className = rcClass?.name ?? attrs.class ?? flags.classInfo?.name ?? "";
     const spellLists = canCast ? spellListsForClass({ name: className }, { druid: isDruid }) : [];
+    const ownedSpells = actor.items.filter((item) => item.type === "spell");
+    const knownUuids = new Set(ownedSpells.map((item) => spellSourceUuid(item)).filter(Boolean));
+    const filterLevel = Math.max(0, Math.min(9, Number(this.spellPicker.level) || 0));
+    const search = String(this.spellPicker.search ?? "").trim();
+    const listFilter = spellLists.includes(this.spellPicker.list) ? this.spellPicker.list : "";
+    const needle = search.toLowerCase();
+
     context.grimoire = actor.system.spellbook?.grimoire ?? "";
-    context.spellLevels = Array.from({ length: 9 }, (_, index) => index + 1);
     context.spellSlots = canCast ? spellSlotsForLevel(classKey, level) : [];
-    context.spellOptions = context.spellLevels.map((spellLevel) =>
-      spellsFor(classKey, spellLevel, { grimoire, extraLists }).map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level })));
-    context.spellRows = context.spellLevels.map((spellLevel, levelIndex) => ({
-      level: spellLevel,
-      slots: context.spellSlots[levelIndex] ?? 0,
-      entries: Array.from({ length: 9 }, (_, index) => {
+    const maxSpellLevel = Math.max(1, Math.min(9,
+      Number(rcClass?.spells?.levels) || context.spellSlots.length || 9));
+    context.spellLevels = Array.from({ length: maxSpellLevel }, (_, index) => index + 1);
+    context.spellSlots = context.spellSlots.slice(0, maxSpellLevel);
+
+    const rcOptionsByLevel = context.spellLevels.map((spellLevel) =>
+      spellsFor(classKey, spellLevel, { grimoire, extraLists })
+        .map((spell) => ({ key: spellKey(spell), name: spell.name, level: spell.level, itemId: "" })));
+    const itemOptionsByLevel = context.spellLevels.map((spellLevel) =>
+      ownedSpells
+        .filter((item) => (Number(item.system?.spellLevel) || 0) === spellLevel
+          && (!spellLists.length || (item.system?.spellLists ?? []).some((list) => spellLists.includes(list))))
+        .map((item) => ({ key: `item:${item.id}`, name: item.name, level: spellLevel, itemId: item.id })));
+    context.spellOptions = context.spellLevels.map((spellLevel, index) => {
+      const seen = new Set();
+      return [...rcOptionsByLevel[index], ...itemOptionsByLevel[index]].filter((option) => {
+        const signature = option.name.toLowerCase();
+        if (seen.has(signature)) return false;
+        seen.add(signature);
+        return true;
+      });
+    });
+
+    context.spellGroups = context.spellLevels.map((spellLevel, levelIndex) => {
+      const max = context.spellSlots[levelIndex] ?? 0;
+      const entries = Array.from({ length: max }, (_, index) => {
         const key = `${spellLevel}_${index + 1}`;
         const spell = actor.system.spellbook?.memorized?.[key] ?? "";
         return {
           key,
+          number: index + 1,
           spell,
+          itemId: String(spell).startsWith("item:") ? String(spell).slice(5) : "",
           used: Boolean(actor.system.spellbook?.used?.[key]),
           options: context.spellOptions[levelIndex] ?? []
         };
-      })
-    }));
+      });
+      const prepared = entries.filter((entry) => entry.spell).length;
+      const spent = entries.filter((entry) => entry.spell && entry.used).length;
+      return {
+        level: spellLevel,
+        max,
+        prepared,
+        spent,
+        remaining: Math.max(0, max - spent),
+        percent: max ? Math.round((100 * Math.max(0, max - spent)) / max) : 0,
+        entries
+      };
+    });
+    context.spellRows = context.spellGroups;
+
     context.spellFilterOptions = [
       { key: "", name: game.i18n.localize("BECMI.sheet.allLists") },
       ...SPELL_LISTS.filter((entry) => spellLists.includes(entry.key))
         .map((entry) => ({ key: entry.key, name: game.i18n.localize(`BECMI.sheet.list.${entry.key}`) }))
     ];
-    context.spellListFilter = spellLists.includes(listFilter) ? listFilter : "";
-    context.spellList = canCast
-      ? spellsFor(classKey, Number(flags.spellFilterLevel) || 0, { grimoire, search, extraLists, listFilter: context.spellListFilter }).slice(0, 120)
-        .map((spell) => ({
-          ...spell,
-          key: spellKey(spell),
-          listName: game.i18n.localize(`BECMI.sheet.list.${spell.class}`),
-          notes: [spell.reverse ? `Reverse: ${spell.reverse}` : "", spell.save ? `Save: ${spell.save}` : ""].filter(Boolean).join("; ")
-        }))
-      : [];
+    context.spellListFilter = listFilter;
+    const rcList = canCast ? spellsFor(classKey, filterLevel, { grimoire, search, extraLists, listFilter }) : [];
+    const rcRows = rcList.map((spell) => ({
+      key: spellKey(spell),
+      itemId: "",
+      name: spell.name,
+      level: spell.level,
+      listName: game.i18n.localize(`BECMI.sheet.list.${spell.class}`),
+      range: spell.range,
+      duration: spell.duration,
+      effect: spell.effect,
+      notes: [spell.reverse ? `Reverse: ${spell.reverse}` : "", spell.save ? `Save: ${spell.save}` : ""].filter(Boolean).join("; ")
+    }));
+    const itemRows = ownedSpells
+      .filter((item) => !filterLevel || (Number(item.system?.spellLevel) || 0) === filterLevel)
+      .filter((item) => !listFilter || (item.system?.spellLists ?? []).includes(listFilter))
+      .filter((item) => !needle || item.name.toLowerCase().includes(needle))
+      .map((item) => ({
+        key: `item:${item.id}`,
+        itemId: item.id,
+        name: item.name,
+        level: Number(item.system?.spellLevel) || 0,
+        listName: (item.system?.spellLists ?? []).map((list) => game.i18n.localize(`BECMI.sheet.list.${list}`)).join(", "),
+        range: item.system?.range ?? "",
+        duration: item.system?.duration ?? "",
+        effect: item.system?.effect ?? "",
+        notes: item.system?.description ?? ""
+      }));
+    context.spellList = [...rcRows, ...itemRows].sort(bySpellLevelThenName);
     context.spellSearch = search;
+    context.spellFilterLevel = filterLevel;
+
+    context.importSpellOptions = [];
+    if (canCast) {
+      const pack = game.packs?.get("becmi.spells");
+      const docs = pack ? await pack.getDocuments() : [];
+      context.importSpellOptions = docs
+        .filter((doc) => (doc.system?.spellLists ?? []).some((list) => spellLists.includes(list)))
+        .filter((doc) => !filterLevel || Number(doc.system?.spellLevel) === filterLevel)
+        .filter((doc) => !listFilter || (doc.system?.spellLists ?? []).includes(listFilter))
+        .filter((doc) => !needle || doc.name.toLowerCase().includes(needle))
+        .sort(bySpellLevelThenName)
+        .map((doc) => ({
+          uuid: doc.uuid,
+          name: doc.name,
+          level: Number(doc.system?.spellLevel) || 0,
+          list: (doc.system?.spellLists ?? []).join(", "),
+          known: knownUuids.has(doc.uuid)
+        }));
+    }
 
     const allItems = actor.items.filter((item) => !["spell", "feature", "class"].includes(item.type));
     context.equipmentGroups = EQUIPMENT_GROUPS.map(([key, label]) => ({
@@ -443,8 +556,49 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.render();
   }
 
+  static async #toggleEditMode() {
+    if (!this.isEditable) return;
+    this.editMode = !this.editMode;
+    await this.render();
+  }
+
+  static async #toggleDarkMode() {
+    const dark = !isDarkMode();
+    await setDarkMode(dark);
+    applySheetTheme(this.element, dark);
+    await this.render();
+  }
+
   static async #onSubmit(event, form, formData) {
-    await this.document.update(formData.object);
+    const raw = { ...(formData.object ?? {}) };
+    let filterChanged = false;
+    if ("spellFilterLevel" in raw) {
+      this.spellPicker.level = Math.max(0, Math.min(9, Number(raw.spellFilterLevel) || 0));
+      delete raw.spellFilterLevel;
+      filterChanged = true;
+    }
+    if ("spellSearch" in raw) {
+      this.spellPicker.search = String(raw.spellSearch ?? "");
+      delete raw.spellSearch;
+      filterChanged = true;
+    }
+
+    if (!this.isEditable || !this.editMode) {
+      if (filterChanged) await this.render();
+      return;
+    }
+
+    const changes = sanitizeImageUpdate(raw);
+    const requestedLevel = Number(changes["system.attributes.level"]);
+    const currentLevel = Number(this.actor.system.attributes?.level) || 1;
+    if (Number.isFinite(requestedLevel) && requestedLevel > currentLevel
+      && !("system.attributes.hp" in changes)) {
+      // Editing the level field must roll HP exactly like XP level-ups do.
+      delete changes["system.attributes.level"];
+      await advanceActorLevels(this.actor, { targetLevel: requestedLevel });
+    }
+    if (Object.keys(changes).length) await this.actor.update(changes);
+    if (filterChanged) await this.render();
   }
 
   #targetAC() {
@@ -455,6 +609,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #setClass(event, target) {
+    if (!this.isEditable || !this.editMode) return;
     const key = target.dataset.classKey ?? target.value;
     const cls = RC.classes[key];
     if (!cls) return;
@@ -467,12 +622,43 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #toggleDruid() {
+    if (!this.isEditable || !this.editMode) return;
     const enabled = !Boolean(this.actor.flags?.becmi?.druid);
     await this.actor.update({ "flags.becmi.druid": enabled });
   }
 
   static async #setSpellList(event, target) {
-    await this.actor.update({ "flags.becmi.spellList": target.dataset.list ?? "" });
+    this.spellPicker.list = target.dataset.list ?? "";
+    await this.render();
+  }
+
+  static async #importSpell() {
+    if (!this.isEditable || !this.editMode) return;
+    const options = [...(this.element?.querySelectorAll("[data-spell-import] option:checked") ?? [])];
+    if (!options.length) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.spellImportSelect"));
+      return;
+    }
+    for (const option of options) {
+      const uuid = option.value;
+      const doc = uuid ? await fromUuid(uuid) : null;
+      if (doc?.type !== "spell") {
+        notifySpellImport(this, { status: "invalid" }, option.textContent?.trim() ?? uuid);
+        continue;
+      }
+      const source = doc.compendium
+        ? game.items.fromCompendium(doc, { clearFolder: true, keepId: false })
+        : foundry.utils.deepClone(doc.toObject());
+      source.type = "spell";
+      source.flags ??= {};
+      source.flags.core ??= {};
+      source.flags.core.sourceId = doc.uuid;
+      source._stats ??= {};
+      source._stats.compendiumSource = doc.uuid;
+      const result = await importSpellToActor(this.actor, source);
+      if (result.status === "imported") await syncGrimoireFromImportedSpell(this.actor, doc);
+      notifySpellImport(this, result, doc.name);
+    }
   }
 
   static async #rollAbility(event, target) {
@@ -513,6 +699,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #createCharacter() {
+    if (!this.isEditable || !this.editMode) return;
     const cls = getRCClass(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
     if (!cls) {
       ui.notifications.warn(game.i18n.localize("BECMI.notification.noClass"));
@@ -539,19 +726,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
   }
 
-  static async #rollLevelHP() {
-    const cls = getRCClass(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
-    if (!cls) return;
-    const level = Number(this.actor.system.attributes?.level) || 1;
-    const con = adjustment(this.actor.system.abilities?.con?.value);
-    const result = hpForLevel(cls.key, level, con);
-    const hp = this.actor.system.attributes.hp ?? { value: 0, max: 0 };
-    await this.actor.update({
-      "system.attributes.hp": { value: Number(hp.value) + result.gain, max: Number(hp.max) + result.gain }
-    });
-  }
-
   static async #levelUp() {
+    if (!this.isEditable || !this.editMode) return;
     // The same helper used by the XP hook: one canonical XP table, HP added
     // once per level and no manual drift in "Next Level XP".
     await advanceActorLevels(this.actor);
@@ -563,6 +739,14 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #castSpell(event, target) {
     const slot = target.dataset.slot;
+    const itemId = target.dataset.itemId;
+    const spell = RC.spells.find((entry) => spellKey(entry) === target.dataset.spellKey);
+    const item = itemId ? this.actor.items.get(itemId) : null;
+    if (!spell && item?.type !== "spell") {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.spellImportFailed"));
+      return;
+    }
+
     if (slot) {
       const used = { ...(this.actor.system.spellbook?.used ?? {}) };
       if (!used[slot]) {
@@ -570,8 +754,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         await this.actor.update({ "system.spellbook.used": used });
       }
     }
-    const spell = RC.spells.find((entry) => spellKey(entry) === target.dataset.spellKey);
-    if (!spell) return;
+
+    if (item?.type === "spell") {
+      await item.castSpell();
+      return;
+    }
     const escape = (value) => foundry.utils.escapeHTML(String(value ?? ""));
     const details = [
       ["Range", spell.range], ["Duration", spell.duration], ["Effect", spell.effect],
@@ -590,15 +777,22 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #memorizeSpell(event, target) {
-    const key = target.dataset.spellKey;
-    const spell = RC.spells.find((entry) => spellKey(entry) === key);
-    if (!spell) return;
+    if (!this.isEditable || !this.editMode) return;
+    const itemId = target.dataset.itemId;
+    const item = itemId ? this.actor.items.get(itemId) : null;
+    const key = item ? `item:${item.id}` : target.dataset.spellKey;
+    const spell = item ?? RC.spells.find((entry) => spellKey(entry) === key);
+    if (!spell) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.spellImportFailed"));
+      return;
+    }
+    const level = Number(spell.system?.spellLevel ?? spell.level) || 0;
+    if (!level) return;
     const classKey = normalizeClassKey(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
-    const extraLists = this.actor.flags?.becmi?.druid && classKey === "cleric" ? ["druid"] : [];
     const slots = spellSlotsForLevel(classKey, Number(this.actor.system.attributes?.level) || 1);
     const memorized = { ...(this.actor.system.spellbook?.memorized ?? {}) };
-    for (let slot = 1; slot <= (slots[spell.level - 1] ?? 0); slot++) {
-      const field = `${spell.level}_${slot}`;
+    for (let slot = 1; slot <= (slots[level - 1] ?? 0); slot++) {
+      const field = `${level}_${slot}`;
       if (!memorized[field]) {
         memorized[field] = key;
         await this.actor.update({ "system.spellbook.memorized": memorized });
@@ -609,6 +803,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #addMasteryRow() {
+    if (!this.isEditable || !this.editMode) return;
     const rows = [...(this.actor.system.mastery?.rows ?? []), { name: "", grade: "sem", primary: "H", target: "prim" }];
     await this.actor.update({ "system.mastery.rows": rows });
   }
@@ -634,12 +829,13 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #itemDelete(event, target) {
+    if (!this.isEditable || !this.editMode) return;
     const item = this.actor.items.get(target.dataset.itemId);
     await item?.delete();
   }
 
   static async #addItem() {
-    if (!this.isEditable) return;
+    if (!this.isEditable || !this.editMode) return;
     const type = await foundry.applications.api.DialogV2.wait({
       window: { title: "BECMI.sheet.newItem" },
       content: `<p>${game.i18n.localize("BECMI.sheet.chooseItemType")}</p>`,

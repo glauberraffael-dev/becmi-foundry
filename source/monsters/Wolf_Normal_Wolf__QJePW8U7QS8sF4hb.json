@@ -7,7 +7,7 @@
   "system": {
     "ac": 1,
     "hd": "2+2",
-    "hp": 22,
+    "hp": 11,
     "move": {
       "dungeon": 180,
       "outdoor": 60
@@ -23,15 +23,15 @@
     "xpValue": 25,
     "terrain": "Any",
     "monsterType": "Wolf: Normal Animal (Common); Dire Wolf: Giant Animal (Rare).",
-    "description": "Wolves are large, intelligent canine carnivores, and hunt in packs. Though they prefer the wilderness, they may occasionally be found in",
+    "description": "Wolves are large, intelligent canine carnivores, and hunt in packs. Though they prefer the wilderness, they may occasionally be found in caves. Captured wolf cubs may be trained like dogs (if the DM permits), but with difficulty. If three or fewer wolves are encountered, or if a pack is reduced to less than 50% of its original numbers, their morale is 6 rather than 8. Dire Wolves: Dire wolves are larger and more ferocious than normal wolves, and are semiintelligent. They are fierce enemies and usually hunt in packs. They are found in caves, woods, or mountains. They are sometimes trained by goblins to be used as mounts. Captured dire wolf cubs can be trained like dogs (if the DM permits), but they are even more savage than normal wolves. at half speed. Dire Wolf: 1,000 cn at full speed; 2,000 cn at half speed. Barding Multiplier: x 1/2.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 22,
-        "max": 22
+        "value": 11,
+        "max": 11
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "65abff4b71ab6a77"
 }

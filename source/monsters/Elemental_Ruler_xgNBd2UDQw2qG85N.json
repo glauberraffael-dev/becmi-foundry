@@ -7,7 +7,7 @@
   "system": {
     "ac": 9,
     "hd": "1",
-    "hp": 1,
+    "hp": 5,
     "move": {
       "dungeon": 0,
       "outdoor": 0
@@ -23,15 +23,15 @@
     "xpValue": 16,
     "terrain": "Elemental Planes.",
     "monsterType": "Planar Monster, Enchanted (Very Rare).",
-    "description": "These slow, huge creatures are identical to normal elementals, but far larger. They are 2' tall per Hit Die. The number appearing applies per plane. Elemental rulers are immune to 1st through 5th level spells, poison, all charm, hold, and other mental attacks, illusions of all types, and any spell which could cause instant death (such as disintegrate). Weapons of + 3 or less en- chantment have no effect on them. Any victim hit by an elemental ruler must make a saving throw vs. death ray or be crushed by the blow, instantly slain regardless of damage. Most of the victim's items and equipment are also destroyed by the blow (95% chance per item, —5% per \"plus\" if magical). However, any elemental struck by a ruler is not slain, but shattered into several small elementals of 1 Hit Die each (the number of parts equal to half the original Hit Dice).",
-    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;Elemental rulers are immune to 1st through 5th level spells, poison, all charm, hold, and other mental attacks, illusions of all types, and any spell which could cause instant death (such as disintegrate). Most of the victim's items and equipment are also destroyed by the blow (95% chance per item, —5% per \"plus\" if magical).&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "description": "See below (per fist) F36 Special Lawful or Neutral plus 1,000 per Hit Die over 41 These slow, huge creatures are identical to normal elementals, but far larger. They are 2' tall per Hit Die. The number appearing applies per plane. Elemental rulers are immune to 1st through 5th level spells, poison, all charm, hold, and other mental attacks, illusions of all types, and any spell which could cause instant death chantment have no effect on them. Any victim hit by an elemental ruler must make a saving throw vs. death ray or be crushed by the blow, instantly slain regardless of damage. Most of the victim's items and equipment are also destroyed by the blow (95% chance per item, —5% per \"plus\" if magical). However, any elemental struck by a ruler is not slain, but shattered into several small elementals of 1 Hit Die each (the number of parts equal to half the original Hit Dice). All elemental rulers are friendly with and can summon most creatures of their respective planes. The creatures summoned will arrive as quickly as possible (usually from 3 rounds to 3 turns). The \"Special\" treasures of elemental rulers are similar to those of human rulers, but unique to their respective planes.",
+    "special": "<p>Elemental rulers are immune to 1st through 5th level spells, poison, all charm, hold, and other mental attacks, illusions of all types, and any spell which could cause instant death chantment have no effect on them. Most of the victim's items and equipment are also destroyed by the blow (95% chance per item, —5% per \"plus\" if magical).</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 1,
-        "max": 1
+        "value": 5,
+        "max": 5
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "032370bc632ec516"
 }

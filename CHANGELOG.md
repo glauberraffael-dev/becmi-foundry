@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.16
+
+- Added edit/use mode to actor and item sheets: use mode disables field edits and
+  form submission while keeping every roll and item-use action available. A button
+  on each sheet switches modes and toggles the black-and-white / dark theme.
+- Rebuilt the Spell tab: spells are grouped by level, prepared/maximum slots are
+  shown as bars, and the compendium importer adds the spell to the RC grimoire so
+  it can be memorized immediately. Manual level edits now use the canonical
+  `advanceActorLevels` HP progression, matching XP level-ups.
+- Monster Hit Dice now count d8 (`11` → `11d8`, `3 + 1` → `3d8+1`) with average HP
+  derived from the formula instead of treating the HD number as HP; token bars use
+  the mirrored `attributes.hp.value`.
+- Repaired monster descriptions from a page-ordered OCR export, including shared
+  prose for dragons and gargantuas, without changing extracted statistics.
+- Spell filters now update the spell list reliably through the sheet form.
+
 ## 0.1.15
 
 - Fixed compendium folder nesting: level folders now use the `folder` field that

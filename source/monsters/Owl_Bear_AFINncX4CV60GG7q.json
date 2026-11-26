@@ -7,7 +7,7 @@
   "system": {
     "ac": 5,
     "hd": "5",
-    "hp": 5,
+    "hp": 23,
     "move": {
       "dungeon": 120,
       "outdoor": 40
@@ -23,15 +23,15 @@
     "xpValue": 175,
     "terrain": "Cavern, Woods.",
     "monsterType": "Monster (Common).",
-    "description": "An owl bear is a huge bearlike creature with the head of a giant owl. The creature is furry from the feet to the neck, at which point fur gives way to feathers. It stands 8' tall and weighs 15,000 cn (1,500 pounds). Owl bears are commonly found underground and in dense forests. They have nasty tempers, are carnivores, and are usually hungry, preferring meat. If both its paws hit one opponent in one round, the owl bear hugs for an additional 2d8 points of damage. Terrain: Cavern, Woods.",
+    "description": "An owl bear is a huge bearlike creature with the head of a giant owl. The creature is furry from the feet to the neck, at which point fur gives way to feathers. It stands 8' tall and weighs monly found underground and in dense forests. They have nasty tempers, are carnivores, and are usually hungry, preferring meat. If both its paws hit one opponent in one round, the owl bear hugs for an additional 2d8 points of damage.",
     "special": "",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 5,
-        "max": 5
+        "value": 23,
+        "max": 23
       }
     }
   },
@@ -45,6 +45,11 @@
   },
   "ownership": {
     "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
   },
   "folder": "40077e3c19fe93b6"
 }
