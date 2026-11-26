@@ -12,6 +12,9 @@
 import {
   attackInfo, monsterAttackRows, monsterHpFormula, parseMonsterHitDice, rollExpression
 } from "./rules-rc.mjs";
+import {
+  masteryAttackBonus, masteryDamageFormula, masteryLabel, weaponMasteryFor
+} from "./mastery.mjs";
 
 const ABILITY_BONUS = { str: "str", dex: "dex", wis: "wis" };
 const DEFAULT_TARGET_AC = 9;
@@ -52,7 +55,8 @@ async function toChat(roll, { title, flavor, result, target, outcome, rollMode, 
           active: r.active !== false
         }))
       })),
-      showDice: game.settings.get("becmi", "showDice")
+      showDice: game.settings.get("becmi", "showDice"),
+      darkMode: Boolean(game.settings?.get?.("becmi", "darkMode"))
     }
   );
 
@@ -92,6 +96,8 @@ export async function attackRoll(actor, item, { targetAC, rollMode, skipDamage =
   const ability = item?.system?.attackAbility === "dex" ? "dex" : "str";
   let bonus = modifierFor(actor, ability) + Number(item?.system?.attackBonus ?? 0);
   if (item?.system?.magicBonus) bonus += Number(item.system.magicBonus);
+  const mastery = weaponMasteryFor(actor, item);
+  bonus += masteryAttackBonus(mastery);
 
   const { ac, assumed } = resolveTargetAC(targetAC);
   if (assumed) {
@@ -115,7 +121,7 @@ export async function attackRoll(actor, item, { targetAC, rollMode, skipDamage =
   // BECMI: a natural 1 always misses, a natural 20 always hits; † also hits.
   const hit = natural === 20 || (natural !== 1 && (auto || total >= needed));
 
-  const result = `${total} vs AC ${ac}${assumed ? " (assumed)" : ""} (needed ${auto ? `${needed}†` : `${needed}+`})`;
+  const result = `${total} vs AC ${ac}${assumed ? " (assumed)" : ""} (needed ${auto ? `${needed}†` : `${needed}+`})${mastery ? ` — ${masteryLabel(mastery)}` : ""}`;
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.attack"),
     flavor: `${rollName(actor, item)} — ${item?.name ?? "Attack"}`,
@@ -134,12 +140,13 @@ export async function attackRoll(actor, item, { targetAC, rollMode, skipDamage =
 
 /** Roll damage for a weapon, spell or natural attack. */
 export async function damageRoll(actor, item, { rollMode, bonusDamage = 0 } = {}) {
-  const formula = item?.system?.damage || "1d6";
+  const mastery = weaponMasteryFor(actor, item);
+  const formula = masteryDamageFormula(mastery, item?.system?.damage || "1d6");
   const bonus = modifierFor(actor, "str") + Number(item?.system?.damageBonus ?? 0) + Number(bonusDamage || 0);
   const roll = await new Roll(`${formula}${bonus ? ` + ${bonus}` : ""}`).evaluate({ async: true });
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.damage"),
-    flavor: `${rollName(actor, item)} — ${item?.name ?? "Damage"}`,
+    flavor: `${rollName(actor, item)} — ${item?.name ?? "Damage"}${mastery ? ` (${masteryLabel(mastery)})` : ""}`,
     result: `${Math.round(roll.total)} damage`,
     rollMode,
     actor

@@ -38,7 +38,12 @@ export class BECMIItem extends Item {
   async sendToChat() {
     const html = await foundry.applications.handlebars.renderTemplate(
       "systems/becmi/templates/chat/item.hbs",
-      { item: this, system: this.system, description: this.system.description }
+      {
+        item: this,
+        system: this.system,
+        description: this.system.description,
+        darkMode: Boolean(game.settings?.get?.("becmi", "darkMode"))
+      }
     );
     return ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),

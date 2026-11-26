@@ -7,6 +7,10 @@ import assert from "node:assert/strict";
 import { classFeaturesFor } from "../scripts/class-features.mjs";
 import { nameLevelDetails, nameLevelOptions, nameLevelThreshold } from "../scripts/name-level.mjs";
 import {
+  hasMasteryRows, masteryAttackBonus, masteryDamageFormula, masteryEnabled,
+  weaponMasteryFor
+} from "../scripts/mastery.mjs";
+import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
@@ -163,6 +167,33 @@ check("weapon mastery resolves ranks and damage options", () => {
   assert.equal(finalDamage("1d6", 1, true), "½(1d6)+1");
   assert.equal(masteryChoices("fighter", 5), 5);
   assert.equal(masteryChoices("fighter", 36, 660000), 15);
+});
+
+check("weapon mastery is opt-in and applies to the trained weapon only", () => {
+  const actor = {
+    system: {
+      mastery: {
+        enabled: false,
+        rows: [{ name: "Cassetete", grade: "habil", primary: "H", target: "prim" }]
+      }
+    }
+  };
+  assert.equal(masteryEnabled(actor), false);
+  assert.equal(hasMasteryRows(actor), true);
+  assert.equal(weaponMasteryFor(actor, { name: "Cassetete" }), null);
+
+  actor.system.mastery.enabled = true;
+  const trained = weaponMasteryFor(actor, { name: "Cassetete" });
+  assert.equal(trained.weapon, "Blackjack");
+  assert.equal(trained.gradeName, "Habilidoso");
+  assert.equal(masteryAttackBonus(trained), 2);
+  assert.equal(masteryDamageFormula(trained), "2d2");
+  assert.equal(weaponMasteryFor(actor, { name: "Sword, Normal" }), null);
+
+  actor.system.mastery.rows[0].primary = "S";
+  assert.equal(masteryAttackBonus(weaponMasteryFor(actor, { name: "Cassetete" })), 1);
+  actor.system.mastery.rows[0].grade = "sem";
+  assert.equal(weaponMasteryFor(actor, { name: "Cassetete" }), null);
 });
 
 check("hit points use dice up to level 9 and fixed values after", () => {

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.23
+
+- Weapon Mastery is now an explicit optional rule for every character. The sheet
+  has an always-visible toggle; trained weapon ranks apply to attack bonuses and
+  damage only while the option is enabled. The grade dropdown labels are fixed.
+- Reworked sheet theming so light mode always uses dark ink and dark mode always
+  uses light ink, regardless of the Foundry core theme. Headings, labels, tables,
+  native controls and chat cards now follow the BECMI tokens.
+- Added parchment tones, focus rings, subtle row striping, badges and distinct
+  hit/miss colors; chat cards follow the dark-mode setting.
+
 ## 0.1.22
 
 - Fixed the ordinal text in the Name Level guidance: effective cleric levels now

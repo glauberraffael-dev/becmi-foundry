@@ -4,6 +4,7 @@ import {
 } from "../integrations.mjs";
 import { classFeaturesFor } from "../class-features.mjs";
 import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
+import { hasMasteryRows } from "../mastery.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
@@ -225,6 +226,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       castSpell: BECMIActorSheet.#castSpell,
       memorizeSpell: BECMIActorSheet.#memorizeSpell,
       addMasteryRow: BECMIActorSheet.#addMasteryRow,
+      toggleMastery: BECMIActorSheet.#toggleMastery,
       itemAttack: BECMIActorSheet.#itemAttack,
       itemDamage: BECMIActorSheet.#itemDamage,
       itemFormula: BECMIActorSheet.#itemFormula,
@@ -347,7 +349,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     this.spellClassKey = spellClassKey;
     this.spellLevel = spellLevel;
     const canThief = Boolean(capabilities.thief);
-    const canMastery = Boolean(capabilities.mastery);
+    // Weapon mastery is optional for every class in the Rules Cyclopedia.
+    // Keep the tab reachable for sheets that already stored mastery rows.
+    const masteryEnabled = Boolean(actor.system.mastery?.enabled);
+    const canMastery = isCharacter && (masteryEnabled || Boolean(capabilities.mastery) || hasMasteryRows(actor));
 
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
@@ -358,6 +363,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelChoices, canThief, canMastery,
+      masteryEnabled,
+      masteryToggleLabel: game.i18n.localize(masteryEnabled
+        ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
@@ -914,6 +922,15 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       }
     }
     ui.notifications.warn(game.i18n.localize("BECMI.notification.noSpellSlot"));
+  }
+
+  static async #toggleMastery() {
+    if (!this.isEditable || !this.editMode) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.editModeRequired"));
+      return;
+    }
+    const enabled = !Boolean(this.actor.system.mastery?.enabled);
+    await this.actor.update({ "system.mastery.enabled": enabled });
   }
 
   static async #addMasteryRow() {

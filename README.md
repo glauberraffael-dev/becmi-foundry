@@ -16,8 +16,10 @@ short paraphrases; the PDF and OCR export are **not** included.
   next-level XP from its compendium table; duplicate class items are removed.
 - Character generation asks for confirmation before replacing scores, level, XP and HP.
 - Druid is handled as a Cleric extension, not as a stand-alone class.
-- Class-exclusive sections (thief skills, turn undead, mastery, spellcasting) only
-  appear for classes that have them.
+- Class-exclusive sections (thief skills, turn undead, spellcasting) only appear
+  for classes that have them. Weapon Mastery is an optional switch available to
+  every character: when enabled, trained weapon ranks modify attack bonuses and
+  damage; when disabled, rolls use the plain BECMI rules.
 - Name Level choices are on the character sheet: Land Owner or Travelling, holding
   style, and fighter specialization by alignment. The sheet derives the title and
   shows the RC advantages and obligations; paladins/avengers get cleric-level spells,
@@ -100,8 +102,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.22`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.22.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.23`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.23.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

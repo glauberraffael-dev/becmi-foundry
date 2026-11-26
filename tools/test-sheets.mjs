@@ -245,4 +245,22 @@ if (JSON.stringify(nameRolls) !== JSON.stringify([
   throw new Error(`name-level roll actions did not reach the actor: ${JSON.stringify(nameRolls)}`);
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls and name level).");
+// Optional weapon mastery: an always-visible toggle and a usable grade dropdown.
+if (!body.includes('data-action="toggleMastery"')
+  || !body.includes('name="system.mastery.enabled"')
+  || !body.includes("{{grade.name}}")) {
+  throw new Error("the optional weapon-mastery toggle or grade dropdown is missing from the sheet");
+}
+let masteryUpdate = null;
+sheet.editable = true;
+sheet.editMode = true;
+sheet.actor = {
+  system: { mastery: { enabled: false } },
+  async update(data) { masteryUpdate = data; }
+};
+await actions.toggleMastery.call(sheet, {}, {});
+if (masteryUpdate?.["system.mastery.enabled"] !== true) {
+  throw new Error("the mastery toggle did not opt the character in");
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level and optional mastery).");

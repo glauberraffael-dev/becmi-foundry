@@ -92,7 +92,7 @@ function masterySchema() {
     rows: new f.ArrayField(new f.SchemaField({
       name: new f.StringField({ initial: "" }),
       grade: new f.StringField({ initial: "sem" }),
-      primary: new f.StringField({ initial: "prim" }),
+      primary: new f.StringField({ initial: "H" }),
       target: new f.StringField({ initial: "prim" })
     }), { initial: [] })
   });

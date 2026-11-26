@@ -1,33 +1,57 @@
 /* BECMI system styles — black-and-white sheet with an optional dark theme. */
 
 :root {
-  --becmi-ink: #000;
-  --becmi-muted: #333;
-  --becmi-paper: #fff;
-  --becmi-paper-alt: #f2f2f2;
-  --becmi-border: #000;
-  --becmi-accent: #000;
-  --becmi-good: #000;
-  --becmi-bad: #000;
-  --becmi-input: #fff;
-  --becmi-input-disabled: #e6e6e6;
-  --becmi-overlay: var(--becmi-overlay);
-  --becmi-active: rgba(0, 0, 0, 0.14);
+  --becmi-ink: #1a1714;
+  --becmi-muted: #4a443c;
+  --becmi-paper: #f8f5ef;
+  --becmi-paper-alt: #ece7dd;
+  --becmi-border: #2b2620;
+  --becmi-accent: #1a1714;
+  --becmi-good: #1b5e20;
+  --becmi-bad: #8b0000;
+  --becmi-input: #fffdf8;
+  --becmi-input-disabled: #e2ddd3;
+  --becmi-overlay: rgba(0, 0, 0, 0.06);
+  --becmi-active: rgba(0, 0, 0, 0.12);
 }
 
 .becmi-dark {
-  --becmi-ink: #fff;
-  --becmi-muted: #ddd;
-  --becmi-paper: #000;
-  --becmi-paper-alt: #1a1a1a;
-  --becmi-border: #fff;
-  --becmi-accent: #fff;
-  --becmi-good: #fff;
-  --becmi-bad: #fff;
-  --becmi-input: #111;
-  --becmi-input-disabled: #222;
+  --becmi-ink: #f5f2ea;
+  --becmi-muted: #c9c2b5;
+  --becmi-paper: #141312;
+  --becmi-paper-alt: #20201e;
+  --becmi-border: #d8d2c6;
+  --becmi-accent: #f5f2ea;
+  --becmi-good: #8fdf9a;
+  --becmi-bad: #ff9a9a;
+  --becmi-input: #1b1b19;
+  --becmi-input-disabled: #2a2a27;
   --becmi-overlay: rgba(255, 255, 255, 0.08);
-  --becmi-active: rgba(255, 255, 255, 0.2);
+  --becmi-active: rgba(255, 255, 255, 0.18);
+}
+
+/* Foundry v13/v14 declares colours on headings, tables and native controls
+   from its own theme tokens. Remap them here so a light BECMI sheet always
+   has dark ink and a dark BECMI sheet always has light ink, regardless of the
+   user's core theme. */
+.becmi.sheet,
+.becmi-roll-card {
+  color-scheme: light;
+  --color-text-primary: var(--becmi-ink);
+  --color-text-secondary: var(--becmi-muted);
+  --color-text-emphatic: var(--becmi-ink);
+  --color-text-subtle: var(--becmi-muted);
+  --color-border: var(--becmi-border);
+  --background: var(--becmi-paper);
+  --color-header-background: var(--becmi-paper-alt);
+  --input-background-color: var(--becmi-input);
+  --checkbox-checked-color: var(--becmi-accent);
+  --checkbox-background-color: var(--becmi-input);
+}
+
+.becmi.sheet.becmi-dark,
+.becmi-roll-card.becmi-dark {
+  color-scheme: dark;
 }
 
 .becmi.sheet {
@@ -36,6 +60,29 @@
   font-family: "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 13px;
   overflow-y: auto;
+}
+
+.becmi.sheet .window-content,
+.becmi.sheet .becmi-body,
+.becmi.sheet .becmi-layout,
+.becmi.sheet .becmi-panels,
+.becmi.sheet .becmi-tab-panel {
+  color: var(--becmi-ink);
+  background: var(--becmi-paper);
+}
+
+.becmi.sheet :is(h1, h2, h3, h4, h5, h6, label, summary, th) {
+  color: var(--becmi-ink);
+}
+
+.becmi.sheet table {
+  color: var(--becmi-ink);
+  background: var(--becmi-paper);
+}
+
+.becmi.sheet :is(button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--becmi-accent);
+  outline-offset: 1px;
 }
 
 /* Keep long sheets and compendium pages inside the window instead of forcing
@@ -98,10 +145,32 @@
   font-size: inherit;
 }
 
+.becmi.sheet select option,
+.becmi.sheet datalist option {
+  color: var(--becmi-ink);
+  background: var(--becmi-input);
+}
+
 .becmi.sheet input:disabled,
+.becmi.sheet select:disabled,
 .becmi.sheet textarea:disabled {
   color: var(--becmi-muted);
   background: var(--becmi-input-disabled);
+  opacity: 1;
+}
+
+.becmi.sheet .window-content button:not(.header-control) {
+  color: var(--becmi-ink);
+  background: var(--becmi-paper-alt);
+  border: 1px solid var(--becmi-border);
+}
+
+.becmi-badge {
+  display: inline-block;
+  padding: 0 0.25rem;
+  border: 1px solid var(--becmi-border);
+  border-radius: 2px;
+  background: var(--becmi-paper-alt);
 }
 
 /* ---------------------------------------------------------------- header */
@@ -749,7 +818,11 @@
 .becmi-roll-card[data-outcome="hit"] .becmi-roll-card__outcome { color: var(--becmi-good); }
 .becmi-roll-card[data-outcome="miss"] .becmi-roll-card__outcome { color: var(--becmi-bad); }
 
-.becmi-roll-card__title { margin: 0 0 0.25rem; font-size: 1.05rem; }
+.becmi-roll-card__title { margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--becmi-ink); }
+.becmi-roll-card h1,
+.becmi-roll-card h2,
+.becmi-roll-card h3,
+.becmi-roll-card h4 { color: var(--becmi-ink); }
 .becmi-roll-card__flavor { font-size: 0.8rem; font-style: italic; color: var(--becmi-muted); }
 .becmi-roll-card__result { display: flex; align-items: baseline; gap: 0.6rem; margin: 0.35rem 0; }
 .becmi-roll-card__total { font-size: 1.6rem; font-weight: 700; }
@@ -766,7 +839,14 @@
   border-radius: 3px;
   background: var(--becmi-overlay);
 }
-.becmi-die-face.discarded { opacity: 0.4; text-decoration: line-through; }
+.becmi-die-face.discarded {
+  color: var(--becmi-muted);
+  text-decoration: line-through;
+}
+
+.becmi-table tbody tr:nth-child(even) td {
+  background: var(--becmi-overlay);
+}
 
 /* ------------------------------------------------- reference table panels */
 .becmi-tab-panel { overflow-x: auto; }

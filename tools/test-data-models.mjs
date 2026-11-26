@@ -85,6 +85,15 @@ for (const key of ["hirelings", "avengerSpellLevels"]) {
 }
 console.log("Name-level schema fields OK.");
 
+// Weapon mastery is an opt-in switch on every character, never a class-only tab.
+const mastery = characterSchema.mastery?.options;
+if (!mastery?.enabled || mastery.enabled.options.initial !== false
+  || !mastery.rows || !Array.isArray(mastery.rows.options.initial)
+  || mastery.rows.element?.options?.primary?.options?.initial !== "H") {
+  throw new Error("CharacterData.mastery must default to disabled with plain mastery rows");
+}
+console.log("Optional mastery schema fields OK.");
+
 // Monster-like actors have no system.attributes.ac; preparation must not throw.
 const { BECMIActor } = await import("../scripts/documents/actor.mjs");
 const withoutAc = new BECMIActor();

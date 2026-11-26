@@ -1,4 +1,4 @@
-<div class="becmi-roll-card">
+<div class="becmi-roll-card{{#if darkMode}} becmi-dark{{/if}}">
   <h3 class="becmi-roll-card__title">{{item.name}}</h3>
   <div class="becmi-roll-card__flavor">{{localize (concat 'BECMI.item.' item.type)}}</div>
   {{#if system.range}}<div class="becmi-roll-card__detail"><strong>{{localize 'BECMI.labels.range'}}:</strong> {{system.range}}</div>{{/if}}

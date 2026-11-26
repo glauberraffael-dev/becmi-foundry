@@ -390,6 +390,7 @@
 <section class="becmi-tab-panel{{#if (eq activeTab "mastery")}} is-active{{/if}}" data-tab="mastery">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.weaponMastery'}}</h2>
   <div class="becmi-field"><label>{{localize 'BECMI.labels.useMastery'}}:</label><input name="system.mastery.enabled" type="checkbox" {{#if system.mastery.enabled}}checked{{/if}} {{#unless editable}}disabled{{/unless}}></div>
+  <p class="becmi-hint">{{localize 'BECMI.sheet.masteryHint'}}</p>
   <p class="becmi-hint">{{localize 'BECMI.sheet.masteryChoices'}}: {{masterySpent}} / {{masteryAvailable}}</p>
   <datalist id="becmi-mastery-weapons">{{#each masteryWeapons as |name|}}<option value="{{name}}">{{name}}</option>{{/each}}</datalist>
   <table class="becmi-table becmi-table--mastery">
@@ -400,7 +401,7 @@
         <td><input list="becmi-mastery-weapons" name="system.mastery.rows.{{@index}}.name" type="text" value="{{row.name}}" {{#unless ../editable}}disabled{{/unless}}></td>
         <td><select name="system.mastery.rows.{{@index}}.grade" {{#unless ../editable}}disabled{{/unless}}>
           <option value="">—</option>
-          {{#each ../masteryGrades as |grade|}}<option value="{{grade.key}}" {{#if (eq grade.key row.grade)}}selected{{/if}}>{{grade.nome}}</option>{{/each}}
+          {{#each ../masteryGrades as |grade|}}<option value="{{grade.key}}" {{#if (eq grade.key row.grade)}}selected{{/if}}>{{grade.name}}</option>{{/each}}
         </select></td>
         <td><input name="system.mastery.rows.{{@index}}.primary" type="text" value="{{row.primary}}" {{#unless ../editable}}disabled{{/unless}}></td>
         <td><select name="system.mastery.rows.{{@index}}.target" {{#unless ../editable}}disabled{{/unless}}>
@@ -627,6 +628,7 @@
     {{#if isCharacter}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="attack">{{localize 'BECMI.sheet.tab.attack'}}</button>{{/if}}
     {{#if canTurn}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="undead">{{localize 'BECMI.sheet.tab.undead'}}</button>{{/if}}
     {{#if canMastery}}<button type="button" class="becmi-roll" data-action="switchTab" data-tab="mastery">{{localize 'BECMI.sheet.tab.mastery'}}</button>{{/if}}
+    {{#if isCharacter}}<button type="button" class="becmi-roll" data-action="toggleMastery">{{masteryToggleLabel}}</button>{{/if}}
     <button type="button" class="becmi-roll" data-action="switchTab" data-tab="notes">{{localize 'BECMI.sheet.tab.notes'}}</button>
   </div>
 </aside>
