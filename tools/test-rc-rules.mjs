@@ -9,7 +9,8 @@ import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
-  levelForXp, monsterHpFormula, monsterHpFromHitDice, normalizeClassKey, parseMonsterHitDice,
+  levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
+  monsterThac0, normalizeClassKey, parseMonsterHitDice,
   planAbilityAdjustment, resolveTurnResult,
   rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
   turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
@@ -193,4 +194,32 @@ check("monster Hit Dice count d8 and never equal the HP total", () => {
   assert.equal(monsterHpFromHitDice("8* (M)"), 36);
   assert.equal(monsterHpFromHitDice("1/4 (S)"), 1);
   assert.equal(monsterHpFromHitDice("1-4"), 5, "ranges use the lower d8 count");
+});
+
+check("each natural attack becomes its own rollable monster macro", () => {
+  assert.equal(monsterDamageFormula("1d4/ld4/2d4 or 1d6 each"), "1d4");
+  const manticore = monsterAttackRows({
+    attacks: "2 claws/1 bite or 6 spikes",
+    damage: "1d4/1d4/2d4 or 1d6 each"
+  });
+  assert.deepEqual(manticore.map((row) => row.name), [
+    "Claw 1", "Claw 2", "Bite",
+    "Spike 1", "Spike 2", "Spike 3", "Spike 4", "Spike 5", "Spike 6"
+  ]);
+  assert.deepEqual(manticore.map((row) => row.damage), [
+    "1d4", "1d4", "2d4", "1d6", "1d6", "1d6", "1d6", "1d6", "1d6"
+  ]);
+
+  const curated = monsterAttackRows({
+    attacks: "ignored", damage: "ignored",
+    attackRows: [{ name: "Claw", count: 2, damage: "1d4" }, { name: "Bite", count: 1, damage: "2d4" }]
+  });
+  assert.deepEqual(curated.map((row) => row.name), ["Claw 1", "Claw 2", "Bite"]);
+  assert.equal(monsterThac0("6 + 1"), attackSpecFor("fighter", 6).thac0);
+
+  const grizzly = monsterAttackRows({
+    attacks: "2 claws/ 1 bite", damage: "1d8/1d8/ldl0"
+  });
+  assert.deepEqual(grizzly.map((row) => row.name), ["Claw 1", "Claw 2", "Bite"]);
+  assert.deepEqual(grizzly.map((row) => row.damage), ["1d8", "1d8", "1d10"]);
 });

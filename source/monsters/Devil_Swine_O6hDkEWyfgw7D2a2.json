@@ -1,0 +1,55 @@
+{
+  "_id": "O6hDkEWyfgw7D2a2",
+  "_key": "!actors!O6hDkEWyfgw7D2a2",
+  "name": "Devil Swine",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "9",
+    "hp": 41,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 gore or blow",
+    "damage": "2d6 or by weapon",
+    "appearing": "1d3 (1d4)",
+    "saveAs": "F9",
+    "morale": 10,
+    "treasure": "C",
+    "intelligence": 11,
+    "alignment": "Chaotic",
+    "xpValue": 1600,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Uncommon)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Charm Person: Three times per day in either form; saving throw at -2.</p><p>Control: Usually keeps 0-3 (1d4-1) humans under its control.</p><p>Human Form AC: 9.</p>",
+    "description": "A devil swine appears as a huge hog or a grossly fat human and may change shape freely at night, but must keep one shape during daylight. It haunts the fringes of human settlements, favors human flesh, and ambushes when possible. Unlike wereboars, it is fat, pink and smooth-skinned.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 41,
+        "max": 41
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Devil Swine",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

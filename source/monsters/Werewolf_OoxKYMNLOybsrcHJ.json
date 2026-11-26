@@ -1,0 +1,55 @@
+{
+  "_id": "OoxKYMNLOybsrcHJ",
+  "_key": "!actors!OoxKYMNLOybsrcHJ",
+  "name": "Werewolf",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 bite",
+    "damage": "2d4",
+    "appearing": "1d6 (2d6)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 125,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Common)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Pack Leader: Groups of 5+ include a leader with 30 HP, attacking as 5 HD with +2 damage.</p><p>Human Form AC: 9.</p>",
+    "description": "Werewolves are semi-intelligent lycanthropes that hunt in packs. Any group of five or more has a 30-hit-point leader that attacks as a 5 Hit Die monster and adds +2 to damage. They summon normal wolves to form large packs. In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Werewolf",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

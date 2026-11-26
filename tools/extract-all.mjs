@@ -31,3 +31,6 @@ for (const file of scripts) run(file, [input]);
 // The ordered scratch copy keeps extractor anchors stable; descriptions are
 // then replaced by the page-ordered oracle so every name keeps its own lore.
 run("repair-monster-prose.mjs", [process.env.BECMI_OCR_ORACLE || defaultOraclePath()]);
+// Collapsed multi-column OCR entries must become one named sheet per creature
+// before normalize-compendia files and sorts the Bestiary.
+run("repair-monster-variants.mjs");

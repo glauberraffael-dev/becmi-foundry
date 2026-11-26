@@ -1,0 +1,55 @@
+{
+  "_id": "x8bsP1IBV3UPB_JU",
+  "_key": "!actors!x8bsP1IBV3UPB_JU",
+  "name": "Werebear",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "2d4/2d4/2d8",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F6",
+    "morale": 10,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 500,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Common)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Hug: If both claws hit one target in a round, add 2d8 damage.</p><p>Human Form AC: 8.</p>",
+    "description": "Werebears are highly intelligent even in animal form and may be friendly if approached peacefully. In combat, if both paws hit the same target in a round, they can hug for an extra 2d8 damage. They summon any bears in the area. In human form their AC is 8.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Werebear",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

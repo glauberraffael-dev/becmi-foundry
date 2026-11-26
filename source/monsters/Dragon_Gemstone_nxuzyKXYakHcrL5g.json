@@ -1,0 +1,55 @@
+{
+  "_id": "nxuzyKXYakHcrL5g",
+  "_key": "!actors!nxuzyKXYakHcrL5g",
+  "name": "Dragon, Gemstone",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite or breath",
+    "damage": "See below",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F6",
+    "morale": 8,
+    "treasure": "H",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 725,
+    "terrain": "Any",
+    "monsterType": "Dragon (Rare)",
+    "special": "<p>Crystal: Lawful, similar to White; breath cold or crystal; 50% asleep; 10% talking.</p><p>Onyx: Neutral, similar to Black; breath acid or darkness; 40% asleep; 20% talking.</p><p>Jade: Neutral, similar to Green; breath chlorine gas or disease; 30% asleep; 30% talking.</p><p>Sapphire: Lawful, similar to Blue; breath lightning or vaporize; 20% asleep; 40% talking.</p><p>Ruby: Lawful, similar to Red; breath fire and melt; 10% asleep; 50% talking.</p><p>Amber: Chaotic, similar to Gold; breath fire and melt, gas and disease; 5% asleep; 100% talking.</p>",
+    "description": "Gemstone dragons are six distinct varieties: Crystal, Onyx, Jade, Sapphire, Ruby and Amber (or brown). Each is similar to a standard dragon colour and has its own alignment, breath weapon, sleeping chance and chance of speech.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, Gemstone",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

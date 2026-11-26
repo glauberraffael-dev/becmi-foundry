@@ -1,0 +1,55 @@
+{
+  "_id": "oNCC2RiZzkDYrZ0S",
+  "_key": "!actors!oNCC2RiZzkDYrZ0S",
+  "name": "Dragon Ruler (Diamond)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -10,
+    "hd": "30",
+    "hp": 135,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "Up to 9 (see below)",
+    "damage": "See below",
+    "appearing": "1 (1) (unique)",
+    "saveAs": "F36",
+    "morale": 10,
+    "treasure": "H x 4, I x 3, N, O",
+    "intelligence": 18,
+    "alignment": "Lawful",
+    "xpValue": 38750,
+    "terrain": "Any",
+    "monsterType": "Dragon (Unique)",
+    "special": "<p>Floating: 420' (140').</p><p>Breath: As any lawful dragon.</p>",
+    "description": "Diamond, the Star Dragon, is the ruler of all Lawful dragons. It flies at 420' (140') and can use up to nine attacks per round, including the breath weapon of any Lawful dragon.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 135,
+        "max": 135
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon Ruler (Diamond)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

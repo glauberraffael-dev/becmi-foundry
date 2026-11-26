@@ -1,0 +1,55 @@
+{
+  "_id": "DJSQdgp5B7cfnUdL",
+  "_key": "!actors!DJSQdgp5B7cfnUdL",
+  "name": "Werebat",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "3 + 3",
+    "hp": 17,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite",
+    "damage": "1d4",
+    "appearing": "2d6 (1d8)",
+    "saveAs": "F3",
+    "morale": 7,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 75,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Uncommon)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Disease: Each bite has a 1-in-6 chance of inflicting a disease chosen by the DM.</p><p>Flying: 180' (60').</p><p>Human Form AC: 9.</p>",
+    "description": "Werebats are dangerous flying lycanthropes often mistaken for vampires. They summon normal and giant bats and 1d4 other werebats. Each bite has a 1-in-6 chance of spreading a nonmagical disease. They fly at 180' (60'). In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 17,
+        "max": 17
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Werebat",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

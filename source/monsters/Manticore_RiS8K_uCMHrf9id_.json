@@ -1,0 +1,55 @@
+{
+  "_id": "RiS8K_uCMHrf9id_",
+  "_key": "!actors!RiS8K_uCMHrf9id_",
+  "name": "Manticore",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "6 + 1",
+    "hp": 28,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite or 6 spikes",
+    "damage": "1d4/1d4/2d4 or 1d6 each",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F6",
+    "morale": 9,
+    "treasure": "D",
+    "intelligence": 3,
+    "alignment": "Chaotic",
+    "xpValue": 650,
+    "terrain": "Mountain",
+    "monsterType": "Monster (Rare)",
+    "special": "<p>Tail Spikes: 24 spikes; fires up to six per round at ranges 50/100/180, even while flying. Regrows two spikes per day.</p><p>Flying: 180' (60').</p>",
+    "description": "A manticore has a lion's body, leathery bat wings, a spiked tail and a man's face with large fangs. It lives in wild mountain ranges and preys on humans, often ambushing a resting group with spikes or stalking a lone victim like a great cat. It flies at 180' (60').",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 28,
+        "max": 28
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Manticore",
+      "category": "Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

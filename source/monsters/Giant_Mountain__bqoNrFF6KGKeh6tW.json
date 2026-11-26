@@ -1,0 +1,55 @@
+{
+  "_id": "bqoNrFF6KGKeh6tW",
+  "_key": "!actors!bqoNrFF6KGKeh6tW",
+  "name": "Giant (Mountain)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12-20",
+    "hp": 54,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 weapon",
+    "damage": "5d10",
+    "appearing": "1d4 (1d20)",
+    "saveAs": "F (level = HD)",
+    "morale": 9,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 8,
+    "alignment": "Neutral",
+    "xpValue": 2125,
+    "terrain": "Mountain",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Thrown Boulders: 4d6 damage; range 100/200/400 yards.</p><p>Melee: Huge swords or stone clubs (1d10 x 5).</p><p>XP by HD: 9*=1,600; 10*=1,750; 11*=1,900; 12*=2,125; 13*=2,300; 14*=2,500; 15*=2,700; 16*=2,950; 17*=3,150; 18*=3,475; 19*=3,800; 20*=4,175.</p>",
+    "description": "Mountain giants resemble stone or hill giants and stand 12 to 20 feet tall, about one foot per Hit Die. They are reclusive mercenaries, carry huge swords or stone clubs, and often hurl boulders for 4d6 damage.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Mountain)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

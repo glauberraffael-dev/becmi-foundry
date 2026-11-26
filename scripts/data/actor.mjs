@@ -1,4 +1,7 @@
-import { RC, adjustment, attackSpecFor, baseSaves, baseThiefSkills, computeArmorClass, computeLoad, normalizeClassKey } from "../rules-rc.mjs";
+import {
+  RC, adjustment, attackSpecFor, baseSaves, baseThiefSkills, computeArmorClass,
+  computeLoad, getRCClass, monsterThac0, normalizeClassKey, xpForNextLevel
+} from "../rules-rc.mjs";
 
 const fields = () => foundry.data.fields;
 
@@ -204,6 +207,18 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     const level = Number(attrs.level) || 1;
     const xp = Number(attrs.xp) || 0;
 
+    // "Next Level XP" is derived from the canonical RC/XP table. It must never
+    // come from a form or a stale saved value, or the level-up hook drifts.
+    const snapshot = this.parent?.flags?.becmi?.classInfo ?? {};
+    const rcClass = key ? getRCClass(key) : null;
+    const nextXp = xpForNextLevel({
+      xp: snapshot.xp ?? rcClass?.xp ?? [],
+      xpTable: snapshot.xpTable ?? {},
+      maxLevel: Number(snapshot.maxLevel) || rcClass?.maxLevel || 36
+    }, level);
+    // At the level cap there is no next threshold; clear any stale saved value.
+    attrs.xpNext = nextXp ?? 0;
+
     const armor = attrs.armor ?? {};
     const ac = computeArmorClass({
       type: armor.type,
@@ -288,6 +303,13 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       }),
       attacks: new f.StringField({ initial: "", label: "BECMI.labels.attacks" }),
       damage: new f.StringField({ initial: "", label: "BECMI.labels.damage" }),
+      // One macro per natural attack. Counts are expanded into separate rows.
+      attackRows: new f.ArrayField(new f.SchemaField({
+        name: new f.StringField({ initial: "" }),
+        count: new f.NumberField({ initial: 1, integer: true, min: 1 }),
+        damage: new f.StringField({ initial: "" }),
+        note: new f.StringField({ initial: "" })
+      }), { initial: [] }),
       appearing: new f.StringField({ initial: "", label: "BECMI.labels.appearing" }),
       saveAs: new f.StringField({ initial: "", label: "BECMI.labels.saveAs" }),
       morale: new f.NumberField({ initial: 7, integer: true, min: 2, max: 12, label: "BECMI.labels.morale" }),
@@ -300,7 +322,9 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
         hp: new f.SchemaField({
           value: new f.NumberField({ initial: 1, integer: true, min: 0 }),
           max: new f.NumberField({ initial: 1, integer: true, min: 0 })
-        })
+        }),
+        // Monsters use the fighter attack column by Hit Dice for their macros.
+        thac0: new f.NumberField({ initial: 19, integer: true, min: 1, max: 40 })
       }),
       terrain: new f.StringField({ initial: "", label: "BECMI.labels.terrain" }),
       monsterType: new f.StringField({ initial: "" }),
@@ -317,5 +341,8 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
     super.prepareDerivedData();
     this.attributes.hp.max = Number(this.hp) || 0;
     if (!Number.isFinite(this.attributes.hp.value)) this.attributes.hp.value = this.attributes.hp.max;
+    // Current HP is the token-tracked value; never let it exceed the maximum.
+    this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.max);
+    this.attributes.thac0 = monsterThac0(this.hd);
   }
 }

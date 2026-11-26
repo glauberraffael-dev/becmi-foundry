@@ -1,0 +1,55 @@
+{
+  "_id": "XjZ_zaRQlhyvkyyE",
+  "_key": "!actors!XjZ_zaRQlhyvkyyE",
+  "name": "Thoul",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws or 1 weapon",
+    "damage": "1d3/1d3 or by weapon",
+    "appearing": "1d6 (1d10)",
+    "saveAs": "F3",
+    "morale": 10,
+    "treasure": "C",
+    "intelligence": 6,
+    "alignment": "Chaotic",
+    "xpValue": 65,
+    "terrain": "Any",
+    "monsterType": "Monster (Very Rare)",
+    "special": "<p>Paralysis: The touch of a thoul paralyses as a ghoul does.</p><p>Regeneration: If damaged, it regains 1 hit point per round while alive.</p>",
+    "description": "A thoul is a magical combination of a ghoul, a hobgoblin and a troll, and is not Undead. Except up close it looks exactly like a hobgoblin, so thouls often serve as guards to hobgoblin kings and Chaotic rulers.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Thoul",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

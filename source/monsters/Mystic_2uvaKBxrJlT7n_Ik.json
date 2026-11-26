@@ -1,0 +1,55 @@
+{
+  "_id": "2uvaKBxrJlT7n_Ik",
+  "_key": "!actors!2uvaKBxrJlT7n_Ik",
+  "name": "Mystic",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 weapon or hand",
+    "damage": "By weapon or 1d6+1",
+    "appearing": "1d8 (6d8)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "V; I, L, M, N, O",
+    "intelligence": 12,
+    "alignment": "Lawful",
+    "xpValue": 175,
+    "terrain": "Any",
+    "monsterType": "Human (Rare)",
+    "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+    "description": "Mystics are humans who follow a rigorous life of meditation, study and physical training. They live in cloisters and are usually Lawful. Mystics are surprised only on a roll of 1, never wear armor or protective magic, and can use potions and magic items freely.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Mystic",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

@@ -477,6 +477,110 @@ export function monsterHpFormula(hd) {
 }
 
 /* ------------------------------------------------------------------ *
+ * Monster attack macros                                              *
+ * ------------------------------------------------------------------ */
+
+function fixDiceText(text) {
+  return String(text ?? "")
+    // The OCR frequently turns `1` into `l` and `0` into `O` inside dice codes.
+    .replace(/\bldl(\d+)\b/gi, "1d1$1")
+    .replace(/\bld[O0](\d*)\b/gi, "1d0$1")
+    .replace(/\bld(\d+)\b/gi, "1d$1")
+    .replace(/(\d+)\s*d\s*[lI|][oO]/gi, "$1d10")
+    .replace(/(\d+)\s*d\s*[lI|](\d+)/gi, "$1d1$2")
+    .replace(/(\d+)\s*d\s*[oO](\d*)/gi, "$1d0$2")
+    .replace(/\bd\s*[lI|]\s*(\d+)\b/gi, "d$1")
+    .replace(/\bd\s*[oO]\s*(\d*)\b/gi, "d0$1")
+    .replace(/\b(\d+)\s+d\s+(\d+)\b/gi, "$1d$2")
+    .trim();
+}
+
+/** Only formulas Foundry's roller can evaluate; prose stays in the note. */
+export function monsterDamageFormula(text) {
+  const fixed = fixDiceText(text).replace(/\beach\b/gi, "").replace(/\s+/g, " ").trim();
+  const match = fixed.match(/^(\d*d\d+(?:\s*[+-]\s*(?:\d*d\d+|\d+))*)/i);
+  return match ? match[1].replace(/\s+/g, "") : "";
+}
+
+function expandGroups(text) {
+  return fixDiceText(text)
+    .replace(/\s*\/\s*/g, "|")
+    .split("|")
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function splitModes(text) {
+  return fixDiceText(text).split(/\s+or\s+/i).map((part) => part.trim()).filter(Boolean);
+}
+
+function expandAttacks(mode) {
+  const rows = [];
+  for (const group of expandGroups(mode)) {
+    const match = group.match(/^(\d+)\s+(.+)$/);
+    const count = Math.max(1, Math.min(12, Number(match?.[1] ?? 1) || 1));
+    let name = fixDiceText(match?.[2] ?? group)
+      .replace(/[.:,]+$/, "")
+      .replace(/^(?:per pack|each)\s+/i, "")
+      .replace(/^[+\-\s]+/, "")
+      .replace(/^./, (letter) => letter.toUpperCase());
+    if (!name || /^special$/i.test(name)) name = "Special";
+    // "2 claws" means two separate "Claw 1/2" buttons, not "Claws 1/2".
+    const singular = count > 1 && /s$/i.test(name) && !/ss$/i.test(name)
+      ? name.slice(0, -1) : name;
+    for (let index = 1; index <= count; index++) {
+      rows.push({ name: count > 1 ? `${singular} ${index}` : name, count, damage: "", note: "" });
+    }
+  }
+  return rows;
+}
+
+/**
+ * One row per individual monster attack, ready for one macro/button each.
+ * Curated `system.attackRows` win; otherwise the stat text is parsed.
+ */
+export function monsterAttackRows(system = {}) {
+  const stored = Array.isArray(system.attackRows) ? system.attackRows : [];
+  if (stored.length) {
+    return stored.flatMap((entry) => {
+      const count = Math.max(1, Math.min(12, Number(entry?.count) || 1));
+      const name = fixDiceText(entry?.name ?? "Attack").replace(/[.:,]+$/, "");
+      const note = fixDiceText(entry?.note ?? "");
+      return Array.from({ length: count }, (_, index) => ({
+        name: count > 1 ? `${name} ${index + 1}` : name,
+        count,
+        damage: monsterDamageFormula(entry?.damage),
+        note
+      }));
+    });
+  }
+
+  const attacks = splitModes(system.attacks ?? "");
+  const damages = splitModes(system.damage ?? "");
+  const rows = [];
+  attacks.forEach((mode, modeIndex) => {
+    const group = expandAttacks(mode);
+    const values = expandGroups(damages[modeIndex] ?? damages[0] ?? "");
+    group.forEach((row, index) => {
+      const raw = values[index] ?? values[values.length - 1] ?? "";
+      row.damage = monsterDamageFormula(raw);
+      const extra = raw.replace(/^(\d*d\d+(?:\s*[+-]\s*(?:\d*d\d+|\d+))*)/i, "").trim();
+      row.note = extra && !row.damage ? fixDiceText(raw) : "";
+      if (extra && row.damage && !/^\d*d\d+/i.test(extra)) row.note = extra.replace(/^[+\-\s]+/, "");
+      rows.push(row);
+    });
+  });
+  return rows;
+}
+
+/** THAC0 for a monster: the fighter attack column indexed by its Hit Dice. */
+export function monsterThac0(hd) {
+  const parsed = parseMonsterHitDice(hd);
+  const level = Math.max(1, Math.floor(parsed.count || 1));
+  return attackNeeded(attackSpecFor("fighter", level, 0).spec, 0);
+}
+
+/* ------------------------------------------------------------------ *
  * Spell helpers                                                      *
  * ------------------------------------------------------------------ */
 

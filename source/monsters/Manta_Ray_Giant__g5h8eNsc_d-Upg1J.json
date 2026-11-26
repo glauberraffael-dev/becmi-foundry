@@ -1,0 +1,55 @@
+{
+  "_id": "g5h8eNsc_d-Upg1J",
+  "_key": "!actors!g5h8eNsc_d-Upg1J",
+  "name": "Manta Ray (Giant)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "10",
+    "hp": 45,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 buffet/1 tail",
+    "damage": "3d4/2d10 + paralysis",
+    "appearing": "0 (1)",
+    "saveAs": "F5",
+    "morale": 7,
+    "treasure": "V",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 1750,
+    "terrain": "Ocean",
+    "monsterType": "Giant Animal (Rare)",
+    "special": "<p>Paralysis: A tail hit requires a saving throw vs. poison or the victim is paralysed.</p>",
+    "description": "Giant manta rays grow to about 40 feet wide and 75 feet long. Besides their poisonous tail, they can buffet a creature for 3d4 damage and sometimes swallow treasure from the ocean floor.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 45,
+        "max": 45
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Manta Ray (Giant)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

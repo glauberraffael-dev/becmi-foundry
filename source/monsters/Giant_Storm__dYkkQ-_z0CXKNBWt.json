@@ -1,0 +1,55 @@
+{
+  "_id": "dYkkQ-_z0CXKNBWt",
+  "_key": "!actors!dYkkQ-_z0CXKNBWt",
+  "name": "Giant (Storm)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "15",
+    "hp": 68,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 + special",
+    "damage": "8d6 + special",
+    "appearing": "1 (1d3)",
+    "saveAs": "F15",
+    "morale": 10,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 18,
+    "alignment": "Lawful",
+    "xpValue": 3750,
+    "terrain": "Mountain, Cloud, Ocean",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Lightning Bolt: Every 5 rounds in a storm; damage equals remaining HP (save vs. spells halves it).</p><p>Immunity: Lightning does not affect storm giants.</p><p>Thrown Boulders: 3d6 damage; range 150/300/450 yards.</p>",
+    "description": "Storm giants are over 22 feet tall with bronze skin and red or yellow hair. They love thunderstorms, can create one in a turn, and in a storm may throw a lightning bolt every five rounds for damage equal to their remaining hit points.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 68,
+        "max": 68
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Storm)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

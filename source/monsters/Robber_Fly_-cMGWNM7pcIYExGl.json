@@ -1,0 +1,55 @@
+{
+  "_id": "-cMGWNM7pcIYExGl",
+  "_key": "!actors!-cMGWNM7pcIYExGl",
+  "name": "Robber Fly",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite",
+    "damage": "1d8",
+    "appearing": "1d6 (2d6)",
+    "saveAs": "F1",
+    "morale": 8,
+    "treasure": "U",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Open, Ruins, Woods",
+    "monsterType": "Lowlife (Rare)",
+    "special": "<p>Flying: 180' (60').</p><p>Surprise: 1-4 on 1d6.</p><p>Immunity: Giant bee poison.</p>",
+    "description": "A robber fly is a 3-foot giant fly with black and yellow stripes. It prefers giant bees as food and is immune to their poison. Patient hunters, robber flies hide in shadows to surprise prey on 1-4 of a d6 and can leap up to 30 feet to bite.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Robber Fly",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

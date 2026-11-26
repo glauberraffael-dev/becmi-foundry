@@ -1,0 +1,55 @@
+{
+  "_id": "U_TBfRkBIRv157rl",
+  "_key": "!actors!U_TBfRkBIRv157rl",
+  "name": "Weretiger",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d6/1d6/2d6",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F5",
+    "morale": 9,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 300,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Common)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Surprise: 1-4 on 1d6.</p><p>Human Form AC: 9.</p>",
+    "description": "Weretigers are relatives of the great cats: curious, dangerous when threatened, and quiet trackers that surprise on 1-4 on 1d6. They are good swimmers and summon local great cats, preferring tigers. In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Weretiger",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

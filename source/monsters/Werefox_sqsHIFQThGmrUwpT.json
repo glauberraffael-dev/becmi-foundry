@@ -1,0 +1,55 @@
+{
+  "_id": "sqsHIFQThGmrUwpT",
+  "_key": "!actors!sqsHIFQThGmrUwpT",
+  "name": "Werefox",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "3 + 2",
+    "hp": 16,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 bite or weapon",
+    "damage": "1d6 or by weapon",
+    "appearing": "1d6 (2d6)",
+    "saveAs": "F3",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 12,
+    "alignment": "Neutral",
+    "xpValue": 75,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Uncommon)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Charm: Three times per day; lasts up to 24 hours (persons in human form, animals in fox form).</p><p>Swimming: 90' (30').</p><p>Human Form AC: 9.</p>",
+    "description": "Werefoxes move at full speed even through dense underbrush and are highly intelligent, often becoming magic-users who can cast only in human form. They can charm three times per day, for up to 24 hours: persons in human form, animals in fox form. They swim at 90' (30').",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 16,
+        "max": 16
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Werefox",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

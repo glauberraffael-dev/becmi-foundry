@@ -1,0 +1,55 @@
+{
+  "_id": "oMwllZKjpmSHV2J9",
+  "_key": "!actors!oMwllZKjpmSHV2J9",
+  "name": "Wereshark",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "1 bite",
+    "damage": "2d6",
+    "appearing": "0 (2d6)",
+    "saveAs": "F4",
+    "morale": 7,
+    "treasure": "C",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Uncommon)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Swimming: 180' (60'); no land movement.</p><p>Forced Change: At full moon the wereshark becomes a mako shark and loses its intelligence.</p><p>Human Form AC: 9.</p>",
+    "description": "Weresharks are mermen who can take the form of a mako shark in darkness. At full moon they must change and become bloodthirsty killers. They swim at 180' (60') and can be harmed only by magic or silver weapons. In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Wereshark",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

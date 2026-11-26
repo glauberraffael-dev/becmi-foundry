@@ -1,0 +1,55 @@
+{
+  "_id": "7YxKXfAQuaEVsdOe",
+  "_key": "!actors!7YxKXfAQuaEVsdOe",
+  "name": "Dragon Ruler (Pearl)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -8,
+    "hd": "24",
+    "hp": 108,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "Up to 9 (see below)",
+    "damage": "See below",
+    "appearing": "1 (1) (unique)",
+    "saveAs": "F36",
+    "morale": 10,
+    "treasure": "H x 4, I x 3, N, O",
+    "intelligence": 18,
+    "alignment": "Chaotic",
+    "xpValue": 25250,
+    "terrain": "Any",
+    "monsterType": "Dragon (Unique)",
+    "special": "<p>Flying: 420' (140').</p><p>Breath: As any chaotic dragon.</p>",
+    "description": "Pearl, the Moon Dragon, is the ruler of all Chaotic dragons. It flies at 420' (140') and can use up to nine attacks per round, including the breath weapon of any Chaotic dragon.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 108,
+        "max": 108
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon Ruler (Pearl)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

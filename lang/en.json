@@ -312,5 +312,12 @@
   "BECMI.sheet.classification": "Classification",
   "BECMI.labels.monsterType": "Monster Type",
   "BECMI.notification.autoLevel": "{actor} advanced to level {level}.",
-  "BECMI.notification.notEnoughXp": "Not enough XP for the next level."
+  "BECMI.notification.notEnoughXp": "Not enough XP for the next level.",
+
+  "BECMI.sheet.xpNextReadonly": "Derived from the character class; it cannot be edited.",
+  "BECMI.sheet.hpCurrentHint": "Current HP — editable at any time, including from the token.",
+  "BECMI.sheet.monsterAttacks": "Attack Macros",
+  "BECMI.sheet.rollAttackAndDamage": "Roll attack and damage for this natural attack",
+  "BECMI.sheet.noMonsterAttacks": "No natural attacks are defined for this monster.",
+  "BECMI.notification.noMonsterAttack": "This monster has no attack with that index."
 }

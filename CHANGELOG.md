@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.17
+
+- "Next level XP" is now strictly derived from the RC class table. Forms,
+  actions and external updates cannot write it; manual level edits use the same
+  `advanceActorLevels` HP progression as XP level-ups.
+- Current HP is always editable, including from the token bar in use mode, for
+  characters and monsters. New actors bind their token bar to
+  `attributes.hp.value` automatically.
+- Every natural attack now has its own rollable button on monster sheets, with
+  monster THAC0 taken from the fighter column by Hit Dice. OCR dice typos such
+  as `ldl0` are normalized before rolling.
+- The Bestiary rebuilds named sheets from the page-ordered Rules Cyclopedia
+  oracle instead of synthetic `Form 1/2` entries. Lycanthropes, giants,
+  pterosaurs, gemstone dragons, dragon rulers, manta rays, mystics, manticore,
+  robber fly, yellow mold, thoul and wight now have individual statistics and
+  descriptions.
+
 ## 0.1.16
 
 - Added edit/use mode to actor and item sheets: use mode disables field edits and

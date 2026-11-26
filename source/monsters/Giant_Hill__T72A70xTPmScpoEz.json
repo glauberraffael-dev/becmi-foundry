@@ -1,0 +1,55 @@
+{
+  "_id": "T72A70xTPmScpoEz",
+  "_key": "!actors!T72A70xTPmScpoEz",
+  "name": "Giant (Hill)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "2d8",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F8",
+    "morale": 8,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 650,
+    "terrain": "Hill, Mountain",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Thrown Boulders: 3d6 damage; range 30/60/100 yards.</p>",
+    "description": "Hill giants are 12-foot hairy brutes that wear animal skins and carry huge clubs and spears. They sometimes throw rocks (range 30/60/100) and raid human communities for food and plunder.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Hill)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

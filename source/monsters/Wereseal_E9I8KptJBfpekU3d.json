@@ -1,0 +1,55 @@
+{
+  "_id": "E9I8KptJBfpekU3d",
+  "_key": "!actors!E9I8KptJBfpekU3d",
+  "name": "Wereseal",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "5 + 2",
+    "hp": 25,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite",
+    "damage": "2d6",
+    "appearing": "0 (2d10)",
+    "saveAs": "F5",
+    "morale": 9,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 400,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Uncommon)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Swimming: 180' (60').</p><p>Bull Wereseal: AC 3; HD 8*; MV 180' (60'); Dmg 2d10; Save F8; ML 11; XPV 1,200.</p><p>Human Form AC: 9.</p>",
+    "description": "Wereseals live near cold seacoasts. The common female form is usually not aggressive, but a bull wereseal is dangerous: AC 3, HD 8*, move 180' (60'), damage 2d10, Save F8, ML 11, XPV 1,200. One bull is usually accompanied by 2d4 females. Wereseals swim at 180' (60').",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 25,
+        "max": 25
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Wereseal",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

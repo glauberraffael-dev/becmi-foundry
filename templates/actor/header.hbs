@@ -44,7 +44,7 @@
       </div>
       <div class="becmi-field becmi-field--wide">
         <label>{{localize 'BECMI.labels.nextLevelXp'}}</label>
-        <input name="system.attributes.xpNext" type="number" value="{{system.attributes.xpNext}}" {{#unless editable}}disabled{{/unless}}>
+        <span class="becmi-derived becmi-derived--readonly" data-xp-next title="{{localize 'BECMI.sheet.xpNextReadonly'}}">{{system.attributes.xpNext}}</span>
       </div>
       {{else}}
       <div class="becmi-field becmi-field--wide">

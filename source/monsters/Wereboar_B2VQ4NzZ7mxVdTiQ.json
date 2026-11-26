@@ -1,0 +1,55 @@
+{
+  "_id": "B2VQ4NzZ7mxVdTiQ",
+  "_key": "!actors!B2VQ4NzZ7mxVdTiQ",
+  "name": "Wereboar",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "4 + 1",
+    "hp": 19,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 tusk slash",
+    "damage": "2d6",
+    "appearing": "1d4 (2d4)",
+    "saveAs": "F4",
+    "morale": 9,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 200,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Common)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Berserk Rage: +2 on attack rolls and fights to the death.</p><p>Human Form AC: 9.</p>",
+    "description": "Wereboars are semi-intelligent, bad-tempered lycanthropes. In human form they often seem to be berserkers and may fight to the death, gaining +2 on attack rolls. They summon normal boars and do not associate with devil swine. In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 19,
+        "max": 19
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Wereboar",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

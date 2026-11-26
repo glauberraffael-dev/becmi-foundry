@@ -301,7 +301,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Black_",
         "key": "Bear (Black)",
         "category": "Normal Animal"
       }
@@ -338,7 +338,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Cave_",
         "key": "Bear (Cave)",
         "category": "Normal Animal"
       }
@@ -375,7 +375,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Grizzly_",
         "key": "Bear (Grizzly)",
         "category": "Normal Animal"
       }
@@ -412,7 +412,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Polar_",
         "key": "Bear (Polar)",
         "category": "Normal Animal"
       }
@@ -449,7 +449,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Great_",
         "key": "Boar (Great)",
         "category": "Normal Animal"
       }
@@ -486,7 +486,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Normal_",
         "key": "Boar (Normal)",
         "category": "Normal Animal"
       }
@@ -634,7 +634,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Normal_",
         "key": "Elephant (Normal)",
         "category": "Normal Animal"
       }
@@ -671,7 +671,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Prehistoric_",
         "key": "Elephant (Prehistoric)",
         "category": "Normal Animal"
       }
@@ -856,7 +856,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Riding Horse_",
         "key": "Horse (Riding Horse)",
         "category": "Normal Animal"
       }
@@ -893,7 +893,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_War Horse_",
         "key": "Horse (War Horse)",
         "category": "Normal Animal"
       }
@@ -962,14 +962,14 @@
     }
   },
   {
-    "name": "Manta Ray (Form 1)",
+    "name": "Manta Ray",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Manta Ray (Form 1)",
-        "category": "Normal Animal"
+        "key": "Manta Ray",
+        "category": "Normal Animal",
+        "variant": ""
       }
     },
     "system": {
@@ -980,57 +980,57 @@
         "dungeon": 120,
         "outdoor": 40
       },
-      "attacks": "1 tail 1 buffet/1 tail",
-      "damage": "1d6 + poison",
-      "appearing": "1d3 (1d4)",
-      "saveAs": "F4 (see below)",
-      "morale": 8,
-      "treasure": "(V) F Chaotic (without)",
-      "intelligence": 9,
-      "alignment": "Chaotic",
-      "xpValue": 175,
-      "terrain": "Ocean.",
-      "monsterType": "Normal: Normal Animal XP Value: 175 13** = 3,250 (Common); Giant: Giant Animal (",
-      "description": "Manta rays are aquatic creatures, flat fish whose bodies are shaped like broad wings or sails. They flap their \"wings\" to propel them through the water. When a manta ray lies in the sand on the ocean floor it is completely invisible. Normal Manta Ray: Normal manta rays can grow to be 7' in width and 12' in length. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. They attack with this tail. A saving throw vs. poison will prevent paralysis. Giant Manta Ray: Giant manta rays can be up to about 40' in width and 75' in length. Beside the poisonous tail, they can also buffet (ram) a creature for 3d4 points of damage. They feed from the ocean floor and sometimes swallow treasure that has settled there.",
-      "special": "<p>When a manta ray lies in the sand on the ocean floor it is completely invisible. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. A saving throw vs. poison will prevent paralysis.</p>",
-      "notes": "14** = 3,500 Manta rays are aquatic creatures, flat fish _Monster Type:_ Monster (Rare). Planar Mon15** = 3,750 whose bodies are shaped like broad wings or ster (Very Rare). 16** = 4,050",
+      "attacks": "1 tail",
+      "damage": "1d8 + paralysis",
+      "appearing": "0 (1-3)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 125,
+      "terrain": "Ocean",
+      "monsterType": "Normal Animal (Common)",
+      "special": "<p>Paralysis: A hit on the tail requires a saving throw vs. poison or the victim is paralysed.</p>",
+      "description": "Manta rays are flat aquatic fish whose broad wings propel them through the water. A manta lying on the ocean floor is completely invisible. The normal manta grows to 7 feet wide and 12 feet long, and attacks with a tail full of poisonous spines.",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
   },
   {
-    "name": "Manta Ray (Form 2)",
+    "name": "Manta Ray (Giant)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Manta Ray (Form 2)",
-        "category": "Normal Animal"
+        "key": "Manta Ray (Giant)",
+        "category": "Normal Animal",
+        "variant": ""
       }
     },
     "system": {
-      "ac": 8,
-      "hd": "4",
-      "hp": 18,
+      "ac": 6,
+      "hd": "10",
+      "hp": 45,
       "move": {
-        "dungeon": 90,
-        "outdoor": 30
+        "dungeon": 180,
+        "outdoor": 60
       },
-      "attacks": "1 snakebite + special",
-      "damage": "1d6 + poison",
-      "appearing": "1d3 (1d4)",
-      "saveAs": "F4 (see below)",
-      "morale": 8,
-      "treasure": "(V) F Chaotic (without)",
-      "intelligence": 9,
-      "alignment": "Chaotic",
-      "xpValue": 175,
-      "terrain": "Ocean.",
-      "monsterType": "Normal: Normal Animal XP Value: 175 13** = 3,250 (Common); Giant: Giant Animal (",
-      "description": "Manta rays are aquatic creatures, flat fish whose bodies are shaped like broad wings or sails. They flap their \"wings\" to propel them through the water. When a manta ray lies in the sand on the ocean floor it is completely invisible. Normal Manta Ray: Normal manta rays can grow to be 7' in width and 12' in length. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. They attack with this tail. A saving throw vs. poison will prevent paralysis. Giant Manta Ray: Giant manta rays can be up to about 40' in width and 75' in length. Beside the poisonous tail, they can also buffet (ram) a creature for 3d4 points of damage. They feed from the ocean floor and sometimes swallow treasure that has settled there.",
-      "special": "<p>When a manta ray lies in the sand on the ocean floor it is completely invisible. The tail on the manta ray has many sharp poisonous spines that can paralyze its victim. A saving throw vs. poison will prevent paralysis.</p>",
-      "notes": "14** = 3,500 Manta rays are aquatic creatures, flat fish _Monster Type:_ Monster (Rare). Planar Mon15** = 3,750 whose bodies are shaped like broad wings or ster (Very Rare). 16** = 4,050",
+      "attacks": "1 buffet/1 tail",
+      "damage": "3d4/2d10 + paralysis",
+      "appearing": "0 (1)",
+      "saveAs": "F5",
+      "morale": 7,
+      "treasure": "V",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 1750,
+      "terrain": "Ocean",
+      "monsterType": "Giant Animal (Rare)",
+      "special": "<p>Paralysis: A tail hit requires a saving throw vs. poison or the victim is paralysed.</p>",
+      "description": "Giant manta rays grow to about 40 feet wide and 75 feet long. Besides their poisonous tail, they can buffet a creature for 3d4 damage and sometimes swallow treasure from the ocean floor.",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
@@ -1110,125 +1110,14 @@
     }
   },
   {
-    "name": "Pterosaur ((Pteranodon))",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur ((Pteranodon))",
-        "category": "Normal Animal"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "60",
-      "hp": 270,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 7,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 10,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Pterosaur ((Pterodactyl))",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur ((Pterodactyl))",
-        "category": "Normal Animal"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "180",
-      "hp": 810,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 7,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 6500,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Pterosaur ((Pterosaur))",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur ((Pterosaur))",
-        "category": "Normal Animal"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "240",
-      "hp": 1080,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
-      "morale": 7,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 2,
-      "alignment": "Neutral",
-      "xpValue": 10,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Pterosaur (Large)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
         "key": "Pterosaur (Large)",
-        "category": "Normal Animal"
+        "category": "Normal Animal",
+        "variant": ""
       }
     },
     "system": {
@@ -1239,33 +1128,33 @@
         "dungeon": 0,
         "outdoor": 0
       },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
+      "attacks": "1 beak",
+      "damage": "3d6",
+      "appearing": "0 (1d2)",
+      "saveAs": "F5",
       "morale": 9,
-      "treasure": "Nil Nil Nil",
+      "treasure": "Nil",
       "intelligence": 2,
       "alignment": "Neutral",
-      "xpValue": 1,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
+      "xpValue": 1000,
+      "terrain": "Mountain (prehistoric)",
+      "monsterType": "Prehistoric Animal (Very Rare)",
+      "special": "<p>Flying: 180' (60').</p><p>Swoop: Double damage when attacking with surprise.</p><p>Carrying: 4,000 cn at full speed; 8,000 cn at half speed.</p>",
+      "description": "Large pterosaurs have wingspans over 50 feet and can carry off a creature as large as a warhorse. A surprise attack is a swoop for double damage. They carry 4,000 cn at full speed or 8,000 cn at half speed.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
   },
   {
-    "name": "Pterosaur (Medium)",
+    "name": "Pterosaur (Pteranodon)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur (Medium)",
-        "category": "Normal Animal"
+        "key": "Pterosaur (Pteranodon)",
+        "category": "Normal Animal",
+        "variant": ""
       }
     },
     "system": {
@@ -1276,33 +1165,33 @@
         "dungeon": 0,
         "outdoor": 0
       },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
+      "attacks": "1 beak",
+      "damage": "1d12",
+      "appearing": "0 (1d4)",
+      "saveAs": "F3",
       "morale": 8,
-      "treasure": "Nil Nil Nil",
+      "treasure": "Nil",
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 175,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
+      "terrain": "Hill, Mountain, Jungle (prehistoric)",
+      "monsterType": "Prehistoric Animal (Very Rare)",
+      "special": "<p>Flying: 240' (120').</p><p>Carrying: 2,000 cn at full speed; 3,000 cn at half speed.</p>",
+      "description": "Pteranodons are larger, more aggressive pterosaurs with wingspans of up to 50 feet. They often attack and carry off man-sized creatures, and can carry 2,000 cn at full speed or 3,000 cn at half speed.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
   },
   {
-    "name": "Pterosaur (Small)",
+    "name": "Pterosaur (Pterodactyl)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Pterosaur (Small)",
-        "category": "Normal Animal"
+        "key": "Pterosaur (Pterodactyl)",
+        "category": "Normal Animal",
+        "variant": ""
       }
     },
     "system": {
@@ -1313,19 +1202,19 @@
         "dungeon": 0,
         "outdoor": 0
       },
-      "attacks": "1 beak 1 beak 1 beak",
-      "damage": "1d3 1d2 3d6",
-      "appearing": "2d4 (2d4) 0(1d4) 0(1d2)",
-      "saveAs": "F1 F3 F5",
+      "attacks": "1 beak",
+      "damage": "1d3",
+      "appearing": "2d4 (2d4)",
+      "saveAs": "F1",
       "morale": 7,
-      "treasure": "Nil Nil Nil",
+      "treasure": "Nil",
       "intelligence": 2,
       "alignment": "Neutral",
       "xpValue": 10,
-      "terrain": "Ethereal Plane, Wormholes (only).",
-      "monsterType": "Prehistoric Animal (Very Rare).",
-      "description": "These are hollow-boned flying and gliding reptiles. They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. Small Pterosaur (Pterodactyl): These are batlike reptiles with wingspans of 8-10 feet. They hunt insects, birds, and small animals, gliding slowly along air currents to spot their prey. If driven by great hunger, they may attack human-sized creatures. Medium Pterosaur (Pteranodon): Pteranodons are much larger and more aggressive. They have a wingspan of up to 50'. They will often attack and carry off man-sized creatures. Large Pterosaur: Large pterosaurs have a wingspan of over 50 feet. If they attack with surprise, they will make a swoop attack for double damage. They can carry off a creature as large as a warhorse. gle (prehistoric). Large: Mountain (prehistoric). speed; 3,000 at half speed. A large pterosaur can carry 4,000 cn at full speed; 8,000 cn at half speed. Barding Multiplier: x 1.",
-      "special": "<p>They have long beaks filled with numerous teeth, and reptilian arm structures with skin webbing which constitutes their wings. If they attack with surprise, they will make a swoop attack for double damage.</p>",
+      "terrain": "Hill, Mountain, Jungle (prehistoric)",
+      "monsterType": "Prehistoric Animal (Very Rare)",
+      "special": "<p>Flying: 180' (60').</p>",
+      "description": "Small pterosaurs are batlike reptiles with 8- to 10-foot wingspans. They hunt insects, birds and small animals by gliding on air currents, attacking human-sized creatures only when driven by great hunger.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -1443,12 +1332,49 @@
     }
   },
   {
+    "name": "Robber Fly",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Robber Fly",
+        "category": "Normal Animal",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "2",
+      "hp": 9,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 bite",
+      "damage": "1d8",
+      "appearing": "1d6 (2d6)",
+      "saveAs": "F1",
+      "morale": 8,
+      "treasure": "U",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 20,
+      "terrain": "Open, Ruins, Woods",
+      "monsterType": "Lowlife (Rare)",
+      "special": "<p>Flying: 180' (60').</p><p>Surprise: 1-4 on 1d6.</p><p>Immunity: Giant bee poison.</p>",
+      "description": "A robber fly is a 3-foot giant fly with black and yellow stripes. It prefers giant bees as food and is immune to their poison. Patient hunters, robber flies hide in shadows to surprise prey on 1-4 of a d6 and can leap up to 30 feet to bite.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Shark (Bull)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Bull_",
         "key": "Shark (Bull)",
         "category": "Normal Animal"
       }
@@ -1485,7 +1411,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Great_ _White_",
         "key": "Shark (Great White)",
         "category": "Normal Animal"
       }
@@ -1522,7 +1448,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Mako_",
         "key": "Shark (Mako)",
         "category": "Normal Animal"
       }
@@ -1892,7 +1818,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Great_",
         "key": "Whales (Great)",
         "category": "Normal Animal"
       }
@@ -1929,7 +1855,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Killer_",
         "key": "Whales (Killer)",
         "category": "Normal Animal"
       }
@@ -1966,7 +1892,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Narwhal_",
         "key": "Whales (Narwhal)",
         "category": "Normal Animal"
       }
@@ -2003,7 +1929,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Dire Wolf_",
         "key": "Wolf (Dire Wolf)",
         "category": "Normal Animal"
       }
@@ -2040,7 +1966,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Normal Wolf_",
         "key": "Wolf (Normal Wolf)",
         "category": "Normal Animal"
       }
@@ -2405,80 +2331,6 @@
     }
   },
   {
-    "name": "Robber Fly (Form 1)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Robber Fly (Form 1)",
-        "category": "Lowlife"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "2",
-      "hp": 9,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "1 touch",
-      "damage": "Loss of 1 sense (special, see",
-      "appearing": "1d6 (2d6) poison.",
-      "saveAs": "F10",
-      "morale": 7,
-      "treasure": "Nil",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 20,
-      "terrain": "Open, Ruins, Woods. Treasure Type: Nil XP Value: 20",
-      "monsterType": "Lowlife (Rare).",
-      "description": "A robber fly is a 3' long giant fly with black and yellow stripes. From a distance, robber flies look like giant bees. They are carnivores, and may attack adventurers. However, they prefer giant bees as food, and are immune to their poison. Robber flies are patient hunters. They often hide in shadows and wait to surprise prey (1-4 on with its bite.",
-      "special": "<p>However, they prefer giant bees as food, and are immune to their poison. They often hide in shadows and wait to surprise prey (1-4 on with its bite.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Robber Fly (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Robber Fly (Form 2)",
-        "category": "Lowlife"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "10",
-      "hp": 45,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "1 touch",
-      "damage": "Loss of 1 sense (special, see",
-      "appearing": "1d6 (2d6) poison.",
-      "saveAs": "F10",
-      "morale": 7,
-      "treasure": "Nil",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 20,
-      "terrain": "Open, Ruins, Woods. Treasure Type: Nil XP Value: 20",
-      "monsterType": "Lowlife (Rare).",
-      "description": "A robber fly is a 3' long giant fly with black and yellow stripes. From a distance, robber flies look like giant bees. They are carnivores, and may attack adventurers. However, they prefer giant bees as food, and are immune to their poison. Robber flies are patient hunters. They often hide in shadows and wait to surprise prey (1-4 on with its bite.",
-      "special": "<p>However, they prefer giant bees as food, and are immune to their poison. They often hide in shadows and wait to surprise prey (1-4 on with its bite.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Scorpion, Giant",
     "type": "monster",
     "flags": {
@@ -2738,51 +2590,14 @@
     }
   },
   {
-    "name": "Yellow Mold (Form 1)",
+    "name": "Yellow Mold",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Yellow Mold (Form 1)",
-        "category": "Lowlife"
-      }
-    },
-    "system": {
-      "ac": 3,
-      "hd": "2",
-      "hp": 9,
-      "move": {
-        "dungeon": 0,
-        "outdoor": 0
-      },
-      "attacks": "1 bite/1 sting",
-      "damage": "2d8/1d6 + poison",
-      "appearing": "1d2 (1d6)",
-      "saveAs": "F4",
-      "morale": 9,
-      "treasure": "E",
-      "intelligence": 3,
-      "alignment": "Chaotic",
-      "xpValue": 850,
-      "terrain": "Cavern, Ruins.",
-      "monsterType": "Lowlife (Common).",
-      "description": "Can always be hit Spores F2 Not applicable Nil Neutral",
-      "special": "",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Yellow Mold (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Yellow Mold (Form 2)",
-        "category": "Lowlife"
+        "key": "Yellow Mold",
+        "category": "Lowlife",
+        "variant": ""
       }
     },
     "system": {
@@ -2793,19 +2608,19 @@
         "dungeon": 0,
         "outdoor": 0
       },
-      "attacks": "1 bite/1 sting",
-      "damage": "2d8/1d6 + poison",
-      "appearing": "1d2 (1d6)",
-      "saveAs": "F4",
-      "morale": 9,
-      "treasure": "E",
-      "intelligence": 3,
-      "alignment": "Chaotic",
-      "xpValue": 850,
-      "terrain": "Cavern, Ruins.",
-      "monsterType": "Lowlife (Common).",
-      "description": "Can always be hit Spores F2 Not applicable Nil Neutral",
-      "special": "",
+      "attacks": "Spores",
+      "damage": "1d6 + special",
+      "appearing": "1d8 (1d4)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "Nil",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 25,
+      "terrain": "Cavern, Ruins",
+      "monsterType": "Fungus",
+      "special": "<p>Can always be hit.</p><p>Spores: 1d6 damage plus the special effect described in the Rules Cyclopedia.</p><p>Morale: Not applicable.</p>",
+      "description": "Yellow mold can always be hit. It does not move or fight in melee, but releases spores that deal 1d6 damage and have an additional special effect.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -2891,7 +2706,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Amber_",
         "key": "Golem (Amber)",
         "category": "Construct"
       }
@@ -2928,7 +2743,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Bone_",
         "key": "Golem (Bone)",
         "category": "Construct"
       }
@@ -2965,7 +2780,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Bronze_",
         "key": "Golem (Bronze)",
         "category": "Construct"
       }
@@ -3002,7 +2817,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Mud_",
         "key": "Golem (Mud)",
         "category": "Construct"
       }
@@ -3039,7 +2854,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Obsidian_",
         "key": "Golem (Obsidian)",
         "category": "Construct"
       }
@@ -3076,7 +2891,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Wood_",
         "key": "Golem (Wood)",
         "category": "Construct"
       }
@@ -3113,7 +2928,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Crystal_",
         "key": "Statue, Living (Crystal)",
         "category": "Construct"
       }
@@ -3150,7 +2965,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Iron_",
         "key": "Statue, Living (Iron)",
         "category": "Construct"
       }
@@ -3187,7 +3002,7 @@
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
+        "variant": "_Rock_",
         "key": "Statue, Living (Rock)",
         "category": "Construct"
       }
@@ -3478,6 +3293,80 @@
     }
   },
   {
+    "name": "Dragon Ruler (Diamond)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Dragon Ruler (Diamond)",
+        "category": "Dragon",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": -10,
+      "hd": "30",
+      "hp": 135,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "Up to 9 (see below)",
+      "damage": "See below",
+      "appearing": "1 (1) (unique)",
+      "saveAs": "F36",
+      "morale": 10,
+      "treasure": "H x 4, I x 3, N, O",
+      "intelligence": 18,
+      "alignment": "Lawful",
+      "xpValue": 38750,
+      "terrain": "Any",
+      "monsterType": "Dragon (Unique)",
+      "special": "<p>Floating: 420' (140').</p><p>Breath: As any lawful dragon.</p>",
+      "description": "Diamond, the Star Dragon, is the ruler of all Lawful dragons. It flies at 420' (140') and can use up to nine attacks per round, including the breath weapon of any Lawful dragon.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Dragon Ruler (Pearl)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Dragon Ruler (Pearl)",
+        "category": "Dragon",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": -8,
+      "hd": "24",
+      "hp": 108,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "Up to 9 (see below)",
+      "damage": "See below",
+      "appearing": "1 (1) (unique)",
+      "saveAs": "F36",
+      "morale": 10,
+      "treasure": "H x 4, I x 3, N, O",
+      "intelligence": 18,
+      "alignment": "Chaotic",
+      "xpValue": 25250,
+      "terrain": "Any",
+      "monsterType": "Dragon (Unique)",
+      "special": "<p>Flying: 420' (140').</p><p>Breath: As any chaotic dragon.</p>",
+      "description": "Pearl, the Moon Dragon, is the ruler of all Chaotic dragons. It flies at 420' (140') and can use up to nine attacks per round, including the breath weapon of any Chaotic dragon.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Dragon Turtle",
     "type": "monster",
     "flags": {
@@ -3515,74 +3404,37 @@
     }
   },
   {
-    "name": "Dragon, Gemstone (Form 1)",
+    "name": "Dragon, Gemstone",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Dragon, Gemstone (Form 1)",
-        "category": "Dragon"
+        "key": "Dragon, Gemstone",
+        "category": "Dragon",
+        "variant": ""
       }
     },
     "system": {
-      "ac": 8,
-      "hd": "30",
-      "hp": 135,
+      "ac": 3,
+      "hd": "6",
+      "hp": 27,
       "move": {
-        "dungeon": 180,
-        "outdoor": 60
+        "dungeon": 120,
+        "outdoor": 40
       },
-      "attacks": "Up to 9 (see below)",
-      "damage": "See below Breath: As any chaotic dragon Breath: As any lawful dragon",
-      "appearing": "1(1) (unique)",
-      "saveAs": "F36 (see below)",
-      "morale": 10,
-      "treasure": "Hx4, I x 3 , N , O",
-      "intelligence": 18,
-      "alignment": "Lawful",
-      "xpValue": 38750,
-      "terrain": "Outer Plane (their own). _Load:_ Full speed when carrying 1,000 cn X HD in encumbrance; half speed when carrying 2,000 cn x HD in encumbrance.",
-      "monsterType": "Dragon, Planar Monster (Very",
-      "description": "Dragons are a very old race of huge winged lizards. They like to live in isolated, out-of-the-way places where few men are found. Dragons are extremely powerful monsters and should be used with caution when encountered by low level player characters. It is recommended that until characters reach 4th level and higher that only the youngest and smallest dragons be used. There are several types of dragon, distinguishable by the colors of their hides: white, black, green, blue, red, and gold. Though the colors of their scaly hides make dragons look different, they all have quite a few things in common: they are all hatched from eggs, all are carnivores, all have breath weapons. Dragons have a great love of treasure, but they value their own lives more. Dragons in battle will do everything possible to save their own lives, including surrender. Many dragons live hundreds or thousands of years. Because of their long history, they tend to think less of the younger races (such as Man). Chaotic dragons might capture men, but will usually kill and eat them immediately. Neutral dragons might either attack or ignore a party completely. Lawful dragons, however, may actually help a party if the c",
-      "special": "<p>Though the colors of their scaly hides make dragons look different, they all have quite a few things in common: they are all hatched from eggs, all are carnivores, all have breath weapons.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Dragon, Gemstone (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Dragon, Gemstone (Form 2)",
-        "category": "Dragon"
-      }
-    },
-    "system": {
-      "ac": 10,
-      "hd": "30",
-      "hp": 135,
-      "move": {
-        "dungeon": 180,
-        "outdoor": 60
-      },
-      "attacks": "Up to 9 (see below)",
-      "damage": "See below Breath: As any chaotic dragon Breath: As any lawful dragon",
-      "appearing": "1(1) (unique)",
-      "saveAs": "F36 (see below)",
-      "morale": 10,
-      "treasure": "Hx4, I x 3 , N , O",
-      "intelligence": 18,
-      "alignment": "Lawful",
-      "xpValue": 38750,
-      "terrain": "Outer Plane (their own). _Load:_ Full speed when carrying 1,000 cn X HD in encumbrance; half speed when carrying 2,000 cn x HD in encumbrance.",
-      "monsterType": "Dragon, Planar Monster (Very",
-      "description": "Dragons are a very old race of huge winged lizards. They like to live in isolated, out-of-the-way places where few men are found. Dragons are extremely powerful monsters and should be used with caution when encountered by low level player characters. It is recommended that until characters reach 4th level and higher that only the youngest and smallest dragons be used. There are several types of dragon, distinguishable by the colors of their hides: white, black, green, blue, red, and gold. Though the colors of their scaly hides make dragons look different, they all have quite a few things in common: they are all hatched from eggs, all are carnivores, all have breath weapons. Dragons have a great love of treasure, but they value their own lives more. Dragons in battle will do everything possible to save their own lives, including surrender. Many dragons live hundreds or thousands of years. Because of their long history, they tend to think less of the younger races (such as Man). Chaotic dragons might capture men, but will usually kill and eat them immediately. Neutral dragons might either attack or ignore a party completely. Lawful dragons, however, may actually help a party if the c",
-      "special": "<p>Though the colors of their scaly hides make dragons look different, they all have quite a few things in common: they are all hatched from eggs, all are carnivores, all have breath weapons.</p>",
+      "attacks": "2 claws/1 bite or breath",
+      "damage": "See below",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F6",
+      "morale": 8,
+      "treasure": "H",
+      "intelligence": 9,
+      "alignment": "Neutral",
+      "xpValue": 725,
+      "terrain": "Any",
+      "monsterType": "Dragon (Rare)",
+      "special": "<p>Crystal: Lawful, similar to White; breath cold or crystal; 50% asleep; 10% talking.</p><p>Onyx: Neutral, similar to Black; breath acid or darkness; 40% asleep; 20% talking.</p><p>Jade: Neutral, similar to Green; breath chlorine gas or disease; 30% asleep; 30% talking.</p><p>Sapphire: Lawful, similar to Blue; breath lightning or vaporize; 20% asleep; 40% talking.</p><p>Ruby: Lawful, similar to Red; breath fire and melt; 10% asleep; 50% talking.</p><p>Amber: Chaotic, similar to Gold; breath fire and melt, gas and disease; 5% asleep; 100% talking.</p>",
+      "description": "Gemstone dragons are six distinct varieties: Crystal, Onyx, Jade, Sapphire, Ruby and Amber (or brown). Each is similar to a standard dragon colour and has its own alignment, breath weapon, sleeping chance and chance of speech.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -4070,6 +3922,43 @@
     }
   },
   {
+    "name": "Devil Swine",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Devil Swine",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "9",
+      "hp": 41,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 gore or blow",
+      "damage": "2d6 or by weapon",
+      "appearing": "1d3 (1d4)",
+      "saveAs": "F9",
+      "morale": 10,
+      "treasure": "C",
+      "intelligence": 11,
+      "alignment": "Chaotic",
+      "xpValue": 1600,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Uncommon)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Charm Person: Three times per day in either form; saving throw at -2.</p><p>Control: Usually keeps 0-3 (1d4-1) humans under its control.</p><p>Human Form AC: 9.</p>",
+      "description": "A devil swine appears as a huge hog or a grossly fat human and may change shape freely at night, but must keep one shape during daylight. It haunts the fringes of human settlements, favors human flesh, and ambushes when possible. Unlike wereboars, it is fat, pink and smooth-skinned.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Dryad",
     "type": "monster",
     "flags": {
@@ -4181,51 +4070,14 @@
     }
   },
   {
-    "name": "Giant (Form 1)",
+    "name": "Giant (Cloud)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Giant (Form 1)",
-        "category": "Humanoid"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "8",
-      "hp": 36,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 weapon 1 weapon 1 weapon 1 weapon",
-      "damage": "2d8 3d6 4d6 5d6",
-      "appearing": "1d4 (1d4) 1d2 (1d6) 1d2 (1d4) 1d2(1d3)",
-      "saveAs": "F8 F9 F10 F11",
-      "morale": 8,
-      "treasure": "E + 5,000 gp E + 5,000 gp E + 5,000gp E + 5,000gp",
-      "intelligence": 7,
-      "alignment": "Chaotic",
-      "xpValue": 650,
-      "terrain": "Any",
-      "monsterType": "Humanoid",
-      "description": "Bats are nocturnal flying insectivores. They often live in caves or abandoned buildings and find their way about by echolocation (a type of radar using hearing and echoes to locate objects). Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Normal bats: These very small mammals weigh only a few ounces. They will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character. Characters who are confused have a2 penalty on their attack rolls and saving throws and cannot cast spells. Normal bats must check morale each round unless they are controlled or summoned. Giant Bats: Giant bats are much larger cousins of normal bat species. Giant bats look like smaller bat species but grow to be approximately are carnivores (or, more appropriately, hemovores—blood-drinkers) and may attack humans if extremely hungry. Giant Vampire Bats: Of giant bat encounters, far more dangerous creatures (HD 2*, XP Value tra damage but its victim must make a saving throw vs. paralysis or fall unconscious for 1d10 rounds. This will allow the",
-      "special": "<p>Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Characters who are confused have a2 penalty on their attack rolls and saving throws and cannot cast spells.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Giant (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Giant (Form 2)",
-        "category": "Humanoid"
+        "key": "Giant (Cloud)",
+        "category": "Humanoid",
+        "variant": ""
       }
     },
     "system": {
@@ -4236,19 +4088,278 @@
         "dungeon": 120,
         "outdoor": 40
       },
-      "attacks": "1 weapon 1 + special I weapon 1 or special",
-      "damage": "6d6 8d6 + special 5dlO See below",
-      "appearing": "1d2 (1d3) 1 (1d3) 1d4(1d20) 1d2 (1d20)",
-      "saveAs": "F12 F15 F (level = HD) F (level = HD)",
+      "attacks": "1 weapon",
+      "damage": "6d6",
+      "appearing": "1d2 (1d3)",
+      "saveAs": "F12",
       "morale": 10,
-      "treasure": "E + 5,000 gp E + 5,000 gp E + 5,000 gp E + 5,000 gp",
-      "intelligence": 1,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 16,
       "alignment": "Neutral",
       "xpValue": 2300,
-      "terrain": "Any",
-      "monsterType": "Humanoid",
-      "description": "Bats are nocturnal flying insectivores. They often live in caves or abandoned buildings and find their way about by echolocation (a type of radar using hearing and echoes to locate objects). Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Normal bats: These very small mammals weigh only a few ounces. They will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character. Characters who are confused have a2 penalty on their attack rolls and saving throws and cannot cast spells. Normal bats must check morale each round unless they are controlled or summoned. Giant Bats: Giant bats are much larger cousins of normal bat species. Giant bats look like smaller bat species but grow to be approximately are carnivores (or, more appropriately, hemovores—blood-drinkers) and may attack humans if extremely hungry. Giant Vampire Bats: Of giant bat encounters, far more dangerous creatures (HD 2*, XP Value tra damage but its victim must make a saving throw vs. paralysis or fall unconscious for 1d10 rounds. This will allow the",
-      "special": "<p>Since they have very weak eyes, spells that affect sight (such as light) do not work on bats. However, a silence 15' radius spell will effectively \"blind\" a bat. Characters who are confused have a2 penalty on their attack rolls and saving throws and cannot cast spells.</p>",
+      "terrain": "Mountain, Cloud",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Surprise: Others suffer a 1-in-6 chance only.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+      "description": "Cloud giants stand 20 feet tall with white or gray skin and hair. They have keen senses and are rarely surprised (1 chance in 6). They live in cloud castles or mountain strongholds and keep rocs or dire wolves as guards.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Fire)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Fire)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "11 + 2",
+      "hp": 52,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 weapon",
+      "damage": "5d6",
+      "appearing": "1d2 (1d3)",
+      "saveAs": "F11",
+      "morale": 9,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 13,
+      "alignment": "Chaotic",
+      "xpValue": 2125,
+      "terrain": "Mountain, Desert",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Immunity: Fire-based attacks.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+      "description": "Fire giants have red skin and dark hair, stand 16 feet tall, and wear copper, brass or bronze armor. They live near volcanoes, are immune to fire-based attacks, and guard their castles with hydras or hellhounds.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Frost)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Frost)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "10 + 1",
+      "hp": 46,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 weapon",
+      "damage": "4d6",
+      "appearing": "1d2 (1d4)",
+      "saveAs": "F10",
+      "morale": 9,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 14,
+      "alignment": "Chaotic",
+      "xpValue": 1900,
+      "terrain": "Mountain",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Immunity: Cold-based attacks.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+      "description": "Frost giants stand 18 feet tall with pale skin, light hair and iron armor. They build castles above the timberline, are immune to cold-based attacks, and keep polar bears or wolves as guards.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Hill)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Hill)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "8",
+      "hp": 36,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 weapon",
+      "damage": "2d8",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F8",
+      "morale": 8,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 7,
+      "alignment": "Chaotic",
+      "xpValue": 650,
+      "terrain": "Hill, Mountain",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Thrown Boulders: 3d6 damage; range 30/60/100 yards.</p>",
+      "description": "Hill giants are 12-foot hairy brutes that wear animal skins and carry huge clubs and spears. They sometimes throw rocks (range 30/60/100) and raid human communities for food and plunder.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Mountain)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Mountain)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "12-20",
+      "hp": 54,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 weapon",
+      "damage": "5d10",
+      "appearing": "1d4 (1d20)",
+      "saveAs": "F (level = HD)",
+      "morale": 9,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 8,
+      "alignment": "Neutral",
+      "xpValue": 2125,
+      "terrain": "Mountain",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Thrown Boulders: 4d6 damage; range 100/200/400 yards.</p><p>Melee: Huge swords or stone clubs (1d10 x 5).</p><p>XP by HD: 9*=1,600; 10*=1,750; 11*=1,900; 12*=2,125; 13*=2,300; 14*=2,500; 15*=2,700; 16*=2,950; 17*=3,150; 18*=3,475; 19*=3,800; 20*=4,175.</p>",
+      "description": "Mountain giants resemble stone or hill giants and stand 12 to 20 feet tall, about one foot per Hit Die. They are reclusive mercenaries, carry huge swords or stone clubs, and often hurl boulders for 4d6 damage.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Sea)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Sea)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "9-15",
+      "hp": 41,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 or special",
+      "damage": "See below",
+      "appearing": "1d2 (1d20)",
+      "saveAs": "F (level = HD)",
+      "morale": 10,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 12,
+      "alignment": "Neutral",
+      "xpValue": 1750,
+      "terrain": "Ocean",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Water Current: 50-foot cone, 30 feet wide at the base; no save for the shove, save vs. death ray or be stunned 1d6 rounds.</p><p>Surface Wave: 120 feet long and 60 feet wide; 2d6 hull damage to vessels.</p><p>XP by HD: 9*=1,600; 10*=1,750; 11*=1,900; 12*=2,125; 13*=2,300; 14*=2,500; 15*=2,700.</p>",
+      "description": "Sea giants are usually friendly creatures that live in the deepest ocean canyons. They can hold their breath for a full turn on land and can push water in a 50-foot cone, shoving victims 60 feet away and stunning them for 1d6 rounds.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Stone)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Stone)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "9",
+      "hp": 41,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 weapon",
+      "damage": "3d6",
+      "appearing": "1d2 (1d6)",
+      "saveAs": "F9",
+      "morale": 9,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 900,
+      "terrain": "Cave, Mountain",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Thrown Boulders: 3d6 damage; range 100/200/300 yards.</p>",
+      "description": "Stone giants are 14 feet tall with gray, rocklike skin and use large stalactites as clubs. They often hurl rocks and live in caves or crude stone huts, sometimes keeping 1d4 cave bears as guards.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Giant (Storm)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Giant (Storm)",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "15",
+      "hp": 68,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 + special",
+      "damage": "8d6 + special",
+      "appearing": "1 (1d3)",
+      "saveAs": "F15",
+      "morale": 10,
+      "treasure": "E + 5,000 gp",
+      "intelligence": 18,
+      "alignment": "Lawful",
+      "xpValue": 3750,
+      "terrain": "Mountain, Cloud, Ocean",
+      "monsterType": "Giant Humanoid",
+      "special": "<p>Lightning Bolt: Every 5 rounds in a storm; damage equals remaining HP (save vs. spells halves it).</p><p>Immunity: Lightning does not affect storm giants.</p><p>Thrown Boulders: 3d6 damage; range 150/300/450 yards.</p>",
+      "description": "Storm giants are over 22 feet tall with bronze skin and red or yellow hair. They love thunderstorms, can create one in a turn, and in a storm may throw a lightning bolt every five rounds for damage equal to their remaining hit points.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -4551,14 +4662,14 @@
     }
   },
   {
-    "name": "Mystic (Form 1)",
+    "name": "Mystic",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Mystic (Form 1)",
-        "category": "Humanoid"
+        "key": "Mystic",
+        "category": "Humanoid",
+        "variant": ""
       }
     },
     "system": {
@@ -4570,32 +4681,32 @@
         "outdoor": 50
       },
       "attacks": "1 weapon or hand",
-      "damage": "By weapon or 1d6 + 1 No. Appearing 1d8 (6d8)",
-      "appearing": "See below",
+      "damage": "By weapon or 1d6+1",
+      "appearing": "1d8 (6d8)",
       "saveAs": "F4",
       "morale": 8,
-      "treasure": "(V) I, L, M, N, O",
+      "treasure": "V; I, L, M, N, O",
       "intelligence": 12,
-      "alignment": "Any",
+      "alignment": "Lawful",
       "xpValue": 175,
-      "terrain": "Any.",
-      "monsterType": "Human (Rare).",
-      "description": "By weapon or ld6 + 1 F4 Any (usually Lawful) Leader By weapon or 1d10/ 1d10 See below F6 I, L, M, N, O Any (usually Lawful) Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed. Mystics are surprised only on a roll of 1. Mystics never wear armor of any type, nor protective devices (rings, cloaks, etc.). They may use potions or other magical items for certain situations. They are trained to use many weapons, but often do not carry them, as they have great combat skill with their bare hands. Mystics have the following thief abilities: find traps, remove traps, move silently, climb walls, and hide in shadows (see table). Once per day a mystic can c",
-      "special": "<p>Mystics are surprised only on a roll of 1. They may use potions or other magical items for certain situations.</p>",
-      "notes": "Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
+      "terrain": "Any",
+      "monsterType": "Human (Rare)",
+      "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+      "description": "Mystics are humans who follow a rigorous life of meditation, study and physical training. They live in cloisters and are usually Lawful. Mystics are surprised only on a roll of 1, never wear armor or protective magic, and can use potions and magic items freely.",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
   },
   {
-    "name": "Mystic (Form 2)",
+    "name": "Mystic (Leader)",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Mystic (Form 2)",
-        "category": "Humanoid"
+        "key": "Mystic (Leader)",
+        "category": "Humanoid",
+        "variant": ""
       }
     },
     "system": {
@@ -4607,19 +4718,19 @@
         "outdoor": 60
       },
       "attacks": "1 weapon or 2 hands",
-      "damage": "By weapon or 1d10/ 1d10",
+      "damage": "By weapon or 1d10/1d10",
       "appearing": "See below",
       "saveAs": "F6",
       "morale": 10,
       "treasure": "I, L, M, N, O",
       "intelligence": 12,
-      "alignment": "Any",
+      "alignment": "Lawful",
       "xpValue": 1650,
-      "terrain": "Any.",
-      "monsterType": "Human (Rare).",
-      "description": "By weapon or ld6 + 1 F4 Any (usually Lawful) Leader By weapon or 1d10/ 1d10 See below F6 I, L, M, N, O Any (usually Lawful) Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed. Mystics are surprised only on a roll of 1. Mystics never wear armor of any type, nor protective devices (rings, cloaks, etc.). They may use potions or other magical items for certain situations. They are trained to use many weapons, but often do not carry them, as they have great combat skill with their bare hands. Mystics have the following thief abilities: find traps, remove traps, move silently, climb walls, and hide in shadows (see table). Once per day a mystic can c",
-      "special": "<p>Mystics are surprised only on a roll of 1. They may use potions or other magical items for certain situations.</p>",
-      "notes": "Mystics are humans who rigorously follow a way of life involving a special discipline of meditation, study, and physical training. They live in special building complexes (called \"cloisters\" or \"monasteries\") located far from towns and common civilization. NPCs mystics are possible, otherwise, mystics will be encountered on a pilgrimage, mission, or adventure for their cloister. Mystics are usually (75%) Lawful, although other alignments are represented. All are utterly devoted to mystic discipline. All their material goods are owned by the cloister, and loaned to individual mystics as needed.",
+      "terrain": "Any",
+      "monsterType": "Human (Rare)",
+      "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+      "description": "Mystic leaders are the senior masters of a cloister. They fight with a weapon or two hands for 1d10 damage each and have a larger retinue than ordinary mystics.",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
@@ -4736,6 +4847,43 @@
     }
   },
   {
+    "name": "Thoul",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Thoul",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws or 1 weapon",
+      "damage": "1d3/1d3 or by weapon",
+      "appearing": "1d6 (1d10)",
+      "saveAs": "F3",
+      "morale": 10,
+      "treasure": "C",
+      "intelligence": 6,
+      "alignment": "Chaotic",
+      "xpValue": 65,
+      "terrain": "Any",
+      "monsterType": "Monster (Very Rare)",
+      "special": "<p>Paralysis: The touch of a thoul paralyses as a ghoul does.</p><p>Regeneration: If damaged, it regains 1 hit point per round while alive.</p>",
+      "description": "A thoul is a magical combination of a ghoul, a hobgoblin and a troll, and is not Undead. Except up close it looks exactly like a hobgoblin, so thouls often serve as guards to hobgoblin kings and Chaotic rulers.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Tyrannosaurus Rex",
     "type": "monster",
     "flags": {
@@ -4767,6 +4915,339 @@
       "monsterType": "Humanoid (Rare).",
       "description": "The \"tyrant lizard\" is the largest hunting dinosaur found. It's at least 40' long (and can be longer), weighing in at 8 tons; when standing, it is about 20' high. It inhabits \"lost world\" areas. The tyrannosaurus walks on its hind legs, with its heavy tail held out behind as a counterbalance. Its forelimbs are small, bearing two claws each, but are next to useless in combat. However, its mighty jaws, bearing teeth up to 6\" long, more than make up for that deficit. It will attack anything man-sized or larger, usually attacking the largest creature first. It can swallow a man-sized opponent if its attack roll is 19-20; the victim takes 2d4 points of damage each round until removed. Undine* F16 Nil Chaotic An undine is an intelligent creature made of water. It is rare even on the elemental plane of Water, its home, and is almost never encountered on the Prime Plane. Undines are Chaotic in behavior, but (similar to djinn) have very good intentions and despise evil. On its home plane, an undine normally has a form like a featureless transparent snake. It can easily change shape, sometimes using a form with many tentacles to handle objects. Once per turn, it can swim quickly in the form",
       "special": "<p>It can swallow a man-sized opponent if its attack roll is 19-20; the victim takes 2d4 points of damage each round until removed.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Werebat",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Werebat",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "3 + 3",
+      "hp": 17,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 bite",
+      "damage": "1d4",
+      "appearing": "2d6 (1d8)",
+      "saveAs": "F3",
+      "morale": 7,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 75,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Uncommon)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Disease: Each bite has a 1-in-6 chance of inflicting a disease chosen by the DM.</p><p>Flying: 180' (60').</p><p>Human Form AC: 9.</p>",
+      "description": "Werebats are dangerous flying lycanthropes often mistaken for vampires. They summon normal and giant bats and 1d4 other werebats. Each bite has a 1-in-6 chance of spreading a nonmagical disease. They fly at 180' (60'). In human form their AC is 9.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Werebear",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Werebear",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "6",
+      "hp": 27,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "2d4/2d4/2d8",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F6",
+      "morale": 10,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 500,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Common)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Hug: If both claws hit one target in a round, add 2d8 damage.</p><p>Human Form AC: 8.</p>",
+      "description": "Werebears are highly intelligent even in animal form and may be friendly if approached peacefully. In combat, if both paws hit the same target in a round, they can hug for an extra 2d8 damage. They summon any bears in the area. In human form their AC is 8.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Wereboar",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Wereboar",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "4 + 1",
+      "hp": 19,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 tusk slash",
+      "damage": "2d6",
+      "appearing": "1d4 (2d4)",
+      "saveAs": "F4",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 200,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Common)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Berserk Rage: +2 on attack rolls and fights to the death.</p><p>Human Form AC: 9.</p>",
+      "description": "Wereboars are semi-intelligent, bad-tempered lycanthropes. In human form they often seem to be berserkers and may fight to the death, gaining +2 on attack rolls. They summon normal boars and do not associate with devil swine. In human form their AC is 9.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Werefox",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Werefox",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "3 + 2",
+      "hp": 16,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite or weapon",
+      "damage": "1d6 or by weapon",
+      "appearing": "1d6 (2d6)",
+      "saveAs": "F3",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 12,
+      "alignment": "Neutral",
+      "xpValue": 75,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Uncommon)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Charm: Three times per day; lasts up to 24 hours (persons in human form, animals in fox form).</p><p>Swimming: 90' (30').</p><p>Human Form AC: 9.</p>",
+      "description": "Werefoxes move at full speed even through dense underbrush and are highly intelligent, often becoming magic-users who can cast only in human form. They can charm three times per day, for up to 24 hours: persons in human form, animals in fox form. They swim at 90' (30').",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Wererat",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Wererat",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 bite or weapon",
+      "damage": "1d4 or by weapon",
+      "appearing": "1d8 (2d8)",
+      "saveAs": "F3",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 50,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Common)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Human Form AC: 9; wererats can use any weapon in either form.</p><p>Lycanthropy: Only the bite inflicts the disease.</p>",
+      "description": "Wererats are lycanthropes whose rat form is their natural shape; they can assume human form and speak Common in either shape. They are sneaky ambushers, surprising on 1-4 on 1d6, and summon giant rats to help them fight. Only a wererat's bite transmits lycanthropy. In human form their AC is 9.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Wereseal",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Wereseal",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "5 + 2",
+      "hp": 25,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 bite",
+      "damage": "2d6",
+      "appearing": "0 (2d10)",
+      "saveAs": "F5",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 400,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Uncommon)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Swimming: 180' (60').</p><p>Bull Wereseal: AC 3; HD 8*; MV 180' (60'); Dmg 2d10; Save F8; ML 11; XPV 1,200.</p><p>Human Form AC: 9.</p>",
+      "description": "Wereseals live near cold seacoasts. The common female form is usually not aggressive, but a bull wereseal is dangerous: AC 3, HD 8*, move 180' (60'), damage 2d10, Save F8, ML 11, XPV 1,200. One bull is usually accompanied by 2d4 females. Wereseals swim at 180' (60').",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Wereshark",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Wereshark",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 bite",
+      "damage": "2d6",
+      "appearing": "0 (2d6)",
+      "saveAs": "F4",
+      "morale": 7,
+      "treasure": "C",
+      "intelligence": 9,
+      "alignment": "Neutral",
+      "xpValue": 125,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Uncommon)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Swimming: 180' (60'); no land movement.</p><p>Forced Change: At full moon the wereshark becomes a mako shark and loses its intelligence.</p><p>Human Form AC: 9.</p>",
+      "description": "Weresharks are mermen who can take the form of a mako shark in darkness. At full moon they must change and become bloodthirsty killers. They swim at 180' (60') and can be harmed only by magic or silver weapons. In human form their AC is 9.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Weretiger",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Weretiger",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d6/1d6/2d6",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F5",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 300,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Common)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Surprise: 1-4 on 1d6.</p><p>Human Form AC: 9.</p>",
+      "description": "Weretigers are relatives of the great cats: curious, dangerous when threatened, and quiet trackers that surprise on 1-4 on 1d6. They are good swimmers and summon local great cats, preferring tigers. In human form their AC is 9.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Werewolf",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "key": "Werewolf",
+        "category": "Humanoid",
+        "variant": ""
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite",
+      "damage": "2d4",
+      "appearing": "1d6 (2d6)",
+      "saveAs": "F4",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 125,
+      "terrain": "Variable, often as animal type",
+      "monsterType": "Lycanthrope (Common)",
+      "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Pack Leader: Groups of 5+ include a leader with 30 HP, attacking as 5 HD with +2 damage.</p><p>Human Form AC: 9.</p>",
+      "description": "Werewolves are semi-intelligent lycanthropes that hunt in packs. Any group of five or more has a 30-hit-point leader that attacks as a 5 Hit Die monster and adds +2 to damage. They summon normal wolves to form large packs. In human form their AC is 9.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -5069,80 +5550,6 @@
     }
   },
   {
-    "name": "Lycanthrope (Form 1)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Lycanthrope (Form 1)",
-        "category": "Monster"
-      }
-    },
-    "system": {
-      "ac": 7,
-      "hd": "3",
-      "hp": 14,
-      "move": {
-        "dungeon": 120,
-        "outdoor": 40
-      },
-      "attacks": "1 bite or weapon 1 bite 1 tusk slash 2 claws/1 bite 2 claws/1 bite",
-      "damage": "1d4 or by weapon 2d4 2d6 1d6/1d6/2d6 2d4/2d4/2d8",
-      "appearing": "1d8 (2d8) 1d6(2d6) 1d4 (2d4) 1d4 (1d4) 1d4 (1d4)",
-      "saveAs": "F3 F4 F4 F5 F6",
-      "morale": 8,
-      "treasure": "C C C C C",
-      "intelligence": 1,
-      "alignment": "Chaotic",
-      "xpValue": 50,
-      "terrain": "Any",
-      "monsterType": "Monster, Enchanted (Common).",
-      "description": "Lycanthropes are humans who can change into beasts (or in the case of wererats, beasts who can change into humans). They normally wear no armor, since it would interfere with their shapechanging. Any lycanthrope can summon 1d2 normal animals of its type: werebears can summon normal bears, werewolves can summon normal wolves, and so forth. Summoned animals will arrive in 1d4 rounds. Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. The sprig of wolfsbane must be swung or thrown as a weapon, using normal combat procedures. A lycanthrope returns to its \"normal\" form when killed. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. The lycanthrope cannot speak normal languages, though it can speak with normal animals of its weretype. Human Form: In human form, a lycanthrope often looks somewhat like its wereform. Wererats have longer noses, werebears are hairy, werebats have long arms, werefoxes are sly and nimble, and so forth. In this form, they can be attacked with normal weapons, and t",
-      "special": "<p>Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Lycanthrope (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Lycanthrope (Form 2)",
-        "category": "Monster"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "3+3",
-      "hp": 17,
-      "move": {
-        "dungeon": 60,
-        "outdoor": 20
-      },
-      "attacks": "1 bite 1 bite or weapon 1 bite 1 bite 1 gore or blow",
-      "damage": "1d4 1d6 or by weapon 2d6 2d6 2d6 or by weapon",
-      "appearing": "2d6 (1d8) 1d6 (2d6) 0(2d6) 0(2d10) 1d3 (1d4)",
-      "saveAs": "F3 F3 F4 F5 F9",
-      "morale": 7,
-      "treasure": "C C C C C",
-      "intelligence": 1,
-      "alignment": "Chaotic",
-      "xpValue": 75,
-      "terrain": "Any",
-      "monsterType": "Monster, Enchanted (Common).",
-      "description": "Lycanthropes are humans who can change into beasts (or in the case of wererats, beasts who can change into humans). They normally wear no armor, since it would interfere with their shapechanging. Any lycanthrope can summon 1d2 normal animals of its type: werebears can summon normal bears, werewolves can summon normal wolves, and so forth. Summoned animals will arrive in 1d4 rounds. Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. The sprig of wolfsbane must be swung or thrown as a weapon, using normal combat procedures. A lycanthrope returns to its \"normal\" form when killed. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. The lycanthrope cannot speak normal languages, though it can speak with normal animals of its weretype. Human Form: In human form, a lycanthrope often looks somewhat like its wereform. Wererats have longer noses, werebears are hairy, werebats have long arms, werefoxes are sly and nimble, and so forth. In this form, they can be attacked with normal weapons, and t",
-      "special": "<p>Some animals (such as horses) do not like the smell of lycanthropes and will react with fear. If a lycanthrope is hit by wolfsbane, it must make a saving throw vs. poison or run away in fear. Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells.</p>",
-      "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
     "name": "Manscorpion",
     "type": "monster",
     "flags": {
@@ -5180,75 +5587,38 @@
     }
   },
   {
-    "name": "Manticore (Form 1)",
+    "name": "Manticore",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Manticore (Form 1)",
-        "category": "Monster"
+        "key": "Manticore",
+        "category": "Monster",
+        "variant": ""
       }
     },
     "system": {
-      "ac": 9,
-      "hd": "1",
-      "hp": 5,
+      "ac": 4,
+      "hd": "6 + 1",
+      "hp": 28,
       "move": {
         "dungeon": 120,
         "outdoor": 40
       },
-      "attacks": "1 weapon 1 weapon 1 weapon",
-      "damage": "By weapon By weapon By weapon",
-      "appearing": "0(1d4 x 10) 0 (special) 0(1d6 + 1 x 10)",
-      "saveAs": "F1 F1 F1",
-      "morale": 8,
-      "treasure": "A A A",
-      "intelligence": 11,
+      "attacks": "2 claws/1 bite or 6 spikes",
+      "damage": "1d4/1d4/2d4 or 1d6 each",
+      "appearing": "1d2 (1d4)",
+      "saveAs": "F6",
+      "morale": 9,
+      "treasure": "D",
+      "intelligence": 3,
       "alignment": "Chaotic",
-      "xpValue": 16,
-      "terrain": "Any.",
-      "monsterType": "Monster (Rare).",
-      "description": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges. The manticore has 24 tail spikes, and can shoot six each round even when flying (ranges per day. Its favorite food is man. Manticores frequently track humans, ambushing them with spike attacks when the human group stops to rest. Another tactic is to stalk its prey like a great cat, creeping up close on an unsuspecting victim. When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down. The manticore then eats the victim. Less frequently, a pack of manticores will stalk and attack a group of victims. at up to half speed. Barding Multiplier: x 2.",
-      "special": "<p>When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down.</p>",
-      "notes": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges.",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Manticore (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Manticore (Form 2)",
-        "category": "Monster"
-      }
-    },
-    "system": {
-      "ac": 2,
-      "hd": "3-8",
-      "hp": 14,
-      "move": {
-        "dungeon": 60,
-        "outdoor": 20
-      },
-      "attacks": "1 weapon 1 weapon 1 weapon",
-      "damage": "By weapon By weapon By weapon",
-      "appearing": "0(2d6) 0(1d4 x 10) 0(1d20)",
-      "saveAs": "F3-8 F1 F1",
-      "morale": 8,
-      "treasure": "V x 3 A A",
-      "intelligence": 11,
-      "alignment": "Any",
-      "xpValue": 65,
-      "terrain": "Any.",
-      "monsterType": "Monster (Rare).",
-      "description": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges. The manticore has 24 tail spikes, and can shoot six each round even when flying (ranges per day. Its favorite food is man. Manticores frequently track humans, ambushing them with spike attacks when the human group stops to rest. Another tactic is to stalk its prey like a great cat, creeping up close on an unsuspecting victim. When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down. The manticore then eats the victim. Less frequently, a pack of manticores will stalk and attack a group of victims. at up to half speed. Barding Multiplier: x 2.",
-      "special": "<p>When that victim is alone, the manticore fires off a barrage of tail-spikes to bring the victim down.</p>",
-      "notes": "A manticore is a horrid monster with the body of a lion, leathery bat wings, a tail ridged with spikes, and the face of a man with large, sharp fangs. It usually lives in wild mountain ranges.",
+      "xpValue": 650,
+      "terrain": "Mountain",
+      "monsterType": "Monster (Rare)",
+      "special": "<p>Tail Spikes: 24 spikes; fires up to six per round at ranges 50/100/180, even while flying. Regrows two spikes per day.</p><p>Flying: 180' (60').</p>",
+      "description": "A manticore has a lion's body, leathery bat wings, a spiked tail and a man's face with large fangs. It lives in wild mountain ranges and preys on humans, often ambushing a resting group with spikes or stalking a lone victim like a great cat. It flies at 180' (60').",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
@@ -5693,80 +6063,6 @@
       "description": "A sphinx is a large, winged creature with a lion's body and a human's face. It is fond of dry climates, but may be encountered anywhere, most often as a guard. Some Chaotic sphinxes are very territorial, settling on a hilltop near a road and preventing all travelers from passing along that road. Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar. The roar is usable only twice per day, but is quite powerful. Each victim within 120' must make a saving throw vs. spells at a —4 penalty or flee in fear for 1d6 turns. Each victim within 60' must check for fear (as above) and must also make a saving throw vs. paralysis or be stunned for 1-6 rounds. (See the \"Special Character Conditions\" section of Chapter 13 for more on the effects of stunning.) Each victim within 10' must check for fear and stun (as above), but also takes turns (no saving throw). The sphinx is immune to all 1st, 2nd, and 3rd level spells and",
       "special": "<p>Both male and female sphinxes are very intelligent spellcasters, the female a 12th level cleric and the male a 12 level magic-user. Their magic is so powerful that all saving throws against their spells are made with a —4 penalty. In combat, a sphinx can attack with claws and bite (or spells), but its most feared attack is its roar.</p>",
       "notes": "",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Thoul (Form 1)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Thoul (Form 1)",
-        "category": "Monster"
-      }
-    },
-    "system": {
-      "ac": 6,
-      "hd": "1+1",
-      "hp": 6,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "See below See below See below",
-      "damage": "1d3 1d4 1d6",
-      "appearing": "0(1d4) 0(1d3) 0(1d6 + 1)",
-      "saveAs": "F1 F2 F3",
-      "morale": 10,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 15,
-      "terrain": "Barren Lands, Cavern.",
-      "monsterType": "Monster (Very Rare).",
-      "description": "A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. Except when very close, thouls look exactly like hobgoblins, and are sometimes found as part of the bodyguard of a hobgoblin king or Chaotic ruler. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive. There can be thoul spellcasters; see \"Monster Spellcasters\" later in this chapter.",
-      "special": "<p>A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive.</p>",
-      "notes": "These creatures are not Undead.",
-      "source": "Rules Cyclopedia",
-      "page": 0
-    }
-  },
-  {
-    "name": "Thoul (Form 2)",
-    "type": "monster",
-    "flags": {
-      "becmi": {
-        "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Thoul (Form 2)",
-        "category": "Monster"
-      }
-    },
-    "system": {
-      "ac": 4,
-      "hd": "1+1",
-      "hp": 6,
-      "move": {
-        "dungeon": 90,
-        "outdoor": 30
-      },
-      "attacks": "See below See below See below",
-      "damage": "1d3 1d4 1d6",
-      "appearing": "0(1d4) 0(1d3) 0(1d6 + 1)",
-      "saveAs": "F1 F2 F3",
-      "morale": 10,
-      "treasure": "Nil Nil Nil",
-      "intelligence": 0,
-      "alignment": "Neutral",
-      "xpValue": 15,
-      "terrain": "Barren Lands, Cavern.",
-      "monsterType": "Monster (Very Rare).",
-      "description": "A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. Except when very close, thouls look exactly like hobgoblins, and are sometimes found as part of the bodyguard of a hobgoblin king or Chaotic ruler. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive. There can be thoul spellcasters; see \"Monster Spellcasters\" later in this chapter.",
-      "special": "<p>A thoul is a magical combination of a ghoul, a hobgoblin, and a troll. The touch of a thoul will paralyze (in the same way as that of a ghoul). If it is damaged, a thoul will regenerate 1 hit point per round as long as it is alive.</p>",
-      "notes": "These creatures are not Undead.",
       "source": "Rules Cyclopedia",
       "page": 0
     }
@@ -6660,14 +6956,14 @@
     }
   },
   {
-    "name": "Were(creature)",
+    "name": "Wight",
     "type": "monster",
     "flags": {
       "becmi": {
         "source": "Rules Cyclopedia",
-        "variant": "",
-        "key": "Were(creature)",
-        "category": "Undead"
+        "key": "Wight",
+        "category": "Undead",
+        "variant": ""
       }
     },
     "system": {
@@ -6680,17 +6976,17 @@
       },
       "attacks": "1",
       "damage": "Energy drain",
-      "appearing": "1d6(1d8)",
+      "appearing": "1d6 (1d8)",
       "saveAs": "F3",
       "morale": 12,
       "treasure": "B",
       "intelligence": 5,
       "alignment": "Chaotic",
       "xpValue": 50,
-      "terrain": "Any",
-      "monsterType": "Undead, Enchanted (Common).",
-      "description": "A wight is an undead spirit living in the body of a dead human or demihuman. A wight looks much as its body appeared in life, but bone-white and thin, with hollow, lifeless eyes. Its burial garments will be tattered and filthy. Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim. Each hit drains one level of experience or Hit Die. Any person totally drained of life energy by a wight will become a wight in 1d4 days, and will be under control of the slayer.",
-      "special": "<p>Wights can only be hit by silvered or magical weapons. They are greatly feared, as they drain life energy when striking a victim.</p>",
+      "terrain": "Barren Lands, Ruins",
+      "monsterType": "Undead, Enchanted (Common)",
+      "special": "<p>Can be hit only by silvered or magical weapons.</p><p>Energy Drain: One level or Hit Die per hit.</p>",
+      "description": "A wight is an undead spirit in the body of a dead human or demihuman. Its burial garments are tattered and filthy, and its eyes are hollow and lifeless. Each hit drains one level of experience or Hit Die; a victim drained completely becomes a wight in 1d4 days under the slayer's control.",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0

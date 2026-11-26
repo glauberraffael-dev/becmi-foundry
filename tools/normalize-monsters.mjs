@@ -97,6 +97,15 @@ function captureSpecial(label, source) {
 }
 
 function specialFor(raw) {
+  // Curated repairs provide ready-made plain-text bullets as an array. Keep
+  // them separate so each ability stays on its own paragraph.
+  if (Array.isArray(raw.special)) {
+    return raw.special
+      .map((line) => clean(line))
+      .filter(Boolean)
+      .map((line) => `<p>${escapeHtml(line)}</p>`)
+      .join("");
+  }
   const extracted = clean(raw.special);
   if (extracted) {
     return extracted.split(/\n+/).map((line) => {
@@ -152,7 +161,9 @@ function descriptionFor(value, name) {
 }
 
 /** A few OCR headings lose their group name; restore it before filing. */
-function categoryFor(name, raw, type) {
+function categoryFor(name, raw, type, doc = {}) {
+  const declared = doc.flags?.becmi?.category;
+  if (declared) return declared;
   if (/^(?:black|blue|green|red|white|gold|silver|bronze|copper|brass)\s*\(/i.test(name)) return "Dragon";
   if (/^phantom\s*\(/i.test(name)) return "Undead";
   if (/^dinosaur\b|^plesiosaurus\b|^pterosaur\b|^ape, white\b/i.test(name)) return "Normal Animal";
@@ -179,7 +190,7 @@ export function normalizeMonsterDocument(doc) {
     `Damage: ${trimLabels(raw.damage) || "By weapon"}`
   ].join("; ");
   const description = descriptionFor(raw.description, name) || escapeHtml(statFallback);
-  const category = categoryFor(name, raw, type);
+  const category = categoryFor(name, raw, type, doc);
 
   return {
     ...doc,
@@ -187,7 +198,11 @@ export function normalizeMonsterDocument(doc) {
     type: "monster",
     flags: {
       ...(doc.flags ?? {}),
-      becmi: { ...(doc.flags?.becmi ?? {}), source: "Rules Cyclopedia", key: name, category, variant: "" }
+      becmi: {
+        ...(doc.flags?.becmi ?? {}),
+        source: "Rules Cyclopedia", key: name, category,
+        variant: doc.flags?.becmi?.variant ?? ""
+      }
     },
     system: {
       ...raw,

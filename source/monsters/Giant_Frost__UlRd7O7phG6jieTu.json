@@ -1,0 +1,55 @@
+{
+  "_id": "UlRd7O7phG6jieTu",
+  "_key": "!actors!UlRd7O7phG6jieTu",
+  "name": "Giant (Frost)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "10 + 1",
+    "hp": 46,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "4d6",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F10",
+    "morale": 9,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 14,
+    "alignment": "Chaotic",
+    "xpValue": 1900,
+    "terrain": "Mountain",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Immunity: Cold-based attacks.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+    "description": "Frost giants stand 18 feet tall with pale skin, light hair and iron armor. They build castles above the timberline, are immune to cold-based attacks, and keep polar bears or wolves as guards.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 46,
+        "max": 46
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Frost)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "3ccrlDcbpBdmAcNC",
+  "_key": "!actors!3ccrlDcbpBdmAcNC",
+  "name": "Wererat",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite or weapon",
+    "damage": "1d4 or by weapon",
+    "appearing": "1d8 (2d8)",
+    "saveAs": "F3",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Variable, often as animal type",
+    "monsterType": "Lycanthrope (Common)",
+    "special": "<p>Animal Form: In animal form, a lycanthrope can be harmed only by magical weapons, silvered weapons, or spells. It cannot speak normal languages, but can speak with normal animals of its weretype. Human Form: In human form a lycanthrope often looks somewhat like its wereform. It can speak and use weapons normally. Summon Animals: Any lycanthrope can summon 1d2 normal animals of its type; they arrive in 1d4 rounds. Wolfsbane: If hit by wolfsbane, the lycanthrope must save vs. poison or flee in fear.</p><p>Human Form AC: 9; wererats can use any weapon in either form.</p><p>Lycanthropy: Only the bite inflicts the disease.</p>",
+    "description": "Wererats are lycanthropes whose rat form is their natural shape; they can assume human form and speak Common in either shape. They are sneaky ambushers, surprising on 1-4 on 1d6, and summon giant rats to help them fight. Only a wererat's bite transmits lycanthropy. In human form their AC is 9.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Wererat",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

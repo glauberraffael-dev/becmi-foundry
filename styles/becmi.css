@@ -231,6 +231,57 @@
   text-align: center;
 }
 
+.becmi-derived--readonly {
+  display: inline-block;
+  min-width: 3rem;
+  padding: 1px 0.3rem;
+  border-bottom: 1px dotted var(--becmi-border);
+  cursor: help;
+}
+
+.becmi-field--hp {
+  grid-column: span 2;
+}
+
+.becmi-field--hp .becmi-hp-current {
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.becmi-hp-divider {
+  font-weight: 700;
+}
+
+.becmi-field--hp-bar {
+  grid-column: 1 / -1;
+}
+
+.becmi-hp-bar {
+  width: 100%;
+  height: 0.7rem;
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-paper-alt);
+  overflow: hidden;
+}
+
+.becmi-hp-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--becmi-accent);
+}
+
+.becmi-monster-attacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.becmi-monster-attack small {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
 /* ------------------------------------------------------------------ tabs */
 .becmi-tabs {
   display: flex;

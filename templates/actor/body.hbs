@@ -53,7 +53,15 @@
         <div class="becmi-field"><label>{{localize 'BECMI.labels.magicBonus'}}:</label><input name="system.attributes.armor.magicBonus" type="number" value="{{system.attributes.armor.magicBonus}}" {{#unless editable}}disabled{{/unless}}></div>
         <div class="becmi-field"><label>{{localize 'BECMI.labels.shield'}}:</label><input name="system.attributes.armor.shield" type="checkbox" {{#if system.attributes.armor.shield}}checked{{/if}} {{#unless editable}}disabled{{/unless}}></div>
         <div class="becmi-field"><label>{{localize 'BECMI.labels.shieldMagic'}}:</label><input name="system.attributes.armor.shieldMagic" type="number" value="{{system.attributes.armor.shieldMagic}}" {{#unless editable}}disabled{{/unless}}></div>
-        <div class="becmi-field"><label>{{localize 'BECMI.labels.hp'}}:</label><input name="system.attributes.hp.value" type="number" value="{{system.attributes.hp.value}}" {{#unless editable}}disabled{{/unless}}> / <input name="system.attributes.hp.max" type="number" value="{{system.attributes.hp.max}}" {{#unless editable}}disabled{{/unless}}></div>
+        <div class="becmi-field becmi-field--hp">
+          <label>{{localize 'BECMI.labels.hp'}}:</label>
+          <input class="becmi-hp-current" name="system.attributes.hp.value" type="number" min="0" value="{{system.attributes.hp.value}}" title="{{localize 'BECMI.sheet.hpCurrentHint'}}">
+          <span class="becmi-hp-divider">/</span>
+          <input name="system.attributes.hp.max" type="number" min="0" value="{{system.attributes.hp.max}}" {{#unless editable}}disabled{{/unless}}>
+        </div>
+        <div class="becmi-field becmi-field--hp-bar">
+          <div class="becmi-hp-bar" role="meter" aria-valuemin="0" aria-valuemax="{{hpBar.max}}" aria-valuenow="{{hpBar.value}}"><span style="width: {{hpBar.percent}}%"></span></div>
+        </div>
         <div class="becmi-field"><label>{{localize 'BECMI.labels.thac0'}}:</label><input name="system.attributes.thac0" type="number" value="{{system.attributes.thac0}}" {{#unless editable}}disabled{{/unless}}></div>
         <div class="becmi-field"><label>{{localize 'BECMI.labels.attackColumn'}}:</label><span class="becmi-derived">{{attackSpec}}</span></div>
       </div>
@@ -378,7 +386,15 @@
     <div class="becmi-grid becmi-grid--combat">
       <div class="becmi-field"><label>{{localize 'BECMI.labels.ac'}}:</label><input name="system.ac" type="number" value="{{system.ac}}" {{#unless editable}}disabled{{/unless}}></div>
       <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}:</label><input name="system.hd" type="text" value="{{system.hd}}" {{#unless editable}}disabled{{/unless}}></div>
-      <div class="becmi-field"><label>{{localize 'BECMI.labels.hp'}}:</label><input name="system.hp" type="number" value="{{system.hp}}" {{#unless editable}}disabled{{/unless}}></div>
+      <div class="becmi-field becmi-field--hp">
+        <label>{{localize 'BECMI.labels.hp'}}:</label>
+        <input class="becmi-hp-current" name="system.attributes.hp.value" type="number" min="0" value="{{system.attributes.hp.value}}" title="{{localize 'BECMI.sheet.hpCurrentHint'}}">
+        <span class="becmi-hp-divider">/</span>
+        <input name="system.hp" type="number" min="0" value="{{system.hp}}" {{#unless editable}}disabled{{/unless}}>
+      </div>
+      <div class="becmi-field becmi-field--hp-bar">
+        <div class="becmi-hp-bar" role="meter" aria-valuemin="0" aria-valuemax="{{hpBar.max}}" aria-valuenow="{{hpBar.value}}"><span style="width: {{hpBar.percent}}%"></span></div>
+      </div>
       <div class="becmi-field"><label>{{localize 'BECMI.labels.movement'}}:</label><span class="becmi-derived">{{system.move.dungeon}}' ({{system.move.outdoor}}')</span></div>
       <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.attacks'}}:</label><input name="system.attacks" type="text" value="{{system.attacks}}" {{#unless editable}}disabled{{/unless}}></div>
       <div class="becmi-field becmi-field--wide"><label>{{localize 'BECMI.labels.damage'}}:</label><input name="system.damage" type="text" value="{{system.damage}}" {{#unless editable}}disabled{{/unless}}></div>
@@ -391,6 +407,16 @@
       <div class="becmi-field"><label>{{localize 'BECMI.labels.xpValue'}}:</label><input name="system.xpValue" type="number" value="{{system.xpValue}}" {{#unless editable}}disabled{{/unless}}></div>
       <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}}</button>
       <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
+    </div>
+    <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.monsterAttacks'}}</h3>
+    <div class="becmi-monster-attacks">
+      {{#each monsterAttacks as |attack|}}
+      <button type="button" class="becmi-roll becmi-monster-attack" data-action="monsterAttack" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollAttackAndDamage'}}">
+        <strong>{{attack.name}}</strong>{{#if attack.damage}} <span>{{attack.damage}}</span>{{/if}}{{#if attack.note}} <small>{{attack.note}}</small>{{/if}}
+      </button>
+      {{else}}
+      <p class="becmi-empty">{{localize 'BECMI.sheet.noMonsterAttacks'}}</p>
+      {{/each}}
     </div>
     <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.classification'}}</h3>
     <div class="becmi-grid becmi-grid--combat">

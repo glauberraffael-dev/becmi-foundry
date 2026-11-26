@@ -94,4 +94,36 @@ if (!sheet.editMode) throw new Error("edit mode toggle did not enable editing");
 await actions.toggleEditMode.call(sheet);
 if (sheet.editMode) throw new Error("edit mode toggle did not return to use mode");
 
-console.log("Sheet handling OK (drops, invalid payloads and edit/use mode).");
+// Use mode still accepts the live HP tracker, but no other actor edit.
+const updates = [];
+sheet.editable = true;
+sheet.actor = {
+  async update(changes) { updates.push(changes); }
+};
+const submit = BECMIActorSheet.DEFAULT_OPTIONS.form.handler;
+await submit.call(sheet, {}, {}, {
+  object: {
+    "system.attributes.hp.value": "7",
+    "system.attributes.hp.max": "12",
+    "system.attributes.xp": "5000",
+    "system.attributes.xpNext": "9999"
+  }
+});
+if (updates.length !== 1 || Object.keys(updates[0]).join() !== "system.attributes.hp.value"
+  || updates[0]["system.attributes.hp.value"] !== 7) {
+  throw new Error(`use mode must only track current HP, got ${JSON.stringify(updates)}`);
+}
+
+// Switching class stores the RC snapshot, never a writable xpNext threshold.
+updates.length = 0;
+sheet.editMode = true;
+await actions.setClass.call(sheet, {}, { dataset: { classKey: "fighter" } });
+const classUpdate = updates[0] ?? {};
+if ("system.attributes.xpNext" in classUpdate) {
+  throw new Error("class selection wrote the derived xpNext field");
+}
+if (classUpdate["flags.becmi.classInfo"]?.key !== "fighter") {
+  throw new Error("class selection did not store the RC class snapshot");
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking and derived XP).");

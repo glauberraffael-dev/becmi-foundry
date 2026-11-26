@@ -9,7 +9,9 @@
  * and the target AC can be supplied by the sheet or falls back to AC 9.
  */
 
-import { attackInfo, monsterHpFormula, parseMonsterHitDice, rollExpression } from "./rules-rc.mjs";
+import {
+  attackInfo, monsterAttackRows, monsterHpFormula, parseMonsterHitDice, rollExpression
+} from "./rules-rc.mjs";
 
 const ABILITY_BONUS = { str: "str", dex: "dex", wis: "wis" };
 const DEFAULT_TARGET_AC = 9;
@@ -143,6 +145,24 @@ export async function damageRoll(actor, item, { rollMode, bonusDamage = 0 } = {}
     actor
   });
   return roll;
+}
+
+/**
+ * One macro per monster attack. Every natural attack gets its own button; the
+ * sheet passes the index so two claws and a bite never share a single roll.
+ */
+export async function monsterAttackRoll(actor, index, options = {}) {
+  const rows = monsterAttackRows(actor?.system ?? {});
+  const row = rows[Number(index)];
+  if (!row) {
+    ui.notifications.warn(game.i18n.localize("BECMI.notification.noMonsterAttack"));
+    return null;
+  }
+  const pseudoItem = {
+    name: row.note ? `${row.name} (${row.note})` : row.name,
+    system: { damage: row.damage }
+  };
+  return attackRoll(actor, pseudoItem, options);
 }
 
 /** Roll an arbitrary item formula (spell effect, treasure value, etc.). */

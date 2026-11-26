@@ -18,13 +18,40 @@ function getProperty(object, path) {
   return foundry.utils.getProperty(object, path);
 }
 
+function setProperty(object, path, value) {
+  const keys = String(path).split(".");
+  let target = object;
+  for (let index = 0; index < keys.length - 1; index++) {
+    target[keys[index]] ??= {};
+    target = target[keys[index]];
+  }
+  target[keys.at(-1)] = value;
+}
+
+/** Remove a path from an update, whether it is flat or nested. */
+function deleteProperty(object, path) {
+  if (!object || typeof object !== "object") return;
+  // Foundry normally sends flat dotted keys, but macros may pass a nested tree.
+  if (Object.hasOwn(object, path)) {
+    delete object[path];
+    return;
+  }
+  const keys = String(path).split(".");
+  if (keys.length === 1) {
+    delete object[keys[0]];
+    return;
+  }
+  deleteProperty(object[keys[0]], keys.slice(1).join("."));
+  if (object[keys[0]] && !Object.keys(object[keys[0]]).length) delete object[keys[0]];
+}
+
 function clone(value) {
   return value == null ? value : JSON.parse(JSON.stringify(value));
 }
 
 import {
   RC, adjustment, getRCClass, hpForLevel, levelForXp, monsterHpFromHitDice,
-  normalizeClassKey, parseMonsterHitDice, spellKey, xpForNextLevel
+  normalizeClassKey, parseMonsterHitDice, spellKey
 } from "./rules-rc.mjs";
 
 export function spellListsForClass(classInfo, { druid = false } = {}) {
@@ -60,16 +87,8 @@ function classSnapshot(item) {
   };
 }
 
-function classInfoFor(actor) {
-  const stored = getProperty(actor, CLASS_FLAG);
-  if (stored) return stored;
-  const item = actor.items?.find((entry) => entry.type === "class");
-  if (item) return classSnapshot(item);
-
-  // Actors created from the sheet class selector have no Class item. The RC
-  // table is still enough to drive auto-level and the "Level Up" button.
-  const name = getProperty(actor, "system.attributes.class")
-    || getProperty(actor, "system.attributes.classKey");
+/** Snapshot for a class chosen straight from the sheet's class selector. */
+export function classInfoFromRC(name) {
   const rc = getRCClass(name);
   if (!rc) return null;
   return {
@@ -82,6 +101,19 @@ function classInfoFor(actor) {
     xpTable: {},
     saves: rc.saves
   };
+}
+
+function classInfoFor(actor) {
+  const stored = getProperty(actor, CLASS_FLAG);
+  if (stored) return stored;
+  const item = actor.items?.find((entry) => entry.type === "class");
+  if (item) return classSnapshot(item);
+
+  // Actors created from the sheet class selector have no Class item. The RC
+  // table is still enough to drive auto-level and the "Level Up" button.
+  const name = getProperty(actor, "system.attributes.class")
+    || getProperty(actor, "system.attributes.classKey");
+  return classInfoFromRC(name);
 }
 
 function changesFor(actor, values) {
@@ -108,14 +140,12 @@ export async function applyClassToActor(actor, classItem) {
   if (!actor || !classItem || classItem.type !== "class") return 0;
 
   const snapshot = classSnapshot(classItem);
-  const level = Number(getProperty(actor.system, "attributes.level")) || 1;
   const changes = changesFor(actor, {
     "system.attributes.class": snapshot.name,
     "system.attributes.classKey": normalizeClassKey(snapshot.name) ?? "",
     "system.attributes.classUuid": snapshot.uuid,
     "system.attributes.hd": snapshot.hitDice,
     "system.attributes.primeRequisite": snapshot.primeRequisite,
-    "system.attributes.xpNext": xpForNextLevel(snapshot, level),
     [CLASS_FLAG]: snapshot
   });
   if (Object.keys(changes).length) await actor.update(changes);
@@ -228,11 +258,7 @@ export async function refreshActorFromClass(actor) {
   if (!snapshot && !classes.length) return removed;
 
   const source = snapshot ?? classSnapshot(classes[0]);
-  const level = Number(getProperty(actor.system, "attributes.level")) || 1;
-  const changes = changesFor(actor, {
-    "system.attributes.xpNext": xpForNextLevel(source, level),
-    [CLASS_FLAG]: source
-  });
+  const changes = changesFor(actor, { [CLASS_FLAG]: source });
   if (Object.keys(changes).length) await actor.update(changes);
   return removed;
 }
@@ -267,11 +293,9 @@ export async function advanceActorLevels(actor, { targetLevel, announce = true }
     hp.value = Number(hp.value || 0) + gain;
   }
 
-  const nextXp = xpForNextLevel(info, target);
   const changes = {
     "system.attributes.level": target,
-    "system.attributes.hp": hp,
-    ...(nextXp === null ? {} : { "system.attributes.xpNext": nextXp })
+    "system.attributes.hp": hp
   };
   const needed = changesFor(actor, changes);
   if (Object.keys(needed).length) await actor.update(needed);
@@ -297,6 +321,17 @@ export function autoLevelFromXp(actor, options = {}) {
 
 /** Register the Foundry hooks that drive the integrations. */
 export function registerIntegrations() {
+  // Every Actor type tracks current HP through attributes.hp.value, which is
+  // also the token bar. The bar can then be edited straight from the token HUD.
+  Hooks.on("preCreateActor", (actor, data) => {
+    if (!["character", "npc", "monster"].includes(actor.type)) return;
+    const path = "prototypeToken.bar1.attribute";
+    if (getProperty(data, path) === "attributes.hp.value") return;
+    setProperty(data, path, "attributes.hp.value");
+    // Mutating the creation data is enough in Foundry's preCreate hooks; the
+    // prototype token then exposes the very same path used by the sheet.
+  });
+
   Hooks.on("createItem", (item, options, userId) => {
     if (game.userId !== userId) return;
     const actor = item.parent;
@@ -319,12 +354,10 @@ export function registerIntegrations() {
       .finally(() => leveling.delete(actor));
   });
 
-  Hooks.on("preUpdateActor", (actor, changed) => {
-    const level = getProperty(changed, "system.attributes.level");
-    if (level === undefined || getProperty(changed, "system.attributes.xpNext") !== undefined) return;
-    const snapshot = getProperty(actor, CLASS_FLAG);
-    if (!snapshot) return;
-    changed["system.attributes.xpNext"] = xpForNextLevel(snapshot, Number(level));
+  // xpNext is a derived display field. Strip any attempt to write it, including
+  // updates from macros or other modules, so the level-up table cannot drift.
+  Hooks.on("preUpdateActor", (_actor, changed) => {
+    deleteProperty(changed, "system.attributes.xpNext");
   });
 
   Hooks.on("createActor", (actor, options, userId) => {

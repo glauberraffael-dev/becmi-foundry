@@ -28,6 +28,7 @@ const {
   advanceActorLevels,
   autoLevelFromXp,
   importSpellToActor,
+  registerIntegrations,
   repairMonsterHitPoints,
   spellItemData,
   syncGrimoireFromImportedSpell
@@ -63,7 +64,8 @@ const actor = {
 
 const removed = await applyClassToActor(actor, actor.items.find((item) => item.id === "old"));
 if (removed !== 1) throw new Error("applyClassToActor did not remove the duplicate");
-if (getProperty(actor, "system.attributes.xpNext") !== 2500) throw new Error("xpNext was not filled");
+// xpNext is derived by the data model; applying a class must not write it.
+if (getProperty(actor, "system.attributes.xpNext") !== 0) throw new Error("applying a class wrote a derived xpNext");
 if (getProperty(actor, "flags.becmi.classInfo.name") !== "Magic-User") throw new Error("class snapshot missing");
 actor.items.push({ id: "copy", type: "class", name: "Magic-User", system: { xpTable } });
 if (await dedupeActorClasses(actor) !== 1) throw new Error("duplicate class was not removed");
@@ -129,7 +131,9 @@ const gained = await autoLevelFromXp(leveling, { announce: false });
 if (gained !== 2) throw new Error(`autoLevelFromXp should gain 2 levels, got ${gained}`);
 if (getProperty(leveling, "system.attributes.level") !== 3) throw new Error("level was not advanced");
 if (getProperty(leveling, "system.attributes.hp.max") <= 8) throw new Error("HP was not added on level up");
-if (getProperty(leveling, "system.attributes.xpNext") !== 8000) throw new Error("xpNext was not advanced");
+if (getProperty(leveling, "system.attributes.xpNext") !== 2000) {
+  throw new Error("leveling wrote a derived xpNext instead of letting the data model compute it");
+}
 if (await autoLevelFromXp(leveling, { announce: false }) !== 0) throw new Error("level up repeated without new XP");
 leveling.system.attributes.xp = 8000;
 if (await autoLevelFromXp(leveling, { announce: false }) !== 1) throw new Error("new XP did not advance the level");
@@ -167,4 +171,26 @@ const rolledMonster = {
 };
 if (await repairMonsterHitPoints(rolledMonster) !== 0) throw new Error("a rolled monster HP was changed");
 
-console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, spell import, grimoire sync, auto level, monster HP).");
+// Hooks bind the shared HP path to the token and forbid every xpNext write.
+const hooks = new Map();
+globalThis.Hooks = {
+  on(name, fn) { hooks.set(name, fn); },
+  once(name, fn) { hooks.set(name, fn); }
+};
+globalThis.game = { userId: "gm", actors: [] };
+registerIntegrations();
+const creation = { type: "monster", prototypeToken: {} };
+hooks.get("preCreateActor")(creation, creation, {}, "gm");
+if (getProperty(creation, "prototypeToken.bar1.attribute") !== "attributes.hp.value") {
+  throw new Error("new actors do not bind their token bar to current HP");
+}
+const flat = { "system.attributes.level": 2, "system.attributes.xpNext": 9999 };
+hooks.get("preUpdateActor")({}, flat);
+if ("system.attributes.xpNext" in flat) throw new Error("a flat xpNext write was not stripped");
+const nested = { system: { attributes: { level: 2, xpNext: 9999 } } };
+hooks.get("preUpdateActor")({}, nested);
+if (getProperty(nested, "system.attributes.xpNext") !== undefined) {
+  throw new Error("a nested xpNext write was not stripped");
+}
+
+console.log("Integrations OK (class apply, XP, spell lists, dedupe, druid, spell import, grimoire sync, auto level, monster HP, token HP, derived xpNext).");

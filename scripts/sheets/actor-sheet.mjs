@@ -1,12 +1,13 @@
 import {
-  advanceActorLevels, importSpellToActor, spellListsForClass, syncGrimoireFromImportedSpell
+  advanceActorLevels, classInfoFromRC, importSpellToActor, spellListsForClass,
+  syncGrimoireFromImportedSpell
 } from "../integrations.mjs";
 import { classFeaturesFor } from "../class-features.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
-  masteryWeapon, masteryChoices, normalizeClassKey, spellKey, spellSlotsForLevel,
-  spellsFor, turnUndeadColumn
+  masteryWeapon, masteryChoices, monsterAttackRows, normalizeClassKey, spellKey,
+  spellSlotsForLevel, spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -14,6 +15,15 @@ const { ActorSheetV2 } = foundry.applications.sheets;
 
 const ABILITIES = ["str", "int", "wis", "dex", "con", "cha"];
 const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
+
+/** HP tracking is the only sheet data a player may change in use mode. */
+const TRACKING_FIELDS = new Set(["system.attributes.hp.value"]);
+
+function trackingValue(path, value) {
+  if (path !== "system.attributes.hp.value") return value;
+  const number = Number(value);
+  return Number.isFinite(number) ? Math.max(0, Math.round(number)) : 0;
+}
 
 const SHEET_TABS = [
   ["main", "BECMI.sheet.tab.main"],
@@ -181,6 +191,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollInitiative: BECMIActorSheet.#rollInitiative,
       rollMorale: BECMIActorSheet.#rollMorale,
       rollHitDice: BECMIActorSheet.#rollHitDice,
+      monsterAttack: BECMIActorSheet.#monsterAttack,
       rollFree: BECMIActorSheet.#rollFree,
       rollDice: BECMIActorSheet.#rollDice,
       rollThief: BECMIActorSheet.#rollThief,
@@ -319,6 +330,17 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         weight: weapon.weight
       })).sort(byName)
     });
+
+    const hp = attrs.hp ?? {};
+    const hpMax = Math.max(0, Number(hp.max) || 0);
+    const hpValue = Math.max(0, Number(hp.value) || 0);
+    context.hpBar = {
+      value: hpValue,
+      max: hpMax,
+      percent: hpMax ? Math.min(100, Math.round((100 * hpValue) / hpMax)) : 0
+    };
+    context.monsterAttacks = isCharacter ? [] : monsterAttackRows(actor.system)
+      .map((row, index) => ({ ...row, index }));
 
     context.abilityRows = ABILITIES.map((key) => ({
       key,
@@ -583,12 +605,23 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       filterChanged = true;
     }
 
+    const changes = sanitizeImageUpdate(raw);
+    // XP thresholds come from the class table only; no form or action may write
+    // them. The data model re-derives the value on every prepare cycle.
+    delete changes["system.attributes.xpNext"];
+
     if (!this.isEditable || !this.editMode) {
+      // The HP bar is a live tracking control, not an editing action. It works
+      // in use mode for characters and monsters and stays bound to the token.
+      const tracked = {};
+      for (const [path, value] of Object.entries(changes)) {
+        if (TRACKING_FIELDS.has(path)) tracked[path] = trackingValue(path, value);
+      }
+      if (Object.keys(tracked).length && this.isEditable) await this.actor.update(tracked);
       if (filterChanged) await this.render();
       return;
     }
 
-    const changes = sanitizeImageUpdate(raw);
     const requestedLevel = Number(changes["system.attributes.level"]);
     const currentLevel = Number(this.actor.system.attributes?.level) || 1;
     if (Number.isFinite(requestedLevel) && requestedLevel > currentLevel
@@ -617,7 +650,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       "system.attributes.classKey": key,
       "system.attributes.class": cls.name,
       "system.attributes.hd": `1d${cls.hitDie}`,
-      "system.attributes.xpNext": cls.xp[1] ?? 0
+      // Keep only the class snapshot; xpNext is re-derived by the data model.
+      "flags.becmi.classInfo": classInfoFromRC(cls.name)
     });
   }
 
@@ -679,6 +713,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #rollHitDice() {
     await this.actor.rollHitDice();
+  }
+
+  static async #monsterAttack(event, target) {
+    const index = Number(target.dataset.attackIndex);
+    await this.actor.rollMonsterAttack(index, { targetAC: this.#targetAC() });
   }
 
   static async #rollFree() {

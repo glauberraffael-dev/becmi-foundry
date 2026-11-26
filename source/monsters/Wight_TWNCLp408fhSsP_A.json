@@ -1,0 +1,55 @@
+{
+  "_id": "TWNCLp408fhSsP_A",
+  "_key": "!actors!TWNCLp408fhSsP_A",
+  "name": "Wight",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1",
+    "damage": "Energy drain",
+    "appearing": "1d6 (1d8)",
+    "saveAs": "F3",
+    "morale": 12,
+    "treasure": "B",
+    "intelligence": 5,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Barren Lands, Ruins",
+    "monsterType": "Undead, Enchanted (Common)",
+    "special": "<p>Can be hit only by silvered or magical weapons.</p><p>Energy Drain: One level or Hit Die per hit.</p>",
+    "description": "A wight is an undead spirit in the body of a dead human or demihuman. Its burial garments are tattered and filthy, and its eyes are hollow and lifeless. Each hit drains one level of experience or Hit Die; a victim drained completely becomes a wight in 1d4 days under the slayer's control.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Wight",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

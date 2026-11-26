@@ -1,0 +1,55 @@
+{
+  "_id": "jHyQRU0TYeBf3MgV",
+  "_key": "!actors!jHyQRU0TYeBf3MgV",
+  "name": "Giant (Fire)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "11 + 2",
+    "hp": 52,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "5d6",
+    "appearing": "1d2 (1d3)",
+    "saveAs": "F11",
+    "morale": 9,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 13,
+    "alignment": "Chaotic",
+    "xpValue": 2125,
+    "terrain": "Mountain, Desert",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Immunity: Fire-based attacks.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+    "description": "Fire giants have red skin and dark hair, stand 16 feet tall, and wear copper, brass or bronze armor. They live near volcanoes, are immune to fire-based attacks, and guard their castles with hydras or hellhounds.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 52,
+        "max": 52
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Fire)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

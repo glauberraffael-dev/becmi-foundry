@@ -1,0 +1,55 @@
+{
+  "_id": "R2FIhcit7kLzf03v",
+  "_key": "!actors!R2FIhcit7kLzf03v",
+  "name": "Mystic (Leader)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 weapon or 2 hands",
+    "damage": "By weapon or 1d10/1d10",
+    "appearing": "See below",
+    "saveAs": "F6",
+    "morale": 10,
+    "treasure": "I, L, M, N, O",
+    "intelligence": 12,
+    "alignment": "Lawful",
+    "xpValue": 1650,
+    "terrain": "Any",
+    "monsterType": "Human (Rare)",
+    "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+    "description": "Mystic leaders are the senior masters of a cloister. They fight with a weapon or two hands for 1d10 damage each and have a larger retinue than ordinary mystics.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Mystic (Leader)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

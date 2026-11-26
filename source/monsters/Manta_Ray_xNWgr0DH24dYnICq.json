@@ -1,0 +1,55 @@
+{
+  "_id": "xNWgr0DH24dYnICq",
+  "_key": "!actors!xNWgr0DH24dYnICq",
+  "name": "Manta Ray",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 tail",
+    "damage": "1d8 + paralysis",
+    "appearing": "0 (1-3)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Ocean",
+    "monsterType": "Normal Animal (Common)",
+    "special": "<p>Paralysis: A hit on the tail requires a saving throw vs. poison or the victim is paralysed.</p>",
+    "description": "Manta rays are flat aquatic fish whose broad wings propel them through the water. A manta lying on the ocean floor is completely invisible. The normal manta grows to 7 feet wide and 12 feet long, and attacks with a tail full of poisonous spines.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Manta Ray",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

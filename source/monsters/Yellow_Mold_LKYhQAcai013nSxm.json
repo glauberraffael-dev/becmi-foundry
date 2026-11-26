@@ -1,0 +1,55 @@
+{
+  "_id": "LKYhQAcai013nSxm",
+  "_key": "!actors!LKYhQAcai013nSxm",
+  "name": "Yellow Mold",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "Spores",
+    "damage": "1d6 + special",
+    "appearing": "1d8 (1d4)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 25,
+    "terrain": "Cavern, Ruins",
+    "monsterType": "Fungus",
+    "special": "<p>Can always be hit.</p><p>Spores: 1d6 damage plus the special effect described in the Rules Cyclopedia.</p><p>Morale: Not applicable.</p>",
+    "description": "Yellow mold can always be hit. It does not move or fight in melee, but releases spores that deal 1d6 damage and have an additional special effect.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Yellow Mold",
+      "category": "Lowlife",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "5GNqNqVvYvgkvNAR",
+  "_key": "!actors!5GNqNqVvYvgkvNAR",
+  "name": "Giant (Stone)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "9",
+    "hp": 41,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "3d6",
+    "appearing": "1d2 (1d6)",
+    "saveAs": "F9",
+    "morale": 9,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 900,
+    "terrain": "Cave, Mountain",
+    "monsterType": "Giant Humanoid",
+    "special": "<p>Thrown Boulders: 3d6 damage; range 100/200/300 yards.</p>",
+    "description": "Stone giants are 14 feet tall with gray, rocklike skin and use large stalactites as clubs. They often hurl rocks and live in caves or crude stone huts, sometimes keeping 1d4 cave bears as guards.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 41,
+        "max": 41
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Stone)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

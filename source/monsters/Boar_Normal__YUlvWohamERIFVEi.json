@@ -38,7 +38,7 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
+      "variant": "_Normal_",
       "key": "Boar (Normal)",
       "category": "Normal Animal"
     }
