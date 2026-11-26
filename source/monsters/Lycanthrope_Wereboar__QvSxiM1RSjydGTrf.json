@@ -1,0 +1,55 @@
+{
+  "_id": "QvSxiM1RSjydGTrf",
+  "_key": "!actors!QvSxiM1RSjydGTrf",
+  "name": "Lycanthrope (Wereboar)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "4+1",
+    "hp": 19,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 tusk slash",
+    "damage": "2d6",
+    "appearing": "1d4 (2d4)",
+    "saveAs": "F4",
+    "morale": 9,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 200,
+    "terrain": "Woods, Wilderness.",
+    "monsterType": "Monster (Rare).",
+    "description": "Wereboars are powerfully built boar-humanoids with tusks.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 19,
+        "max": 19
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lycanthrope (Wereboar)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

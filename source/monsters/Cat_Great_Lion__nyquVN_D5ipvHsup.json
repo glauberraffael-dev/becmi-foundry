@@ -1,0 +1,55 @@
+{
+  "_id": "nyquVN_D5ipvHsup",
+  "_key": "!actors!nyquVN_D5ipvHsup",
+  "name": "Cat, Great (Lion)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4+1/1d4+1/1d10",
+    "appearing": "0 (2d6)",
+    "saveAs": "F3",
+    "morale": 9,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 175,
+    "terrain": "Savannah, Brush.",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Lions generally live in warm climates and thrive in savannah and brush lands near deserts. They usually hunt in groups, known as prides. Male lions have the distinctive mane; females do not.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Cat, Great (Lion)",
+      "category": "Normal Animal"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

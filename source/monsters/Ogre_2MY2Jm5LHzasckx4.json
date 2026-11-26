@@ -1,0 +1,55 @@
+{
+  "_id": "2MY2Jm5LHzasckx4",
+  "_key": "!actors!2MY2Jm5LHzasckx4",
+  "name": "Ogre",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4+1",
+    "hp": 19,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 club",
+    "damage": "By weapon + 2",
+    "appearing": "1d6 (2d6)",
+    "saveAs": "F4",
+    "morale": 10,
+    "treasure": "10)S x 100 + C",
+    "intelligence": 6,
+    "alignment": "Chaotic",
+    "xpValue": 125,
+    "terrain": "Cavern, Wilderness (any).",
+    "monsterType": "Humanoid (Common).",
+    "description": "Ogres are huge fearsome humanlike creatures, usually 8' to 10' tall. They wear animal skins for clothes, and often live in caves. They are very primitive and greedy; they hunt animals when they have to, but are just as content to ambush travelers or bully them into surrendering food and money instead. When encountered outside their lair, a group of ogres will be carrying 1d6 x 100 gp in large sacks. Ogres hate neander- thals and will attack them on sight. Ogres have no special combat tactics. When inclined to fight, they will beat their prey with large clubs until it stops moving or the ogres fail a morale check and flee. Ogres of greater than normal intelligence can be spellcasters; see \"Monster Spellcasters\" later in this chapter. Ooze See Black Pudding, Gray Ooze, Lava Ooze, and Ochre Jelly. ---",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 19,
+        "max": 19
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ogre",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

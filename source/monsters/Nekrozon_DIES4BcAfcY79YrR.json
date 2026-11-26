@@ -1,0 +1,55 @@
+{
+  "_id": "DIES4BcAfcY79YrR",
+  "_key": "!actors!DIES4BcAfcY79YrR",
+  "name": "Nekrozon",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 Tail/1 Gaze (possible)",
+    "damage": "1d6 + gaze (special)",
+    "appearing": "0(1d3)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 1250,
+    "terrain": "Swamps.",
+    "monsterType": "Monster (Very Rare).",
+    "description": "Found only in the wilderness (usually in swampy areas), the terrible nekrozon resembles a huge buffalo with a long tail, a long neck and a boar's head. Ancient lore calls this creature a \"catoblepas,\" though this term is not in current use. The nekrozon attacks with the bony tip of its long tail, which does the listed damage and also has a 50% chance of knocking over and stunning its victim (a saving throw vs. paralysis prevents this) for 1d6 rounds. The gaze of a nekrozon is a 60' long magical death ray. If it looks at anyone, the victim must make a saving throw vs. death ray or die imme- diately. Fortunately, there is only a 1 in 4 chance that the nekrozon will look up when en- countered; this chance is also checked each round of combat. Even then, it can only gaze at one victim per round. It never looks straight up into the air.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Nekrozon",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

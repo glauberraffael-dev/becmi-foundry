@@ -1,0 +1,55 @@
+{
+  "_id": "Bv3VM_uJCNPWf-5v",
+  "_key": "!actors!Bv3VM_uJCNPWf-5v",
+  "name": "Sporacle",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "12 tentacles/1 bite",
+    "damage": "1 + paralysis/2d10",
+    "appearing": "1d4 (2d4)",
+    "saveAs": "F7",
+    "morale": 10,
+    "treasure": "See below",
+    "intelligence": 2,
+    "alignment": "Chaotic",
+    "xpValue": 1650,
+    "terrain": "Cavern.",
+    "monsterType": "Monster (Very Rare).",
+    "description": "The sporacle appears identical to a beholder at first glance: a floating ball-like creature, 5' in di- ameter, with a huge gaping mouth and a large central eye above it. Tentacles sprout from its en- tire body. It has six eyes, positioned evenly about the surface of the body (top, bottom, front, back, sides). It normally keeps all but a few up- per tentacles retracted. A sporacle regenerates by submersing itself in fresh water (but not in brine) at the rate of 3 hit points per round so lost body parts may be rap- idly regrown. If a loose tentacle falls or is placed in water, it will grow into a whole creature in 1 hour. This is their only method of reproduction, so they are often found near a water source. A sporacle may attack anything, but prefers humanoids as food. As it moves into combat, it extends all its tentacles, appearing to sprout them as it attacks.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Sporacle",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

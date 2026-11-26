@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.28
+
+- The monster compendium now includes the 49 iconic Rules Cyclopedia creatures
+  that were missing from the curated bestiary (beholder, basilisk, troll,
+  ogre, dwarf, halfling, lycanthropes, planar spiders, great cats and many
+  others), with the extra planar variants printed in the same monster list.
+  The compendium grows from 311 to 369 actors.
+- A new `npm run supplement` tool appends these actors from the page-based OCR
+  export without touching the existing curated entries; the old extractor must
+  not be run against that export because it uses different headings and line
+  windows and would overwrite the bestiary.
+- Monster tests now guard the restored roster and the corrected AC, HD, Save As
+  and XP values, including the multi-column lycanthrope and great-cat tables.
+- Sheet tests cover spent spell slots, owner-only spell rest and the Auto AC
+  toggle in the target field.
+
 ## 0.1.27
 
 - The spell compendium now matches the Rules Cyclopedia spell index: seven

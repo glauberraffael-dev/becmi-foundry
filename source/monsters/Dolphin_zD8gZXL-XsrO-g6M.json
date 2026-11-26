@@ -1,0 +1,55 @@
+{
+  "_id": "zD8gZXL-XsrO-g6M",
+  "_key": "!actors!zD8gZXL-XsrO-g6M",
+  "name": "Dolphin",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "1 head butt",
+    "damage": "2d4",
+    "appearing": "0 (1d20)",
+    "saveAs": "D6",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 15,
+    "alignment": "Lawful",
+    "xpValue": 50,
+    "terrain": "Ocean.",
+    "monsterType": "Normal Animal (Common).",
+    "description": "Dolphins are seagoing mammals; their favor- ite food is fish. They are related to whales, but are much smaller. They are 10' long with a smooth hide. Dolphins cannot breathe water and must come to the surface once every 15 min- utes for air. Dolphins are intelligent and have their own high-pitched language. They can communicate telepathically with other dolphins within 50 miles, and they can detect magic underwater (360' range) Dolphins hate sharks and occasionally attack them. Dolphins are the friends of most sailors and have been known to help people in trouble. Mermen sometimes ride dolphins as steeds; fantastic sea-beings may even harness them to chariots.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Dolphin",
+      "category": "Normal Animal"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

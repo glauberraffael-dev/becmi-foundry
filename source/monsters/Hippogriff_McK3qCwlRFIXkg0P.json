@@ -1,0 +1,55 @@
+{
+  "_id": "McK3qCwlRFIXkg0P",
+  "_key": "!actors!McK3qCwlRFIXkg0P",
+  "name": "Hippogriff",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "3+1",
+    "hp": 15,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d6/1d6/ldl0",
+    "appearing": "0 (2d8)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "Nil",
+    "intelligence": 3,
+    "alignment": "Neutral",
+    "xpValue": 50,
+    "terrain": "Mountain.",
+    "monsterType": "Monster (Rare).,A hippogriff is a fantastic creature with the,foreparts and head of a giant eagle and the hind-,quarters of a horse. They are a magical cross-,breed descended from both griffons and horses.",
+    "description": "They are carnivorous, preferring plains herd --- beasts, and can carry off man-sized or smaller prey. They can be ridden if tamed; this is easiest when they are raised from young. Hippogriffs nest in rocky crags, but may fly anywhere in search of prey. Hippogriffs will usually attack pegasi, who are their natural enemies. Even when ridden, they must make a morale check each turn they see pegasi, or will turn and attack those creatures de- spite their riders' orders.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 15,
+        "max": 15
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hippogriff",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

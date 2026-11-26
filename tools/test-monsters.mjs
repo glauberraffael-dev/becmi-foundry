@@ -164,3 +164,28 @@ check("range and table monsters have one sheet per Rules Cyclopedia row", () => 
   expectStats("Spider, Giant (Tarantella)", { appearing: "1d3 (1d3)" });
   expectStats("Snake (Giant Rattler)", { damage: "1d4 + poison" });
 });
+
+check("the supplement restores the missing RC iconic monsters", () => {
+  assert.ok(docs.length >= 365, `expected the supplemented bestiary, got ${docs.length}`);
+  for (const name of [
+    "Ant, Giant", "Basilisk", "Beholder", "Black Pudding", "Blast Spore", "Camel",
+    "Cat, Great (Lion)", "Centaur", "Chimera", "Cockatrice", "Crab, Giant", "Cyclops",
+    "Displacer Beast", "Dolphin", "Dwarf", "Efreeti (Greater; Amir)", "Efreeti, Lesser",
+    "Ferret, Giant", "Gnome", "Gorgon", "Gray Ooze", "Green Slime", "Gremlin", "Griffon",
+    "Halfling", "Harpy", "Helion", "Hellhound", "Hippogriff", "Kobold", "Leech, Giant",
+    "Lycanthrope (Wererat)", "Lycanthrope (Werewolf)", "Lycanthrope (Wereboar)",
+    "Lycanthrope (Weretiger)", "Lycanthrope (Werebear)", "Medusa",
+    "Neanderthal (Caveman)", "Nekrozon", "Nightshade", "Nixie", "Nuckalavee",
+    "Ochre Jelly", "Ogre", "Phoenix", "Poltergeist", "Shadow", "Spider, Planar (5 HD)",
+    "Sporacle", "Sprite", "Stirge", "Treant", "Triceratops", "Troglodyte", "Troll",
+    "Undine", "Wyvern"
+  ]) {
+    assert.ok(byName.has(name), `missing RC monster ${name}`);
+  }
+  expectStats("Ant, Giant", { ac: 3, hd: "4", saveAs: "F2", xpValue: 125, morale: 7 });
+  expectStats("Beholder", { ac: 0, hd: "11", saveAs: "M11", xpValue: 5100 });
+  expectStats("Troll", { ac: 4, hd: "6+3", saveAs: "F6", xpValue: 650, morale: 10 });
+  expectStats("Cat, Great (Lion)", { ac: 6, hd: "5", saveAs: "F3", xpValue: 175 });
+  expectStats("Lycanthrope (Werewolf)", { ac: 5, hd: "4", saveAs: "F4", xpValue: 125 });
+  expectStats("Spider, Planar (5 HD)", { ac: 6, hd: "5", saveAs: "F5", xpValue: 425 });
+});

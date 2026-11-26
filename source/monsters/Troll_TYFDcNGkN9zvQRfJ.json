@@ -1,0 +1,55 @@
+{
+  "_id": "TYFDcNGkN9zvQRfJ",
+  "_key": "!actors!TYFDcNGkN9zvQRfJ",
+  "name": "Troll",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "6+3",
+    "hp": 30,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d6/1d6/1d10",
+    "appearing": "1d8(1d8)",
+    "saveAs": "F6",
+    "morale": 10,
+    "treasure": "D",
+    "intelligence": 6,
+    "alignment": "Chaotic",
+    "xpValue": 650,
+    "terrain": "Cavern, Wilderness (any).",
+    "monsterType": "Giant Humanoid (Rare).",
+    "description": "Trolls are 8'-tall, thin, somewhat intelligent humanoids, with ferocious features, sharp teeth, and a mottled skin almost like rubber. They are carnivores, and prefer human and humanlike victims to all other foods. They live nearly anywhere, often in the ruined dwellings of their victims. A troll is very strong, and rends its opponents with talons and sharp teeth. It has the power of regeneration, the ability to grow back together when damaged. It begins to regenerate 3 rounds after it is damaged. The troll's wounds heal themselves at a rate of 3 hit points per round, and even severed limbs will crawl back to the body and rejoin. The head and claws of the troll will continue to fight as long as the creature has 1 hit point or more. However, the troll cannot re- generate damage from fire or acid, and when at- tacked by these methods, the morale score is 8.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 30,
+        "max": 30
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Troll",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

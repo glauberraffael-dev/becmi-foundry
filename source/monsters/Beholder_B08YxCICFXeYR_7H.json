@@ -1,0 +1,55 @@
+{
+  "_id": "B08YxCICFXeYR_7H",
+  "_key": "!actors!B08YxCICFXeYR_7H",
+  "name": "Beholder",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "11",
+    "hp": 50,
+    "move": {
+      "dungeon": 30,
+      "outdoor": 10
+    },
+    "attacks": "1 bite + special",
+    "damage": "2d8 + special",
+    "appearing": "1 (0)",
+    "saveAs": "M11",
+    "morale": 12,
+    "treasure": "L, N, O",
+    "intelligence": 16,
+    "alignment": "Chaotic",
+    "xpValue": 5100,
+    "terrain": "",
+    "monsterType": "Monster (Rare).,A beholder, also called an \"eye tyrant\" or,\"sphere of many eyes,\" looks like a large floating,ball (about 4' in diameter) covered with tough,armor-plated skin. Atop the beholder are ten,small eyes on stalks, each with its own magical,power. A large central eye is on the front of the,body, with a toothy mouth below it.,A beholder moves by means of a slow flight,that cannot be dispelled. It speaks most lan-,guages and is extremely intelligent, cruel, and,greedy. It is normally found alone but is rarely,(5% chance) found with 1d6 young (each with,1/10 normal Hit Dice and range of eye effects,,bite damage 1d4 points).",
+    "description": "The beholder's front eye always projects an anti-magic ray, which temporarily \"turns off all magic within 60' in front of it (see \"Anti-Magic\" in Chapter 13). Magical weapons used within the ray are treated as if nonmagical. Spells cast within it area of effect are instantly ruined; spells cast from further away are ruined when the ef- fects get within range. The beholder will usually turn to face any character who starts casting, ru- ining the spell. Magical weapons and items will work normal- ly once they are removed from the anti-magic ray area, and existing spell effects with durations will resume once the ray is directed elsewhere. This ray cannot be aimed above or below the creature, but only straight out in front of it. As this ray can affect any magic, even that of the smaller eyes (as explained below), the small eyes cannot be used on targets within the anti-magic ray.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 50,
+        "max": 50
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Beholder",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

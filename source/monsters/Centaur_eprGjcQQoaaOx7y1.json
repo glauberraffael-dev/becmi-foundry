@@ -1,0 +1,55 @@
+{
+  "_id": "eprGjcQQoaaOx7y1",
+  "_key": "!actors!eprGjcQQoaaOx7y1",
+  "name": "Centaur",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "2 hooves/1 weapon",
+    "damage": "1d6/1d6/by weapon",
+    "appearing": "0 (2d10)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "A",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 75,
+    "terrain": "Woods, Open, Wooded Hills.",
+    "monsterType": "Monster (Common).,A centaur is a creature with the head, arms,,and upper body of a man joined to the body and,legs of a horse. They are of average human intel-,ligence and often carry weapons (clubs, lances,,and bows; one weapon per creature). A centaur,may use a charge attack with a lance.",
+    "description": "Centaurs will form into small tribes or fami- lies. Their homes are in dense thickets or woods. The females and young will usually stay in the lair. If attacked, females and young will attempt to flee; if escape is impossible, they will fight to the death. The young fight as 2-HD monsters, and do less damage (1d2/ld2/ld4). There can be centaur spellcasters; see \"Mon- ster Spellcasters.\"",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Centaur",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

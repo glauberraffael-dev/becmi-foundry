@@ -1,0 +1,55 @@
+{
+  "_id": "w94T0lIkaltigEDf",
+  "_key": "!actors!w94T0lIkaltigEDf",
+  "name": "Kobold",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1/2",
+    "hp": 1,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon - 1",
+    "appearing": "4d4 (1d6 X 10)",
+    "saveAs": "Normal Man",
+    "morale": 6,
+    "treasure": "(P) J",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 5,
+    "terrain": "Cavern, Hill, Mountain, Wood.",
+    "monsterType": "Humanoid (Common).",
+    "description": "These small, evil doglike humanoids usually live underground in clans of 10 to 60 members. They have scaly, rust-brown skin no hair. They have well-developed infravision with a 90' range. They prefer to attack by ambush. A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The body- guards each have 6 hit points and fight as 1 +1 Hit Dice monsters. As long as the chieftain is alive, all kobolds with him have a morale of 8 rather than 6. Kobolds hate gnomes and will attack them on sight. There can be kobold spellcasters; see \"Mon- ster Spellcasters\" later in this chapter.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Kobold",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

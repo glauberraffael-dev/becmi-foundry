@@ -1,0 +1,55 @@
+{
+  "_id": "prEF5vUE9glU1_QD",
+  "_key": "!actors!prEF5vUE9glU1_QD",
+  "name": "Ochre Jelly",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 30,
+      "outdoor": 10
+    },
+    "attacks": "1",
+    "damage": "2d6",
+    "appearing": "1(0)",
+    "saveAs": "F3",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 300,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Lowlife (Common).",
+    "description": "An ochre jelly is an ochre-colored giant amoeba that can be harmed only by fire or cold. It can seep through small cracks, and destroy wood, leather, and cloth in 1 round, but cannot eat through metal or stone. Attacks with weapons or lightning merely make 1d4 + 1 smaller (2 Hit Dice) ochre jellies. A normal ochre jelly causes 2d6 points of damage per round to exposed flesh. Smaller ochre jellies inflict only half damage. Odic",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ochre Jelly",
+      "category": "Lowlife"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "_5OHSSNdf4GExhzY",
+  "_key": "!actors!_5OHSSNdf4GExhzY",
+  "name": "Cockatrice",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 beak",
+    "damage": "1d6 + petrification (special)",
+    "appearing": "1d4 (2d4)",
+    "saveAs": "F5",
+    "morale": 7,
+    "treasure": "D",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 425,
+    "terrain": "",
+    "monsterType": "Monster (Very Rare). Planar,Monster (Very Rare)",
+    "description": "This is a magical monster with the head, wings, and legs of a rooster and the tail of a snake.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Cockatrice",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

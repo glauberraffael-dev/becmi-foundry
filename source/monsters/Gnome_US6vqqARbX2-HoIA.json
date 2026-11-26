@@ -1,0 +1,55 @@
+{
+  "_id": "US6vqqARbX2-HoIA",
+  "_key": "!actors!US6vqqARbX2-HoIA",
+  "name": "Gnome",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "1d8 (5d8)",
+    "saveAs": "D1",
+    "morale": 8,
+    "treasure": "(P) C",
+    "intelligence": 11,
+    "alignment": "Lawful or Neutral",
+    "xpValue": 10,
+    "terrain": "Cavern. Open.",
+    "monsterType": "Humanoid (Common).",
+    "description": "Gnomes are a humanoid race related to (but smaller than) dwarves. They stand 3 1/2' to 4' tall and have long noses and full beards. Gnomes have well-developed infravision, with a 90' range. They usually live in burrows in the low- lands or in underground communities. Gnomes are excellent smiths and miners. They love gold and gems and have been known to take foolish risks just to obtain them. They love machinery of all kinds and prefer crossbows and war hammers as weapons. Gnomes like most dwarves, but make war with goblins and ko- bolds, who steal their precious gold. They usu- ally attack kobolds on sight. For every 20 gnomes, one will be a leader with 11 hit points who fights as a 2 Hit Die monster. In the gnome city or village lives a clan chieftain and his ld6 bodyguards. The clan chieftain has 18 hit points, attacks as a 4 Hit Die monster, and gains a bonus of +1 on damage rolls.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gnome",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

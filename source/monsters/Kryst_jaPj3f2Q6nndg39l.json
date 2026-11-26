@@ -1,0 +1,55 @@
+{
+  "_id": "jaPj3f2Q6nndg39l",
+  "_key": "!actors!jaPj3f2Q6nndg39l",
+  "name": "Kryst",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "9",
+    "hp": 41,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "3 spikes",
+    "damage": "1d2/ldl2/ldl2",
+    "appearing": "1d6 (1d100 x 10)",
+    "saveAs": "E9",
+    "morale": 9,
+    "treasure": "Special",
+    "intelligence": 10,
+    "alignment": "Lawful",
+    "xpValue": 1600,
+    "terrain": "Plane of Earth.",
+    "monsterType": "Planar Monster (Very Rare).",
+    "description": "The kryst are intelligent beings made of crys- talline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the ele- mental plane of Earth. Kryst are immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on air. A kryst can detect invisible at will, and can use detect magic, dispel magic, haste, or air to earth (similar to the magic-user's dissolve spell, but turns air into earth) three times per day (all as if cast by a 9th level magic-user). The kryst communicate by telepathy (120' range) or, if mental contact causes poor reactions, by writ- ten messages. A kryst can attack by ramming opponents with its spikes, and can attack up to three times per round.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 41,
+        "max": 41
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Kryst",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

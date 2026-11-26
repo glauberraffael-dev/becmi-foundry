@@ -1,0 +1,55 @@
+{
+  "_id": "JNxxHedylNEB-Aab",
+  "_key": "!actors!JNxxHedylNEB-Aab",
+  "name": "Gorgon",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 horn or 1 breath",
+    "damage": "2d6 or petrification (special)",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F8",
+    "morale": 8,
+    "treasure": "E",
+    "intelligence": 1,
+    "alignment": "Chaotic",
+    "xpValue": 1200,
+    "terrain": "Hill, Open; Plane of Earth.",
+    "monsterType": "Monster (Very Rare); Planar,Monster (Very Rare).,A gorgon is a magical bull-like monster cov-,ered with large ironlike scales. It is usually found,in hills or grasslands. It may either attack with its,great horns (often charging for double damage),,or use its horrible breath weapon. Its breath is a,cloud of vapor, 60' long and 10' wide. Those,within it must make a saving throw vs. turn to,stone, or be petrified. Gorgons are immune to,their breath weapons and all other petrifying at-,tacks. Gorgons are native to both the Prime",
+    "description": "Plane and their original home, the elemental plane of Earth. Plane of Earth: On the plane of Earth, a gor- gon is a local herd animal, bred by the horde creatures (see below) and \"milked\" (though this fluid is bitter and oily, in human terms) or slain for food. Its breath can still petrify creatures not made of earth (saving throw applies). Elemental Plane of Earth Statistics: HD 4, /AT 1 horn, D 1-4, NA 1-8 (3-36), Save F4, ML 5, TT Nil, AL N, XP 75.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gorgon",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

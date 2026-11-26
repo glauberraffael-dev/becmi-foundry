@@ -1,0 +1,55 @@
+{
+  "_id": "PsW9PT8zYuinadAE",
+  "_key": "!actors!PsW9PT8zYuinadAE",
+  "name": "Lycanthrope (Wererat)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite or weapon",
+    "damage": "1d4 or by weapon",
+    "appearing": "1d8 (2d8)",
+    "saveAs": "F3",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Woods, Wilderness.",
+    "monsterType": "Monster (Rare).",
+    "description": "Wererats are intelligent rat-humanoids that live in sewers and ruins.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lycanthrope (Wererat)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

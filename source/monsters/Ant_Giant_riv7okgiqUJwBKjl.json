@@ -1,0 +1,55 @@
+{
+  "_id": "riv7okgiqUJwBKjl",
+  "_key": "!actors!riv7okgiqUJwBKjl",
+  "name": "Ant, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1",
+    "damage": "2d6",
+    "appearing": "2d4 (4d6)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "U (and see below)",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Any except Arctic.",
+    "monsterType": "Lowlife (Rare).",
+    "description": "Giant ants are black ants about 6' long. They are omnivores and will attack anything edible that lies in their path (no reaction roll); if they win, they car- ry their kills back to the nest. Once engaged in combat, they will fight to the death, even trying to cross flames to reach their opponents. A giant ant nest looks like a large, bare hill. Giant ant nests are not as heavily populated as those of smaller ants. At any given time, the nest will be protected by 4d6 giant ants, and another 10d6 will be on the trails, gathering food. There is an ant queen in the deep, well-guarded egg chamber of the ant nest. Giant ants behave just like their smaller cous- ins. They wander all over the landscape, finding sources of ready food (grain warehouses, watering-holes, villages), communicate their finds to the nest, and set up a trail from the nest to the food and back.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ant, Giant",
+      "category": "Lowlife"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

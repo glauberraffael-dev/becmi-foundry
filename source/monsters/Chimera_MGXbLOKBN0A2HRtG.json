@@ -1,0 +1,55 @@
+{
+  "_id": "MGXbLOKBN0A2HRtG",
+  "_key": "!actors!MGXbLOKBN0A2HRtG",
+  "name": "Chimera",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "9",
+    "hp": 41,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/3 heads + breath (special)",
+    "damage": "1d3/1d3/2d4/ldl0/3d4 + 3d6",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F9",
+    "morale": 9,
+    "treasure": "F",
+    "intelligence": 6,
+    "alignment": "Chaotic",
+    "xpValue": 2300,
+    "terrain": "Cavern, Hill, Mountain, Ruins.",
+    "monsterType": "Monster (Very Rare).,A chimera is a horrid combination of three,different creatures. It has three heads (goat, li-,on, and dragon), the forebody of a lion, the,hindquarters of a goat, and the wings and tail of,a dragon.",
+    "description": "Chimerae are rare, solitary creatures that are very territorial. They usually live in wild hills but may occasionally be found in some dungeons. They might also live in small groups—often mated pairs with one or two young. In combat, the goat's head butts, the lion's head bites, and the dragon's head can bite or breathe fire (a cone 50' long and 10' wide at the end, for 3d6 points of damage). The breath can only be used three times per day. In a fight, the chimera has a 50% chance each round to use its breath attack; once it has used all three such at- tacks, it will use only its other attacks. Occasionally, a chimera—ill-tempered and dangerous to begin with—will turn rogue. A rogue chimera flies to some distant place (usually a hill or mountain near a human community) and begin to terrorize the area, trying to drive out or kill every living thing in that region.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 41,
+        "max": 41
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Chimera",
+      "category": "Dragon"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

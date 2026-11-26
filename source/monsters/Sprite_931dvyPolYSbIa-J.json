@@ -1,0 +1,55 @@
+{
+  "_id": "931dvyPolYSbIa-J",
+  "_key": "!actors!931dvyPolYSbIa-J",
+  "name": "Sprite",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "1/2",
+    "hp": 1,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 spell",
+    "damage": "See below",
+    "appearing": "3d6 (5d8)",
+    "saveAs": "E1",
+    "morale": 7,
+    "treasure": "S",
+    "intelligence": 14,
+    "alignment": "Neutral",
+    "xpValue": 6,
+    "terrain": "Woods.",
+    "monsterType": "Humanoid (Common).",
+    "description": "Sprites are small winged people (about 1 foot tall) related to pixies and elves. Though shy, they are very curious and have a strange sense of humor. Five sprites acting together can cast one curse spell. This will take the form of a magic practical joke, such as tripping or having one's nose grow. The exact effect of the curse is left to the DM's imagination. (The effects of the sprites' curse can be countered by a remove curse spell.) Sprites will never cause death on purpose even if they are attacked. There can be sprite spellcasters; see \"Monster Spellcasters\" later in this chapter. Statue, Living",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "max": 1
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Sprite",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

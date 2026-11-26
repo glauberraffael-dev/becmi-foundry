@@ -1,0 +1,55 @@
+{
+  "_id": "dPoGZJzE1h4HvLrZ",
+  "_key": "!actors!dPoGZJzE1h4HvLrZ",
+  "name": "Phoenix",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 dagger",
+    "damage": "1d4",
+    "appearing": "2d4 (1d4 X 10)",
+    "saveAs": "E1",
+    "morale": 7,
+    "treasure": "R + S",
+    "intelligence": 14,
+    "alignment": "Neutral",
+    "xpValue": 19,
+    "terrain": "Woods.",
+    "monsterType": "Humanoid (Rare).",
+    "description": "Pixies are small humanlike creatures with in- sectlike wings. They are distantly related to elves, but are only l'-2' tall. They are invisible unless they want to be seen (or unless magically detected). Pixies do not suffer the limitations of the in- visibility spell—they can attack and remain in- visible, and they always gain surprise when doing so. They may not be attacked in the first round of combat, but after that their attackers will see shadows and movement in the air and may attack the pixies with a - 4 penalty on at- tack rolls. Their small insectlike wings can only support pixies for three turns, and they must rest one full turn after flying. Pixies have their own communities in the wil- derness. They do not attack humans except when they are themselves attacked or endan- gered.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Phoenix",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "Bk9hVHGtCT-lnT1G",
+  "_key": "!actors!Bk9hVHGtCT-lnT1G",
+  "name": "Efreeti, Lesser",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "10",
+    "hp": 45,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 fist",
+    "damage": "2d8",
+    "appearing": "1 (1)",
+    "saveAs": "F15",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 14,
+    "alignment": "Chaotic",
+    "xpValue": 1750,
+    "terrain": "",
+    "monsterType": "Planar Monster, Enchanted,(Rare).",
+    "description": "Efreet are free-willed, enchanted creatures from the elemental plane of Fire. They usually appear as clouds of smoke, condensing into giant-sized men surrounded by flames. The air around them is always hot and smoky. Efreet are highly magical, and can only be hit with magical weapons. If slain, the efreeti's spirit returns to its own plane. An efreeti can create objects, create illusions, and turn invisible like a djinni. It can cast a wall of fire spell three times per day. An efreeti may also transform itself into a pillar of flame (the same height as the efreeti) that will set fire to all flammable items within 5'. It can retain the flame shape for up to 3 rounds. When in this form, the fire adds ld8 points of damage to each of the efreeti's blows. The creature can only as- sume flame shape once per turn at most.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 45,
+        "max": 45
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Efreeti, Lesser",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "-g2ueYTpnvdU1uj5",
+  "_key": "!actors!-g2ueYTpnvdU1uj5",
+  "name": "Camel",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 bite/1 hoof",
+    "damage": "l/1d4",
+    "appearing": "0 (2d4)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Barren Lands (Bactrian), Desert",
+    "monsterType": "Normal Animal (Common).",
+    "description": "The camel is an ill-tempered beast, apt to bite or kick any creature that gets in its way— including its owner. It often kicks with one leg. Camels are used as pack and riding animals in deserts and barren lands (with movement as if in clear terrain). A well-watered camel may travel for two weeks without drinking. Camels are her- bivores, preferring grasses and grains, but will eat animal skin and bones when very hungry. A camel with one hump is called a dromedary, and one with two humps is a Bactrian camel. (dromedary).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Camel",
+      "category": "Normal Animal"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

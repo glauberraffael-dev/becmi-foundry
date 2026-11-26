@@ -1,0 +1,55 @@
+{
+  "_id": "JG9-7GAyuk8fZlGF",
+  "_key": "!actors!JG9-7GAyuk8fZlGF",
+  "name": "Cyclops",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "13",
+    "hp": 59,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 club",
+    "damage": "3d10",
+    "appearing": "1 (1d4)",
+    "saveAs": "F13",
+    "morale": 9,
+    "treasure": "E + 5,000gp",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 2300,
+    "terrain": "Hill, Mountain.",
+    "monsterType": "Giant Humanoid (Rare).,A cyclops (plural: cyclopes) is a rare type of gi-,ant, noted for its great size and the single eye in,the center of its forehead. A cyclops is about 20',tall. It has poor depth perception because of its,single eye, and it strikes with a penalty of -2 on,all attack rolls. A cyclops will usually fight with a,wooden club. It can throw rocks to a 200' range,(60/130/200), each hit causing 3d6 points of,damage.",
+    "description": "Some cyclopes (5%) are able to cast a curse once a week. (The DM should decide the exact nature of the curse.) A cyclops usually lives alone, though a small group may sometimes share a large cave. They spend their time raising sheep and grapes. Cyclopes are known for their stupidity, and a clever party can often escape from them by trickery. There can be cyclops spellcasters; see \"Mon- ster Spellcasters\" later in this chapter. Devil Swine See Lycanthrope. Its beak attack causes 1d6 points of damage. Any creature bitten or touched by a cockatrice must make a saving throw or be turned to stone. Cockatrices may be found anywhere. Plane of Earth: On the plane of Earth, a cock- atrice is a foot-long birdlike creature made of soft earth. It is nearly harmless, able to inflict only 1 point of damage with a beak attack.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 59,
+        "max": 59
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Cyclops",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

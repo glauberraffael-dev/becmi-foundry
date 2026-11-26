@@ -1,0 +1,55 @@
+{
+  "_id": "nusu3eRN4ufPddY9",
+  "_key": "!actors!nusu3eRN4ufPddY9",
+  "name": "Basilisk",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "6+1",
+    "hp": 28,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite/1 gaze",
+    "damage": "1d10 + petrification (special)",
+    "appearing": "1d6(1d6)",
+    "saveAs": "F6",
+    "morale": 9,
+    "treasure": "F",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 950,
+    "terrain": "Cavern, Woods; Plane of Earth.",
+    "monsterType": "Monster (Rare); Planar Mon-,ster (Very Rare).,A basilisk is a 10'-long lizard; it looks much,like a large snake with four legs and a crownlike,growth on its head. It may be of any color, but is,usually very bright and distinctive. It is some-,times called the \"king of snakes.\"",
+    "description": "The basilisk is a nonintelligent but very magi- cal lizard. It lives in underground caverns or wild and tangled thickets. Any creature hit by a basi- lisk must make a saving throw vs. turn to stone or be petrified; all equipment he carries will also be turned to stone. The basilisk's gaze has the same effect; anyone meeting the gaze must make the same saving throw or be petrified. A surprised character automatically meets the gaze (but gets the saving throw). A character in hand-to-hand combat with the creature must either avoid the gaze or meet the gaze each round. When a character tries to avoid the gaze, he suffers a -4 penalty to all attack rolls against the monster, while the basilisk gains a + 2 bonus to all its attacks against the charac- ter. If the character meets the gaze, he attacks and defends normally but must make the saving throw at his normal odds.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 28,
+        "max": 28
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Basilisk",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

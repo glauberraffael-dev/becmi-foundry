@@ -1,0 +1,55 @@
+{
+  "_id": "K5soov5gU2xvl-Tu",
+  "_key": "!actors!K5soov5gU2xvl-Tu",
+  "name": "Neanderthal (Caveman)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon + 1",
+    "appearing": "1d10 (1d4 x 10)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "C",
+    "intelligence": 7,
+    "alignment": "Lawful",
+    "xpValue": 20,
+    "terrain": "Hill, Mountain; Any (prehistoric).",
+    "monsterType": "Humanoid (Rare).,Neanderthals (also known as \"cavemen\"),have squat bodies with large bones and powerful,muscles. Their faces have apelike features, in-,cluding large brows above the eyes. Neander-,thals live in family groups in caves and caverns,,especially in hill and mountain territories far,from human communities, or in secluded \"lost,world\" areas. If they attack, they usually use,thrown spears. They use stone axes, clubs, or,stone hammers in hand-to-hand combat.",
+    "description": "Neanderthal leaders are almost a separate race, much larger than the average Neanderthal. These leaders have 6 Hit Dice and are up to 10' tall. There will be 10-40 Neanderthals (ld4 x 10) in the lair with two leaders, one male and one fe- male. Neanderthals often hunt cave bears and keep white apes as pets. They are friendly toward dwarves and gnomes, but hate goblins and ko- bolds, and will attack ogres on sight. Neander- thals are shy and will avoid humans, but are not usually hostile unless they are attacked. A proper- ly groomed and dressed neanderthal could con- ceivably pass for a human, but neanderthals cannot learn to speak Common very well. There can be neanderthal spellcasters; see 'Monster Spellcasters\" later in this chapter.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Neanderthal (Caveman)",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

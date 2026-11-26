@@ -1,0 +1,55 @@
+{
+  "_id": "rjukE0K4fPimjPre",
+  "_key": "!actors!rjukE0K4fPimjPre",
+  "name": "Halfling",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1-1",
+    "hp": 4,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "3d6 (5d8)",
+    "saveAs": "H1",
+    "morale": 8,
+    "treasure": "(P + S) B",
+    "intelligence": 11,
+    "alignment": "Lawful",
+    "xpValue": 5,
+    "terrain": "Hill, Woods",
+    "monsterType": "Demihuman (Common).",
+    "description": "Halflings can also appear as NPCs. Other- wise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or un- derbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30- 300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 4,
+        "max": 4
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Halfling",
+      "category": "Unclassified"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
+}

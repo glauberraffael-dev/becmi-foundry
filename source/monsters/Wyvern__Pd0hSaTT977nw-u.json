@@ -1,0 +1,55 @@
+{
+  "_id": "_Pd0hSaTT977nw-u",
+  "_key": "!actors!_Pd0hSaTT977nw-u",
+  "name": "Wyvern",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite/1 sting",
+    "damage": "2d8/1d6 + poison",
+    "appearing": "1d2 (1d6)",
+    "saveAs": "F4",
+    "morale": 9,
+    "treasure": "E",
+    "intelligence": 3,
+    "alignment": "Chaotic",
+    "xpValue": 850,
+    "terrain": "Mountain, Woods.",
+    "monsterType": "Monster, Dragon-Kin (Rare).,A wyvern looks like a two-legged dragon with,a long tail. Unlike dragons, wyverns are mostly,brown, red, or rust-red in hue. These beasts pre-,fer to live on cliffs or in forests, but may be,found anywhere.",
+    "description": "In combat, the wyvern will bite and arch its tail over its head to hit opponents in front of it. Those stung by the tail must make a saving throw vs. poison or die. Like most dragon-kin, wyverns are carni- vores. They prefer the taste of large herd-beasts such as elk and moose, but will attack humans they encounter and eat the remains if they are victorious.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Wyvern",
+      "category": "Dragon"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

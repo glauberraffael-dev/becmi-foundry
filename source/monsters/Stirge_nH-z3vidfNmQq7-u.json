@@ -1,0 +1,55 @@
+{
+  "_id": "nH-z3vidfNmQq7-u",
+  "_key": "!actors!nH-z3vidfNmQq7-u",
+  "name": "Stirge",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 30,
+      "outdoor": 10
+    },
+    "attacks": "1",
+    "damage": "1d3",
+    "appearing": "1d10(3d2)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "L",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 13,
+    "terrain": "Cavern, Ruins, Woods.",
+    "monsterType": "Monster (Common).,A stirge is a birdlike creature with a long nose.",
+    "description": "It attacks by thrusting its beak into the victim's body, and feeds on blood. A successful hit (for 1d3 points of damage) means that it has at- tached itself to the victim, sucking for 1d3 points of damage per round until the victim is dead. A flying stirge gains a bonus of + 2 on its first attack roll against any one opponent due to its speedy diving attack. ---",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Stirge",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

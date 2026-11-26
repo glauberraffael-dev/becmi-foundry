@@ -1,0 +1,55 @@
+{
+  "_id": "SuurjDTwTm0tsiLY",
+  "_key": "!actors!SuurjDTwTm0tsiLY",
+  "name": "Black Pudding",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "10",
+    "hp": 45,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1",
+    "damage": "3d8",
+    "appearing": "1 (0)",
+    "saveAs": "F5",
+    "morale": 12,
+    "treasure": "See below",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 1750,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Monster (Common).,A black pudding is a nonintelligent black,blob 5 to 30 feet in diameter. Puddings are al-,ways hungry; they will attack any creature they,come across.",
+    "description": "With their corrosive touch, they inflict 3d8 points of damage to living things, and can dis- solve wood and corrode metal in one turn. They cannot affect stone. They can travel on ceilings and walls, and can pass through small openings. (Passing through a small opening is very slow and usually takes a full turn or longer.) A pudding can only be killed by fire; other at- tacks (weapons or spells) merely break it up into smaller puddings, each with 2 Hit Dice and in- flicting ld8 points of damage per blow. How- ever, a flaming sword will cause full normal damage. Puddings normally have no treasure, but gems (the only remnants of previous victims) might be found nearby. Eye 1. charm person (range 120') Eye 2. charm monster (range 120') Eye 3. sleep (range 240') Eye 4. telekinesis (range 120', up to 5,000 cn weight) Eye 5. flesh to stone* (range 120') Eye 6. disintegrate (range 60') Eye 7.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 45,
+        "max": 45
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Black Pudding",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

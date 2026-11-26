@@ -1,0 +1,55 @@
+{
+  "_id": "KC3ysmIHev09FhQc",
+  "_key": "!actors!KC3ysmIHev09FhQc",
+  "name": "Leech, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite",
+    "damage": "1d6",
+    "appearing": "0 (1d4)",
+    "saveAs": "F3",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 275,
+    "terrain": "Swamp.",
+    "monsterType": "Lowlife (Common).,A giant leech is a loathsome wormlike crea-,ture, thicker in the middle than at the ends; it,has reddish-brown skin and is about 3'-4' long.",
+    "description": "It is a parasite, sucking the blood of its prey. In combat, a giant leech attacks with its suckerlike mouth. If it hits, it then holds on and sucks blood for 1d6 points of damage per round. It must be killed to be removed.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Leech, Giant",
+      "category": "Lowlife"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

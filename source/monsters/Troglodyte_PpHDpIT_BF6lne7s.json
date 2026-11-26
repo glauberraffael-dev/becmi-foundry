@@ -1,0 +1,55 @@
+{
+  "_id": "PpHDpIT_BF6lne7s",
+  "_key": "!actors!PpHDpIT_BF6lne7s",
+  "name": "Troglodyte",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/1d4",
+    "appearing": "1d8 (5d8)",
+    "saveAs": "F2",
+    "morale": 9,
+    "treasure": "A",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 25,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Humanoid (Rare).,A troglodyte is an intelligent humanoid rep-,tile. It has a short tail, long legs, and a spiny,\"comb\" on its head and arms. Troglodytes walk,upright and use their hands as well as humans.",
+    "description": "They hate most other creatures. Troglodytes have the chameleonlike ability to change colors, and use it to hide by rock walls, surprising often (1-4 on 1d6). A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made. Nauseated characters have a - 2 penalty on their attack rolls while in hand- to-hand combat with the troglodytes. There can be troglodyte spcllcasters; see \"Monster Spellcasters\" later in this chapter.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Troglodyte",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

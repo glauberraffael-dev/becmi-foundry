@@ -1,0 +1,55 @@
+{
+  "_id": "kanWWxHakbsUfPG8",
+  "_key": "!actors!kanWWxHakbsUfPG8",
+  "name": "Medusa",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 snakebite + special",
+    "damage": "1d6 + poison",
+    "appearing": "1d3 (1d4)",
+    "saveAs": "F4 (see below)",
+    "morale": 8,
+    "treasure": "(V) F",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 175,
+    "terrain": "Cavern, Ruins; Plane of Earth.",
+    "monsterType": "Monster (Rare). Planar Mon-,ster (Very Rare).,A medusa looks like a human female with live,snakes growing from her head instead of hair. Me-,dusae are very magical, and the mere sight of a,medusa will turn a creature to stone unless the vic-,tim makes a saving throw vs. turn to stone. How-,ever, this will affect only one character per round,,and characters may watch the reflection of a me-,dusa in a mirror without danger. If a medusa sees,her own reflection, she must make a saving throw,vs. turn to stone or she will petrify herself!",
+    "description": "In combat, the medusa makes one attack roll for the bites of the snakes, and if they hit, the victim must make a saving throw vs. poison (in addition to taking 1d6 points of damage) or die in one turn. A medusa will often wear a robe with a hood for disguise so she can trick her vic- tims into looking at her. Medusae occasionally use weapons. Anyone who tries to attack a medusa without looking at her must subtract 4 from the attack roll, and the snakes may attack with a +2 bonus to the attack roll. A medusa also gains +2 on all saving throws vs. spells due to her magical nature. Many medusae are evil. Others are reclusive scholars, ancient sages who can guide heroes on their quests and who conceal their deadly visages under veils. There are also medusa spellcasters (see \"Mon- ster Spellcasters\" later in this chapter).",
+    "special": "<p>Attacks:</p>",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Medusa",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

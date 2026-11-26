@@ -1,0 +1,55 @@
+{
+  "_id": "uvIxcXVCcrPMDr3H",
+  "_key": "!actors!uvIxcXVCcrPMDr3H",
+  "name": "Nuckalavee",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "11",
+    "hp": 50,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws",
+    "damage": "3d8 + death (each)",
+    "appearing": "0(1)",
+    "saveAs": "F11",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 3500,
+    "terrain": "Lake (not river), Ocean (coastal),",
+    "monsterType": "Monster (Rare).",
+    "description": "The evil, amphibious nuckalavee is a relative of the centaur. It is shaped similarly but has an enlarged, hideous head. The creature's skin is transparent, and the resulting appearance (visi- ble white ropy muscles, yellow veins, and black blood) is quite horrible. The nuckalavee is immune to fire and poison, and regenerates 3 points per round. However, it cannot cross flowing fresh water. A nuckalavee radiates fear in a 50' radius; each creature within the area must make a saving throw vs. paralysis or flee for 2d6 rounds. The saving throw must be made each round that an opponent remains in the area. The monster's very presence slays all normal insects and other small creatures with 2 hit points or less, at a 120' range. Any victim hit by its claw attack must make a saving throw vs. death ray or die.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 50,
+        "max": 50
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Nuckalavee",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "UQHxGDDNAfe7xTOh",
+  "_key": "!actors!UQHxGDDNAfe7xTOh",
+  "name": "Nixie",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 + special",
+    "damage": "1d4 + charm",
+    "appearing": "0(2d20)",
+    "saveAs": "E1",
+    "morale": 6,
+    "treasure": "B",
+    "intelligence": 13,
+    "alignment": "Neutral",
+    "xpValue": 13,
+    "terrain": "River/Lake.",
+    "monsterType": "Humanoid (Rare).",
+    "description": "Nixies are 3'-tall water sprites. They look like small beautiful women, and their skin is light blue, green, or gray-green. They are part of the community of \"forest folk,\" along with cen- taurs, dryads, actaeons, etc. Nixies dwell in riv- ers and lakes, making their lairs in the deepest part of the water. Nixies avoid combat, but may try to charm an intruder. Ten nixies can together cast one such charm, and if the victim fails his saving throw, he enters the water and serves the nixies for a year. Each nixie can cast a water breathing spell on her slave, but this must be renewed every day. If forced to fight, nixies use small tridents and daggers (weapons which do 1d4 damage), and each may summon a giant bass for aid (see Fish, Giant). There can be nixie spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Nixie",
+      "category": "Humanoid"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

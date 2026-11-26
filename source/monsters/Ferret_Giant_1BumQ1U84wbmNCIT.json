@@ -1,0 +1,55 @@
+{
+  "_id": "1BumQ1U84wbmNCIT",
+  "_key": "!actors!1BumQ1U84wbmNCIT",
+  "name": "Ferret, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "1+1",
+    "hp": 6,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 bite",
+    "damage": "1d8",
+    "appearing": "1d8 (1d2)",
+    "saveAs": "F1",
+    "morale": 8,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 15,
+    "terrain": "Cavern, Woods.",
+    "monsterType": "Giant Animal (Common).",
+    "description": "Giant ferrets, like normal ferrets, are long, slen- der mammals with yellow-white fur and red eyes. But giant ferrets grow to 3' in length, more than twice as long as normal ferrets. Giant ferrets hunt giant rats, and are slender, fast and strong enough to seek these creatures out in their underground lairs. They are sometimes trained for this purpose. Unfortunately, their tempers are highly unpre- dictable, and they have been known to attack their trainers and other humans. Fish, Giant",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 6,
+        "max": 6
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Ferret, Giant",
+      "category": "Unclassified"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
+}

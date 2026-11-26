@@ -1,0 +1,55 @@
+{
+  "_id": "S6vwY34Vb3idlir1",
+  "_key": "!actors!S6vwY34Vb3idlir1",
+  "name": "Harpy",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 claws/1 weapon + special",
+    "damage": "1d4/1d4/1d6",
+    "appearing": "1d6 (2d4)",
+    "saveAs": "F6",
+    "morale": 7,
+    "treasure": "C",
+    "intelligence": 7,
+    "alignment": "Chaotic",
+    "xpValue": 50,
+    "terrain": "Hill, Mountain.",
+    "monsterType": "Monster (Rare).,A harpy has the lower body of a giant eagle,and the upper body and head of a hideous-,looking woman. Harpies can sing with enchant-,ing, mesmerizing voices. By singing, harpies,lure creatures to them, to be killed and de-,voured. Any creature hearing the harpies' songs,must make a saving throw vs. spells or be,charmed. If a victim makes a saving throw,against the songs of a group of harpies, the vic-,tim will not be affected by any of their songs,during the encounter.",
+    "description": "Harpies typically make their nests in out-of- the-way places where there is a certain amount of human traffic: beside mountain passes along caravan routes, on small hills along trade routes, etc. The harpies try to lure all travelers to their death. Should they succeed to the point that no new travelers ever come by, they will simply move to a new site and start all over again. There can be harpy spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Harpy",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

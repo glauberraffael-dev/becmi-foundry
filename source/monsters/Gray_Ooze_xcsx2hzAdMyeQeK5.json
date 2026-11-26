@@ -1,0 +1,55 @@
+{
+  "_id": "xcsx2hzAdMyeQeK5",
+  "_key": "!actors!xcsx2hzAdMyeQeK5",
+  "name": "Gray Ooze",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 10,
+      "outdoor": 3
+    },
+    "attacks": "1",
+    "damage": "2d8",
+    "appearing": "1d4 1Id4)",
+    "saveAs": "F2",
+    "morale": 12,
+    "treasure": "Nil",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 50,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Lowlife (Common).",
+    "description": "This seeping horror looks like wet stone— usually a patch about 8' in diameter, or a boul- der about 4' in diameter—and is difficult to see. It secretes an acid which does 2d8 points of dam- age if it touches bare skin. This acid will dissolve and destroy normal armor or weapons in only 1 round, and magical items in one turn. After the first hit, the ooze sticks to its victim, automati- cally destroying any normal armor and continu- ing to inflict 2d8 points of damage each round. Gray ooze cannot be harmed by cold or fire, but can be harmed by weapons and lightning. A lair may contain 1d4 oozes, possibly with a spe- cial treasure made of stone (DM's choice).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Gray Ooze",
+      "category": "Lowlife"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

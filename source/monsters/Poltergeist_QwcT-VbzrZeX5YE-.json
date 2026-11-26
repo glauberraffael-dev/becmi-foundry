@@ -1,0 +1,55 @@
+{
+  "_id": "QwcT-VbzrZeX5YE-",
+  "_key": "!actors!QwcT-VbzrZeX5YE-",
+  "name": "Poltergeist",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -1,
+    "hd": "12",
+    "hp": 54,
+    "move": {
+      "dungeon": 0,
+      "outdoor": 0
+    },
+    "attacks": "Ectoplasmic Net; Gaze (Paralysis); (spells).",
+    "damage": "Age 1d4 x 10 1d4 x 10 years + see below",
+    "appearing": "1 (1) 1 (1) 1d4 (0)",
+    "saveAs": "F12",
+    "morale": 11,
+    "treasure": "E, N, O E, N, O E, N, O",
+    "intelligence": 13,
+    "alignment": "Chaotic",
+    "xpValue": 4750,
+    "terrain": "Ruins.",
+    "monsterType": "Undead, Enchanted (Very,Rare).,A haunt is an undead soul of some creature,(usually human) unable to rest. Haunts are most,often encountered near the spots where their,mortal bodies died—often a bog, old forest, or,dungeon. They avoid, but are not harmed by,,sunlight and magical light.",
+    "description": "Haunts can only be harmed by magical weap- ons of + 2 or greater enchantment. They are im- mune to all spells except those which affect evil. Each haunt has its own special attack form, given in the descriptions. Haunts do not inflict normal damage; they cause aging with their physical blows. Each --- haunt can create an ectoplasmic net while doing other things, and all haunts can use a gaze attack as well as its special or physical attacks. If seri- ously threatened (or if morale fails), a haunt will escape into the Ethereal Plane and not return for 1d8 days. A haunt can only enter the Ether three times per day, but can leave it at any time. Net: When first encountered, a haunt will normally start oozing ectoplasm. This appears as wispy tendrils, slowly forming a net.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Poltergeist",
+      "category": "Undead"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

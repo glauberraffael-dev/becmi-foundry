@@ -638,6 +638,80 @@
     }
   },
   {
+    "name": "Camel",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Camel",
+        "category": "Normal Animal"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "2",
+      "hp": 9,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 bite/1 hoof",
+      "damage": "l/1d4",
+      "appearing": "0 (2d4)",
+      "saveAs": "F1",
+      "morale": 7,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 20,
+      "terrain": "Barren Lands (Bactrian), Desert",
+      "monsterType": "Normal Animal (Common).",
+      "description": "The camel is an ill-tempered beast, apt to bite or kick any creature that gets in its way— including its owner. It often kicks with one leg. Camels are used as pack and riding animals in deserts and barren lands (with movement as if in clear terrain). A well-watered camel may travel for two weeks without drinking. Camels are her- bivores, preferring grasses and grains, but will eat animal skin and bones when very hungry. A camel with one hump is called a dromedary, and one with two humps is a Bactrian camel. (dromedary).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Cat, Great (Lion)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Cat, Great (Lion)",
+        "category": "Normal Animal"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d4+1/1d4+1/1d10",
+      "appearing": "0 (2d6)",
+      "saveAs": "F3",
+      "morale": 9,
+      "treasure": "U",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 175,
+      "terrain": "Savannah, Brush.",
+      "monsterType": "Normal Animal (Common).",
+      "description": "Lions generally live in warm climates and thrive in savannah and brush lands near deserts. They usually hunt in groups, known as prides. Male lions have the distinctive mane; females do not.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Dinosaur, Aquatic (Armored)",
     "type": "monster",
     "flags": {
@@ -752,6 +826,43 @@
         "Swimming 120' to 180'."
       ],
       "description": "Dinosaur, Aquatic (Small) — Rules Cyclopedia stat block.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Dolphin",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Dolphin",
+        "category": "Normal Animal"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "1 head butt",
+      "damage": "2d4",
+      "appearing": "0 (1d20)",
+      "saveAs": "D6",
+      "morale": 10,
+      "treasure": "Nil",
+      "intelligence": 15,
+      "alignment": "Lawful",
+      "xpValue": 50,
+      "terrain": "Ocean.",
+      "monsterType": "Normal Animal (Common).",
+      "description": "Dolphins are seagoing mammals; their favor- ite food is fish. They are related to whales, but are much smaller. They are 10' long with a smooth hide. Dolphins cannot breathe water and must come to the surface once every 15 min- utes for air. Dolphins are intelligent and have their own high-pitched language. They can communicate telepathically with other dolphins within 50 miles, and they can detect magic underwater (360' range) Dolphins hate sharks and occasionally attack them. Dolphins are the friends of most sailors and have been known to help people in trouble. Mermen sometimes ride dolphins as steeds; fantastic sea-beings may even harness them to chariots.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -2739,6 +2850,43 @@
     }
   },
   {
+    "name": "Ant, Giant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Ant, Giant",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1",
+      "damage": "2d6",
+      "appearing": "2d4 (4d6)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "U (and see below)",
+      "intelligence": 1,
+      "alignment": "Neutral",
+      "xpValue": 125,
+      "terrain": "Any except Arctic.",
+      "monsterType": "Lowlife (Rare).",
+      "description": "Giant ants are black ants about 6' long. They are omnivores and will attack anything edible that lies in their path (no reaction roll); if they win, they car- ry their kills back to the nest. Once engaged in combat, they will fight to the death, even trying to cross flames to reach their opponents. A giant ant nest looks like a large, bare hill. Giant ant nests are not as heavily populated as those of smaller ants. At any given time, the nest will be protected by 4d6 giant ants, and another 10d6 will be on the trails, gathering food. There is an ant queen in the deep, well-guarded egg chamber of the ant nest. Giant ants behave just like their smaller cous- ins. They wander all over the landscape, finding sources of ready food (grain warehouses, watering-holes, villages), communicate their finds to the nest, and set up a trail from the nest to the food and back.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Bee, Giant",
     "type": "monster",
     "flags": {
@@ -2770,6 +2918,43 @@
       "monsterType": "Lowlife (Rare).",
       "description": "Giant bees, also called \"killer bees,\" are footlong giant bees with nasty tempers. Giant bees always attack anyone within 30' of their hive. If a giant bee attack hits, the bee dies, but the creature stung must make a saving throw vs. poison or die. The stinger will work its way into the victim, inflicting 1 point of damage per round, unless a character spends a round pulling it out. Owing to the great weight of their hives, giant bees prefer to build their hives in small caves and underground areas near the surface. There will always be at least 10 bees with their queen in or near the hive. At least four of these bees will have 1 Hit Die each (XP 13). The queen bee has 2 Hit Dice (XP 35) and can sting repeatedly without dying. Giant bees make magical honey. If a character eats the honey of an entire hive (about two pints), it has an effect like a half-strength potion of healing, curing 1d4 points of damage. Fire Beetle: Fire beetles are 2 1/2'long creatures often found below ground. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen. These glands give off light in a 10' radius and will continue to glow for 1d6 days after they are removed. Oil",
       "special": "<p>If a giant bee attack hits, the bee dies, but the creature stung must make a saving throw vs. poison or die. Fire Beetle: Fire beetles are 2 1/2'long creatures often found below ground. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Blast Spore",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Blast Spore",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 9,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 30,
+        "outdoor": 10
+      },
+      "attacks": "1",
+      "damage": "Disease only",
+      "appearing": "1d3 (1)",
+      "saveAs": "F1",
+      "morale": 9,
+      "treasure": "Nil",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 13,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Lowlife (Rare).,A blast spore looks almost exactly like a be-,holder (see Beholder, above). However, it is a,type of floating fungus.",
+      "description": "When seen in dim light, a blast spore is usu- ally mistaken for a beholder; a character must roll 10% or less on 1d100 to tell the difference. When characters come within 10', their chance for detection improves to 25%. If a blast spore is damaged in any way, it ex- plodes for 6-36 (6d6) points of damage to all within 20'; each victim may make a saving throw vs. wands to take half damage. This explosion does not shower victims with spores the way the normal attack does. When approached, this creature might spray a shower of spores in a 20' x 20' x 20' volume be- fore it. Each victim must make a saving throw vs. poison; if he fails, the spores hit him, penetrate, and grow into 1d6 more blast spores, causing death in 24 hours unless a cure disease spell is applied.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -2850,6 +3035,80 @@
     }
   },
   {
+    "name": "Gray Ooze",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gray Ooze",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 8,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 10,
+        "outdoor": 3
+      },
+      "attacks": "1",
+      "damage": "2d8",
+      "appearing": "1d4 1Id4)",
+      "saveAs": "F2",
+      "morale": 12,
+      "treasure": "Nil",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 50,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Lowlife (Common).",
+      "description": "This seeping horror looks like wet stone— usually a patch about 8' in diameter, or a boul- der about 4' in diameter—and is difficult to see. It secretes an acid which does 2d8 points of dam- age if it touches bare skin. This acid will dissolve and destroy normal armor or weapons in only 1 round, and magical items in one turn. After the first hit, the ooze sticks to its victim, automati- cally destroying any normal armor and continu- ing to inflict 2d8 points of damage each round. Gray ooze cannot be harmed by cold or fire, but can be harmed by weapons and lightning. A lair may contain 1d4 oozes, possibly with a spe- cial treasure made of stone (DM's choice).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Green Slime",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Green Slime",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 9,
+      "hd": "2",
+      "hp": 9,
+      "move": {
+        "dungeon": 3,
+        "outdoor": 1
+      },
+      "attacks": "1",
+      "damage": "See below",
+      "appearing": "1 (0)",
+      "saveAs": "F1",
+      "morale": 7,
+      "treasure": "(P + S) B",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 30,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Lowlife (Common).",
+      "description": "Green slime cannot be harmed by any attacks except fire or cold. It dissolves cloth or leather instantly, wood and metal in 6 rounds, but can- not dissolve stone. Green slime often clings to walls and ceilings and drops down in a surprise attack. Once in contact with flesh, it sticks and turns the flesh into green slime. It cannot be scraped off, but may be burnt off, or treated with a cure disease spell. When green slime drops on a victim (or is stepped on), the victim can usually burn it while it is dissolving armor and clothing. If it is not burned off, the victim will turn completely into green slime 1d4 rounds after the first 6- round (one minute) period. Burning does half damage to the green slime and half damage to the victim.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Lava Ooze",
     "type": "monster",
     "flags": {
@@ -2887,6 +3146,43 @@
     }
   },
   {
+    "name": "Leech, Giant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Leech, Giant",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "6",
+      "hp": 27,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 bite",
+      "damage": "1d6",
+      "appearing": "0 (1d4)",
+      "saveAs": "F3",
+      "morale": 10,
+      "treasure": "Nil",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 275,
+      "terrain": "Swamp.",
+      "monsterType": "Lowlife (Common).,A giant leech is a loathsome wormlike crea-,ture, thicker in the middle than at the ends; it,has reddish-brown skin and is about 3'-4' long.",
+      "description": "It is a parasite, sucking the blood of its prey. In combat, a giant leech attacks with its suckerlike mouth. If it hits, it then holds on and sucks blood for 1d6 points of damage per round. It must be killed to be removed.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Locust, Giant",
     "type": "monster",
     "flags": {
@@ -2918,6 +3214,43 @@
       "monsterType": "Lowlife (Common).",
       "description": "Giant locusts are 2'-3' long and live underground. They may be mistaken for statues (or might not be noticed at all) until approached, because of their stone-gray color. They are herbivores, and also eat fungus such as yellow mold and shriekers. They cannot be harmed by yellow mold or most poisons. Instead of fighting, they usually flee by jumping away (up to 60'). Unfortunately they often become confused, and may accidentally jump into a party (50% chance per jump). If so, a victim is determined randomly and an attack roll is made. If the giant locust hits a character, the victim is battered for 1d4 points of damage. The locust then flies away. When frightened or attacked, giant locusts make a loud shrieking noise to warn their fellows. In dungeons, this shriek has a 20% chance per round of attracting wandering monsters. If cornered, a giant locust will spit a brown gooey substance up to 10'. The target is treated as AC 9 regardless of his true armor class. A victim hit by giant locust spittle must make a saving throw vs. poison or be unable to do anything for the victim will be used to the smell, but any character approaching within 5' must also make a saving throw or suffer the",
       "special": "<p>They cannot be harmed by yellow mold or most poisons. A victim hit by giant locust spittle must make a saving throw vs. poison or be unable to do anything for the victim will be used to the smell, but any character approaching within 5' must also make a saving throw or suffer the</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Ochre Jelly",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Ochre Jelly",
+        "category": "Lowlife"
+      }
+    },
+    "system": {
+      "ac": 8,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 30,
+        "outdoor": 10
+      },
+      "attacks": "1",
+      "damage": "2d6",
+      "appearing": "1(0)",
+      "saveAs": "F3",
+      "morale": 12,
+      "treasure": "Nil",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 300,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Lowlife (Common).",
+      "description": "An ochre jelly is an ochre-colored giant amoeba that can be harmed only by fire or cold. It can seep through small cracks, and destroy wood, leather, and cloth in 1 round, but cannot eat through metal or stone. Attacks with weapons or lightning merely make 1d4 + 1 smaller (2 Hit Dice) ochre jellies. A normal ochre jelly causes 2d6 points of damage per round to exposed flesh. Smaller ochre jellies inflict only half damage. Odic",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -3559,6 +3892,43 @@
       "monsterType": "Construct, Enchanted (Common).",
       "description": "A living statue is an enchanted animated creature made by a powerful wizard. It appears to be a perfectly normal statue—until it moves! A living statue may be any size or material; the sizes given are typical. Living crystal, iron, and rock statues are given as examples, and the DM may create others. (Not every statue in a campaign should be a living statue. If every statue in your campaign is a living statue, PCs will know that any statue they see can attack them. Have noblemen possess statuary as treasure and decoration; have expensive public buildings and plazas be decorated with statues; living statues are very rare in comparison with the numbers of \"real\" statues.) Living statues are not affected by sleep spells. Crystal: A living crystal statue is a life form made of crystals instead of flesh. Crystal statues can look like statues of anything, but often appear human. Iron: A living iron statue has a body that can absorb iron and steel. It takes normal damage when hit, but if a nonmagical metal weapon is used, the attacker must make a saving throw vs. spells or the weapon will become stuck in the body of the living iron statue, and can only be removed if the statue is killed.",
       "special": "<p>Have noblemen possess statuary as treasure and decoration; have expensive public buildings and plazas be decorated with statues; living statues are very rare in comparison with the numbers of \"real\" statues.) Living statues are not affected by sleep spells. It takes normal damage when hit, but if a nonmagical metal weapon is used, the attacker must make a saving throw vs. spells or the weapon will become stuck in the body of the living iron statue, and can only be removed if the statue is killed.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Chimera",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Chimera",
+        "category": "Dragon"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "9",
+      "hp": 41,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/3 heads + breath (special)",
+      "damage": "1d3/1d3/2d4/ldl0/3d4 + 3d6",
+      "appearing": "1d2 (1d4)",
+      "saveAs": "F9",
+      "morale": 9,
+      "treasure": "F",
+      "intelligence": 6,
+      "alignment": "Chaotic",
+      "xpValue": 2300,
+      "terrain": "Cavern, Hill, Mountain, Ruins.",
+      "monsterType": "Monster (Very Rare).,A chimera is a horrid combination of three,different creatures. It has three heads (goat, li-,on, and dragon), the forebody of a lion, the,hindquarters of a goat, and the wings and tail of,a dragon.",
+      "description": "Chimerae are rare, solitary creatures that are very territorial. They usually live in wild hills but may occasionally be found in some dungeons. They might also live in small groups—often mated pairs with one or two young. In combat, the goat's head butts, the lion's head bites, and the dragon's head can bite or breathe fire (a cone 50' long and 10' wide at the end, for 3d6 points of damage). The breath can only be used three times per day. In a fight, the chimera has a 50% chance each round to use its breath attack; once it has used all three such at- tacks, it will use only its other attacks. Occasionally, a chimera—ill-tempered and dangerous to begin with—will turn rogue. A rogue chimera flies to some distant place (usually a hill or mountain near a human community) and begin to terrorize the area, trying to drive out or kill every living thing in that region.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -4436,6 +4806,43 @@
     }
   },
   {
+    "name": "Wyvern",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Wyvern",
+        "category": "Dragon"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "7",
+      "hp": 32,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 bite/1 sting",
+      "damage": "2d8/1d6 + poison",
+      "appearing": "1d2 (1d6)",
+      "saveAs": "F4",
+      "morale": 9,
+      "treasure": "E",
+      "intelligence": 3,
+      "alignment": "Chaotic",
+      "xpValue": 850,
+      "terrain": "Mountain, Woods.",
+      "monsterType": "Monster, Dragon-Kin (Rare).,A wyvern looks like a two-legged dragon with,a long tail. Unlike dragons, wyverns are mostly,brown, red, or rust-red in hue. These beasts pre-,fer to live on cliffs or in forests, but may be,found anywhere.",
+      "description": "In combat, the wyvern will bite and arch its tail over its head to hit opponents in front of it. Those stung by the tail must make a saving throw vs. poison or die. Like most dragon-kin, wyverns are carni- vores. They prefer the taste of large herd-beasts such as elk and moose, but will attack humans they encounter and eat the remains if they are victorious.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Archon",
     "type": "monster",
     "flags": {
@@ -4578,6 +4985,43 @@
       "monsterType": "Humanoid (Common).",
       "description": "By weapon + 1 F3 Chaotic Bugbears are giant hairy goblins—humanoids that grow to about 8' tall and are covered with bristly dark fur. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can. They surprise on a roll of 1-3 ons, they add + 1 to all attack and damage rolls because of their strength. In the wilderness, they live in small communities of 5-20 members, and send out hunting packs of 2-16 fighters. They kill and eat herd animals whenever possible and sometimes raid farmers' grain storage sheds and meat-smoking sheds for food; in times of great hardship, they may kill humans for food. They are basically intelligent, using crude knives, clubs, and spears they make themselves; they know how to use the superior weapons they sometimes steal from humans. There can be bugbear spellcasters; see \"Monster Spellcasters.\"",
       "special": "<p>They surprise on a roll of 1-3 ons, they add + 1 to all attack and damage rolls because of their strength. There can be bugbear spellcasters; see \"Monster Spellcasters.\"</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Cyclops",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Cyclops",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "13",
+      "hp": 59,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 club",
+      "damage": "3d10",
+      "appearing": "1 (1d4)",
+      "saveAs": "F13",
+      "morale": 9,
+      "treasure": "E + 5,000gp",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 2300,
+      "terrain": "Hill, Mountain.",
+      "monsterType": "Giant Humanoid (Rare).,A cyclops (plural: cyclopes) is a rare type of gi-,ant, noted for its great size and the single eye in,the center of its forehead. A cyclops is about 20',tall. It has poor depth perception because of its,single eye, and it strikes with a penalty of -2 on,all attack rolls. A cyclops will usually fight with a,wooden club. It can throw rocks to a 200' range,(60/130/200), each hit causing 3d6 points of,damage.",
+      "description": "Some cyclopes (5%) are able to cast a curse once a week. (The DM should decide the exact nature of the curse.) A cyclops usually lives alone, though a small group may sometimes share a large cave. They spend their time raising sheep and grapes. Cyclopes are known for their stupidity, and a clever party can often escape from them by trickery. There can be cyclops spellcasters; see \"Mon- ster Spellcasters\" later in this chapter. Devil Swine See Lycanthrope. Its beak attack causes 1d6 points of damage. Any creature bitten or touched by a cockatrice must make a saving throw or be turned to stone. Cockatrices may be found anywhere. Plane of Earth: On the plane of Earth, a cock- atrice is a foot-long birdlike creature made of soft earth. It is nearly harmless, able to inflict only 1 point of damage with a beak attack.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -5613,6 +6057,43 @@
     }
   },
   {
+    "name": "Gnome",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gnome",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon",
+      "appearing": "1d8 (5d8)",
+      "saveAs": "D1",
+      "morale": 8,
+      "treasure": "(P) C",
+      "intelligence": 11,
+      "alignment": "Lawful or Neutral",
+      "xpValue": 10,
+      "terrain": "Cavern. Open.",
+      "monsterType": "Humanoid (Common).",
+      "description": "Gnomes are a humanoid race related to (but smaller than) dwarves. They stand 3 1/2' to 4' tall and have long noses and full beards. Gnomes have well-developed infravision, with a 90' range. They usually live in burrows in the low- lands or in underground communities. Gnomes are excellent smiths and miners. They love gold and gems and have been known to take foolish risks just to obtain them. They love machinery of all kinds and prefer crossbows and war hammers as weapons. Gnomes like most dwarves, but make war with goblins and ko- bolds, who steal their precious gold. They usu- ally attack kobolds on sight. For every 20 gnomes, one will be a leader with 11 hit points who fights as a 2 Hit Die monster. In the gnome city or village lives a clan chieftain and his ld6 bodyguards. The clan chieftain has 18 hit points, attacks as a 4 Hit Die monster, and gains a bonus of +1 on damage rolls.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Goblin",
     "type": "monster",
     "flags": {
@@ -6164,6 +6645,43 @@
     }
   },
   {
+    "name": "Kobold",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Kobold",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1/2",
+      "hp": 1,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon - 1",
+      "appearing": "4d4 (1d6 X 10)",
+      "saveAs": "Normal Man",
+      "morale": 6,
+      "treasure": "(P) J",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 5,
+      "terrain": "Cavern, Hill, Mountain, Wood.",
+      "monsterType": "Humanoid (Common).",
+      "description": "These small, evil doglike humanoids usually live underground in clans of 10 to 60 members. They have scaly, rust-brown skin no hair. They have well-developed infravision with a 90' range. They prefer to attack by ambush. A kobold chieftain and 1d6 bodyguards live in the kobold lair. The chieftain has 9 hit points and fights as a 2 Hit Dice monster. The body- guards each have 6 hit points and fight as 1 +1 Hit Dice monsters. As long as the chieftain is alive, all kobolds with him have a morale of 8 rather than 6. Kobolds hate gnomes and will attack them on sight. There can be kobold spellcasters; see \"Mon- ster Spellcasters\" later in this chapter.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Lizard Man",
     "type": "monster",
     "flags": {
@@ -6435,6 +6953,80 @@
     }
   },
   {
+    "name": "Neanderthal (Caveman)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Neanderthal (Caveman)",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 8,
+      "hd": "2",
+      "hp": 9,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon + 1",
+      "appearing": "1d10 (1d4 x 10)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "C",
+      "intelligence": 7,
+      "alignment": "Lawful",
+      "xpValue": 20,
+      "terrain": "Hill, Mountain; Any (prehistoric).",
+      "monsterType": "Humanoid (Rare).,Neanderthals (also known as \"cavemen\"),have squat bodies with large bones and powerful,muscles. Their faces have apelike features, in-,cluding large brows above the eyes. Neander-,thals live in family groups in caves and caverns,,especially in hill and mountain territories far,from human communities, or in secluded \"lost,world\" areas. If they attack, they usually use,thrown spears. They use stone axes, clubs, or,stone hammers in hand-to-hand combat.",
+      "description": "Neanderthal leaders are almost a separate race, much larger than the average Neanderthal. These leaders have 6 Hit Dice and are up to 10' tall. There will be 10-40 Neanderthals (ld4 x 10) in the lair with two leaders, one male and one fe- male. Neanderthals often hunt cave bears and keep white apes as pets. They are friendly toward dwarves and gnomes, but hate goblins and ko- bolds, and will attack ogres on sight. Neander- thals are shy and will avoid humans, but are not usually hostile unless they are attacked. A proper- ly groomed and dressed neanderthal could con- ceivably pass for a human, but neanderthals cannot learn to speak Common very well. There can be neanderthal spellcasters; see 'Monster Spellcasters\" later in this chapter.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Nixie",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Nixie",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 + special",
+      "damage": "1d4 + charm",
+      "appearing": "0(2d20)",
+      "saveAs": "E1",
+      "morale": 6,
+      "treasure": "B",
+      "intelligence": 13,
+      "alignment": "Neutral",
+      "xpValue": 13,
+      "terrain": "River/Lake.",
+      "monsterType": "Humanoid (Rare).",
+      "description": "Nixies are 3'-tall water sprites. They look like small beautiful women, and their skin is light blue, green, or gray-green. They are part of the community of \"forest folk,\" along with cen- taurs, dryads, actaeons, etc. Nixies dwell in riv- ers and lakes, making their lairs in the deepest part of the water. Nixies avoid combat, but may try to charm an intruder. Ten nixies can together cast one such charm, and if the victim fails his saving throw, he enters the water and serves the nixies for a year. Each nixie can cast a water breathing spell on her slave, but this must be renewed every day. If forced to fight, nixies use small tridents and daggers (weapons which do 1d4 damage), and each may summon a giant bass for aid (see Fish, Giant). There can be nixie spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Normal Human",
     "type": "monster",
     "flags": {
@@ -6474,6 +7066,43 @@
     }
   },
   {
+    "name": "Ogre",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Ogre",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4+1",
+      "hp": 19,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 club",
+      "damage": "By weapon + 2",
+      "appearing": "1d6 (2d6)",
+      "saveAs": "F4",
+      "morale": 10,
+      "treasure": "10)S x 100 + C",
+      "intelligence": 6,
+      "alignment": "Chaotic",
+      "xpValue": 125,
+      "terrain": "Cavern, Wilderness (any).",
+      "monsterType": "Humanoid (Common).",
+      "description": "Ogres are huge fearsome humanlike creatures, usually 8' to 10' tall. They wear animal skins for clothes, and often live in caves. They are very primitive and greedy; they hunt animals when they have to, but are just as content to ambush travelers or bully them into surrendering food and money instead. When encountered outside their lair, a group of ogres will be carrying 1d6 x 100 gp in large sacks. Ogres hate neander- thals and will attack them on sight. Ogres have no special combat tactics. When inclined to fight, they will beat their prey with large clubs until it stops moving or the ogres fail a morale check and flee. Ogres of greater than normal intelligence can be spellcasters; see \"Monster Spellcasters\" later in this chapter. Ooze See Black Pudding, Gray Ooze, Lava Ooze, and Ochre Jelly. ---",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Orc",
     "type": "monster",
     "flags": {
@@ -6504,6 +7133,43 @@
       "terrain": "Wilderness (any).",
       "monsterType": "Humanoid (Common).",
       "description": "An orc is an ugly humanlike creature, and looks like a combination of animal and man. Most orcs are shaped like humans, but many have bestial facial features and teeth. Orcs are nocturnal omnivores, and prefer to live underground. When fighting in daylight, they have a penalty of -1 on their attack rolls. Orcs have bad tempers and do not like other living things. One member of each group of orcs is a leader Pasha See Djinni, Greater.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Phoenix",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Phoenix",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 dagger",
+      "damage": "1d4",
+      "appearing": "2d4 (1d4 X 10)",
+      "saveAs": "E1",
+      "morale": 7,
+      "treasure": "R + S",
+      "intelligence": 14,
+      "alignment": "Neutral",
+      "xpValue": 19,
+      "terrain": "Woods.",
+      "monsterType": "Humanoid (Rare).",
+      "description": "Pixies are small humanlike creatures with in- sectlike wings. They are distantly related to elves, but are only l'-2' tall. They are invisible unless they want to be seen (or unless magically detected). Pixies do not suffer the limitations of the in- visibility spell—they can attack and remain in- visible, and they always gain surprise when doing so. They may not be attacked in the first round of combat, but after that their attackers will see shadows and movement in the air and may attack the pixies with a - 4 penalty on at- tack rolls. Their small insectlike wings can only support pixies for three turns, and they must rest one full turn after flying. Pixies have their own communities in the wil- derness. They do not attack humans except when they are themselves attacked or endan- gered.",
       "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
@@ -6548,6 +7214,43 @@
     }
   },
   {
+    "name": "Sprite",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Sprite",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "1/2",
+      "hp": 1,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 spell",
+      "damage": "See below",
+      "appearing": "3d6 (5d8)",
+      "saveAs": "E1",
+      "morale": 7,
+      "treasure": "S",
+      "intelligence": 14,
+      "alignment": "Neutral",
+      "xpValue": 6,
+      "terrain": "Woods.",
+      "monsterType": "Humanoid (Common).",
+      "description": "Sprites are small winged people (about 1 foot tall) related to pixies and elves. Though shy, they are very curious and have a strange sense of humor. Five sprites acting together can cast one curse spell. This will take the form of a magic practical joke, such as tripping or having one's nose grow. The exact effect of the curse is left to the DM's imagination. (The effects of the sprites' curse can be countered by a remove curse spell.) Sprites will never cause death on purpose even if they are attacked. There can be sprite spellcasters; see \"Monster Spellcasters\" later in this chapter. Statue, Living",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Thoul",
     "type": "monster",
     "flags": {
@@ -6579,6 +7282,80 @@
       "monsterType": "Monster (Very Rare)",
       "special": "<p>Paralysis: The touch of a thoul paralyses as a ghoul does.</p><p>Regeneration: If damaged, it regains 1 hit point per round while alive.</p>",
       "description": "A thoul is a magical combination of a ghoul, a hobgoblin and a troll, and is not Undead. Except up close it looks exactly like a hobgoblin, so thouls often serve as guards to hobgoblin kings and Chaotic rulers.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Troglodyte",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Troglodyte",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "2",
+      "hp": 9,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d4/1d4/1d4",
+      "appearing": "1d8 (5d8)",
+      "saveAs": "F2",
+      "morale": 9,
+      "treasure": "A",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 25,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Humanoid (Rare).,A troglodyte is an intelligent humanoid rep-,tile. It has a short tail, long legs, and a spiny,\"comb\" on its head and arms. Troglodytes walk,upright and use their hands as well as humans.",
+      "description": "They hate most other creatures. Troglodytes have the chameleonlike ability to change colors, and use it to hide by rock walls, surprising often (1-4 on 1d6). A troglodyte also secretes an oil that produces a stench, nauseating humans and demihumans unless a saving throw vs. poison is made. Nauseated characters have a - 2 penalty on their attack rolls while in hand- to-hand combat with the troglodytes. There can be troglodyte spcllcasters; see \"Monster Spellcasters\" later in this chapter.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Troll",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Troll",
+        "category": "Humanoid"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "6+3",
+      "hp": 30,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d6/1d6/1d10",
+      "appearing": "1d8(1d8)",
+      "saveAs": "F6",
+      "morale": 10,
+      "treasure": "D",
+      "intelligence": 6,
+      "alignment": "Chaotic",
+      "xpValue": 650,
+      "terrain": "Cavern, Wilderness (any).",
+      "monsterType": "Giant Humanoid (Rare).",
+      "description": "Trolls are 8'-tall, thin, somewhat intelligent humanoids, with ferocious features, sharp teeth, and a mottled skin almost like rubber. They are carnivores, and prefer human and humanlike victims to all other foods. They live nearly anywhere, often in the ruined dwellings of their victims. A troll is very strong, and rends its opponents with talons and sharp teeth. It has the power of regeneration, the ability to grow back together when damaged. It begins to regenerate 3 rounds after it is damaged. The troll's wounds heal themselves at a rate of 3 hit points per round, and even severed limbs will crawl back to the body and rejoin. The head and claws of the troll will continue to fight as long as the creature has 1 hit point or more. However, the troll cannot re- generate damage from fire or acid, and when at- tacked by these methods, the morale score is 8.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -6992,6 +7769,117 @@
     }
   },
   {
+    "name": "Basilisk",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Basilisk",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "6+1",
+      "hp": 28,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 bite/1 gaze",
+      "damage": "1d10 + petrification (special)",
+      "appearing": "1d6(1d6)",
+      "saveAs": "F6",
+      "morale": 9,
+      "treasure": "F",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 950,
+      "terrain": "Cavern, Woods; Plane of Earth.",
+      "monsterType": "Monster (Rare); Planar Mon-,ster (Very Rare).,A basilisk is a 10'-long lizard; it looks much,like a large snake with four legs and a crownlike,growth on its head. It may be of any color, but is,usually very bright and distinctive. It is some-,times called the \"king of snakes.\"",
+      "description": "The basilisk is a nonintelligent but very magi- cal lizard. It lives in underground caverns or wild and tangled thickets. Any creature hit by a basi- lisk must make a saving throw vs. turn to stone or be petrified; all equipment he carries will also be turned to stone. The basilisk's gaze has the same effect; anyone meeting the gaze must make the same saving throw or be petrified. A surprised character automatically meets the gaze (but gets the saving throw). A character in hand-to-hand combat with the creature must either avoid the gaze or meet the gaze each round. When a character tries to avoid the gaze, he suffers a -4 penalty to all attack rolls against the monster, while the basilisk gains a + 2 bonus to all its attacks against the charac- ter. If the character meets the gaze, he attacks and defends normally but must make the saving throw at his normal odds.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Beholder",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Beholder",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "11",
+      "hp": 50,
+      "move": {
+        "dungeon": 30,
+        "outdoor": 10
+      },
+      "attacks": "1 bite + special",
+      "damage": "2d8 + special",
+      "appearing": "1 (0)",
+      "saveAs": "M11",
+      "morale": 12,
+      "treasure": "L, N, O",
+      "intelligence": 16,
+      "alignment": "Chaotic",
+      "xpValue": 5100,
+      "terrain": "",
+      "monsterType": "Monster (Rare).,A beholder, also called an \"eye tyrant\" or,\"sphere of many eyes,\" looks like a large floating,ball (about 4' in diameter) covered with tough,armor-plated skin. Atop the beholder are ten,small eyes on stalks, each with its own magical,power. A large central eye is on the front of the,body, with a toothy mouth below it.,A beholder moves by means of a slow flight,that cannot be dispelled. It speaks most lan-,guages and is extremely intelligent, cruel, and,greedy. It is normally found alone but is rarely,(5% chance) found with 1d6 young (each with,1/10 normal Hit Dice and range of eye effects,,bite damage 1d4 points).",
+      "description": "The beholder's front eye always projects an anti-magic ray, which temporarily \"turns off all magic within 60' in front of it (see \"Anti-Magic\" in Chapter 13). Magical weapons used within the ray are treated as if nonmagical. Spells cast within it area of effect are instantly ruined; spells cast from further away are ruined when the ef- fects get within range. The beholder will usually turn to face any character who starts casting, ru- ining the spell. Magical weapons and items will work normal- ly once they are removed from the anti-magic ray area, and existing spell effects with durations will resume once the ray is directed elsewhere. This ray cannot be aimed above or below the creature, but only straight out in front of it. As this ray can affect any magic, even that of the smaller eyes (as explained below), the small eyes cannot be used on targets within the anti-magic ray.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Black Pudding",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Black Pudding",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "10",
+      "hp": 45,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1",
+      "damage": "3d8",
+      "appearing": "1 (0)",
+      "saveAs": "F5",
+      "morale": 12,
+      "treasure": "See below",
+      "intelligence": 0,
+      "alignment": "Neutral",
+      "xpValue": 1750,
+      "terrain": "Cavern, Ruins.",
+      "monsterType": "Monster (Common).,A black pudding is a nonintelligent black,blob 5 to 30 feet in diameter. Puddings are al-,ways hungry; they will attack any creature they,come across.",
+      "description": "With their corrosive touch, they inflict 3d8 points of damage to living things, and can dis- solve wood and corrode metal in one turn. They cannot affect stone. They can travel on ceilings and walls, and can pass through small openings. (Passing through a small opening is very slow and usually takes a full turn or longer.) A pudding can only be killed by fire; other at- tacks (weapons or spells) merely break it up into smaller puddings, each with 2 Hit Dice and in- flicting ld8 points of damage per blow. How- ever, a flaming sword will cause full normal damage. Puddings normally have no treasure, but gems (the only remnants of previous victims) might be found nearby. Eye 1. charm person (range 120') Eye 2. charm monster (range 120') Eye 3. sleep (range 240') Eye 4. telekinesis (range 120', up to 5,000 cn weight) Eye 5. flesh to stone* (range 120') Eye 6. disintegrate (range 60') Eye 7.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Blink Dog",
     "type": "monster",
     "flags": {
@@ -7060,6 +7948,80 @@
       "monsterType": "Monster",
       "description": "Paralysis or 1 point F2 B Neutral This scavenger is a 9'-long, 3'-high manylegged worm. It can move equally well on a floor, wall, or ceiling. Its small mouth is surrounded by eight tentacles, each 2' long, which can paralyze on a successful hit unless a saving throw vs. paralysis is made. A tentacle hit does no actual damage. Carrion crawlers are known as scavengers, eating the remains of slain animals. But they are also willing to go after fresh meat. They will attack small parties of travelers, paralyzing their prey, and will eat paralyzed victims in three turns unless except when the carrion crawlers are being attacked. Unless magically cured, the paralysis will wear off in 2d4 turns. Cat, Great Mountain Sabre-Tooth No. Appearing Save as F2 U Neutral Panther F2 U Neutral Lion F3 U Neutral Tiger F3 U Neutral Tiger F4 V Neutral Sabre-Tooth Tiger: Prehistoric Animal (Very Rare). The \"great cats\" are large feline predators living in wilderness areas. They are cautious, normally only attacking their natural prey, small herd-beasts. They will avoid fights with humans and demihumans unless forced by extreme hunger or when trapped with no escape route. Great cats rarely go deeply into",
       "special": "<p>Paralysis or 1 point F2 B Neutral This scavenger is a 9'-long, 3'-high manylegged worm. Its small mouth is surrounded by eight tentacles, each 2' long, which can paralyze on a successful hit unless a saving throw vs. paralysis is made. They will attack small parties of travelers, paralyzing their prey, and will eat paralyzed victims in three turns unless except when the carrion crawlers are being attacked.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Centaur",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Centaur",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "2 hooves/1 weapon",
+      "damage": "1d6/1d6/by weapon",
+      "appearing": "0 (2d10)",
+      "saveAs": "F4",
+      "morale": 8,
+      "treasure": "A",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 75,
+      "terrain": "Woods, Open, Wooded Hills.",
+      "monsterType": "Monster (Common).,A centaur is a creature with the head, arms,,and upper body of a man joined to the body and,legs of a horse. They are of average human intel-,ligence and often carry weapons (clubs, lances,,and bows; one weapon per creature). A centaur,may use a charge attack with a lance.",
+      "description": "Centaurs will form into small tribes or fami- lies. Their homes are in dense thickets or woods. The females and young will usually stay in the lair. If attacked, females and young will attempt to flee; if escape is impossible, they will fight to the death. The young fight as 2-HD monsters, and do less damage (1d2/ld2/ld4). There can be centaur spellcasters; see \"Mon- ster Spellcasters.\"",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Cockatrice",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Cockatrice",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 beak",
+      "damage": "1d6 + petrification (special)",
+      "appearing": "1d4 (2d4)",
+      "saveAs": "F5",
+      "morale": 7,
+      "treasure": "D",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 425,
+      "terrain": "",
+      "monsterType": "Monster (Very Rare). Planar,Monster (Very Rare)",
+      "description": "This is a magical monster with the head, wings, and legs of a rooster and the tail of a snake.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -7177,6 +8139,43 @@
         "Vampiric: double energy drain per hit; harmed only by magical or silver weapons (or holy items); turnable by clerics; charm and regenerate as vampires."
       ],
       "description": "Devilfish (Vampire) — Rules Cyclopedia stat block.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Displacer Beast",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Displacer Beast",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "6",
+      "hp": 27,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "2 tentacles",
+      "damage": "2d4/2d4",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F6",
+      "morale": 8,
+      "treasure": "D",
+      "intelligence": 3,
+      "alignment": "Neutral",
+      "xpValue": 500,
+      "terrain": "Hill, Jungle, Woods.",
+      "monsterType": "Monster (Rare).,A displacer beast looks like a large black pan-,ther with six legs and a pair of 6' long tentacles,growing from its shoulders. It attacks with these,tentacles, which have sharp hornlike edges.,A displacer beast's skin bends light rays, so the,position. All attackers have a -2 penalty on all,attack rolls, and the creature gains a +2 bonus,to all saving throws.",
+      "description": "If the creature is severely damaged (6 hit points or less remaining), it can use a ferocious bite attack (+ 2 bonus to attack roll, damage 1d6 points). Displacer beasts are carnivores; they prey on smaller herd animals in forests and jungles. They sometimes stray into dungeons out of curiosity or because they smell something good within. They only attack PC parties when especially hungry. Displacer beasts hate and fear blink dogs, and will always attack them and anyone traveling with them. It is suspected that displacer beasts and blink dogs both come from some faraway plane of existence, and are at war with one an- other throughout the dimensions.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -7371,6 +8370,228 @@
       "monsterType": "Monster (Common).",
       "description": "Ghouls are undead creatures, immune to sleep and charm spells. They are hideous, beastlike creatures who will attack and eat any living thing. They have no real memories of their former lives; they do not talk, and have little more than animal intelligence. Any hit from a ghoul will paralyze any creature of ogre-size or smaller throw vs. paralysis. Once an opponent is paralyzed, the ghoul will turn and attack another opponent, continuing until either the ghoul or all the opponents are paralyzed or dead. This paralysis lasts 2d4 turns unless magically cured. These creatures do not like the sun. They tend to live in graveyards, clustering in empty tombs when not hunting. Ghouls are also scavengers, feeding on carrion when living prey is scarce. Giant Hill F8 E + 5,000 gp Chaotic Cloud F12 E + 5,000 gp Neutral Stone F9 E + 5,000 gp Neutral Storm F15 E + 5,000 gp Lawful Frost F10 E + 5,000gp Chaotic Mountain I weapon F (level = HD) E + 5,000 gp Neutral By HD Fire F11 E + 5,000gp Chaotic Sea See below F (level = HD) E + 5,000 gp Neutral By HD Giant Humanoid (Hill Giants—Common, Others—Rare) Giants are huge humanlike monsters. The \"lesser\" forms of giants (fire, frost, hill and stone) ar",
       "special": "<p>Ghouls are undead creatures, immune to sleep and charm spells. Any hit from a ghoul will paralyze any creature of ogre-size or smaller throw vs. paralysis. Once an opponent is paralyzed, the ghoul will turn and attack another opponent, continuing until either the ghoul or all the opponents are paralyzed or dead.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Gorgon",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gorgon",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "8",
+      "hp": 36,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 horn or 1 breath",
+      "damage": "2d6 or petrification (special)",
+      "appearing": "1d2 (1d4)",
+      "saveAs": "F8",
+      "morale": 8,
+      "treasure": "E",
+      "intelligence": 1,
+      "alignment": "Chaotic",
+      "xpValue": 1200,
+      "terrain": "Hill, Open; Plane of Earth.",
+      "monsterType": "Monster (Very Rare); Planar,Monster (Very Rare).,A gorgon is a magical bull-like monster cov-,ered with large ironlike scales. It is usually found,in hills or grasslands. It may either attack with its,great horns (often charging for double damage),,or use its horrible breath weapon. Its breath is a,cloud of vapor, 60' long and 10' wide. Those,within it must make a saving throw vs. turn to,stone, or be petrified. Gorgons are immune to,their breath weapons and all other petrifying at-,tacks. Gorgons are native to both the Prime",
+      "description": "Plane and their original home, the elemental plane of Earth. Plane of Earth: On the plane of Earth, a gor- gon is a local herd animal, bred by the horde creatures (see below) and \"milked\" (though this fluid is bitter and oily, in human terms) or slain for food. Its breath can still petrify creatures not made of earth (saving throw applies). Elemental Plane of Earth Statistics: HD 4, /AT 1 horn, D 1-4, NA 1-8 (3-36), Save F4, ML 5, TT Nil, AL N, XP 75.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Gremlin",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Gremlin",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "Special",
+      "damage": "Special",
+      "appearing": "1d6 (1d6)",
+      "saveAs": "E1",
+      "morale": 12,
+      "treasure": "Nil",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 16,
+      "terrain": "Any.",
+      "monsterType": "Monster (Rare).",
+      "description": "Gremlins are 3'-tall humanoids with pasty gray-green skin, large saucer-shaped eyes and pointed ears. They are whimsical and have an evil sense of humor. Gremlins can radiate a cha- otic aura with a 20' radius. Inside the area of ef- fect, \"anything that can go wrong will go wrong\" at the DM's discretion. Characters must successfully save vs. spells each round to avoid the effect of the gremlins. Gremlins have no attack other than their cha- otic aura. However, any creature that attacks a gremlin and misses must roll a second attack against him or herself. Any character casting a spell within the chaotic aura must roll a save vs. spells. If successful, the spell affects the grem- lins; if unsuccessful, the spell affects the caster. Gremlin magic usually affects mechanical de- vices before nonmechanical devices. A crossbow might break in half, axeheads might fall off their shaft, etc.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Griffon",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Griffon",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "7",
+      "hp": 32,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d4/1d4/2d8",
+      "appearing": "1 (2d8)",
+      "saveAs": "F4",
+      "morale": 8,
+      "treasure": "E",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 450,
+      "terrain": "Mountain.",
+      "monsterType": "Monster (Rare).,A griffon has the head, wings, and front claws,of an eagle and the body and hindquarters of a,lion. Its favorite prey is horses. When within,120' of a horse, a griffon must make a morale,check or attack immediately. It can carry off a,horse-sized creature at half its flying rate.",
+      "description": "Wild griffons may be tamed if captured young, becoming loyal mounts. Tamed griffons are still likely to attack horses, however, and must check morale as above.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Harpy",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Harpy",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "2 claws/1 weapon + special",
+      "damage": "1d4/1d4/1d6",
+      "appearing": "1d6 (2d4)",
+      "saveAs": "F6",
+      "morale": 7,
+      "treasure": "C",
+      "intelligence": 7,
+      "alignment": "Chaotic",
+      "xpValue": 50,
+      "terrain": "Hill, Mountain.",
+      "monsterType": "Monster (Rare).,A harpy has the lower body of a giant eagle,and the upper body and head of a hideous-,looking woman. Harpies can sing with enchant-,ing, mesmerizing voices. By singing, harpies,lure creatures to them, to be killed and de-,voured. Any creature hearing the harpies' songs,must make a saving throw vs. spells or be,charmed. If a victim makes a saving throw,against the songs of a group of harpies, the vic-,tim will not be affected by any of their songs,during the encounter.",
+      "description": "Harpies typically make their nests in out-of- the-way places where there is a certain amount of human traffic: beside mountain passes along caravan routes, on small hills along trade routes, etc. The harpies try to lure all travelers to their death. Should they succeed to the point that no new travelers ever come by, they will simply move to a new site and start all over again. There can be harpy spellcasters; see \"Monster Spellcasters\" later in this chapter.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Hellhound",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Hellhound",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 bite or 1 breath",
+      "damage": "1d6 or special",
+      "appearing": "2d4 (2d4)",
+      "saveAs": "F3-7",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 12,
+      "alignment": "Chaotic",
+      "xpValue": 65,
+      "terrain": "Cavern, Mountain.",
+      "monsterType": "Monster (Rare).",
+      "description": "This reddish-brown doglike monster is as big as a small pony. They are often found near volca- noes, deep in dungeons, or with other fire- loving creatures (such as fire giants). Hellhounds are cunning and highly intelli- gent. They can often detect invisible (as the magic-user spell; 75% chance per round, range 60'). They are immune to normal fire, and make all saving throws as fighters of equal Hit Dice. A hellhound will attack one victim, either breathing fire (one chance in three: 1-2 on ld6) or biting (two chances in three: 3-6 on ld6) each round. The breath does 1d6 points of damage for each Hit Die of the hound. The victim of the breath may make a saving throw vs. dragon breath to take half damage.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Hippogriff",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Hippogriff",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "3+1",
+      "hp": 15,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d6/1d6/ldl0",
+      "appearing": "0 (2d8)",
+      "saveAs": "F2",
+      "morale": 8,
+      "treasure": "Nil",
+      "intelligence": 3,
+      "alignment": "Neutral",
+      "xpValue": 50,
+      "terrain": "Mountain.",
+      "monsterType": "Monster (Rare).,A hippogriff is a fantastic creature with the,foreparts and head of a giant eagle and the hind-,quarters of a horse. They are a magical cross-,breed descended from both griffons and horses.",
+      "description": "They are carnivorous, preferring plains herd --- beasts, and can carry off man-sized or smaller prey. They can be ridden if tamed; this is easiest when they are raised from young. Hippogriffs nest in rocky crags, but may fly anywhere in search of prey. Hippogriffs will usually attack pegasi, who are their natural enemies. Even when ridden, they must make a morale check each turn they see pegasi, or will turn and attack those creatures de- spite their riders' orders.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -7742,6 +8963,191 @@
     }
   },
   {
+    "name": "Lycanthrope (Werebear)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lycanthrope (Werebear)",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "6",
+      "hp": 27,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "2d4/2d4/2d8",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F6",
+      "morale": 10,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 500,
+      "terrain": "Woods, Wilderness.",
+      "monsterType": "Monster (Rare).",
+      "description": "Werebears are huge, powerful bear-humanoids.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Lycanthrope (Wereboar)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lycanthrope (Wereboar)",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "4+1",
+      "hp": 19,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 tusk slash",
+      "damage": "2d6",
+      "appearing": "1d4 (2d4)",
+      "saveAs": "F4",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 200,
+      "terrain": "Woods, Wilderness.",
+      "monsterType": "Monster (Rare).",
+      "description": "Wereboars are powerfully built boar-humanoids with tusks.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Lycanthrope (Wererat)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lycanthrope (Wererat)",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "1 bite or weapon",
+      "damage": "1d4 or by weapon",
+      "appearing": "1d8 (2d8)",
+      "saveAs": "F3",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 50,
+      "terrain": "Woods, Wilderness.",
+      "monsterType": "Monster (Rare).",
+      "description": "Wererats are intelligent rat-humanoids that live in sewers and ruins.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Lycanthrope (Weretiger)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lycanthrope (Weretiger)",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "2 claws/1 bite",
+      "damage": "1d6/1d6/2d6",
+      "appearing": "1d4 (1d4)",
+      "saveAs": "F5",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Neutral",
+      "xpValue": 300,
+      "terrain": "Woods, Wilderness.",
+      "monsterType": "Monster (Rare).",
+      "description": "Weretigers are large, striped cat-humanoids and deadly hunters.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Lycanthrope (Werewolf)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Lycanthrope (Werewolf)",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite",
+      "damage": "2d4",
+      "appearing": "1d6 (2d6)",
+      "saveAs": "F4",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 125,
+      "terrain": "Woods, Wilderness.",
+      "monsterType": "Monster (Rare).",
+      "description": "Werewolves are savage wolf-humanoids that hunt in packs.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Manscorpion",
     "type": "monster",
     "flags": {
@@ -7810,6 +9216,43 @@
       "monsterType": "Monster (Rare)",
       "special": "<p>Tail Spikes: 24 spikes; fires up to six per round at ranges 50/100/180, even while flying. Regrows two spikes per day.</p><p>Flying: 180' (60').</p>",
       "description": "A manticore has a lion's body, leathery bat wings, a spiked tail and a man's face with large fangs. It lives in wild mountain ranges and preys on humans, often ambushing a resting group with spikes or stalking a lone victim like a great cat. It flies at 180' (60').",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Medusa",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Medusa",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 8,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 snakebite + special",
+      "damage": "1d6 + poison",
+      "appearing": "1d3 (1d4)",
+      "saveAs": "F4 (see below)",
+      "morale": 8,
+      "treasure": "(V) F",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 175,
+      "terrain": "Cavern, Ruins; Plane of Earth.",
+      "monsterType": "Monster (Rare). Planar Mon-,ster (Very Rare).,A medusa looks like a human female with live,snakes growing from her head instead of hair. Me-,dusae are very magical, and the mere sight of a,medusa will turn a creature to stone unless the vic-,tim makes a saving throw vs. turn to stone. How-,ever, this will affect only one character per round,,and characters may watch the reflection of a me-,dusa in a mirror without danger. If a medusa sees,her own reflection, she must make a saving throw,vs. turn to stone or she will petrify herself!",
+      "description": "In combat, the medusa makes one attack roll for the bites of the snakes, and if they hit, the victim must make a saving throw vs. poison (in addition to taking 1d6 points of damage) or die in one turn. A medusa will often wear a robe with a hood for disguise so she can trick her vic- tims into looking at her. Medusae occasionally use weapons. Anyone who tries to attack a medusa without looking at her must subtract 4 from the attack roll, and the snakes may attack with a +2 bonus to the attack roll. A medusa also gains +2 on all saving throws vs. spells due to her magical nature. Many medusae are evil. Others are reclusive scholars, ancient sages who can guide heroes on their quests and who conceal their deadly visages under veils. There are also medusa spellcasters (see \"Mon- ster Spellcasters\" later in this chapter).",
+      "special": "<p>Attacks:</p>",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -7885,6 +9328,80 @@
       "description": "A mujina, in its natural form, looks like a human except that it has no face. Where the eyes, nose, ears and mouth should be is nothing—the face is smooth like an egg. However, the mujina may create an illusion to give its face any appearance it wants. It most often poses as a typical human until it decides to attack. A mujina is very strong and can handle any two-handed weapon (other than a lance, pole arm, or crossbow) in one hand. In combat it uses two weapons, one in each hand. It has the same chance to hit with either weapon. A mujina can also cause its true (blank) face to appear at will. Any creature of five Hit Dice cally runs in fear for ld3 rounds at three times its normal movement rate. Creatures who have more than five Hit Dice (or levels) must save vs. wands or also flee. A mujina often joins a party of adventurers as a retainer fighter. It may serve faithfully for a long period, not revealing its true identity. However, if given the opportunity, it robs the party of as much as possible and then flees. Mujina can speak Common, the language of their kind, and their alignment tongue. Mujinas are magical creatures created to plague the human race. Mujinas are all physical",
       "special": "<p>Any creature of five Hit Dice cally runs in fear for ld3 rounds at three times its normal movement rate. Mujinas are magical creatures created to plague the human race.</p>",
       "notes": "A mujina, in its natural form, looks like a human except that it has no face. Where the eyes, nose, ears and mouth should be is nothing—the face is smooth like an egg. However, the mujina may create an illusion to give its face any appearance it wants. It most often poses as a typical human until it decides to attack.",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Nekrozon",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Nekrozon",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "7",
+      "hp": 32,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 Tail/1 Gaze (possible)",
+      "damage": "1d6 + gaze (special)",
+      "appearing": "0(1d3)",
+      "saveAs": "F4",
+      "morale": 8,
+      "treasure": "C",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 1250,
+      "terrain": "Swamps.",
+      "monsterType": "Monster (Very Rare).",
+      "description": "Found only in the wilderness (usually in swampy areas), the terrible nekrozon resembles a huge buffalo with a long tail, a long neck and a boar's head. Ancient lore calls this creature a \"catoblepas,\" though this term is not in current use. The nekrozon attacks with the bony tip of its long tail, which does the listed damage and also has a 50% chance of knocking over and stunning its victim (a saving throw vs. paralysis prevents this) for 1d6 rounds. The gaze of a nekrozon is a 60' long magical death ray. If it looks at anyone, the victim must make a saving throw vs. death ray or die imme- diately. Fortunately, there is only a 1 in 4 chance that the nekrozon will look up when en- countered; this chance is also checked each round of combat. Even then, it can only gaze at one victim per round. It never looks straight up into the air.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Nuckalavee",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Nuckalavee",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "11",
+      "hp": 50,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 claws",
+      "damage": "3d8 + death (each)",
+      "appearing": "0(1)",
+      "saveAs": "F11",
+      "morale": 10,
+      "treasure": "Nil",
+      "intelligence": 9,
+      "alignment": "Chaotic",
+      "xpValue": 3500,
+      "terrain": "Lake (not river), Ocean (coastal),",
+      "monsterType": "Monster (Rare).",
+      "description": "The evil, amphibious nuckalavee is a relative of the centaur. It is shaped similarly but has an enlarged, hideous head. The creature's skin is transparent, and the resulting appearance (visi- ble white ropy muscles, yellow veins, and black blood) is quite horrible. The nuckalavee is immune to fire and poison, and regenerates 3 points per round. However, it cannot cross flowing fresh water. A nuckalavee radiates fear in a 50' radius; each creature within the area must make a saving throw vs. paralysis or flee for 2d6 rounds. The saving throw must be made each round that an opponent remains in the area. The monster's very presence slays all normal insects and other small creatures with 2 hit points or less, at a 120' range. Any victim hit by its claw attack must make a saving throw vs. death ray or die.",
+      "special": "",
+      "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
     }
@@ -8198,6 +9715,43 @@
     }
   },
   {
+    "name": "Shadow",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Shadow",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "2+2",
+      "hp": 11,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1",
+      "damage": "1d4 + special",
+      "appearing": "1d8 (1d12)",
+      "saveAs": "F2",
+      "morale": 12,
+      "treasure": "F",
+      "intelligence": 4,
+      "alignment": "Chaotic",
+      "xpValue": 35,
+      "terrain": "Ruins, Woods.",
+      "monsterType": "Monster, Enchanted (Rare).",
+      "description": "This monster is not undead. Shadows are noncorporeal (ghostlike) intelli- gent creatures found in eerie, dark places such as dungeons, deep forests, or ruins. They can only be harmed by magical weapons. They look like real shadows and can alter their shape slightly. Shadows are hard to see and usually gain surprise (1-5 on 1d6). If a shadow scores a hit, it will drain 1 point of Strength in addition to doing normal damage. This weakness will last for 8 turns. Any creature whose Strength is reduced to zero becomes a shadow immediately. Shadows are not affected by sleep or charm spells, but they are not undead and cannot be turned by clerics.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Sphinx",
     "type": "monster",
     "flags": {
@@ -8233,6 +9787,117 @@
       "source": "Rules Cyclopedia",
       "page": 0,
       "spellcasting": "Female: 12th-level cleric spells; male: 12th-level magic-user spells. Saves vs. their spells are at -4."
+    }
+  },
+  {
+    "name": "Sporacle",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Sporacle",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 0,
+      "hd": "7",
+      "hp": 32,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "12 tentacles/1 bite",
+      "damage": "1 + paralysis/2d10",
+      "appearing": "1d4 (2d4)",
+      "saveAs": "F7",
+      "morale": 10,
+      "treasure": "See below",
+      "intelligence": 2,
+      "alignment": "Chaotic",
+      "xpValue": 1650,
+      "terrain": "Cavern.",
+      "monsterType": "Monster (Very Rare).",
+      "description": "The sporacle appears identical to a beholder at first glance: a floating ball-like creature, 5' in di- ameter, with a huge gaping mouth and a large central eye above it. Tentacles sprout from its en- tire body. It has six eyes, positioned evenly about the surface of the body (top, bottom, front, back, sides). It normally keeps all but a few up- per tentacles retracted. A sporacle regenerates by submersing itself in fresh water (but not in brine) at the rate of 3 hit points per round so lost body parts may be rap- idly regrown. If a loose tentacle falls or is placed in water, it will grow into a whole creature in 1 hour. This is their only method of reproduction, so they are often found near a water source. A sporacle may attack anything, but prefers humanoids as food. As it moves into combat, it extends all its tentacles, appearing to sprout them as it attacks.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Stirge",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Stirge",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 30,
+        "outdoor": 10
+      },
+      "attacks": "1",
+      "damage": "1d3",
+      "appearing": "1d10(3d2)",
+      "saveAs": "F2",
+      "morale": 9,
+      "treasure": "L",
+      "intelligence": 1,
+      "alignment": "Neutral",
+      "xpValue": 13,
+      "terrain": "Cavern, Ruins, Woods.",
+      "monsterType": "Monster (Common).,A stirge is a birdlike creature with a long nose.",
+      "description": "It attacks by thrusting its beak into the victim's body, and feeds on blood. A successful hit (for 1d3 points of damage) means that it has at- tached itself to the victim, sucking for 1d3 points of damage per round until the victim is dead. A flying stirge gains a bonus of + 2 on its first attack roll against any one opponent due to its speedy diving attack. ---",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Treant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Treant",
+        "category": "Monster"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "8",
+      "hp": 36,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "2 branches",
+      "damage": "2d6/2d6",
+      "appearing": "0(1d8)",
+      "saveAs": "F8",
+      "morale": 9,
+      "treasure": "C",
+      "intelligence": 11,
+      "alignment": "Lawful",
+      "xpValue": 1200,
+      "terrain": "Woods.",
+      "monsterType": "Monster (Rare).,A treant is an 18' tall, intelligent creature that,looks like a tree with facial features. It has two,main branches that act as arms with hands, and,it walks upon legs that end in rootlike feet.",
+      "description": "It is concerned only with the protection of for- ests and plant life; it is friends with most of the intelligent forest creatures (actaeons, centaurs, dryads, etc.). Treants speak a slow and difficult tongue, and distrust those who use fire. All encounters with treants begin at a distance of 30 yards or less, since they are nearly identical to normal trees, and they surprise on a roll of 1-3 (on 1d6). Although normal weapons can harm them, blunt weapons (such as maces) only inflict 1 point of damage per hit (plus magic and strength bonuses). Each treant can animate any two trees within 60' to move at 30' (10') and fight as treants. A treant may change which trees it is animating from round to round. There can be treant spellcasters; see \"Monster Spellcasters\" later in this chapter. Monster Type: Giant Animal (Common).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
     }
   },
   {
@@ -8382,6 +10047,80 @@
       "monsterType": "Planar Monster, Enchanted (Rare).",
       "description": "Djinn are intelligent, free-willed, enchanted creatures from the elemental plane of Air. They appear as tall, humanlike beings; 50% of encountered djinn are male and 50% are female. Djinn are basically good-hearted, in spite of their Chaotic alignment. Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. A djinn can use each of its seven powers three times weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). to 1,000 cn weight (of permanent duration). hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them). A djinni has two forms of attack. In normal form, it strikes with its fist. It may also transform itself into a whirlwind—a cone 70' tall, 20' diameter at the top, 10' diameter at the base, movement rate 120' (40'). The transformation takes five rounds. The djirmi-whirlwind inflicts sweeps aside all creatures with fewer than 2 HD unless they make a saving throw vs. death ray. If a djinni is slain, its spirit returns to its own plane. Djinn normally appear on the Prime Plane when summoned or when bound into a magical item. On their own plane, they live in cities similar to",
       "special": "<p>Djinn are highly magical in nature, and can only be harmed by magic or magical weapons. A djinn can use each of its seven powers three times weight (of temporary duration, varying by type: gold = 1 day, iron = 1 round). to 1,000 cn weight (of permanent duration). hearing, lasting until touched or magically dispelled—the djinni need not concentrate to maintain them). Djinn normally appear on the Prime Plane when summoned or when bound into a magical item.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Efreeti (Greater; Amir)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Efreeti (Greater; Amir)",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": -2,
+      "hd": "20",
+      "hp": 90,
+      "move": {
+        "dungeon": 120,
+        "outdoor": 40
+      },
+      "attacks": "2 fists",
+      "damage": "3d10/3d10",
+      "appearing": "1 (1)",
+      "saveAs": "M36",
+      "morale": 11,
+      "treasure": "Nil",
+      "intelligence": 14,
+      "alignment": "Chaotic",
+      "xpValue": 7775,
+      "terrain": "Plane of Fire.",
+      "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+      "description": "In the elemental plane of Fire, the rulers of the efreet are known as amirs (ah-MEERS). They appear as very large normal efreet (15'-30' tall). An amir cannot be affected by normal weapons, or even by weapons of less than + 2 enchant- ment. Amirs also regenerate at the rate of 2 hit points per round. An amir can perform all the abilities of a nor- mal efreet as often as desired, once per round. It can also enter or leave the Ethereal Plane by con- centrating for 1 full round. Special powers usable once per day are grant another's wish, cast fireball or explosive cloud (all as if a 20th level magic-user). An amir's pillar of flame form ignites all flam- mable objects within 15' and adds a bonus of 2d8 points to each fist attack. It can retain this shape without limit. Amirs cannot be summoned by spells, and are affected by very few magical items.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Efreeti, Lesser",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Efreeti, Lesser",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": 3,
+      "hd": "10",
+      "hp": 45,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 fist",
+      "damage": "2d8",
+      "appearing": "1 (1)",
+      "saveAs": "F15",
+      "morale": 12,
+      "treasure": "Nil",
+      "intelligence": 14,
+      "alignment": "Chaotic",
+      "xpValue": 1750,
+      "terrain": "",
+      "monsterType": "Planar Monster, Enchanted,(Rare).",
+      "description": "Efreet are free-willed, enchanted creatures from the elemental plane of Fire. They usually appear as clouds of smoke, condensing into giant-sized men surrounded by flames. The air around them is always hot and smoky. Efreet are highly magical, and can only be hit with magical weapons. If slain, the efreeti's spirit returns to its own plane. An efreeti can create objects, create illusions, and turn invisible like a djinni. It can cast a wall of fire spell three times per day. An efreeti may also transform itself into a pillar of flame (the same height as the efreeti) that will set fire to all flammable items within 5'. It can retain the flame shape for up to 3 rounds. When in this form, the fire adds ld8 points of damage to each of the efreeti's blows. The creature can only as- sume flame shape once per turn at most.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -9062,6 +10801,43 @@
         "Immune to 1st-5th level spells, poison and mental effects; 2' tall per Hit Die."
       ],
       "description": "Elemental Ruler (73 HD) — Rules Cyclopedia stat block.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Helion",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Helion",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": 1,
+      "hd": "9",
+      "hp": 41,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 grasp",
+      "damage": "See below",
+      "appearing": "1d4 (2d20)",
+      "saveAs": "F9",
+      "morale": 9,
+      "treasure": "Special",
+      "intelligence": 14,
+      "alignment": "Lawful",
+      "xpValue": 1600,
+      "terrain": "Plane of Fire.",
+      "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+      "description": "Helions are intelligent giant-sized creatures made of fire. They are native to the elemental plane of Fire, and are rarely encountered elsewhere. Helions are extremely good, and shun violence. A helion appears as a 20' diameter ring of flame. It is immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on earth. A helion can detect invisible at will, and can use detect magic, dispel magic, wall of fire, and earth to fire three times per day. It can also con- trol fire completely, changing it to solid, liquid, or gaseous form at will (saving throw applies for fire-type creatures). A helion attacks by forming a ring around its opponent. If its attack roll is successful, it shrinks around the victim, who then cannot move.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -9942,6 +11718,43 @@
     }
   },
   {
+    "name": "Kryst",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Kryst",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "9",
+      "hp": 41,
+      "move": {
+        "dungeon": 240,
+        "outdoor": 80
+      },
+      "attacks": "3 spikes",
+      "damage": "1d2/ldl2/ldl2",
+      "appearing": "1d6 (1d100 x 10)",
+      "saveAs": "E9",
+      "morale": 9,
+      "treasure": "Special",
+      "intelligence": 10,
+      "alignment": "Lawful",
+      "xpValue": 1600,
+      "terrain": "Plane of Earth.",
+      "monsterType": "Planar Monster (Very Rare).",
+      "description": "The kryst are intelligent beings made of crys- talline rock; each kryst looks like a group of 12 golden crystal spikes, all projecting outward from a central point. They are native to the ele- mental plane of Earth. Kryst are immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on air. A kryst can detect invisible at will, and can use detect magic, dispel magic, haste, or air to earth (similar to the magic-user's dissolve spell, but turns air into earth) three times per day (all as if cast by a 9th level magic-user). The kryst communicate by telepathy (120' range) or, if mental contact causes poor reactions, by writ- ten messages. A kryst can attack by ramming opponents with its spikes, and can attack up to three times per round.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Malfera",
     "type": "monster",
     "flags": {
@@ -10090,6 +11903,80 @@
       "monsterType": "Planar Monster, Enchanted (Very Rare).",
       "description": "Spectral hounds are creatures from the Dimensional Vortex—the void between all dimensions. In this world they appear as ghostly dogs—pale in color and translucent. Their eyes are formless pools of utter blackness. They are excellent trackers and once on the trail of a creature, they follow it for days.. They are bred and trained by interplanar beings (such as elemental rulers, amirs, pashas, etc.) as hunting animals, and are sometimes used to track intrusive adventurers back to their home planes. Likewise, adventurers might be able to charm spectral hounds and train them to track villains through the planes. Spectral hounds never come to the Prime Plane except when being used in this manner by greater powers. In combat, a spectral hound attacks by biting. Any character bitten by a spectral hound must save vs. spells. If he saves, the character suffers only the 2d6 points of damage from the bite, if he fails to save, he begins to fade. This fading is very gradual: In 24 hours the character has faded to the same translucent appearance as a spectral hound. The character's equipment is not affected. When the character finishes fading completely, he is unable to hold any normal items. H",
       "special": "<p>Likewise, adventurers might be able to charm spectral hounds and train them to track villains through the planes. Any character bitten by a spectral hound must save vs. spells.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Spider, Planar (5 HD)",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Spider, Planar (5 HD)",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": 6,
+      "hd": "5",
+      "hp": 23,
+      "move": {
+        "dungeon": 180,
+        "outdoor": 60
+      },
+      "attacks": "1 bite",
+      "damage": "2d6 + poison",
+      "appearing": "2d6 (3d6)",
+      "saveAs": "F5",
+      "morale": 9,
+      "treasure": "See below",
+      "intelligence": 12,
+      "alignment": "Any",
+      "xpValue": 425,
+      "terrain": "Any plane.",
+      "monsterType": "Planar Monster (Very Rare).",
+      "description": "Planar spiders are intelligent plane-traveling arachnids that can move between planes and dimensions at will. They arrive from another plane, attack, and may disappear just as quickly.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Undine",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Undine",
+        "category": "Planar Monster"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "8",
+      "hp": 36,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 fist or 1 coil",
+      "damage": "2d8 or 1d10",
+      "appearing": "1(1)",
+      "saveAs": "F16",
+      "morale": 9,
+      "treasure": "Nil",
+      "intelligence": 10,
+      "alignment": "Chaotic",
+      "xpValue": 2300,
+      "terrain": "Plane of Water.",
+      "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+      "description": "An undine is an intelligent creature made of water. It is rare even on the elemental plane of Water, its home, and is almost never encoun- tered on the Prime Plane. Undines are Chaotic in behavior, but (similar to djinn) have very good intentions and despise evil. On its home plane, an undine normally has a form like a featureless transparent snake. It can easily change shape, sometimes using a form with many tentacles to handle objects. Once per turn, it can swim quickly in the form of a revolv- ing coil, moving at 480' (160') rate for up to 10 rounds. Undines are immune to poison, normal weap- ons, all 1st and 2nd level spells, and to all attacks based on fire. An undine can detect invisible at will, and can use detect magic, web, dispel mag- ic, ice storm / wall, and fire to ice three times per day (all as if a 9th level magic-user).",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -11450,6 +13337,43 @@
     }
   },
   {
+    "name": "Nightshade",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Nightshade",
+        "category": "Undead"
+      }
+    },
+    "system": {
+      "ac": 9,
+      "hd": "4",
+      "hp": 18,
+      "move": {
+        "dungeon": 25,
+        "outdoor": 30
+      },
+      "attacks": "2 and see below",
+      "damage": "2d10/2d4 and see below",
+      "appearing": "1(1)",
+      "saveAs": "F25-30 and see below",
+      "morale": 12,
+      "treasure": "Any",
+      "intelligence": 19,
+      "alignment": "Chaotic",
+      "xpValue": 18500,
+      "terrain": "Any.",
+      "monsterType": "Undead, Enchanted (Very,Rare).",
+      "description": "The deadly nightshades are large, powerful evil beings which seek to spread death. They arc all extremely rare, usually created or summoned for a specific purpose by a more powerful being. All nightshades are a deep jet black in color, with no other colors on their entire forms. They have no visible eyes, apparently sensing their sur- roundings magically; they can see invisible and hidden things as easily as normal ones. Night- shades are all extremely clever and wise (having scores of 19 in Intelligence and Wisdom). Nightshades prefer darkness. Daylight inflicts a penalty of - 4 on all their attack rolls, but oth- er forms of light do not affect them. They can enter and leave the Ethereal Plane at will, but only do so if seriously threatened.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Phantom (Apparition)",
     "type": "monster",
     "flags": {
@@ -11564,6 +13488,43 @@
         "Ethereal at first; sight causes fear."
       ],
       "description": "Phantom (Vision) — Rules Cyclopedia stat block.",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Poltergeist",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Poltergeist",
+        "category": "Undead"
+      }
+    },
+    "system": {
+      "ac": -1,
+      "hd": "12",
+      "hp": 54,
+      "move": {
+        "dungeon": 0,
+        "outdoor": 0
+      },
+      "attacks": "Ectoplasmic Net; Gaze (Paralysis); (spells).",
+      "damage": "Age 1d4 x 10 1d4 x 10 years + see below",
+      "appearing": "1 (1) 1 (1) 1d4 (0)",
+      "saveAs": "F12",
+      "morale": 11,
+      "treasure": "E, N, O E, N, O E, N, O",
+      "intelligence": 13,
+      "alignment": "Chaotic",
+      "xpValue": 4750,
+      "terrain": "Ruins.",
+      "monsterType": "Undead, Enchanted (Very,Rare).,A haunt is an undead soul of some creature,(usually human) unable to rest. Haunts are most,often encountered near the spots where their,mortal bodies died—often a bog, old forest, or,dungeon. They avoid, but are not harmed by,,sunlight and magical light.",
+      "description": "Haunts can only be harmed by magical weap- ons of + 2 or greater enchantment. They are im- mune to all spells except those which affect evil. Each haunt has its own special attack form, given in the descriptions. Haunts do not inflict normal damage; they cause aging with their physical blows. Each --- haunt can create an ectoplasmic net while doing other things, and all haunts can use a gaze attack as well as its special or physical attacks. If seri- ously threatened (or if morale fails), a haunt will escape into the Ethereal Plane and not return for 1d8 days. A haunt can only enter the Ether three times per day, but can leave it at any time. Net: When first encountered, a haunt will normally start oozing ectoplasm. This appears as wispy tendrils, slowly forming a net.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0
@@ -11995,6 +13956,117 @@
     }
   },
   {
+    "name": "Crab, Giant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Crab, Giant",
+        "category": "Unclassified"
+      }
+    },
+    "system": {
+      "ac": 2,
+      "hd": "3",
+      "hp": 14,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "2 pincers",
+      "damage": "2d6/2d6",
+      "appearing": "1d2 (1d6)",
+      "saveAs": "F2",
+      "morale": 7,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 35,
+      "terrain": "",
+      "monsterType": "Giant Animal (Rare).",
+      "description": "Giant crabs are nonintelligent animals found in shallow waters, coastal rivers, and buried in sand on beaches. They cannot swim. The com- mon giant crab is 8' in diameter, but larger speci- mens may be found (up to 6 Hit Dice, Damage 3d6 points per claw). They are always hungry and will attack and eat anything that moves. Salt-water giant crabs have a slightly different appearance than fresh-water giant crabs. Ocean, River/Lake (including shores).",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Dwarf",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Dwarf",
+        "category": "Unclassified"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "1",
+      "hp": 5,
+      "move": {
+        "dungeon": 60,
+        "outdoor": 20
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon",
+      "appearing": "1d6 (5d8)",
+      "saveAs": "D1",
+      "morale": 8,
+      "treasure": "(Q + S) G",
+      "intelligence": 10,
+      "alignment": "Lawful or Neutral",
+      "xpValue": 10,
+      "terrain": "Cavern, Hill, Mountain, Woods",
+      "monsterType": "Demihuman (Common).",
+      "description": "Dwarves can appear as NPCs. Otherwise, they are usually met in clan groups or as war or min- ing expeditions. They attack as first level fight- ers. For every 20 dwarves, there will be one leader (level 3-8) who may have a magical weap-",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Ferret, Giant",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Ferret, Giant",
+        "category": "Unclassified"
+      }
+    },
+    "system": {
+      "ac": 5,
+      "hd": "1+1",
+      "hp": 6,
+      "move": {
+        "dungeon": 150,
+        "outdoor": 50
+      },
+      "attacks": "1 bite",
+      "damage": "1d8",
+      "appearing": "1d8 (1d2)",
+      "saveAs": "F1",
+      "morale": 8,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 15,
+      "terrain": "Cavern, Woods.",
+      "monsterType": "Giant Animal (Common).",
+      "description": "Giant ferrets, like normal ferrets, are long, slen- der mammals with yellow-white fur and red eyes. But giant ferrets grow to 3' in length, more than twice as long as normal ferrets. Giant ferrets hunt giant rats, and are slender, fast and strong enough to seek these creatures out in their underground lairs. They are sometimes trained for this purpose. Unfortunately, their tempers are highly unpre- dictable, and they have been known to attack their trainers and other humans. Fish, Giant",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
     "name": "Gelatinous Cube",
     "type": "monster",
     "flags": {
@@ -12026,6 +14098,80 @@
       "monsterType": "Unclassified",
       "description": "This monster looks like a great quantity of clear jelly, usually in the form of a 10' x 10' x 10' cube. It is hard to see, and it surprises often (1-4 on 1d6). A gelatinous cube moves through the rooms and corridors of a dungeon, sweeping the halls clean of all living and dead material. In the process, it may pick up items it cannot dissolve nous cube will attack any living creature it encounters. Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured. An attack on a paralyzed target automatically hits (only a damage roll is needed). The gelatinous cube will continue attacking creatures until it dies or they do; if it wins, it sweeps up the dead with all the other trash and continues on its path. A gelatinous cube may be harmed by fire and weapons, but not by cold or lightning. The lair of these strange monsters may contain ld4 cubes tional treasure). The lair will not have any \"young\" gelatinous cubes; adults split into two fully grown cubes. Ghost A form of undead; see Haunt.",
       "special": "<p>It is hard to see, and it surprises often (1-4 on 1d6). Any successful hit will do damage to the victim and will also paralyze him unless a saving throw vs. paralysis is made. This paralysis lasts 2d4 turns unless magically cured.</p>",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Halfling",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Halfling",
+        "category": "Unclassified"
+      }
+    },
+    "system": {
+      "ac": 7,
+      "hd": "1-1",
+      "hp": 4,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "1 weapon",
+      "damage": "By weapon",
+      "appearing": "3d6 (5d8)",
+      "saveAs": "H1",
+      "morale": 8,
+      "treasure": "(P + S) B",
+      "intelligence": 11,
+      "alignment": "Lawful",
+      "xpValue": 5,
+      "terrain": "Hill, Woods",
+      "monsterType": "Demihuman (Common).",
+      "description": "Halflings can also appear as NPCs. Other- wise, they are usually encountered close to their settlements. They attack as first level fighters, receiving a +1 attack bonus when using missile weapons. Halflings get a 2 armor class bonus when fighting larger than man-sized enemies. They are good at hiding, and in woods or un- derbrush can vanish so well that there is only a 10% chance that anyone searching for them will succeed. For every 10 halflings, there will be one leader (level 2). As long as their leader is alive and fighting with them, their morale is 10 rather than 8. They live in small villages of 30- 300 inhabitants. Each village, or shire, has a sheriff (level 2-7) and a village guard of 5-20 militia with 2 Hit Dice. Treasure type B is found only if the halflings are encountered in a wilderness setting.",
+      "special": "",
+      "notes": "",
+      "source": "Rules Cyclopedia",
+      "page": 0
+    }
+  },
+  {
+    "name": "Triceratops",
+    "type": "monster",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "variant": "",
+        "key": "Triceratops",
+        "category": "Unclassified"
+      }
+    },
+    "system": {
+      "ac": 4,
+      "hd": "20",
+      "hp": 90,
+      "move": {
+        "dungeon": 90,
+        "outdoor": 30
+      },
+      "attacks": "3 horns",
+      "damage": "1d8/2d8/2d8",
+      "appearing": "0(1d6)",
+      "saveAs": "F10",
+      "morale": 9,
+      "treasure": "Nil",
+      "intelligence": 2,
+      "alignment": "Neutral",
+      "xpValue": 4175,
+      "terrain": "Open (prehistoric).",
+      "monsterType": "Prehistoric Animal (Very,Rare).",
+      "description": "This is an armored herbivorous dinosaur. It walks about on four legs and has much the same temperament as an elephant. The triceratops is about 30' long and weighs 10-12 tons. A col- larlike armor plate grows from its head to protect its neck, and its weapons include a short horn growing from its snout and two long horns grow- ing above its eyes. A single triceratops is a match for all but the largest of the predatory carno- saurs. Although it is an herbivore, it is aggressive and dangerous, usually attacking on sight. It might charge (for double damage) on the first attack, and on any attack after it has gotten 20 yards or more away from its enemy.",
+      "special": "",
       "notes": "",
       "source": "Rules Cyclopedia",
       "page": 0

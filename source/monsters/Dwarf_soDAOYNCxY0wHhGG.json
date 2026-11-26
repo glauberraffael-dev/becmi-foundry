@@ -1,0 +1,55 @@
+{
+  "_id": "soDAOYNCxY0wHhGG",
+  "_key": "!actors!soDAOYNCxY0wHhGG",
+  "name": "Dwarf",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "1d6 (5d8)",
+    "saveAs": "D1",
+    "morale": 8,
+    "treasure": "(Q + S) G",
+    "intelligence": 10,
+    "alignment": "Lawful or Neutral",
+    "xpValue": 10,
+    "terrain": "Cavern, Hill, Mountain, Woods",
+    "monsterType": "Demihuman (Common).",
+    "description": "Dwarves can appear as NPCs. Otherwise, they are usually met in clan groups or as war or min- ing expeditions. They attack as first level fight- ers. For every 20 dwarves, there will be one leader (level 3-8) who may have a magical weap-",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Dwarf",
+      "category": "Unclassified"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
+}

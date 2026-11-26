@@ -1,0 +1,55 @@
+{
+  "_id": "hCQIUjrE4J4C8hI_",
+  "_key": "!actors!hCQIUjrE4J4C8hI_",
+  "name": "Crab, Giant",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 pincers",
+    "damage": "2d6/2d6",
+    "appearing": "1d2 (1d6)",
+    "saveAs": "F2",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 35,
+    "terrain": "",
+    "monsterType": "Giant Animal (Rare).",
+    "description": "Giant crabs are nonintelligent animals found in shallow waters, coastal rivers, and buried in sand on beaches. They cannot swim. The com- mon giant crab is 8' in diameter, but larger speci- mens may be found (up to 6 Hit Dice, Damage 3d6 points per claw). They are always hungry and will attack and eat anything that moves. Salt-water giant crabs have a slightly different appearance than fresh-water giant crabs. Ocean, River/Lake (including shores).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Crab, Giant",
+      "category": "Unclassified"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
+}

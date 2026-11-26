@@ -56,7 +56,10 @@ globalThis.foundry = {
       const last = parts.pop();
       const target = parts.reduce((node, part) => node?.[part], object);
       if (target) delete target[last];
-    }
+    },
+    escapeHTML: (value) => String(value).replace(/[&<>"]/g, (c) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"
+    })[c])
   }
 };
 globalThis.game = { i18n: { localize: (key) => key, format: (key) => key }, userId: "gm" };
@@ -280,4 +283,53 @@ if (masteryUpdate?.["system.mastery.enabled"] !== true) {
   throw new Error("the mastery toggle did not opt the character in");
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level and optional mastery).");
+// Spell slots are consumed once, blocked on recast and restored only by an
+// owner-triggered Rest action; Auto AC must disable the manual target field.
+if (!body.includes('data-action="toggleTargetAcAuto"')
+  || !body.includes('{{#if targetAcAuto}}disabled{{/if}}')
+  || !body.includes("{{#if entry.used}}disabled")
+  || !body.includes('{{#if canEdit}}<button type="button" class="becmi-roll" data-action="restSpells"')) {
+  throw new Error("target AC Auto toggle, spent-slot disable or owner-only Rest button is missing");
+}
+const { RC, spellKey } = await import("../scripts/rules-rc.mjs");
+const slot = spellKey(RC.spells[0]);
+const warnings = [];
+const slotUpdates = [];
+const casts = [];
+const chats = [];
+globalThis.ui.notifications.warn = (message) => warnings.push(message);
+globalThis.ChatMessage = {
+  create: async (data) => { chats.push(data); return {}; },
+  getSpeaker: () => ({})
+};
+sheet.editMode = false; // spell tracking is a use-mode action
+sheet.editable = true;
+sheet.actor = {
+  name: "Slot Test",
+  system: { spellbook: { used: { [slot]: true } } },
+  items: { get: () => ({ type: "spell", castSpell: async () => casts.push("spell") }) },
+  async update(changes) { slotUpdates.push(changes); }
+};
+const castTarget = { dataset: { slot, spellKey: slot, itemId: "spell" } };
+await actions.castSpell.call(sheet, {}, castTarget);
+if (warnings.length !== 1 || casts.length || slotUpdates.length || chats.length) {
+  throw new Error(`a spent slot was recast: ${JSON.stringify({ warnings, casts, slotUpdates, chats })}`);
+}
+sheet.actor.system.spellbook.used = {};
+await actions.castSpell.call(sheet, {}, castTarget);
+if (casts.length !== 1 || slotUpdates.length !== 1
+  || slotUpdates[0]["system.spellbook.used"]?.[slot] !== true) {
+  throw new Error(`a free slot was not consumed: ${JSON.stringify({ casts, slotUpdates })}`);
+}
+sheet.editable = false;
+slotUpdates.length = 0;
+await actions.restSpells.call(sheet);
+if (slotUpdates.length || chats.length) throw new Error("a non-owner rested spells");
+sheet.editable = true;
+await actions.restSpells.call(sheet);
+if (slotUpdates.length !== 1 || Object.keys(slotUpdates[0]["system.spellbook.used"] ?? {}).length
+  || chats.length !== 1) {
+  throw new Error(`rest did not clear slots and log to chat: ${JSON.stringify({ slotUpdates, chats })}`);
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level, optional mastery, spell slots and Auto AC).");

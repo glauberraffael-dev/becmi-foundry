@@ -1,0 +1,55 @@
+{
+  "_id": "mLhpvBrEmKAr4fKe",
+  "_key": "!actors!mLhpvBrEmKAr4fKe",
+  "name": "Green Slime",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 3,
+      "outdoor": 1
+    },
+    "attacks": "1",
+    "damage": "See below",
+    "appearing": "1 (0)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "(P + S) B",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 30,
+    "terrain": "Cavern, Ruins.",
+    "monsterType": "Lowlife (Common).",
+    "description": "Green slime cannot be harmed by any attacks except fire or cold. It dissolves cloth or leather instantly, wood and metal in 6 rounds, but can- not dissolve stone. Green slime often clings to walls and ceilings and drops down in a surprise attack. Once in contact with flesh, it sticks and turns the flesh into green slime. It cannot be scraped off, but may be burnt off, or treated with a cure disease spell. When green slime drops on a victim (or is stepped on), the victim can usually burn it while it is dissolving armor and clothing. If it is not burned off, the victim will turn completely into green slime 1d4 rounds after the first 6- round (one minute) period. Burning does half damage to the green slime and half damage to the victim.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Green Slime",
+      "category": "Lowlife"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "YSG7TKTHNyng6JV4",
+  "_key": "!actors!YSG7TKTHNyng6JV4",
+  "name": "Spider, Planar (5 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 bite",
+    "damage": "2d6 + poison",
+    "appearing": "2d6 (3d6)",
+    "saveAs": "F5",
+    "morale": 9,
+    "treasure": "See below",
+    "intelligence": 12,
+    "alignment": "Any",
+    "xpValue": 425,
+    "terrain": "Any plane.",
+    "monsterType": "Planar Monster (Very Rare).",
+    "description": "Planar spiders are intelligent plane-traveling arachnids that can move between planes and dimensions at will. They arrive from another plane, attack, and may disappear just as quickly.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Spider, Planar (5 HD)",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -49,13 +49,13 @@ short paraphrases; the PDF and OCR export are **not** included.
   resizing the Foundry window.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling, 16 mystic,
   plus the extended demihuman/mystic progression from Chapter 19.
-- Seven precompiled LevelDB compendia with 683 documents in total.
+- Seven precompiled LevelDB compendia with 745 documents in total.
 
 ## Compendia
 
 | Compendium | Type | Documents |
 |---|---|---:|
-| BECMI Monsters | Actor | 311 |
+| BECMI Monsters | Actor | 369 |
 | BECMI Spells | Item | 184 |
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |

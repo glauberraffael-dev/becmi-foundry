@@ -1,0 +1,55 @@
+{
+  "_id": "UTdpqEFjjX82cwRI",
+  "_key": "!actors!UTdpqEFjjX82cwRI",
+  "name": "Helion",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 1,
+    "hd": "9",
+    "hp": 41,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 grasp",
+    "damage": "See below",
+    "appearing": "1d4 (2d20)",
+    "saveAs": "F9",
+    "morale": 9,
+    "treasure": "Special",
+    "intelligence": 14,
+    "alignment": "Lawful",
+    "xpValue": 1600,
+    "terrain": "Plane of Fire.",
+    "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+    "description": "Helions are intelligent giant-sized creatures made of fire. They are native to the elemental plane of Fire, and are rarely encountered elsewhere. Helions are extremely good, and shun violence. A helion appears as a 20' diameter ring of flame. It is immune to poison, normal weapons, all 1st and 2nd level spells, and to all attacks based on earth. A helion can detect invisible at will, and can use detect magic, dispel magic, wall of fire, and earth to fire three times per day. It can also con- trol fire completely, changing it to solid, liquid, or gaseous form at will (saving throw applies for fire-type creatures). A helion attacks by forming a ring around its opponent. If its attack roll is successful, it shrinks around the victim, who then cannot move.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 41,
+        "max": 41
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Helion",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

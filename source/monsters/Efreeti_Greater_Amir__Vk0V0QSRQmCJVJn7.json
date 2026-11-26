@@ -1,0 +1,55 @@
+{
+  "_id": "Vk0V0QSRQmCJVJn7",
+  "_key": "!actors!Vk0V0QSRQmCJVJn7",
+  "name": "Efreeti (Greater; Amir)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -2,
+    "hd": "20",
+    "hp": 90,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 fists",
+    "damage": "3d10/3d10",
+    "appearing": "1 (1)",
+    "saveAs": "M36",
+    "morale": 11,
+    "treasure": "Nil",
+    "intelligence": 14,
+    "alignment": "Chaotic",
+    "xpValue": 7775,
+    "terrain": "Plane of Fire.",
+    "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+    "description": "In the elemental plane of Fire, the rulers of the efreet are known as amirs (ah-MEERS). They appear as very large normal efreet (15'-30' tall). An amir cannot be affected by normal weapons, or even by weapons of less than + 2 enchant- ment. Amirs also regenerate at the rate of 2 hit points per round. An amir can perform all the abilities of a nor- mal efreet as often as desired, once per round. It can also enter or leave the Ethereal Plane by con- centrating for 1 full round. Special powers usable once per day are grant another's wish, cast fireball or explosive cloud (all as if a 20th level magic-user). An amir's pillar of flame form ignites all flam- mable objects within 15' and adds a bonus of 2d8 points to each fist attack. It can retain this shape without limit. Amirs cannot be summoned by spells, and are affected by very few magical items.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 90,
+        "max": 90
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Efreeti (Greater; Amir)",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

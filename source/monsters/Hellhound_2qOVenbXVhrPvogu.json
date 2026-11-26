@@ -1,0 +1,55 @@
+{
+  "_id": "2qOVenbXVhrPvogu",
+  "_key": "!actors!2qOVenbXVhrPvogu",
+  "name": "Hellhound",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite or 1 breath",
+    "damage": "1d6 or special",
+    "appearing": "2d4 (2d4)",
+    "saveAs": "F3-7",
+    "morale": 9,
+    "treasure": "C",
+    "intelligence": 12,
+    "alignment": "Chaotic",
+    "xpValue": 65,
+    "terrain": "Cavern, Mountain.",
+    "monsterType": "Monster (Rare).",
+    "description": "This reddish-brown doglike monster is as big as a small pony. They are often found near volca- noes, deep in dungeons, or with other fire- loving creatures (such as fire giants). Hellhounds are cunning and highly intelli- gent. They can often detect invisible (as the magic-user spell; 75% chance per round, range 60'). They are immune to normal fire, and make all saving throws as fighters of equal Hit Dice. A hellhound will attack one victim, either breathing fire (one chance in three: 1-2 on ld6) or biting (two chances in three: 3-6 on ld6) each round. The breath does 1d6 points of damage for each Hit Die of the hound. The victim of the breath may make a saving throw vs. dragon breath to take half damage.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Hellhound",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

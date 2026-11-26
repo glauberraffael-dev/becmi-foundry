@@ -1,0 +1,55 @@
+{
+  "_id": "xYA_Lqh1S9WTgghu",
+  "_key": "!actors!xYA_Lqh1S9WTgghu",
+  "name": "Lycanthrope (Werewolf)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "1 bite",
+    "damage": "2d4",
+    "appearing": "1d6 (2d6)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 125,
+    "terrain": "Woods, Wilderness.",
+    "monsterType": "Monster (Rare).",
+    "description": "Werewolves are savage wolf-humanoids that hunt in packs.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lycanthrope (Werewolf)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

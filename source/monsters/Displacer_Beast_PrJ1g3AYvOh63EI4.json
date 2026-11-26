@@ -1,0 +1,55 @@
+{
+  "_id": "PrJ1g3AYvOh63EI4",
+  "_key": "!actors!PrJ1g3AYvOh63EI4",
+  "name": "Displacer Beast",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 tentacles",
+    "damage": "2d4/2d4",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F6",
+    "morale": 8,
+    "treasure": "D",
+    "intelligence": 3,
+    "alignment": "Neutral",
+    "xpValue": 500,
+    "terrain": "Hill, Jungle, Woods.",
+    "monsterType": "Monster (Rare).,A displacer beast looks like a large black pan-,ther with six legs and a pair of 6' long tentacles,growing from its shoulders. It attacks with these,tentacles, which have sharp hornlike edges.,A displacer beast's skin bends light rays, so the,position. All attackers have a -2 penalty on all,attack rolls, and the creature gains a +2 bonus,to all saving throws.",
+    "description": "If the creature is severely damaged (6 hit points or less remaining), it can use a ferocious bite attack (+ 2 bonus to attack roll, damage 1d6 points). Displacer beasts are carnivores; they prey on smaller herd animals in forests and jungles. They sometimes stray into dungeons out of curiosity or because they smell something good within. They only attack PC parties when especially hungry. Displacer beasts hate and fear blink dogs, and will always attack them and anyone traveling with them. It is suspected that displacer beasts and blink dogs both come from some faraway plane of existence, and are at war with one an- other throughout the dimensions.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Displacer Beast",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

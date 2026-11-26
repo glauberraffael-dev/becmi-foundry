@@ -1,0 +1,55 @@
+{
+  "_id": "LgbtKzDw3jGTqMWh",
+  "_key": "!actors!LgbtKzDw3jGTqMWh",
+  "name": "Undine",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 fist or 1 coil",
+    "damage": "2d8 or 1d10",
+    "appearing": "1(1)",
+    "saveAs": "F16",
+    "morale": 9,
+    "treasure": "Nil",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 2300,
+    "terrain": "Plane of Water.",
+    "monsterType": "Planar Monster, Enchanted,(Very Rare).",
+    "description": "An undine is an intelligent creature made of water. It is rare even on the elemental plane of Water, its home, and is almost never encoun- tered on the Prime Plane. Undines are Chaotic in behavior, but (similar to djinn) have very good intentions and despise evil. On its home plane, an undine normally has a form like a featureless transparent snake. It can easily change shape, sometimes using a form with many tentacles to handle objects. Once per turn, it can swim quickly in the form of a revolv- ing coil, moving at 480' (160') rate for up to 10 rounds. Undines are immune to poison, normal weap- ons, all 1st and 2nd level spells, and to all attacks based on fire. An undine can detect invisible at will, and can use detect magic, web, dispel mag- ic, ice storm / wall, and fire to ice three times per day (all as if a 9th level magic-user).",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Undine",
+      "category": "Planar Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

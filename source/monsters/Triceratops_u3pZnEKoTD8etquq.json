@@ -1,0 +1,55 @@
+{
+  "_id": "u3pZnEKoTD8etquq",
+  "_key": "!actors!u3pZnEKoTD8etquq",
+  "name": "Triceratops",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "20",
+    "hp": 90,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "3 horns",
+    "damage": "1d8/2d8/2d8",
+    "appearing": "0(1d6)",
+    "saveAs": "F10",
+    "morale": 9,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 4175,
+    "terrain": "Open (prehistoric).",
+    "monsterType": "Prehistoric Animal (Very,Rare).",
+    "description": "This is an armored herbivorous dinosaur. It walks about on four legs and has much the same temperament as an elephant. The triceratops is about 30' long and weighs 10-12 tons. A col- larlike armor plate grows from its head to protect its neck, and its weapons include a short horn growing from its snout and two long horns grow- ing above its eyes. A single triceratops is a match for all but the largest of the predatory carno- saurs. Although it is an herbivore, it is aggressive and dangerous, usually attacking on sight. It might charge (for double damage) on the first attack, and on any attack after it has gotten 20 yards or more away from its enemy.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 90,
+        "max": 90
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Triceratops",
+      "category": "Unclassified"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "c6b4337a3abc08e3"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "qLXMufvbdxC3rTLF",
+  "_key": "!actors!qLXMufvbdxC3rTLF",
+  "name": "Lycanthrope (Werebear)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "2d4/2d4/2d8",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F6",
+    "morale": 10,
+    "treasure": "C",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 500,
+    "terrain": "Woods, Wilderness.",
+    "monsterType": "Monster (Rare).",
+    "description": "Werebears are huge, powerful bear-humanoids.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Lycanthrope (Werebear)",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

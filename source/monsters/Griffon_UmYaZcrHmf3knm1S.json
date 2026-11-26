@@ -1,0 +1,55 @@
+{
+  "_id": "UmYaZcrHmf3knm1S",
+  "_key": "!actors!UmYaZcrHmf3knm1S",
+  "name": "Griffon",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/2d8",
+    "appearing": "1 (2d8)",
+    "saveAs": "F4",
+    "morale": 8,
+    "treasure": "E",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 450,
+    "terrain": "Mountain.",
+    "monsterType": "Monster (Rare).,A griffon has the head, wings, and front claws,of an eagle and the body and hindquarters of a,lion. Its favorite prey is horses. When within,120' of a horse, a griffon must make a morale,check or attack immediately. It can carry off a,horse-sized creature at half its flying rate.",
+    "description": "Wild griffons may be tamed if captured young, becoming loyal mounts. Tamed griffons are still likely to attack horses, however, and must check morale as above.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Griffon",
+      "category": "Monster"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

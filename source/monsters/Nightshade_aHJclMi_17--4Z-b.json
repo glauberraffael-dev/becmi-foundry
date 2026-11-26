@@ -1,0 +1,55 @@
+{
+  "_id": "aHJclMi_17--4Z-b",
+  "_key": "!actors!aHJclMi_17--4Z-b",
+  "name": "Nightshade",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 9,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 25,
+      "outdoor": 30
+    },
+    "attacks": "2 and see below",
+    "damage": "2d10/2d4 and see below",
+    "appearing": "1(1)",
+    "saveAs": "F25-30 and see below",
+    "morale": 12,
+    "treasure": "Any",
+    "intelligence": 19,
+    "alignment": "Chaotic",
+    "xpValue": 18500,
+    "terrain": "Any.",
+    "monsterType": "Undead, Enchanted (Very,Rare).",
+    "description": "The deadly nightshades are large, powerful evil beings which seek to spread death. They arc all extremely rare, usually created or summoned for a specific purpose by a more powerful being. All nightshades are a deep jet black in color, with no other colors on their entire forms. They have no visible eyes, apparently sensing their sur- roundings magically; they can see invisible and hidden things as easily as normal ones. Night- shades are all extremely clever and wise (having scores of 19 in Intelligence and Wisdom). Nightshades prefer darkness. Daylight inflicts a penalty of - 4 on all their attack rolls, but oth- er forms of light do not affect them. They can enter and leave the Ethereal Plane at will, but only do so if seriously threatened.",
+    "special": "",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "variant": "",
+      "key": "Nightshade",
+      "category": "Undead"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}
