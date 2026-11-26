@@ -45,7 +45,7 @@
             <label>{{localize 'BECMI.labels.nameLevelPath'}}:</label>
             <select name="system.nameLevel.path" {{#unless editable}}disabled{{/unless}}>
               {{#each nameLevelChoices.path as |option|}}
-              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.path)}}selected{{/if}}>{{option.name}}</option>
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevelStored.path)}}selected{{/if}}>{{option.name}}</option>
               {{/each}}
             </select>
           </div>
@@ -54,7 +54,7 @@
             <label>{{localize 'BECMI.labels.nameLevelSpecialization'}}:</label>
             <select name="system.nameLevel.specialization" {{#unless editable}}disabled{{/unless}}>
               {{#each nameLevelChoices.specialization as |option|}}
-              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.specialization)}}selected{{/if}}>{{option.name}}</option>
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevelStored.specialization)}}selected{{/if}}>{{option.name}}</option>
               {{/each}}
             </select>
           </div>
@@ -64,18 +64,18 @@
             <label>{{localize 'BECMI.labels.nameLevelHolding'}}:</label>
             <select name="system.nameLevel.holdingStyle" {{#unless editable}}disabled{{/unless}}>
               {{#each nameLevelChoices.holding as |option|}}
-              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.holdingStyle)}}selected{{/if}}>{{option.name}}</option>
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevelStored.holdingStyle)}}selected{{/if}}>{{option.name}}</option>
               {{/each}}
             </select>
           </div>
           {{/if}}
-          {{#if nameLevel.isAvenger}}
+          {{#if (eq nameLevel.requested "avenger")}}
           <div class="becmi-field">
             <label>{{localize 'BECMI.labels.nameLevelSpellLevels'}}:</label>
             <input name="system.nameLevel.avengerSpellLevels" type="number" min="0" max="9" value="{{system.nameLevel.avengerSpellLevels}}" {{#unless editable}}disabled{{/unless}}>
           </div>
           {{/if}}
-          {{#if nameLevel.canDetectEvil}}
+          {{#if nameLevel.requested}}
           <div class="becmi-field">
             <label>{{localize 'BECMI.labels.nameLevelHirelings'}}:</label>
             <input name="system.nameLevel.hirelings" type="number" min="0" value="{{system.nameLevel.hirelings}}" {{#unless editable}}disabled{{/unless}}>
@@ -87,6 +87,9 @@
         {{/if}}
         {{#if nameLevel.clericalLevel}}
         <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelClerical'}} {{nameLevel.clericalLevel}}. {{localize 'BECMI.sheet.nameLevelSpells'}} {{nameLevel.spellLevel}}.</p>
+        {{#unless nameLevel.spellLevel}}
+        <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelNoSpells'}}</p>
+        {{/unless}}
         {{/if}}
         {{#if nameLevel.spellCost}}
         <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelCost'}} {{nameLevel.spellCost}} gp.</p>
@@ -126,9 +129,8 @@
             {{/each}}
           </select>
         </div>
-        <div class="becmi-field"><label>{{localize 'BECMI.labels.magicBonus'}}:</label><input name="system.attributes.armor.magicBonus" type="number" value="{{system.attributes.armor.magicBonus}}" {{#unless editable}}disabled{{/unless}}></div>
         <div class="becmi-field"><label>{{localize 'BECMI.labels.shield'}}:</label><input name="system.attributes.armor.shield" type="checkbox" {{#if system.attributes.armor.shield}}checked{{/if}} {{#unless editable}}disabled{{/unless}}></div>
-        <div class="becmi-field"><label>{{localize 'BECMI.labels.shieldMagic'}}:</label><input name="system.attributes.armor.shieldMagic" type="number" value="{{system.attributes.armor.shieldMagic}}" {{#unless editable}}disabled{{/unless}}></div>
+        <div class="becmi-field"><label>{{localize 'BECMI.labels.itemBonus'}}:</label><span class="becmi-derived">{{acItemBonus}}</span></div>
         <div class="becmi-field becmi-field--hp">
           <label>{{localize 'BECMI.labels.hp'}}:</label>
           <input class="becmi-hp-current" name="system.attributes.hp.value" type="number" min="0" value="{{system.attributes.hp.value}}" title="{{localize 'BECMI.sheet.hpCurrentHint'}}">
@@ -142,6 +144,7 @@
         <div class="becmi-field"><label>{{localize 'BECMI.labels.attackColumn'}}:</label><span class="becmi-derived">{{attackSpec}}</span></div>
       </div>
       <p class="becmi-hint">{{attackLabel}}</p>
+      <p class="becmi-hint">{{localize 'BECMI.sheet.acBonusHint'}}</p>
       <div class="becmi-combat-fields">
         <button type="button" class="becmi-roll" data-action="rollInitiative">{{localize 'BECMI.rolls.initiative'}} (d6)</button>
         <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}} (2d6)</button>
@@ -150,7 +153,7 @@
       <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.savingThrows'}}</h3>
       <div class="becmi-saves-scroll">
       <table class="becmi-table becmi-table--saves">
-        <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.saveBase'}}</th><th>{{localize 'BECMI.labels.saveAuto'}}</th><th>{{localize 'BECMI.labels.saveMod'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
+        <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.saveBase'}}</th><th>{{localize 'BECMI.labels.saveAuto'}}</th><th>{{localize 'BECMI.labels.saveMod'}}</th><th>{{localize 'BECMI.labels.itemBonus'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
         <tbody>
           {{#each saveRows as |save|}}
           <tr>
@@ -158,6 +161,7 @@
             <td><input name="system.saveDetail.{{save.key}}.base" type="number" value="{{save.base}}" {{#unless ../editable}}disabled{{/unless}}></td>
             <td><input name="system.saveDetail.{{save.key}}.auto" type="number" value="{{save.auto}}" {{#unless ../editable}}disabled{{/unless}}></td>
             <td><input name="system.saveDetail.{{save.key}}.mod" type="number" value="{{save.mod}}" {{#unless ../editable}}disabled{{/unless}}></td>
+            <td class="becmi-derived">{{save.item}}</td>
             <td class="becmi-derived">{{save.target}}</td>
             <td><button type="button" class="becmi-roll" data-action="rollSave" data-save="{{save.key}}">{{localize 'BECMI.sheet.roll'}}</button></td>
           </tr>
@@ -212,31 +216,7 @@
 
 <!-- ============================ EQUIPMENT ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "equipment")}} is-active{{/if}}" data-tab="equipment">
-  <h2 class="becmi-section-title">{{localize 'BECMI.sheet.equipment'}} <button type="button" class="becmi-roll" data-action="addItem">+</button></h2>
-  {{#each equipmentGroups as |group|}}
-  <h3 class="becmi-subtitle">{{group.label}}</h3>
-  <table class="becmi-table becmi-table--equipment">
-    <thead><tr><th>{{localize 'BECMI.labels.name'}}</th><th>{{localize 'BECMI.labels.cost'}}</th><th>{{localize 'BECMI.labels.weight'}}</th><th>{{localize 'BECMI.labels.quantity'}}</th><th>{{localize 'BECMI.sheet.actions'}}</th></tr></thead>
-    <tbody>
-      {{#each group.items as |item|}}
-      <tr>
-        <th><button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button></th>
-        <td>{{item.cost}}</td><td>{{item.weight}}</td><td>{{item.quantity}}</td>
-        <td class="becmi-actions">
-          {{#if (eq item.type "weapon")}}
-          <button type="button" class="becmi-roll" data-action="itemAttack" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.attack'}}</button>
-          <button type="button" class="becmi-roll" data-action="itemDamage" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.damage'}}</button>
-          {{/if}}
-          {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
-          <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
-        </td>
-      </tr>
-      {{else}}
-      <tr><td colspan="5" class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</td></tr>
-      {{/each}}
-    </tbody>
-  </table>
-  {{/each}}
+  {{> "systems/becmi/templates/actor/parts/equipment.hbs"}}
 </section>
 
 <!-- ============================ SPELLS ============================ -->
@@ -333,7 +313,7 @@
       <span class="becmi-badge">{{item.level}}</span>
       <button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button>
       <button type="button" class="becmi-roll" data-action="itemCast" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.cast'}}</button>
-      {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
+      <button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}" {{#unless item.rollFormula}}disabled{{/unless}} title="{{localize 'BECMI.notification.noFormula'}}">{{localize 'BECMI.rolls.formula'}}</button>
       <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
     </li>
     {{/each}}
@@ -482,16 +462,19 @@
       <div class="becmi-field"><label>{{localize 'BECMI.labels.intelligence'}}:</label><input name="system.intelligence" type="number" value="{{system.intelligence}}" {{#unless editable}}disabled{{/unless}}></div>
       <div class="becmi-field"><label>{{localize 'BECMI.labels.alignment'}}:</label><input name="system.alignment" type="text" value="{{system.alignment}}" {{#unless editable}}disabled{{/unless}}></div>
       <div class="becmi-field"><label>{{localize 'BECMI.labels.xpValue'}}:</label><input name="system.xpValue" type="number" value="{{system.xpValue}}" {{#unless editable}}disabled{{/unless}}></div>
+      <button type="button" class="becmi-roll" data-action="rollInitiative">{{localize 'BECMI.rolls.initiative'}} (d6)</button>
       <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}}</button>
       <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
+      <button type="button" class="becmi-roll" data-action="rollMonsterHp" title="{{localize 'BECMI.sheet.rollMonsterHpHint'}}">{{localize 'BECMI.rolls.hitPoints'}}</button>
     </div>
     <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.savingThrows'}} <small>{{system.saveAs}}</small></h3>
     <table class="becmi-table becmi-table--saves">
-      <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
+      <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.itemBonus'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
       <tbody>
         {{#each saveRows as |save|}}
         <tr>
           <th>{{save.label}}</th>
+          <td class="becmi-derived">{{save.item}}</td>
           <td class="becmi-derived">{{save.target}}</td>
           <td><button type="button" class="becmi-roll" data-action="rollSave" data-save="{{save.key}}">{{localize 'BECMI.sheet.roll'}}</button></td>
         </tr>
@@ -503,11 +486,11 @@
       {{#each monsterAttacks as |attack|}}
       <div class="becmi-monster-attack">
         <div class="becmi-monster-attack__label">
-          <strong>{{attack.name}}</strong>{{#if attack.damage}} <span>{{attack.damage}}</span>{{/if}}{{#if attack.note}} <small>{{attack.note}}</small>{{/if}}
+          <strong>{{attack.name}}</strong>{{#if attack.weaponName}} <span class="becmi-badge">{{attack.weaponName}}</span>{{/if}}{{#if attack.damage}} <span>{{attack.damage}}</span>{{/if}}{{#if attack.note}} <small>{{attack.note}}</small>{{/if}}
         </div>
         <div class="becmi-monster-attack__buttons">
           <button type="button" class="becmi-roll" data-action="monsterAttack" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollMonsterAttack'}}">{{localize 'BECMI.rolls.attack'}}</button>
-          {{#if attack.damage}}<button type="button" class="becmi-roll" data-action="monsterDamage" data-attack-index="{{attack.index}}" title="{{localize 'BECMI.sheet.rollMonsterDamage'}}">{{localize 'BECMI.rolls.damage'}}</button>{{/if}}
+          <button type="button" class="becmi-roll" data-action="monsterDamage" data-attack-index="{{attack.index}}" {{#unless attack.damage}}disabled{{/unless}} title="{{localize 'BECMI.sheet.rollMonsterDamage'}}">{{localize 'BECMI.rolls.damage'}}</button>
         </div>
       </div>
       {{else}}
@@ -521,6 +504,14 @@
       <div class="becmi-field"><label>{{localize 'BECMI.labels.source'}}:</label><span class="becmi-derived">{{system.source}}</span></div>
       <div class="becmi-field"><label>{{localize 'BECMI.labels.page'}}:</label><span class="becmi-derived">{{system.page}}</span></div>
     </div>
+  </div>
+</section>
+
+<!-- Monsters can own and roll weapons; "by weapon" attacks use the first one. -->
+<section class="becmi-tab-panel{{#if (eq activeTab "equipment")}} is-active{{/if}}" data-tab="equipment">
+  <div class="becmi-scroll-y">
+    <p class="becmi-hint">{{localize 'BECMI.sheet.monsterWeaponHint'}}</p>
+    {{> "systems/becmi/templates/actor/parts/equipment.hbs"}}
   </div>
 </section>
 
@@ -559,7 +550,7 @@
         <span class="becmi-badge">{{item.level}}</span>
         <button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button>
         <button type="button" class="becmi-roll" data-action="itemCast" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.cast'}}</button>
-        {{#if item.rollFormula}}<button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.formula'}}</button>{{/if}}
+        <button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}" {{#unless item.rollFormula}}disabled{{/unless}} title="{{localize 'BECMI.notification.noFormula'}}">{{localize 'BECMI.rolls.formula'}}</button>
         <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}">×</button>
       </li>
       {{else}}

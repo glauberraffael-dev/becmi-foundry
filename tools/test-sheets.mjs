@@ -200,23 +200,36 @@ const body = await readFile(new URL("../templates/actor/body.hbs", import.meta.u
 if (!body.includes('data-action="rollSave" data-save="{{save.key}}"')
   || !body.includes('data-action="monsterAttack" data-attack-index="{{attack.index}}"')
   || !body.includes('data-action="monsterDamage" data-attack-index="{{attack.index}}"')
+  || !body.includes('data-action="rollInitiative"')
+  || !body.includes('data-action="rollMonsterHp"')
   || !body.includes("{{#if monsterSpellcaster}}")
-  || !body.includes('name="system.spellcasting"')) {
-  throw new Error("monster save, attack/damage or spell buttons are missing from the sheet template");
+  || !body.includes('name="system.spellcasting"')
+  || !body.includes('data-tab="equipment"')) {
+  throw new Error("monster save, HP, initiative, weapon or spell buttons are missing from the sheet template");
+}
+const equipmentPartial = await readFile(new URL("../templates/actor/parts/equipment.hbs", import.meta.url), "utf8");
+if (!equipmentPartial.includes('data-action="itemAttack"')
+  || !equipmentPartial.includes('data-action="itemDamage"')) {
+  throw new Error("equipment partial must expose weapon attack and damage buttons");
 }
 const rolled = [];
 sheet.actor = {
   async rollSave(key) { rolled.push(["save", key]); },
+  async rollInitiative() { rolled.push(["initiative"]); },
+  async rollMonsterHitPoints() { rolled.push(["monsterHp"]); },
   async rollMonsterAttack(index, options) {
     rolled.push(["attack", index, options?.targetAC, options?.mode]);
   },
   async rollMonsterDamage(index) { rolled.push(["damage", index]); }
 };
 await actions.rollSave.call(sheet, {}, { dataset: { save: "breath" } });
+await actions.rollInitiative.call(sheet);
+sheet.editMode = false; // rolling HP is an action, available in use mode
+await actions.rollMonsterHp.call(sheet);
 await actions.monsterAttack.call(sheet, {}, { dataset: { attackIndex: "2" } });
 await actions.monsterDamage.call(sheet, {}, { dataset: { attackIndex: "2" } });
 if (JSON.stringify(rolled) !== JSON.stringify([
-  ["save", "breath"], ["attack", 2, 9, "attack"], ["damage", 2]
+  ["save", "breath"], ["initiative"], ["monsterHp"], ["attack", 2, 9, "attack"], ["damage", 2]
 ])) {
   throw new Error(`monster roll actions did not reach the actor: ${JSON.stringify(rolled)}`);
 }
@@ -224,10 +237,14 @@ if (JSON.stringify(rolled) !== JSON.stringify([
 // Name-level controls stay in the template and their actions reach the actor
 // even in use mode (they are rolls, not edits).
 if (!body.includes('name="system.nameLevel.path"')
+  || !body.includes("../nameLevelStored.path")
+  || !body.includes("../nameLevelStored.specialization")
+  || !body.includes("../nameLevelStored.holdingStyle")
+  || !body.includes('{{#if (eq nameLevel.requested "avenger")}}')
   || !body.includes('data-action="detectEvil"')
   || !body.includes("{{#each nameLevel.pros as |line|}}")
   || !body.includes("{{#each nameLevel.cons as |line|}}")) {
-  throw new Error("name-level selectors, Detect Evil button or pros/cons panel are missing");
+  throw new Error("name-level persisted selectors, Detect Evil button or pros/cons panel are missing");
 }
 const nameRolls = [];
 sheet.editMode = false;

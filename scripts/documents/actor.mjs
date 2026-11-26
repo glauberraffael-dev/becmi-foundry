@@ -1,8 +1,8 @@
 import {
   abilityCheck, detectEvilRoll, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll,
-  monsterDamageRoll, moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
+  monsterDamageRoll, monsterHpRoll, moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
 } from "../rolls.mjs";
-import { computeArmorClass } from "../rules-rc.mjs";
+import { computeArmorClass, equippedAcBonus } from "../rules-rc.mjs";
 
 export class BECMIActor extends Actor {
   /** Flat roll data so formulas can reference @str, @thac0, @ac, @level, etc. */
@@ -26,9 +26,7 @@ export class BECMIActor extends Actor {
         type: armor.type,
         shield: armor.shield,
         dexAdj: attrs.adjustments?.dex ?? 0,
-        magicArmor: armor.magicBonus,
-        magicShield: armor.shieldMagic,
-        itemBonus: attrs.acBonus
+        itemBonus: equippedAcBonus(this.items, this.system?.magicItems)
       }).value;
     }
   }
@@ -51,6 +49,11 @@ export class BECMIActor extends Actor {
 
   async rollHitDice(options = {}) {
     return hitDiceRoll(this, options);
+  }
+
+  /** Apply a rolled HD result to monster HP (and the mirrored token bar). */
+  async rollMonsterHitPoints(options = {}) {
+    return monsterHpRoll(this, options);
   }
 
   /** Roll one natural attack by index; each row has its own attack button. */

@@ -85,6 +85,24 @@ for (const key of ["hirelings", "avengerSpellLevels"]) {
 }
 console.log("Name-level schema fields OK.");
 
+// Equipment bonuses are item data, not a manual actor AC/save bar.
+const itemSchema = itemModels.ArmorData.defineSchema();
+for (const key of ["equipped", "acBonus", "saveBonuses"]) {
+  if (!itemSchema[key]) throw new Error(`ItemData.${key} is missing`);
+}
+const equipmentSchema = itemModels.EquipmentData.defineSchema();
+if (!equipmentSchema.acBonus || !equipmentSchema.saveBonuses) {
+  throw new Error("EquipmentData must expose AC and save bonuses");
+}
+for (const key of ["deathRay", "magicWand", "paralysis", "breath", "spells"]) {
+  if (!itemSchema.saveBonuses.options[key]) throw new Error(`ItemData.saveBonuses.${key} is missing`);
+}
+const saveDetail = actorModels.CharacterData.defineSchema().saveDetail;
+if (!saveDetail?.options?.deathRay?.options?.item) {
+  throw new Error("CharacterData.saveDetail must expose derived item bonuses");
+}
+console.log("Equipment bonus schema fields OK.");
+
 // Weapon mastery is an opt-in switch on every character, never a class-only tab.
 const mastery = characterSchema.mastery?.options;
 if (!mastery?.enabled || mastery.enabled.options.initial !== false
@@ -104,15 +122,16 @@ const withAc = new BECMIActor();
 withAc.system = {
   attributes: {
     ac: { base: 9, value: undefined },
-    acBonus: 1,
-    armor: { type: "malha", shield: true, magicBonus: 0, shieldMagic: 0 },
+    armor: { type: "malha", shield: true },
     adjustments: { dex: 1 }
-  }
+  },
+  magicItems: []
 };
+withAc.items = [{ type: "armor", system: { equipped: true, acBonus: -1 } }];
 withAc.prepareDerivedData();
-// Chain mail (5), shield (-1), DEX adjustment (-1), item bonus (-1).
-if (withAc.system.attributes.ac.value !== 2) {
-  throw new Error(`Derived AC expected 2, got ${withAc.system.attributes.ac.value}`);
+// Chain mail (5), shield (-1), DEX adjustment (+1), item (-1 AC).
+if (withAc.system.attributes.ac.value !== 4) {
+  throw new Error(`Derived AC expected 4, got ${withAc.system.attributes.ac.value}`);
 }
 console.log("Actor prepareDerivedData OK (with and without AC).");
 

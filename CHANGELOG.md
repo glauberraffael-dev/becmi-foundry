@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.25
+
+- Name Level choices now persist through re-renders. Travelling paladins,
+  avengers and knights use the cleric spell table at one-third level, and the
+  alignment field shares the XP row without breaking the class selector.
+- AC and saving-throw bonuses come from equipped items instead of manual actor
+  fields. Weapons, armor and equipment have a Bonuses tab with per-save entries;
+  legacy equipped magic rows still apply.
+- Monsters have an Equipment tab and can own weapons. "By weapon" attacks use
+  the first equipped weapon, and every roll (HP, initiative, morale, attack,
+  damage, spell formula) has a button; monster HP rolls apply the result.
+- Curated dice formulas were added to ten spells, including Fireball and
+  Lightning Bolt at `@level d6`. Formulas resolve on the roll and are repaired
+  on spells imported by earlier versions. Pack verification now checks them.
+
 ## 0.1.24
 
 - Replaced the removed `Roll#evaluate({ async: true })` API with `await roll.evaluate()`.

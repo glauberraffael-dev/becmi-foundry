@@ -1,5 +1,13 @@
 const fields = () => foundry.data.fields;
 
+function saveBonusSchema() {
+  const f = fields();
+  const bonus = () => new f.NumberField({ initial: 0, integer: true, label: "BECMI.labels.saveBonus" });
+  return new f.SchemaField({
+    deathRay: bonus(), magicWand: bonus(), paralysis: bonus(), breath: bonus(), spells: bonus()
+  });
+}
+
 class SourceData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const f = fields();
@@ -8,6 +16,9 @@ class SourceData extends foundry.abstract.TypeDataModel {
       source: new f.StringField({ initial: "Rules Cyclopedia" }),
       page: new f.NumberField({ initial: 0, integer: true, min: 0 }),
       notes: new f.StringField({ initial: "" }),
+      equipped: new f.BooleanField({ initial: false, label: "BECMI.labels.equipped" }),
+      acBonus: new f.NumberField({ initial: 0, integer: true }),
+      saveBonuses: saveBonusSchema(),
       rollFormula: new f.StringField({ initial: "", label: "BECMI.labels.rollFormula" })
     };
   }
@@ -39,7 +50,6 @@ export class ArmorData extends SourceData {
     return {
       ...super.defineSchema(),
       ac: new f.NumberField({ initial: 0, integer: true, label: "BECMI.labels.ac" }),
-      acBonus: new f.NumberField({ initial: 0, integer: true }),
       armorType: new f.StringField({ initial: "" }),
       cost: new f.StringField({ initial: "" }),
       weight: new f.NumberField({ initial: 0, min: 0 })

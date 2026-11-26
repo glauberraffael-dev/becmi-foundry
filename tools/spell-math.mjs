@@ -75,7 +75,23 @@ export const SPELL_MATH_OVERRIDES = Object.freeze({
     fields: { duration: "1d4 + 1 (2-5) rounds" },
     descriptionReplace: [["1d4 + l (2-5)", "1d4 + 1 (2-5)"]],
     rollFormula: "1d4 + 1"
-  }
+  },
+  fireball: {
+    rollFormula: "@level d6",
+    notes: "1d6 fire damage per caster level; a successful save halves the total."
+  },
+  "lightning bolt": {
+    rollFormula: "@level d6",
+    notes: "1d6 lightning damage per caster level; a successful save halves the total."
+  },
+  "cure serious wounds": { rollFormula: "2d6 + 2" },
+  "cure critical wounds": { rollFormula: "3d6 + 3" },
+  "sticks to snakes": { rollFormula: "2d8" },
+  "call lightning": { rollFormula: "8d6" },
+  web: { rollFormula: "2d4" },
+  "wall of stone": { rollFormula: "10d10" },
+  "death spell": { rollFormula: "4d8" },
+  "power word stun": { rollFormula: "2d6" }
 });
 
 /** Apply the OCR/math corrections to one extracted spell record, in place. */

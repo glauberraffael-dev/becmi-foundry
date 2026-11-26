@@ -70,6 +70,15 @@ for (const pack of packs) {
         throw new Error(`spells: ${doc.name} is not inside a level folder`);
       }
     }
+    const formula = (name) => docs.find((doc) => doc.name === name)?.system?.rollFormula;
+    for (const [name, expected] of [
+      ["Fireball", "@level d6"], ["Lightning Bolt", "@level d6"], ["Sleep", "2d8"],
+      ["Cure Serious Wounds", "2d6 + 2"], ["Wall of Stone", "10d10"], ["Gate", "1d10 * 10"]
+    ]) {
+      if (formula(name) !== expected) {
+        throw new Error(`spells: ${name} dice formula expected "${expected}", found "${formula(name) ?? ""}"`);
+      }
+    }
     console.log(`  folder tree: ${lists.length} spell lists, ${levels.length} level folders`);
   }
 

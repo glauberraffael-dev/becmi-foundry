@@ -4,14 +4,21 @@
  *
  * Usage: node tools/extract-spells.mjs [path-to-markdown]
  */
-import { readFile, mkdir, writeFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
+import { mkdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-import { fixDice, fixOnes, flatten, stripPictureText, summary } from "./normalize.mjs";
-import { ocrInput } from "./ocr-input.mjs";
+import { fixDice, fixOnes, flatten, stripPictureText } from "./normalize.mjs";
 import { applySpellMathOverrides } from "./spell-math.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
-const input = ocrInput();
+const input = process.argv[2] ?? process.env.BECMI_OCR;
+
+// The OCR markdown is a development input and is never shipped. Curated spell
+// math is kept in data/spells.json, so an absent input is not a build failure.
+if (!input) {
+  console.log("No OCR input: leaving data/spells.json unchanged.");
+  process.exit(0);
+}
 
 const SECTIONS = [
   { from: 3109, to: 3718, list: "cleric", label: "Clerical" },
@@ -19,36 +26,41 @@ const SECTIONS = [
   { from: 4074, to: 5706, list: "magic-user", label: "Magical" }
 ];
 
-const LEVEL_RE = /^\s*#{3,6}\s*\*\*(First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth) Level (?:Clerical|Druidic|Magical) Spells\*\*\s*$/i;
-const ORDINALS = { First: 1, Second: 2, Third: 3, Fourth: 4, Fifth: 5, Sixth: 6, Seventh: 7, Eighth: 8, Ninth: 9 };
+const LEVEL_RE = /^\s*#{2,4}\s*(?:[*_]*)(First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth)\s+Level/i;
+const ORDINALS = {
+  First: 1, Second: 2, Third: 3, Fourth: 4, Fifth: 5,
+  Sixth: 6, Seventh: 7, Eighth: 8, Ninth: 9
+};
 
-function isNoise(name) {
-  return /^(Reversible Spells|List of .*|Reading Spell Descriptions|Number and Types of Spells|Casting Magical Spells|Spell Books|The|Notes|Terrain|Range:)/i.test(name) ||
-    /^(First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth)$/i.test(name);
-}
-
-function cleanName(raw) {
-  return flatten(raw)
-    .replace(/\*+$/, "")
-    .replace(/^_\s*|\s*_$/g, "")
+function cleanName(value) {
+  return String(value ?? "")
+    .replace(/^[*\s#]+|[*\s#]+$/g, "")
+    .replace(/\s*\(.*?\)\s*/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
+const NOISE = /^(?:spell|spells|clerical|druidic|magical|reverse|reversible|level|duration|range|effect|none)$/i;
+function isNoise(name) {
+  return !name || NOISE.test(name);
+}
+
 function parseStats(text) {
-  const flat = fixDice(flatten(text));
-  const range = flat.match(/\bRange:\s*(.*?)(?=\s+Duration:|$)/i)?.[1] ?? "";
-  const duration = flat.match(/\bDuration:\s*(.*?)(?=\s+Effect:|$)/i)?.[1] ?? "";
-  const effect = flat.match(/\bEffect:\s*(.*)$/i)?.[1] ?? "";
-  return {
-    range: range.trim(),
-    duration: duration.trim(),
-    effect: effect.replace(/\s+(?:When|Upon|A|An|The|If|This|Each|Any|In|All|For)\s.*$/, "").trim()
+  const get = (label) => {
+    const match = String(text).match(new RegExp(`${label}:\\s*([^\\n]+)`, "i"));
+    return match ? match[1].trim() : "";
   };
+  return { range: get("Range"), duration: get("Duration"), effect: get("Effect") };
+}
+
+function summary(text, maxLength) {
+  const lines = String(text).split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+  const joined = lines.join(" ").replace(/\s+/g, " ").trim();
+  return joined.length > maxLength ? `${joined.slice(0, maxLength - 1)}…` : joined;
 }
 
 function main() {
-  const lines = awaitLines(readFileSync(input)).split(/\r?\n/);
+  const lines = readFileSync(String(input), "utf8").split(/\r?\n/);
   const spells = [];
 
   for (const section of SECTIONS) {
@@ -85,8 +97,7 @@ function main() {
     };
 
     const sectionLines = stripPictureText(lines.slice(section.from - 1, section.to).join("\n")).split(/\r?\n/);
-    for (let i = 0; i < sectionLines.length; i++) {
-      const line = sectionLines[i];
+    for (const line of sectionLines) {
       const levelMatch = line.match(LEVEL_RE);
       if (levelMatch) {
         flush();
@@ -142,18 +153,7 @@ function main() {
   return [...merged.values()].map(applySpellMathOverrides);
 }
 
-function readFileSync(path) {
-  // eslint-disable-next-line no-undef
-  return require("node:fs").readFileSync(path, "utf8");
-}
-import { createRequire } from "node:module";
-const require = createRequire(import.meta.url);
-function awaitLines(text) {
-  return text;
-}
-
 const spells = main();
 await mkdir(new URL("../data/", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/spells.json", import.meta.url), JSON.stringify(spells, null, 2));
 console.log(`Extracted ${spells.length} spells.`);
-console.log(spells.slice(0, 6).map((s) => `${s.name} (${s.system.spellLists.join("/")} ${s.system.spellLevel}): ${s.system.range}`).join("\n"));

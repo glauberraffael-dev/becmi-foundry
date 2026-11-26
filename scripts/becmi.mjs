@@ -75,7 +75,8 @@ Hooks.once("init", () => {
 
   foundry.applications.handlebars.loadTemplates([
     "systems/becmi/templates/chat/roll.hbs",
-    "systems/becmi/templates/chat/item.hbs"
+    "systems/becmi/templates/chat/item.hbs",
+    "systems/becmi/templates/actor/parts/equipment.hbs"
   ]).catch(() => {});
 
   registerIntegrations();

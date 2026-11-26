@@ -179,25 +179,35 @@ export async function monsterDamageRoll(actor, index, options = {}) {
 }
 
 function monsterAttackRow(actor, index) {
-  const row = monsterAttackRows(actor?.system ?? {})[Number(index)];
+  const weapons = [...(actor?.items ?? [])].filter((item) => item.type === "weapon");
+  const row = monsterAttackRows(actor?.system ?? {}, { weapons })[Number(index)];
   if (!row) ui.notifications.warn(game.i18n.localize("BECMI.notification.noMonsterAttack"));
   return row ?? null;
 }
 
 function monsterAttackItem(row) {
+  const name = row.weaponName ? `${row.name} — ${row.weaponName}` : row.name;
   return {
-    name: row.note ? `${row.name} (${row.note})` : row.name,
-    system: { damage: row.damage }
+    name: row.note && !row.weaponName ? `${name} (${row.note})` : name,
+    system: {
+      damage: row.damage,
+      attackAbility: row.attackAbility,
+      attackBonus: Number(row.attackBonus) || 0,
+      magicBonus: Number(row.magicBonus) || 0,
+      damageBonus: Number(row.damageBonus) || 0
+    }
   };
 }
 
 /** Roll an arbitrary item formula (spell effect, treasure value, etc.). */
 export async function itemFormulaRoll(actor, item, { rollMode, expression } = {}) {
-  const formula = expression ?? item?.system?.rollFormula;
-  if (!formula) {
+  const raw = expression ?? item?.system?.rollFormula;
+  if (!raw) {
     ui.notifications.warn(game.i18n.localize("BECMI.notification.noFormula"));
     return null;
   }
+  const level = Math.max(1, Number(actor?.system?.attributes?.level ?? actor?.system?.level ?? 1) || 1);
+  const formula = String(raw).replace(/@level\b/gi, String(level));
   return freeRoll(actor, formula, { rollMode });
 }
 
@@ -296,6 +306,33 @@ export async function hitDiceRoll(actor, { rollMode } = {}) {
     actor
   });
   return roll;
+}
+
+/** Roll monster HP from HD and apply it, so the token bar follows the result. */
+export async function monsterHpRoll(actor, { rollMode, apply = true } = {}) {
+  const hd = String(actor?.system?.hd ?? "1");
+  const formula = monsterHpFormula(hd);
+  if (!formula) {
+    ui.notifications.warn(game.i18n.localize("BECMI.notification.noFormula"));
+    return null;
+  }
+  const roll = await new Roll(formula).evaluate();
+  const hp = Math.max(1, Math.round(roll.total));
+  if (actor && apply) {
+    await actor.update({
+      "system.hp": hp,
+      "system.attributes.hp.value": hp,
+      "flags.becmi.exactHp": true
+    });
+  }
+  await toChat(roll, {
+    title: game.i18n.localize("BECMI.rolls.hitPoints"),
+    flavor: rollName(actor),
+    result: `${hp} HP`,
+    rollMode,
+    actor
+  });
+  return { roll, hp };
 }
 
 /** Roll an arbitrary BECMI expression (NdM, +/- and half(...) are supported). */

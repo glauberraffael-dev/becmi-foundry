@@ -4,6 +4,8 @@ import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from ".
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;
 
+const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
+
 export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   static DEFAULT_OPTIONS = Object.freeze(foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
     classes: ["becmi", "sheet", "item"],
@@ -16,6 +18,7 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       closeOnSubmit: false
     },
     actions: {
+      switchTab: BECMIItemSheet.#switchTab,
       rollAttack: BECMIItemSheet.#rollAttack,
       rollDamage: BECMIItemSheet.#rollDamage,
       rollFormula: BECMIItemSheet.#rollFormula,
@@ -34,6 +37,7 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
 
   targetAC = 9;
   editMode = false;
+  activeTab = "main";
 
   async _onRender(context, options) {
     await super._onRender(context, options);
@@ -53,7 +57,16 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     context.isSpell = item.type === "spell";
     context.isArmor = item.type === "armor";
     context.isClass = item.type === "class";
+    context.canHaveAcBonus = !["spell", "class", "feature"].includes(item.type);
     context.targetAC = this.targetAC;
+    context.tabs = [
+      { id: "main", label: game.i18n.localize("BECMI.sheet.tab.main"), active: this.activeTab === "main" },
+      { id: "bonus", label: game.i18n.localize("BECMI.sheet.tab.bonus"), active: this.activeTab === "bonus" }
+    ];
+    context.activeTab = this.activeTab;
+    context.saveBonusRows = SAVES.map((key) => ({
+      key, label: game.i18n.localize(`BECMI.saves.${key}`)
+    }));
     if (context.isClass) {
       context.xpTableRows = Object.entries(item.system.xpTable ?? {})
         .map(([level, xp]) => ({ level: Number(level), xp: Number(xp) }))
@@ -62,6 +75,11 @@ export class BECMIItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       context.maxLevel = item.system.maxLevel ?? 36;
     }
     return context;
+  }
+
+  static async #switchTab(event, target) {
+    this.activeTab = target.dataset.tab === "bonus" ? "bonus" : "main";
+    await this.render();
   }
 
   static async #toggleEditMode() {

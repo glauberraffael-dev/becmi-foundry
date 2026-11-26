@@ -12,6 +12,39 @@ const CLASS_SPELL_LISTS = {
   elf: ["magic-user"]
 };
 
+/**
+ * Curated dice formulas for legacy owned spells imported before the compendium
+ * carried `system.rollFormula`. Names are lowercased for a stable lookup.
+ */
+export const SPELL_FORMULA_FALLBACKS = Object.freeze({
+  sleep: "2d8",
+  "snake charm": "1d4 + 1",
+  "cure disease": "2d12",
+  barrier: "7d10",
+  "holy word": "2d10",
+  restore: "2d10",
+  "mirror image": "1d4",
+  "hold monster": "1d4",
+  "lower water": "1d12 + 20",
+  "power word blind": "1d4",
+  gate: "1d10 * 10",
+  timestop: "1d4 + 1",
+  fireball: "@level d6",
+  "lightning bolt": "@level d6",
+  "cure serious wounds": "2d6 + 2",
+  "cure critical wounds": "3d6 + 3",
+  "sticks to snakes": "2d8",
+  "call lightning": "8d6",
+  web: "2d4",
+  "wall of stone": "10d10",
+  "death spell": "4d8",
+  "power word stun": "2d6"
+});
+
+export function spellFormulaFor(name) {
+  return SPELL_FORMULA_FALLBACKS[String(name ?? "").toLocaleLowerCase("en")] ?? "";
+}
+
 const CLASS_FLAG = "flags.becmi.classInfo";
 
 function getProperty(object, path) {
@@ -198,6 +231,10 @@ export function spellItemData(spell) {
 
   const list = data.flags?.becmi?.list ?? data.system.spellLists?.[0];
   if (!data.system.spellLists?.length && list) data.system.spellLists = [list];
+  if (!data.system.rollFormula) {
+    const formula = spellFormulaFor(data.name);
+    if (formula) data.system.rollFormula = formula;
+  }
   data.flags = { ...(data.flags ?? {}), becmi: { ...(data.flags?.becmi ?? {}) } };
   if (uuid) data.flags.becmi.sourceUuid = uuid;
   else delete data.flags.becmi.sourceUuid;
@@ -378,9 +415,24 @@ export function registerIntegrations() {
   Hooks.once("ready", () => {
     for (const actor of game.actors) {
       if (actor.type === "monster") repairMonsterHitPoints(actor);
+      repairSpellFormulas(actor).catch((err) => console.error("BECMI | repairSpellFormulas", err));
       refreshActorFromClass(actor).catch((err) => console.error("BECMI | refreshActorFromClass", err));
     }
   });
+}
+
+/** Fill blank dice formulas on spells imported before the compendium fix. */
+export async function repairSpellFormulas(actor) {
+  const updates = [];
+  for (const item of actor?.items ?? []) {
+    if (item.type !== "spell" || item.system?.rollFormula) continue;
+    const formula = spellFormulaFor(item.name);
+    if (!formula) continue;
+    updates.push({ _id: item.id, "system.rollFormula": formula });
+  }
+  if (!updates.length || typeof actor?.updateEmbeddedDocuments !== "function") return 0;
+  await actor.updateEmbeddedDocuments("Item", updates);
+  return updates.length;
 }
 
 /**

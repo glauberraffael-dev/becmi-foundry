@@ -16,7 +16,8 @@
     "description": "Duration: Instantaneous Effect: Slays 4d8 (4-32) Hit Dice of creatures within a 60' x 60' x 60' area This spell will affect 4d8 (4-32) Hit Dice of living creatures within the given area. Normal plants and insects are automatically slain, and those with no hit points (normal insects, plants smaller than shrub-sized, for instance) are not counted in the total affected. Undead are not affected, nor are creatures with 8 or more Hit Dice (or levels of experience). The lowest Hit Dice creatures are affected first. Each victim must make a saving throw vs. death ray or die.",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "rollFormula": "4d8"
   },
   "flags": {
     "becmi": {

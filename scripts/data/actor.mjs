@@ -1,6 +1,7 @@
 import {
   RC, adjustment, attackSpecFor, baseSaves, baseThiefSkills, computeArmorClass,
-  computeLoad, getRCClass, monsterSaveTargets, monsterThac0, normalizeClassKey, xpForNextLevel
+  computeLoad, equippedAcBonus, equippedSaveBonuses, getRCClass, monsterSaveTargets,
+  monsterThac0, normalizeClassKey, xpForNextLevel
 } from "../rules-rc.mjs";
 
 const fields = () => foundry.data.fields;
@@ -46,6 +47,7 @@ function characterSaveSchema() {
     base: new f.NumberField({ initial: 10, integer: true, label: "BECMI.labels.saveBase" }),
     auto: new f.NumberField({ initial: 0, integer: true, label: "BECMI.labels.saveAuto" }),
     mod: new f.NumberField({ initial: 0, integer: true, label: "BECMI.labels.saveMod" }),
+    item: new f.NumberField({ initial: 0, integer: true, label: "BECMI.labels.itemBonus" }),
     target: new f.NumberField({ initial: 10, integer: true, label: "BECMI.labels.saveTarget" })
   });
   return new f.SchemaField({
@@ -233,13 +235,14 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     attrs.xpNext = nextXp ?? 0;
 
     const armor = attrs.armor ?? {};
+    const items = this.parent?.items ?? [];
     const ac = computeArmorClass({
       type: armor.type,
       shield: armor.shield,
       dexAdj: attrs.adjustments?.dex ?? 0,
-      magicArmor: armor.magicBonus,
-      magicShield: armor.shieldMagic,
-      itemBonus: attrs.acBonus
+      // Legacy manual magic fields are kept only for old saved data; new
+      // bonuses are defined on equipped armor and magic-item entries.
+      itemBonus: equippedAcBonus(items, this.magicItems)
     });
     attrs.ac.base = ac.base;
     attrs.ac.value = ac.value;
@@ -272,12 +275,14 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       attrs.thac0 = parseInt(attack.thac0, 10) || attrs.thac0;
 
       const bases = baseSaves(key, level);
+      const itemBonuses = equippedSaveBonuses(items, this.magicItems);
       for (const [saveKey, base] of Object.entries(bases)) {
         const detail = this.saveDetail?.[saveKey];
         if (!detail) continue;
         const auto = Number(detail.auto || 0) + (saveKey === "spells" ? (attrs.adjustments?.wis ?? 0) : 0);
         detail.base = base;
-        detail.target = base - auto - Number(detail.mod || 0);
+        detail.item = Number(itemBonuses[saveKey]) || 0;
+        detail.target = base - auto - Number(detail.mod || 0) - detail.item;
         this.saves[saveKey] = detail.target;
       }
 
@@ -346,6 +351,7 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       // Imported spells and memorized slots use the same shape as characters.
       spellbook: spellbookSchema(),
       saves: savingThrowSchema(),
+      saveDetail: characterSaveSchema(),
       special: new f.HTMLField({ initial: "" }),
       description: new f.HTMLField({ initial: "" }),
       notes: new f.HTMLField({ initial: "" }),
@@ -361,9 +367,22 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
     // Current HP is the token-tracked value; never let it exceed the maximum.
     this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.max);
     this.attributes.thac0 = monsterThac0(this.hd);
-    const targets = monsterSaveTargets(this.saveAs, this.hd);
-    if (targets) {
-      for (const [key, value] of Object.entries(targets)) this.saves[key] = value;
+    const targets = monsterSaveTargets(this.saveAs, this.hd) ?? {};
+    const itemBonuses = equippedSaveBonuses(this.parent?.items ?? []);
+    for (const key of RC.saveIds) {
+      const detail = this.saveDetail?.[key];
+      // `detail.base` is the immutable pre-item target; using the already
+      // derived `saves` value here would subtract the item bonus twice when
+      // prepareDerivedData runs again.
+      const base = Number(targets[key] ?? detail?.base ?? this.saves?.[key] ?? 10);
+      const item = Number(itemBonuses[key]) || 0;
+      this.saves[key] = base - item;
+      if (!detail) continue;
+      detail.base = base;
+      detail.auto = 0;
+      detail.mod = 0;
+      detail.item = item;
+      detail.target = this.saves[key];
     }
   }
 }

@@ -1,0 +1,25 @@
+<h2 class="becmi-section-title">{{localize 'BECMI.sheet.equipment'}} <button type="button" class="becmi-roll" data-action="addItem" {{#unless editable}}disabled{{/unless}}>+</button></h2>
+{{#each equipmentGroups as |group|}}
+<h3 class="becmi-subtitle">{{group.label}}</h3>
+<table class="becmi-table becmi-table--equipment">
+  <thead><tr><th>{{localize 'BECMI.labels.name'}}</th><th>{{localize 'BECMI.labels.cost'}}</th><th>{{localize 'BECMI.labels.weight'}}</th><th>{{localize 'BECMI.labels.quantity'}}</th><th>{{localize 'BECMI.sheet.actions'}}</th></tr></thead>
+  <tbody>
+    {{#each group.items as |item|}}
+    <tr>
+      <th><button type="button" class="becmi-item-name" data-action="itemOpen" data-item-id="{{item.id}}">{{item.name}}</button></th>
+      <td>{{item.cost}}</td><td>{{item.weight}}</td><td>{{item.quantity}}</td>
+      <td class="becmi-actions">
+        {{#if (eq item.type "weapon")}}
+        <button type="button" class="becmi-roll" data-action="itemAttack" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.attack'}}</button>
+        <button type="button" class="becmi-roll" data-action="itemDamage" data-item-id="{{item.id}}">{{localize 'BECMI.rolls.damage'}}</button>
+        {{/if}}
+        <button type="button" class="becmi-roll" data-action="itemFormula" data-item-id="{{item.id}}" {{#unless item.rollFormula}}disabled{{/unless}} title="{{localize 'BECMI.notification.noFormula'}}">{{localize 'BECMI.rolls.formula'}}</button>
+        <button type="button" class="becmi-roll" data-action="itemDelete" data-item-id="{{item.id}}" {{#unless editable}}disabled{{/unless}}>×</button>
+      </td>
+    </tr>
+    {{else}}
+    <tr><td colspan="5" class="becmi-empty">{{localize 'BECMI.sheet.empty'}}</td></tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/each}}

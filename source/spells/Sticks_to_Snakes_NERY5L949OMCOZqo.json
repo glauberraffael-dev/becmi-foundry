@@ -16,7 +16,8 @@
     "description": "This spell turns 2d8 sticks into snakes (detailed below). The snakes may be poisonous (50% chance per snake; the DM can roll 1d6 for each snake; on a roll of 1-3, the snake is poisonous). They obey the cleric's commands, but will turn back into sticks when slain or when the spell's duration ends. Snakes: NA 2d8 (2d8); AC 6, HD 1; AT 1 bite; Dmg 1d4; MV 90' (30'); Save F1; ML 12; TT Nil; AL Neutral; SA poison (50% chance for each snake to be poisonous); XP 10 (nonpoisonous) or 13 (poisonous).",
     "source": "Rules Cyclopedia",
     "page": 0,
-    "notes": ""
+    "notes": "",
+    "rollFormula": "2d8"
   },
   "flags": {
     "becmi": {

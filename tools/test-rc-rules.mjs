@@ -13,8 +13,8 @@ import {
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
-  finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
-  levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
+  equippedAcBonus, equippedSaveBonuses, finalDamage, hpForLevel, masteryChoices, masteryData,
+  masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
   monsterSaveTargets, monsterSpellcasterInfo, monsterThac0, normalizeClassKey,
   parseMonsterHitDice, parseMonsterSaveAs,
   planAbilityAdjustment, resolveTurnResult,
@@ -213,7 +213,30 @@ check("the free roller supports dice, modifiers and half expressions", () => {
   assert.equal(rollExpression("2d6+3", () => 0).total, 5);
   assert.equal(rollExpression("½(2d6+4)+3", () => 0).total, 6);
   assert.equal(rollExpression("10-2-1").total, 7);
+  assert.equal(rollExpression("1d10*10", () => 0).total, 10);
+  assert.equal(rollExpression("6 d6", () => 0).total, 6);
   assert.equal(rollExpression("not dice").valid, false);
+});
+
+check("equipment bonuses are derived only from equipped items", () => {
+  const items = [
+    { system: { equipped: true, acBonus: -2, saveBonuses: { deathRay: 1, spells: 2 } } },
+    { system: { equipped: false, acBonus: -9, saveBonuses: { deathRay: 9 } } }
+  ];
+  assert.equal(equippedAcBonus(items), -2);
+  assert.deepEqual(equippedSaveBonuses(items), {
+    deathRay: 1, magicWand: 0, paralysis: 0, breath: 0, spells: 2
+  });
+  assert.equal(equippedAcBonus([], [{ equipped: true, ac: -1 }]), -1);
+});
+
+check("monster by-weapon attacks use an owned weapon", () => {
+  const rows = monsterAttackRows(
+    { attacks: "1 by weapon", damage: "by weapon" },
+    { weapons: [{ id: "w1", name: "Sword", type: "weapon", system: { equipped: true, damage: "1d8+1" } }] }
+  );
+  assert.equal(rows[0].damage, "1d8+1");
+  assert.equal(rows[0].itemId, "w1");
 });
 
 check("monster Hit Dice count d8 and never equal the HP total", () => {

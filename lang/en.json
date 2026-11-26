@@ -71,6 +71,7 @@
   "BECMI.labels.attacksPerRound": "Attacks / Round",
   "BECMI.labels.saveBonus": "Save Bonus",
   "BECMI.labels.attackBonus": "Attack Bonus",
+  "BECMI.labels.damageBonus": "Damage Bonus",
   "BECMI.labels.nameLevelPath": "Name-level path",
   "BECMI.labels.nameLevelSpecialization": "Travelling specialization",
   "BECMI.labels.nameLevelHolding": "Holding style",
@@ -350,5 +351,16 @@
   "BECMI.sheet.nameLevelClerical": "Effective cleric level:",
   "BECMI.sheet.nameLevelSpells": "Cleric spell levels:",
   "BECMI.sheet.nameLevelCost": "Minimum spell tuition:",
-  "BECMI.notification.detectEvilUnavailable": "Only a travelling paladin or avenger can use Detect Evil."
+  "BECMI.sheet.nameLevelNoSpells": "No cleric spells yet: WIS 13+ is required, and avengers must buy spell levels (10,000 gp each).",
+  "BECMI.notification.detectEvilUnavailable": "Only a travelling paladin or avenger can use Detect Evil.",
+
+  "BECMI.labels.equipped": "Equipped",
+  "BECMI.labels.itemBonus": "Item bonus",
+  "BECMI.labels.saveBonus": "Save bonus",
+  "BECMI.rolls.hitPoints": "Roll HP",
+  "BECMI.sheet.tab.bonus": "Bonuses",
+  "BECMI.sheet.acBonusHint": "AC bonuses come from equipped items on the Bonuses tab of armor and magic items.",
+  "BECMI.sheet.itemBonusHint": "Bonuses apply only while the item is equipped. Lower save targets are easier to roll.",
+  "BECMI.sheet.rollMonsterHpHint": "Roll hit dice and apply the result to this monster's HP.",
+  "BECMI.sheet.monsterWeaponHint": "Drop weapon items here to give a monster weapons. A \"by weapon\" attack uses the first weapon."
 }

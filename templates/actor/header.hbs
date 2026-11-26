@@ -30,7 +30,7 @@
         <input name="system.attributes.player" type="text" value="{{system.attributes.player}}" {{#unless editable}}disabled{{/unless}}>
       </div>
       {{#if isCharacter}}
-      <div class="becmi-field">
+      <div class="becmi-field becmi-field--wide">
         <label>{{localize 'BECMI.labels.rcClass'}}</label>
         <select name="system.attributes.classKey" {{#unless editable}}disabled{{/unless}}>
           <option value="">—</option>
@@ -39,13 +39,15 @@
           {{/each}}
         </select>
       </div>
-      <div class="becmi-field">
-        <label>{{localize 'BECMI.labels.alignment'}}</label>
-        <input name="system.attributes.alignment" type="text" value="{{system.attributes.alignment}}" {{#unless editable}}disabled{{/unless}}>
-      </div>
-      <div class="becmi-field">
-        <label>{{localize 'BECMI.labels.currentXp'}}</label>
-        <input name="system.attributes.xp" type="number" value="{{system.attributes.xp}}" {{#unless editable}}disabled{{/unless}}>
+      <div class="becmi-field-pair">
+        <div class="becmi-field">
+          <label>{{localize 'BECMI.labels.alignment'}}</label>
+          <input name="system.attributes.alignment" type="text" value="{{system.attributes.alignment}}" {{#unless editable}}disabled{{/unless}}>
+        </div>
+        <div class="becmi-field">
+          <label>{{localize 'BECMI.labels.currentXp'}}</label>
+          <input name="system.attributes.xp" type="number" value="{{system.attributes.xp}}" {{#unless editable}}disabled{{/unless}}>
+        </div>
       </div>
       <div class="becmi-field becmi-field--wide">
         <label>{{localize 'BECMI.labels.nextLevelXp'}}</label>

@@ -354,6 +354,36 @@ export function computeArmorClass({ type = "nenhuma", shield = false, dexAdj = 0
   return { base, value, shield: Boolean(shield) };
 }
 
+function isEquipped(item) {
+  return Boolean(item?.system?.equipped ?? item?.flags?.becmi?.equipped ?? false);
+}
+
+/** AC bonus supplied only by equipped items (plus legacy equipped magic rows). */
+export function equippedAcBonus(items = [], magicItems = []) {
+  const fromItems = [...(items ?? [])].reduce((sum, item) => {
+    if (!isEquipped(item)) return sum;
+    return sum + (Number(item.system?.acBonus) || 0);
+  }, 0);
+  const legacy = [...(magicItems ?? [])].reduce((sum, row) => (
+    row?.equipped ? sum + (Number(row.ac) || 0) : sum
+  ), 0);
+  return fromItems + legacy;
+}
+
+/** Per-save bonus supplied only by equipped items (plus legacy flat magic rows). */
+export function equippedSaveBonuses(items = [], magicItems = []) {
+  const result = Object.fromEntries(RC.saveIds.map((key) => [key, 0]));
+  for (const item of items ?? []) {
+    if (!isEquipped(item)) continue;
+    for (const key of RC.saveIds) result[key] += Number(item.system?.saveBonuses?.[key]) || 0;
+  }
+  for (const row of magicItems ?? []) {
+    if (!row?.equipped) continue;
+    for (const key of RC.saveIds) result[key] += Number(row.save) || 0;
+  }
+  return result;
+}
+
 export function computeLoad({ armor = "nenhuma", shield = false, coins = 0, equipment = 0, gems = 0, jewels = 0, weapons = 0 } = {}) {
   const armorWeight = Number(RC.armor.weights[armor] ?? 0);
   const shieldWeight = shield ? Number(RC.armor.shieldWeight) : 0;
@@ -637,19 +667,37 @@ function expandAttacks(mode) {
  * One row per individual monster attack, ready for one macro/button each.
  * Curated `system.attackRows` win; otherwise the stat text is parsed.
  */
-export function monsterAttackRows(system = {}) {
+export function monsterAttackRows(system = {}, { weapons = [] } = {}) {
+  const owned = [...(weapons ?? [])].filter((item) => item?.type === "weapon");
+  const weapon = owned.find((item) => item.system?.equipped) ?? owned[0] ?? null;
+  const weaponDamage = weapon?.system?.damage ? String(weapon.system.damage) : "";
+  const withWeapon = (row, raw = "") => {
+    if (!weapon || !weaponDamage) return row;
+    const asksForWeapon = /^\s*(?:by|with)?\s*weapon\b/i.test(String(raw));
+    if (row.damage && !asksForWeapon) return row;
+    row.damage = weaponDamage;
+    row.itemId = weapon.id;
+    row.weaponName = weapon.name;
+    row.attackBonus = Number(weapon.system?.attackBonus) || 0;
+    row.magicBonus = Number(weapon.system?.magicBonus) || 0;
+    row.damageBonus = Number(weapon.system?.damageBonus) || 0;
+    row.attackAbility = weapon.system?.attackAbility === "dex" ? "dex" : "str";
+    if (asksForWeapon) row.note = weapon.name;
+    return row;
+  };
+
   const stored = Array.isArray(system.attackRows) ? system.attackRows : [];
   if (stored.length) {
     return stored.flatMap((entry) => {
       const count = Math.max(1, Math.min(12, Number(entry?.count) || 1));
       const name = fixDiceText(entry?.name ?? "Attack").replace(/[.:,]+$/, "");
       const note = fixDiceText(entry?.note ?? "");
-      return Array.from({ length: count }, (_, index) => ({
+      return Array.from({ length: count }, (_, index) => withWeapon({
         name: count > 1 ? `${name} ${index + 1}` : name,
         count,
         damage: monsterDamageFormula(entry?.damage),
         note
-      }));
+      }, entry?.damage));
     });
   }
 
@@ -665,7 +713,7 @@ export function monsterAttackRows(system = {}) {
       const extra = raw.replace(/^(\d*d\d+(?:\s*[+-]\s*(?:\d*d\d+|\d+))*)/i, "").trim();
       row.note = extra && !row.damage ? fixDiceText(raw) : "";
       if (extra && row.damage && !/^\d*d\d+/i.test(extra)) row.note = extra.replace(/^[+\-\s]+/, "");
-      rows.push(row);
+      rows.push(withWeapon(row, raw));
     });
   });
   return rows;
@@ -724,14 +772,27 @@ export function rollExpression(expression, rng = Math.random) {
   const skip = () => { while (/\s/.test(text[position] ?? "")) position++; };
 
   function parseSum() {
-    let value = parseTerm();
+    let value = parseProduct();
     for (;;) {
       skip();
       const operator = text[position];
       if (operator !== "+" && operator !== "-") break;
       position++;
-      const right = parseTerm();
+      const right = parseProduct();
       value += operator === "+" ? right : -right;
+    }
+    return value;
+  }
+
+  function parseProduct() {
+    let value = parseTerm();
+    for (;;) {
+      skip();
+      const operator = text[position];
+      if (operator !== "*" && operator !== "/") break;
+      position++;
+      const right = parseTerm();
+      value = operator === "*" ? value * right : (right ? Math.floor(value / right) : 0);
     }
     return value;
   }

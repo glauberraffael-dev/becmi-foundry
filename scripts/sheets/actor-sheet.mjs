@@ -7,8 +7,8 @@ import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
 import { hasMasteryRows } from "../mastery.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
-  RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
-  masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo,
+  RC, SPELL_LISTS, attackRows, adjustment, equippedAcBonus, getRCClass, hpForLevel, masteryData,
+  masteryRanks, masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo,
   normalizeClassKey, spellKey, spellSlotsForLevel, spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
@@ -213,6 +213,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollInitiative: BECMIActorSheet.#rollInitiative,
       rollMorale: BECMIActorSheet.#rollMorale,
       rollHitDice: BECMIActorSheet.#rollHitDice,
+      rollMonsterHp: BECMIActorSheet.#rollMonsterHp,
       monsterAttack: BECMIActorSheet.#monsterAttack,
       monsterDamage: BECMIActorSheet.#monsterDamage,
       rollFree: BECMIActorSheet.#rollFree,
@@ -328,6 +329,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const capabilities = CLASS_CAPABILITIES[classKey] ?? {};
     const isDruid = classKey === "cleric" && Boolean(flags.druid);
     const nameLevel = nameLevelDetails(actor.system, flags);
+    // Templates must bind selects to stored values: the effective
+    // specialization can be blank for a preview or misaligned choice, and a
+    // re-render must never submit that blank value back over the stored one.
+    const nameLevelStored = actor.system.nameLevel ?? {};
+    const clericSpellSlots = nameLevel.canCastCleric
+      ? spellSlotsForLevel("cleric", nameLevel.spellLevel) : [];
     const nameLevelChoices = nameLevelOptions(classKey, attrs.alignment);
     // Paladins and avengers cast and turn as a cleric of one-third level.
     const canCast = Boolean(capabilities.spells) || nameLevel.canCastCleric;
@@ -362,8 +369,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       darkMode: isDarkMode(),
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
-      canTurn, turnUndeadLevel, nameLevel, nameLevelChoices, canThief, canMastery,
-      masteryEnabled,
+      canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
+      canThief, canMastery, masteryEnabled,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       sidebarCollapsed: this.sidebarCollapsed,
@@ -391,7 +398,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       max: hpMax,
       percent: hpMax ? Math.min(100, Math.round((100 * hpValue) / hpMax)) : 0
     };
-    context.monsterAttacks = isCharacter ? [] : monsterAttackRows(actor.system)
+    const weapons = actor.items.filter((item) => item.type === "weapon");
+    context.monsterAttacks = isCharacter ? [] : monsterAttackRows(actor.system, { weapons })
       .map((row, index) => ({ ...row, index }));
 
     context.abilityRows = ABILITIES.map((key) => ({
@@ -405,7 +413,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.saveRows = SAVES.map((key) => ({
       key,
       label: game.i18n.localize(`BECMI.saves.${key}`),
-      ...(actor.system.saveDetail?.[key] ?? { base: actor.system.saves?.[key] ?? 10, auto: 0, mod: 0, target: actor.system.saves?.[key] ?? 10 })
+      ...(actor.system.saveDetail?.[key]
+        ?? { base: actor.system.saves?.[key] ?? 10, auto: 0, mod: 0, item: 0, target: actor.system.saves?.[key] ?? 10 })
     }));
 
     context.thiefSkills = THIEF_SKILLS.map(([key, label]) => ({
@@ -455,7 +464,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const needle = search.toLowerCase();
 
     context.grimoire = actor.system.spellbook?.grimoire ?? "";
-    context.spellSlots = hasSpellsTab ? spellSlotsForLevel(spellClassKey, spellLevel) : [];
+    // Name-level paladins/avengers use the cleric slot table at their
+    // effective (one-third level) caster level, not the fighter table.
+    context.spellSlots = hasSpellsTab
+      ? (nameLevel.canCastCleric ? clericSpellSlots : spellSlotsForLevel(spellClassKey, spellLevel))
+      : [];
     const maxSpellLevel = Math.max(1, Math.min(9,
       Number(getRCClass(spellClassKey)?.spells?.levels) || context.spellSlots.length || 9));
     context.spellLevels = Array.from({ length: maxSpellLevel }, (_, index) => index + 1);
@@ -591,6 +604,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       totals.damage += Number(item.damage) || 0;
       return totals;
     }, { ac: 0, save: 0, attack: 0, damage: 0 });
+    context.acItemBonus = equippedAcBonus(actor.items, actor.system.magicItems);
 
     const allSpells = actor.items.filter((item) => item.type === "spell");
     context.className = className;
@@ -621,7 +635,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       if (id === "undead") return canTurn;
       if (id === "mastery") return canMastery;
       return true;
-    }) : SHEET_TABS.filter(([id]) => ["main", ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
+    }) : SHEET_TABS.filter(([id]) => ["main", "equipment", ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
     context.tabs = definitions.map(([id, label]) => ({
       id, label: game.i18n.localize(label), active: id === this.activeTab
     }));
@@ -778,6 +792,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #rollHitDice() {
     await this.actor.rollHitDice();
+  }
+
+  static async #rollMonsterHp() {
+    // A roll stays available in use mode: it is an action, not a form edit.
+    await this.actor.rollMonsterHitPoints();
   }
 
   static async #monsterAttack(event, target) {

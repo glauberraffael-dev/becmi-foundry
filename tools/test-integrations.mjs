@@ -30,6 +30,8 @@ const {
   importSpellToActor,
   registerIntegrations,
   repairMonsterHitPoints,
+  repairSpellFormulas,
+  spellFormulaFor,
   spellItemData,
   syncGrimoireFromImportedSpell
 } = await import("../scripts/integrations.mjs");
@@ -113,6 +115,27 @@ const sameName = spellItemData({
 });
 if ((await importSpellToActor(spellbookActor, sameName)).status !== "duplicate") {
   throw new Error("duplicate spell name was not detected");
+}
+if (spellFormulaFor("Fireball") !== "@level d6") {
+  throw new Error("Fireball must resolve its per-level dice formula");
+}
+const fireballData = spellItemData({ name: "Fireball", type: "spell", system: { spellLevel: 3 } });
+if (fireballData.system.rollFormula !== "@level d6") {
+  throw new Error("spellItemData must fill a missing dice formula");
+}
+const legacySpellActor = {
+  items: [{ id: "fire", name: "Fireball", type: "spell", system: { spellLevel: 3 } }],
+  async updateEmbeddedDocuments(type, updates) {
+    if (type !== "Item") throw new Error("spell repairs must update embedded Items");
+    for (const update of updates) {
+      this.items.find((item) => item.id === update._id).system.rollFormula = update["system.rollFormula"];
+    }
+    return updates;
+  }
+};
+if ((await repairSpellFormulas(legacySpellActor)) !== 1
+  || legacySpellActor.items[0].system.rollFormula !== "@level d6") {
+  throw new Error("legacy owned spells must receive their dice formula on ready");
 }
 
 const leveling = {

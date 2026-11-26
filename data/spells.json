@@ -606,7 +606,8 @@
       "description": "Effect: Any one living creature This spell is similar to a cure light wounds spell, but will cure one creature of 2d6 + 2 (4-14) points of damage. The reverse of this spell, cause serious wounds, causes 2d6 + 2 points of damage to any creature or character touched (no saving throw). The caster must make a normal attack roll to successfully cast the cause serious wounds spell.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d6 + 2"
     }
   },
   {
@@ -728,7 +729,8 @@
       "description": "This spell turns 2d8 sticks into snakes (detailed below). The snakes may be poisonous (50% chance per snake; the DM can roll 1d6 for each snake; on a roll of 1-3, the snake is poisonous). They obey the cleric's commands, but will turn back into sticks when slain or when the spell's duration ends. Snakes: NA 2d8 (2d8); AC 6, HD 1; AT 1 bite; Dmg 1d4; MV 90' (30'); Save F1; ML 12; TT Nil; AL Neutral; SA poison (50% chance for each snake to be poisonous); XP 10 (nonpoisonous) or 13 (poisonous).",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d8"
     }
   },
   {
@@ -800,7 +802,8 @@
       "description": "This spell is similar to a cure light wounds spell, but will cure one living creature of 3d6 + 3 (6-21) points of damage. The reverse of this spell (cause critical wounds) causes 3d6 + 3 (6-21) points of damage to any living creature or character touched (no saving throw). The caster must make a normal attack roll to cause the critical wound.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "3d6 + 3"
     }
   },
   {
@@ -1550,7 +1553,8 @@
       "description": "This spell cannot be used unless a storm of some (any) type is within range of the druid. (This does not mean that he must be within the spell's range of the storm cloud, but only that the stormy weather be taking place within 360' of him.) If a storm is present, the druid may call 1 lightning bolt per turn (10 minutes) to strike at any point within range. The lightning boh descends from the sky, hitting an area 20' across. Each victim within that area takes 8d6 (8-48) points of electrical damage, but may make a saving throw vs. spells to take half damage. The druid need not call the lightning every turn unless desired; it remains available until the spell duration (or the storm) ends.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "8d6"
     }
   },
   {
@@ -2491,7 +2495,8 @@
       "description": "This spell creates a mass of sticky strands which are difficult to destroy except with flame. It usually blocks the area affected. Giants and other creatures with great strength can break through a web in 2 rounds. A human of Average Strength (a score of 9-12) will take 2d4 (2-8) turns to break through the web. Flames (from a torch, for example) will destroy the web in 2 rounds, but all creatures within the web will be burned for 1-6 (1d6) points of damage. Anyone wearing gauntlets of ogre power (a magical treasure) can break free of a web in 4 rounds.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d4"
     }
   },
   {
@@ -2587,7 +2592,8 @@
       "description": "This spell creates a missile of fire that bursts into a ball of fire with a 40' diameter (20' radius) where it strikes a target. The fireball will cause 1d6 points of fire damage per level of the caster to every creature in the area of effect. Each victim may make a saving throw vs. spells; if successful, the spell will only do half damage. For example, a fireball cast by a 6th level spellcaster will burst for 6d6 (6-36) points of damage; characters who make their saving throw vs. spell will take only half of the damage rolled on the dice.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "1d6 fire damage per caster level; a successful save halves the total.",
+      "rollFormula": "@level d6"
     }
   },
   {
@@ -2707,7 +2713,8 @@
       "description": "Duration: Instantaneous Effect: Bolt 60' long, 5' wide This spell creates a bolt of lightning, starting up to 180' away from the caster and extending 60' in a straight line further away. All creatures within the area of effect take 1d6 points of damage per level of the spellcaster. (Thus a 6th level elf would cast a lightning bolt doing 6d6 points of damage.) Each victim may make a saving throw vs. spells; if successful, he takes only half damage. If the lightning bolt strikes a solid surface (such as a wall), it will bounce back toward the caster until the total length of the bolt is 60'.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "1d6 lightning damage per caster level; a successful save halves the total.",
+      "rollFormula": "@level d6"
     }
   },
   {
@@ -3260,7 +3267,8 @@
       "description": "Effect: Creates 1000 cubic feet of stone This spell creates a vertical stone wall exactly 2' thick. The caster chooses the wall's dimensions and shape, but its total area must be 500 square feet or less (10'X50', 20'X25', etc.), and the entire wall must be within 60' of the caster. The caster must create the wall where the wall will rest on the ground or similar support, and cannot create the wall in a space already occupied by another object. The wall lasts until it is dispelled or physically broken. If a wall of stone topples, it causes 10d10 points of damage to what it hits, and it shatters.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "10d10"
     }
   },
   {
@@ -3332,7 +3340,8 @@
       "description": "Duration: Instantaneous Effect: Slays 4d8 (4-32) Hit Dice of creatures within a 60' x 60' x 60' area This spell will affect 4d8 (4-32) Hit Dice of living creatures within the given area. Normal plants and insects are automatically slain, and those with no hit points (normal insects, plants smaller than shrub-sized, for instance) are not counted in the total affected. Undead are not affected, nor are creatures with 8 or more Hit Dice (or levels of experience). The lowest Hit Dice creatures are affected first. Each victim must make a saving throw vs. death ray or die.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "4d8"
     }
   },
   {
@@ -3741,7 +3750,8 @@
       "description": "This lets the caster stun one victim within 120' (no saving throw). A victim with 1-35 hit points is stunned for 2d6 turns; a victim with 36-70 hit points is stunned for 1d6 turns. No creature with 71 or greater hit points is affected. fall upward This spell affects all creatures and objects within a cubic volume 30'x 30'x 30', causing them to \"fall\" in a direction opposite the normal gravity. In two seconds, creatures and objects can \"fall\" a maximum of 65'. No saving throw is allowed, and all victims hitting a ceiling or other obstruction take 1d6 points of damage per 10' \"fallen.",
       "source": "Rules Cyclopedia",
       "page": 0,
-      "notes": ""
+      "notes": "",
+      "rollFormula": "2d6"
     }
   },
   {
