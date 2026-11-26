@@ -5,6 +5,7 @@
  */
 import assert from "node:assert/strict";
 import { classFeaturesFor } from "../scripts/class-features.mjs";
+import { nameLevelDetails, nameLevelOptions, nameLevelThreshold } from "../scripts/name-level.mjs";
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
@@ -263,4 +264,83 @@ check("each natural attack becomes its own rollable monster macro", () => {
   const tentacles = monsterAttackRows({ attacks: "8", damage: "1d4 + 1 each" });
   assert.equal(tentacles.length, 8);
   assert.deepEqual(tentacles.map((row) => row.damage), Array(8).fill("1d4+1"));
+});
+
+check("name level derives titles, cleric levels, hireling limits and spell cost", () => {
+  assert.equal(nameLevelThreshold("halfling"), 8);
+  assert.equal(nameLevelThreshold("fighter"), 9);
+  assert.equal(nameLevelOptions("fighter", "Lawful").specialization.length, 4);
+  assert.deepEqual(nameLevelOptions("cleric").specialization, []);
+
+  const paladin = nameLevelDetails({
+    attributes: { classKey: "fighter", level: 9, alignment: "Lawful", adjustments: { cha: 0 } },
+    abilities: { wis: { value: 13 }, cha: { value: 10 } },
+    nameLevel: { path: "travelling", specialization: "paladin", hirelings: 5 }
+  });
+  assert.equal(paladin.title, "Paladin");
+  assert.equal(paladin.clericalLevel, 3);
+  assert.equal(paladin.spellLevel, 3);
+  assert.equal(paladin.hirelingCap, 3);
+  assert.equal(paladin.hirelingOver, true);
+  assert.equal(paladin.canDetectEvil, true);
+  assert.equal(paladin.canTurnUndead, true);
+  assert.ok(paladin.pros.some((line) => line.includes("Detect Evil")));
+  assert.ok(paladin.cons.some((line) => line.includes("hirelings")));
+
+  const lowWis = nameLevelDetails({
+    attributes: { class: "Fighter", level: 18, alignment: "Lawful" },
+    abilities: { wis: { value: 12 }, cha: { value: 10 } },
+    nameLevel: { path: "travelling", specialization: "paladin" }
+  });
+  assert.equal(lowWis.clericalLevel, 6);
+  assert.equal(lowWis.spellLevel, 0);
+  assert.equal(lowWis.canCastCleric, false);
+  assert.equal(lowWis.canTurnUndead, true);
+  assert.ok(lowWis.warnings.some((line) => line.includes("Wisdom 12")));
+
+  const avenger = nameLevelDetails({
+    attributes: { classKey: "fighter", level: 12, alignment: "Chaotic" },
+    abilities: { wis: { value: 15 }, cha: { value: 15 } },
+    nameLevel: {
+      path: "travelling", specialization: "avenger", avengerSpellLevels: 4, hirelings: 9
+    }
+  });
+  assert.equal(avenger.clericalLevel, 4);
+  assert.equal(avenger.spellLevel, 4);
+  assert.equal(avenger.followerRange[1], 8);
+  assert.equal(avenger.hirelingCap, 8);
+  assert.equal(avenger.spellCost, 40000);
+  assert.equal(avenger.isAvenger, true);
+  assert.ok(avenger.pros.some((line) => line.includes("control")));
+
+  const misaligned = nameLevelDetails({
+    attributes: { classKey: "fighter", level: 12, alignment: "Lawful" },
+    abilities: { wis: { value: 15 }, cha: { value: 10 } },
+    nameLevel: { path: "travelling", specialization: "avenger" }
+  });
+  assert.equal(misaligned.specialization, "");
+  assert.equal(misaligned.canDetectEvil, false);
+  assert.ok(misaligned.warnings.some((line) => line.includes("Chaotic")));
+
+  const baron = nameLevelDetails({
+    attributes: { classKey: "fighter", level: 9, alignment: "Neutral" },
+    nameLevel: { path: "landowner", specialization: "paladin", holdingStyle: "independent" }
+  });
+  assert.equal(baron.title, "Independent ruler (title by DM)");
+  assert.equal(baron.canDetectEvil, false);
+  assert.ok(baron.cons.some((line) => line.includes("major campaign development")));
+
+  const guildmaster = nameLevelDetails({
+    attributes: { classKey: "thief", level: 9, alignment: "Neutral" },
+    nameLevel: { path: "landowner" }
+  });
+  assert.equal(guildmaster.title, "Guildmaster");
+
+  const early = nameLevelDetails({
+    attributes: { classKey: "fighter", level: 8, alignment: "Lawful" },
+    nameLevel: { path: "travelling", specialization: "paladin" }
+  });
+  assert.equal(early.active, false);
+  assert.equal(early.canDetectEvil, false);
+  assert.ok(early.warnings.some((line) => line.includes("preview")));
 });

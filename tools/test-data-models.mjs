@@ -75,6 +75,16 @@ for (const row of magicItems) {
 }
 console.log("magicItems initial rows OK.");
 
+// Name-level choices are persistent actor data, not a temporary sheet state.
+const nameLevel = characterSchema.nameLevel;
+if (!nameLevel?.options || !nameLevel.options.path || !nameLevel.options.specialization) {
+  throw new Error("CharacterData must expose persistent name-level path/specialization fields");
+}
+for (const key of ["hirelings", "avengerSpellLevels"]) {
+  if (!nameLevel.options[key]) throw new Error(`CharacterData.nameLevel.${key} is missing`);
+}
+console.log("Name-level schema fields OK.");
+
 // Monster-like actors have no system.attributes.ac; preparation must not throw.
 const { BECMIActor } = await import("../scripts/documents/actor.mjs");
 const withoutAc = new BECMIActor();

@@ -3,6 +3,7 @@ import {
   syncGrimoireFromImportedSpell
 } from "../integrations.mjs";
 import { classFeaturesFor } from "../class-features.mjs";
+import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, attackRows, adjustment, getRCClass, hpForLevel, masteryData, masteryRanks,
@@ -217,6 +218,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollDice: BECMIActorSheet.#rollDice,
       rollThief: BECMIActorSheet.#rollThief,
       rollTurnUndead: BECMIActorSheet.#rollTurnUndead,
+      detectEvil: BECMIActorSheet.#detectEvil,
       createCharacter: BECMIActorSheet.#createCharacter,
       levelUp: BECMIActorSheet.#levelUp,
       restSpells: BECMIActorSheet.#restSpells,
@@ -323,15 +325,27 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const rcClass = getRCClass(attrs.classKey || attrs.class);
     const capabilities = CLASS_CAPABILITIES[classKey] ?? {};
     const isDruid = classKey === "cleric" && Boolean(flags.druid);
-    const canCast = Boolean(capabilities.spells);
+    const nameLevel = nameLevelDetails(actor.system, flags);
+    const nameLevelChoices = nameLevelOptions(classKey, attrs.alignment);
+    // Paladins and avengers cast and turn as a cleric of one-third level.
+    const canCast = Boolean(capabilities.spells) || nameLevel.canCastCleric;
     const casterInfo = isCharacter ? null : monsterSpellcasterInfo(actor.system, flags);
     const monsterSpellcaster = !isCharacter && Boolean(
       casterInfo || flags.spellcaster || actor.items.some((item) => item.type === "spell")
     );
     const hasSpellsTab = canCast || monsterSpellcaster;
-    const spellClassKey = canCast ? classKey : casterInfo?.classKey ?? "magic-user";
-    const spellLevel = canCast ? level : casterInfo?.level ?? level;
-    const canTurn = Boolean(capabilities.turn);
+    const spellClassKey = nameLevel.canCastCleric
+      ? "cleric" : canCast ? classKey : (casterInfo?.classKey ?? "magic-user");
+    const spellLevel = nameLevel.canCastCleric
+      ? nameLevel.spellLevel : canCast ? level : (casterInfo?.level ?? level);
+    const canTurn = Boolean(capabilities.turn) || nameLevel.canTurnUndead;
+    const turnUndeadLevel = nameLevel.canTurnUndead ? nameLevel.clericalLevel : level;
+    // Roll actions use these snapshots so the chat card shows the effective
+    // clerical level instead of the fighter's actual level.
+    this.nameLevel = nameLevel;
+    this.turnUndeadLevel = turnUndeadLevel;
+    this.spellClassKey = spellClassKey;
+    this.spellLevel = spellLevel;
     const canThief = Boolean(capabilities.thief);
     const canMastery = Boolean(capabilities.mastery);
 
@@ -343,7 +357,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       darkMode: isDarkMode(),
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
-      canTurn, canThief, canMastery,
+      canTurn, turnUndeadLevel, nameLevel, nameLevelChoices, canThief, canMastery,
       sidebarCollapsed: this.sidebarCollapsed,
       sidebarToggleLabel: game.i18n.localize(this.sidebarCollapsed
         ? "BECMI.sheet.sidebar.show" : "BECMI.sheet.sidebar.hide"),
@@ -392,7 +406,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       value: actor.system.thiefSkills?.[key] ?? 0
     }));
 
-    const undeadColumn = turnUndeadColumn(level);
+    const undeadColumn = turnUndeadColumn(turnUndeadLevel);
     context.undeadColumns = RC.turnUndead.columns.map((label, index) => ({ label, active: index === undeadColumn }));
     context.undeadRows = RC.turnUndead.rows.map((row, index) => ({
       name: UNDEAD_EN[index] ?? row.name,
@@ -416,7 +430,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const grimoire = String(actor.system.spellbook?.grimoire ?? "").split(",").map((key) => key.trim()).filter(Boolean);
     const className = rcClass?.name ?? attrs.class ?? flags.classInfo?.name ?? "";
     const spellLists = canCast
-      ? spellListsForClass({ name: className }, { druid: isDruid })
+      ? spellListsForClass(
+        { name: getRCClass(spellClassKey)?.name ?? spellClassKey },
+        { druid: isDruid && spellClassKey === "cleric" }
+      )
       : monsterSpellcaster && casterInfo
         ? [...new Set(casterInfo.classKeys.flatMap((key) => key === "druid"
           ? ["druid"] : spellListsForClass({ name: getRCClass(key)?.name ?? key })))]
@@ -779,7 +796,18 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #rollTurnUndead(event, target) {
-    await this.actor.rollTurnUndead(target.dataset.undead);
+    await this.actor.rollTurnUndead(target.dataset.undead, {
+      level: this.turnUndeadLevel,
+      control: Boolean(this.nameLevel?.isAvenger)
+    });
+  }
+
+  static async #detectEvil() {
+    if (!this.nameLevel?.canDetectEvil) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.detectEvilUnavailable"));
+      return;
+    }
+    await this.actor.rollDetectEvil();
   }
 
   static async #createCharacter() {
@@ -872,8 +900,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
     const level = Number(spell.system?.spellLevel ?? spell.level) || 0;
     if (!level) return;
-    const classKey = normalizeClassKey(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
-    const slots = spellSlotsForLevel(classKey, Number(this.actor.system.attributes?.level) || 1);
+    const slotClass = this.spellClassKey
+      ?? normalizeClassKey(this.actor.system.attributes?.classKey || this.actor.system.attributes?.class);
+    const slotLevel = Number(this.spellLevel ?? this.actor.system.attributes?.level) || 1;
+    const slots = spellSlotsForLevel(slotClass, slotLevel);
     const memorized = { ...(this.actor.system.spellbook?.memorized ?? {}) };
     for (let slot = 1; slot <= (slots[level - 1] ?? 0); slot++) {
       const field = `${level}_${slot}`;

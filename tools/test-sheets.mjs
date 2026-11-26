@@ -221,4 +221,28 @@ if (JSON.stringify(rolled) !== JSON.stringify([
   throw new Error(`monster roll actions did not reach the actor: ${JSON.stringify(rolled)}`);
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP and monster rolls).");
+// Name-level controls stay in the template and their actions reach the actor
+// even in use mode (they are rolls, not edits).
+if (!body.includes('name="system.nameLevel.path"')
+  || !body.includes('data-action="detectEvil"')
+  || !body.includes("{{#each nameLevel.pros as |line|}}")
+  || !body.includes("{{#each nameLevel.cons as |line|}}")) {
+  throw new Error("name-level selectors, Detect Evil button or pros/cons panel are missing");
+}
+const nameRolls = [];
+sheet.editMode = false;
+sheet.turnUndeadLevel = 3;
+sheet.nameLevel = { canDetectEvil: true, isAvenger: true };
+sheet.actor = {
+  async rollTurnUndead(type, options) { nameRolls.push(["undead", type, options?.level, options?.control]); },
+  async rollDetectEvil() { nameRolls.push(["detectEvil"]); }
+};
+await actions.rollTurnUndead.call(sheet, {}, { dataset: { undead: "Skeleton" } });
+await actions.detectEvil.call(sheet);
+if (JSON.stringify(nameRolls) !== JSON.stringify([
+  ["undead", "Skeleton", 3, true], ["detectEvil"]
+])) {
+  throw new Error(`name-level roll actions did not reach the actor: ${JSON.stringify(nameRolls)}`);
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls and name level).");

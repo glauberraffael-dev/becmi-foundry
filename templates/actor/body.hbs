@@ -37,6 +37,82 @@
       {{#if rcClass}}
       <p class="becmi-hint">{{rcClass.name}} — {{localize 'BECMI.labels.hd'}} 1d{{rcClass.hitDie}}, {{localize 'BECMI.labels.maxLevel'}} {{rcClass.maxLevel}}.</p>
       {{/if}}
+      <section class="becmi-name-level" data-name-level>
+        <h2 class="becmi-section-title">{{localize 'BECMI.sheet.nameLevel'}}</h2>
+        <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelHint'}} {{nameLevel.threshold}}.</p>
+        <div class="becmi-grid becmi-grid--name-level">
+          <div class="becmi-field">
+            <label>{{localize 'BECMI.labels.nameLevelPath'}}:</label>
+            <select name="system.nameLevel.path" {{#unless editable}}disabled{{/unless}}>
+              {{#each nameLevelChoices.path as |option|}}
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.path)}}selected{{/if}}>{{option.name}}</option>
+              {{/each}}
+            </select>
+          </div>
+          {{#if nameLevel.isFighter}}
+          <div class="becmi-field">
+            <label>{{localize 'BECMI.labels.nameLevelSpecialization'}}:</label>
+            <select name="system.nameLevel.specialization" {{#unless editable}}disabled{{/unless}}>
+              {{#each nameLevelChoices.specialization as |option|}}
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.specialization)}}selected{{/if}}>{{option.name}}</option>
+              {{/each}}
+            </select>
+          </div>
+          {{/if}}
+          {{#if (eq nameLevel.path "landowner")}}
+          <div class="becmi-field">
+            <label>{{localize 'BECMI.labels.nameLevelHolding'}}:</label>
+            <select name="system.nameLevel.holdingStyle" {{#unless editable}}disabled{{/unless}}>
+              {{#each nameLevelChoices.holding as |option|}}
+              <option value="{{option.key}}" {{#if (eq option.key ../nameLevel.holdingStyle)}}selected{{/if}}>{{option.name}}</option>
+              {{/each}}
+            </select>
+          </div>
+          {{/if}}
+          {{#if nameLevel.isAvenger}}
+          <div class="becmi-field">
+            <label>{{localize 'BECMI.labels.nameLevelSpellLevels'}}:</label>
+            <input name="system.nameLevel.avengerSpellLevels" type="number" min="0" max="9" value="{{system.nameLevel.avengerSpellLevels}}" {{#unless editable}}disabled{{/unless}}>
+          </div>
+          {{/if}}
+          {{#if nameLevel.canDetectEvil}}
+          <div class="becmi-field">
+            <label>{{localize 'BECMI.labels.nameLevelHirelings'}}:</label>
+            <input name="system.nameLevel.hirelings" type="number" min="0" value="{{system.nameLevel.hirelings}}" {{#unless editable}}disabled{{/unless}}>
+          </div>
+          {{/if}}
+        </div>
+        {{#if nameLevel.title}}
+        <p class="becmi-derived">{{localize 'BECMI.labels.nameLevelTitle'}}: {{nameLevel.title}}</p>
+        {{/if}}
+        {{#if nameLevel.clericalLevel}}
+        <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelClerical'}} {{nameLevel.clericalLevel}}. {{localize 'BECMI.sheet.nameLevelSpells'}} {{nameLevel.spellLevel}}.</p>
+        {{/if}}
+        {{#if nameLevel.spellCost}}
+        <p class="becmi-hint">{{localize 'BECMI.sheet.nameLevelCost'}} {{nameLevel.spellCost}} gp.</p>
+        {{/if}}
+        {{#if nameLevel.canDetectEvil}}
+        <button type="button" class="becmi-roll" data-action="detectEvil">{{localize 'BECMI.rolls.detectEvil'}} (120')</button>
+        {{/if}}
+        {{#if nameLevel.warnings.length}}
+        <ul class="becmi-name-level-warnings">
+          {{#each nameLevel.warnings as |warning|}}<li>{{warning}}</li>{{/each}}
+        </ul>
+        {{/if}}
+        <details class="becmi-name-level-guide" open>
+          <summary>{{localize 'BECMI.sheet.nameLevelGuide'}}</summary>
+          <div class="becmi-name-level-columns">
+            <div>
+              <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.nameLevelPros'}}</h3>
+              <ul>{{#each nameLevel.pros as |line|}}<li>{{line}}</li>{{/each}}</ul>
+            </div>
+            <div>
+              <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.nameLevelCons'}}</h3>
+              <ul>{{#each nameLevel.cons as |line|}}<li>{{line}}</li>{{/each}}</ul>
+            </div>
+          </div>
+        </details>
+      </section>
     </div>
 
     <div class="becmi-column">

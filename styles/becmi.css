@@ -643,8 +643,52 @@
   gap: 0.35rem 0.6rem;
 }
 
-.becmi-grid--combat {
+.becmi-grid--combat,
+.becmi-grid--name-level {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* ------------------------------------------------------------ name level */
+.becmi-name-level {
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.5rem 0.45rem;
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-paper-alt);
+}
+
+.becmi-name-level-title {
+  margin: 0.1rem 0 0;
+  font-weight: 700;
+  color: var(--becmi-accent);
+}
+
+.becmi-name-level-warnings {
+  margin: 0.3rem 0;
+  padding-left: 1.1rem;
+  color: var(--becmi-accent);
+  font-size: 0.78rem;
+}
+
+.becmi-name-level-guide summary {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.becmi-name-level-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.becmi-name-level-columns ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.becmi-name-level-columns li {
+  font-size: 0.76rem;
+  line-height: 1.25;
 }
 
 /* ------------------------------------------------------------ item sheet */

@@ -18,6 +18,10 @@ short paraphrases; the PDF and OCR export are **not** included.
 - Druid is handled as a Cleric extension, not as a stand-alone class.
 - Class-exclusive sections (thief skills, turn undead, mastery, spellcasting) only
   appear for classes that have them.
+- Name Level choices are on the character sheet: Land Owner or Travelling, holding
+  style, and fighter specialization by alignment. The sheet derives the title and
+  shows the RC advantages and obligations; paladins/avengers get cleric-level spells,
+  turning undead and a Detect Evil action.
 - Spells are split into compendium folders by list and level, and are sorted by level
   and name on the sheet; equipment is grouped and alphabetized as weapons, armor,
   adventuring gear and transport/siege gear.
@@ -43,13 +47,13 @@ short paraphrases; the PDF and OCR export are **not** included.
   resizing the Foundry window.
 - Complete class XP tables: 36 human levels, 12 dwarf, 10 elf, 8 halfling, 16 mystic,
   plus the extended demihuman/mystic progression from Chapter 19.
-- Seven precompiled LevelDB compendia with 557 documents in total.
+- Seven precompiled LevelDB compendia with 683 documents in total.
 
 ## Compendia
 
 | Compendium | Type | Documents |
 |---|---|---:|
-| BECMI Monsters | Actor | 185 |
+| BECMI Monsters | Actor | 311 |
 | BECMI Spells | Item | 180 |
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
@@ -96,8 +100,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.20`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.20.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.21`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.21.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

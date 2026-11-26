@@ -98,6 +98,18 @@ function masterySchema() {
   });
 }
 
+/** Persistent Name-level decision and the small tracking values it derives from. */
+function nameLevelSchema() {
+  const f = fields();
+  return new f.SchemaField({
+    path: new f.StringField({ initial: "" }),
+    holdingStyle: new f.StringField({ initial: "" }),
+    specialization: new f.StringField({ initial: "" }),
+    hirelings: new f.NumberField({ initial: 0, integer: true, min: 0 }),
+    avengerSpellLevels: new f.NumberField({ initial: 0, integer: true, min: 0, max: 9 })
+  });
+}
+
 function identitySchema() {
   const f = fields();
   return new f.SchemaField({
@@ -181,6 +193,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     return {
       abilities: abilitySchema(),
       attributes: identitySchema(),
+      nameLevel: nameLevelSchema(),
       saves: savingThrowSchema(),
       saveDetail: characterSaveSchema(),
       thiefSkills: thiefSkillSchema(),

@@ -71,6 +71,12 @@
   "BECMI.labels.attacksPerRound": "Attacks / Round",
   "BECMI.labels.saveBonus": "Save Bonus",
   "BECMI.labels.attackBonus": "Attack Bonus",
+  "BECMI.labels.nameLevelPath": "Name-level path",
+  "BECMI.labels.nameLevelSpecialization": "Travelling specialization",
+  "BECMI.labels.nameLevelHolding": "Holding style",
+  "BECMI.labels.nameLevelHirelings": "Hirelings",
+  "BECMI.labels.nameLevelSpellLevels": "Cleric spell levels bought",
+  "BECMI.labels.nameLevelTitle": "Title",
 
   "BECMI.rolls.attack": "Attack Roll",
   "BECMI.rolls.damage": "Damage Roll",
@@ -85,6 +91,11 @@
   "BECMI.rolls.needed": "Needed",
   "BECMI.rolls.success": "Success",
   "BECMI.rolls.failure": "Failure",
+  "BECMI.rolls.detectEvil": "Detect Evil",
+  "BECMI.rolls.detectEvilRange": "Range: 120'. Concentrate once per round.",
+  "BECMI.rolls.detectEvilRound": "Combat round: {round}",
+  "BECMI.rolls.detectEvilNoAttack": "The character cannot attack in the same round.",
+  "BECMI.rolls.controlUndead": "May control instead for {turns} turns",
 
   "BECMI.enums.cleric": "Cleric",
   "BECMI.enums.druid": "Druid",
@@ -324,5 +335,16 @@
   "BECMI.notification.noMonsterAttack": "This monster has no attack with that index.",
   "BECMI.labels.spellcasting": "Spellcasting",
   "BECMI.sheet.monsterSpells": "Spells Known",
-  "BECMI.sheet.monsterSpellHint": "Describe the spellcasting ability, then drag spells here or import them from the compendium."
+  "BECMI.sheet.monsterSpellHint": "Describe the spellcasting ability, then drag spells here or import them from the compendium.",
+
+  "BECMI.sheet.nameLevel": "Name Level",
+  "BECMI.sheet.nameLevelPending": "Name level not reached yet",
+  "BECMI.sheet.nameLevelHint": "Most classes choose at 9th level; halflings at 8th. Name level:",
+  "BECMI.sheet.nameLevelGuide": "Advantages and obligations (Rules Cyclopedia)",
+  "BECMI.sheet.nameLevelPros": "Advantages",
+  "BECMI.sheet.nameLevelCons": "Obligations / limits",
+  "BECMI.sheet.nameLevelClerical": "Effective cleric level:",
+  "BECMI.sheet.nameLevelSpells": "Cleric spell levels:",
+  "BECMI.sheet.nameLevelCost": "Minimum spell tuition:",
+  "BECMI.notification.detectEvilUnavailable": "Only a travelling paladin or avenger can use Detect Evil."
 }

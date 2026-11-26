@@ -326,10 +326,10 @@ export async function thiefSkillRoll(actor, skill, { rollMode } = {}) {
 }
 
 /** Turn Undead: 2d6 against the level column, then roll the HD dice. */
-export async function turnUndeadRoll(actor, typeName, { rollMode } = {}) {
+export async function turnUndeadRoll(actor, typeName, { rollMode, level, control = false } = {}) {
   const { turnUndeadCell, resolveTurnResult } = await import("./rules-rc.mjs");
-  const level = Number(actor?.system?.attributes?.level ?? 1);
-  const cell = turnUndeadCell(level, typeName);
+  const effectiveLevel = Number(level ?? actor?.system?.attributes?.level ?? 1) || 1;
+  const cell = turnUndeadCell(effectiveLevel, typeName);
   const check = await new Roll("2d6").evaluate({ async: true });
   const outcome = resolveTurnResult(cell, check.total);
   let result = `${cell} — ${game.i18n.localize(`BECMI.undead.outcome.${outcome.kind}`)}`;
@@ -337,13 +337,37 @@ export async function turnUndeadRoll(actor, typeName, { rollMode } = {}) {
     const dice = await new Roll(outcome.dice).evaluate({ async: true });
     result += ` (${dice.total} HD)`;
   }
+  if (control && (outcome.kind === "turn" || outcome.kind === "destroy")) {
+    result += ` — ${game.i18n.format("BECMI.rolls.controlUndead", { turns: effectiveLevel })}`;
+  }
   await toChat(check, {
     title: `${game.i18n.localize("BECMI.rolls.turnUndead")}: ${typeName}`,
-    flavor: `${rollName(actor)} — ${game.i18n.localize("BECMI.labels.level")} ${level}`,
+    flavor: `${rollName(actor)} — ${game.i18n.localize("BECMI.labels.level")} ${effectiveLevel}`,
     result,
     outcome: outcome.kind === "failure" || outcome.kind === "impossible" ? "miss" : "hit",
     rollMode,
     actor
   });
-  return { roll: check, cell, outcome };
+  return { roll: check, cell, outcome, level: effectiveLevel };
+}
+
+/**
+ * Paladins and avengers concentrate for a 120' Detect Evil once per round.
+ * There is no die roll; the chat card records the round and the attack ban.
+ */
+export async function detectEvilRoll(actor, { rollMode } = {}) {
+  const title = game.i18n.localize("BECMI.rolls.detectEvil");
+  const round = game.combat?.round ?? null;
+  const content = `<div class="becmi-chat-detect-evil">
+    <p><strong>${title}</strong></p>
+    <p>${game.i18n.localize("BECMI.rolls.detectEvilRange")}</p>
+    <p>${game.i18n.format("BECMI.rolls.detectEvilRound", { round: round ?? "—" })}</p>
+    <p>${game.i18n.localize("BECMI.rolls.detectEvilNoAttack")}</p>
+  </div>`;
+  return ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content,
+    flavor: title,
+    rollMode: rollMode ?? game.settings.get("core", "rollMode")
+  });
 }

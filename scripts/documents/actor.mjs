@@ -1,6 +1,6 @@
 import {
-  abilityCheck, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll, monsterDamageRoll,
-  moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
+  abilityCheck, detectEvilRoll, freeRoll, hitDiceRoll, initiativeRoll, monsterAttackRoll,
+  monsterDamageRoll, moraleCheck, savingThrow, thiefSkillRoll, turnUndeadRoll
 } from "../rolls.mjs";
 import { computeArmorClass } from "../rules-rc.mjs";
 
@@ -73,6 +73,11 @@ export class BECMIActor extends Actor {
 
   async rollTurnUndead(typeName, options = {}) {
     return turnUndeadRoll(this, typeName, options);
+  }
+
+  /** Name-level paladin/avenger Detect Evil (no roll, one use per round). */
+  async rollDetectEvil(options = {}) {
+    return detectEvilRoll(this, options);
   }
 
   /** Total XP needed for the next level, from the class compendium table. */

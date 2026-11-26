@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.21
+
+- Added Name Level mechanics from the Rules Cyclopedia. At 9th level (8th for
+  halflings), characters record Land Owner or Travelling, with holding style and
+  fighter specialization (paladin, knight or avenger) as persistent sheet fields.
+- The sheet derives the appropriate title and shows a two-column advantages /
+  obligations panel for the chosen path, including stronghold retainers and the
+  warning that changing paths requires a major campaign development.
+- Travelling paladins and avengers use an effective cleric level of one-third
+  their level for spells and turning undead. Wisdom 13 is required for spells;
+  avengers buy spell levels for 10,000 gp each and may control turned undead.
+- Paladin and avenger hireling limits follow the effective cleric level and the
+  Charisma follower table. A `Detect Evil` button posts the 120-foot, once-per-round
+  concentration rule to chat with the current combat round.
+
 ## 0.1.20
 
 - Each monster attack now has two explicit roll buttons: one for the attack roll

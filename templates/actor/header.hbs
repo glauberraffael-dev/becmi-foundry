@@ -11,6 +11,11 @@
       <button type="button" class="becmi-mode-toggle" data-action="toggleDarkMode">{{#if darkMode}}{{localize 'BECMI.sheet.lightMode'}}{{else}}{{localize 'BECMI.sheet.darkMode'}}{{/if}}</button>
     </div>
     <h1 class="becmi-sheet-title">D&amp;D BECMI - Character Sheet</h1>
+    {{#if isCharacter}}
+    <p class="becmi-name-level-title" data-name-level-title>
+      {{#if nameLevel.title}}{{nameLevel.title}}{{else}}{{localize 'BECMI.sheet.nameLevelPending'}}{{/if}}
+    </p>
+    {{/if}}
     <div class="becmi-top-fields">
       <div class="becmi-field becmi-field--wide">
         <label>{{localize 'BECMI.labels.characterName'}}</label>
