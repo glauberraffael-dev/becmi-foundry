@@ -115,7 +115,7 @@ export async function attackRoll(actor, item, { targetAC, rollMode, skipDamage =
     }
   }
   const formula = `1d20${bonus >= 0 ? " + " : " - "}${Math.abs(bonus)}`;
-  const roll = await new Roll(formula).evaluate({ async: true });
+  const roll = await new Roll(formula).evaluate();
   const total = Math.round(roll.total);
   const natural = total - Math.round(bonus);
   // BECMI: a natural 1 always misses, a natural 20 always hits; † also hits.
@@ -143,7 +143,7 @@ export async function damageRoll(actor, item, { rollMode, bonusDamage = 0 } = {}
   const mastery = weaponMasteryFor(actor, item);
   const formula = masteryDamageFormula(mastery, item?.system?.damage || "1d6");
   const bonus = modifierFor(actor, "str") + Number(item?.system?.damageBonus ?? 0) + Number(bonusDamage || 0);
-  const roll = await new Roll(`${formula}${bonus ? ` + ${bonus}` : ""}`).evaluate({ async: true });
+  const roll = await new Roll(`${formula}${bonus ? ` + ${bonus}` : ""}`).evaluate();
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.damage"),
     flavor: `${rollName(actor, item)} — ${item?.name ?? "Damage"}${mastery ? ` (${masteryLabel(mastery)})` : ""}`,
@@ -218,7 +218,7 @@ export async function savingThrow(actor, type, { rollMode } = {}) {
   // The derived target already includes Wisdom, equipped items and the manual modifier.
   const target = Number(saves[key] ?? saves.value ?? 10);
 
-  const roll = await new Roll("1d20").evaluate({ async: true });
+  const roll = await new Roll("1d20").evaluate();
   const success = roll.total >= target;
   await toChat(roll, {
     title: `${game.i18n.localize("BECMI.rolls.save")}: ${game.i18n.localize(`BECMI.saves.${key}`)}`,
@@ -235,7 +235,7 @@ export async function savingThrow(actor, type, { rollMode } = {}) {
 export async function abilityCheck(actor, ability, { rollMode } = {}) {
   const score = Number(actor?.system?.abilities?.[ability]?.value ?? 10);
   const bonus = modifierFor(actor, ability);
-  const roll = await new Roll("1d20").evaluate({ async: true });
+  const roll = await new Roll("1d20").evaluate();
   const success = roll.total <= score + bonus;
   await toChat(roll, {
     title: `${game.i18n.localize("BECMI.rolls.abilityCheck")}: ${game.i18n.localize(`BECMI.abilities.${ability}`)}`,
@@ -251,7 +251,7 @@ export async function abilityCheck(actor, ability, { rollMode } = {}) {
 /** d6 initiative (high roll acts first). */
 export async function initiativeRoll(actor, { rollMode } = {}) {
   const bonus = Number(actor?.system?.attributes?.initiativeBonus ?? actor?.system?.initiativeBonus ?? 0);
-  const roll = await new Roll(`1d6${bonus ? ` + ${bonus}` : ""}`).evaluate({ async: true });
+  const roll = await new Roll(`1d6${bonus ? ` + ${bonus}` : ""}`).evaluate();
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.initiative"),
     flavor: rollName(actor),
@@ -268,7 +268,7 @@ export async function initiativeRoll(actor, { rollMode } = {}) {
 /** 2d6 morale check: succeed when the roll is <= morale. */
 export async function moraleCheck(actor, { rollMode } = {}) {
   const morale = Number(actor?.system?.morale?.value ?? actor?.system?.morale ?? 7);
-  const roll = await new Roll("2d6").evaluate({ async: true });
+  const roll = await new Roll("2d6").evaluate();
   const success = roll.total <= morale;
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.morale"),
@@ -286,7 +286,7 @@ export async function hitDiceRoll(actor, { rollMode } = {}) {
   const hd = String(actor?.system?.hd ?? actor?.system?.attributes?.hd ?? "1");
   const parsed = parseMonsterHitDice(hd);
   const formula = monsterHpFormula(hd);
-  const roll = await new Roll(formula).evaluate({ async: true });
+  const roll = await new Roll(formula).evaluate();
   const result = parsed.kind === "fraction" ? "1 HP" : `${Math.round(roll.total)} HP`;
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.hitDice"),
@@ -305,7 +305,7 @@ export async function freeRoll(actor, expression, { rollMode } = {}) {
     ui.notifications.warn(game.i18n.format("BECMI.notification.badExpression", { expression: String(expression) }));
     return null;
   }
-  const roll = await new Roll(String(parsed.total)).evaluate({ async: true });
+  const roll = await new Roll(String(parsed.total)).evaluate();
   await toChat(roll, {
     title: game.i18n.localize("BECMI.rolls.free"),
     flavor: `${rollName(actor)} — ${parsed.formula}`,
@@ -319,7 +319,7 @@ export async function freeRoll(actor, expression, { rollMode } = {}) {
 /** d100 <= skill chance, as in the Rules Cyclopedia thief table. */
 export async function thiefSkillRoll(actor, skill, { rollMode } = {}) {
   const chance = Number(actor?.system?.thiefSkills?.[skill] ?? 0);
-  const roll = await new Roll("1d100").evaluate({ async: true });
+  const roll = await new Roll("1d100").evaluate();
   const success = roll.total <= chance;
   await toChat(roll, {
     title: `${game.i18n.localize("BECMI.rolls.skill")}: ${game.i18n.localize(`BECMI.thief.${skill}`)}`,
@@ -337,11 +337,11 @@ export async function turnUndeadRoll(actor, typeName, { rollMode, level, control
   const { turnUndeadCell, resolveTurnResult } = await import("./rules-rc.mjs");
   const effectiveLevel = Number(level ?? actor?.system?.attributes?.level ?? 1) || 1;
   const cell = turnUndeadCell(effectiveLevel, typeName);
-  const check = await new Roll("2d6").evaluate({ async: true });
+  const check = await new Roll("2d6").evaluate();
   const outcome = resolveTurnResult(cell, check.total);
   let result = `${cell} — ${game.i18n.localize(`BECMI.undead.outcome.${outcome.kind}`)}`;
   if (outcome.dice) {
-    const dice = await new Roll(outcome.dice).evaluate({ async: true });
+    const dice = await new Roll(outcome.dice).evaluate();
     result += ` (${dice.total} HD)`;
   }
   if (control && (outcome.kind === "turn" || outcome.kind === "destroy")) {

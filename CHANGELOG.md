@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.24
+
+- Replaced the removed `Roll#evaluate({ async: true })` API with `await roll.evaluate()`.
+  Every roll now runs cleanly on Foundry v13/v14 without deprecation warnings.
+
 ## 0.1.23
 
 - Weapon Mastery is now an explicit optional rule for every character. The sheet

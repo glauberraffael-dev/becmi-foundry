@@ -65,6 +65,9 @@ for (const file of files) {
   if (/new\s+fields\s*\(\)/.test(text)) {
     note(`${file}: use const f = fields(); new f.XField() instead of new fields()`);
   }
+  if (/evaluate\(\{\s*async\s*:/.test(text)) {
+    note(`${file}: Roll#evaluate({async}) was removed in Foundry v12+; use await roll.evaluate()`);
+  }
   for (const match of text.matchAll(/BECMI\.[A-Za-z][\w.]*/g)) {
     // Ignore prefixes of dynamically composed keys, e.g. BECMI.saves.${key}.
     if (!match[0].endsWith(".")) usedKeys.add(match[0]);
