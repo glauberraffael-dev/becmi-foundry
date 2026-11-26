@@ -18,11 +18,31 @@ const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
 
 /** HP tracking is the only sheet data a player may change in use mode. */
 const TRACKING_FIELDS = new Set(["system.attributes.hp.value"]);
+const HP_FIELDS = ["system.attributes.hp", "system.attributes.hp.value", "system.attributes.hp.max"];
 
 function trackingValue(path, value) {
   if (path !== "system.attributes.hp.value") return value;
   const number = Number(value);
   return Number.isFinite(number) ? Math.max(0, Math.round(number)) : 0;
+}
+
+/** The class selector is a normal form field; it expands into a full RC snapshot. */
+function classUpdateFor(key) {
+  const cls = RC.classes[key];
+  if (!cls) {
+    return {
+      "system.attributes.classKey": "",
+      "system.attributes.class": "",
+      "system.attributes.hd": "",
+      "flags.becmi.classInfo": null
+    };
+  }
+  return {
+    "system.attributes.classKey": key,
+    "system.attributes.class": cls.name,
+    "system.attributes.hd": `1d${cls.hitDie}`,
+    "flags.becmi.classInfo": classInfoFromRC(cls.name)
+  };
 }
 
 const SHEET_TABS = [
@@ -610,6 +630,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // them. The data model re-derives the value on every prepare cycle.
     delete changes["system.attributes.xpNext"];
 
+    if ("system.attributes.classKey" in changes) {
+      const classChanges = classUpdateFor(changes["system.attributes.classKey"]);
+      delete changes["system.attributes.classKey"];
+      Object.assign(changes, classChanges);
+    }
+
     if (!this.isEditable || !this.editMode) {
       // The HP bar is a live tracking control, not an editing action. It works
       // in use mode for characters and monsters and stays bound to the token.
@@ -627,7 +653,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (Number.isFinite(requestedLevel) && requestedLevel > currentLevel
       && !("system.attributes.hp" in changes)) {
       // Editing the level field must roll HP exactly like XP level-ups do.
+      // The form still carries the old HP values; drop them so the canonical
+      // level-up update is not overwritten by stale form data.
       delete changes["system.attributes.level"];
+      for (const path of HP_FIELDS) delete changes[path];
       await advanceActorLevels(this.actor, { targetLevel: requestedLevel });
     }
     if (Object.keys(changes).length) await this.actor.update(changes);
@@ -644,15 +673,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #setClass(event, target) {
     if (!this.isEditable || !this.editMode) return;
     const key = target.dataset.classKey ?? target.value;
-    const cls = RC.classes[key];
-    if (!cls) return;
-    await this.actor.update({
-      "system.attributes.classKey": key,
-      "system.attributes.class": cls.name,
-      "system.attributes.hd": `1d${cls.hitDie}`,
-      // Keep only the class snapshot; xpNext is re-derived by the data model.
-      "flags.becmi.classInfo": classInfoFromRC(cls.name)
-    });
+    // Keep only the RC snapshot; xpNext is re-derived by the data model.
+    await this.actor.update(classUpdateFor(key));
   }
 
   static async #toggleDruid() {

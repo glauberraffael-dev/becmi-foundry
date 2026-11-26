@@ -96,8 +96,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.17`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.17.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.18`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.18.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

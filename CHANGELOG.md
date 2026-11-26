@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.18
+
+- Fixed the character class selector: it is now a real form field, so choosing a
+  class applies the RC snapshot immediately instead of reading the old value on
+  click. The snapshot still never writes derived XP thresholds.
+- Fixed manual level edits from the sheet: HP is rolled once by
+  `advanceActorLevels` and the stale HP fields left in the form no longer
+  overwrite the rolled maximum.
+
 ## 0.1.17
 
 - "Next level XP" is now strictly derived from the RC class table. Forms,

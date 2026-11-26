@@ -41,7 +41,20 @@ globalThis.foundry = {
       ...extra,
       actions: { ...(base.actions ?? {}), ...(extra.actions ?? {}) }
     }),
-    deepClone: (value) => structuredClone(value)
+    deepClone: (value) => structuredClone(value),
+    getProperty: (object, path) => path.split(".").reduce((value, part) => value?.[part], object),
+    setProperty: (object, path, value) => {
+      const parts = path.split(".");
+      const last = parts.pop();
+      const target = parts.reduce((node, part) => (node[part] ??= {}), object);
+      target[last] = value;
+    },
+    deleteProperty: (object, path) => {
+      const parts = path.split(".");
+      const last = parts.pop();
+      const target = parts.reduce((node, part) => node?.[part], object);
+      if (target) delete target[last];
+    }
   }
 };
 globalThis.game = { i18n: { localize: (key) => key, format: (key) => key }, userId: "gm" };
@@ -126,4 +139,58 @@ if (classUpdate["flags.becmi.classInfo"]?.key !== "fighter") {
   throw new Error("class selection did not store the RC class snapshot");
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking and derived XP).");
+// The selector is a real form field, so submitting it must expand the snapshot.
+updates.length = 0;
+sheet.editMode = true;
+sheet.actor = {
+  system: { attributes: { level: 1 } },
+  async update(changes) { updates.push(changes); }
+};
+await submit.call(sheet, {}, {}, {
+  object: {
+    "system.attributes.classKey": "magic-user",
+    "system.attributes.xpNext": "9999"
+  }
+});
+const formClassUpdate = updates[0] ?? {};
+if (formClassUpdate["system.attributes.classKey"] !== "magic-user"
+  || formClassUpdate["system.attributes.class"] !== "Magic-User"
+  || formClassUpdate["flags.becmi.classInfo"]?.key !== "magic-user"
+  || "system.attributes.xpNext" in formClassUpdate) {
+  throw new Error(`class field submit did not apply the RC snapshot: ${JSON.stringify(updates)}`);
+}
+
+// A manual level edit rolls HP once, then ignores the stale HP fields that the
+// form still carries; otherwise the rolled maximum is immediately overwritten.
+const { classInfoFromRC } = await import("../scripts/integrations.mjs");
+updates.length = 0;
+sheet.editMode = true;
+sheet.actor = {
+  system: {
+    attributes: { level: 1, hp: { value: 4, max: 4 } },
+    abilities: { con: { value: 10 } }
+  },
+  flags: { becmi: { classInfo: classInfoFromRC("Fighter") } },
+  async update(changes) { updates.push(changes); }
+};
+await submit.call(sheet, {}, {}, {
+  object: {
+    "system.attributes.level": "2",
+    "system.attributes.hp.value": "4",
+    "system.attributes.hp.max": "4",
+    "system.attributes.xp": "2000"
+  }
+});
+if (updates.length !== 2) {
+  throw new Error(`manual level edit produced ${updates.length} updates: ${JSON.stringify(updates)}`);
+}
+const [levelUpdate, otherUpdate] = updates;
+if (levelUpdate["system.attributes.level"] !== 2
+  || !(levelUpdate["system.attributes.hp"]?.max > 4)
+  || Number(otherUpdate["system.attributes.xp"]) !== 2000
+  || "system.attributes.hp.value" in otherUpdate
+  || "system.attributes.hp.max" in otherUpdate) {
+  throw new Error(`manual level edit did not roll HP canonically: ${JSON.stringify(updates)}`);
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field and derived XP).");

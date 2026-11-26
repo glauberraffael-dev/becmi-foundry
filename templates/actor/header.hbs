@@ -27,7 +27,7 @@
       {{#if isCharacter}}
       <div class="becmi-field">
         <label>{{localize 'BECMI.labels.rcClass'}}</label>
-        <select data-action="setClass" {{#unless editable}}disabled{{/unless}}>
+        <select name="system.attributes.classKey" {{#unless editable}}disabled{{/unless}}>
           <option value="">—</option>
           {{#each classOptions as |option|}}
           <option value="{{option.key}}" {{#if (eq option.key ../classKey)}}selected{{/if}}>{{option.name}}</option>
