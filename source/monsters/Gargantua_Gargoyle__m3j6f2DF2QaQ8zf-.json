@@ -1,0 +1,57 @@
+{
+  "_id": "m3j6f2DF2QaQ8zf-",
+  "_key": "!actors!m3j6f2DF2QaQ8zf-",
+  "name": "Gargantua (Gargoyle)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "32",
+    "hp": 144,
+    "move": {
+      "dungeon": 180,
+      "outdoor": 60
+    },
+    "attacks": "4 claws",
+    "damage": "4d3/4d3/4d6/4d4",
+    "appearing": "1 (1)",
+    "saveAs": "F32",
+    "morale": 11,
+    "treasure": "C x 4",
+    "intelligence": 5,
+    "alignment": "Neutral",
+    "xpValue": 10000,
+    "terrain": "Any",
+    "monsterType": "Construct, Enchanted (Very Rare)",
+    "special": [
+      "Can be hit only by magical weapons."
+    ],
+    "description": "Gargantua (Gargoyle) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 144,
+        "max": 144
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Gargantua (Gargoyle)",
+      "category": "Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

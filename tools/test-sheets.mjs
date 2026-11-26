@@ -3,6 +3,8 @@
  *
  * Usage: node tools/test-sheets.mjs
  */
+import { readFile } from "node:fs/promises";
+
 class FakeActorSheet {
   static DEFAULT_OPTIONS = { actions: { editImage: () => "edited" } };
 
@@ -193,4 +195,21 @@ if (levelUpdate["system.attributes.level"] !== 2
   throw new Error(`manual level edit did not roll HP canonically: ${JSON.stringify(updates)}`);
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field and derived XP).");
+// Monster sheets expose one button per save and per attack row.
+const body = await readFile(new URL("../templates/actor/body.hbs", import.meta.url), "utf8");
+if (!body.includes('data-action="rollSave" data-save="{{save.key}}"')
+  || !body.includes('data-action="monsterAttack" data-attack-index="{{attack.index}}"')) {
+  throw new Error("monster save and attack buttons are missing from the sheet template");
+}
+const rolled = [];
+sheet.actor = {
+  async rollSave(key) { rolled.push(["save", key]); },
+  async rollMonsterAttack(index, options) { rolled.push(["attack", index, options?.targetAC]); }
+};
+await actions.rollSave.call(sheet, {}, { dataset: { save: "breath" } });
+await actions.monsterAttack.call(sheet, {}, { dataset: { attackIndex: "2" } });
+if (JSON.stringify(rolled) !== JSON.stringify([["save", "breath"], ["attack", 2, 9]])) {
+  throw new Error(`monster roll actions did not reach the actor: ${JSON.stringify(rolled)}`);
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP and monster rolls).");

@@ -23,7 +23,7 @@
     "xpValue": 50,
     "terrain": "Barren Lands, Ruins",
     "monsterType": "Undead, Enchanted (Common)",
-    "special": "<p>Can be hit only by silvered or magical weapons.</p><p>Energy Drain: One level or Hit Die per hit.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Can be hit only by silvered or magical weapons.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Energy Drain:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; One level or Hit Die per hit.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "A wight is an undead spirit in the body of a dead human or demihuman. Its burial garments are tattered and filthy, and its eyes are hollow and lifeless. Each hit drains one level of experience or Hit Die; a victim drained completely becomes a wight in 1d4 days under the slayer's control.",
     "notes": "",
     "source": "Rules Cyclopedia",

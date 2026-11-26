@@ -1,0 +1,57 @@
+{
+  "_id": "eN3wDZ6bQVlW58kI",
+  "_key": "!actors!eN3wDZ6bQVlW58kI",
+  "name": "Giant (Sea, 10 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "10",
+    "hp": 45,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 or special",
+    "damage": "See below",
+    "appearing": "1d2 (1d20)",
+    "saveAs": "F (level = HD)",
+    "morale": 10,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 12,
+    "alignment": "Neutral",
+    "xpValue": 1750,
+    "terrain": "Ocean",
+    "monsterType": "Giant Humanoid",
+    "special": [
+      "Amphibious; can hold its breath for 1 hour."
+    ],
+    "description": "Giant (Sea, 10 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 45,
+        "max": 45
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Sea, 10 HD)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

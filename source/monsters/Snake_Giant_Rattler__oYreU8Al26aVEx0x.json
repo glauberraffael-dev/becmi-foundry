@@ -1,0 +1,55 @@
+{
+  "_id": "oYreU8Al26aVEx0x",
+  "_key": "!actors!oYreU8Al26aVEx0x",
+  "name": "Snake (Giant Rattler)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4",
+    "hp": 18,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 bites",
+    "damage": "1d4 + poison",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [],
+    "description": "Snake (Giant Rattler) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "max": 18
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Snake (Giant Rattler)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

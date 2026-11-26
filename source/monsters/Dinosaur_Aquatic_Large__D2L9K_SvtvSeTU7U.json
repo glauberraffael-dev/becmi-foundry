@@ -6,41 +6,43 @@
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "ac": 5,
-    "hd": "8",
-    "hp": 36,
+    "hd": "9-24",
+    "hp": 41,
     "move": {
-      "dungeon": 0,
-      "outdoor": 30
+      "dungeon": 60,
+      "outdoor": 150
     },
-    "attacks": ". . 1 bite (+ 2 flippers).",
-    "damage": "1 to 2d4 2d4 to 4d8 1d4 to 2d8",
-    "appearing": "1d2 to 2d8 1d2 to 1d4 1d2 to 1d6",
-    "saveAs": "..F (level = 1/2 HD). .",
-    "morale": 6,
-    "treasure": "Nil Nil (U + V) Nil",
-    "intelligence": 3,
+    "attacks": "1 bite (+ 2 flippers)",
+    "damage": "2d4 to 4d8",
+    "appearing": "1d2 to 1d4",
+    "saveAs": "F (level = 1/2 HD)",
+    "morale": 8,
+    "treasure": "U + V",
+    "intelligence": 2,
     "alignment": "Neutral",
-    "xpValue": 2850,
-    "terrain": "Any",
-    "monsterType": "Normal Animal",
-    "description": "Nil (U + V) Neutral Varies Armored Nil Neutral Varies Dinosaur, Land Carnivore Small Large Flying Nil Neutral Varies Nil (U + V) Neutral Varies Nil or V Neutral Varies Though not strictly correct in the scientific sense, the game term \"dinosaur\" applies to any prehistoric bird, fish, mammal, or reptile found in the Mesozoic or Paleozoic eras. Dinosaurs were the ancestors of modern birds, reptiles, and mammals. All dinosaurs are very stupid (Intelligence 1-3) and easily fooled. Each dinosaur can be placed in one of three categories: aquatic (mostly marine) dinosaurs, landbased carnivores (meat eaters), and land-based herbivores (plant eaters). Use the general information given to create your own dinosaurs. You can create your own totally \"new\" dinosaurs, or base their descriptions on real dinosaurs. When assigning XP, treat them as having no special abilities unless they can swallow opponents whole (as noted in some descriptions). If you create your own dinosaurs, add an asterisk for each special ability (such as poison, throwing spikes, swoop, exceptional armor, and so on). cave bear (bear), giant boar, giant crocodile, mastodon (elephant), pterosaur, sabretooth tiger Most aquatic",
-    "special": "<p>When assigning XP, treat them as having no special abilities unless they can swallow opponents whole (as noted in some descriptions). If you create your own dinosaurs, add an asterisk for each special ability (such as poison, throwing spikes, swoop, exceptional armor, and so on). cave bear (bear), giant boar, giant crocodile, mastodon (elephant), pterosaur, sabretooth tiger Most aquatic</p>",
+    "xpValue": 3700,
+    "terrain": "River/Lake, Ocean",
+    "monsterType": "Giant Animal",
+    "special": [
+      "Swimming 150' to 240'."
+    ],
+    "description": "Dinosaur, Aquatic (Large) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 36,
-        "max": 36
+        "value": 41,
+        "max": 41
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Dinosaur, Aquatic (Large)",
-      "category": "Normal Animal"
+      "category": "Normal Animal",
+      "variant": ""
     }
   },
   "ownership": {

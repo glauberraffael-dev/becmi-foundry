@@ -1,0 +1,57 @@
+{
+  "_id": "ltyQ03pZGVU0-tgd",
+  "_key": "!actors!ltyQ03pZGVU0-tgd",
+  "name": "Lizard, Giant (Draco)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "4+2",
+    "hp": 20,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite",
+    "damage": "1d10",
+    "appearing": "1d4 (1d8)",
+    "saveAs": "F3",
+    "morale": 7,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 125,
+    "terrain": "Any",
+    "monsterType": "Giant Animal",
+    "special": [
+      "Glide: 150' (50')."
+    ],
+    "description": "Lizard, Giant (Draco) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "max": 20
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Lizard, Giant (Draco)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

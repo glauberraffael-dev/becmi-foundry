@@ -1,0 +1,57 @@
+{
+  "_id": "eFycWwgvHlWHmnMd",
+  "_key": "!actors!eFycWwgvHlWHmnMd",
+  "name": "Spirit (Revenant)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -3,
+    "hd": "18",
+    "hp": 81,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "2d4/2d4/1d4 + 2",
+    "appearing": "1 (1)",
+    "saveAs": "F18",
+    "morale": 10,
+    "treasure": "I, O, V",
+    "intelligence": 13,
+    "alignment": "Chaotic",
+    "xpValue": 7525,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Very Rare)",
+    "special": [
+      "All attacks carry poison; +2 weapon or better to hit."
+    ],
+    "description": "Spirit (Revenant) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 81,
+        "max": 81
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Spirit (Revenant)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

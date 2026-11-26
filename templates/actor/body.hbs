@@ -408,6 +408,19 @@
       <button type="button" class="becmi-roll" data-action="rollMorale">{{localize 'BECMI.rolls.morale'}}</button>
       <button type="button" class="becmi-roll" data-action="rollHitDice">{{localize 'BECMI.rolls.hitDice'}}</button>
     </div>
+    <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.savingThrows'}} <small>{{system.saveAs}}</small></h3>
+    <table class="becmi-table becmi-table--saves">
+      <thead><tr><th>{{localize 'BECMI.sheet.skill'}}</th><th>{{localize 'BECMI.labels.saveTarget'}}</th><th></th></tr></thead>
+      <tbody>
+        {{#each saveRows as |save|}}
+        <tr>
+          <th>{{save.label}}</th>
+          <td class="becmi-derived">{{save.target}}</td>
+          <td><button type="button" class="becmi-roll" data-action="rollSave" data-save="{{save.key}}">{{localize 'BECMI.sheet.roll'}}</button></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
     <h3 class="becmi-subtitle">{{localize 'BECMI.sheet.monsterAttacks'}}</h3>
     <div class="becmi-monster-attacks">
       {{#each monsterAttacks as |attack|}}

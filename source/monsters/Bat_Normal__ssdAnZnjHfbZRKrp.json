@@ -12,19 +12,21 @@
       "dungeon": 9,
       "outdoor": 3
     },
-    "attacks": "Confusion 1 bite",
-    "damage": "Nil 1d4",
-    "appearing": "d100(d100) 1d10 (1d10)",
-    "saveAs": "Normal Man F1",
+    "attacks": "Confusion",
+    "damage": "Nil",
+    "appearing": "d100 (d100)",
+    "saveAs": "Normal Man",
     "morale": 6,
-    "treasure": "Nil Nil",
+    "treasure": "Nil",
     "intelligence": 2,
     "alignment": "Neutral",
-    "xpValue": 5,
-    "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
-    "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
-    "description": "These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die. However, the creature can choose to bite without using the poison, if desired. Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers.",
-    "special": "<p>Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die.</p>",
+    "xpValue": 1,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [
+      "Echolocation: normal bats confuse intruders in darkness."
+    ],
+    "description": "Bat (Normal) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,9 +40,10 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Bat (Normal)",
-      "category": "Normal Animal"
+      "category": "Normal Animal",
+      "variant": "",
+      "exactHp": true
     }
   },
   "ownership": {

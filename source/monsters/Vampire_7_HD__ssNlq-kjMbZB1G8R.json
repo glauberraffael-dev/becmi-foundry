@@ -1,0 +1,57 @@
+{
+  "_id": "ssNlq-kjMbZB1G8R",
+  "_key": "!actors!ssNlq-kjMbZB1G8R",
+  "name": "Vampire (7 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "7",
+    "hp": 32,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 touch or special",
+    "damage": "1d10 + double energy drain or special",
+    "appearing": "1d4 (1d6)",
+    "saveAs": "F7",
+    "morale": 11,
+    "treasure": "F",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 1250,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Rare)",
+    "special": [
+      "Flying 180' (60'); immune to charms and cold; magical weapon needed to hit."
+    ],
+    "description": "Vampire (7 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 32,
+        "max": 32
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Vampire (7 HD)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

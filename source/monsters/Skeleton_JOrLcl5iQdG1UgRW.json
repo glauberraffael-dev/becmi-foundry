@@ -24,7 +24,7 @@
     "terrain": "Ruins.",
     "monsterType": "Undead, Enchanted (Common).",
     "description": "Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Skeletons are often found near graveyards, dungeons, and other deserted places. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading. Skeletons will always fight until \"killed.\" Snail, Giant A form of giant slug; see Slug, Giant.",
-    "special": "<p>Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading.</p>",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Animated skeletons are undead creatures often used as guards by the high level magic-user or cleric who animated them, or by greater undead creatures who command them. Since they are undead, they can be turned by clerics, and are not affected by sleep or charm spells, nor any form of mind reading.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,

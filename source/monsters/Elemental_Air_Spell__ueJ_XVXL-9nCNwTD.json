@@ -1,0 +1,57 @@
+{
+  "_id": "ueJ_XVXL-9nCNwTD",
+  "_key": "!actors!ueJ_XVXL-9nCNwTD",
+  "name": "Elemental (Air, Spell)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -2,
+    "hd": "16",
+    "hp": 72,
+    "move": {
+      "dungeon": 360,
+      "outdoor": 120
+    },
+    "attacks": "1 or special",
+    "damage": "3d8",
+    "appearing": "1 (1)",
+    "saveAs": "F16",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 1850,
+    "terrain": "Plane of Air",
+    "monsterType": "Planar Monster, Enchanted (Common)",
+    "special": [
+      "Flying 360' (120')."
+    ],
+    "description": "Elemental (Air, Spell) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 72,
+        "max": 72
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Elemental (Air, Spell)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -23,7 +23,7 @@
     "xpValue": 2300,
     "terrain": "Mountain, Cloud",
     "monsterType": "Giant Humanoid",
-    "special": "<p>Surprise: Others suffer a 1-in-6 chance only.</p><p>Thrown Boulders: 3d6 damage; range 60/130/200 yards.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Surprise:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; Others suffer a 1-in-6 chance only.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Thrown Boulders: 3d6 damage; range 60/130/200 yards.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Cloud giants stand 20 feet tall with white or gray skin and hair. They have keen senses and are rarely surprised (1 chance in 6). They live in cloud castles or mountain strongholds and keep rocs or dire wolves as guards.",
     "notes": "",
     "source": "Rules Cyclopedia",

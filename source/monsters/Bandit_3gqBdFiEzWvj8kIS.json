@@ -24,8 +24,8 @@
     "terrain": "Any, any Planar.",
     "monsterType": "Normal Animal (Rare).",
     "description": "Bandits are NPC thieves who have joined together for the purpose of robbing others. Frequently, they have small communities of 3-30 members and send out raiding groups of 2-4 bandits. Bandits will act as normal men so they can surprise their intended victims. Another bandit tactic is to set up an ambush to waylay wealthy travelers; typically, they will drop a tree just around the bend of a road so that travelers have to stop; then the bandits stand back with ranged weapons and rob the travelers. Treasure Type A is only found in the bandits' wilderness lair. Bandits may have an NPC leader of any hu• man character class who is one or more levels of experience greater than the bandits. The leader may have an agenda other than mere robbery; he might be assembling a network of bandit gangs for some greater nefarious purpose, or he may be a nobleman framed for a crime, stripped of his title, and living the life of a bandit until he can clear his name. roads). Banshee A form of undead; see Haunt. Basilisk F6 F Neutral ster (Very Rare). A basilisk is a 10'-long lizard; it looks much like a large snake with four legs and a crownlike growth on its head. It may be of any color, but is usually",
-    "special": "<p>Bandits will act as normal men so they can surprise their intended victims.</p>",
-    "notes": "White apes have lost their color due to many years of living in caves. They are nocturnal herbivores, looking for fruits and vegetables at night.",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Bandits will act as normal men so they can surprise their intended victims.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {

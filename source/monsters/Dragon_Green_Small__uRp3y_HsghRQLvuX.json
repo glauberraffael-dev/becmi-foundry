@@ -1,0 +1,57 @@
+{
+  "_id": "uRp3y_HsghRQLvuX",
+  "_key": "!actors!uRp3y_HsghRQLvuX",
+  "name": "Dragon, Green (Small)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 1,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d6/1d6/3d8",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F8",
+    "morale": 9,
+    "treasure": "H",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 1750,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Chlorine gas cloud; flying 240' (80')."
+    ],
+    "description": "Dragon, Green (Small) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, Green (Small)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

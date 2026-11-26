@@ -1,0 +1,55 @@
+{
+  "_id": "3_UbvYIx3OLykyXG",
+  "_key": "!actors!3_UbvYIx3OLykyXG",
+  "name": "Snake (Giant Racer)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 bite",
+    "damage": "1d6",
+    "appearing": "1d6 (1d8)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [],
+    "description": "Snake (Giant Racer) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Snake (Giant Racer)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

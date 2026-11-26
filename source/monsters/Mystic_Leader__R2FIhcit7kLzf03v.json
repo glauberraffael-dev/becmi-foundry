@@ -23,7 +23,7 @@
     "xpValue": 1650,
     "terrain": "Any",
     "monsterType": "Human (Rare)",
-    "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Surprise:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; A mystic is surprised only on a roll of 1.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Mystic leaders are the senior masters of a cloister. They fight with a weapon or two hands for 1d10 damage each and have a larger retinue than ordinary mystics.",
     "notes": "",
     "source": "Rules Cyclopedia",

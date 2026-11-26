@@ -1,0 +1,55 @@
+{
+  "_id": "0NrVwN7RZj8HGbvd",
+  "_key": "!actors!0NrVwN7RZj8HGbvd",
+  "name": "Snake (Spitting Cobra)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "1",
+    "hp": 5,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite or 1 spit",
+    "damage": "1d3 + poison",
+    "appearing": "1d6 (1d6)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 13,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [],
+    "description": "Snake (Spitting Cobra) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Snake (Spitting Cobra)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

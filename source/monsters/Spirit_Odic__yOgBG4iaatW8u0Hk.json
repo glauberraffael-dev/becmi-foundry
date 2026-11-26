@@ -1,0 +1,57 @@
+{
+  "_id": "yOgBG4iaatW8u0Hk",
+  "_key": "!actors!yOgBG4iaatW8u0Hk",
+  "name": "Spirit (Odic)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -4,
+    "hd": "16",
+    "hp": 72,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 (see below)",
+    "damage": "1d12 + poison (see below)",
+    "appearing": "0 (1)",
+    "saveAs": "F16",
+    "morale": 12,
+    "treasure": "I, O, V",
+    "intelligence": 12,
+    "alignment": "Chaotic",
+    "xpValue": 6250,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Very Rare)",
+    "special": [
+      "Travels up to 24 miles from its body; +2 weapon or better to hit."
+    ],
+    "description": "Spirit (Odic) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 72,
+        "max": 72
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Spirit (Odic)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

@@ -388,6 +388,7 @@ export function registerIntegrations() {
  * values that still look like that mistake; never overwrite a rolled total.
  */
 export async function repairMonsterHitPoints(actor) {
+  if (getProperty(actor.flags, "becmi.exactHp")) return 0;
   const hd = String(getProperty(actor.system, "hd") ?? "");
   const parsed = parseMonsterHitDice(hd);
   if (parsed.kind === "fraction" || parsed.kind === "unknown") return 0;

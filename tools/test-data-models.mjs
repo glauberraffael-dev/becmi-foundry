@@ -96,3 +96,29 @@ if (withAc.system.attributes.ac.value !== 2) {
   throw new Error(`Derived AC expected 2, got ${withAc.system.attributes.ac.value}`);
 }
 console.log("Actor prepareDerivedData OK (with and without AC).");
+
+// Monster saves are derived from the RC stat block, not left at the schema
+// default of 10. Ambiguous OCR text falls back to its first readable class.
+const monster = {
+  hd: "7",
+  hp: 32,
+  saveAs: "F7",
+  saves: { deathRay: 10, magicWand: 10, paralysis: 10, breath: 10, spells: 10 },
+  attributes: { hp: { value: 31, max: 0 }, thac0: 19 }
+};
+actorModels.MonsterData.prototype.prepareDerivedData.call(monster);
+const expectedSaves = { deathRay: 8, magicWand: 9, paralysis: 10, breath: 11, spells: 12 };
+for (const [key, value] of Object.entries(expectedSaves)) {
+  if (monster.saves[key] !== value) {
+    throw new Error(`Monster save ${key} expected ${value}, got ${monster.saves[key]}`);
+  }
+}
+if (monster.attributes.hp.max !== 32 || monster.attributes.hp.value !== 31) {
+  throw new Error("Monster HP mirror was not derived from the HD-based HP");
+}
+monster.saveAs = "F7 F21 F36";
+actorModels.MonsterData.prototype.prepareDerivedData.call(monster);
+if (monster.saves.deathRay !== 8) {
+  throw new Error("Ambiguous monster Save As did not fall back to its first class");
+}
+console.log("MonsterData derives saving throws and HP mirror OK.");

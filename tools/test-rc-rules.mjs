@@ -10,7 +10,7 @@ import {
   baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
   finalDamage, hpForLevel, masteryChoices, masteryData, masteryWeapon,
   levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
-  monsterThac0, normalizeClassKey, parseMonsterHitDice,
+  monsterSaveTargets, monsterThac0, normalizeClassKey, parseMonsterHitDice, parseMonsterSaveAs,
   planAbilityAdjustment, resolveTurnResult,
   rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
   turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
@@ -196,6 +196,24 @@ check("monster Hit Dice count d8 and never equal the HP total", () => {
   assert.equal(monsterHpFromHitDice("1-4"), 5, "ranges use the lower d8 count");
 });
 
+check("monster Save As resolves to character saving-throw targets", () => {
+  assert.deepEqual(parseMonsterSaveAs("F7", "9"), { classKey: "fighter", level: 7, label: "F7" });
+  assert.deepEqual(monsterSaveTargets("Normal Man"), {
+    deathRay: 14, magicWand: 15, paralysis: 16, breath: 17, spells: 17
+  });
+  assert.deepEqual(monsterSaveTargets("F (level = HD)", "9"), baseSaves("fighter", 9));
+  assert.deepEqual(monsterSaveTargets("F (level = 1/2 HD)", "9"), baseSaves("fighter", 5));
+  assert.deepEqual(monsterSaveTargets("F (level = 2 X HD)", "9"), baseSaves("fighter", 18));
+  assert.deepEqual(monsterSaveTargets("M10", "9"), baseSaves("magic-user", 10));
+  assert.deepEqual(monsterSaveTargets("T11", "9"), baseSaves("thief", 11));
+  assert.deepEqual(monsterSaveTargets("C12", "9"), baseSaves("cleric", 12));
+  assert.deepEqual(monsterSaveTargets("E1 (or better)", "9"), baseSaves("elf", 1));
+  // Ambiguous multi-column OCR text falls back to the first readable token.
+  assert.deepEqual(monsterSaveTargets("F7 F21 F36", "9"), baseSaves("fighter", 7));
+  assert.equal(parseMonsterSaveAs("See below"), null);
+  assert.equal(monsterSaveTargets("Character type and level"), null);
+});
+
 check("each natural attack becomes its own rollable monster macro", () => {
   assert.equal(monsterDamageFormula("1d4/ld4/2d4 or 1d6 each"), "1d4");
   const manticore = monsterAttackRows({
@@ -222,4 +240,12 @@ check("each natural attack becomes its own rollable monster macro", () => {
   });
   assert.deepEqual(grizzly.map((row) => row.name), ["Claw 1", "Claw 2", "Bite"]);
   assert.deepEqual(grizzly.map((row) => row.damage), ["1d8", "1d8", "1d10"]);
+
+  const hydra = monsterAttackRows({ attacks: "5-12 bites (1 per head)", damage: "1d10 each" });
+  assert.equal(hydra.length, 5, "variable head counts use the lowest count for buttons");
+  assert.match(hydra[0].name, /^Bites/);
+  assert.equal(hydra[0].damage, "1d10");
+  const tentacles = monsterAttackRows({ attacks: "8", damage: "1d4 + 1 each" });
+  assert.equal(tentacles.length, 8);
+  assert.deepEqual(tentacles.map((row) => row.damage), Array(8).fill("1d4+1"));
 });

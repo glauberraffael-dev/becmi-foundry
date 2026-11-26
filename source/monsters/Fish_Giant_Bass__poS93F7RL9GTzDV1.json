@@ -5,42 +5,42 @@
   "type": "monster",
   "img": "icons/svg/mystery-man.svg",
   "system": {
-    "ac": 1,
-    "hd": "5+5",
-    "hp": 28,
+    "ac": 7,
+    "hd": "2",
+    "hp": 9,
     "move": {
-      "dungeon": 0,
-      "outdoor": 0
+      "dungeon": 120,
+      "outdoor": 40
     },
-    "attacks": "1 bite 4 spines + poison (special) 1 bite",
-    "damage": "1d6 1d4 each + poison 2dlO",
-    "appearing": "0 (2d4) 0(2d4) 0(2d10)",
-    "saveAs": "F1 F3 F5",
+    "attacks": "1 bite",
+    "damage": "1d6",
+    "appearing": "0 (2d4)",
+    "saveAs": "F1",
     "morale": 8,
-    "treasure": "Nil Nil Nil",
+    "treasure": "Nil",
     "intelligence": 1,
     "alignment": "Neutral",
-    "xpValue": 400,
-    "terrain": "River /Lake, Ocean.",
-    "monsterType": "Giant Animal (Common).",
-    "description": "These monsters are just three typical examples of the category of \"giant fish;\" many others exist, and the DM may create as many as he wishes. Giant Bass: These are normally shy fish, and will attack only if a morsel of food (halfling-sized or smaller) is floating nearby or on the surface. They may also be summoned, and directed to fight, by nixies. Giant Spiny Rockfish: This fish, found in shallow salt water, is very difficult to see. Observers may mistake it for a large rock or lump of coal to drive off foes. If it hits a victim or is touched by accident, the victim is automatically hit by four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring a saving throw vs. poison for each hit. Any failure results in death. Despite its fearsome attacks, the fish is normally peaceful, and will only attack if disturbed. Giant Sturgeon: This dangerous creature is almost 30' long and covered with thick armorlike scales. It is a fierce fighter, and can swallow an opponent with an attack roll of 18 or better. The victim takes 2d6 points of damage per round and must make a saving throw vs. death ray or be paralyzed. If not paralyzed, the",
-    "special": "<p>If it hits a victim or is touched by accident, the victim is automatically hit by four of the sharp spines covering the creature's body; the victim takes ld4 points of damage per spine and requiring a saving throw vs. poison for each hit. Despite its fearsome attacks, the fish is normally peaceful, and will only attack if disturbed. It is a fierce fighter, and can swallow an opponent with an attack roll of 18 or better.</p>",
+    "xpValue": 20,
+    "terrain": "River/Lake",
+    "monsterType": "Giant Animal",
+    "special": [],
+    "description": "Fish, Giant (Bass) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 28,
-        "max": 28
+        "value": 9,
+        "max": 9
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Fish, Giant (Bass)",
-      "category": "Normal Animal"
+      "category": "Normal Animal",
+      "variant": ""
     }
   },
   "ownership": {

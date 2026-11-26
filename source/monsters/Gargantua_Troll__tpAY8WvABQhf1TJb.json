@@ -5,42 +5,44 @@
   "type": "monster",
   "img": "icons/svg/mystery-man.svg",
   "system": {
-    "ac": 3,
-    "hd": "25",
-    "hp": 113,
+    "ac": 4,
+    "hd": "51",
+    "hp": 230,
     "move": {
       "dungeon": 240,
       "outdoor": 80
     },
-    "attacks": "8 4 3",
-    "damage": "1d4 + 1 each 4d3/4d3/ 4d6/4d6/ + Paralysis 4d6/4d4 4d10",
-    "appearing": "1(1) 1(1) 1(1)",
-    "saveAs": "F13 F32 F36",
+    "attacks": "3 claws",
+    "damage": "4d6/4d6/4d10",
+    "appearing": "1 (1)",
+    "saveAs": "F36",
     "morale": 11,
-    "treasure": "B x 4 C X 4 D x 4",
-    "intelligence": 0,
+    "treasure": "D x 4",
+    "intelligence": 6,
     "alignment": "Neutral",
-    "xpValue": 6500,
-    "terrain": "Same as the original species. _Load:_ Eight times normal.",
-    "monsterType": "Gargantua Carrion Crawler: Lowlife (Very Rare); Gargantua Gargoyle: Construct, E",
-    "description": "A gargantua is a very large variety of some other monster. A gargantua is the same type of monster as its smaller form, thus a gargantuan gargoyle is a construct, a gargantuan troll is a giant humanoid, and so on. These monsters are extremely rare, the products of the mad wizard Gargantua. Three examples of Gargantuan creatures are given above. Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. \"plus\" as one Hit Die added Dice; half level if unintelligent times normal percentages Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).",
-    "special": "<p>Because of their incredible size, gargantuas are noisy while moving, and cannot surprise anything. They also suffer a -4 penalty to their attack rolls when attacking man-size or smaller opponents. \"plus\" as one Hit Die added Dice; half level if unintelligent times normal percentages Armor class, alignment, number and type of attacks, and normal and magical abilities are unchanged, except for regeneration (4 times normal rate).</p>",
+    "xpValue": 29000,
+    "terrain": "Any",
+    "monsterType": "Humanoid (Very Rare)",
+    "special": [
+      "Regenerates 3 hp per round."
+    ],
+    "description": "Gargantua (Troll) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 113,
-        "max": 113
+        "value": 230,
+        "max": 230
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Gargantua (Troll)",
-      "category": "Lowlife"
+      "category": "Monster",
+      "variant": ""
     }
   },
   "ownership": {
@@ -51,5 +53,5 @@
       "attribute": "attributes.hp.value"
     }
   },
-  "folder": "15c341ade7785c67"
+  "folder": "40077e3c19fe93b6"
 }

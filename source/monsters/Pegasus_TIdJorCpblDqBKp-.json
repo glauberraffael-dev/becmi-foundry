@@ -24,7 +24,7 @@
     "terrain": "Hill, Mountain, Open. _Load:_ 3,000 cn at full speed; 6,000 cn at half speed.",
     "monsterType": "Monster (Rare).",
     "description": "These semi-intelligent flying horses are wild and shy. They cannot be tamed, but will serve Lawful characters (and only Lawful characters) if captured and trained while young. Pegasi are the natural enemies of hippogriffs. speed. Barding Multiplier: x 1 with 8 hit points who gains a +1 bonus on damage rolls. If this leader is killed, the morale of the group becomes 6 instead of 8. Orcs are afraid of anything larger or stronger than they are, but may be forced to fight by their leaders. Orcs are often used for armies by Chaotic leaders (both humans and monsters). They prefer swords, spears, axes, and clubs for weapons. They cannot use mechanical weapons (such as catapults), and only their leaders understand how to operate such devices. There are many different tribes of orcs. Each tribe has as many female orcs as males, and at least two children (\"whelps\") for each two adults. The leader of an orc tribe is a chieftain with 15 hit points, who attacks as a 4 Hit Dice monster and gains +2 on damage rolls. For every 20 orcs in a tribe, there may be an ogre with them (1 in 6 chance). There is a 1 in 10 chance of an allied troll living in the lair as well. There can be orc spellcasters; s",
-    "special": "<p>There can be orc spellcasters; s</p>",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;There can be orc spellcasters; s&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,

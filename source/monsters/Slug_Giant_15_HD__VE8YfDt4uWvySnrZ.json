@@ -1,0 +1,57 @@
+{
+  "_id": "VE8YfDt4uWvySnrZ",
+  "_key": "!actors!VE8YfDt4uWvySnrZ",
+  "name": "Slug, Giant (15 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 8,
+    "hd": "15",
+    "hp": 68,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite or 1 spit",
+    "damage": "1d12 or as dragon breath",
+    "appearing": "1 (1)",
+    "saveAs": "F (level = 1/2 HD)",
+    "morale": 8,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 3750,
+    "terrain": "Cavern, Ruins",
+    "monsterType": "Giant Animal (Rare)",
+    "special": [
+      "Burrowing 30' (10'); blunt weapons do no damage and edged weapons deal half damage."
+    ],
+    "description": "Slug, Giant (15 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 68,
+        "max": 68
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Slug, Giant (15 HD)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

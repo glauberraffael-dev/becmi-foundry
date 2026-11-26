@@ -23,7 +23,7 @@
     "xpValue": 175,
     "terrain": "Any",
     "monsterType": "Human (Rare)",
-    "special": "<p>Surprise: A mystic is surprised only on a roll of 1.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Surprise:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; A mystic is surprised only on a roll of 1.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Mystics are humans who follow a rigorous life of meditation, study and physical training. They live in cloisters and are usually Lawful. Mystics are surprised only on a roll of 1, never wear armor or protective magic, and can use potions and magic items freely.",
     "notes": "",
     "source": "Rules Cyclopedia",

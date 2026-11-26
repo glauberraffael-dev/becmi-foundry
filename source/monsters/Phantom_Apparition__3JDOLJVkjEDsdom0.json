@@ -1,0 +1,57 @@
+{
+  "_id": "3JDOLJVkjEDsdom0",
+  "_key": "!actors!3JDOLJVkjEDsdom0",
+  "name": "Phantom (Apparition)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "10",
+    "hp": 45,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws",
+    "damage": "1d6 + 2/1d6 + 2",
+    "appearing": "1 (1)",
+    "saveAs": "M10",
+    "morale": 10,
+    "treasure": "L, N, O",
+    "intelligence": 11,
+    "alignment": "Chaotic",
+    "xpValue": 3250,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Rare)",
+    "special": [
+      "Ethereal at first; magical weapons needed to hit."
+    ],
+    "description": "Phantom (Apparition) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 45,
+        "max": 45
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Phantom (Apparition)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

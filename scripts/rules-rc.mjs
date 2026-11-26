@@ -169,6 +169,69 @@ export function baseSaves(className, level) {
   return result;
 }
 
+/* ------------------------------------------------------------------ *
+ * Monster saving throws                                               *
+ * ------------------------------------------------------------------ */
+
+const MONSTER_SAVE_CLASSES = {
+  F: "fighter", C: "cleric", M: "magic-user", T: "thief",
+  D: "dwarf", E: "elf", H: "halfling"
+};
+
+const NORMAL_MAN_SAVES = Object.freeze({
+  deathRay: 14, magicWand: 15, paralysis: 16, breath: 17, spells: 17
+});
+
+function monsterLevelFromHitDice(hd) {
+  const raw = String(hd ?? "");
+  const fraction = raw.match(/(\d+)\s*\/\s*(\d+)/);
+  if (fraction) return Math.max(1, Number(fraction[1]) / Number(fraction[2]));
+  return Math.max(1, parseMonsterHitDice(raw).count || 1);
+}
+
+/**
+ * Resolve a monster's "Save As" entry to a character class and level.
+ *
+ * The RC allows `F7`, `Normal Man`, `F (level = HD)` and similar shorthand.
+ * Multi-column OCR texts such as `F7 F21 F36` are ambiguous; the build
+ * pipeline resolves those per named variant, so this helper uses the first
+ * readable token as a safe fallback for manually created actors.
+ */
+export function parseMonsterSaveAs(saveAs, hd = "1") {
+  const raw = String(saveAs ?? "").replace(/[•·]/g, " ").replace(/\s+/g, " ").trim();
+  if (!raw || /^(?:see below|npc class and level|character type and level)$/i.test(raw)) return null;
+  if (/normal man/i.test(raw)) return { classKey: "normalMan", level: 0, label: "Normal Man" };
+
+  const level = monsterLevelFromHitDice(hd);
+  const formula = raw.match(/\b([CFMTEHD])\s*\(\s*level\s*=\s*([^)]+)\)/i);
+  if (formula) {
+    const classKey = MONSTER_SAVE_CLASSES[formula[1].toUpperCase()];
+    const spec = formula[2].replace(/\s+/g, " ").trim().toLowerCase();
+    let saveLevel = level;
+    if (/^\d+\s*\/\s*\d+\s*hd$/.test(spec)) {
+      const [numerator, denominator] = spec.match(/\d+/g).map(Number);
+      saveLevel = Math.ceil(level * numerator / denominator);
+    } else if (/^2\s*[x×]\s*hd$/.test(spec)) saveLevel = level * 2;
+    else if (!/^hd$/.test(spec)) return null;
+    if (classKey) return { classKey, level: Math.max(1, Math.min(36, Math.round(saveLevel))), label: raw };
+  }
+
+  const fixed = raw.replace(/\b([CFMTEHD])l(\d+)\b/gi, "$11$2");
+  const match = fixed.match(/\b([CFMTEHD])\s*(\d+)\b/i);
+  if (!match) return null;
+  const classKey = MONSTER_SAVE_CLASSES[match[1].toUpperCase()];
+  if (!classKey) return null;
+  return { classKey, level: Math.max(1, Math.min(36, Number(match[2]))), label: raw };
+}
+
+/** Saving-throw targets a monster uses on the character save table. */
+export function monsterSaveTargets(saveAs, hd = "1") {
+  const parsed = parseMonsterSaveAs(saveAs, hd);
+  if (!parsed) return null;
+  if (parsed.classKey === "normalMan") return { ...NORMAL_MAN_SAVES };
+  return baseSaves(parsed.classKey, parsed.level);
+}
+
 const THIEF_KEYS = ["openLocks", "findTraps", "removeTraps", "climbWalls", "moveSilently", "hideInShadows", "pickPockets", "hearNoise"];
 
 export function baseThiefSkills(level) {
@@ -517,9 +580,13 @@ function splitModes(text) {
 function expandAttacks(mode) {
   const rows = [];
   for (const group of expandGroups(mode)) {
-    const match = group.match(/^(\d+)\s+(.+)$/);
-    const count = Math.max(1, Math.min(12, Number(match?.[1] ?? 1) || 1));
-    let name = fixDiceText(match?.[2] ?? group)
+    // OCR renders "8 tentacles" as a bare "8", and variable counts (Hydra)
+    // as "5-12 bites". Use the lowest count so every attack gets a button.
+    const range = group.match(/^(\d+)\s*-\s*(\d+)\s+(.+)$/);
+    const bare = group.match(/^(\d+)$/);
+    const match = range ?? group.match(/^(\d+)\s+(.+)$/);
+    const count = Math.max(1, Math.min(12, Number(match?.[1] ?? bare?.[1] ?? 1) || 1));
+    let name = fixDiceText(range ? range[3] : match?.[2] ?? (bare ? "Attack" : group))
       .replace(/[.:,]+$/, "")
       .replace(/^(?:per pack|each)\s+/i, "")
       .replace(/^[+\-\s]+/, "")

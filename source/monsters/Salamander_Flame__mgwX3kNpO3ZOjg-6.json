@@ -1,0 +1,57 @@
+{
+  "_id": "mgwX3kNpO3ZOjg-6",
+  "_key": "!actors!mgwX3kNpO3ZOjg-6",
+  "name": "Salamander (Flame)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/1d8",
+    "appearing": "1d4 + 1 (2d4)",
+    "saveAs": "F8",
+    "morale": 8,
+    "treasure": "F",
+    "intelligence": 1,
+    "alignment": "Neutral",
+    "xpValue": 1200,
+    "terrain": "Any",
+    "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "special": [
+      "Immune to normal weapons."
+    ],
+    "description": "Salamander (Flame) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Salamander (Flame)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

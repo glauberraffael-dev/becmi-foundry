@@ -1,0 +1,58 @@
+{
+  "_id": "ZX1UV9nL87L38o7j",
+  "_key": "!actors!ZX1UV9nL87L38o7j",
+  "name": "Hydra (6 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 5,
+    "hd": "6",
+    "hp": 48,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "6 bites",
+    "damage": "1d10/1d10/1d10/1d10/1d10/1d10",
+    "appearing": "1 (1)",
+    "saveAs": "F6",
+    "morale": 11,
+    "treasure": "B",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 275,
+    "terrain": "Any",
+    "monsterType": "Monster (Rare)",
+    "special": [
+      "One head (and 8 hp) is destroyed for every 8 damage taken."
+    ],
+    "description": "Hydra (6 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 48,
+        "max": 48
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Hydra (6 HD)",
+      "category": "Monster",
+      "variant": "",
+      "exactHp": true
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

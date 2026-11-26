@@ -1,0 +1,55 @@
+{
+  "_id": "3P9A1sPnff_sZsTd",
+  "_key": "!actors!3P9A1sPnff_sZsTd",
+  "name": "Animal Herd (2 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 7,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "1 attack (butt, bite, or kick, by species)",
+    "damage": "1d4",
+    "appearing": "0 (3d10)",
+    "saveAs": "F1",
+    "morale": 5,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 20,
+    "terrain": "Any",
+    "monsterType": "Normal Animal (Common)",
+    "special": [],
+    "description": "Animal Herd (2 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Animal Herd (2 HD)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

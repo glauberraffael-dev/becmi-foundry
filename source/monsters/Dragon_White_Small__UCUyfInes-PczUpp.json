@@ -1,0 +1,57 @@
+{
+  "_id": "UCUyfInes-PczUpp",
+  "_key": "!actors!UCUyfInes-PczUpp",
+  "name": "Dragon, White (Small)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/2d8",
+    "appearing": "1d4 (1d4)",
+    "saveAs": "F6",
+    "morale": 8,
+    "treasure": "H",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 725,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Cold cone; flying 240' (80')."
+    ],
+    "description": "Dragon, White (Small) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, White (Small)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

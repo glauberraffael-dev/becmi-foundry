@@ -1,0 +1,57 @@
+{
+  "_id": "9Cu4m3WmOFrYtPmj",
+  "_key": "!actors!9Cu4m3WmOFrYtPmj",
+  "name": "Gargantua (Carrion Crawler)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "25",
+    "hp": 113,
+    "move": {
+      "dungeon": 240,
+      "outdoor": 80
+    },
+    "attacks": "8 tentacles",
+    "damage": "1d4 + 1 each",
+    "appearing": "1 (1)",
+    "saveAs": "F13",
+    "morale": 11,
+    "treasure": "B x 4",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 6500,
+    "terrain": "Any",
+    "monsterType": "Lowlife (Very Rare)",
+    "special": [
+      "Paralysis: victims failing a save vs. paralysis are paralysed."
+    ],
+    "description": "Gargantua (Carrion Crawler) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 113,
+        "max": 113
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Gargantua (Carrion Crawler)",
+      "category": "Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "40077e3c19fe93b6"
+}

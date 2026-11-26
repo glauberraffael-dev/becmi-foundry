@@ -1,0 +1,57 @@
+{
+  "_id": "L2LV28ffwHf3pYnW",
+  "_key": "!actors!L2LV28ffwHf3pYnW",
+  "name": "Hag (Black, 19 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "19",
+    "hp": 86,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws or 1 spell",
+    "damage": "2d4 + poison or spell",
+    "appearing": "1 (1)",
+    "saveAs": "C (level = HD)",
+    "morale": 10,
+    "treasure": "C",
+    "intelligence": 12,
+    "alignment": "Chaotic",
+    "xpValue": 11550,
+    "terrain": "Any",
+    "monsterType": "Humanoid (Very Rare)",
+    "special": [
+      "Swimming 50' (20'); controls undead as a 2x-HD liege."
+    ],
+    "description": "Hag (Black, 19 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 86,
+        "max": 86
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Hag (Black, 19 HD)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

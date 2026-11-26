@@ -24,7 +24,7 @@
     "terrain": "Cavern, Ruins.",
     "monsterType": "Monster (Common).",
     "description": "A minotaur is a large man-shaped creature with the head, hide and temperament of a bull. It is larger than human size (standing 7-9' tall) and eats humans. It will attack anything its size or smaller and will pursue as long as its prey is in sight. Minotaurs are semi-intelligent and some use weapons, preferring a spear, club, or axe. When using weapons, minotaurs gain +2 to damage rolls due to their strength. On the round a minotaur uses a weapon, it cannot gore or bite. Minotaurs usually live in tunnels or mazes. Minotaurs of greater-than-normal intelligence can be spellcasters; see \"Monster Spellcasters\" later in this chapter.",
-    "special": "<p>Minotaurs of greater-than-normal intelligence can be spellcasters; see \"Monster Spellcasters\" later in this chapter.</p>",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Minotaurs of greater-than-normal intelligence can be spellcasters; see \"Monster Spellcasters\" later in this chapter.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,

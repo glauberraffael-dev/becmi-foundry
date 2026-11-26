@@ -1,6 +1,6 @@
 import {
   RC, adjustment, attackSpecFor, baseSaves, baseThiefSkills, computeArmorClass,
-  computeLoad, getRCClass, monsterThac0, normalizeClassKey, xpForNextLevel
+  computeLoad, getRCClass, monsterSaveTargets, monsterThac0, normalizeClassKey, xpForNextLevel
 } from "../rules-rc.mjs";
 
 const fields = () => foundry.data.fields;
@@ -344,5 +344,9 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
     // Current HP is the token-tracked value; never let it exceed the maximum.
     this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.max);
     this.attributes.thac0 = monsterThac0(this.hd);
+    const targets = monsterSaveTargets(this.saveAs, this.hd);
+    if (targets) {
+      for (const [key, value] of Object.entries(targets)) this.saves[key] = value;
+    }
   }
 }

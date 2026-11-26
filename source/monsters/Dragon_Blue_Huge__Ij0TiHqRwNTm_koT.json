@@ -1,0 +1,57 @@
+{
+  "_id": "Ij0TiHqRwNTm_koT",
+  "_key": "!actors!Ij0TiHqRwNTm_koT",
+  "name": "Dragon, Blue (Huge)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -4,
+    "hd": "18",
+    "hp": 81,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d10 + 3/1d10 + 3/3d10 + 8",
+    "appearing": "1d2 (1d2)",
+    "saveAs": "F36",
+    "morale": 10,
+    "treasure": "H x 3, I x 2",
+    "intelligence": 15,
+    "alignment": "Neutral",
+    "xpValue": 7525,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Lightning line; flying 360' (120')."
+    ],
+    "description": "Dragon, Blue (Huge) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 81,
+        "max": 81
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, Blue (Huge)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

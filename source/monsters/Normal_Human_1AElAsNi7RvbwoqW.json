@@ -7,40 +7,41 @@
   "system": {
     "ac": 9,
     "hd": "1",
-    "hp": 5,
+    "hp": 4,
     "move": {
-      "dungeon": 0,
-      "outdoor": 0
+      "dungeon": 120,
+      "outdoor": 40
     },
-    "attacks": "Weapons and spells",
-    "damage": "1d6 or weapons and spell effects",
-    "appearing": "1d4+4 (1d4+4)",
-    "saveAs": "NPC class and level",
+    "attacks": "1 weapon",
+    "damage": "By weapon",
+    "appearing": "1 (1)",
+    "saveAs": "F1",
     "morale": 8,
-    "treasure": "(U + V)",
-    "intelligence": 11,
-    "alignment": "Any",
+    "treasure": "By class",
+    "intelligence": 9,
+    "alignment": "Neutral",
     "xpValue": 16,
-    "terrain": "Settled.",
-    "monsterType": "Human (Common).",
-    "description": "The DM should select, rather than roll, a normal human's hit points, according to the character's age, health, and profession (1-7 hit points). For example, a blacksmith could have 7 hit points, but a young child or sickly beggar might have only 1 hit point. Most humans are \"normal\" humans and have little or no role in adventures. Some normal people belonging to specific professions or social classes (such as merchant, soldier, lord, scout, sage, healer, and so forth) are of help in some adventures. Soldiers and other fighting men will have higher morale. Typical normal humans are peasants, children, housewives, workers, artists, villagers, townspeople, fishermen, and scholars (also, see the entry for Men). NPC Party By NPC class Variable (M) Variable Weapons and spells ld6 or weapons and spell effects ld4+4 (ld4+4) NPC class and level Any Variable An NPC party is any group of nonplayer characters. Each NPC may be of any class, level, and alignment. All rules for player characters apply to NPCs. An NPC party may be created in great detail before a game or created on the spot. Most parties (whether NPCs or PCs) will not want to fight other parties, preferring monsters to challenge.",
-    "special": "<p>NPC Party By NPC class Variable (M) Variable Weapons and spells ld6 or weapons and spell effects ld4+4 (ld4+4) NPC class and level Any Variable An NPC party is any group of nonplayer characters.</p>",
+    "terrain": "Any",
+    "monsterType": "Humanoid",
+    "special": [],
+    "description": "Normal Human — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 5,
-        "max": 5
+        "value": 4,
+        "max": 4
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Normal Human",
-      "category": "Humanoid"
+      "category": "Humanoid",
+      "variant": "",
+      "exactHp": true
     }
   },
   "ownership": {

@@ -1,0 +1,57 @@
+{
+  "_id": "lTt0tlF14nCRWzdk",
+  "_key": "!actors!lTt0tlF14nCRWzdk",
+  "name": "Dragon, Black (Large)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "10+3",
+    "hp": 48,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d6 + 2/1d6 + 2/2d10 + 4",
+    "appearing": "1d3 (1d3)",
+    "saveAs": "F21",
+    "morale": 9,
+    "treasure": "H x 2, I",
+    "intelligence": 12,
+    "alignment": "Chaotic",
+    "xpValue": 3500,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Acid line; flying 300' (100')."
+    ],
+    "description": "Dragon, Black (Large) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 48,
+        "max": 48
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, Black (Large)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

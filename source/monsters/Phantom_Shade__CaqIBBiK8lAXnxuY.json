@@ -1,0 +1,57 @@
+{
+  "_id": "CaqIBBiK8lAXnxuY",
+  "_key": "!actors!CaqIBBiK8lAXnxuY",
+  "name": "Phantom (Shade)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "11",
+    "hp": 50,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 dagger",
+    "damage": "3d4",
+    "appearing": "1 (0)",
+    "saveAs": "T11",
+    "morale": 9,
+    "treasure": "L, N, V",
+    "intelligence": 10,
+    "alignment": "Chaotic",
+    "xpValue": 3500,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Rare)",
+    "special": [
+      "Ethereal at first; magical weapons needed to hit."
+    ],
+    "description": "Phantom (Shade) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 50,
+        "max": 50
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Phantom (Shade)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

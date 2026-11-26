@@ -1,0 +1,57 @@
+{
+  "_id": "yU2-8sth0bYKquih",
+  "_key": "!actors!yU2-8sth0bYKquih",
+  "name": "Elemental (Fire, Staff)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "8",
+    "hp": 36,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "1 or special",
+    "damage": "1d8",
+    "appearing": "1 (1)",
+    "saveAs": "F8",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 650,
+    "terrain": "Plane of Fire",
+    "monsterType": "Planar Monster, Enchanted (Common)",
+    "special": [
+      "Ignores normal weapons."
+    ],
+    "description": "Elemental (Fire, Staff) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 36,
+        "max": 36
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Elemental (Fire, Staff)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "b4pdyduH6d4R0EaY",
+  "_key": "!actors!b4pdyduH6d4R0EaY",
+  "name": "Phantom (Vision)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12",
+    "hp": 54,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "2-8 swords",
+    "damage": "1d8 each",
+    "appearing": "1 (1)",
+    "saveAs": "C12",
+    "morale": 12,
+    "treasure": "L, N, O",
+    "intelligence": 9,
+    "alignment": "Chaotic",
+    "xpValue": 3875,
+    "terrain": "Any",
+    "monsterType": "Undead, Enchanted (Rare)",
+    "special": [
+      "Ethereal at first; sight causes fear."
+    ],
+    "description": "Phantom (Vision) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Phantom (Vision)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

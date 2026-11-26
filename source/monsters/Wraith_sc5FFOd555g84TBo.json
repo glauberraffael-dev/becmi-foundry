@@ -24,8 +24,8 @@
     "terrain": "Ocean.",
     "monsterType": "Undead (Rare, Enchanted).",
     "description": "A wraith is an undead monster with no physical body, appearing as a pale, almost transparent, manlike figure of thick mist. A wraith is a spirit of the unhappy dead, selfishly holding itself to the Prime Plane by draining life from the living. Wraiths dwell in deserted lands or in the dwellings of creatures they have slain or driven away. Wraiths are immune to sleep, charm, and hold spells. A wraith can only be hit by silver or magical weapons, but silver weapons will only do half damage. The touch of a wraith is an energy drain of 1 level, in addition to causing 1d6 points of damage. A victim slain by a wraith will become a wraith in one day, under the control of the slayer. Terrain/Barren Lands, Ruins. Wyvern F4 E Chaotic A wyvern looks like a two-legged dragon with a long tail. Unlike dragons, wyverns are mostly brown, red, or rust-red in hue. These beasts prefer to live on cliffs or in forests, but may be found anywhere. In combat, the wyvern will bite and arch its tail over its head to hit opponents in front of it. Those stung by the tail must make a saving throw vs. poison or die. Like most dragon-kin, wyverns are carnivores. They prefer the taste of large herd-beasts such as",
-    "special": "<p>Wraiths are immune to sleep, charm, and hold spells. A wraith can only be hit by silver or magical weapons, but silver weapons will only do half damage. The touch of a wraith is an energy drain of 1 level, in addition to causing 1d6 points of damage.</p>",
-    "notes": "A wraith is an undead monster with no physi-",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Wraiths are immune to sleep, charm, and hold spells. A wraith can only be hit by silver or magical weapons, but silver weapons will only do half damage. The touch of a wraith is an energy drain of 1 level, in addition to causing 1d6 points of damage.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
+    "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {

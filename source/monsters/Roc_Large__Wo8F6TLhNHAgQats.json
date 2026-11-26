@@ -6,41 +6,43 @@
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "ac": 2,
-    "hd": "1",
-    "hp": 5,
+    "hd": "12",
+    "hp": 54,
     "move": {
       "dungeon": 60,
       "outdoor": 20
     },
-    "attacks": "2 claws/1 bite 2 claws/1 bite 2 claws/1 bite",
-    "damage": "1d4 + 1/1d4 + 1/2d6 `1d8/1d8/2d0 3d6/3d6/8d6`",
-    "appearing": "0(ldl2) 0(1d8) 0(1)",
-    "saveAs": "F3 F6 F18",
+    "attacks": "2 claws/1 bite",
+    "damage": "1d8/1d8/2d10",
+    "appearing": "0 (1d8)",
+    "saveAs": "F6",
     "morale": 9,
-    "treasure": "1 1",
+    "treasure": "Nil",
     "intelligence": 2,
     "alignment": "Lawful",
-    "xpValue": 1,
-    "terrain": "Mountains (lair); Any (hunting). _Load:_ A roc can carry up to 1,000 cn x its HD at full flying speed; 2,000 cn x its HD at half flying speed.",
-    "monsterType": "Monster (Rare).",
-    "description": "Rocs are huge birds of prey resembling eagles. They are very lawful, and are often unfriendly toward neutrals (-1 on reaction rolls) and chaotics (-2 on reactions). Rocs prefer solitude and will swoop to attack any intruders unless carefully approached. Their nests are in the highest mountains, and may Large F6 Lawful Giant F18 Lawful never check morale if encountered in their lair. If hatched or captured as chicks, young rocs can be trained as riding-beasts. at full flying speed; 2,000 cn x its HD at half flying speed. Barding Multiplier: Small Roc: x 3. Large Roc: x 5. Giant Roc: X 10.",
-    "special": "",
+    "xpValue": 1250,
+    "terrain": "Any",
+    "monsterType": "Monster (Rare)",
+    "special": [
+      "Flying: 480' (160')."
+    ],
+    "description": "Roc (Large) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 5,
-        "max": 5
+        "value": 54,
+        "max": 54
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Roc (Large)",
-      "category": "Monster"
+      "category": "Monster",
+      "variant": ""
     }
   },
   "ownership": {

@@ -1,0 +1,55 @@
+{
+  "_id": "DicBueFuPszEcPtk",
+  "_key": "!actors!DicBueFuPszEcPtk",
+  "name": "Snake (Rock Python)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite/1 squeeze",
+    "damage": "1d4/2d4",
+    "appearing": "1d3 (1d3)",
+    "saveAs": "F3",
+    "morale": 8,
+    "treasure": "U",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 300,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [],
+    "description": "Snake (Rock Python) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Snake (Rock Python)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

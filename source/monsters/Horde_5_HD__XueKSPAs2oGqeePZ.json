@@ -1,0 +1,57 @@
+{
+  "_id": "XueKSPAs2oGqeePZ",
+  "_key": "!actors!XueKSPAs2oGqeePZ",
+  "name": "Horde (5 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 bite or special",
+    "damage": "1d8",
+    "appearing": "2d4 (d100 x 10)",
+    "saveAs": "F5",
+    "morale": 12,
+    "treasure": "Special",
+    "intelligence": 13,
+    "alignment": "Lawful",
+    "xpValue": 300,
+    "terrain": "Plane of Earth",
+    "monsterType": "Planar Monster (Very Rare)",
+    "special": [
+      "ESP and telekinesis; normally fails saving throws voluntarily."
+    ],
+    "description": "Horde (5 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Horde (5 HD)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "Twmvae1AkCjQlUpG",
+  "_key": "!actors!Twmvae1AkCjQlUpG",
+  "name": "Spider, Giant (Black Widow)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "3",
+    "hp": 14,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 bite",
+    "damage": "2d6 + poison",
+    "appearing": "1d3 (1d3)",
+    "saveAs": "F2",
+    "morale": 8,
+    "treasure": "U",
+    "intelligence": 0,
+    "alignment": "Neutral",
+    "xpValue": 50,
+    "terrain": "Any",
+    "monsterType": "Lowlife (Rare)",
+    "special": [
+      "Poison: save vs. poison or die in 1 turn. Webbing acts as the web spell."
+    ],
+    "description": "Spider, Giant (Black Widow) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "max": 14
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Spider, Giant (Black Widow)",
+      "category": "Lowlife",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "15c341ade7785c67"
+}

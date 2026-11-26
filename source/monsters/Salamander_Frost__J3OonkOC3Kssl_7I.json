@@ -1,0 +1,57 @@
+{
+  "_id": "J3OonkOC3Kssl_7I",
+  "_key": "!actors!J3OonkOC3Kssl_7I",
+  "name": "Salamander (Frost)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 3,
+    "hd": "12",
+    "hp": 54,
+    "move": {
+      "dungeon": 120,
+      "outdoor": 40
+    },
+    "attacks": "4 claws/1 bite",
+    "damage": "1d6(x4)/2d6",
+    "appearing": "1d3 (1d3)",
+    "saveAs": "F12",
+    "morale": 9,
+    "treasure": "E",
+    "intelligence": 1,
+    "alignment": "Chaotic",
+    "xpValue": 2125,
+    "terrain": "Any",
+    "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "special": [
+      "Immune to normal weapons."
+    ],
+    "description": "Salamander (Frost) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Salamander (Frost)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

@@ -210,7 +210,8 @@ export function normalizeMonsterDocument(doc) {
       hd,
       // HD is a d8 count, so HP must be derived from it — OCR often stored
       // the HD number (or a concatenated "3+1" -> 31) directly in this field.
-      hp: monsterHpFromHitDice(hd),
+      // Curated entries whose RC text gives a fixed HP keep that value.
+      hp: doc.flags?.becmi?.exactHp ? Math.max(1, Number(raw.hp) || 1) : monsterHpFromHitDice(hd),
       move: {
         dungeon: numberInRange(raw.move?.dungeon, 0, 1000, 120),
         outdoor: numberInRange(raw.move?.outdoor, 0, 1000, 40)

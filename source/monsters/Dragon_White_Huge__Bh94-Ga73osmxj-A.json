@@ -1,0 +1,57 @@
+{
+  "_id": "Bh94-Ga73osmxj-A",
+  "_key": "!actors!Bh94-Ga73osmxj-A",
+  "name": "Dragon, White (Huge)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -1,
+    "hd": "12",
+    "hp": 54,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d8 + 2/1d8 + 2/2d8 + 8",
+    "appearing": "1d2 (1d2)",
+    "saveAs": "F36",
+    "morale": 10,
+    "treasure": "H x 3, I x 2",
+    "intelligence": 15,
+    "alignment": "Neutral",
+    "xpValue": 4750,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Cold cone; flying 360' (120')."
+    ],
+    "description": "Dragon, White (Huge) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, White (Huge)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}

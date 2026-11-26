@@ -23,7 +23,7 @@
     "xpValue": 650,
     "terrain": "Hill, Mountain",
     "monsterType": "Giant Humanoid",
-    "special": "<p>Thrown Boulders: 3d6 damage; range 30/60/100 yards.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Thrown Boulders:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 3d6 damage; range 30/60/100 yards.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Hill giants are 12-foot hairy brutes that wear animal skins and carry huge clubs and spears. They sometimes throw rocks (range 30/60/100) and raid human communities for food and plunder.",
     "notes": "",
     "source": "Rules Cyclopedia",

@@ -1,0 +1,55 @@
+{
+  "_id": "LxrW-wsbBhoXETh3",
+  "_key": "!actors!LxrW-wsbBhoXETh3",
+  "name": "Snake (Pit Viper)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 6,
+    "hd": "2",
+    "hp": 9,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 bite",
+    "damage": "1d4 + poison",
+    "appearing": "1d8 (1d8)",
+    "saveAs": "F1",
+    "morale": 7,
+    "treasure": "Nil",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 25,
+    "terrain": "Any",
+    "monsterType": "Normal Animal",
+    "special": [],
+    "description": "Snake (Pit Viper) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 9,
+        "max": 9
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Snake (Pit Viper)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

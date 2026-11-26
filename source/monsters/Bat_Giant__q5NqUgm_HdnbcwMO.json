@@ -6,41 +6,41 @@
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "ac": 6,
-    "hd": "1",
-    "hp": 5,
+    "hd": "2",
+    "hp": 9,
     "move": {
-      "dungeon": 9,
-      "outdoor": 3
+      "dungeon": 30,
+      "outdoor": 10
     },
-    "attacks": "Confusion 1 bite",
-    "damage": "Nil 1d4",
-    "appearing": "d100(d100) 1d10 (1d10)",
-    "saveAs": "Normal Man F1",
+    "attacks": "1 bite",
+    "damage": "1d4",
+    "appearing": "1d10 (1d10)",
+    "saveAs": "F1",
     "morale": 8,
-    "treasure": "Nil Nil",
+    "treasure": "Nil",
     "intelligence": 2,
     "alignment": "Neutral",
     "xpValue": 20,
-    "terrain": "Cavern, Ruins. _Load:_ Giant Bat: 500 cn at full speed; 1,000 cn at half speed.",
-    "monsterType": "Normal Bat: Normal Animal (Common); Giant Bat: Giant Animal (Common).",
-    "description": "These huge monsters are quite stupid and illtempered. They live in small families, sheltering in caves, and beating on one another when not hunting for meat. (They consider humans to be meat.) They love gems and jewelry and, if an offer is good enough, will accept such in return for not attacking travelers. Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die. However, the creature can choose to bite without using the poison, if desired. Rock baboons form packs of up to 30 members, each pack led by a dominant male. They are ferocious and have vicious tempers.",
-    "special": "<p>Athachs attack by bashing their opponents with thick tree stumps or stones and biting with their gnarled, poisonous tusklike teeth. Any victim bitten must make a saving throw vs. poison with a — 4 penalty or be helpless for 1d6 turns. Normally, any victim bitten must make a saving throw vs. poison with a -4 penalty to the roll, or die.</p>",
+    "terrain": "Any",
+    "monsterType": "Giant Animal",
+    "special": [],
+    "description": "Bat (Giant) — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
     "attributes": {
       "hp": {
-        "value": 5,
-        "max": 5
+        "value": 9,
+        "max": 9
       }
     }
   },
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Bat (Giant)",
-      "category": "Normal Animal"
+      "category": "Normal Animal",
+      "variant": ""
     }
   },
   "ownership": {

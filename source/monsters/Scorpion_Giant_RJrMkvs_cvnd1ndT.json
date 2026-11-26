@@ -13,18 +13,20 @@
       "outdoor": 50
     },
     "attacks": "2 claws/1 sting",
-    "damage": "1d0/ldl0/1d4 + poison",
-    "appearing": "1d6 (1d6) Save As* F2",
-    "saveAs": "F4",
+    "damage": "1d10/1d10/1d4 + poison",
+    "appearing": "1d6 (1d6)",
+    "saveAs": "F2",
     "morale": 11,
     "treasure": "V",
     "intelligence": 0,
     "alignment": "Neutral",
     "xpValue": 125,
-    "terrain": "Cavern, Desert, Ruins.",
-    "monsterType": "Lowlife (Rare).",
-    "description": "This monster appears as a human figure with skeletal hands and a skull head with flowing, white hair. A revener prowls dark, underground caverns and dust-filled tombs and crypts. When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). The lost sense may be chosen or randomly determined; subsequent hits always drain different senses. A restore spell will restore one lost sense. Taste: Victim cannot identify tastes (such as potions). Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls. Hearing: Victim cannot hear and loses the ability to speak clearly (may ruin spell casting). Touch: Victim's Dexterity drops by 4 points (and, if an elf, cannot find secret doors).",
-    "special": "<p>When it touches a victim, it drains one of the victim's senses permanently; the victim may make a saving throw vs. spells, success indicating that the loss is temporary (lasting only 2d6 rounds). A restore spell will restore one lost sense. Smell: Victim is immune to vile odor effects, but suffers a - 1 penalty to surprise rolls.</p>",
+    "terrain": "Desert, Cavern, Ruins",
+    "monsterType": "Lowlife (Rare)",
+    "special": [
+      "The sting carries poison."
+    ],
+    "description": "Scorpion, Giant — Rules Cyclopedia stat block.",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,
@@ -38,9 +40,9 @@
   "flags": {
     "becmi": {
       "source": "Rules Cyclopedia",
-      "variant": "",
       "key": "Scorpion, Giant",
-      "category": "Lowlife"
+      "category": "Lowlife",
+      "variant": ""
     }
   },
   "ownership": {

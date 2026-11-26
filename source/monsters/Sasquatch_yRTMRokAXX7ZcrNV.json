@@ -24,7 +24,7 @@
     "terrain": "Mountain, Woods.",
     "monsterType": "Humanoid (Rare).",
     "description": "Some rats carry diseases. Anyone bitten by a rat has a 1 in 20 chance of being infected. (This chance should be checked each time a rat successfully hits. If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison. If failed, the victim may die in 1d6 days (1 in 4 chance) or may be sick in bed for 1 month, unable to adventure. Normal Rats: Normal rats have gray or brown fur, and are from 6\" to 2' long. They attack in \"packs\" of 5-10 rats per pack. If there are more than 10 rats they will divide into packs of 10 or less and attack several creatures; one pack will only attack one creature at a time and makes one attack per round. Rats climb all over the creature they are attacking, often knocking the victim down.",
-    "special": "<p>If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison.</p>",
+    "special": "<p>&lt;p&gt;&amp;lt;p&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;If a rat is diseased, its XP award is 6.) The victim may still avoid the disease by making a saving throw vs. poison.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "notes": "",
     "source": "Rules Cyclopedia",
     "page": 0,

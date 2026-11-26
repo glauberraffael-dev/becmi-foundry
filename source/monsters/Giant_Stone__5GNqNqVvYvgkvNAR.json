@@ -23,7 +23,7 @@
     "xpValue": 900,
     "terrain": "Cave, Mountain",
     "monsterType": "Giant Humanoid",
-    "special": "<p>Thrown Boulders: 3d6 damage; range 100/200/300 yards.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Thrown Boulders:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; 3d6 damage; range 100/200/300 yards.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Stone giants are 14 feet tall with gray, rocklike skin and use large stalactites as clubs. They often hurl rocks and live in caves or crude stone huts, sometimes keeping 1d4 cave bears as guards.",
     "notes": "",
     "source": "Rules Cyclopedia",

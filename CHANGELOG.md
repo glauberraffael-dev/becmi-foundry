@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.19
+
+- Monsters now derive saving-throw targets from their `Save As` entry using the
+  Rules Cyclopedia character tables, including `Normal Man`, `F (level = HD)`,
+  `F (level = 1/2 HD)`, `F (level = 2 X HD)` and class/level shorthand. Monster
+  sheets show all five saves with roll buttons, plus one button per attack.
+- Rebuilt flattened multi-column monster variants from the page-ordered oracle:
+  dragons by age, gargantuas, giant fish/spiders/snakes/lizards, rocs, phantoms,
+  spirits, salamanders, hydras, giants, hags, vampires, slugs, hordes, liches,
+  aquatic dinosaurs, elementals, elemental rulers, hydraxes and herds. Each now
+  carries its own HD/HP/AC/XP/save and damage; ambiguous OCR strings no longer
+  leak into playable sheets.
+- Added `tools/test-monsters.mjs` and expanded the rule, data-model and sheet
+  tests to cover monster saves, HD formulas, THAC0, attack buttons and every
+  curated variant.
+
 ## 0.1.18
 
 - Fixed the character class selector: it is now a real form field, so choosing a

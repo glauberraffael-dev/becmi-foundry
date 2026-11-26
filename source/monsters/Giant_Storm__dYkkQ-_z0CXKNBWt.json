@@ -23,7 +23,7 @@
     "xpValue": 3750,
     "terrain": "Mountain, Cloud, Ocean",
     "monsterType": "Giant Humanoid",
-    "special": "<p>Lightning Bolt: Every 5 rounds in a storm; damage equals remaining HP (save vs. spells halves it).</p><p>Immunity: Lightning does not affect storm giants.</p><p>Thrown Boulders: 3d6 damage; range 150/300/450 yards.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Lightning Bolt:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; Every 5 rounds in a storm; damage equals remaining HP (save vs. spells halves it).&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Immunity: Lightning does not affect storm giants.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Thrown Boulders: 3d6 damage; range 150/300/450 yards.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Storm giants are over 22 feet tall with bronze skin and red or yellow hair. They love thunderstorms, can create one in a turn, and in a storm may throw a lightning bolt every five rounds for damage equal to their remaining hit points.",
     "notes": "",
     "source": "Rules Cyclopedia",

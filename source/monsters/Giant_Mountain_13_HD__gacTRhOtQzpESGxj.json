@@ -1,0 +1,55 @@
+{
+  "_id": "gacTRhOtQzpESGxj",
+  "_key": "!actors!gacTRhOtQzpESGxj",
+  "name": "Giant (Mountain, 13 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "13",
+    "hp": 59,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "1 weapon",
+    "damage": "5d10",
+    "appearing": "1d4 (1d20)",
+    "saveAs": "F (level = HD)",
+    "morale": 9,
+    "treasure": "E + 5,000 gp",
+    "intelligence": 10,
+    "alignment": "Neutral",
+    "xpValue": 2300,
+    "terrain": "Mountains",
+    "monsterType": "Giant Humanoid",
+    "special": [],
+    "description": "Giant (Mountain, 13 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 59,
+        "max": 59
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Giant (Mountain, 13 HD)",
+      "category": "Humanoid",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "e02bba7eeaaaa851"
+}

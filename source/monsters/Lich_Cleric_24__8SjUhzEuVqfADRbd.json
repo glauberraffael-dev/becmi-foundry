@@ -1,0 +1,57 @@
+{
+  "_id": "8SjUhzEuVqfADRbd",
+  "_key": "!actors!8SjUhzEuVqfADRbd",
+  "name": "Lich (Cleric 24)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "9d6+15",
+    "hp": 47,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 touch or 1 spell",
+    "damage": "1d10 + paralysis or by spell",
+    "appearing": "1 (1)",
+    "saveAs": "C24",
+    "morale": 10,
+    "treasure": "H",
+    "intelligence": 18,
+    "alignment": "Chaotic",
+    "xpValue": 17000,
+    "terrain": "Ruins",
+    "monsterType": "Undead, Enchanted (Very Rare)",
+    "special": [
+      "Magical weapon needed to hit; touch paralyzes (save vs. paralysis); spells by character level."
+    ],
+    "description": "Lich (Cleric 24) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 47,
+        "max": 47
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Lich (Cleric 24)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

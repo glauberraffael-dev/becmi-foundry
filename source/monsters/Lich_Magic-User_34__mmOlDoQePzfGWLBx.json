@@ -1,0 +1,57 @@
+{
+  "_id": "mmOlDoQePzfGWLBx",
+  "_key": "!actors!mmOlDoQePzfGWLBx",
+  "name": "Lich (Magic-User 34)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "9d4+25",
+    "hp": 48,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "1 touch or 1 spell",
+    "damage": "1d10 + paralysis or by spell",
+    "appearing": "1 (1)",
+    "saveAs": "M34",
+    "morale": 10,
+    "treasure": "H",
+    "intelligence": 18,
+    "alignment": "Chaotic",
+    "xpValue": 32000,
+    "terrain": "Ruins",
+    "monsterType": "Undead, Enchanted (Very Rare)",
+    "special": [
+      "Magical weapon needed to hit; touch paralyzes (save vs. paralysis); spells by character level."
+    ],
+    "description": "Lich (Magic-User 34) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 48,
+        "max": 48
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Lich (Magic-User 34)",
+      "category": "Undead",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "d7756e71a77efb17"
+}

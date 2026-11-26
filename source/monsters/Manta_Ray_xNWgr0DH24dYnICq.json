@@ -23,7 +23,7 @@
     "xpValue": 125,
     "terrain": "Ocean",
     "monsterType": "Normal Animal (Common)",
-    "special": "<p>Paralysis: A hit on the tail requires a saving throw vs. poison or the victim is paralysed.</p>",
+    "special": "<p><strong>&lt;p&gt;&lt;strong&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;lt;p&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;Paralysis:</strong> &lt;/strong&gt; &amp;lt;/strong&amp;gt; &amp;amp;lt;/strong&amp;amp;gt; A hit on the tail requires a saving throw vs. poison or the victim is paralysed.&amp;amp;amp;lt;/p&amp;amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;lt;/p&amp;gt;&lt;/p&gt;</p>",
     "description": "Manta rays are flat aquatic fish whose broad wings propel them through the water. A manta lying on the ocean floor is completely invisible. The normal manta grows to 7 feet wide and 12 feet long, and attacks with a tail full of poisonous spines.",
     "notes": "",
     "source": "Rules Cyclopedia",

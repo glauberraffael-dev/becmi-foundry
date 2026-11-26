@@ -1,0 +1,55 @@
+{
+  "_id": "ZVG-5TKpUfOITCtV",
+  "_key": "!actors!ZVG-5TKpUfOITCtV",
+  "name": "Lizard, Giant (Tuatara)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 4,
+    "hd": "6",
+    "hp": 27,
+    "move": {
+      "dungeon": 90,
+      "outdoor": 30
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d4/1d4/2d6",
+    "appearing": "1d2 (1d4)",
+    "saveAs": "F3",
+    "morale": 6,
+    "treasure": "V",
+    "intelligence": 2,
+    "alignment": "Neutral",
+    "xpValue": 275,
+    "terrain": "Any",
+    "monsterType": "Giant Animal",
+    "special": [],
+    "description": "Lizard, Giant (Tuatara) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 27,
+        "max": 27
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Lizard, Giant (Tuatara)",
+      "category": "Normal Animal",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "65abff4b71ab6a77"
+}

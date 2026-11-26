@@ -1,0 +1,57 @@
+{
+  "_id": "fAKAJNcvfJdXwmkq",
+  "_key": "!actors!fAKAJNcvfJdXwmkq",
+  "name": "Elemental (Earth, Device)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 0,
+    "hd": "12",
+    "hp": 54,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "1 or special",
+    "damage": "2d8",
+    "appearing": "1 (1)",
+    "saveAs": "F12",
+    "morale": 10,
+    "treasure": "Nil",
+    "intelligence": 9,
+    "alignment": "Neutral",
+    "xpValue": 1250,
+    "terrain": "Plane of Earth",
+    "monsterType": "Planar Monster, Enchanted (Common)",
+    "special": [
+      "Burrows through earth."
+    ],
+    "description": "Elemental (Earth, Device) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 54,
+        "max": 54
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Elemental (Earth, Device)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

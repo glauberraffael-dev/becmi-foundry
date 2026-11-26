@@ -1,0 +1,57 @@
+{
+  "_id": "p-HPtj3rvvwCo49W",
+  "_key": "!actors!p-HPtj3rvvwCo49W",
+  "name": "Hydrax (5 HD)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": 2,
+    "hd": "5",
+    "hp": 23,
+    "move": {
+      "dungeon": 60,
+      "outdoor": 20
+    },
+    "attacks": "2 claws or special",
+    "damage": "1d10/1d10 or see below",
+    "appearing": "1 (1)",
+    "saveAs": "F (level = 2 X HD)",
+    "morale": 9,
+    "treasure": "Special",
+    "intelligence": 9,
+    "alignment": "Lawful",
+    "xpValue": 425,
+    "terrain": "Plane of Water",
+    "monsterType": "Planar Monster, Enchanted (Very Rare)",
+    "special": [
+      "Swimming 180' (60'); immune to normal weapons."
+    ],
+    "description": "Hydrax (5 HD) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 23,
+        "max": 23
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Hydrax (5 HD)",
+      "category": "Planar Monster",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "032370bc632ec516"
+}

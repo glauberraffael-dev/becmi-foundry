@@ -1,0 +1,57 @@
+{
+  "_id": "rihjSoYOUYRr1GZD",
+  "_key": "!actors!rihjSoYOUYRr1GZD",
+  "name": "Dragon, Red (Huge)",
+  "type": "monster",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "ac": -5,
+    "hd": "20",
+    "hp": 90,
+    "move": {
+      "dungeon": 150,
+      "outdoor": 50
+    },
+    "attacks": "2 claws/1 bite",
+    "damage": "1d12 + 2/1d12 + 2/4d8 + 8",
+    "appearing": "1d2 (1d2)",
+    "saveAs": "F36",
+    "morale": 11,
+    "treasure": "H x 3, I x 2",
+    "intelligence": 15,
+    "alignment": "Chaotic",
+    "xpValue": 9575,
+    "terrain": "Any",
+    "monsterType": "Dragon",
+    "special": [
+      "Fire cone; flying 360' (120')."
+    ],
+    "description": "Dragon, Red (Huge) — Rules Cyclopedia stat block.",
+    "notes": "",
+    "source": "Rules Cyclopedia",
+    "page": 0,
+    "attributes": {
+      "hp": {
+        "value": 90,
+        "max": 90
+      }
+    }
+  },
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "key": "Dragon, Red (Huge)",
+      "category": "Dragon",
+      "variant": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "bar1": {
+      "attribute": "attributes.hp.value"
+    }
+  },
+  "folder": "b9a214ddebbb8a17"
+}
