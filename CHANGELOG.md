@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.26
+
+- Fixed cleric spell slots being read one level too low. The cleric table now
+  starts at level 1 like the magic-user table, so paladins, avengers, druids and
+  clerics use the Rules Cyclopedia progression exactly. The Core Rules
+  Reference level table matches the sheets again.
+
 ## 0.1.25
 
 - Name Level choices now persist through re-renders. Travelling paladins,

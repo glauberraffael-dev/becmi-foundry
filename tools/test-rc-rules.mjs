@@ -113,7 +113,8 @@ check("saves and thief skills come from the level tables", () => {
 });
 
 check("spell slots and spell lists use the extracted tables", () => {
-  assert.deepEqual(spellSlotsForLevel("cleric", 3), [2, 0, 0, 0, 0, 0, 0]);
+  assert.deepEqual(spellSlotsForLevel("cleric", 3), [2, 1, 0, 0, 0, 0, 0]);
+  assert.deepEqual(spellSlotsForLevel("cleric", 5).slice(0, 3), [2, 2, 1]);
   assert.deepEqual(spellSlotsForLevel("magic-user", 5).slice(0, 3), [2, 2, 1]);
   assert.equal(spellsFor("cleric", 1).length, 8);
   const key = spellKey(spellsFor("cleric", 1)[0]);

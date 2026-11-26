@@ -232,7 +232,8 @@ const data = {
   },
   classes,
   thief: DADOS.thief,
-  spellSlots: { cleric: DADOS.cleric, "magic-user": DADOS.mago },
+  // Both tables are indexed by level - 1; the cleric source has a leading empty row.
+  spellSlots: { cleric: DADOS.cleric.slice(1), "magic-user": DADOS.mago },
   turnUndead: {
     columns: raw.MV_COLS,
     rows: raw.MV.map(([name, values]) => ({ name, values: String(values).split(/\s+/) }))
