@@ -364,4 +364,46 @@ if (slotUpdates.length !== 1 || Object.keys(slotUpdates[0]["system.spellbook.use
   throw new Error(`rest did not clear slots and log to chat: ${JSON.stringify({ slotUpdates, chats })}`);
 }
 
-console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, monster rolls, name level, optional mastery and general skills, spell slots and Auto AC).");
+// The XP calculator is transient sheet state: it reads DOM inputs, never
+// submits them as actor fields, and only awards derived XP in edit mode.
+if (!body.includes('data-tab="xp"')
+  || !body.includes('data-action="calculateXp"')
+  || !body.includes('data-action="xpFromHd"')
+  || !body.includes('data-action="awardXp"')
+  || !body.includes('data-xp-input="monsterXp"')
+  || !body.includes('data-xp-input="applyLevelCap"')) {
+  throw new Error("the XP calculator tab, inputs or actions are missing from the sheet");
+}
+const xpFields = {
+  '[data-xp-input="monsterXp"]': { value: "1000" },
+  '[data-xp-input="participants"]': { value: "4" },
+  '[data-xp-input="applyPrimeRequisite"]': { checked: false },
+  '[data-xp-input="monsterHd"]': { value: "4" },
+  '[data-xp-input="monsterAsterisks"]': { value: "2" },
+  '[data-xp-input="monsterCount"]': { value: "3" }
+};
+sheet.element = { querySelector: (selector) => xpFields[selector] };
+sheet.xpInputs = {};
+sheet.editMode = false;
+await actions.calculateXp.call(sheet);
+if (sheet.xpInputs.monsterXp !== "1000" || sheet.xpInputs.participants !== "4"
+  || sheet.xpInputs.applyPrimeRequisite !== false) {
+  throw new Error(`XP calculator did not capture its inputs: ${JSON.stringify(sheet.xpInputs)}`);
+}
+await actions.xpFromHd.call(sheet);
+if (sheet.xpInputs.monsterXp !== "525") {
+  throw new Error(`the HD table lookup did not fill monster XP: ${sheet.xpInputs.monsterXp}`);
+}
+const xpUpdates = [];
+sheet.editMode = true;
+sheet.xpResult = { awardedXp: 990, finalXp: 990 };
+sheet.actor = {
+  async update(changes) { xpUpdates.push(changes); }
+};
+await actions.awardXp.call(sheet);
+if (xpUpdates.length !== 1 || xpUpdates[0]["system.attributes.xp"] !== 990
+  || "system.attributes.xpNext" in xpUpdates[0]) {
+  throw new Error(`XP award wrote the wrong fields: ${JSON.stringify(xpUpdates)}`);
+}
+
+console.log("Sheet handling OK (drops, invalid payloads, edit/use mode, HP tracking, class field, derived XP, XP calculator, monster rolls, name level, optional mastery and general skills, spell slots and Auto AC).");

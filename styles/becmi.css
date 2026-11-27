@@ -233,6 +233,71 @@
   justify-content: flex-start;
 }
 
+.becmi-xp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
+  align-items: start;
+}
+
+.becmi-xp-block {
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-paper-alt);
+}
+
+.becmi-xp-block legend {
+  padding: 0 0.25rem;
+  font-weight: 700;
+  color: var(--becmi-ink);
+}
+
+.becmi-xp-block .becmi-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.becmi-xp-block .becmi-field input,
+.becmi-xp-block .becmi-field select {
+  width: min(10rem, 55%);
+}
+
+.becmi-check {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.25rem 0;
+  color: var(--becmi-ink);
+}
+
+.becmi-xp-result {
+  margin-top: 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid var(--becmi-border);
+  background: var(--becmi-paper);
+}
+
+.becmi-xp-result .becmi-table th {
+  text-align: left;
+}
+
+.becmi-xp-result .becmi-xp-total th,
+.becmi-xp-result .becmi-xp-total td {
+  font-weight: 700;
+  color: var(--becmi-ink);
+}
+
+.becmi-xp-notes {
+  margin: 0.4rem 0;
+  padding-left: 1.2rem;
+  color: var(--becmi-muted);
+  font-size: 0.82rem;
+}
+
 .becmi-mode-toggle {
   background: var(--becmi-paper);
   border: 1px solid var(--becmi-border);

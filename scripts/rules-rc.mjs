@@ -82,6 +82,288 @@ export function levelForXp(classInfo, xp, currentLevel = 1) {
 }
 
 /* ------------------------------------------------------------------ *
+ * Experience awards (RC pp. 12, 127-129)                              *
+ * ------------------------------------------------------------------ */
+
+function abilityScore(abilities, key) {
+  const entry = abilities?.[key];
+  const value = Number(entry?.value ?? entry);
+  return Number.isFinite(value) ? value : NaN;
+}
+
+/**
+ * RC p. 12: the normal prime-requisite scale is -20% at 3-5, -10% at 6-8,
+ * none at 9-12, +5% at 13-15 and +10% at 16-18. Elves and halflings use
+ * combined requirements; mystics use Strength and acrobatic mystics take an
+ * extra -20% (p. 30). Returns an integer percentage.
+ */
+export function primeRequisiteBonus(classKey, abilities = {}, options = {}) {
+  if (options.apply === false) return 0;
+  const key = normalizeClassKey(classKey ?? options.classKey);
+  const step = (score) => {
+    if (!Number.isFinite(score)) return 0;
+    if (score <= 5) return -20;
+    if (score <= 8) return -10;
+    if (score >= 16) return 10;
+    if (score >= 13) return 5;
+    return 0;
+  };
+
+  let percent = 0;
+  if (key === "mystic") {
+    const str = abilityScore(abilities, "str");
+    if (Number.isFinite(str)) {
+      if (str <= 5) percent = -10;
+      else if (str <= 8) percent = -5;
+      else if (str >= 16) percent = 10;
+      else if (str >= 13) percent = 5;
+    }
+  } else if (key === "elf") {
+    const str = abilityScore(abilities, "str");
+    const int = abilityScore(abilities, "int");
+    if (str >= 13 && int >= 16) percent = 10;
+    else if (str >= 13 && int >= 13) percent = 5;
+  } else if (key === "halfling") {
+    const str = abilityScore(abilities, "str");
+    const dex = abilityScore(abilities, "dex");
+    if (str >= 13 && dex >= 13) percent = 10;
+    else if (str >= 13 || dex >= 13) percent = 5;
+  } else {
+    const requisites = {
+      cleric: "wis", fighter: "str", "magic-user": "int", thief: "dex",
+      dwarf: "str", druid: "wis", mystic: "str"
+    };
+    const attribute = requisites[key];
+    if (attribute) percent = step(abilityScore(abilities, attribute));
+  }
+
+  if (key === "mystic" && options.acrobatic) percent -= 20;
+  return percent;
+}
+
+/**
+ * RC p. 128, Experience Points for Monsters. A plus value is a separate
+ * category up to 9 HD; above 21 HD every extra die adds 250 to both columns.
+ */
+export const MONSTER_XP_TABLE = Object.freeze([
+  { hd: "Under 1", base: 5, asterisk: 1 },
+  { hd: "1", base: 10, asterisk: 3 },
+  { hd: "1+", base: 15, asterisk: 4 },
+  { hd: "2", base: 20, asterisk: 5 },
+  { hd: "2+", base: 25, asterisk: 10 },
+  { hd: "3", base: 35, asterisk: 15 },
+  { hd: "3+", base: 50, asterisk: 25 },
+  { hd: "4", base: 75, asterisk: 50 },
+  { hd: "4+", base: 125, asterisk: 75 },
+  { hd: "5", base: 175, asterisk: 125 },
+  { hd: "5+", base: 225, asterisk: 175 },
+  { hd: "6", base: 275, asterisk: 225 },
+  { hd: "6+", base: 350, asterisk: 300 },
+  { hd: "7", base: 450, asterisk: 400 },
+  { hd: "7+", base: 550, asterisk: 475 },
+  { hd: "8", base: 650, asterisk: 550 },
+  { hd: "8+", base: 775, asterisk: 625 },
+  { hd: "9", base: 900, asterisk: 700 },
+  { hd: "9+ to 10", base: 1000, asterisk: 750 },
+  { hd: "10+ to 11", base: 1100, asterisk: 800 },
+  { hd: "11+ to 12", base: 1250, asterisk: 875 },
+  { hd: "12+ to 13", base: 1350, asterisk: 950 },
+  { hd: "13+ to 14", base: 1500, asterisk: 1000 },
+  { hd: "14+ to 15", base: 1650, asterisk: 1050 },
+  { hd: "15+ to 16", base: 1850, asterisk: 1100 },
+  { hd: "16+ to 17", base: 2000, asterisk: 1150 },
+  { hd: "17+ to 18", base: 2125, asterisk: 1350 },
+  { hd: "18+ to 19", base: 2250, asterisk: 1550 },
+  { hd: "19+ to 20", base: 2375, asterisk: 1800 },
+  { hd: "20+ to 21", base: 2500, asterisk: 2000 }
+]);
+
+function monsterXpRow(hd) {
+  const raw = String(hd ?? "").replace(/\*/g, " ").replace(/\([^)]*\)/g, " ")
+    .replace(/\bhd\b/gi, " ").replace(/\s+/g, " ").trim().toLowerCase();
+  if (!raw || /under\s*1/.test(raw)) return { index: 0, extra: 0 };
+  if (/^\d+\s*\/\s*\d+$/.test(raw)) {
+    const [top, bottom] = raw.split("/").map(Number);
+    return { index: bottom > top ? 0 : 1, extra: 0 };
+  }
+
+  const band = raw.match(/^(\d+)\+\s*to\s*(\d+)$/);
+  if (band) {
+    const upper = Number(band[2]);
+    return { index: Math.max(18, Math.min(29, 18 + upper - 10)), extra: 0 };
+  }
+
+  // A trailing `+` is the table's plus category (1+, 2+, ...). A number with
+  // a positive adjustment (3+1) uses the same category; above 21 it counts as
+  // the next higher die for the 250-point increase.
+  const plusCategory = raw.match(/^(\d+)\s*\+$/);
+  if (plusCategory) {
+    const count = Number(plusCategory[1]);
+    if (count <= 8) return { index: 2 * count, extra: 0 };
+    if (count <= 20) return { index: 18 + count - 9, extra: 0 };
+    return { index: 29, extra: (count + 1 - 21) * 250 };
+  }
+
+  const parsed = parseMonsterHitDice(raw);
+  const count = Math.max(0, Number(parsed.count) || 0);
+  const adjustment = Number(parsed.adjustment) || 0;
+  const effective = count + (adjustment > 0 ? 1 : 0);
+  if (effective < 1) return { index: 0, extra: 0 };
+  if (effective === 1) return { index: adjustment > 0 ? 2 : 1, extra: 0 };
+  if (effective <= 8) return { index: adjustment > 0 ? 2 * effective : 2 * effective - 1, extra: 0 };
+  if (effective === 9) return { index: adjustment > 0 ? 18 : 17, extra: 0 };
+  if (effective <= 21) return { index: 18 + effective - 10, extra: 0 };
+  return { index: 29, extra: (effective - 21) * 250 };
+}
+
+/** Resolve the RC monster XP value from a Hit Dice entry and asterisk count. */
+export function monsterXpValue(hd, asterisks) {
+  const raw = String(hd ?? "");
+  const explicit = Number(asterisks);
+  const count = Number.isFinite(explicit)
+    ? Math.max(0, Math.floor(explicit))
+    : (raw.match(/\*/g) ?? []).length;
+  const { index, extra } = monsterXpRow(raw);
+  const row = MONSTER_XP_TABLE[index];
+  const base = row.base + extra;
+  const bonus = row.asterisk + extra;
+  return {
+    hd: raw,
+    row: row.hd,
+    base,
+    bonusPerAsterisk: bonus,
+    asterisks: count,
+    xp: base + bonus * count
+  };
+}
+
+/**
+ * RC p. 12/p. 129: at most one level per adventure. Excess XP is retained
+ * only up to one point below the threshold for the second level ahead.
+ */
+export function capXpAdvancement({ classInfo = {}, currentXp = 0, awardedXp = 0, level = 1, applyCap = true } = {}) {
+  const awarded = Math.max(0, Number(awardedXp) || 0);
+  if (!applyCap) return { awarded, lost: 0, capped: false };
+  const max = Math.max(1, Number(classInfo.maxLevel)
+    || getRCClass(classInfo.key ?? classInfo.name)?.maxLevel || 36);
+  const current = Math.max(1, Number(level) || 1);
+  if (current >= max) return { awarded, lost: 0, capped: false };
+
+  const thresholds = xpThresholds(classInfo, max);
+  const second = thresholds[current];
+  if (!Number.isFinite(second)) return { awarded, lost: 0, capped: false };
+  const total = Math.max(0, Number(currentXp) || 0) + awarded;
+  if (total < second) return { awarded, lost: 0, capped: false };
+
+  const kept = Math.max(0, second - 1 - Math.max(0, Number(currentXp) || 0));
+  return { awarded: kept, lost: Math.max(0, awarded - kept), capped: true, capTotal: second - 1 };
+}
+
+const nonNegative = (value) => Math.max(0, Number(value) || 0);
+const countOf = (value) => Math.max(0, Math.floor(Number(value) || 0));
+
+/**
+ * Full RC XP calculation for one character. Monetary treasure is 1 XP per gp
+ * value kept (p. 128); role-playing, exceptional actions and exceptional skill
+ * use are each worth 1/20 of the XP needed for the next level (pp. 127-129).
+ */
+export function calculateXpAward(input = {}) {
+  const classInfo = input.classInfo ?? {};
+  const classKey = normalizeClassKey(classInfo.key ?? classInfo.name ?? input.classKey);
+  const currentXp = nonNegative(input.currentXp);
+  const currentLevel = Math.max(1, Number(input.level) || 1);
+  const fromLevel = levelForXp(classInfo, currentXp, currentLevel);
+  const participants = Math.max(1, countOf(input.participants) || 1);
+
+  const groupMonsterXp = nonNegative(input.monsterXp);
+  const defeated = input.outcome !== "defeat" && input.outcome !== "retreat";
+  const monsterShare = (groupMonsterXp / participants) * (defeated ? 1 : 0.25);
+
+  const treasureGp = nonNegative(input.treasureGp);
+  const treasurePerCharacter = input.splitTreasure ? treasureGp / participants : treasureGp;
+  const soldItems = Array.isArray(input.magicItemsSold)
+    ? input.magicItemsSold
+    : (nonNegative(input.magicCreationGp) ? [{ creationCostGp: input.magicCreationGp }] : []);
+  const magicSaleXp = soldItems.reduce((sum, item) => sum + Math.min(
+    item?.saleValueGp === undefined ? Infinity : nonNegative(item.saleValueGp),
+    nonNegative(item?.creationCostGp) * 0.1
+  ), 0);
+
+  const isMystic = classKey === "mystic";
+  const donated = Boolean(input.mysticTreasureDonated);
+  const treasureXp = isMystic && !donated ? 0 : treasurePerCharacter + magicSaleXp;
+
+  const goalXp = input.goalXp === undefined || input.goalXp === "" || input.goalXp === null
+    ? monsterShare : nonNegative(input.goalXp);
+
+  const nextLevelXp = xpForNextLevel(classInfo, fromLevel) ?? 0;
+  const exceptionalUnit = Math.round(nextLevelXp / 20);
+  const roleplayCount = Math.min(1, countOf(input.roleplayAwards));
+  const actionCount = countOf(input.exceptionalActions) + countOf(input.exceptionalSkillUses);
+  const roleplayXp = roleplayCount * exceptionalUnit;
+  const exceptionalXp = actionCount * exceptionalUnit;
+
+  const baseXp = monsterShare + treasureXp + goalXp + roleplayXp + exceptionalXp
+    + nonNegative(input.otherXp);
+  const roundedBase = Math.round(baseXp);
+  const percent = primeRequisiteBonus(classKey, input.abilities, {
+    apply: input.applyPrimeRequisite !== false,
+    acrobatic: Boolean(input.acrobaticMystic)
+  });
+  const primeXp = Math.round(roundedBase * percent / 100);
+  const earned = Math.max(0, roundedBase + primeXp);
+
+  const cap = capXpAdvancement({
+    classInfo,
+    currentXp,
+    awardedXp: earned,
+    level: fromLevel,
+    applyCap: input.applyLevelCap !== false
+  });
+  const finalXp = currentXp + cap.awarded;
+  const finalLevel = levelForXp(classInfo, finalXp, fromLevel);
+  const notes = [];
+  if (defeated) notes.push(`Monsters: ${groupMonsterXp} XP split among ${participants} participants.`);
+  else notes.push(`Failed to defeat the monsters: one-quarter of the calculated monster XP.`);
+  if (input.splitTreasure) notes.push(`Treasure value divided among ${participants} participants.`);
+  if (magicSaleXp > 0) notes.push(`Magical item sale XP capped at 10% of creation cost.`);
+  if (isMystic && treasureGp > 0) {
+    notes.push(donated
+      ? "Mystic treasure counts only when donated to the needy; 10% must be tithed to the cloister."
+      : "Mystics earn no XP from treasure unless it is donated to the needy.");
+  }
+  if (percent) notes.push(`Prime requisite: ${percent > 0 ? "+" : ""}${percent}% to all XP earned.`);
+  if (cap.capped) notes.push(`Maximum one level per adventure: ${cap.lost} XP lost.`);
+
+  return {
+    classKey,
+    fromLevel,
+    nextLevelXp,
+    exceptionalUnit,
+    participants,
+    monsterXp: groupMonsterXp,
+    monsterShare: Math.round(monsterShare * 100) / 100,
+    treasureXp: Math.round(treasureXp * 100) / 100,
+    goalXp: Math.round(goalXp * 100) / 100,
+    roleplayXp,
+    exceptionalXp,
+    otherXp: nonNegative(input.otherXp),
+    baseXp: roundedBase,
+    primePercent: percent,
+    primeXp,
+    earnedXp: earned,
+    awardedXp: cap.awarded,
+    lostXp: cap.lost,
+    capped: cap.capped,
+    currentXp,
+    finalXp,
+    finalLevel,
+    levelGained: Math.max(0, finalLevel - fromLevel),
+    notes
+  };
+}
+
+/* ------------------------------------------------------------------ *
  * Attack table (p. 106): a master sequence indexed by the "anchor".   *
  * ------------------------------------------------------------------ */
 

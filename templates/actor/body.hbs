@@ -214,6 +214,75 @@
   </div>
 </section>
 
+<!-- ============================ XP CALCULATOR ============================ -->
+<section class="becmi-tab-panel{{#if (eq activeTab "xp")}} is-active{{/if}}" data-tab="xp">
+  <h2 class="becmi-section-title">{{localize 'BECMI.sheet.xpCalculator'}}</h2>
+  <p class="becmi-hint">{{localize 'BECMI.sheet.xpHint'}}</p>
+  <div class="becmi-xp-grid">
+    <fieldset class="becmi-xp-block">
+      <legend>{{localize 'BECMI.sheet.xpMonsters'}}</legend>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpMonsterTotal'}}:</label><input type="number" min="0" data-xp-input="monsterXp" value="{{xpCalc.inputs.monsterXp}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpOutcome'}}:</label>
+        <select data-xp-input="outcome">
+          <option value="victory"{{#if (eq xpCalc.inputs.outcome "victory")}} selected{{/if}}>{{localize 'BECMI.sheet.xpVictory'}}</option>
+          <option value="defeat"{{#if (eq xpCalc.inputs.outcome "defeat")}} selected{{/if}}>{{localize 'BECMI.sheet.xpDefeat'}}</option>
+        </select>
+      </div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpParticipants'}}:</label><input type="number" min="1" data-xp-input="participants" value="{{xpCalc.inputs.participants}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.hd'}}:</label><input type="text" data-xp-input="monsterHd" value="{{xpCalc.inputs.monsterHd}}" placeholder="4**"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpAsterisks'}}:</label><input type="number" min="0" data-xp-input="monsterAsterisks" value="{{xpCalc.inputs.monsterAsterisks}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.labels.quantity'}}:</label><input type="number" min="0" data-xp-input="monsterCount" value="{{xpCalc.inputs.monsterCount}}"></div>
+      <button type="button" class="becmi-roll" data-action="xpFromHd">{{localize 'BECMI.sheet.xpUseHdTable'}}</button>
+    </fieldset>
+
+    <fieldset class="becmi-xp-block">
+      <legend>{{localize 'BECMI.sheet.xpTreasure'}}</legend>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpTreasureGp'}}:</label><input type="number" min="0" data-xp-input="treasureGp" value="{{xpCalc.inputs.treasureGp}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-xp-input="splitTreasure"{{#if xpCalc.inputs.splitTreasure}} checked{{/if}}> {{localize 'BECMI.sheet.xpSplitTreasure'}}</label>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpMagicCost'}}:</label><input type="number" min="0" data-xp-input="magicCreationGp" value="{{xpCalc.inputs.magicCreationGp}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpMagicSale'}}:</label><input type="number" min="0" data-xp-input="magicSaleValueGp" value="{{xpCalc.inputs.magicSaleValueGp}}" placeholder="optional"></div>
+      {{#if xpCalc.isMystic}}
+      <label class="becmi-check"><input type="checkbox" data-xp-input="mysticTreasureDonated"{{#if xpCalc.inputs.mysticTreasureDonated}} checked{{/if}}> {{localize 'BECMI.sheet.xpMysticDonated'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-xp-input="acrobaticMystic"{{#if xpCalc.inputs.acrobaticMystic}} checked{{/if}}> {{localize 'BECMI.sheet.xpAcrobaticMystic'}}</label>
+      {{/if}}
+    </fieldset>
+
+    <fieldset class="becmi-xp-block">
+      <legend>{{localize 'BECMI.sheet.xpOtherAwards'}}</legend>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpGoal'}}:</label><input type="number" min="0" data-xp-input="goalXp" value="{{xpCalc.inputs.goalXp}}" placeholder="{{xpCalc.result.monsterShare}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpRoleplay'}}:</label><input type="number" min="0" max="1" data-xp-input="roleplayAwards" value="{{xpCalc.inputs.roleplayAwards}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpExceptional'}}:</label><input type="number" min="0" data-xp-input="exceptionalActions" value="{{xpCalc.inputs.exceptionalActions}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpSkillUse'}}:</label><input type="number" min="0" data-xp-input="exceptionalSkillUses" value="{{xpCalc.inputs.exceptionalSkillUses}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.sheet.xpOther'}}:</label><input type="number" min="0" data-xp-input="otherXp" value="{{xpCalc.inputs.otherXp}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-xp-input="applyPrimeRequisite"{{#if xpCalc.inputs.applyPrimeRequisite}} checked{{/if}}> {{localize 'BECMI.sheet.xpApplyPrime'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-xp-input="applyLevelCap"{{#if xpCalc.inputs.applyLevelCap}} checked{{/if}}> {{localize 'BECMI.sheet.xpApplyCap'}}</label>
+    </fieldset>
+  </div>
+
+  <div class="becmi-xp-result">
+    <button type="button" class="becmi-roll" data-action="calculateXp">{{localize 'BECMI.sheet.xpCalculate'}}</button>
+    <table class="becmi-table">
+      <tbody>
+        <tr><th>{{localize 'BECMI.sheet.xpMonsterShare'}}</th><td class="becmi-derived">{{xpCalc.result.monsterShare}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpTreasure'}}</th><td class="becmi-derived">{{xpCalc.result.treasureXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpGoal'}}</th><td class="becmi-derived">{{xpCalc.result.goalXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpRoleplay'}}</th><td class="becmi-derived">{{xpCalc.result.roleplayXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpExceptional'}}</th><td class="becmi-derived">{{xpCalc.result.exceptionalXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpPrime'}} ({{xpCalc.result.primePercent}}%)</th><td class="becmi-derived">{{xpCalc.result.primeXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpBase'}}</th><td class="becmi-derived">{{xpCalc.result.baseXp}}</td></tr>
+        <tr class="becmi-xp-total"><th>{{localize 'BECMI.sheet.xpAward'}}</th><td class="becmi-derived">{{xpCalc.result.awardedXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.labels.xp'}}</th><td class="becmi-derived">{{xpCalc.result.currentXp}} → {{xpCalc.result.finalXp}}</td></tr>
+        <tr><th>{{localize 'BECMI.sheet.xpLevel'}}</th><td class="becmi-derived">{{xpCalc.result.fromLevel}} → {{xpCalc.result.finalLevel}} (+{{xpCalc.result.levelGained}})</td></tr>
+      </tbody>
+    </table>
+    <p class="becmi-hint">{{localize 'BECMI.sheet.xpNextBase'}}: {{xpCalc.result.nextLevelXp}} · {{localize 'BECMI.sheet.xpBonusUnit'}}: {{xpCalc.result.exceptionalUnit}}</p>
+    <ul class="becmi-xp-notes">
+      {{#each xpCalc.result.notes as |note|}}<li>{{note}}</li>{{/each}}
+    </ul>
+    <button type="button" class="becmi-roll" data-action="awardXp"{{#unless xpCalc.canAward}} disabled{{/unless}}>{{localize 'BECMI.sheet.xpAward'}}</button>
+  </div>
+</section>
+
 <!-- ============================ EQUIPMENT ============================ -->
 <section class="becmi-tab-panel{{#if (eq activeTab "equipment")}} is-active{{/if}}" data-tab="equipment">
   {{> "systems/becmi/templates/actor/parts/equipment.hbs"}}

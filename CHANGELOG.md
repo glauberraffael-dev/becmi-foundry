@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.31
+
+- Added a Rules Cyclopedia **XP Calculator** tab to character sheets. It takes
+  monster XP (or looks it up from Hit Dice and asterisks), treasure value,
+  goals, one role-playing award per session, exceptional actions/skill uses,
+  participants and outcome, then shows every component and the final award.
+- Applied the RC prime-requisite scale per class (`-20%/-10%/+5%/+10%`), the
+  elf/halfling/mystic variations (including the acrobatic mystic's extra
+  `-20%`), the 1/4 award for driven-off foes, the 10%-of-creation-cost cap on
+  sold magic items, and the mystic donation rule. The calculator stops at one
+  level per adventure and discards XP past one point below the next-next level.
+  `xpNext` stays derived and read-only; calculator fields are never stored on
+  the Actor, and only the final calculated XP can be awarded in edit mode.
+- Replaced the inaccurate “13+ grants 5%, 9- grants 10%” text in the Core Rules
+  Reference and Experience journal with the RC award and prime-requisite rules.
+
 ## 0.1.30
 
 - Rebuilt the spell descriptions from the Rules Cyclopedia PDF text layer. The

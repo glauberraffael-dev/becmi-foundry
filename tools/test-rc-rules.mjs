@@ -12,13 +12,13 @@ import {
 } from "../scripts/mastery.mjs";
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
-  baseSaves, baseThiefSkills, chooseDamage, computeArmorClass, computeLoad,
-  equippedAcBonus, equippedSaveBonuses, finalDamage, generalSkillInfo, generalSkillSlots,
-  GENERAL_SKILLS, hpForLevel, masteryChoices, masteryData,
-  masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula, monsterHpFormula, monsterHpFromHitDice,
-  monsterSaveTargets, monsterSpellcasterInfo, monsterThac0, normalizeClassKey,
-  parseMonsterHitDice, parseMonsterSaveAs,
-  planAbilityAdjustment, resolveTurnResult,
+  baseSaves, baseThiefSkills, calculateXpAward, capXpAdvancement, chooseDamage,
+  computeArmorClass, computeLoad, equippedAcBonus, equippedSaveBonuses, finalDamage,
+  generalSkillInfo, generalSkillSlots, GENERAL_SKILLS, hpForLevel, masteryChoices,
+  masteryData, masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula,
+  monsterHpFormula, monsterHpFromHitDice, monsterSaveTargets, monsterSpellcasterInfo,
+  monsterThac0, monsterXpValue, MONSTER_XP_TABLE, normalizeClassKey, parseMonsterHitDice,
+  parseMonsterSaveAs, planAbilityAdjustment, primeRequisiteBonus, resolveTurnResult,
   rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
   turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
 } from "../scripts/rules-rc.mjs";
@@ -64,6 +64,97 @@ check("XP thresholds drive automatic level advancement", () => {
   const broken = { maxLevel: 4, xpTable: { 1: 0, 2: 1000, 3: 500, 4: 3000 } };
   assert.deepEqual(xpThresholds(broken), [1000, 1001, 3000]);
   assert.equal(levelForXp(broken, 1001, 1), 3);
+});
+
+check("prime requisite bonuses follow the RC class table", () => {
+  assert.equal(primeRequisiteBonus("fighter", { str: { value: 4 } }), -20);
+  assert.equal(primeRequisiteBonus("fighter", { str: { value: 7 } }), -10);
+  assert.equal(primeRequisiteBonus("fighter", { str: { value: 11 } }), 0);
+  assert.equal(primeRequisiteBonus("cleric", { wis: { value: 14 } }), 5);
+  assert.equal(primeRequisiteBonus("magic-user", { int: { value: 17 } }), 10);
+  assert.equal(primeRequisiteBonus("thief", { dex: { value: 5 } }), -20);
+  assert.equal(primeRequisiteBonus("elf", { str: { value: 16 }, int: { value: 14 } }), 5);
+  assert.equal(primeRequisiteBonus("elf", { str: { value: 16 }, int: { value: 17 } }), 10);
+  assert.equal(primeRequisiteBonus("elf", { str: { value: 16 }, int: { value: 10 } }), 0);
+  assert.equal(primeRequisiteBonus("halfling", { str: { value: 14 }, dex: { value: 10 } }), 5);
+  assert.equal(primeRequisiteBonus("halfling", { str: { value: 14 }, dex: { value: 15 } }), 10);
+  assert.equal(primeRequisiteBonus("mystic", { str: { value: 7 } }), -5);
+  assert.equal(primeRequisiteBonus("mystic", { str: { value: 14 } }, { acrobatic: true }), -15);
+  assert.equal(primeRequisiteBonus("fighter", { str: { value: 18 } }, { apply: false }), 0);
+});
+
+check("monster XP table resolves Hit Dice and asterisks", () => {
+  assert.equal(MONSTER_XP_TABLE.length, 30);
+  assert.equal(monsterXpValue("Under 1").xp, 5);
+  assert.equal(monsterXpValue("1", 2).xp, 16);
+  assert.equal(monsterXpValue("4**").xp, 175);
+  assert.equal(monsterXpValue("9+ to 10", 1).xp, 1750);
+  assert.deepEqual(monsterXpValue("23+1 HD"), {
+    hd: "23+1 HD", row: "20+ to 21", base: 3250, bonusPerAsterisk: 2750,
+    asterisks: 0, xp: 3250
+  });
+});
+
+check("XP awards combine RC sources, prime requisites and the level cap", () => {
+  const fighter = { ...RC.classes.fighter, key: "fighter" };
+  const award = calculateXpAward({
+    classInfo: fighter,
+    abilities: { str: { value: 16 } },
+    level: 1,
+    currentXp: 0,
+    monsterXp: 1000,
+    participants: 4,
+    treasureGp: 200,
+    goalXp: 250,
+    roleplayAwards: 2, // capped at one role-playing bonus per session
+    exceptionalActions: 1
+  });
+  assert.equal(award.monsterShare, 250);
+  assert.equal(award.roleplayXp, 100);
+  assert.equal(award.exceptionalXp, 100);
+  assert.equal(award.baseXp, 900);
+  assert.equal(award.primePercent, 10);
+  assert.equal(award.earnedXp, 990);
+  assert.equal(award.finalXp, 990);
+
+  const defeat = calculateXpAward({
+    classInfo: fighter, level: 1, currentXp: 0, monsterXp: 1000,
+    participants: 1, goalXp: 0, applyPrimeRequisite: false,
+    applyLevelCap: false, outcome: "defeat"
+  });
+  assert.equal(defeat.baseXp, 250);
+
+  const capped = calculateXpAward({
+    classInfo: fighter, level: 1, currentXp: 0, monsterXp: 10000,
+    participants: 1, goalXp: 0, applyPrimeRequisite: false
+  });
+  assert.equal(capped.capped, true);
+  assert.equal(capped.awardedXp, 3999);
+  assert.equal(capped.lostXp, 6001);
+  assert.equal(capped.finalXp, 3999);
+
+  const maximum = calculateXpAward({
+    classInfo: fighter, level: 36, currentXp: 3480000, monsterXp: 1000,
+    participants: 1, goalXp: 0, applyPrimeRequisite: false
+  });
+  assert.equal(maximum.capped, false);
+  assert.equal(maximum.awardedXp, 1000);
+
+  assert.equal(capXpAdvancement({
+    classInfo: fighter, level: 1, currentXp: 1000, awardedXp: 1000
+  }).awarded, 1000);
+});
+
+check("mystics only gain treasure XP when it is donated", () => {
+  const mystic = { ...RC.classes.mystic, key: "mystic" };
+  const base = {
+    classInfo: mystic, abilities: { str: { value: 10 } }, level: 1,
+    currentXp: 0, treasureGp: 1000, goalXp: 0, applyPrimeRequisite: false,
+    applyLevelCap: false
+  };
+  assert.equal(calculateXpAward({ ...base, mysticTreasureDonated: false }).treasureXp, 0);
+  assert.equal(calculateXpAward({ ...base, mysticTreasureDonated: true }).treasureXp, 1000);
+  assert.equal(capXpAdvancement({ classInfo: mystic, level: 16, awardedXp: 500 }).awarded, 500);
 });
 
 check("class abilities include backstab, demihuman and mystic features", () => {

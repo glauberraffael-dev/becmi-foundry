@@ -7,10 +7,10 @@ import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
 import { hasMasteryRows } from "../mastery.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
-  RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, equippedAcBonus, getRCClass,
-  generalSkillInfo, hpForLevel, masteryData, masteryRanks, masteryWeapon, masteryChoices,
-  monsterAttackRows, monsterSpellcasterInfo, normalizeClassKey, spellKey, spellSlotsForLevel,
-  spellsFor, turnUndeadColumn
+  RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, calculateXpAward,
+  equippedAcBonus, getRCClass, generalSkillInfo, hpForLevel, masteryData, masteryRanks,
+  masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo, monsterXpValue,
+  normalizeClassKey, spellKey, spellSlotsForLevel, spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -22,6 +22,56 @@ const SAVES = ["deathRay", "magicWand", "paralysis", "breath", "spells"];
 /** HP tracking is the only sheet data a player may change in use mode. */
 const TRACKING_FIELDS = new Set(["system.attributes.hp.value"]);
 const HP_FIELDS = ["system.attributes.hp", "system.attributes.hp.value", "system.attributes.hp.max"];
+
+/** Calculator inputs are UI state only; they never become Actor data. */
+const XP_CALC_DEFAULTS = Object.freeze({
+  monsterXp: 0,
+  outcome: "victory",
+  participants: 1,
+  treasureGp: 0,
+  splitTreasure: true,
+  magicCreationGp: 0,
+  magicSaleValueGp: "",
+  goalXp: "",
+  roleplayAwards: 0,
+  exceptionalActions: 0,
+  exceptionalSkillUses: 0,
+  otherXp: 0,
+  applyPrimeRequisite: true,
+  acrobaticMystic: false,
+  mysticTreasureDonated: false,
+  applyLevelCap: true,
+  monsterHd: "",
+  monsterAsterisks: 0,
+  monsterCount: 1
+});
+
+function xpInputValue(element, key, fallback) {
+  const raw = element?.querySelector(`[data-xp-input="${key}"]`)?.value;
+  return raw === undefined || raw === "" ? fallback : raw;
+}
+
+function xpInputChecked(element, key, fallback) {
+  const input = element?.querySelector(`[data-xp-input="${key}"]`);
+  return input ? Boolean(input.checked) : fallback;
+}
+
+function readXpInputs(element, previous = {}) {
+  return Object.fromEntries(Object.entries(XP_CALC_DEFAULTS).map(([key, fallback]) => {
+    const stored = previous[key] ?? fallback;
+    return [key, typeof fallback === "boolean"
+      ? xpInputChecked(element, key, stored)
+      : xpInputValue(element, key, stored)];
+  }));
+}
+
+function xpSoldItems(inputs) {
+  const creationCostGp = Number(inputs.magicCreationGp) || 0;
+  if (creationCostGp <= 0) return [];
+  const sale = inputs.magicSaleValueGp === "" || inputs.magicSaleValueGp === null
+    ? undefined : Number(inputs.magicSaleValueGp) || 0;
+  return [{ creationCostGp, saleValueGp: sale }];
+}
 
 function trackingValue(path, value) {
   if (path !== "system.attributes.hp.value") return value;
@@ -51,6 +101,7 @@ function classUpdateFor(key) {
 const SHEET_TABS = [
   ["main", "BECMI.sheet.tab.main"],
   ["features", "BECMI.sheet.tab.features"],
+  ["xp", "BECMI.sheet.tab.xp"],
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
@@ -191,6 +242,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   sidebarCollapsed = false;
   editMode = false;
   spellPicker = { level: 0, search: "", list: "" };
+  xpInputs = {};
+  xpResult = null;
   targetAC = 9;
   #dropUuidByEvent = new WeakMap();
 
@@ -230,6 +283,9 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       detectEvil: BECMIActorSheet.#detectEvil,
       createCharacter: BECMIActorSheet.#createCharacter,
       levelUp: BECMIActorSheet.#levelUp,
+      calculateXp: BECMIActorSheet.#calculateXp,
+      xpFromHd: BECMIActorSheet.#xpFromHd,
+      awardXp: BECMIActorSheet.#awardXp,
       restSpells: BECMIActorSheet.#restSpells,
       castSpell: BECMIActorSheet.#castSpell,
       memorizeSpell: BECMIActorSheet.#memorizeSpell,
@@ -372,6 +428,26 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const generalEnabled = Boolean(actor.system.generalSkills?.enabled);
     const canGeneral = isCharacter && (generalEnabled || hasGeneralSkillRows(actor));
 
+    // XP calculator inputs are transient sheet state. Only the final award is
+    // written to the Actor, and xpNext stays derived by the data model.
+    const xpInputs = { ...XP_CALC_DEFAULTS, ...(this.xpInputs ?? {}) };
+    const xpClassInfo = flags.classInfo ?? classInfoFromRC(attrs.classKey || attrs.class) ?? {};
+    const xpResult = calculateXpAward({
+      ...xpInputs,
+      classInfo: xpClassInfo,
+      abilities: actor.system.abilities,
+      currentXp: xp,
+      level,
+      magicItemsSold: xpSoldItems(xpInputs)
+    });
+    this.xpResult = xpResult;
+    const xpCalc = {
+      inputs: xpInputs,
+      result: xpResult,
+      canAward: this.isEditable && this.editMode && xpResult.awardedXp > 0,
+      isMystic: xpResult.classKey === "mystic"
+    };
+
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
       canEdit: this.isEditable,
@@ -381,7 +457,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       generalToggleLabel: game.i18n.localize(generalEnabled
@@ -922,6 +998,44 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // The same helper used by the XP hook: one canonical XP table, HP added
     // once per level and no manual drift in "Next Level XP".
     await advanceActorLevels(this.actor);
+  }
+
+  /** Recalculate from DOM inputs; calculator values are never actor fields. */
+  static async #calculateXp() {
+    this.xpInputs = readXpInputs(this.element, this.xpInputs);
+    await this.render();
+  }
+
+  /** Fill the monster XP field from the RC Hit Dice/asterisk table. */
+  static async #xpFromHd() {
+    this.xpInputs = readXpInputs(this.element, this.xpInputs);
+    const hd = String(this.xpInputs.monsterHd ?? "").trim();
+    if (!hd) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.xpHdRequired"));
+      return;
+    }
+    const value = monsterXpValue(hd, this.xpInputs.monsterAsterisks);
+    const count = Math.max(0, Number(this.xpInputs.monsterCount) || 0);
+    this.xpInputs.monsterXp = String(value.xp * count);
+    await this.render();
+  }
+
+  /** Apply only the awarded XP; the automatic hook derives level and xpNext. */
+  static async #awardXp() {
+    if (!this.isEditable || !this.editMode) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.editModeRequired"));
+      return;
+    }
+    const result = this.xpResult;
+    if (!result || result.awardedXp <= 0) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.noXpAward"));
+      return;
+    }
+    await this.actor.update({ "system.attributes.xp": result.finalXp });
+    ui.notifications.info(game.i18n.format("BECMI.notification.xpAwarded", {
+      amount: result.awardedXp
+    }));
+    this.xpInputs = { ...XP_CALC_DEFAULTS };
   }
 
   static async #restSpells() {
