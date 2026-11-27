@@ -14,7 +14,9 @@ short paraphrases; the PDF and OCR export are **not** included.
   reference sidebar for quick rolls, class features and hidden details.
 - Dropping a Character Class onto an Actor fills class, HD, prime requisite and the
   next-level XP from its compendium table; duplicate class items are removed.
-- Character generation asks for confirmation before replacing scores, level, XP and HP.
+- The **Creation Wizard** walks through the RC steps (abilities, class, combat,
+  languages, equipment and review) and only writes the approved plan to the Actor;
+  the legacy one-click generator remains available as a fallback.
 - Druid is handled as a Cleric extension, not as a stand-alone class.
 - Class-exclusive sections (thief skills, turn undead, spellcasting) only appear
   for classes that have them. Weapon Mastery is an optional switch available to
@@ -122,8 +124,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.33`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.33.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.34`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.34.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

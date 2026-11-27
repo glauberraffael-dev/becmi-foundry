@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.1.34
+
+- Added a seven-step **Creation Wizard** (`ApplicationV2`) on the Actor sheet,
+  while keeping the legacy one-click generator as a fallback. The wizard covers
+  identity, 3d6-in-order abilities, RC ability swaps, class requirements,
+  starting HP, languages, optional General Skills and Weapon Mastery, equipment
+  purchase and a final review before anything is written to the Actor.
+- Implemented the RC creation rules in a Foundry-independent module: class and
+  demihuman minimum scores, alignment and race restrictions, armor/weapon
+  restrictions, the druid prerequisite, 3d6 × 10 gp starting money, language
+  counts and literacy limits, class Hit Dice and initial HP, and general skill
+  slots. Only the final approved plan updates the Actor; XP thresholds, AC,
+  THAC0, saves and load remain derived by the system.
+- Starting armor and shield are now derived from the equipment selected in the
+  wizard, and purchased Items are embedded as equipped. No separate armor toggle
+  can disagree with the purchased gear.
+- Added Foundry-independent rule and ApplicationV2 smoke tests, including
+  compendium name resolution and a full Apply flow, and extended the repository
+  validator to cover the wizard actions, template and localization keys.
+
 ## 0.1.33
 
 - Added a **Treasure** tab with the Rules Cyclopedia chapter 16 procedures:

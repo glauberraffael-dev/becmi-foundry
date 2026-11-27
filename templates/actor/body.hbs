@@ -31,6 +31,7 @@
       </table>
       <h2 class="becmi-section-title">{{localize 'BECMI.sheet.creation'}}</h2>
       <div class="becmi-combat-fields">
+        <button type="button" class="becmi-roll" data-action="openWizard" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.wizard.open'}}</button>
         <button type="button" class="becmi-roll" data-action="createCharacter" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.createCharacter'}}</button>
         <button type="button" class="becmi-roll" data-action="levelUp" {{#unless editable}}disabled{{/unless}}>{{localize 'BECMI.sheet.levelUp'}}</button>
       </div>

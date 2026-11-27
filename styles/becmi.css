@@ -882,6 +882,174 @@
   min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+/* ------------------------------------------------------- creation wizard */
+.becmi.character-wizard {
+  color-scheme: light;
+  color: var(--becmi-ink);
+  background: var(--becmi-paper);
+  --color-text-primary: var(--becmi-ink);
+  --color-text-secondary: var(--becmi-muted);
+  --color-border: var(--becmi-border);
+  --input-background-color: var(--becmi-input);
+}
+
+.becmi.character-wizard .window-content,
+.becmi.character-wizard form {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.becmi-wizard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 0.5rem;
+}
+
+.becmi-wizard-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--becmi-border);
+}
+
+.becmi-wizard-step-button,
+.becmi-wizard-actions button,
+.becmi-wizard-footer button {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--becmi-border);
+  border-radius: 3px;
+  background: var(--becmi-paper-alt);
+  color: var(--becmi-ink);
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.becmi-wizard-step-button.is-active,
+.becmi-wizard-apply {
+  background: var(--becmi-accent);
+  color: var(--becmi-paper);
+  font-weight: 700;
+}
+
+.becmi-wizard-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.5rem 0.15rem;
+}
+
+.becmi-wizard-panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.becmi-wizard-panel h3 {
+  margin: 0.65rem 0 0.35rem;
+  font-size: 0.85rem;
+}
+
+.becmi-wizard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.becmi-wizard-grid label,
+.becmi-wizard-full {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.becmi-wizard-grid select,
+.becmi-wizard-grid input,
+.becmi-wizard-full textarea {
+  background: var(--becmi-input);
+  color: var(--becmi-ink);
+  border: 1px solid var(--becmi-border);
+  border-radius: 3px;
+}
+
+.becmi-wizard-full {
+  margin-bottom: 0.5rem;
+}
+
+.becmi-wizard-check {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.35rem !important;
+}
+
+.becmi-wizard-actions,
+.becmi-wizard-readout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  margin: 0.4rem 0;
+  font-size: 0.78rem;
+}
+
+.becmi-wizard-hint {
+  margin: 0.4rem 0;
+  color: var(--becmi-muted);
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.becmi-wizard-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.2rem 0.6rem;
+}
+
+.becmi-wizard-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+}
+
+.becmi-wizard-item span:last-child {
+  margin-left: auto;
+  color: var(--becmi-muted);
+}
+
+.becmi-wizard-issues {
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+}
+
+.becmi-wizard-issues .error {
+  color: var(--becmi-bad);
+}
+
+.becmi-wizard-issues .warning {
+  color: var(--becmi-muted);
+}
+
+.becmi-wizard-ok {
+  color: var(--becmi-good);
+  font-size: 0.8rem;
+}
+
+.becmi-wizard-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  padding-top: 0.45rem;
+  border-top: 2px solid var(--becmi-border);
+}
   padding-right: 0.25rem;
   overscroll-behavior: contain;
 }

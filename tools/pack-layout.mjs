@@ -164,6 +164,17 @@ const rank = (value, order) => {
   return index === -1 ? order.length : index;
 };
 
+const journalRank = (doc) => {
+  const name = String(doc.name ?? "");
+  const chapter = name.match(/^Chapter\s+(\d+):/i);
+  if (chapter) return [0, Number(chapter[1]), name];
+  const appendix = name.match(/^Appendix\s+(\d+):/i);
+  if (appendix) return [1, Number(appendix[1]), name];
+  if (name === "Core Rules Reference") return [2, 0, name];
+  if (name === "Weapon Mastery (Optional)") return [3, 0, name];
+  return [4, 0, name];
+};
+
 /** Deterministic ordering for docs inside every compendium. */
 export function compareDocuments(pack, a, b) {
   if (pack === "spells") {
@@ -194,6 +205,11 @@ export function compareDocuments(pack, a, b) {
   if (pack === "monsters") {
     return rank(monsterCategory(a), MONSTER_CATEGORY_ORDER)
       - rank(monsterCategory(b), MONSTER_CATEGORY_ORDER) || byName(a, b);
+  }
+  if (pack === "journals") {
+    const left = journalRank(a);
+    const right = journalRank(b);
+    return left[0] - right[0] || left[1] - right[1] || byName({ name: left[2] }, { name: right[2] });
   }
   return byName(a, b);
 }

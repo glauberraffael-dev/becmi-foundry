@@ -34,14 +34,14 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If GitHub serves a stale manifest, append a cache-busting query, for example
-`https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json?v=0.1.33`.
+`https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.json?v=0.1.34`.
 
 The manifest declares:
 
 - `url`: the GitHub repository page
 - `manifest`: the stable raw URL with a version query
 - `download`: a **versioned** archive, for example
-  `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry-0.1.33.zip`
+  `https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/becmi-foundry-0.1.34.zip`
 
 The versioned filename is important: `raw.githubusercontent.com` can keep serving an
 older `becmi-foundry.zip` from cache even after a push. Both archives must contain
@@ -57,7 +57,7 @@ $files = Get-ChildItem -LiteralPath $src -Recurse -File -Force | Where-Object {
   $parts = $rel -split '[\\/]'
   -not ($parts -contains 'node_modules' -or $parts -contains '.git' -or $_.Extension -eq '.zip')
 }
-foreach ($name in @("becmi-foundry-0.1.33.zip", "becmi-foundry.zip")) {
+foreach ($name in @("becmi-foundry-0.1.34.zip", "becmi-foundry.zip")) {
   $zip = Join-Path $src $name
   Remove-Item -LiteralPath $zip -Force -ErrorAction SilentlyContinue
   $fs = [System.IO.File]::Open($zip, [System.IO.FileMode]::Create)

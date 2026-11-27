@@ -1,0 +1,224 @@
+<div class="becmi-wizard">
+  <nav class="becmi-wizard-nav" aria-label="{{localize 'BECMI.wizard.steps'}}">
+    {{#each steps as |step|}}
+    <button type="button" class="becmi-wizard-step-button{{#if step.active}} is-active{{/if}}"
+      data-action="switchStep" data-step="{{step.key}}">{{step.label}}</button>
+    {{/each}}
+  </nav>
+
+  <div class="becmi-wizard-scroll">
+    {{#if (eq activeStep "identity")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.wizard.identity'}}</h2>
+      <div class="becmi-wizard-grid">
+        <label>{{localize 'BECMI.labels.name'}}
+          <input type="text" name="name" value="{{state.name}}" autocomplete="off">
+        </label>
+        <label>{{localize 'BECMI.labels.player'}}
+          <input type="text" name="player" value="{{state.player}}" autocomplete="off">
+        </label>
+        <label>{{localize 'BECMI.labels.race'}}
+          <select name="race">
+            {{#each raceOptions as |option|}}
+            <option value="{{option.key}}" {{#if (eq option.key ../state.race)}}selected{{/if}}>{{option.label}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>{{localize 'BECMI.labels.alignment'}}
+          <select name="alignment">
+            {{#each alignmentOptions as |option|}}
+            <option value="{{option.key}}" {{#if (eq option.key ../state.alignment)}}selected{{/if}}>{{option.label}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>{{localize 'BECMI.wizard.height'}}
+          <input type="text" name="height" value="{{state.height}}" autocomplete="off">
+        </label>
+        <label>{{localize 'BECMI.labels.weight'}}
+          <input type="text" name="weight" value="{{state.weight}}" autocomplete="off">
+        </label>
+      </div>
+      <label class="becmi-wizard-full">{{localize 'BECMI.wizard.personality'}}
+        <textarea name="personality" rows="2">{{state.personality}}</textarea>
+      </label>
+      <label class="becmi-wizard-full">{{localize 'BECMI.wizard.background'}}
+        <textarea name="background" rows="2">{{state.background}}</textarea>
+      </label>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.identityHint'}}</p>
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "abilities")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.sheet.attributes'}}</h2>
+      <table class="becmi-table">
+        <thead><tr>
+          <th>{{localize 'BECMI.wizard.ability'}}</th>
+          <th>{{localize 'BECMI.wizard.rolled'}}</th>
+          <th>{{localize 'BECMI.sheet.adjustment'}}</th>
+          <th>{{localize 'BECMI.wizard.afterSwap'}}</th>
+        </tr></thead>
+        <tbody>
+          {{#each abilityRows as |row|}}
+          <tr>
+            <th>{{row.label}}</th>
+            <td><input type="number" name="ability.{{row.key}}" min="3" max="18" value="{{row.score}}"></td>
+            <td>{{#if (gt row.adjustment 0)}}+{{/if}}{{row.adjustment}}</td>
+            <td class="becmi-derived">{{row.adjusted}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <div class="becmi-wizard-actions">
+        <button type="button" data-action="rollAbilities">{{localize 'BECMI.wizard.rollAbilities'}}</button>
+        <button type="button" data-action="rerollAbilities">{{localize 'BECMI.wizard.rerollAbilities'}}</button>
+      </div>
+      <div class="becmi-wizard-grid">
+        <label>{{localize 'BECMI.wizard.swaps'}}
+          <input type="number" name="swapCount" min="0" max="6" value="{{state.swapCount}}">
+        </label>
+        <div class="becmi-wizard-actions">
+          <button type="button" data-action="applySwap" data-swaps="1">+1</button>
+          <button type="button" data-action="applySwap" data-swaps="2">+2</button>
+          <button type="button" data-action="resetSwap">{{localize 'BECMI.wizard.resetSwap'}}</button>
+        </div>
+      </div>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.swapHint'}}</p>
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "class")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.labels.class'}}</h2>
+      <div class="becmi-wizard-grid">
+        <label>{{localize 'BECMI.labels.class'}}
+          <select name="classKey">
+            <option value="">{{localize 'BECMI.wizard.chooseClass'}}</option>
+            {{#each classOptions as |option|}}
+            <option value="{{option.key}}" {{#if (eq option.key ../state.classKey)}}selected{{/if}}>{{option.name}} (d{{option.hitDie}})</option>
+            {{/each}}
+          </select>
+        </label>
+        <div class="becmi-wizard-readout">
+          <span>{{localize 'BECMI.labels.primeRequisite'}}: {{plan.preview.primeRequisites}}</span>
+          <span>{{localize 'BECMI.wizard.primeBonus'}}: {{#if (gt plan.preview.primeBonus 0)}}+{{/if}}{{plan.preview.primeBonus}}%</span>
+          <span>{{localize 'BECMI.labels.hd'}}: {{plan.preview.hitDie}}</span>
+          <span>{{localize 'BECMI.labels.maxLevel'}}: {{plan.preview.maxLevel}}</span>
+        </div>
+      </div>
+      {{#if requirements.length}}
+      <p class="becmi-wizard-hint">{{localize 'BECMI.labels.requirements'}}: {{#each requirements as |entry|}}{{entry}}{{#unless @last}}, {{/unless}}{{/each}}</p>
+      {{/if}}
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.druidHint'}}</p>
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "combat")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.wizard.combat'}}</h2>
+      <div class="becmi-wizard-grid">
+        <label>{{localize 'BECMI.wizard.hpMode'}}
+          <select name="hpMode">
+            <option value="rolled" {{#if (eq state.hpMode "rolled")}}selected{{/if}}>{{localize 'BECMI.wizard.hpRolled'}}</option>
+            <option value="maximum" {{#if (eq state.hpMode "maximum")}}selected{{/if}}>{{localize 'BECMI.wizard.hpMaximum'}}</option>
+          </select>
+        </label>
+        <label>{{localize 'BECMI.labels.hp'}}
+          <input type="number" name="hp" min="1" value="{{state.hp}}">
+        </label>
+        <button type="button" data-action="rollHp">{{localize 'BECMI.rolls.hitPoints'}}</button>
+      </div>
+      <div class="becmi-wizard-readout">
+        <span>{{localize 'BECMI.labels.ac'}}: {{plan.preview.ac.value}}</span>
+        <span>{{localize 'BECMI.labels.thac0'}}: {{plan.preview.thac0}}</span>
+        <span>{{localize 'BECMI.wizard.load'}}: {{plan.preview.load.total}} cn</span>
+        <span>{{localize 'BECMI.labels.armorType'}}: {{plan.preview.armorType}}</span>
+        <span>{{localize 'BECMI.labels.shield'}}: {{#if plan.preview.shield}}{{localize 'BECMI.wizard.yes'}}{{else}}{{localize 'BECMI.wizard.no'}}{{/if}}</span>
+      </div>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.combatHint'}}</p>
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "languages")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.wizard.languages'}}</h2>
+      <label class="becmi-wizard-full">{{localize 'BECMI.labels.languages'}}
+        <textarea name="languages" rows="3">{{state.languages}}</textarea>
+      </label>
+      <div class="becmi-wizard-actions">
+        <button type="button" data-action="useLanguages">{{localize 'BECMI.wizard.useLanguages'}}</button>
+        <span class="becmi-wizard-hint">{{plan.preview.languages.note}}</span>
+      </div>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.suggested'}}: {{languageSuggestions}}</p>
+      <div class="becmi-wizard-readout">
+        <span>{{localize 'BECMI.wizard.generalSlots'}}: {{plan.preview.generalSkillSlots}}</span>
+      </div>
+      <div class="becmi-wizard-grid becmi-wizard-options">
+        <label class="becmi-wizard-check"><input type="checkbox" name="generalSkillsEnabled" {{#if state.generalSkillsEnabled}}checked{{/if}}> {{localize 'BECMI.sheet.generalEnable'}}</label>
+        <label class="becmi-wizard-check"><input type="checkbox" name="masteryEnabled" {{#if state.masteryEnabled}}checked{{/if}}> {{localize 'BECMI.sheet.masteryEnable'}}</label>
+      </div>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.generalHint'}}</p>
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "equipment")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.wizard.buyEquipment'}}</h2>
+      <div class="becmi-wizard-readout">
+        <span>{{localize 'BECMI.wizard.startingGold'}}: {{plan.preview.gold}} gp</span>
+        <span>{{localize 'BECMI.wizard.spent'}}: {{purchase.cost}} gp</span>
+        <span>{{localize 'BECMI.wizard.remaining'}}: {{plan.preview.remainingGold}} gp</span>
+        <button type="button" data-action="rollMoney">{{localize 'BECMI.wizard.rollMoney'}}</button>
+      </div>
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.equipmentHint'}}</p>
+      {{#each itemGroups as |group|}}
+      <h3>{{group.label}}</h3>
+      <div class="becmi-wizard-items">
+        {{#each group.items as |item|}}
+        <label class="becmi-wizard-item">
+          <input type="checkbox" data-wizard-item value="{{item.name}}" {{#if item.selected}}checked{{/if}}>
+          <span>{{item.name}}</span>
+          <span>{{item.cost}} gp · {{item.weight}} cn</span>
+        </label>
+        {{/each}}
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    {{#if (eq activeStep "review")}}
+    <section class="becmi-wizard-panel">
+      <h2>{{localize 'BECMI.wizard.review'}}</h2>
+      <div class="becmi-wizard-readout">
+        <span>{{localize 'BECMI.labels.name'}}: {{plan.changes.name}}</span>
+        <span>{{localize 'BECMI.labels.class'}}: {{plan.preview.className}}</span>
+        <span>{{localize 'BECMI.labels.race'}}: {{plan.preview.race}}</span>
+        <span>{{localize 'BECMI.labels.alignment'}}: {{plan.preview.alignment}}</span>
+        <span>{{localize 'BECMI.labels.hp'}}: {{plan.preview.hp}}</span>
+        <span>{{localize 'BECMI.labels.ac'}}: {{plan.preview.ac.value}}</span>
+        <span>{{localize 'BECMI.labels.thac0'}}: {{plan.preview.thac0}}</span>
+        <span>{{localize 'BECMI.wizard.generalSlots'}}: {{plan.preview.generalSkillSlots}}</span>
+        <span>{{localize 'BECMI.wizard.remaining'}}: {{plan.preview.remainingGold}} gp</span>
+      </div>
+      {{#if plan.preview.items.length}}
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.startingItems'}}: {{#each plan.preview.items as |item|}}{{item.name}}{{#unless @last}}, {{/unless}}{{/each}}</p>
+      {{/if}}
+      <p class="becmi-wizard-hint">{{localize 'BECMI.wizard.reviewHint'}}</p>
+      {{#if issues.length}}
+      <ul class="becmi-wizard-issues">
+        {{#each issues as |entry|}}
+        <li class="{{entry.severity}}">{{entry.label}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <p class="becmi-wizard-ok">{{localize 'BECMI.wizard.noIssues'}}</p>
+      {{/if}}
+    </section>
+    {{/if}}
+  </div>
+
+  <footer class="becmi-wizard-footer">
+    <button type="button" data-action="cancel">{{localize 'BECMI.wizard.cancel'}}</button>
+    <button type="button" class="becmi-wizard-apply" data-action="apply">{{localize 'BECMI.wizard.apply'}}</button>
+  </footer>
+</div>

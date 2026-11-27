@@ -218,6 +218,8 @@ for (const action of ["encounterCheck", "surpriseCheck", "encounterDistance", "w
 for (const action of ["rollTreasure", "rollMagicItem", "rollGemValue", "rollJewelryValue"]) {
   if (typeof actions[action] !== "function") throw new Error(`treasure action ${action} is not registered`);
 }
+if (typeof actions.openWizard !== "function") throw new Error("creation wizard action is not registered");
+if (!body.includes('data-action="openWizard"')) throw new Error("creation wizard button is missing from the sheet");
 for (const marker of [
   'data-tab="encounter"', 'data-action="encounterCheck"', 'data-action="surpriseCheck"',
   'data-action="encounterDistance"', 'data-action="wanderingDistance"',

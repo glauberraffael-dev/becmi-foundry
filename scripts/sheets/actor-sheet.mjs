@@ -366,6 +366,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       toggleGeneral: BECMIActorSheet.#toggleGeneral,
       rollTurnUndead: BECMIActorSheet.#rollTurnUndead,
       detectEvil: BECMIActorSheet.#detectEvil,
+      openWizard: BECMIActorSheet.#openWizard,
       createCharacter: BECMIActorSheet.#createCharacter,
       levelUp: BECMIActorSheet.#levelUp,
       calculateXp: BECMIActorSheet.#calculateXp,
@@ -1220,6 +1221,16 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return;
     }
     await this.actor.rollDetectEvil();
+  }
+
+  /** Open the creation wizard; the old single-button generator stays available. */
+  static async #openWizard() {
+    if (!this.isEditable || !this.editMode) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.editModeRequired"));
+      return;
+    }
+    const { CharacterWizard } = await import("../applications/character-wizard.mjs");
+    new CharacterWizard(this.actor).render(true);
   }
 
   static async #createCharacter() {

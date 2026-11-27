@@ -327,6 +327,42 @@ for (const token of ["xpForNextLevel", "levelForXp", "normalizeClassKey", "gener
   if (!rulesSource.includes(token)) note(`rules-rc.mjs: missing ${token}`);
 }
 
+const creationSource = await readFile(join(root, "scripts/character-creation.mjs"), "utf8");
+for (const token of [
+  "export function rollAbilities", "export function validateMinimumRequirements",
+  "export function validateAlignment", "export function validateArmor",
+  "export function deriveArmorFromItems", "generalSkillSlots",
+  "export function buildCharacterPlan", "export function toActorUpdates",
+  '"equipment", "review"'
+]) {
+  if (!creationSource.includes(token)) note(`character-creation.mjs: missing ${token}`);
+}
+const wizardSource = await readFile(join(root, "scripts/applications/character-wizard.mjs"), "utf8");
+for (const token of [
+  "HandlebarsApplicationMixin(ApplicationV2)", "static PARTS", "static async #apply",
+  "static async #compendiumDocuments", "buildCharacterPlan", "createEmbeddedDocuments",
+  "equipped: true", "await this.actor.update(changes)"
+]) {
+  if (!wizardSource.includes(token)) note(`character-wizard.mjs: missing ${token}`);
+}
+const wizardTemplate = await readFile(join(root, "templates/actor/character-wizard.hbs"), "utf8");
+for (const marker of [
+  'data-action="switchStep" data-step=',
+  'data-action="rollAbilities"', 'data-action="applySwap"',
+  'data-action="rollMoney"', 'data-action="rollHp"', 'data-action="useLanguages"',
+  'data-action="apply"', 'name="height"', 'name="languages"', 'name="swapCount"',
+  'name="generalSkillsEnabled"', "data-wizard-item"
+]) {
+  if (!wizardTemplate.includes(marker)) note(`character wizard template: missing ${marker}`);
+}
+if (!actorBody.includes('data-action="openWizard"')) note("actor sheet: missing creation wizard button");
+for (const key of [
+  "BECMI.wizard.open", "BECMI.wizard.title", "BECMI.wizard.step.combat",
+  "BECMI.wizard.step.languages", "BECMI.notification.wizardApplied"
+]) {
+  if (!lang[key]) note(`lang: missing ${key}`);
+}
+
 const classFeaturesSource = await readFile(join(root, "scripts/class-features.mjs"), "utf8");
 for (const key of [
   "cleric", "druid", "fighter", "thief", "magic-user", "dwarf", "elf", "halfling", "mystic"
