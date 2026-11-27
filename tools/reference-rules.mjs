@@ -8,7 +8,7 @@
 import { RC } from "../scripts/rc-data.mjs";
 import {
   GEM_VALUES, JEWELRY_VALUES, MAGIC_ITEM_CATEGORIES, MAGIC_ITEM_SUBTABLES,
-  TREASURE_TYPES
+  MOVEMENT_RATES, TREASURE_TYPES
 } from "../scripts/rules-rc.mjs";
 
 const escapeHtml = (value) => String(value ?? "")
@@ -59,21 +59,58 @@ function attackMatrixRows() {
   return RC.attack.sequence.map((needed, index) => [`AC ${index - 10}`, needed]);
 }
 
+// Keep the generated reference in lockstep with the structured data instead of
+// duplicating printed values that are easy to drift (RC pp. 8 and 88).
+const PRIME_ALIASES = {
+  for: "str", des: "dex", int: "int", sab: "wis", wis: "wis",
+  con: "con", car: "cha", str: "str", dex: "dex"
+};
+const PRIME_LABELS = {
+  str: "Strength", int: "Intelligence", wis: "Wisdom",
+  dex: "Dexterity", con: "Constitution", cha: "Charisma"
+};
+const CLASS_NOTES = {
+  cleric: "Turn undead; cleric spells",
+  fighter: "Weapon mastery; no spells",
+  "magic-user": "Magic-user spells; read magic",
+  thief: "Thief skills; backstab",
+  dwarf: "Fighter abilities; detect tricks",
+  elf: "Magic-user spells plus fighter abilities",
+  halfling: "Fighter abilities; hiding and missile bonus"
+};
+
+function classRows() {
+  return Object.keys(CLASS_NOTES).map((key) => {
+    const cls = RC.classes[key];
+    const primes = (cls.primeRequisites ?? [])
+      .map((alias) => PRIME_LABELS[PRIME_ALIASES[alias] ?? alias] ?? alias);
+    return [cls.name, `d${cls.hitDie}`, primes.join(" / "), String(cls.maxLevel), CLASS_NOTES[key]];
+  });
+}
+
+function movementRows() {
+  const commas = (value) => String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return MOVEMENT_RATES.map((rate, index) => {
+    const low = index === 0 ? 0 : MOVEMENT_RATES[index - 1].max + 1;
+    const band = !Number.isFinite(rate.max) ? `${commas(low)}+`
+      : low === 0 ? `Up to ${commas(rate.max)}`
+      : `${commas(low)}-${commas(rate.max)}`;
+    return [
+      band,
+      rate.normal ? `${rate.normal} ft` : "Cannot move",
+      rate.encounter ? `${rate.encounter} ft` : "—",
+      rate.running ? `${rate.running} ft` : "—"
+    ];
+  });
+}
+
 const CHAPTER_RULES = {
   1: `<h2>Steps in Character Creation</h2>
 <p>Choose an alignment, roll six ability scores in order, select a class that satisfies the prime requisite, then record hit points, armor class, saving throws, starting equipment and languages. Strength, Intelligence, Wisdom, Dexterity, Constitution and Charisma are scored from 3 to 18; the normal modifier is -3 at 3, -2 at 4-5, -1 at 6-8, none at 9-12, +1 at 13-15, +2 at 16-17 and +3 at 18. Clerics and druids use Wisdom, fighters and dwarves Strength, magic-users Intelligence, thieves Dexterity, and mystics Strength (with Dexterity and Wisdom 13+ to qualify). A prime requisite of 13-15 grants +5% XP and 16-18 grants +10%; 6-8 gives -10% and 3-5 gives -20% (mystics: -5% and -10%). Elves need Strength 13+ plus Intelligence 13+ for +5%, or Intelligence 16+ for +10%; halflings need Strength or Dexterity 13+ for +5%, or both for +10%.</p>
 <p>Starting hit points are the maximum of the class hit die plus the Constitution adjustment; subsequent levels roll the hit die, with a minimum of 1 point. Starting gold is 3d6 x 10 gp. Characters begin with a languages score based on Intelligence and buy equipment from the Equipment chapter.</p>`,
   2: `<h2>The Character Classes</h2>
 <p>Choose one class. A human may reach level 36 as a fighter, cleric, magic-user or thief; demihumans have lower maximum levels and class restrictions. A class supplies hit dice, attack progression, saving throws, experience requirements, spell access and special abilities.</p>
-${htmlTable(["Class", "Hit die", "Prime requisite", "Max level", "Notes"], [
-  ["Cleric", "d8", "Wisdom", "36", "Turn undead; cleric spells"],
-  ["Fighter", "d10", "Strength", "36", "Weapon mastery; no spells"],
-  ["Magic-User", "d4", "Intelligence", "36", "Magic-user spells; read magic"],
-  ["Thief", "d6", "Dexterity", "36", "Thief skills; backstab"],
-  ["Dwarf", "d8", "Constitution", "12", "Fighter abilities; detect tricks"],
-  ["Elf", "d6", "Intelligence", "10", "Magic-user spells plus fighter abilities"],
-  ["Halfling", "d6", "Dexterity", "8", "Fighter abilities; hiding and missile bonus"]
-])}
+${htmlTable(["Class", "Hit die", "Prime requisite", "Max level", "Notes"], classRows())}
 <p>Multiclassing is not used. The optional Druid is an extension of the Cleric: it keeps cleric hit dice, saves and XP, but uses the druid spell list and druid restrictions. The Mystic is an optional variant handled by the DM.</p>`,
   3: `<h2>Spells and Spellcasting</h2>
 <p>Spells are divided into nine levels and into the cleric, druid and magic-user lists. Clerics and druids receive spells through their deity; magic-users learn spells from spellbooks and need read magic to decipher them. A caster can only prepare the number of spells shown by the level table, and a spell is expended when cast.</p>
@@ -117,13 +154,8 @@ ${htmlTable(["Character", "Additional slots"], [
 <p>The character sheet's General Skills tab stores trained skills, specialties and modifiers, and derives the current slot budget from class, level, XP and Intelligence.</p>`,
   6: `<h2>Movement</h2>
 <p>Exploration movement is measured in turns (10 minutes) and dungeon movement in rounds. Encumbered characters move more slowly; the movement rate is derived from total carried weight. Running increases speed but makes stealth impossible and can cause fatigue.</p>
-${htmlTable(["Encumbrance (cn)", "Movement / turn", "Movement / round"], [
-  ["Up to 400", "120 ft", "12 ft"],
-  ["401-600", "90 ft", "9 ft"],
-  ["601-800", "60 ft", "6 ft"],
-  ["801-1,000", "30 ft", "3 ft"],
-  ["Over 1,000", "Cannot move", "—"]
-])}
+${htmlTable(["Encumbrance (cn)", "Normal (ft/turn)", "Encounter (ft/round)", "Running (ft/round)"], movementRows())}
+<p>Normal speed is measured in feet per turn and includes mapping, resting and peeking around corners. Encounter speed is one third of normal speed per round; running speed equals the normal speed in feet per round and can be maintained for at most 30 rounds before exhaustion. Outdoor movement is tripled (feet become yards). Groups move at the rate of the slowest member.</p>
 <p>Water and air travel use their own tables for ships, rowing and flying speeds; weather and currents modify travel time.</p>`,
   7: `<h2>Encounters and Evasion</h2>
 <p><strong>Checklist:</strong> switch from 10-minute turns to 10-second rounds; both sides roll 1d6 for surprise (1-2 means surprised); if neither side is surprised both roll 1d6 for initiative, while a surprised side loses initiative automatically; roll reactions if the DM does not already know them; resolve the results; then assume at least one full turn has passed.</p>
@@ -139,7 +171,9 @@ ${htmlTable(["2d6", "Reaction"], [
   ["12", "Monster is friendly"]
 ])}
 <p>The first roll ignores Charisma. Later rolls apply the speaker's Charisma modifier plus PC actions from a -2 penalty to a +2 bonus and the modifier carried by the previous result. Never roll more than three times; if the third roll is below 10, the monster attacks or leaves.</p>
-<p><strong>Evasion and pursuit:</strong> an unsurprised group can evade a surprised group automatically. Otherwise the DM rolls d100 against the Evasion Table by party size and number of monsters, adjusted for terrain, relative speed and scouts, with a minimum 5% chance. A failed roll starts a chase: both sides roll 1d6 for initiative each round, and monsters check morale every five rounds.</p>`,
+<p><strong>Evasion and pursuit:</strong> an unsurprised group can evade a surprised group automatically. Otherwise the DM rolls d100 against the Evasion Table by party size and number of monsters, adjusted for terrain, relative speed and scouts, with a minimum 5% chance. A failed roll starts a chase: both sides roll 1d6 for initiative each round, and monsters check morale every five rounds.</p>
+<p><strong>Settled and castle terrain:</strong> a "Castle" result uses <em>Wilderness Subtable 10: Castle Encounters (1d6)</em> in the <em>BECMI Tables</em> compendium. Roll 1d6 for the owner's class, 1d20+8 for level (demihumans have fixed levels), and a second 1d6 for alignment: 1 Chaotic, 2-4 Neutral, 5-6 Lawful. Patrol size and reaction are by class: fighter 2-12 heavy horsemen (pursue on 1-3), magic-user 2-12 heavy footmen (pursue on 1), cleric 2-12 medium horsemen (pursue on 1-2), demihuman 2-12 demihumans (pursue on 1); the remaining results are Ignore or Friendly.</p>
+<p><strong>City terrain:</strong> a "Special" result uses <em>Wilderness Subtable 11: City Encounters (1d20)</em>. First roll 1d8 to select one of its eight sections, then roll 1d20 in that section for the city-dweller; level and intent are for the DM to decide. The same table can be used to pick a location by translating the profession (a judge suggests a courtroom, an undertaker a cemetery).</p>`,
   8: `<h2>Combat</h2>
 <p>Each round: roll initiative (1d6 per side), resolve morale, movement, missile fire, spells and hand-to-hand attacks in order. To hit, roll d20 and compare the result to the attack matrix using THAC0 and the target's descending AC; a natural 1 always misses and a natural 20 always hits. Damage is rolled after a hit, modified by Strength for melee weapons.</p>
 ${htmlTable(["Category", "Check", "Success"], [
@@ -485,14 +519,9 @@ ${htmlTable(["Class", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
   },
   {
     ...p(`<h2>Encumbrance and Movement</h2>
-${htmlTable(["Carried weight", "Movement / turn", "Movement / round"], [
-  ["Up to 400 cn", "120 ft", "12 ft"],
-  ["401-600 cn", "90 ft", "9 ft"],
-  ["601-800 cn", "60 ft", "6 ft"],
-  ["801-1,000 cn", "30 ft", "3 ft"],
-  ["Over 1,000 cn", "Cannot move", "—"]
-])}
-<p>Coins weigh 10 per cn; gems and jewelry are recorded separately.</p>`),
+${htmlTable(["Carried weight", "Normal (ft/turn)", "Encounter (ft/round)", "Running (ft/round)"],
+  movementRows().map(([band, ...speeds]) => [`${band} cn`, ...speeds]))}
+<p>Coins weigh 10 per cn; gems and jewelry are recorded separately. Running costs one third of the day's travel and forces a three-turn rest afterwards.</p>`),
     name: "Encumbrance"
   },
   {
@@ -501,7 +530,7 @@ ${htmlTable(["Carried weight", "Movement / turn", "Movement / round"], [
 <p><strong>Surprise:</strong> both sides roll 1d6; a 1 or 2 means surprised. Both surprised loses a round for each side; one surprised gives the other a free round or automatic evasion; neither surprised gives no advantage. Surprise sets distance to 1d4 x 10 feet or yards, with the surprised side noticing at half distance when only one side is surprised.</p>
 <p><strong>Distance:</strong> without surprise, dungeon bright light is 4d6 x 10 ft, dim light 2d6 x 10 ft, darkness 1d4 x 10 ft; wilderness bright daylight 4d6 x 10 yards, dim light 2d6 x 10 yards, very poor visibility 1d4 x 10 yards. Ocean ships are detected at 300/120/40 yards by visibility and ocean monsters use 4d6/2d6/1d4 x 10 yards; undersea uses 1d6 x 10 yards. Wandering monsters in a dungeon appear 2d6 x 10 ft away.</p>
 <p><strong>Reactions:</strong> roll 2d6 on the <em>Monster Reactions (2d6)</em> table in the <em>BECMI Tables</em> compendium: 2-3 Monster attacks; 4-6 the monster is aggressive and you roll again in one round with a penalty of -4; 7-9 the monster is cautious and you roll again; 10-11 the monster is neutral and you roll again with a bonus of +4; 12 the monster is friendly. The first roll ignores Charisma; later rolls add Charisma, PC actions of -2 to +2 and the listed modifier. Never roll more than three times; a third roll below 10 means the monster attacks or leaves.</p>
-<p><strong>Which monsters:</strong> roll 1d20 on the Dungeon Encounters table for the current dungeon level, then roll the number appearing shown in that row. In the wilderness, roll 1d8 for the terrain column, then 1d12 on the indicated subtable. These are die rolls; the tables are consulted by column and are not random tables in the compendium.</p>
+<p><strong>Which monsters:</strong> roll 1d20 on the Dungeon Encounters table for the current dungeon level, then roll the number appearing shown in that row. In the wilderness, roll 1d8 for the terrain column, then 1d12 on the indicated subtable. The two special results are rollable too: <em>Wilderness Subtable 10: Castle Encounters (1d6)</em> gives the castle owner's class, 1d20+8 level and alignment (second 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful), and <em>Wilderness Subtable 11: City Encounters (1d20)</em> needs a 1d8 to choose a section first. All eleven wilderness subtables and the six dungeon tables are in the <em>BECMI Tables</em> compendium.</p>
 <p><strong>Evasion and pursuit:</strong> compare party size to the number of monsters on the Evasion Table, then apply terrain, speed and scout adjustments with a minimum 5% chance. Pursuit uses 1d6 initiative per side each round and a morale check every five rounds.</p>
 <p><strong>Magic item creation:</strong> the chance of success is a d100 roll against ([Intelligence or Wisdom + level] x 2) - (3 x spell level), or the number of bonuses for armor and weapons. Costs and time are calculated from the checklists in the Enchantment rules; they are not a random table.</p>`),
     name: "Encounters and Reaction Rolls"

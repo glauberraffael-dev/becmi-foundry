@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.36
+
+- Added the two missing chapter 7 encounter subtables as rollable RollTables:
+  **Wilderness Subtable 10: Castle Encounters (1d6)** with class, level and
+  alignment, and **Wilderness Subtable 11: City Encounters (1d20)** with all
+  eight sections of city dwellers. The "Castle" and "Special" results in the
+  wilderness tables now resolve instead of pointing at missing tables.
+- Added castle patrol sizes and reactions, plus the city encounter procedure, to
+  the generated Chapter 7 and Core Rules Reference journals.
+- Corrected the generated class table to the printed RC Hit Dice (cleric d6,
+  fighter d8, magic-user/thief d4) and the encumbrance table to the printed
+  normal, encounter and running speeds. Both tables are now derived from the
+  same structured data the runtime uses, so they cannot drift again.
+- Added an OCR-free `tools/build-tables.mjs` to `npm run sources`, and extended
+  validation to reject unresolved "Subtable N" references and stale journal
+  class/movement values.
+
 ## 0.1.35
 
 - Added a **Travel** tab with the Rules Cyclopedia chapter 6 procedures:

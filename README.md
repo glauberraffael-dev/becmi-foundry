@@ -78,7 +78,7 @@ short paraphrases; the PDF and OCR export are **not** included.
 | BECMI Equipment | Item | 106 |
 | BECMI Classes | Item | 9 |
 | BECMI Treasure | Item | 32 |
-| BECMI Tables | RollTable | 19 |
+| BECMI Tables | RollTable | 21 |
 | BECMI Rules Reference | JournalEntry | 26 |
 
 `BECMI Spells` has folders for Cleric, Druid and Magic-User spells, each with a
@@ -93,11 +93,12 @@ folders for Weapons, Armor & Shields, Adventuring Gear and Transport & Siege.
 Missile Talents and Magic Item Enchantment Rules (procedural rules are `feature`
 items, not treasures).
 `BECMI Tables` contains the 2d6 monster reaction table, six dungeon encounter
-tables (1d20), three wilderness main tables (1d8) and nine wilderness subtables
-(1d12), in separate Reactions, Dungeon Encounters and Wilderness Encounters folders.
-Multi-column tables put every terrain column in the same result, so no die face is
-duplicated. The castle/city encounter procedures and all static lookups are journal
-text: the **Equipment Tables** journal keeps the weapon, special-effect, ammunition,
+tables (1d20), three wilderness main tables (1d8) and eleven wilderness subtables
+(nine on 1d12, Subtable 10 on 1d6 for castle encounters and Subtable 11 on 1d20
+for city encounters), in separate Reactions, Dungeon Encounters and Wilderness
+Encounters folders. Multi-column tables put every terrain column in the same result,
+so no die face is duplicated. Castle patrol reactions and all static lookups are
+journal text: the **Equipment Tables** journal keeps the weapon, special-effect, ammunition,
 armor, barding, net and siege tables, while the **Core Rules Reference** and chapter
 journals keep attack, save, thief skill, turn undead, spell slot and magic-item
 creation tables. `BECMI Rules Reference` includes condensed rules for all 19 chapters
@@ -128,8 +129,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.35`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.35.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.36`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.36.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

@@ -5,7 +5,8 @@
  * Sp1der, W1dow). These records are curated once here so rebuilding the data
  * stays reproducible and Foundry receives genuine RollTables with one result
  * per die face. Multi-column tables keep every terrain column in the result
- * text; the castle/city procedures remain in the Core Rules Reference journal.
+ * text; the castle/city subtables are rollable RollTables and their reaction
+ * procedures remain in the Core Rules Reference journal.
  */
 
 let counter = 0;
@@ -345,9 +346,72 @@ const SUBTABLES = [
 ].map(([name, columns, rows, note]) =>
   columnTable(name, "Wilderness Encounters", "1d12", columns, rows, note));
 
+// RC pp. 95 and 98: the two special wilderness results are also subtables.
+// Castle rolls a separate 1d6 for alignment; city rolls 1d8 for a section and
+// then 1d20 inside it. Both are kept as real RollTables so the "Subtable 10"
+// and "Subtable 11" entries in the wilderness tables are no longer dead ends.
+const CASTLE_SUBTABLE = table(
+  "Wilderness Subtable 10: Castle Encounters (1d6)",
+  "Wilderness Encounters",
+  "1d6",
+  [
+    [1, "Cleric - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful"],
+    [2, "Magic-User - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful"],
+    [3, "Demihuman - race 1d6: 1-2 Dwarf (12th), 3-4 Elf (10th), 5-6 Halfling (8th); level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful"],
+    [[4, 6], "Fighter - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful"]
+  ],
+  "Roll 1d6 for the owner's class, 1d20+8 for level (demihumans use the listed fixed level) and 1d6 for alignment."
+);
+
+const CITY_SECTIONS = [
+  ["Alchemist", "Animal Trainer", "Apothecary", "Archaeologist", "Armorer",
+    "Artist/Sculptor", "Assassin", "Astrologer", "Astronomer", "Athlete",
+    "Baker", "Banker", "Barber", "Bartender", "Basketweaver", "Bazaar Merchant",
+    "Beekeeper", "Beggar", "Blacksmith", "Boardinghouse Keeper"],
+  ["Boatman / Gondolier", "Bodyguard", "Bonecarver", "Bootmaker", "Bowyer",
+    "Brewer", "Broommaker", "Butcher", "Candlemaker", "Caravan Master",
+    "Carpenter", "Carter", "Chandler", "Charcoalmaker", "Chef", "Chemist",
+    "Church / Temple", "Cleric Adventurer", "Coachman", "Constable"],
+  ["Construction Worker", "Cooper", "Craft Guildsman", "Dairy Worker", "Dancer",
+    "Diplomat", "Diver", "Docksman / Wharfsman", "Doctor / Dentist", "Druid Adventurer",
+    "Dwarf Adventurer", "Elf Adventurer", "Entertainer", "Farmer", "Ferryman",
+    "Fighter Adventurer", "Fighter, Mercenary", "Fisherman", "Fletcher", "Foundry Worker"],
+  ["Freighter", "Furnituremaker", "Furrier", "Gambler", "Gemcutter",
+    "Gentleman / Lady", "Geologist", "Glassblower", "Goldsmith", "Government Official",
+    "Graveyard Keeper", "Guardsman", "Guide", "Guild Officer", "Halfling Adventurer",
+    "Harlot", "Healer", "Herbalist", "Hunter", "Innkeeper"],
+  ["Jailor", "Jeweler", "Judge", "Juggler / Mime", "Kennel Keeper",
+    "Laborer", "Land Officer", "Lawyer", "Leatherworker", "Lighthouse Keeper",
+    "Locksmith", "Logger", "Lumberyard Worker", "Madame", "Madman",
+    "Magic-User Adventurer", "Magic-User Guild Officer", "Majordomo", "Mason", "Mayor"],
+  ["Merchant", "Merchants' Guild Officer", "Metalsmith", "Military Officer", "Miller",
+    "Monastery Worker", "Moneylender", "Mystic Adventurer", "Nobleman / Noblewoman",
+    "Peasant", "Peddler", "Politician", "Potter", "Public Bathkeeper", "Ropemaker",
+    "Royalty", "Sage", "Sailor, Captain", "Sailor, Common", "Saloonkeeper"],
+  ["Schoolteacher", "Scribe", "Serf", "Servant, Hired", "Servant, Indentured",
+    "Shipwright", "Shoemaker", "Singer", "Slave", "Smuggler",
+    "Soapmaker", "Spy", "Stablekeeper", "Stoneworker", "Tailor",
+    "Tanner", "Tavernkeeper", "Tax Assessor", "Taxidermist", "Thatcher"],
+  ["Thief Adventurer", "Thieves' Guild Officer", "Town Drunk", "Town Hall Employee",
+    "Trading Post Employee", "Translator", "Treasurer", "Undertaker", "Vagrant",
+    "Vigilante", "Warehouse Worker", "Watchman", "Watering-Hole Worker", "Weaver",
+    "Welldigger", "Wellkeeper", "Wheelwright", "Winemaker", "Woodcarver", "Woodcutter"]
+];
+
+const CITY_SUBTABLE = columnTable(
+  "Wilderness Subtable 11: City Encounters (1d20)",
+  "Wilderness Encounters",
+  "1d20",
+  CITY_SECTIONS.map((_, index) => `Section ${index + 1}`),
+  CITY_SECTIONS[0].map((_, row) => CITY_SECTIONS.map((section) => section[row])),
+  "Roll 1d8 first to choose a section, then 1d20 in that section."
+);
+
 /** RollTable documents for dungeon and wilderness random encounters. */
 export const ENCOUNTER_TABLES = [
   ...DUNGEON_TABLES,
   ...WILDERNESS_MAIN,
-  ...SUBTABLES
+  ...SUBTABLES,
+  CASTLE_SUBTABLE,
+  CITY_SUBTABLE
 ];

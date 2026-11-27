@@ -1,0 +1,69 @@
+{
+  "_id": "J8fYzODVhFHeCS7m",
+  "_key": "!tables!J8fYzODVhFHeCS7m",
+  "name": "Wilderness Subtable 10: Castle Encounters (1d6)",
+  "img": "icons/svg/d20-grey.svg",
+  "system": {},
+  "flags": {
+    "becmi": {
+      "source": "Rules Cyclopedia",
+      "category": "Wilderness Encounters",
+      "note": "Roll 1d6 for the owner's class, 1d20+8 for level (demihumans use the listed fixed level) and 1d6 for alignment."
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4783b1f316d83cff",
+  "results": [
+    {
+      "_id": "SSl0fo7gT7Cvx6Ru",
+      "type": "text",
+      "text": "Cleric - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!J8fYzODVhFHeCS7m.SSl0fo7gT7Cvx6Ru"
+    },
+    {
+      "_id": "SFqBxhPexlBtj_Xo",
+      "type": "text",
+      "text": "Magic-User - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!J8fYzODVhFHeCS7m.SFqBxhPexlBtj_Xo"
+    },
+    {
+      "_id": "fKlBb9haClC5g3lO",
+      "type": "text",
+      "text": "Demihuman - race 1d6: 1-2 Dwarf (12th), 3-4 Elf (10th), 5-6 Halfling (8th); level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!J8fYzODVhFHeCS7m.fKlBb9haClC5g3lO"
+    },
+    {
+      "_id": "pLDMCAePinpruprT",
+      "type": "text",
+      "text": "Fighter - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "_key": "!tables.results!J8fYzODVhFHeCS7m.pLDMCAePinpruprT"
+    }
+  ],
+  "formula": "1d6"
+}

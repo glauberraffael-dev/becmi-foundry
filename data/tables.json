@@ -3032,5 +3032,295 @@
         "drawn": false
       }
     ]
+  },
+  {
+    "name": "Wilderness Subtable 10: Castle Encounters (1d6)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters",
+        "note": "Roll 1d6 for the owner's class, 1d20+8 for level (demihumans use the listed fixed level) and 1d6 for alignment."
+      }
+    },
+    "formula": "1d6",
+    "results": [
+      {
+        "_id": "enc0000000000245",
+        "type": "text",
+        "text": "Cleric - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000246",
+        "type": "text",
+        "text": "Magic-User - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000247",
+        "type": "text",
+        "text": "Demihuman - race 1d6: 1-2 Dwarf (12th), 3-4 Elf (10th), 5-6 Halfling (8th); level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000248",
+        "type": "text",
+        "text": "Fighter - level 1d20+8; alignment 1d6: 1 Chaotic, 2-4 Neutral, 5-6 Lawful",
+        "range": [
+          4,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
+  },
+  {
+    "name": "Wilderness Subtable 11: City Encounters (1d20)",
+    "flags": {
+      "becmi": {
+        "source": "Rules Cyclopedia",
+        "category": "Wilderness Encounters",
+        "note": "Roll 1d8 first to choose a section, then 1d20 in that section."
+      }
+    },
+    "formula": "1d20",
+    "results": [
+      {
+        "_id": "enc0000000000249",
+        "type": "text",
+        "text": "Section 1: Alchemist; Section 2: Boatman / Gondolier; Section 3: Construction Worker; Section 4: Freighter; Section 5: Jailor; Section 6: Merchant; Section 7: Schoolteacher; Section 8: Thief Adventurer",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000250",
+        "type": "text",
+        "text": "Section 1: Animal Trainer; Section 2: Bodyguard; Section 3: Cooper; Section 4: Furnituremaker; Section 5: Jeweler; Section 6: Merchants' Guild Officer; Section 7: Scribe; Section 8: Thieves' Guild Officer",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000251",
+        "type": "text",
+        "text": "Section 1: Apothecary; Section 2: Bonecarver; Section 3: Craft Guildsman; Section 4: Furrier; Section 5: Judge; Section 6: Metalsmith; Section 7: Serf; Section 8: Town Drunk",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000252",
+        "type": "text",
+        "text": "Section 1: Archaeologist; Section 2: Bootmaker; Section 3: Dairy Worker; Section 4: Gambler; Section 5: Juggler / Mime; Section 6: Military Officer; Section 7: Servant, Hired; Section 8: Town Hall Employee",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000253",
+        "type": "text",
+        "text": "Section 1: Armorer; Section 2: Bowyer; Section 3: Dancer; Section 4: Gemcutter; Section 5: Kennel Keeper; Section 6: Miller; Section 7: Servant, Indentured; Section 8: Trading Post Employee",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000254",
+        "type": "text",
+        "text": "Section 1: Artist/Sculptor; Section 2: Brewer; Section 3: Diplomat; Section 4: Gentleman / Lady; Section 5: Laborer; Section 6: Monastery Worker; Section 7: Shipwright; Section 8: Translator",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000255",
+        "type": "text",
+        "text": "Section 1: Assassin; Section 2: Broommaker; Section 3: Diver; Section 4: Geologist; Section 5: Land Officer; Section 6: Moneylender; Section 7: Shoemaker; Section 8: Treasurer",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000256",
+        "type": "text",
+        "text": "Section 1: Astrologer; Section 2: Butcher; Section 3: Docksman / Wharfsman; Section 4: Glassblower; Section 5: Lawyer; Section 6: Mystic Adventurer; Section 7: Singer; Section 8: Undertaker",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000257",
+        "type": "text",
+        "text": "Section 1: Astronomer; Section 2: Candlemaker; Section 3: Doctor / Dentist; Section 4: Goldsmith; Section 5: Leatherworker; Section 6: Nobleman / Noblewoman; Section 7: Slave; Section 8: Vagrant",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000258",
+        "type": "text",
+        "text": "Section 1: Athlete; Section 2: Caravan Master; Section 3: Druid Adventurer; Section 4: Government Official; Section 5: Lighthouse Keeper; Section 6: Peasant; Section 7: Smuggler; Section 8: Vigilante",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000259",
+        "type": "text",
+        "text": "Section 1: Baker; Section 2: Carpenter; Section 3: Dwarf Adventurer; Section 4: Graveyard Keeper; Section 5: Locksmith; Section 6: Peddler; Section 7: Soapmaker; Section 8: Warehouse Worker",
+        "range": [
+          11,
+          11
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000260",
+        "type": "text",
+        "text": "Section 1: Banker; Section 2: Carter; Section 3: Elf Adventurer; Section 4: Guardsman; Section 5: Logger; Section 6: Politician; Section 7: Spy; Section 8: Watchman",
+        "range": [
+          12,
+          12
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000261",
+        "type": "text",
+        "text": "Section 1: Barber; Section 2: Chandler; Section 3: Entertainer; Section 4: Guide; Section 5: Lumberyard Worker; Section 6: Potter; Section 7: Stablekeeper; Section 8: Watering-Hole Worker",
+        "range": [
+          13,
+          13
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000262",
+        "type": "text",
+        "text": "Section 1: Bartender; Section 2: Charcoalmaker; Section 3: Farmer; Section 4: Guild Officer; Section 5: Madame; Section 6: Public Bathkeeper; Section 7: Stoneworker; Section 8: Weaver",
+        "range": [
+          14,
+          14
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000263",
+        "type": "text",
+        "text": "Section 1: Basketweaver; Section 2: Chef; Section 3: Ferryman; Section 4: Halfling Adventurer; Section 5: Madman; Section 6: Ropemaker; Section 7: Tailor; Section 8: Welldigger",
+        "range": [
+          15,
+          15
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000264",
+        "type": "text",
+        "text": "Section 1: Bazaar Merchant; Section 2: Chemist; Section 3: Fighter Adventurer; Section 4: Harlot; Section 5: Magic-User Adventurer; Section 6: Royalty; Section 7: Tanner; Section 8: Wellkeeper",
+        "range": [
+          16,
+          16
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000265",
+        "type": "text",
+        "text": "Section 1: Beekeeper; Section 2: Church / Temple; Section 3: Fighter, Mercenary; Section 4: Healer; Section 5: Magic-User Guild Officer; Section 6: Sage; Section 7: Tavernkeeper; Section 8: Wheelwright",
+        "range": [
+          17,
+          17
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000266",
+        "type": "text",
+        "text": "Section 1: Beggar; Section 2: Cleric Adventurer; Section 3: Fisherman; Section 4: Herbalist; Section 5: Majordomo; Section 6: Sailor, Captain; Section 7: Tax Assessor; Section 8: Winemaker",
+        "range": [
+          18,
+          18
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000267",
+        "type": "text",
+        "text": "Section 1: Blacksmith; Section 2: Coachman; Section 3: Fletcher; Section 4: Hunter; Section 5: Mason; Section 6: Sailor, Common; Section 7: Taxidermist; Section 8: Woodcarver",
+        "range": [
+          19,
+          19
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "enc0000000000268",
+        "type": "text",
+        "text": "Section 1: Boardinghouse Keeper; Section 2: Constable; Section 3: Foundry Worker; Section 4: Innkeeper; Section 5: Mayor; Section 6: Saloonkeeper; Section 7: Thatcher; Section 8: Woodcutter",
+        "range": [
+          20,
+          20
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ]
   }
 ]

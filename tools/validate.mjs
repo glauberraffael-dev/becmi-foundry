@@ -12,6 +12,7 @@ import {
 } from "./pack-layout.mjs";
 import { ENCOUNTER_TABLES, REACTION_TABLE } from "./encounter-tables.mjs";
 import { SPELL_MATH_OVERRIDES } from "./spell-math.mjs";
+import { RC } from "../scripts/rc-data.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), "utf8"));
@@ -196,12 +197,45 @@ for (const expected of expectedTables) {
     if (!faces.has(face)) note(`tables: face ${face} is missing from ${expected.name}`);
   }
 }
+// Every "Subtable N" entry must point at a real RollTable in the same set.
+const tableNames = new Set(tableDocs.map((doc) => doc.name));
+for (const doc of tableDocs) {
+  for (const result of doc.results ?? []) {
+    for (const match of String(result.text ?? "").matchAll(/Subtable\s+(\d+)/gi)) {
+      const prefix = `Wilderness Subtable ${Number(match[1])}:`;
+      if (![...tableNames].some((name) => name.startsWith(prefix))) {
+        note(`tables: ${doc.name} references ${match[0]} without a matching RollTable`);
+      }
+    }
+  }
+}
+
 const rollableJournalDocs = await readJson("data/journals.json");
 const equipmentJournal = rollableJournalDocs.find((doc) => doc.name === "Equipment Tables");
 if (equipmentJournal?.pages?.length !== 9) note("journals: Equipment Tables should have 9 text pages");
-if (!rollableJournalDocs.find((doc) => doc.name === "Core Rules Reference")?.pages
-  ?.some((page) => page.name === "Encounters and Reaction Rolls")) {
+const coreReference = rollableJournalDocs.find((doc) => doc.name === "Core Rules Reference");
+if (!coreReference?.pages?.some((page) => page.name === "Encounters and Reaction Rolls")) {
   note("journals: missing encounter and reaction reference page");
+}
+
+// The generated reference must agree with the data the runtime actually uses.
+const referencePageText = (doc, pageName) =>
+  doc?.pages?.find((page) => page.name === pageName)?.text?.content ?? "";
+const classesText = referencePageText(
+  rollableJournalDocs.find((doc) => doc.name?.startsWith("Chapter 2:")), "Rules"
+);
+for (const [key, name] of [["cleric", "Cleric"], ["fighter", "Fighter"],
+  ["magic-user", "Magic-User"], ["thief", "Thief"]]) {
+  const row = classesText.split("<tr>").find((part) => part.includes(`<td>${name}</td>`));
+  if (row && !row.includes(`<td>d${RC.classes[key].hitDie}</td>`)) {
+    note(`journals: ${name} hit die disagrees with RC.classes`);
+  }
+}
+const encumbranceText = referencePageText(coreReference, "Encumbrance");
+for (const stale of ["12 ft", "9 ft", "6 ft", "3 ft"]) {
+  if (encumbranceText.includes(`<td>${stale}</td>`)) {
+    note(`journals: stale movement value ${stale} in Encumbrance reference`);
+  }
 }
 
 // --- Compendium source files ----------------------------------------------
