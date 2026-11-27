@@ -654,6 +654,120 @@
 {{/if}}
 {{/if}}
 
+<!-- ============================ ENCOUNTERS ============================ -->
+<section class="becmi-tab-panel{{#if (eq activeTab "encounter")}} is-active{{/if}}" data-tab="encounter">
+  <div class="becmi-scroll-y">
+    <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.encounter'}}</h2>
+    <p class="becmi-hint">{{localize 'BECMI.encounter.hint'}}</p>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.encounter.chanceTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.area'}}:</label>
+        <select data-encounter-input="area">
+          {{#each encounter.areaOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../encounter.inputs.area)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.terrain'}}:</label>
+        <select data-encounter-input="terrain">
+          {{#each encounter.terrainOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../encounter.inputs.terrain)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="night"{{#if encounter.inputs.night}} checked{{/if}}> {{localize 'BECMI.encounter.night'}}</label>
+      <div class="becmi-field becmi-field--wide">
+        <span class="becmi-derived">{{encounter.chanceLabel}} · {{encounter.chanceFrequency}}</span>
+      </div>
+      <button type="button" class="becmi-roll" data-action="encounterCheck">{{localize 'BECMI.encounter.check'}}</button>
+      <button type="button" class="becmi-roll" data-action="wanderingDistance">{{localize 'BECMI.encounter.wanderingDistance'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.encounter.surpriseTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.setting'}}:</label>
+        <select data-encounter-input="setting">
+          <option value="dungeon"{{#if (eq encounter.inputs.setting "dungeon")}} selected{{/if}}>{{localize 'BECMI.encounter.dungeon'}}</option>
+          <option value="wilderness"{{#if (eq encounter.inputs.setting "wilderness")}} selected{{/if}}>{{localize 'BECMI.encounter.wilderness'}}</option>
+          <option value="ocean"{{#if (eq encounter.inputs.setting "ocean")}} selected{{/if}}>{{localize 'BECMI.encounter.ocean'}}</option>
+          <option value="undersea"{{#if (eq encounter.inputs.setting "undersea")}} selected{{/if}}>{{localize 'BECMI.encounter.undersea'}}</option>
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.visibility'}}:</label>
+        <select data-encounter-input="visibility">
+          {{#each encounter.visibilityOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../encounter.inputs.visibility)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.encounter'}}:</label>
+        <select data-encounter-input="encounter">
+          {{#each encounter.encounterOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../encounter.inputs.encounter)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <button type="button" class="becmi-roll" data-action="surpriseCheck">{{localize 'BECMI.encounter.surpriseCheck'}}</button>
+      <button type="button" class="becmi-roll" data-action="encounterDistance">{{localize 'BECMI.encounter.distance'}}</button>
+      <div class="becmi-field becmi-field--wide"><span class="becmi-derived">{{localize 'BECMI.encounter.currentSurprise'}}: {{encounter.surpriseLabel}}</span></div>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.rolls.reaction'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.charisma'}}:</label>
+        <input data-encounter-input="charisma" type="number" value="{{encounter.inputs.charisma}}" placeholder="{{encounter.charismaValue}}" title="{{localize 'BECMI.encounter.charismaHint'}}">
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.encounter.action'}}:</label>
+        <input data-encounter-input="action" type="number" min="-2" max="2" value="{{encounter.inputs.action}}">
+      </div>
+      <div class="becmi-field becmi-field--wide">
+        <span class="becmi-derived">{{localize 'BECMI.encounter.reactionRound'}} {{encounter.reactionAttempt}} · {{localize 'BECMI.encounter.pendingModifier'}} {{encounter.reactionModifier}}</span>
+      </div>
+      <button type="button" class="becmi-roll" data-action="reactionCheck"{{#if encounter.reactionDone}} disabled{{/if}}>{{encounter.reactionButtonLabel}}</button>
+      <button type="button" class="becmi-roll" data-action="resetReaction">{{localize 'BECMI.encounter.resetReaction'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.encounter.evasion'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.encounter.partySize'}}:</label><input data-encounter-input="partySize" type="number" min="1" value="{{encounter.inputs.partySize}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.encounter.monsterCount'}}:</label><input data-encounter-input="monsterCount" type="number" min="1" value="{{encounter.inputs.monsterCount}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="wooded"{{#if encounter.inputs.wooded}} checked{{/if}}> {{localize 'BECMI.encounter.wooded'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="featureless"{{#if encounter.inputs.featureless}} checked{{/if}}> {{localize 'BECMI.encounter.featureless'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="pursuersFaster"{{#if encounter.inputs.pursuersFaster}} checked{{/if}}> {{localize 'BECMI.encounter.pursuersFaster'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="evadersFaster"{{#if encounter.inputs.evadersFaster}} checked{{/if}}> {{localize 'BECMI.encounter.evadersFaster'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-encounter-input="scouts"{{#if encounter.inputs.scouts}} checked{{/if}}> {{localize 'BECMI.encounter.scouts'}}</label>
+      <div class="becmi-field"><label>{{localize 'BECMI.encounter.customAdjustment'}}:</label><input data-encounter-input="customAdjustment" type="number" value="{{encounter.inputs.customAdjustment}}"></div>
+      <div class="becmi-field becmi-field--wide"><span class="becmi-derived">{{localize 'BECMI.encounter.evasionChanceLabel'}} {{encounter.evasionChance}}%</span></div>
+      <button type="button" class="becmi-roll" data-action="evasionCheck">{{localize 'BECMI.encounter.evasion'}}</button>
+      <div class="becmi-field"><label>{{localize 'BECMI.encounter.pursuitRoundLabel'}}:</label><input data-encounter-input="pursuitRound" type="number" min="1" value="{{encounter.inputs.pursuitRound}}"></div>
+      <button type="button" class="becmi-roll" data-action="pursuitRound">{{localize 'BECMI.encounter.pursuit'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.encounter.tableTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field becmi-field--wide">
+        <label>{{localize 'BECMI.encounter.table'}}:</label>
+        <select data-encounter-input="table">
+          {{#each encounter.tables as |table|}}
+          <option value="{{table.name}}"{{#if (eq table.name ../encounter.inputs.table)}} selected{{/if}}>{{table.name}} ({{table.formula}})</option>
+          {{else}}
+          <option value="Monster Reactions (2d6)">Monster Reactions (2d6)</option>
+          {{/each}}
+        </select>
+      </div>
+      <button type="button" class="becmi-roll" data-action="rollEncounterTable">{{localize 'BECMI.encounter.drawTable'}}</button>
+    </div>
+  </div>
+</section>
+
 </div>
 
 <!-- ============================ SIDEBAR ============================ -->

@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.32
+
+- Added an **Encounters** tab with the Rules Cyclopedia chapter 7 procedures:
+  chance of encounter by area, terrain and night, 1d6 surprise per side with
+  automatic initiative for an unsurprised group, encounter and wandering-monster
+  distance, 2d6 reactions drawn from the `Monster Reactions (2d6)` RollTable,
+  d100 evasion with terrain/speed/scout adjustments and chase rounds with the
+  five-round morale reminder. All checks post chat cards; their inputs are
+  transient sheet state and never become Actor data.
+- Replaced the old reaction bands with the exact RC table (`2-3` attacks, `4-6`
+  aggressive with `-4`, `7-9` cautious, `10-11` neutral with `+4`, `12` friendly).
+  Charisma and PC actions apply from the second roll onward, with a maximum of
+  three rolls and the third-roll-below-10 outcome.
+- Corrected the Chapter 7 and Core Rules Reference prose for surprise, distance,
+  evasion and pursuit, and updated the reaction table used by the compendium.
+
 ## 0.1.31
 
 - Added a Rules Cyclopedia **XP Calculator** tab to character sheets. It takes

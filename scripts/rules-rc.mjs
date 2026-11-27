@@ -1211,3 +1211,341 @@ export function rollExpression(expression, rng = Math.random) {
     return { total: 0, parts: [], formula: text, valid: false, error: error.message };
   }
 }
+
+/* ------------------------------------------------------------------ *
+ * Encounters, surprise, reactions, distance and evasion (RC Ch. 7) 
+ * ------------------------------------------------------------------ */
+
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+const numeric = (value, fallback = 0) => {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+};
+
+/** RC p. 92: terrain classes for the Chance of Encounter Table. */
+export const ENCOUNTER_TERRAIN_CLASSES = Object.freeze({
+  clear: "open",
+  grasslands: "open",
+  inhabited: "open",
+  settled: "open",
+  forest: "difficult",
+  river: "difficult",
+  hills: "difficult",
+  barren: "difficult",
+  desert: "difficult",
+  ocean: "difficult",
+  aerial: "difficult",
+  swamp: "severe",
+  jungle: "severe",
+  mountains: "severe"
+});
+
+const CHANCE_THRESHOLDS = { open: 1, difficult: 2, severe: 3 };
+
+/** Normalize terrain names used by the encounter UI and the monster tables. */
+export function encounterTerrainKey(value) {
+  const raw = String(value ?? "").toLowerCase().trim()
+    .replace(/[-\s]+/g, " ")
+    .replace(/\b(land|lands|wood|woods)\b/g, (word) => word === "woods" ? "forest" : word);
+  const aliases = {
+    "clear grassland": "clear", "grass land": "grasslands", "grassland": "grasslands",
+    "barren land": "barren", "barren lands": "barren", "open": "clear", "wood": "forest",
+    "mountain": "mountains", "sea": "ocean", "air": "aerial", "sky": "aerial",
+    "town": "settled", "city": "settled", "village": "inhabited"
+  };
+  const key = aliases[raw] ?? raw;
+  return key in ENCOUNTER_TERRAIN_CLASSES ? key : "clear";
+}
+
+/**
+ * RC p. 92 Chance of Encounter Table. Dungeon/city uses 1d6 every two turns
+ * and 1d12 at night; wilderness uses 1d6 by day and 1d12 at night.
+ */
+export function encounterChance({ area = "wilderness", terrain = "clear", night = false } = {}) {
+  const setting = String(area ?? "wilderness").toLowerCase().trim();
+  const isDungeon = ["dungeon", "city", "town", "indoor"].includes(setting);
+  const terrainKey = encounterTerrainKey(terrain);
+  const terrainClass = ENCOUNTER_TERRAIN_CLASSES[terrainKey];
+  const threshold = isDungeon ? 1 : (CHANCE_THRESHOLDS[terrainClass] ?? 1);
+  const faces = night ? 12 : 6;
+  return {
+    area: setting,
+    terrain: terrainKey,
+    terrainClass: isDungeon ? "dungeon" : terrainClass,
+    formula: `1d${faces}`,
+    faces,
+    threshold,
+    target: threshold === 1 ? "1" : `1-${threshold}`,
+    frequency: isDungeon ? "every 2 turns" : (night ? "once at night" : "once during the day"),
+    note: terrainKey === "ocean" && threshold > 1
+      ? "A 2 is no encounter unless the ship lands at the end of the day."
+      : terrainKey === "aerial"
+        ? "Aerial encounters always use the Flyers subtable."
+        : null
+  };
+}
+
+/** Roll a random encounter check. A supplied `roll` makes the check deterministic. */
+export function encounterCheck(input = {}, rng = Math.random) {
+  const chance = encounterChance(input);
+  const roll = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? rollExpression(chance.formula, rng).total
+    : clamp(Math.round(numeric(input.roll, 1)), 1, chance.faces);
+  return { ...chance, roll, encounter: roll <= chance.threshold };
+}
+
+/**
+ * RC pp. 91-93: each side rolls 1d6; 1-2 is surprised. A surprised side
+ * loses initiative automatically; otherwise 1d6 per side decides who acts.
+ */
+export function surpriseCheck(input = {}, rng = Math.random) {
+  const rollD6 = (value) => value === undefined || value === null || value === ""
+    ? rollExpression("1d6", rng).total
+    : clamp(Math.round(numeric(value, 3)), 1, 6);
+  const partyRoll = rollD6(input?.partyRoll);
+  const monsterRoll = rollD6(input?.monsterRoll);
+  const partySurprised = partyRoll <= 2;
+  const monsterSurprised = monsterRoll <= 2;
+  let state = "neither";
+  if (partySurprised && monsterSurprised) state = "both";
+  else if (partySurprised) state = "party";
+  else if (monsterSurprised) state = "monsters";
+
+  let first = null;
+  let automatic = false;
+  let partyInitiativeRoll = null;
+  let monsterInitiativeRoll = null;
+  if (state === "party") {
+    first = "monsters";
+    automatic = true;
+  } else if (state === "monsters") {
+    first = "party";
+    automatic = true;
+  } else {
+    partyInitiativeRoll = rollD6(input?.partyInitiativeRoll);
+    monsterInitiativeRoll = rollD6(input?.monsterInitiativeRoll);
+    if (partyInitiativeRoll > monsterInitiativeRoll) first = "party";
+    else if (monsterInitiativeRoll > partyInitiativeRoll) first = "monsters";
+    else first = "tie";
+  }
+
+  return {
+    state,
+    partyRoll,
+    monsterRoll,
+    partySurprised,
+    monsterSurprised,
+    lostRound: state === "both",
+    freeRound: state === "party" || state === "monsters",
+    initiative: { first, automatic, partyRoll: partyInitiativeRoll, monsterRoll: monsterInitiativeRoll }
+  };
+}
+
+/** RC p. 93 Monster Reactions Table (2d6). */
+export const REACTION_OUTCOMES = Object.freeze([
+  { key: "attack", min: 2, max: 3, label: "Monster attacks", reroll: false, nextModifier: 0 },
+  {
+    key: "aggressive", min: 4, max: 6,
+    label: "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll",
+    reroll: true, nextModifier: -4
+  },
+  { key: "cautious", min: 7, max: 9, label: "Monster is cautious; roll again in one round", reroll: true, nextModifier: 0 },
+  {
+    key: "neutral", min: 10, max: 11,
+    label: "Monster is neutral; roll again in one round with a bonus of +4 to the roll",
+    reroll: true, nextModifier: 4
+  },
+  { key: "friendly", min: 12, max: 12, label: "Monster is friendly", reroll: false, nextModifier: 0 }
+]);
+
+export function reactionBand(total) {
+  const value = Math.round(numeric(total, 2));
+  return REACTION_OUTCOMES.find((band) => value >= band.min && value <= band.max) ?? REACTION_OUTCOMES[0];
+}
+
+/**
+ * One 2d6 reaction roll. The first roll ignores Charisma; later rolls add
+ * Charisma, PC actions (±2) and the modifier carried by the previous result.
+ * RC allows at most three rolls, and a third roll below 10 attacks or leaves.
+ */
+export function reactionStep(input = {}, rng = Math.random) {
+  const attempt = clamp(Math.round(numeric(input?.attempt, 1)), 1, 3);
+  const raw = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? rollExpression("2d6", rng).total
+    : Math.round(numeric(input.roll, 7));
+  const first = attempt === 1;
+  const charisma = Math.round(numeric(input?.charisma, 0));
+  const action = clamp(Math.round(numeric(input?.action, 0)), -2, 2);
+  const pendingModifier = Math.round(numeric(input?.pendingModifier, 0));
+  const modifier = first ? 0 : charisma + action + pendingModifier;
+  const total = raw + modifier;
+  const band = reactionBand(total);
+  const reroll = band.reroll && attempt < 3;
+  const forcedOutcome = attempt >= 3 && total < 10 ? "attacks or leaves" : null;
+  return {
+    attempt,
+    raw,
+    charisma: first ? 0 : charisma,
+    action: first ? 0 : action,
+    pendingModifier: first ? 0 : pendingModifier,
+    modifier,
+    total,
+    band,
+    reroll,
+    forcedOutcome,
+    done: !reroll,
+    state: {
+      attempt: reroll ? attempt + 1 : attempt,
+      pendingModifier: reroll ? band.nextModifier : 0,
+      done: !reroll
+    }
+  };
+}
+
+/** RC p. 93 Encounter Distances Table. */
+export const ENCOUNTER_DISTANCES = Object.freeze([
+  { setting: "dungeon", visibility: "bright", encounter: "any", formula: "4d6", unit: "ft" },
+  { setting: "dungeon", visibility: "dim", encounter: "any", formula: "2d6", unit: "ft" },
+  { setting: "dungeon", visibility: "none", encounter: "any", formula: "1d4", unit: "ft" },
+  { setting: "wilderness", visibility: "bright", encounter: "any", formula: "4d6", unit: "yards" },
+  { setting: "wilderness", visibility: "dim", encounter: "any", formula: "2d6", unit: "yards" },
+  { setting: "wilderness", visibility: "none", encounter: "any", formula: "1d4", unit: "yards" },
+  { setting: "ocean", visibility: "bright", encounter: "ship", formula: null, distance: 300, unit: "yards" },
+  { setting: "ocean", visibility: "bright", encounter: "monster", formula: "4d6", unit: "yards" },
+  { setting: "ocean", visibility: "dim", encounter: "ship", formula: null, distance: 120, unit: "yards" },
+  { setting: "ocean", visibility: "dim", encounter: "monster", formula: "2d6", unit: "yards" },
+  { setting: "ocean", visibility: "none", encounter: "ship", formula: null, distance: 40, unit: "yards" },
+  { setting: "ocean", visibility: "none", encounter: "monster", formula: "1d4", unit: "yards" },
+  { setting: "undersea", visibility: "any", encounter: "any", formula: "1d6", unit: "yards" }
+]);
+
+function encounterDistanceRow(setting, visibility, encounter) {
+  const aliases = { indoor: "dungeon", city: "dungeon", sea: "ocean", underwater: "undersea" };
+  const wantedSetting = aliases[setting] ?? setting;
+  const visibilityAliases = { veryGood: "bright", good: "bright", dark: "none", poor: "none" };
+  const wantedVisibility = visibilityAliases[visibility] ?? visibility;
+  return ENCOUNTER_DISTANCES.find((row) => row.setting === wantedSetting
+    && (row.visibility === wantedVisibility || row.visibility === "any")
+    && (row.encounter === encounter || row.encounter === "any"))
+    ?? ENCOUNTER_DISTANCES[0];
+}
+
+/**
+ * RC p. 92: surprise replaces the table with 1d4 x 10; a single surprised
+ * side notices at half the rolled distance.
+ */
+export function encounterDistance(input = {}, rng = Math.random) {
+  const setting = String(input?.setting ?? input?.area ?? "dungeon").toLowerCase().trim();
+  const visibility = String(input?.visibility ?? "bright").toLowerCase().trim();
+  const encounter = String(input?.encounter ?? "monster").toLowerCase().trim();
+  const surprise = ["both", "party", "monsters"].includes(input?.surprise) ? input.surprise : "none";
+  const surprised = surprise !== "none";
+  const row = surprised
+    ? { setting, visibility, encounter: "any", formula: "1d4", unit: setting === "dungeon" ? "ft" : "yards" }
+    : encounterDistanceRow(setting, visibility, encounter);
+  const roll = row.formula
+    ? (input?.roll === undefined || input?.roll === null || input?.roll === ""
+      ? rollExpression(row.formula, rng).total
+      : Math.round(numeric(input.roll, 1)))
+    : row.distance;
+  const unitValue = row.unit === "ft" ? 10 : 10;
+  const distance = row.formula ? roll * unitValue : row.distance;
+  return {
+    setting,
+    visibility,
+    encounter,
+    surprise,
+    formula: row.formula,
+    unit: row.unit,
+    roll,
+    distance,
+    surprisedDistance: surprised && surprise !== "both" ? distance / 2 : null,
+    fixed: !row.formula
+  };
+}
+
+/** RC p. 91: wandering monsters appear 2d6 x 10 ft away. */
+export function wanderingMonsterDistance(input = {}, rng = Math.random) {
+  const roll = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? rollExpression("2d6", rng).total
+    : Math.round(numeric(input.roll, 2));
+  return { formula: "2d6", unit: "ft", roll, distance: roll * 10 };
+}
+
+/** RC p. 99 Evasion Table, indexed by party size then monsters encountered. */
+export const EVASION_TABLE = Object.freeze([
+  {
+    party: [1, 4], ranges: [[1, 1, 50], [2, 3, 70], [4, Infinity, 90]]
+  },
+  {
+    party: [5, 12], ranges: [[1, 3, 35], [4, 8, 50], [9, Infinity, 70]]
+  },
+  {
+    party: [13, 24], ranges: [[1, 6, 25], [7, 16, 35], [17, Infinity, 50]]
+  },
+  {
+    party: [25, Infinity], ranges: [[1, 10, 10], [11, 30, 25], [31, Infinity, 35]]
+  }
+]);
+
+/** RC p. 99 Evasion Table adjustments; the prose also mentions scouts at -10%. */
+export const EVASION_ADJUSTMENTS = Object.freeze({
+  wooded: 25,
+  featureless: -15,
+  pursuersFaster: -25,
+  evadersFaster: 25,
+  scouts: -15
+});
+
+export function evasionChance(input = {}) {
+  const partySize = Math.max(1, Math.round(numeric(input?.partySize, 1)));
+  const monsterCount = Math.max(1, Math.round(numeric(input?.monsterCount, 1)));
+  const row = EVASION_TABLE.find((entry) => partySize >= entry.party[0] && partySize <= entry.party[1])
+    ?? EVASION_TABLE[0];
+  const band = row.ranges.find(([low, high]) => monsterCount >= low && monsterCount <= high)
+    ?? row.ranges.at(-1);
+  const namedAdjustments = Object.fromEntries(Object.entries(EVASION_ADJUSTMENTS).map(([key, value]) => [
+    key, Boolean(input?.adjustments?.[key]) ? value : 0
+  ]));
+  const custom = numeric(input?.adjustments?.custom, 0);
+  const totalAdjustment = Object.values(namedAdjustments).reduce((sum, value) => sum + value, custom);
+  const chance = clamp(band[2] + totalAdjustment, 5, 100);
+  return {
+    partySize,
+    monsterCount,
+    partyBand: row.party[1] === Infinity ? `${row.party[0]}+` : `${row.party[0]}-${row.party[1]}`,
+    monsterBand: band[1] === Infinity ? `${band[0]}+` : `${band[0]}-${band[1]}`,
+    base: band[2],
+    adjustments: namedAdjustments,
+    custom,
+    totalAdjustment,
+    chance
+  };
+}
+
+/** Roll a d100 evasion attempt; the evader always has at least a 5% chance. */
+export function evasionCheck(input = {}, rng = Math.random) {
+  const chance = evasionChance(input);
+  const roll = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? 1 + Math.floor(rng() * 100)
+    : clamp(Math.round(numeric(input.roll, 1)), 1, 100);
+  return { ...chance, roll, success: roll <= chance.chance, failure: roll > chance.chance };
+}
+
+/** RC p. 99: chase rounds use 1d6 per side and a morale check every 5 rounds. */
+export function pursuitRound(input = {}, rng = Math.random) {
+  const round = Math.max(1, Math.round(numeric(input?.round, 1)));
+  const rollD6 = (value) => value === undefined || value === null || value === ""
+    ? rollExpression("1d6", rng).total
+    : clamp(Math.round(numeric(value, 3)), 1, 6);
+  const partyRoll = rollD6(input?.partyRoll);
+  const monsterRoll = rollD6(input?.monsterRoll);
+  const first = partyRoll > monsterRoll ? "party" : monsterRoll > partyRoll ? "monsters" : "tie";
+  return {
+    round,
+    partyRoll,
+    monsterRoll,
+    first,
+    moraleCheckDue: round % 5 === 0
+  };
+}

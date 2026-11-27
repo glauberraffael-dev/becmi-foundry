@@ -47,17 +47,17 @@ function columnTable(name, category, formula, columns, rows, note) {
 }
 
 const REACTIONS = [
-  [2, "Hostile, attacks immediately"],
-  [3, "Hostile, attacks immediately"],
-  [4, "Hostile, may attack"],
-  [5, "Hostile, may attack"],
-  [6, "Neutral, uncertain"],
-  [7, "Neutral, uncertain"],
-  [8, "No attack, may parley"],
-  [9, "No attack, may parley"],
-  [10, "Friendly, helpful"],
-  [11, "Friendly, helpful"],
-  [12, "Friendly, enthusiastic"]
+  [2, "Monster attacks"],
+  [3, "Monster attacks"],
+  [4, "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll"],
+  [5, "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll"],
+  [6, "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll"],
+  [7, "Monster is cautious; roll again in one round"],
+  [8, "Monster is cautious; roll again in one round"],
+  [9, "Monster is cautious; roll again in one round"],
+  [10, "Monster is neutral; roll again in one round with a bonus of +4 to the roll"],
+  [11, "Monster is neutral; roll again in one round with a bonus of +4 to the roll"],
+  [12, "Monster is friendly"]
 ];
 
 export const REACTION_TABLE = {

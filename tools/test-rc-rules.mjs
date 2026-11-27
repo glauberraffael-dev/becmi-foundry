@@ -13,14 +13,16 @@ import {
 import {
   RC, adjustment, armorBase, attackInfo, attackNeeded, attackRows, attackSpecFor,
   baseSaves, baseThiefSkills, calculateXpAward, capXpAdvancement, chooseDamage,
-  computeArmorClass, computeLoad, equippedAcBonus, equippedSaveBonuses, finalDamage,
+  computeArmorClass, computeLoad, encounterChance, encounterCheck, encounterDistance,
+  equippedAcBonus, equippedSaveBonuses, evasionChance, evasionCheck, finalDamage,
   generalSkillInfo, generalSkillSlots, GENERAL_SKILLS, hpForLevel, masteryChoices,
   masteryData, masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula,
   monsterHpFormula, monsterHpFromHitDice, monsterSaveTargets, monsterSpellcasterInfo,
   monsterThac0, monsterXpValue, MONSTER_XP_TABLE, normalizeClassKey, parseMonsterHitDice,
-  parseMonsterSaveAs, planAbilityAdjustment, primeRequisiteBonus, resolveTurnResult,
-  rollExpression, spellKey, spellSlotsForLevel, spellsFor, sumDamage,
-  turnUndeadCell, turnUndeadColumn, turnUndeadTable, xpForNextLevel, xpThresholds
+  parseMonsterSaveAs, planAbilityAdjustment, primeRequisiteBonus, pursuitRound,
+  reactionBand, reactionStep, resolveTurnResult, rollExpression, spellKey,
+  spellSlotsForLevel, spellsFor, sumDamage, surpriseCheck, turnUndeadCell,
+  turnUndeadColumn, turnUndeadTable, wanderingMonsterDistance, xpForNextLevel, xpThresholds
 } from "../scripts/rules-rc.mjs";
 
 const check = (name, fn) => {
@@ -515,4 +517,104 @@ check("name level derives titles, cleric levels, hireling limits and spell cost"
   assert.equal(early.active, false);
   assert.equal(early.canDetectEvil, false);
   assert.ok(early.warnings.some((line) => line.includes("preview")));
+});
+
+check("encounter checks use RC dice and terrain thresholds", () => {
+  assert.deepEqual(
+    [encounterChance({ area: "dungeon" }).formula, encounterChance({ area: "dungeon", night: true }).formula],
+    ["1d6", "1d12"]
+  );
+  assert.equal(encounterChance({ area: "city" }).target, "1");
+  assert.equal(encounterChance({ area: "wilderness", terrain: "clear" }).target, "1");
+  assert.equal(encounterChance({ area: "wilderness", terrain: "ocean" }).target, "1-2");
+  assert.equal(encounterChance({ area: "wilderness", terrain: "mountains" }).target, "1-3");
+  assert.equal(encounterChance({ area: "wilderness", terrain: "Woods" }).target, "1-2");
+  assert.equal(encounterCheck({ area: "dungeon", roll: 1 }).encounter, true);
+  assert.equal(encounterCheck({ area: "dungeon", roll: 2 }).encounter, false);
+  assert.equal(encounterCheck({ area: "wilderness", terrain: "swamp", roll: 3 }).encounter, true);
+});
+
+check("surprise grants a free round or automatic initiative", () => {
+  const both = surpriseCheck({
+    partyRoll: 2, monsterRoll: 1, partyInitiativeRoll: 3, monsterInitiativeRoll: 5
+  });
+  assert.equal(both.state, "both");
+  assert.equal(both.lostRound, true);
+  assert.equal(both.initiative.first, "monsters");
+
+  const party = surpriseCheck({ partyRoll: 1, monsterRoll: 5 });
+  assert.equal(party.state, "party");
+  assert.equal(party.initiative.first, "monsters");
+  assert.equal(party.initiative.automatic, true);
+  assert.equal(party.initiative.partyRoll, null);
+
+  const monsters = surpriseCheck({ partyRoll: 6, monsterRoll: 2 });
+  assert.equal(monsters.state, "monsters");
+  assert.equal(monsters.initiative.first, "party");
+  assert.equal(monsters.freeRound, true);
+
+  const neither = surpriseCheck({ partyRoll: 4, monsterRoll: 3, partyInitiativeRoll: 5, monsterInitiativeRoll: 4 });
+  assert.equal(neither.state, "neither");
+  assert.equal(neither.initiative.first, "party");
+  assert.equal(neither.initiative.automatic, false);
+});
+
+check("reaction rolls follow the 2d6 table and three-roll limit", () => {
+  assert.equal(reactionBand(3).key, "attack");
+  assert.equal(reactionBand(5).nextModifier, -4);
+  assert.equal(reactionBand(8).nextModifier, 0);
+  assert.equal(reactionBand(11).nextModifier, 4);
+  assert.equal(reactionBand(12).key, "friendly");
+
+  const first = reactionStep({ roll: 10, attempt: 1, charisma: 2, action: 1 });
+  assert.equal(first.modifier, 0);
+  assert.equal(first.total, 10);
+  assert.equal(first.reroll, true);
+  assert.equal(first.state.pendingModifier, 4);
+
+  const second = reactionStep({
+    roll: 5, attempt: 2, charisma: 2, action: 1, pendingModifier: first.state.pendingModifier
+  });
+  assert.equal(second.modifier, 7);
+  assert.equal(second.total, 12);
+  assert.equal(second.band.key, "friendly");
+  assert.equal(second.done, true);
+
+  const forced = reactionStep({ roll: 8, attempt: 3, charisma: 0, action: -5 });
+  assert.equal(forced.action, -2);
+  assert.equal(forced.total, 6);
+  assert.equal(forced.forcedOutcome, "attacks or leaves");
+  assert.equal(forced.done, true);
+});
+
+check("encounter distance uses terrain, visibility and surprise overrides", () => {
+  assert.equal(encounterDistance({ setting: "dungeon", visibility: "bright", roll: 4 }).distance, 40);
+  assert.equal(encounterDistance({ setting: "wilderness", visibility: "dim", roll: 2 }).distance, 20);
+  assert.equal(encounterDistance({ setting: "ocean", visibility: "bright", encounter: "ship" }).distance, 300);
+  const both = encounterDistance({ setting: "dungeon", surprise: "both", roll: 3 });
+  assert.equal(both.formula, "1d4");
+  assert.equal(both.distance, 30);
+  const one = encounterDistance({ setting: "wilderness", visibility: "bright", surprise: "monsters", roll: 4 });
+  assert.equal(one.distance, 40);
+  assert.equal(one.surprisedDistance, 20);
+  assert.equal(wanderingMonsterDistance({ roll: 7 }).distance, 70);
+});
+
+check("evasion chances and pursuit follow chapter 7", () => {
+  assert.equal(evasionChance({ partySize: 8, monsterCount: 12 }).base, 70);
+  assert.equal(evasionChance({ partySize: 8, monsterCount: 12 }).partyBand, "5-12");
+  assert.equal(evasionChance({ partySize: 8, monsterCount: 12 }).monsterBand, "9+");
+  assert.equal(evasionChance({ partySize: 25, monsterCount: 1 }).partyBand, "25+");
+  assert.equal(evasionChance({ partySize: 8, monsterCount: 12 }).chance, 70);
+  assert.equal(evasionChance({ partySize: 8, monsterCount: 12, adjustments: { wooded: true, scouts: true } }).chance, 80);
+  assert.equal(evasionChance({
+    partySize: 25, monsterCount: 31,
+    adjustments: { featureless: true, pursuersFaster: true, scouts: true }
+  }).chance, 5);
+  assert.equal(evasionCheck({ partySize: 8, monsterCount: 12, roll: 70 }).success, true);
+  assert.equal(evasionCheck({ partySize: 8, monsterCount: 12, roll: 71 }).success, false);
+  const round = pursuitRound({ round: 5, partyRoll: 4, monsterRoll: 2 });
+  assert.equal(round.first, "party");
+  assert.equal(round.moraleCheckDue, true);
+  assert.equal(pursuitRound({ round: 4, partyRoll: 4, monsterRoll: 2 }).moraleCheckDue, false);
 });

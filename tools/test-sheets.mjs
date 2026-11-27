@@ -211,6 +211,19 @@ if (!body.includes('data-action="rollSave" data-save="{{save.key}}"')
   || !body.includes('data-tab="equipment"')) {
   throw new Error("monster save, HP, initiative, weapon or spell buttons are missing from the sheet template");
 }
+for (const action of ["encounterCheck", "surpriseCheck", "encounterDistance", "wanderingDistance",
+  "reactionCheck", "resetReaction", "evasionCheck", "pursuitRound", "rollEncounterTable"]) {
+  if (typeof actions[action] !== "function") throw new Error(`encounter action ${action} is not registered`);
+}
+for (const marker of [
+  'data-tab="encounter"', 'data-action="encounterCheck"', 'data-action="surpriseCheck"',
+  'data-action="encounterDistance"', 'data-action="wanderingDistance"',
+  'data-action="reactionCheck"', 'data-action="resetReaction"', 'data-action="evasionCheck"',
+  'data-action="pursuitRound"', 'data-encounter-input="pursuitRound"',
+  'data-action="rollEncounterTable"', 'data-encounter-input="table"'
+]) {
+  if (!body.includes(marker)) throw new Error(`encounter panel is missing ${marker}`);
+}
 const equipmentPartial = await readFile(new URL("../templates/actor/parts/equipment.hbs", import.meta.url), "utf8");
 if (!equipmentPartial.includes('data-action="itemAttack"')
   || !equipmentPartial.includes('data-action="itemDamage"')) {

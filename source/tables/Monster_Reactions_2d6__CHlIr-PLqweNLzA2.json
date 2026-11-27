@@ -18,7 +18,7 @@
     {
       "_id": "WsWL7rhdl6XTmrR4",
       "type": "text",
-      "text": "Hostile, attacks immediately",
+      "text": "Monster attacks",
       "range": [
         2,
         2
@@ -30,7 +30,7 @@
     {
       "_id": "6s0-rAbNYLAICn39",
       "type": "text",
-      "text": "Hostile, attacks immediately",
+      "text": "Monster attacks",
       "range": [
         3,
         3
@@ -42,7 +42,7 @@
     {
       "_id": "xsNLG896JVxoFV6p",
       "type": "text",
-      "text": "Hostile, may attack",
+      "text": "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll",
       "range": [
         4,
         4
@@ -54,7 +54,7 @@
     {
       "_id": "n50HxkJdk23LWw-x",
       "type": "text",
-      "text": "Hostile, may attack",
+      "text": "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll",
       "range": [
         5,
         5
@@ -66,7 +66,7 @@
     {
       "_id": "XXRAUmU9ADVGF22r",
       "type": "text",
-      "text": "Neutral, uncertain",
+      "text": "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll",
       "range": [
         6,
         6
@@ -78,7 +78,7 @@
     {
       "_id": "IPoQCe0cqnLnnES7",
       "type": "text",
-      "text": "Neutral, uncertain",
+      "text": "Monster is cautious; roll again in one round",
       "range": [
         7,
         7
@@ -90,7 +90,7 @@
     {
       "_id": "6En538rovOGb_AdF",
       "type": "text",
-      "text": "No attack, may parley",
+      "text": "Monster is cautious; roll again in one round",
       "range": [
         8,
         8
@@ -102,7 +102,7 @@
     {
       "_id": "ymaGMT4yIxVPiJ2u",
       "type": "text",
-      "text": "No attack, may parley",
+      "text": "Monster is cautious; roll again in one round",
       "range": [
         9,
         9
@@ -114,7 +114,7 @@
     {
       "_id": "KLRJ_mGIUTf-Rx9t",
       "type": "text",
-      "text": "Friendly, helpful",
+      "text": "Monster is neutral; roll again in one round with a bonus of +4 to the roll",
       "range": [
         10,
         10
@@ -126,7 +126,7 @@
     {
       "_id": "ncG2JYznQwyesmyT",
       "type": "text",
-      "text": "Friendly, helpful",
+      "text": "Monster is neutral; roll again in one round with a bonus of +4 to the roll",
       "range": [
         11,
         11
@@ -138,7 +138,7 @@
     {
       "_id": "w-8niWeHnoBLHlqr",
       "type": "text",
-      "text": "Friendly, enthusiastic",
+      "text": "Monster is friendly",
       "range": [
         12,
         12

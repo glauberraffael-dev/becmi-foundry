@@ -24,6 +24,14 @@ short paraphrases; the PDF and OCR export are **not** included.
   per-character toggle, ability-based 1d20 checks, stored specialties and DM
   modifiers, and slot budgets derived from Intelligence, level and XP. The
   Chapter 5 reference journal carries the sample-skill and slot-acquisition tables.
+- The **XP Calculator** tab computes the full Rules Cyclopedia award from monsters,
+  treasure, goals, role-playing, exceptional actions and party outcome. It applies
+  prime requisites, the driven-off quarter award, the magic-item sale cap and the
+  one-level-per-adventure limit; `xpNext` stays derived and read-only.
+- An **Encounters** tab gives the DM chapter 7 procedures: chance of encounter,
+  1d6 surprise and initiative, encounter distance, 2d6 reactions from the RollTable
+  compendium, d100 evasion and chase rounds. Every check posts a chat card and
+  never writes to the Actor.
 - Name Level choices are on the character sheet: Land Owner or Travelling, holding
   style, and fighter specialization by alignment. The sheet derives the title and
   shows the RC advantages and obligations; paladins/avengers get cleric-level spells,
@@ -106,8 +114,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.31`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.31.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.32`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.32.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

@@ -122,15 +122,20 @@ ${htmlTable(["Encumbrance (cn)", "Movement / turn", "Movement / round"], [
 ])}
 <p>Water and air travel use their own tables for ships, rowing and flying speeds; weather and currents modify travel time.</p>`,
   7: `<h2>Encounters and Evasion</h2>
-<p>When an encounter is possible, roll 2d6 for surprise (a result of 1-2 on a d6 can mean surprise for one side) and 2d6 on the monster reaction table. Hostile creatures may attack, parley or flee according to the result; the DM adjusts for obvious strength, alignment and previous conduct.</p>
+<p><strong>Checklist:</strong> switch from 10-minute turns to 10-second rounds; both sides roll 1d6 for surprise (1-2 means surprised); if neither side is surprised both roll 1d6 for initiative, while a surprised side loses initiative automatically; roll reactions if the DM does not already know them; resolve the results; then assume at least one full turn has passed.</p>
+<p><strong>Chance of encounter:</strong> in a dungeon or city, roll 1d6 every two turns and 1d12 once at night, with an encounter on a 1. In the wilderness, roll 1d6 by day and 1d12 at night: clear, grasslands, inhabited or settled land needs a 1; forest, river, hills, barren land, desert, ocean or aerial needs 1-2; swamp, jungle or mountains needs 1-3.</p>
+<p><strong>Surprise:</strong> each side rolls 1d6; a 1 or 2 means that side is surprised. If both sides are surprised both lose one round. If one side is surprised, it loses initiative and the other side gains a free round or automatic evasion. If neither is surprised there is no advantage.</p>
+<p><strong>Distance:</strong> surprise replaces the normal distance with 1d4 x 10 feet or yards; when only one side is surprised it notices at that distance and the surprised side notices at half. Otherwise consult the Encounter Distances Table: dungeon bright light 4d6 x 10 ft, dim light 2d6 x 10 ft, no light 1d4 x 10 ft; wilderness bright 4d6 x 10 yards, dim 2d6 x 10 yards, poor visibility 1d4 x 10 yards; undersea 1d6 x 10 yards.</p>
+<p><strong>Monster reactions:</strong> roll 2d6 on the Monster Reactions (2d6) table in the BECMI Tables compendium:</p>
 ${htmlTable(["2d6", "Reaction"], [
-  ["2-3", "Hostile, attacks immediately"],
-  ["4-5", "Hostile, may attack"],
-  ["6-7", "Neutral, uncertain"],
-  ["8-9", "No attack, may parley"],
-  ["10-12", "Friendly, helpful or enthusiastic"]
+  ["2-3", "Monster attacks"],
+  ["4-6", "Monster is aggressive (growls, threatens); roll again in one round with a penalty of -4 to the roll"],
+  ["7-9", "Monster is cautious; roll again in one round"],
+  ["10-11", "Monster is neutral; roll again in one round with a bonus of +4 to the roll"],
+  ["12", "Monster is friendly"]
 ])}
-<p>Wandering monsters are rolled by time and terrain. Evasion, pursuit and hiding use movement rates, surprise and the DM's judgment.</p>`,
+<p>The first roll ignores Charisma. Later rolls apply the speaker's Charisma modifier plus PC actions from a -2 penalty to a +2 bonus and the modifier carried by the previous result. Never roll more than three times; if the third roll is below 10, the monster attacks or leaves.</p>
+<p><strong>Evasion and pursuit:</strong> an unsurprised group can evade a surprised group automatically. Otherwise the DM rolls d100 against the Evasion Table by party size and number of monsters, adjusted for terrain, relative speed and scouts, with a minimum 5% chance. A failed roll starts a chase: both sides roll 1d6 for initiative each round, and monsters check morale every five rounds.</p>`,
   8: `<h2>Combat</h2>
 <p>Each round: roll initiative (1d6 per side), resolve morale, movement, missile fire, spells and hand-to-hand attacks in order. To hit, roll d20 and compare the result to the attack matrix using THAC0 and the target's descending AC; a natural 1 always misses and a natural 20 always hits. Damage is rolled after a hit, modified by Strength for melee weapons.</p>
 ${htmlTable(["Category", "Check", "Success"], [
@@ -411,10 +416,12 @@ ${htmlTable(["Carried weight", "Movement / turn", "Movement / round"], [
   },
   {
     ...p(`<h2>Encounters and Reaction Rolls</h2>
-<p><strong>Chance of encounter:</strong> in a dungeon or city, roll 1d6 every two turns (1d12 once at night); on a 1 an encounter occurs. In the wilderness, roll 1d6 by day and 1d12 at night: clear or settled land needs a 1; forest, river, hills, barren land, desert, ocean or aerial a 1-2; swamp, jungle or mountains a 1-3.</p>
-<p><strong>Surprise:</strong> each side rolls 1d6; a 1 or 2 means that side is surprised. When neither side is surprised, encounter distance is looked up by terrain and visibility in the rules (dungeon bright light 4d6 x 10 ft, dim light 2d6 x 10 ft, darkness 1d4 x 10 ft).</p>
-<p><strong>Reactions:</strong> the Monster Reactions table is the random table in the <em>BECMI Tables</em> compendium: roll 2d6 (2-3 attacks immediately, 4-5 hostile and may attack, 6-7 neutral and uncertain, 8-9 no attack but may parley, 10-11 friendly and helpful, 12 friendly and enthusiastic). Subsequent rolls can be modified by Charisma, gestures and threats.</p>
+<p><strong>Chance of encounter:</strong> in a dungeon or city, roll 1d6 every two turns (1d12 once at night); on a 1 an encounter occurs. In the wilderness, roll 1d6 by day and 1d12 at night: clear, grasslands, inhabited or settled land needs a 1; forest, river, hills, barren land, desert, ocean or aerial needs 1-2; swamp, jungle or mountains needs 1-3.</p>
+<p><strong>Surprise:</strong> both sides roll 1d6; a 1 or 2 means surprised. Both surprised loses a round for each side; one surprised gives the other a free round or automatic evasion; neither surprised gives no advantage. Surprise sets distance to 1d4 x 10 feet or yards, with the surprised side noticing at half distance when only one side is surprised.</p>
+<p><strong>Distance:</strong> without surprise, dungeon bright light is 4d6 x 10 ft, dim light 2d6 x 10 ft, darkness 1d4 x 10 ft; wilderness bright daylight 4d6 x 10 yards, dim light 2d6 x 10 yards, very poor visibility 1d4 x 10 yards. Ocean ships are detected at 300/120/40 yards by visibility and ocean monsters use 4d6/2d6/1d4 x 10 yards; undersea uses 1d6 x 10 yards. Wandering monsters in a dungeon appear 2d6 x 10 ft away.</p>
+<p><strong>Reactions:</strong> roll 2d6 on the <em>Monster Reactions (2d6)</em> table in the <em>BECMI Tables</em> compendium: 2-3 Monster attacks; 4-6 the monster is aggressive and you roll again in one round with a penalty of -4; 7-9 the monster is cautious and you roll again; 10-11 the monster is neutral and you roll again with a bonus of +4; 12 the monster is friendly. The first roll ignores Charisma; later rolls add Charisma, PC actions of -2 to +2 and the listed modifier. Never roll more than three times; a third roll below 10 means the monster attacks or leaves.</p>
 <p><strong>Which monsters:</strong> roll 1d20 on the Dungeon Encounters table for the current dungeon level, then roll the number appearing shown in that row. In the wilderness, roll 1d8 for the terrain column, then 1d12 on the indicated subtable. These are die rolls; the tables are consulted by column and are not random tables in the compendium.</p>
+<p><strong>Evasion and pursuit:</strong> compare party size to the number of monsters on the Evasion Table, then apply terrain, speed and scout adjustments with a minimum 5% chance. Pursuit uses 1d6 initiative per side each round and a morale check every five rounds.</p>
 <p><strong>Magic item creation:</strong> the chance of success is a d100 roll against ([Intelligence or Wisdom + level] x 2) - (3 x spell level), or the number of bonuses for armor and weapons. Costs and time are calculated from the checklists in the Enchantment rules; they are not a random table.</p>`),
     name: "Encounters and Reaction Rolls"
   },

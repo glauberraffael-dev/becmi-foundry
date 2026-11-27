@@ -5,12 +5,17 @@ import {
 import { classFeaturesFor } from "../class-features.mjs";
 import { nameLevelDetails, nameLevelOptions } from "../name-level.mjs";
 import { hasMasteryRows } from "../mastery.mjs";
+import {
+  availableTables, drawEncounterTable, rollEncounterCheck, rollEncounterDistance,
+  rollEvasion, rollPursuitRound, rollReaction, rollSurprise, rollWanderingDistance
+} from "../encounters.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, calculateXpAward,
-  equippedAcBonus, getRCClass, generalSkillInfo, hpForLevel, masteryData, masteryRanks,
-  masteryWeapon, masteryChoices, monsterAttackRows, monsterSpellcasterInfo, monsterXpValue,
-  normalizeClassKey, spellKey, spellSlotsForLevel, spellsFor, turnUndeadColumn
+  encounterChance, equippedAcBonus, evasionChance, getRCClass, generalSkillInfo, hpForLevel,
+  masteryData, masteryRanks, masteryWeapon, masteryChoices, monsterAttackRows,
+  monsterSpellcasterInfo, monsterXpValue, normalizeClassKey, spellKey, spellSlotsForLevel,
+  spellsFor, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -73,6 +78,42 @@ function xpSoldItems(inputs) {
   return [{ creationCostGp, saleValueGp: sale }];
 }
 
+/** Encounter panel inputs are transient DM state, never Actor data. */
+const ENCOUNTER_DEFAULTS = Object.freeze({
+  area: "dungeon",
+  terrain: "clear",
+  setting: "dungeon",
+  visibility: "bright",
+  encounter: "monster",
+  night: false,
+  partySize: 1,
+  monsterCount: 1,
+  charisma: "",
+  action: 0,
+  wooded: false,
+  featureless: false,
+  pursuersFaster: false,
+  evadersFaster: false,
+  scouts: false,
+  customAdjustment: 0,
+  pursuitRound: 1,
+  table: "Monster Reactions (2d6)"
+});
+
+function readEncounterInputs(element, previous = {}) {
+  return Object.fromEntries(Object.entries(ENCOUNTER_DEFAULTS).map(([key, fallback]) => {
+    const input = element?.querySelector(`[data-encounter-input="${key}"]`);
+    if (!input) return [key, previous[key] ?? fallback];
+    return [key, typeof fallback === "boolean" ? Boolean(input.checked) : input.value];
+  }));
+}
+
+function reactionCharisma(actor) {
+  const adjustmentValue = actor?.system?.attributes?.adjustments?.cha;
+  if (adjustmentValue !== undefined) return Number(adjustmentValue) || 0;
+  return adjustment(actor?.system?.abilities?.cha?.value) ?? 0;
+}
+
 function trackingValue(path, value) {
   if (path !== "system.attributes.hp.value") return value;
   const number = Number(value);
@@ -102,6 +143,7 @@ const SHEET_TABS = [
   ["main", "BECMI.sheet.tab.main"],
   ["features", "BECMI.sheet.tab.features"],
   ["xp", "BECMI.sheet.tab.xp"],
+  ["encounter", "BECMI.sheet.tab.encounter"],
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
@@ -244,6 +286,12 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   spellPicker = { level: 0, search: "", list: "" };
   xpInputs = {};
   xpResult = null;
+  encounterInputs = {};
+  encounterState = {
+    surprise: "none",
+    reaction: { attempt: 1, pendingModifier: 0, done: false }
+  };
+  encounterTables = [];
   targetAC = 9;
   #dropUuidByEvent = new WeakMap();
 
@@ -270,6 +318,15 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollSave: BECMIActorSheet.#rollSave,
       rollInitiative: BECMIActorSheet.#rollInitiative,
       rollMorale: BECMIActorSheet.#rollMorale,
+      encounterCheck: BECMIActorSheet.#encounterCheck,
+      surpriseCheck: BECMIActorSheet.#surpriseCheck,
+      encounterDistance: BECMIActorSheet.#encounterDistance,
+      wanderingDistance: BECMIActorSheet.#wanderingDistance,
+      reactionCheck: BECMIActorSheet.#reactionCheck,
+      resetReaction: BECMIActorSheet.#resetReaction,
+      evasionCheck: BECMIActorSheet.#evasionCheck,
+      pursuitRound: BECMIActorSheet.#pursuitRound,
+      rollEncounterTable: BECMIActorSheet.#rollEncounterTable,
       rollHitDice: BECMIActorSheet.#rollHitDice,
       rollMonsterHp: BECMIActorSheet.#rollMonsterHp,
       monsterAttack: BECMIActorSheet.#monsterAttack,
@@ -448,6 +505,56 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       isMystic: xpResult.classKey === "mystic"
     };
 
+    // The encounter panel is DM tooling: its inputs stay off the Actor, like
+    // the XP calculator. RollTable lookup is best-effort so an offline or
+    // partially loaded world still renders the sheet.
+    const encounterInputs = { ...ENCOUNTER_DEFAULTS, ...(this.encounterInputs ?? {}) };
+    this.encounterInputs = encounterInputs;
+    try {
+      this.encounterTables = await availableTables();
+    } catch {
+      this.encounterTables = [];
+    }
+    const reactionState = this.encounterState?.reaction ?? { attempt: 1, pendingModifier: 0, done: false };
+    this.encounterState.reaction = reactionState;
+    const surpriseState = this.encounterState?.surprise ?? "none";
+    const chanceInfo = encounterChance(encounterInputs);
+    const evasionInfo = evasionChance({
+      ...encounterInputs,
+      adjustments: {
+        wooded: encounterInputs.wooded,
+        featureless: encounterInputs.featureless,
+        pursuersFaster: encounterInputs.pursuersFaster,
+        evadersFaster: encounterInputs.evadersFaster,
+        scouts: encounterInputs.scouts,
+        custom: encounterInputs.customAdjustment
+      }
+    });
+    const charismaValue = encounterInputs.charisma === "" || encounterInputs.charisma === null
+      ? reactionCharisma(actor)
+      : Number(encounterInputs.charisma) || 0;
+    const option = (key) => ({ key, label: game.i18n.localize(`BECMI.encounter.${key}`) });
+    const encounter = {
+      inputs: encounterInputs,
+      chance: chanceInfo,
+      chanceLabel: `${chanceInfo.formula} ≤ ${chanceInfo.target}`,
+      chanceFrequency: chanceInfo.frequency,
+      surpriseLabel: game.i18n.localize(`BECMI.encounter.surprise.${surpriseState}`),
+      reactionAttempt: reactionState.attempt,
+      reactionModifier: reactionState.pendingModifier,
+      reactionDone: Boolean(reactionState.done),
+      reactionButtonLabel: game.i18n.localize(reactionState.done
+        ? "BECMI.encounter.reactionFinished" : "BECMI.encounter.reactionContinue"),
+      charismaValue,
+      evasionChance: evasionInfo.chance,
+      tables: this.encounterTables,
+      areaOptions: ["dungeon", "city", "wilderness"].map(option),
+      terrainOptions: ["clear", "grasslands", "inhabited", "settled", "forest", "river", "hills",
+        "barren", "desert", "ocean", "aerial", "swamp", "jungle", "mountains"].map(option),
+      visibilityOptions: ["bright", "dim", "none"].map(option),
+      encounterOptions: ["monster", "ship"].map(option)
+    };
+
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
       canEdit: this.isEditable,
@@ -457,7 +564,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       generalToggleLabel: game.i18n.localize(generalEnabled
@@ -749,7 +856,8 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       if (id === "undead") return canTurn;
       if (id === "mastery") return canMastery;
       return true;
-    }) : SHEET_TABS.filter(([id]) => ["main", "equipment", ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
+    }) : SHEET_TABS.filter(([id]) => ["main", "equipment", "encounter",
+      ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
     context.tabs = definitions.map(([id, label]) => ({
       id, label: game.i18n.localize(label), active: id === this.activeTab
     }));
@@ -912,6 +1020,80 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #rollMorale() {
     await this.actor.rollMorale();
+  }
+
+  static async #encounterCheck() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    await rollEncounterCheck(this.actor, this.encounterInputs);
+  }
+
+  static async #surpriseCheck() {
+    const result = await rollSurprise(this.actor);
+    this.encounterState.surprise = result.state;
+    await this.render();
+  }
+
+  static async #encounterDistance() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    await rollEncounterDistance(this.actor, {
+      ...this.encounterInputs,
+      surprise: this.encounterState.surprise
+    });
+  }
+
+  static async #wanderingDistance() {
+    await rollWanderingDistance(this.actor);
+  }
+
+  static async #reactionCheck() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    const state = this.encounterState.reaction ?? { attempt: 1, pendingModifier: 0, done: false };
+    if (state.done) return;
+    const charisma = this.encounterInputs.charisma === "" || this.encounterInputs.charisma === null
+      ? reactionCharisma(this.actor)
+      : Number(this.encounterInputs.charisma) || 0;
+    const result = await rollReaction(this.actor, state, {
+      ...this.encounterInputs,
+      charisma
+    });
+    this.encounterState.reaction = result.state;
+    await this.render();
+  }
+
+  static async #resetReaction() {
+    this.encounterState.reaction = { attempt: 1, pendingModifier: 0, done: false };
+    await this.render();
+  }
+
+  static async #evasionCheck() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    await rollEvasion(this.actor, {
+      ...this.encounterInputs,
+      adjustments: {
+        wooded: this.encounterInputs.wooded,
+        featureless: this.encounterInputs.featureless,
+        pursuersFaster: this.encounterInputs.pursuersFaster,
+        evadersFaster: this.encounterInputs.evadersFaster,
+        scouts: this.encounterInputs.scouts,
+        custom: this.encounterInputs.customAdjustment
+      }
+    });
+  }
+
+  static async #pursuitRound() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    const result = await rollPursuitRound(this.actor, this.encounterInputs);
+    this.encounterInputs.pursuitRound = result.round + 1;
+    await this.render();
+  }
+
+  static async #rollEncounterTable() {
+    this.encounterInputs = readEncounterInputs(this.element, this.encounterInputs);
+    if (!this.encounterInputs.table) {
+      ui.notifications.warn(game.i18n.localize("BECMI.notification.tableMissing"));
+      return;
+    }
+    await drawEncounterTable(this.actor, this.encounterInputs.table);
   }
 
   static async #rollHitDice() {

@@ -123,7 +123,10 @@ for (const [text, faces] of bands) {
     throw new Error(`Reaction band ${label} (${text}) is missing from the rules reference`);
   }
 }
-for (const text of ["attacks immediately", "hostile and may attack", "no attack but may parley", "friendly and helpful"]) {
+for (const text of [
+  "Monster attacks", "Monster is aggressive", "penalty of -4", "Monster is cautious",
+  "bonus of +4", "Monster is friendly"
+]) {
   if (!prose.includes(text)) throw new Error(`Reaction text missing from the rules reference: ${text}`);
 }
 
