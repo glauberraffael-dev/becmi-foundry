@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.37
+
+- Added a **Crafting** panel to the Treasure tab with Rules Cyclopedia chapter 16
+  procedures for armor and weapon enchantment, miscellaneous spell-effect items,
+  magical constructs and spell research. Costs, chances, construction time and
+  first-time XP post to chat; inputs stay off the Actor.
+- Implemented the formulas in a Foundry-independent module with tests for the
+  printed examples, including Wisdom for clerical casters, bonuses versus
+  specific opponents, restrictions, charges, permanency, limited-use items,
+  construct requirements and cumulative research failures.
+- Corrected 34 extended-XP values in the printed optional progression: elves
+  from 21st through 36th level and halflings from 19th through 36th were shifted
+  by one level. The generated table now also preserves the printed `*`, `**`,
+  `t` and `tt` footnotes and the derived demihuman/mystic rules on page 266.
+- Expanded the generated Chapter 16 and Chapter 19 journals with the full
+  creation formulas, spell research rules and the printed time-example
+  inconsistency, instead of the previous short summaries.
+
 ## 0.1.36
 
 - Added the two missing chapter 7 encounter subtables as rollable RollTables:

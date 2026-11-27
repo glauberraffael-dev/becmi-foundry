@@ -4,6 +4,11 @@
  * Usage: node tools/test-rc-rules.mjs
  */
 import assert from "node:assert/strict";
+import {
+  armorWeaponEnchantmentCost, constructChance, constructCost, constructRequirements,
+  craftingAbilityScore, craftingChance, craftingXp, enchantmentTime, researchCost,
+  researchRollSucceeds, researchTime, spellEffectCost, spellResearchChance
+} from "../scripts/magic-crafting.mjs";
 import { classFeaturesFor } from "../scripts/class-features.mjs";
 import { nameLevelDetails, nameLevelOptions, nameLevelThreshold } from "../scripts/name-level.mjs";
 import {
@@ -670,4 +675,63 @@ check("gem, jewelry and magical item tables use the RC ranges", () => {
   assert.equal(missile.item, "Arrows +1 (2d10)");
   assert.equal(missile.details.weaponClass, "Arrows");
   assert.equal(missile.details.possibleTalent, "Biting");
+});
+
+check("magic crafting formulas follow RC pp. 250-255", () => {
+  assert.deepEqual(craftingAbilityScore("cleric", { wis: { value: 16 } }), { key: "wis", label: "Wisdom", value: 16 });
+  assert.deepEqual(craftingAbilityScore("elf", { int: { value: 18 } }), { key: "int", label: "Intelligence", value: 18 });
+  assert.equal(craftingAbilityScore("fighter", { str: { value: 18 } }), null);
+  assert.equal(craftingChance({ abilityScore: 18, level: 10, spellLevel: 3 }), 47);
+  assert.equal(craftingChance({ abilityScore: 16, level: 12, bonusLevels: 2 }), 50);
+  assert.equal(craftingChance({ abilityScore: 18, level: 10, spellLevel: 4, penaltyPerLevel: 5 }), 36);
+
+  const plate = armorWeaponEnchantmentCost({ kind: "armor", priceGp: 60, encumbranceCn: 150, bonuses: 1 });
+  assert.equal(plate.rawGp, 9000);
+  assert.equal(plate.unroundedGp, 3000);
+  assert.equal(plate.roundedBaseGp, 3000);
+  assert.equal(plate.initialGp, 3000);
+  const sword = armorWeaponEnchantmentCost({ kind: "weapon", priceGp: 10, encumbranceCn: 30, bonuses: 1 });
+  assert.equal(sword.unroundedGp, 1500);
+  assert.equal(sword.roundedBaseGp, 1500);
+  assert.equal(sword.totalInitialGp, 1500);
+  const special = armorWeaponEnchantmentCost({ kind: "sword", priceGp: 10, encumbranceCn: 30, bonuses: 1, bonusesAgainstOpponents: 2, restrictions: 1 });
+  assert.equal(special.opponentCostGp, 1350);
+  assert.equal(special.totalInitialGp, 2850);
+
+  const charges = spellEffectCost({ spellLevels: 4, charges: 10 });
+  assert.equal(charges.initialGp, 4000);
+  assert.equal(charges.chargesGp, 4000);
+  assert.equal(charges.totalGp, 8000);
+  const permanent = spellEffectCost({ spellLevels: 4, permanent: true, restrictions: 1 });
+  assert.equal(permanent.permanencyGp, 20000);
+  assert.equal(permanent.totalGp, 21600);
+  const nonRechargeable = spellEffectCost({ spellLevels: 4, charges: 10, nonRechargeable: true });
+  assert.equal(nonRechargeable.totalGp, 6400);
+  const daily = spellEffectCost({ spellLevels: 4, usesPerPeriod: "day", usesPerPeriodCount: 1 });
+  assert.equal(daily.discountedInitialGp, 3000);
+  assert.equal(daily.includedCharges, 31);
+  assert.equal(daily.totalGp, 12300);
+
+  assert.deepEqual(enchantmentTime(14000), { weeks: 1, extraDays: 14, days: 21 });
+  assert.deepEqual(enchantmentTime(25200), { weeks: 1, extraDays: 26, days: 33 });
+  assert.deepEqual(constructCost({ hitDice: 9, asterisks: 2 }), {
+    hitDice: 9, asterisks: 2, hitDiceGp: 18000, asteriskGp: 10000, totalGp: 28000
+  });
+  assert.equal(constructChance({ abilityScore: 18, level: 18, hitDice: 9, asterisks: 2 }), 61);
+  assert.deepEqual(constructRequirements({ classKey: "cleric", hitDice: 12, asterisks: 3 }), {
+    requiredLevel: 18, requiredSpell: "create any monster", clericAllowed: false, overMaximum: false
+  });
+  assert.equal(constructRequirements({ hitDice: 37 }).overMaximum, true);
+
+  assert.equal(researchCost(4), 4000);
+  assert.deepEqual(researchTime(4), { weeks: 1, extraDays: 4, days: 11 });
+  assert.equal(spellResearchChance({ abilityScore: 18, level: 12, spellLevel: 4, failures: 2 }), 58);
+  assert.deepEqual(researchRollSucceeds(94, 58), { roll: 94, chance: 58, autoFailure: false, success: false });
+  assert.deepEqual(researchRollSucceeds(95, 95), { roll: 95, chance: 95, autoFailure: true, success: false });
+  assert.deepEqual(researchRollSucceeds(50, 58), { roll: 50, chance: 58, autoFailure: false, success: true });
+
+  assert.equal(craftingXp({ totalGp: 8000, success: true }), 8000);
+  assert.equal(craftingXp({ totalGp: 9000, success: true, huge: true }), 3000);
+  assert.equal(craftingXp({ totalGp: 8000, success: true, firstTime: false }), 0);
+  assert.equal(craftingXp({ totalGp: 8000, success: false }), 0);
 });

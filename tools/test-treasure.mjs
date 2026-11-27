@@ -13,6 +13,10 @@ globalThis.ChatMessage = {
     return data;
   }
 };
+globalThis.Roll = class {
+  constructor(formula) { this.formula = formula; }
+  async evaluate() { this.total = 42; return this; }
+};
 globalThis.game = {
   i18n: {
     localize: (key) => key,
@@ -26,7 +30,7 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-const { rollGemValue, rollJewelryValue, rollMagicItemCard, rollTreasure } =
+const { rollGemValue, rollJewelryValue, rollMagicCrafting, rollMagicItemCard, rollTreasure } =
   await import("../scripts/treasure.mjs");
 
 const actor = { name: "DM" };
@@ -52,6 +56,16 @@ assert(messages.at(-1).content.includes("BECMI.treasure.magicResult"), "the item
 
 assert(await rollTreasure(actor, { type: "Z" }) === null, "an invalid treasure type was accepted");
 assert(warnings.length === 1, "the invalid type did not warn the GM");
-assert(messages.length === 4, `expected 4 chat cards, got ${messages.length}`);
+
+const crafting = await rollMagicCrafting({
+  system: { attributes: { classKey: "cleric", level: 10 }, abilities: { wis: { value: 16 } } },
+  name: "Caster"
+}, { mode: "armor", priceGp: 60, encumbranceCn: 150, bonuses: 1, roll: 40 });
+assert(crafting?.mode === "armor" && crafting.success && crafting.totalGp === 3000,
+  "crafting card computes armor cost and success");
+assert(messages.at(-1)?.content.includes("BECMI.crafting.title.armor"),
+  "crafting card is posted to chat");
+
+assert(messages.length === 5, `expected 5 chat cards, got ${messages.length}`);
 
 console.log(`Treasure procedures OK: ${messages.length} chat cards.`);

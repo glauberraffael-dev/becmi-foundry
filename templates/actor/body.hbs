@@ -908,6 +908,93 @@
       <button type="button" class="becmi-roll" data-action="rollGemValue">{{localize 'BECMI.treasure.gemValue'}}</button>
       <button type="button" class="becmi-roll" data-action="rollJewelryValue">{{localize 'BECMI.treasure.jewelryValue'}}</button>
     </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.crafting.procedure'}}</h3>
+    <p class="becmi-derived">{{localize 'BECMI.crafting.hint'}}</p>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field becmi-field--wide">
+        <label>{{localize 'BECMI.crafting.procedure'}}:</label>
+        <select data-crafting-input="mode">
+          {{#each crafting.modeOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../crafting.inputs.mode)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.crafting.class'}}:</label>
+        <select data-crafting-input="classKey">
+          {{#each crafting.classOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../crafting.inputs.classKey)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.crafting.abilityScore'}}:</label>
+        <input data-crafting-input="abilityScore" type="number" value="{{crafting.inputs.abilityScore}}">
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.crafting.level'}}:</label>
+        <input data-crafting-input="level" type="number" min="1" value="{{crafting.inputs.level}}">
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.crafting.rollOptional'}}:</label>
+        <input data-crafting-input="roll" type="number" min="1" max="100" value="{{crafting.inputs.roll}}">
+      </div>
+      <label class="becmi-check"><input type="checkbox" data-crafting-input="firstTime"{{#if crafting.inputs.firstTime}} checked{{/if}}> {{localize 'BECMI.crafting.firstTime'}}</label>
+    </div>
+
+    {{#if (eq crafting.inputs.mode "armor")}}
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.priceGp'}}:</label><input data-crafting-input="priceGp" type="number" min="0" value="{{crafting.inputs.priceGp}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.encumbranceCn'}}:</label><input data-crafting-input="encumbranceCn" type="number" min="0" value="{{crafting.inputs.encumbranceCn}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.bonuses'}}:</label><input data-crafting-input="bonuses" type="number" min="1" max="5" value="{{crafting.inputs.bonuses}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.opponentBonuses'}}:</label><input data-crafting-input="opponentBonuses" type="number" min="0" max="5" value="{{crafting.inputs.opponentBonuses}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.restrictions'}}:</label><input data-crafting-input="restrictions" type="number" min="0" max="10" value="{{crafting.inputs.restrictions}}"></div>
+    </div>
+    {{/if}}
+    {{#if (eq crafting.inputs.mode "weapon")}}
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.priceGp'}}:</label><input data-crafting-input="priceGp" type="number" min="0" value="{{crafting.inputs.priceGp}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.encumbranceCn'}}:</label><input data-crafting-input="encumbranceCn" type="number" min="0" value="{{crafting.inputs.encumbranceCn}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.bonuses'}}:</label><input data-crafting-input="bonuses" type="number" min="1" max="5" value="{{crafting.inputs.bonuses}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.opponentBonuses'}}:</label><input data-crafting-input="opponentBonuses" type="number" min="0" max="5" value="{{crafting.inputs.opponentBonuses}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.restrictions'}}:</label><input data-crafting-input="restrictions" type="number" min="0" max="10" value="{{crafting.inputs.restrictions}}"></div>
+    </div>
+    {{/if}}
+    {{#if (eq crafting.inputs.mode "miscellaneous")}}
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.spellLevel'}}:</label><input data-crafting-input="spellLevel" type="number" min="1" max="9" value="{{crafting.inputs.spellLevel}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.spellLevels'}}:</label><input data-crafting-input="spellLevels" type="number" min="1" value="{{crafting.inputs.spellLevels}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.charges'}}:</label><input data-crafting-input="charges" type="number" min="0" value="{{crafting.inputs.charges}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.restrictions'}}:</label><input data-crafting-input="restrictions" type="number" min="0" max="10" value="{{crafting.inputs.restrictions}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.usesPerPeriod'}}:</label>
+        <select data-crafting-input="usesPerPeriod">
+          {{#each crafting.periodOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../crafting.inputs.usesPerPeriod)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.usesPerPeriodCount'}}:</label><input data-crafting-input="usesPerPeriodCount" type="number" min="0" value="{{crafting.inputs.usesPerPeriodCount}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-crafting-input="permanent"{{#if crafting.inputs.permanent}} checked{{/if}}> {{localize 'BECMI.crafting.permanent'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-crafting-input="nonRechargeable"{{#if crafting.inputs.nonRechargeable}} checked{{/if}}> {{localize 'BECMI.crafting.nonRechargeable'}}</label>
+    </div>
+    {{/if}}
+    {{#if (eq crafting.inputs.mode "construct")}}
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.hitDice'}}:</label><input data-crafting-input="hitDice" type="number" min="1" max="36" value="{{crafting.inputs.hitDice}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.asterisks'}}:</label><input data-crafting-input="asterisks" type="number" min="0" value="{{crafting.inputs.asterisks}}"></div>
+    </div>
+    {{/if}}
+    {{#if (eq crafting.inputs.mode "research")}}
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.spellLevel'}}:</label><input data-crafting-input="spellLevel" type="number" min="1" max="9" value="{{crafting.inputs.spellLevel}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.crafting.failures'}}:</label><input data-crafting-input="failures" type="number" min="0" value="{{crafting.inputs.failures}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-crafting-input="newSpell"{{#if crafting.inputs.newSpell}} checked{{/if}}> {{localize 'BECMI.crafting.newSpell'}}</label>
+    </div>
+    {{/if}}
+    <div class="becmi-grid becmi-grid--combat">
+      <button type="button" class="becmi-roll" data-action="rollCrafting">{{localize 'BECMI.crafting.check'}}</button>
+    </div>
   </div>
 </section>
 

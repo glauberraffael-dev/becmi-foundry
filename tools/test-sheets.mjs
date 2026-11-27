@@ -218,7 +218,7 @@ for (const action of ["encounterCheck", "surpriseCheck", "encounterDistance", "w
 for (const action of ["travelDay", "lostCheck", "forageCheck", "seaWeather", "swimCheck"]) {
   if (typeof actions[action] !== "function") throw new Error(`travel action ${action} is not registered`);
 }
-for (const action of ["rollTreasure", "rollMagicItem", "rollGemValue", "rollJewelryValue"]) {
+for (const action of ["rollTreasure", "rollMagicItem", "rollGemValue", "rollJewelryValue", "rollCrafting"]) {
   if (typeof actions[action] !== "function") throw new Error(`treasure action ${action} is not registered`);
 }
 if (typeof actions.openWizard !== "function") throw new Error("creation wizard action is not registered");
@@ -245,7 +245,9 @@ for (const marker of [
   'data-tab="treasure"', 'data-action="rollTreasure"', 'data-action="rollMagicItem"',
   'data-action="rollGemValue"', 'data-action="rollJewelryValue"',
   'data-treasure-input="type"', 'data-treasure-input="location"',
-  'data-treasure-input="category"', 'data-treasure-input="averageLevel"'
+  'data-treasure-input="category"', 'data-treasure-input="averageLevel"',
+  'data-action="rollCrafting"', 'data-crafting-input="mode"',
+  'data-crafting-input="firstTime"', 'data-crafting-input="spellLevels"'
 ]) {
   if (!body.includes(marker)) throw new Error(`treasure panel is missing ${marker}`);
 }

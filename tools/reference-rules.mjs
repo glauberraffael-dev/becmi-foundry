@@ -296,14 +296,24 @@ function xpTables() {
 
 function extendedXpTables() {
   const keys = ["dwarf", "elf", "halfling", "mystic"];
-  return chunk(Array.from({ length: 36 }, (_, i) => i + 1), 18).map((levels) =>
+  const tables = chunk(Array.from({ length: 36 }, (_, i) => i + 1), 18).map((levels) =>
     htmlTable(["Level", ...keys.map((key) => RC.classes[key].name)], levels.map((level) => [
       String(level), ...keys.map((key) => {
         const cls = RC.classes[key];
         const value = cls.extendedXp?.[level];
-        return value === undefined ? "—" : fmt(value);
+        const marks = Object.entries(cls.extendedMarks ?? {})
+          .filter(([, markedLevels]) => markedLevels.includes(level))
+          .map(([mark]) => mark)
+          .join("");
+        if (value === undefined) return "—";
+        return marks ? `${fmt(value)}<sup>${marks}</sup>` : fmt(value);
       })
     ])));
+  return [...tables, `<p><strong>*</strong> Automatically takes half damage from a damage-causing
+  spell or spell-like effect, or one quarter on a successful saving throw. <strong>**</strong> Gains
+  Fighter Combat Options and two attacks per round at that level. <strong>t</strong> Automatically
+  takes half damage from a breath weapon, or one quarter on a successful saving throw.
+  <strong>tt</strong> Three attacks per round at that level.</p>`];
 }
 
 function thiefSkillTables() {
@@ -431,6 +441,18 @@ function magicItemSubtables() {
   ).join("");
 }
 
+function magicCraftingRules() {
+  return `<h3>Magical Item Creation</h3>
+<p>Only characters able to cast spells can create magical items. With the exception of item restrictions, these formulas apply to clerics and druids by substituting Wisdom for Intelligence in every calculation.</p>
+<p><strong>Enchantment chance:</strong> roll d100 against ([ Intelligence + Level ] x 2) - (3 x spell level). For an armor or weapon bonus, substitute the number of pluses or minuses for the spell level. The character succeeds on a roll equal to or less than that chance. A failed roll ruins the gold, time and components already spent.</p>
+<p><strong>Armor and weapons:</strong> multiply the nonmagical price in gp by its encumbrance in cn, then divide by 3 for armor or a shield and round up to the next 10 gp. Each plus or minus costs another base price, with a minimum of 3,000 gp for armor or a shield and 100 gp for a weapon. Bonuses effective only against a particular opponent cost half a base per plus, reduced by 10% per restriction. The maximum bonus is +5 or -5.</p>
+<p><strong>Spell effects:</strong> each spell level costs 1,000 gp. charges add 10% of the initial cost each; permanency costs five times the initial cost (equivalent to 50 charges). Each restriction reduces the spell-effect cost by 10%; a nonrechargeable item costs 20% less. An item usable only once per hour, day, week or month costs 20%, 25%, 30% or 35% less, then includes 30 charges plus one charge for each use allowed in that period.</p>
+<p><strong>Construction time:</strong> one week plus one day for every 1,000 gp of enchantment cost, rounded up. A 14,000 gp item therefore takes 21 days by the printed rule, even though the book's worked example states 31 days; the DM should resolve that inconsistency before play.</p>
+<p><strong>Magical constructs:</strong> creation costs 2,000 gp per Hit Die plus 5,000 gp per asterisk, requires at least 18th level and the create magical monsters spell, and rolls ([ Intelligence + Level ] x 2) - (HD + asterisks). Three asterisks require create any monster, which clerics cannot cast. A construct cannot exceed 36 HD.</p>
+<p><strong>Spell research:</strong> a spell costs 1,000 gp per level and uses the standard enchantment timetable. Common spells subtract 3 per level from the chance, new spells 5; each failed attempt grants a cumulative +5% on the following roll, but a roll of 95 or higher always fails and there is no automatic success.</p>
+<p><strong>Experience:</strong> at the DM's discretion, successful first-time creation grants XP equal to the gp spent. A successful vase, house or giant-sized magical construction grants one third of the gp spent instead. Repeat work grants no XP.</p>`;
+}
+
 function gemAndJewelryTables() {
   return htmlTable(["d100", "Value (gp)", "Examples"], GEM_VALUES.map((row) => [
     d100Range(row), row.value === null ? "Set by the DM" : String(row.value), row.examples
@@ -466,9 +488,14 @@ const CHAPTER_SUPPLEMENTS = {
   ])],
   10: xpTables(),
   14: turnUndeadTables(),
-  16: [treasureTypesTable(), magicItemsMainTable()],
+  16: [treasureTypesTable(), magicItemsMainTable(), magicCraftingRules()],
   18: planeTables(),
-  19: extendedXpTables()
+  19: [...extendedXpTables(), htmlTable(["Class", "Above 9th level", "Attack roll", "Saving throws", "Combat options"], [
+    ["Dwarf", "2 HP per level; no Constitution adjustment", "As a fighter of the same level", "Frozen at the normal maximum", "Fighter Combat Options at 12th; three attacks at 24th"],
+    ["Elf", "1 HP per level; no Constitution adjustment", "As a cleric of the same level", "Frozen at the normal maximum", "Fighter Combat Options at 11th; three attacks at 24th"],
+    ["Halfling", "1d6 at 9th, then 1 HP per level", "As a cleric of the same level", "Frozen at the normal maximum", "Fighter Combat Options at 13th; three attacks at 24th"],
+    ["Mystic", "2 HP per level; no Constitution adjustment", "As a fighter of the same level", "The text both freezes and improves these throws; let the DM choose", "Special abilities stop improving above 16th, except as noted in the text"]
+  ]), `<p>Elves use the Magic-User spells-per-level table above 9th level. A halfling's wilderness hiding ability does not improve with experience. A mystic's unarmed attack equivalence cannot exceed +5.</p>`]
 };
 const APPENDIX_SUPPLEMENTS = {
   2: [htmlTable(["BECMI level", "AD&D level"], [

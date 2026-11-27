@@ -40,6 +40,15 @@
       },
       "_id": "D2A9pvRk97ufkcdO",
       "_key": "!journal.pages!sGgVmFqdtBlW-mYU.D2A9pvRk97ufkcdO"
+    },
+    {
+      "name": "Tables 3",
+      "type": "text",
+      "text": {
+        "content": "<h2>Treasure — Tables 3</h2><h3>Magical Item Creation</h3>\n<p>Only characters able to cast spells can create magical items. With the exception of item restrictions, these formulas apply to clerics and druids by substituting Wisdom for Intelligence in every calculation.</p>\n<p><strong>Enchantment chance:</strong> roll d100 against ([ Intelligence + Level ] x 2) - (3 x spell level). For an armor or weapon bonus, substitute the number of pluses or minuses for the spell level. The character succeeds on a roll equal to or less than that chance. A failed roll ruins the gold, time and components already spent.</p>\n<p><strong>Armor and weapons:</strong> multiply the nonmagical price in gp by its encumbrance in cn, then divide by 3 for armor or a shield and round up to the next 10 gp. Each plus or minus costs another base price, with a minimum of 3,000 gp for armor or a shield and 100 gp for a weapon. Bonuses effective only against a particular opponent cost half a base per plus, reduced by 10% per restriction. The maximum bonus is +5 or -5.</p>\n<p><strong>Spell effects:</strong> each spell level costs 1,000 gp. charges add 10% of the initial cost each; permanency costs five times the initial cost (equivalent to 50 charges). Each restriction reduces the spell-effect cost by 10%; a nonrechargeable item costs 20% less. An item usable only once per hour, day, week or month costs 20%, 25%, 30% or 35% less, then includes 30 charges plus one charge for each use allowed in that period.</p>\n<p><strong>Construction time:</strong> one week plus one day for every 1,000 gp of enchantment cost, rounded up. A 14,000 gp item therefore takes 21 days by the printed rule, even though the book's worked example states 31 days; the DM should resolve that inconsistency before play.</p>\n<p><strong>Magical constructs:</strong> creation costs 2,000 gp per Hit Die plus 5,000 gp per asterisk, requires at least 18th level and the create magical monsters spell, and rolls ([ Intelligence + Level ] x 2) - (HD + asterisks). Three asterisks require create any monster, which clerics cannot cast. A construct cannot exceed 36 HD.</p>\n<p><strong>Spell research:</strong> a spell costs 1,000 gp per level and uses the standard enchantment timetable. Common spells subtract 3 per level from the chance, new spells 5; each failed attempt grants a cumulative +5% on the following roll, but a roll of 95 or higher always fails and there is no automatic success.</p>\n<p><strong>Experience:</strong> at the DM's discretion, successful first-time creation grants XP equal to the gp spent. A successful vase, house or giant-sized magical construction grants one third of the gp spent instead. Repeat work grants no XP.</p>"
+      },
+      "_id": "lQkEfJW1cUZdQK4T",
+      "_key": "!journal.pages!sGgVmFqdtBlW-mYU.lQkEfJW1cUZdQK4T"
     }
   ]
 }

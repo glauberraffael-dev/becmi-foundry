@@ -90,14 +90,14 @@ const EXTENDED_XP = {
     [4000, 8000, 16000, 32000, 64000, 120000, 250000, 400000, 600000, 850000, 1100000, 1350000, 1600000, 1850000],
     [
       ...Array.from({ length: 5 }, (_, i) => [16 + i, 2100000 + i * 250000]),
-      ...Array.from({ length: 16 }, (_, i) => [21 + i, 3100000 + i * 200000])
+      ...Array.from({ length: 16 }, (_, i) => [21 + i, 3300000 + i * 200000])
     ]
   ),
   halfling: standardExtended(
     [2000, 4000, 8000, 16000, 32000, 64000, 120000, 300000, 600000, 900000, 1200000, 1500000, 1800000, 2100000],
     [
       ...Array.from({ length: 3 }, (_, i) => [16 + i, 2400000 + i * 300000]),
-      ...Array.from({ length: 18 }, (_, i) => [19 + i, 3000000 + i * 200000])
+      ...Array.from({ length: 18 }, (_, i) => [19 + i, 3200000 + i * 200000])
     ]
   ),
   mystic: standardExtended(
@@ -105,6 +105,16 @@ const EXTENDED_XP = {
     Array.from({ length: 20 }, (_, i) => [17 + i, 1200000 + i * 120000])
   )
 };
+
+// Footnotes printed on the RC p. 266 extended experience table.
+// * halves spell damage (one quarter on a save); ** grants two attacks;
+// t halves breath weapon damage; tt grants three attacks per round.
+const EXTENDED_MARKS = Object.freeze({
+  dwarf: { "**": [12], "*": [16], "t": [], "tt": [24] },
+  elf: { "**": [11], "*": [], "t": [14], "tt": [24] },
+  halfling: { "**": [13], "*": [9], "t": [15], "tt": [24] },
+  mystic: { "**": [], "*": [], "t": [], "tt": [] }
+});
 
 const classes = {};
 for (const [key, c] of Object.entries(raw.CLASSES)) {
@@ -116,6 +126,7 @@ for (const [key, c] of Object.entries(raw.CLASSES)) {
     maxLevel: c.max,
     xp: c.xp,
     extendedXp: EXTENDED_XP[outKey] ?? [...c.xp],
+    extendedMarks: EXTENDED_MARKS[outKey] ?? {},
     hitDie: c.vida?.d ?? 8,
     hpAfterFixed: c.vida?.apos ?? 0,
     primeRequisites: c.primarios ?? [],
@@ -147,6 +158,7 @@ classes.mystic = {
   xp: [0, 2000, 4000, 8000, 16000, 32000, 64000, 120000, 240000, 360000,
     480000, 600000, 720000, 840000, 960000, 1080000],
   extendedXp: EXTENDED_XP.mystic,
+  extendedMarks: EXTENDED_MARKS.mystic,
   hitDie: 6,
   hpAfterFixed: 2,
   primeRequisites: ["str", "dex"],

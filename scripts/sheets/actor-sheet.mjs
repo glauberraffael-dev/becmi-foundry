@@ -10,7 +10,7 @@ import {
   rollEvasion, rollPursuitRound, rollReaction, rollSurprise, rollWanderingDistance
 } from "../encounters.mjs";
 import {
-  rollGemValue, rollJewelryValue, rollMagicItemCard, rollTreasure
+  rollGemValue, rollJewelryValue, rollMagicCrafting, rollMagicItemCard, rollTreasure
 } from "../treasure.mjs";
 import {
   rollForageCheck, rollLostCheck, rollSeaWeather, rollSwimCheck, rollTravelDay
@@ -131,6 +131,40 @@ function readTreasureInputs(element, previous = {}) {
     const input = element?.querySelector(`[data-treasure-input="${key}"]`);
     if (!input) return [key, previous[key] ?? fallback];
     return [key, input.value];
+  }));
+}
+
+/** Magic crafting inputs are transient DM state, never Actor data. */
+const CRAFTING_DEFAULTS = Object.freeze({
+  mode: "miscellaneous",
+  spellLevel: 1,
+  spellLevels: "",
+  priceGp: 0,
+  encumbranceCn: 0,
+  bonuses: 1,
+  opponentBonuses: 0,
+  restrictions: 0,
+  charges: 0,
+  permanent: false,
+  nonRechargeable: false,
+  usesPerPeriod: "",
+  usesPerPeriodCount: 0,
+  hitDice: 1,
+  asterisks: 0,
+  classKey: "",
+  abilityScore: "",
+  level: "",
+  newSpell: false,
+  failures: 0,
+  firstTime: true,
+  roll: ""
+});
+
+function readCraftingInputs(element, previous = {}) {
+  return Object.fromEntries(Object.entries(CRAFTING_DEFAULTS).map(([key, fallback]) => {
+    const input = element?.querySelector(`[data-crafting-input="${key}"]`);
+    if (!input) return [key, previous[key] ?? fallback];
+    return [key, typeof fallback === "boolean" ? Boolean(input.checked) : input.value];
   }));
 }
 
@@ -353,6 +387,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   xpResult = null;
   encounterInputs = {};
   treasureInputs = {};
+  craftingInputs = {};
   travelInputs = {};
   encounterState = {
     surprise: "none",
@@ -403,6 +438,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollMagicItem: BECMIActorSheet.#rollMagicItem,
       rollGemValue: BECMIActorSheet.#rollGemValue,
       rollJewelryValue: BECMIActorSheet.#rollJewelryValue,
+      rollCrafting: BECMIActorSheet.#rollCrafting,
       rollHitDice: BECMIActorSheet.#rollHitDice,
       rollMonsterHp: BECMIActorSheet.#rollMonsterHp,
       monsterAttack: BECMIActorSheet.#monsterAttack,
@@ -650,6 +686,30 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       monsterTreasure: isCharacter ? "" : (actor.system.treasure ?? "")
     };
 
+    const craftingInputs = { ...CRAFTING_DEFAULTS, ...(this.craftingInputs ?? {}) };
+    this.craftingInputs = craftingInputs;
+    const crafting = {
+      inputs: craftingInputs,
+      modeOptions: [
+        { key: "armor", label: game.i18n.localize("BECMI.crafting.mode.armor") },
+        { key: "weapon", label: game.i18n.localize("BECMI.crafting.mode.weapon") },
+        { key: "miscellaneous", label: game.i18n.localize("BECMI.crafting.mode.miscellaneous") },
+        { key: "construct", label: game.i18n.localize("BECMI.crafting.mode.construct") },
+        { key: "research", label: game.i18n.localize("BECMI.crafting.mode.research") }
+      ],
+      periodOptions: [
+        { key: "", label: game.i18n.localize("BECMI.crafting.period.none") },
+        { key: "hour", label: game.i18n.localize("BECMI.crafting.period.hour") },
+        { key: "day", label: game.i18n.localize("BECMI.crafting.period.day") },
+        { key: "week", label: game.i18n.localize("BECMI.crafting.period.week") },
+        { key: "month", label: game.i18n.localize("BECMI.crafting.period.month") }
+      ],
+      classOptions: [
+        { key: "", label: game.i18n.localize("BECMI.crafting.classDefault") },
+        ...Object.values(RC.classes).map((cls) => ({ key: cls.key, label: cls.name }))
+      ]
+    };
+
     const travelInputs = { ...TRAVEL_DEFAULTS, ...(this.travelInputs ?? {}) };
     this.travelInputs = travelInputs;
     const travelLoad = travelInputs.load === "" ? 0 : Number(travelInputs.load) || 0;
@@ -683,7 +743,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter, travel, treasure,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter, travel, treasure, crafting,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       generalToggleLabel: game.i18n.localize(generalEnabled
@@ -1270,6 +1330,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       roll: this.treasureInputs.jewelryRoll,
       averageLevel: this.treasureInputs.averageLevel
     });
+  }
+
+  static async #rollCrafting() {
+    this.craftingInputs = readCraftingInputs(this.element, this.craftingInputs);
+    await rollMagicCrafting(this.actor, this.craftingInputs);
   }
 
   static async #rollHitDice() {

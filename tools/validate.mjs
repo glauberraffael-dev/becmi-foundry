@@ -360,6 +360,15 @@ const rulesSource = await readFile(join(root, "scripts/rules-rc.mjs"), "utf8");
 for (const token of ["xpForNextLevel", "levelForXp", "normalizeClassKey", "generalSkillSlots", "GENERAL_SKILLS"]) {
   if (!rulesSource.includes(token)) note(`rules-rc.mjs: missing ${token}`);
 }
+const craftingSource = await readFile(join(root, "scripts/magic-crafting.mjs"), "utf8");
+for (const token of [
+  "export function craftingAbilityScore", "export function craftingChance",
+  "export function armorWeaponEnchantmentCost", "export function spellEffectCost",
+  "export function constructCost", "export function constructChance",
+  "export function spellResearchChance", "export function craftingXp"
+]) {
+  if (!craftingSource.includes(token)) note(`magic-crafting.mjs: missing ${token}`);
+}
 
 const creationSource = await readFile(join(root, "scripts/character-creation.mjs"), "utf8");
 for (const token of [
