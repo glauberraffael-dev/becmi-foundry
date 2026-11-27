@@ -9,13 +9,16 @@ import {
   availableTables, drawEncounterTable, rollEncounterCheck, rollEncounterDistance,
   rollEvasion, rollPursuitRound, rollReaction, rollSurprise, rollWanderingDistance
 } from "../encounters.mjs";
+import {
+  rollGemValue, rollJewelryValue, rollMagicItemCard, rollTreasure
+} from "../treasure.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, calculateXpAward,
   encounterChance, equippedAcBonus, evasionChance, getRCClass, generalSkillInfo, hpForLevel,
-  masteryData, masteryRanks, masteryWeapon, masteryChoices, monsterAttackRows,
-  monsterSpellcasterInfo, monsterXpValue, normalizeClassKey, spellKey, spellSlotsForLevel,
-  spellsFor, turnUndeadColumn
+  MAGIC_ITEM_CATEGORIES, masteryData, masteryRanks, masteryWeapon, masteryChoices,
+  monsterAttackRows, monsterSpellcasterInfo, monsterXpValue, normalizeClassKey, spellKey,
+  spellSlotsForLevel, spellsFor, treasureTypeInfo, TREASURE_TYPES, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -108,6 +111,25 @@ function readEncounterInputs(element, previous = {}) {
   }));
 }
 
+/** Treasure panel inputs are transient DM state, never Actor data. */
+const TREASURE_DEFAULTS = Object.freeze({
+  type: "A",
+  location: "auto",
+  category: "",
+  roll: "",
+  gemRoll: "",
+  jewelryRoll: "",
+  averageLevel: 9
+});
+
+function readTreasureInputs(element, previous = {}) {
+  return Object.fromEntries(Object.entries(TREASURE_DEFAULTS).map(([key, fallback]) => {
+    const input = element?.querySelector(`[data-treasure-input="${key}"]`);
+    if (!input) return [key, previous[key] ?? fallback];
+    return [key, input.value];
+  }));
+}
+
 function reactionCharisma(actor) {
   const adjustmentValue = actor?.system?.attributes?.adjustments?.cha;
   if (adjustmentValue !== undefined) return Number(adjustmentValue) || 0;
@@ -144,6 +166,7 @@ const SHEET_TABS = [
   ["features", "BECMI.sheet.tab.features"],
   ["xp", "BECMI.sheet.tab.xp"],
   ["encounter", "BECMI.sheet.tab.encounter"],
+  ["treasure", "BECMI.sheet.tab.treasure"],
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
   ["thief", "BECMI.sheet.tab.thief"],
@@ -287,6 +310,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   xpInputs = {};
   xpResult = null;
   encounterInputs = {};
+  treasureInputs = {};
   encounterState = {
     surprise: "none",
     reaction: { attempt: 1, pendingModifier: 0, done: false }
@@ -327,6 +351,10 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       evasionCheck: BECMIActorSheet.#evasionCheck,
       pursuitRound: BECMIActorSheet.#pursuitRound,
       rollEncounterTable: BECMIActorSheet.#rollEncounterTable,
+      rollTreasure: BECMIActorSheet.#rollTreasure,
+      rollMagicItem: BECMIActorSheet.#rollMagicItem,
+      rollGemValue: BECMIActorSheet.#rollGemValue,
+      rollJewelryValue: BECMIActorSheet.#rollJewelryValue,
       rollHitDice: BECMIActorSheet.#rollHitDice,
       rollMonsterHp: BECMIActorSheet.#rollMonsterHp,
       monsterAttack: BECMIActorSheet.#monsterAttack,
@@ -555,6 +583,24 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       encounterOptions: ["monster", "ship"].map(option)
     };
 
+    const treasureInputs = { ...TREASURE_DEFAULTS, ...(this.treasureInputs ?? {}) };
+    this.treasureInputs = treasureInputs;
+    const selectedTreasure = treasureTypeInfo(treasureInputs.type, treasureInputs.location);
+    const treasure = {
+      inputs: treasureInputs,
+      typeOptions: Object.keys(TREASURE_TYPES).map((key) => ({ key })),
+      locationOptions: ["auto", "lair", "carried"].map(option),
+      categoryOptions: [
+        { key: "", label: game.i18n.localize("BECMI.treasure.randomCategory") },
+        ...MAGIC_ITEM_CATEGORIES.map((entry) => ({ key: entry.key, label: entry.name }))
+      ],
+      typeLabel: selectedTreasure?.key ?? "",
+      tableLabel: selectedTreasure
+        ? game.i18n.localize(`BECMI.treasure.${selectedTreasure.table}`) : "",
+      averageGp: selectedTreasure?.averageGp ?? null,
+      monsterTreasure: isCharacter ? "" : (actor.system.treasure ?? "")
+    };
+
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
       canEdit: this.isEditable,
@@ -564,7 +610,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter, treasure,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       generalToggleLabel: game.i18n.localize(generalEnabled
@@ -856,7 +902,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       if (id === "undead") return canTurn;
       if (id === "mastery") return canMastery;
       return true;
-    }) : SHEET_TABS.filter(([id]) => ["main", "equipment", "encounter",
+    }) : SHEET_TABS.filter(([id]) => ["main", "equipment", "encounter", "treasure",
       ...(monsterSpellcaster ? ["spells"] : []), "notes"].includes(id));
     context.tabs = definitions.map(([id, label]) => ({
       id, label: game.i18n.localize(label), active: id === this.activeTab
@@ -1094,6 +1140,35 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return;
     }
     await drawEncounterTable(this.actor, this.encounterInputs.table);
+  }
+
+  static async #rollTreasure() {
+    this.treasureInputs = readTreasureInputs(this.element, this.treasureInputs);
+    await rollTreasure(this.actor, this.treasureInputs);
+  }
+
+  static async #rollMagicItem() {
+    this.treasureInputs = readTreasureInputs(this.element, this.treasureInputs);
+    await rollMagicItemCard(this.actor, {
+      category: this.treasureInputs.category,
+      roll: this.treasureInputs.roll
+    });
+  }
+
+  static async #rollGemValue() {
+    this.treasureInputs = readTreasureInputs(this.element, this.treasureInputs);
+    await rollGemValue(this.actor, {
+      roll: this.treasureInputs.gemRoll,
+      averageLevel: this.treasureInputs.averageLevel
+    });
+  }
+
+  static async #rollJewelryValue() {
+    this.treasureInputs = readTreasureInputs(this.element, this.treasureInputs);
+    await rollJewelryValue(this.actor, {
+      roll: this.treasureInputs.jewelryRoll,
+      averageLevel: this.treasureInputs.averageLevel
+    });
   }
 
   static async #rollHitDice() {

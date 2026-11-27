@@ -768,6 +768,74 @@
   </div>
 </section>
 
+<section class="becmi-tab-panel{{#if (eq activeTab "treasure")}} is-active{{/if}}" data-tab="treasure">
+  <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.treasure'}}</h2>
+  <div class="becmi-sheet-body">
+    {{#if treasure.monsterTreasure}}
+    <p class="becmi-derived">{{localize 'BECMI.treasure.monsterType'}}: {{treasure.monsterTreasure}}</p>
+    {{/if}}
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.treasure.random'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.type'}}:</label>
+        <select data-treasure-input="type">
+          {{#each treasure.typeOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../treasure.inputs.type)}} selected{{/if}}>{{option.key}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.table'}}:</label>
+        <select data-treasure-input="location">
+          {{#each treasure.locationOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../treasure.inputs.location)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field becmi-field--wide">
+        <span class="becmi-derived">{{treasure.typeLabel}} · {{treasure.tableLabel}}{{#if treasure.averageGp}} · {{localize 'BECMI.treasure.averageShort'}} {{treasure.averageGp}} gp{{/if}}</span>
+      </div>
+      <button type="button" class="becmi-roll" data-action="rollTreasure">{{localize 'BECMI.treasure.rollTreasure'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.treasure.magicItem'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.category'}}:</label>
+        <select data-treasure-input="category">
+          {{#each treasure.categoryOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../treasure.inputs.category)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.rollOptional'}}:</label>
+        <input data-treasure-input="roll" type="number" min="1" max="100" value="{{treasure.inputs.roll}}">
+      </div>
+      <button type="button" class="becmi-roll" data-action="rollMagicItem">{{localize 'BECMI.treasure.rollMagicItem'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.treasure.values'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.averageLevel'}}:</label>
+        <input data-treasure-input="averageLevel" type="number" min="1" value="{{treasure.inputs.averageLevel}}">
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.gemRollOptional'}}:</label>
+        <input data-treasure-input="gemRoll" type="number" min="1" max="100" value="{{treasure.inputs.gemRoll}}">
+      </div>
+      <div class="becmi-field">
+        <label>{{localize 'BECMI.treasure.jewelryRollOptional'}}:</label>
+        <input data-treasure-input="jewelryRoll" type="number" min="1" max="100" value="{{treasure.inputs.jewelryRoll}}">
+      </div>
+      <button type="button" class="becmi-roll" data-action="rollGemValue">{{localize 'BECMI.treasure.gemValue'}}</button>
+      <button type="button" class="becmi-roll" data-action="rollJewelryValue">{{localize 'BECMI.treasure.jewelryValue'}}</button>
+    </div>
+  </div>
+</section>
+
 </div>
 
 <!-- ============================ SIDEBAR ============================ -->

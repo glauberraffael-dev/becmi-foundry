@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.33
+
+- Added a **Treasure** tab with the Rules Cyclopedia chapter 16 procedures:
+  all lettered types A-V (lair and carried tables, d100 chances, lair coins
+  multiplied by 1,000 and the published average values), the gem and jewelry
+  value tables with the -10 adjustment below level 9, the magical item main
+  table and subtables 1-9, and the missile talent subtable. Rolls post chat
+  cards and never modify the Actor; even a monster's free-text treasure type
+  is only shown as a hint.
+- Reproduced the treasure types, value tables and magical item subtables in the
+  `Chapter 16: Treasure` and `Core Rules Reference` journals, so the printed
+  tables are available offline instead of only a short summary.
+
 ## 0.1.32
 
 - Added an **Encounters** tab with the Rules Cyclopedia chapter 7 procedures:

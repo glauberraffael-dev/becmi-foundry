@@ -103,6 +103,14 @@ humanoids, monsters, planar monsters, undead and unclassified) with stat blocks 
 Rules Cyclopedia order. Chapters 10, 18 and 19 and Appendix 4 carry the extended XP,
 plane and index tables; each journal has its own scrollable table pages.
 
+## Procedural tools
+
+The sheet **Encounters** and **Treasure** tabs implement the chapter 7 and 16
+procedures as chat-card rolls: encounter chance, surprise, reaction, distance,
+evasion and pursuit; treasure types A-V, gem and jewelry values, and the magical
+item tables. Their inputs are temporary GM state and are never written to an
+Actor. The same tables are printed in the `Core Rules Reference` journal.
+
 ## Installation
 
 ### From GitHub
@@ -114,8 +122,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.32`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.32.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.33`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.33.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

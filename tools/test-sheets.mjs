@@ -215,6 +215,9 @@ for (const action of ["encounterCheck", "surpriseCheck", "encounterDistance", "w
   "reactionCheck", "resetReaction", "evasionCheck", "pursuitRound", "rollEncounterTable"]) {
   if (typeof actions[action] !== "function") throw new Error(`encounter action ${action} is not registered`);
 }
+for (const action of ["rollTreasure", "rollMagicItem", "rollGemValue", "rollJewelryValue"]) {
+  if (typeof actions[action] !== "function") throw new Error(`treasure action ${action} is not registered`);
+}
 for (const marker of [
   'data-tab="encounter"', 'data-action="encounterCheck"', 'data-action="surpriseCheck"',
   'data-action="encounterDistance"', 'data-action="wanderingDistance"',
@@ -223,6 +226,14 @@ for (const marker of [
   'data-action="rollEncounterTable"', 'data-encounter-input="table"'
 ]) {
   if (!body.includes(marker)) throw new Error(`encounter panel is missing ${marker}`);
+}
+for (const marker of [
+  'data-tab="treasure"', 'data-action="rollTreasure"', 'data-action="rollMagicItem"',
+  'data-action="rollGemValue"', 'data-action="rollJewelryValue"',
+  'data-treasure-input="type"', 'data-treasure-input="location"',
+  'data-treasure-input="category"', 'data-treasure-input="averageLevel"'
+]) {
+  if (!body.includes(marker)) throw new Error(`treasure panel is missing ${marker}`);
 }
 const equipmentPartial = await readFile(new URL("../templates/actor/parts/equipment.hbs", import.meta.url), "utf8");
 if (!equipmentPartial.includes('data-action="itemAttack"')

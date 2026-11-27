@@ -1549,3 +1549,541 @@ export function pursuitRound(input = {}, rng = Math.random) {
     moraleCheckDue: round % 5 === 0
   };
 }
+
+/* ------------------------------------------------------------------ *
+ * Treasure (RC pp. 224-231). Coins in lairs are given in thousands;   *
+ * carried coins are pieces per individual. "Nil" means "do not roll". *
+ * ------------------------------------------------------------------ */
+
+export const TREASURE_TYPES = Object.freeze({
+  A: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "25% 1d6", sp: "30% 1d6", ep: "20% 1d4", gp: "35% 2d6", pp: "25% 1d2" }),
+      gems: "50% 6d6", jewelry: "50% 6d6", special: "10% 1d2", magic: "30% Any 3"
+    }),
+    averageGp: 17000
+  }),
+  B: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "50% 1d8", sp: "25% 1d6", ep: "25% 1d4", gp: "35% 1d3", pp: "Nil" }),
+      gems: "25% 1d6", jewelry: "25% 1d6", special: "Nil",
+      magic: "10% 1 sword, miscellaneous weapon, or armor"
+    }),
+    averageGp: 2000
+  }),
+  C: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "20% 1d12", sp: "30% 1d4", ep: "10% 1d4", gp: "Nil", pp: "Nil" }),
+      gems: "25% 1d4", jewelry: "25% 1d4", special: "5% 1d2", magic: "10% Any 2"
+    }),
+    averageGp: 750
+  }),
+  D: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "10% 1d8", sp: "15% 2d12", ep: "Nil", gp: "60% 1d6", pp: "Nil" }),
+      gems: "30% 1d8", jewelry: "30% 1d8", special: "10% 1d2", magic: "15% Any 2 + 1 potion"
+    }),
+    averageGp: 4000
+  }),
+  E: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "5% 1d10", sp: "30% 2d12", ep: "25% 1d4", gp: "25% 1d8", pp: "Nil" }),
+      gems: "10% 1d10", jewelry: "10% 1d10", special: "15% 1d2", magic: "25% Any 3 + 1 scroll"
+    }),
+    averageGp: 2500
+  }),
+  F: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "10% 2d10", ep: "20% 1d8", gp: "45% 1d12", pp: "30% 1d3" }),
+      gems: "20% 2d12", jewelry: "10% 1d12", special: "20% 1d3",
+      magic: "30% 1 potion, 1 scroll, +3 any but weapons"
+    }),
+    averageGp: 7600
+  }),
+  G: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "50% 1d4 x 10", pp: "50% 1d6 x 10" }),
+      gems: "25% 3d6", jewelry: "25% 1d10", special: "30% 1d3", magic: "35% Any 4 + 1 scroll"
+    }),
+    averageGp: 25000
+  }),
+  H: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "25% 3d8", sp: "50% 1d100", ep: "50% 1d4 x 10", gp: "50% 1d6 x 10", pp: "25% 5d4" }),
+      gems: "50% 1d100", jewelry: "50% 1d4 x 10", special: "10% 1d2",
+      magic: "15% 1 potion + 1 scroll + any 4"
+    }),
+    averageGp: 60000
+  }),
+  I: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "Nil", pp: "30% 1d8" }),
+      gems: "50% 2d6", jewelry: "50% 2d6", special: "5% 1d2", magic: "15% Any 1"
+    }),
+    averageGp: 7500
+  }),
+  J: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "25% 1d4", sp: "10% 1d3", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "Nil", magic: "Nil"
+    }),
+    averageGp: 25
+  }),
+  K: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "30% 1d6", ep: "10% 1d2", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "Nil", magic: "Nil"
+    }),
+    averageGp: 250
+  }),
+  L: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "50% 1d4", jewelry: "Nil", special: "Nil", magic: "Nil"
+    }),
+    averageGp: 225
+  }),
+  M: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "40% 2d4", pp: "50% 3d10" }),
+      gems: "55% 5d4", jewelry: "45% 2d6", special: "Nil", magic: "Nil"
+    }),
+    averageGp: 50000
+  }),
+  N: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "10% 1d2", magic: "40% 2d4 potions"
+    })
+  }),
+  O: Object.freeze({
+    lair: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "10% 1d3", magic: "50% 1d4 scrolls"
+    })
+  }),
+  P: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "3d8", sp: "Nil", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "Nil", magic: "Nil"
+    })
+  }),
+  Q: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "3d6", ep: "Nil", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "Nil", magic: "Nil"
+    })
+  }),
+  R: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "2d6", gp: "Nil", pp: "Nil" }),
+      gems: "Nil", jewelry: "Nil", special: "Nil", magic: "Nil"
+    })
+  }),
+  S: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "2d4", pp: "Nil" }),
+      gems: "5% 1", jewelry: "Nil", special: "Nil", magic: "Nil"
+    })
+  }),
+  T: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "Nil", ep: "Nil", gp: "Nil", pp: "1d6" }),
+      gems: "5% 1", jewelry: "Nil", special: "Nil", magic: "Nil"
+    })
+  }),
+  U: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "10% 1d100", sp: "10% 1d100", ep: "Nil", gp: "5% 1d100", pp: "Nil" }),
+      gems: "5% 1d2", jewelry: "5% 1d4", special: "2% Any 1", magic: "2% Any 1"
+    })
+  }),
+  V: Object.freeze({
+    carried: Object.freeze({
+      coins: Object.freeze({ cp: "Nil", sp: "10% 1d100", ep: "5% 1d100", gp: "10% 1d100", pp: "5% 1d100" }),
+      gems: "10% 1d2", jewelry: "10% 1d4", special: "5% Any 1", magic: "5% Any 1"
+    })
+  })
+});
+
+export const COIN_VALUE_GP = Object.freeze({ cp: 0.01, sp: 0.1, ep: 0.2, gp: 1, pp: 5 });
+
+/** Resolve a letter code and pick the lair or carried table. */
+export function treasureTypeInfo(type, location = "auto") {
+  const key = String(type ?? "").trim().toUpperCase();
+  const entry = TREASURE_TYPES[key];
+  if (!entry) return null;
+  const table = location === "lair" || location === "carried"
+    ? (entry[location] ? location : (entry.lair ? "lair" : "carried"))
+    : (entry.lair ? "lair" : "carried");
+  return { key, table, row: entry[table], averageGp: entry.averageGp ?? null };
+}
+
+function treasureCell(text) {
+  const value = String(text ?? "").trim();
+  if (!value || /^nil$/i.test(value)) return null;
+  const match = value.match(/^(\d+)%\s*(.+)$/);
+  if (!match) return { chance: null, recipe: value };
+  return { chance: Number(match[1]), recipe: match[2].trim() };
+}
+
+function treasureCount(recipe, rng) {
+  const anyCount = recipe.match(/^Any\s+(\d+)/i);
+  if (anyCount) return { count: Number(anyCount[1]), dice: null, text: recipe };
+  const special = recipe.match(/^(.+?)\s*\(([^)]*d[^)]*)\)$/);
+  const dice = special ? special[2] : (recipe.match(/^\d+d\d+(?:\s*\+\s*\d+)?/) ?? [null])[0];
+  return {
+    count: dice ? rollExpression(dice.replace(/\s*x\s*/gi, " * "), rng).total : 1,
+    dice: dice ?? null,
+    text: special ? special[1].trim() : recipe.replace(/^\d+d\d+(?:\s*\+\s*\d+)?\s*/, "").trim() || recipe
+  };
+}
+
+/**
+ * RC pp. 225-226 random treasure checklist. Chance rolls are d100 ("the number
+ * shown or less"); amounts are dice, with lair coins multiplied by 1,000.
+ */
+export function rollTreasureType(input = {}, rng = Math.random) {
+  const info = treasureTypeInfo(input?.type, input?.location ?? "auto");
+  if (!info) return null;
+  const rollD100 = () => 1 + Math.floor(rng() * 100);
+  const rollCell = (cellText, { multiply = 1 } = {}) => {
+    const cell = treasureCell(cellText);
+    if (!cell) return null;
+    const roll = cell.chance === null ? null : rollD100();
+    const found = cell.chance === null ? true : roll <= cell.chance;
+    const details = found ? treasureCount(cell.recipe, rng) : { count: 0, dice: null, text: cell.recipe };
+    return { chance: cell.chance, roll, found, recipe: cell.recipe, ...details, amount: found ? details.count * multiply : 0 };
+  };
+  const coins = Object.fromEntries(Object.entries(info.row.coins).map(([coin, cell]) => [
+    coin, rollCell(cell, { multiply: info.table === "lair" ? 1000 : 1 })
+  ]));
+  const coinGp = Object.entries(coins).reduce((sum, [coin, result]) => sum + (result?.amount ?? 0) * COIN_VALUE_GP[coin], 0);
+  return {
+    type: info.key,
+    location: info.table,
+    averageGp: info.averageGp,
+    coins,
+    coinGp,
+    gems: rollCell(info.row.gems),
+    jewelry: rollCell(info.row.jewelry),
+    special: rollCell(info.row.special),
+    magic: rollCell(info.row.magic)
+  };
+}
+
+/** RC p. 226 Gem Value Table; below level 9 the d100 roll is lowered by 10. */
+export const GEM_VALUES = Object.freeze([
+  Object.freeze({ min: 1, max: 3, value: 10, examples: "Agate, quartz, turquoise" }),
+  Object.freeze({ min: 4, max: 10, value: 50, examples: "Crystal, jasper, onyx" }),
+  Object.freeze({ min: 11, max: 25, value: 100, examples: "Amber, amethyst, coral, garnet, jade" }),
+  Object.freeze({ min: 26, max: 46, value: 500, examples: "Aquamarine, pearl, topaz" }),
+  Object.freeze({ min: 47, max: 71, value: 1000, examples: "Carbuncle, opal" }),
+  Object.freeze({ min: 72, max: 90, value: 5000, examples: "Emerald, ruby, sapphire" }),
+  Object.freeze({ min: 91, max: 97, value: 10000, examples: "Diamond, jacinth" }),
+  Object.freeze({ min: 98, max: 100, value: null, examples: "Starstone, tristal" })
+]);
+
+/** RC p. 227 Jewelry Value Table; the same -10 modifier applies below level 9. */
+export const JEWELRY_VALUES = Object.freeze([
+  Object.freeze({ min: 1, max: 1, value: 100, enc: 10 }),
+  Object.freeze({ min: 2, max: 3, value: 500, enc: 10 }),
+  Object.freeze({ min: 4, max: 6, value: 1000, enc: 10 }),
+  Object.freeze({ min: 7, max: 10, value: 1500, enc: 10 }),
+  Object.freeze({ min: 11, max: 16, value: 2000, enc: 10 }),
+  Object.freeze({ min: 17, max: 24, value: 2500, enc: 10 }),
+  Object.freeze({ min: 25, max: 34, value: 3000, enc: 25 }),
+  Object.freeze({ min: 35, max: 45, value: 4000, enc: 25 }),
+  Object.freeze({ min: 46, max: 58, value: 5000, enc: 25 }),
+  Object.freeze({ min: 59, max: 69, value: 7500, enc: 25 }),
+  Object.freeze({ min: 70, max: 78, value: 10000, enc: 25 }),
+  Object.freeze({ min: 79, max: 85, value: 15000, enc: 25 }),
+  Object.freeze({ min: 86, max: 90, value: 20000, enc: 50 }),
+  Object.freeze({ min: 91, max: 94, value: 25000, enc: 50 }),
+  Object.freeze({ min: 95, max: 97, value: 30000, enc: 50 }),
+  Object.freeze({ min: 98, max: 99, value: 40000, enc: 50 }),
+  Object.freeze({ min: 100, max: 100, value: 50000, enc: 50 })
+]);
+
+function adjustedTreasureRoll(roll, averageLevel) {
+  const raw = clamp(Math.round(numeric(roll, 1)), 1, 100);
+  return { raw, adjusted: numeric(averageLevel, 9) < 9 ? Math.max(1, raw - 10) : raw };
+}
+
+export function gemValue(input = {}, rng = Math.random) {
+  const roll = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? 1 + Math.floor(rng() * 100) : input.roll;
+  const adjusted = adjustedTreasureRoll(roll, input?.averageLevel);
+  const row = GEM_VALUES.find((entry) => adjusted.adjusted >= entry.min && adjusted.adjusted <= entry.max)
+    ?? GEM_VALUES[0];
+  return { ...adjusted, value: row.value, examples: row.examples };
+}
+
+export function jewelryValue(input = {}, rng = Math.random) {
+  const roll = input?.roll === undefined || input?.roll === null || input?.roll === ""
+    ? 1 + Math.floor(rng() * 100) : input.roll;
+  const adjusted = adjustedTreasureRoll(roll, input?.averageLevel);
+  const row = JEWELRY_VALUES.find((entry) => adjusted.adjusted >= entry.min && adjusted.adjusted <= entry.max)
+    ?? JEWELRY_VALUES[0];
+  return { ...adjusted, value: row.value, enc: row.enc };
+}
+
+/** RC p. 228 Magical Items Main Table. */
+export const MAGIC_ITEM_CATEGORIES = Object.freeze([
+  Object.freeze({ min: 1, max: 25, key: "potions", name: "Potion" }),
+  Object.freeze({ min: 26, max: 37, key: "scrolls", name: "Scroll" }),
+  Object.freeze({ min: 38, max: 46, key: "wands", name: "Wand, staff, or rod" }),
+  Object.freeze({ min: 47, max: 52, key: "rings", name: "Ring" }),
+  Object.freeze({ min: 53, max: 62, key: "miscellaneous", name: "Miscellaneous magical item" }),
+  Object.freeze({ min: 63, max: 72, key: "armor", name: "Armor or shield" }),
+  Object.freeze({ min: 73, max: 83, key: "missiles", name: "Missile weapon or missile" }),
+  Object.freeze({ min: 84, max: 92, key: "swords", name: "Sword" }),
+  Object.freeze({ min: 93, max: 100, key: "miscWeapons", name: "Miscellaneous weapon" })
+]);
+
+function rangeValue(text) {
+  const value = String(text).trim();
+  return value === "00" ? 100 : Number(value);
+}
+
+function rangeRows(entries) {
+  return Object.freeze(entries.map(([range, name]) => {
+    const [low, high] = String(range).split("-").map(rangeValue);
+    return Object.freeze({ min: low, max: high ?? low, name });
+  }));
+}
+
+/** RC pp. 229-231 Magical Item Subtables 1-9. */
+export const MAGIC_ITEM_SUBTABLES = Object.freeze({
+  potions: rangeRows([
+    ["01-02", "Agility"], ["03", "Animal Control"], ["04-06", "Antidote"],
+    ["07-08", "Blending"], ["09-10", "Bug Repellent"], ["11-12", "Clairaudience"],
+    ["13-14", "Clairvoyance"], ["15-16", "Climbing"], ["17-18", "Defense"],
+    ["19-22", "Delusion"], ["23-24", "Diminution"], ["25", "Dragon Control"],
+    ["26-27", "Dreamspeech"], ["28", "Elasticity"], ["29-30", "Elemental Form"],
+    ["31-32", "ESP"], ["33", "Ethereality"], ["34-36", "Fire Resistance"],
+    ["37-39", "Flying"], ["40-41", "Fortitude"], ["42", "Freedom"],
+    ["43-45", "Gaseous Form"], ["46", "Giant Control"], ["47-49", "Giant Strength"],
+    ["50-51", "Growth"], ["52-57", "Healing"], ["58-60", "Heroism"],
+    ["61", "Human Control"], ["62-64", "Invisibility"], ["65-66", "Invulnerability"],
+    ["67-68", "Levitation"], ["69-70", "Longevity"], ["71", "Luck"],
+    ["72", "Merging"], ["73-74", "Plant Control"], ["75-77", "Poison"],
+    ["78-80", "Polymorph Self"], ["81-82", "Sight"], ["83-84", "Speech"],
+    ["85-88", "Speed"], ["89-90", "Strength"], ["91-93", "Super-Healing"],
+    ["94-96", "Swimming"], ["97", "Treasure Finding"], ["98", "Undead Control"],
+    ["99-00", "Water Breathing"]
+  ]),
+  scrolls: rangeRows([
+    ["01-03", "Communication"], ["04-05", "Creation"],
+    ["06-13", "Curse (occurs when read)"], ["14", "Delay (S)"], ["15-17", "Equipment"],
+    ["18-19", "Illumination"], ["20-21", "Mages (S)"], ["22-25", "Map to normal treasure"],
+    ["26-28", "Map to magical treasure"], ["29-30", "Map to combined treasure"],
+    ["31", "Map to special treasure"], ["32-34", "Mapping"], ["35-36", "Portals"],
+    ["37-42", "Protection from Elementals"], ["43-50", "Protection from Lycanthropes"],
+    ["51-54", "Protection from Magic"], ["55-61", "Protection from Undead"],
+    ["62-63", "Questioning"], ["64", "Repetition (S)"], ["65-66", "Seeing"],
+    ["67-68", "Shelter"], ["69-71", "Spell Catching"],
+    ["72-96", "Spell (see Spell Scrolls)"], ["97-98", "Trapping"], ["99-00", "Truth"]
+  ]),
+  wands: rangeRows([
+    ["01-05", "Wand of Cold (M)"], ["06-10", "Wand of Enemy Detection (M)"],
+    ["11-14", "Wand of Fear (M)"], ["15-19", "Wand of Fireballs (M)"],
+    ["20-23", "Wand of Illusion (M)"], ["24-28", "Wand of Lightning Bolts (M)"],
+    ["29-33", "Wand of Magic Detection (M)"], ["34-38", "Wand of Metal Detection (M)"],
+    ["39-42", "Wand of Negation (M)"], ["43-47", "Wand of Paralyzation (M)"],
+    ["48-52", "Wand of Polymorphing (M)"], ["53-56", "Wand of Secret Door Detection (M)"],
+    ["57-60", "Wand of Trap Detection (M)"], ["61", "Staff of Commanding (S)"],
+    ["62-63", "Staff of Dispelling"], ["64-66", "Staff of the Druids (DR)"],
+    ["67-69", "Staff of an Element (M)"], ["70-71", "Staff of Harming (C)"],
+    ["72-78", "Staff of Healing (C)"], ["79", "Staff of Power (M)"],
+    ["80-82", "Snake Staff (C)"], ["83-85", "Staff of Striking (S)"],
+    ["86-87", "Staff of Withering (C)"], ["88", "Staff of Wizardry (M)"],
+    ["89-90", "Rod of Cancellation"], ["91", "Rod of Dominion"],
+    ["92", "Rod of Health (C)"], ["93-94", "Rod of Inertia (N)"],
+    ["95", "Rod of Parrying"], ["96", "Rod of Victory"],
+    ["97-99", "Rod of Weaponry"], ["00", "Rod of the Wyrm"]
+  ]),
+  rings: rangeRows([
+    ["01-02", "Animal Control"], ["03-08", "Delusion"], ["09", "Djinni Summoning"],
+    ["10-13", "Ear"], ["14-17", "Elemental Adaptation"], ["18-23", "Fire Resistance"],
+    ["24-26", "Holiness (C, DR)"], ["27", "Human Control"], ["28-32", "Invisibility"],
+    ["33-35", "Life Protection"], ["36-38", "Memory (S)"], ["39-40", "Plant Control"],
+    ["41-45", "Protection +1"], ["46-48", "Protection +2"], ["49-50", "Protection +3"],
+    ["51", "Protection +4"], ["52-55", "Quickness"], ["56", "Regeneration"],
+    ["57-59", "Remedies"], ["60-61", "Safety"], ["62-64", "Seeing"],
+    ["65-67", "Spell Eating"], ["68-69", "Spell Storing"], ["70-71", "Spell Turning"],
+    ["72-75", "Survival"], ["76-77", "Telekinesis"], ["78-81", "Truth"],
+    ["82-84", "Truthfulness"], ["85-86", "Truthlessness"], ["87-91", "Water Walking"],
+    ["92-96", "Weakness"], ["97-98", "Wishes"], ["99-00", "X-ray Vision"]
+  ]),
+  miscellaneous: rangeRows([
+    ["01-02", "Amulet of Protection from Crystal Balls and ESP"],
+    ["03-04", "Bag of Devouring"], ["05-09", "Bag of Holding"],
+    ["10-12", "Boat, Undersea"], ["13-14", "Boots of Levitation"],
+    ["15-17", "Boots of Speed"], ["18-19", "Boots of Traveling/Leaping"],
+    ["20", "Bowl of Commanding Water Elementals"],
+    ["21", "Brazier of Commanding Fire Elementals"], ["22-23", "Broom of Flying"],
+    ["24", "Censer of Controlling Air Elementals"], ["25-27", "Chime of Time"],
+    ["28-29", "Crystal Ball (E, M)"], ["30", "Crystal Ball with Clairaudience (M)"],
+    ["31", "Crystal Ball with ESP (M)"], ["32-33", "Displacer Cloak"],
+    ["34", "Drums of Panic"], ["35", "Efreeti Bottle"], ["36", "Egg of Wonder"],
+    ["37-38", "Elven Boots"], ["39-40", "Elven Cloak"], ["41-42", "Flying Carpet"],
+    ["43", "Gauntlets of Ogre Power"], ["44-45", "Girdle of Giant Strength"],
+    ["46-47", "Helm of Alignment Changing"], ["48-49", "Helm of Reading"],
+    ["50-51", "Helm of Telepathy"], ["52", "Helm of Teleportation (M)"],
+    ["53", "Horn of Blasting"], ["54", "Lamp, Hurricane"],
+    ["55-56", "Lamp of Long Burning"], ["57-59", "Medallion of ESP, 30' range"],
+    ["60-61", "Medallion of ESP, 90' range"], ["62", "Mirror of Life Trapping"],
+    ["63", "Muzzle of Training"], ["64-66", "Nail, Finger"],
+    ["67-68", "Nail of Pointing"], ["69-71", "Ointment"],
+    ["72-76", "Pouch of Security"], ["77-79", "Quill of Copying (S)"],
+    ["80-82", "Rope of Climbing"], ["83-86", "Scarab of Protection"],
+    ["87-88", "Slate of Identification (S)"],
+    ["89-91", "Stone of Controlling Earth Elementals"],
+    ["92", "Talisman of Elemental Travel"], ["93-94", "Wheel of Floating"],
+    ["95-97", "Wheel of Fortune"], ["98", "Wheel, Square"],
+    ["99-00", "Wheel, Square (variant)"]
+  ]),
+  armorSizes: rangeRows([
+    ["01-68", "Human"], ["69-81", "Dwarf"], ["82-91", "Elf"],
+    ["92-98", "Halfling"], ["99-00", "Giant"]
+  ]),
+  armorTypes: rangeRows([
+    ["01-10", "Leather armor"], ["11-17", "Scale mail"], ["18-30", "Chain mail"],
+    ["31-39", "Banded mail"], ["40-50", "Plate mail"], ["51-55", "Suit armor"],
+    ["56-75", "Shield"], ["76-77", "Scale & shield"], ["78-85", "Chain & shield"],
+    ["86-90", "Banded & shield"], ["91-00", "Plate & shield"]
+  ]),
+  armorAc: rangeRows([
+    ["01-70", "+1"], ["71-88", "+2"], ["89-96", "+3"],
+    ["97-99", "+4"], ["00", "+5"]
+  ]),
+  armorSpecial: rangeRows([
+    ["01-07", "Absorption"], ["08-17", "Charm"], ["18-32", "Cure wounds"],
+    ["33-42", "Electricity"], ["43-47", "Energy drain"], ["48-50", "Ethereality"],
+    ["51-60", "Fly"], ["61-66", "Gaseous form"], ["67-75", "Haste"],
+    ["76-85", "Invisibility"], ["86-93", "Reflection"], ["94-00", "Remove curse"]
+  ]),
+  missiles: rangeRows([
+    ["01-37", "Arrows"], ["38-59", "Quarrels"], ["60-70", "Sling stones"],
+    ["71-72", "Blowgun"], ["73-80", "Bow, long"], ["81-85", "Bow, short"],
+    ["86-87", "Crossbow, heavy"], ["88-92", "Crossbow, light"], ["93-00", "Sling"]
+  ]),
+  missileGeneration: rangeRows([
+    ["01-06", "Arrows +1 (2d10)"], ["07-11", "Arrows +2 (2d6)"],
+    ["12-15", "Arrows +3 (2d4)"], ["16-18", "Arrow, +1 silver"],
+    ["19-20", "Arrow, +2 silver"], ["21", "Arrow, +3 silver"],
+    ["22-25", "Blowgun +1"], ["26-28", "Bola +1"], ["29-33", "Bow, short +1"],
+    ["34-37", "Bow, short +2"], ["38-40", "Bow, short +3"], ["41-45", "Bow, long +1"],
+    ["46-49", "Bow, long +2"], ["50-52", "Bow, long +3"],
+    ["53-57", "Crossbow, light +1"], ["58-61", "Crossbow, light +2"],
+    ["62-64", "Crossbow, light +3"], ["65-69", "Crossbow, heavy +1"],
+    ["70-73", "Crossbow, heavy +2"], ["74-76", "Crossbow, heavy +3"],
+    ["77-82", "Quarrels +1 (2d10)"], ["83-87", "Quarrels +2 (2d6)"],
+    ["88-91", "Quarrels +3 (2d4)"], ["92-94", "Quarrel, +1 silver"],
+    ["95-96", "Quarrel, +2 silver"], ["97", "Quarrel, +3 silver"],
+    ["98-00", "Sling +1"]
+  ]),
+  missileTalents: rangeRows([
+    ["01-04", "Biting"], ["05-09", "Blinking"], ["10-14", "Charming"],
+    ["15-21", "Climbing"], ["22-31", "Curing"], ["32-34", "Disarming"],
+    ["35-38", "Dispelling"], ["39-45", "Flying"], ["46-52", "Lighting"],
+    ["53-57", "Penetrating"], ["58-61", "Refilling"], ["62-67", "Screaming"],
+    ["68-72", "Seeking"], ["73-76", "Sinking"], ["77-78", "Slaying"],
+    ["79-85", "Speaking"], ["86-89", "Stunning"], ["90-91", "Teleporting"],
+    ["92-96", "Transporting"], ["97-00", "Wounding"]
+  ]),
+  swords: rangeRows([
+    ["01-10", "Sword, short +1"], ["11-20", "Sword, short +2"],
+    ["21-30", "Sword, short +3"], ["31-34", "Sword, normal +1"],
+    ["35", "Sword, normal +1, +3 vs dragonkind"],
+    ["36", "Sword, normal +1, +3 vs giantkind"],
+    ["37", "Sword, normal +1, +3 vs lycanthropes"],
+    ["38", "Sword, normal +1, +3 vs regenerating monsters"],
+    ["39", "Sword, normal +1, +3 vs spellcasters"],
+    ["40", "Sword, normal +1, +3 vs undead"],
+    ["41-50", "Sword, normal +2"], ["51-60", "Sword, normal +3"],
+    ["61-64", "Sword, bastard +1"],
+    ["65", "Sword, bastard +1, +3 vs dragonkind"],
+    ["66", "Sword, bastard +1, +3 vs giantkind"],
+    ["67", "Sword, bastard +1, +3 vs lycanthropes"],
+    ["68", "Sword, bastard +1, +3 vs regenerating monsters"],
+    ["69", "Sword, bastard +1, +3 vs spellcasters"],
+    ["70", "Sword, bastard +1, +3 vs undead"],
+    ["71-75", "Sword, bastard +2"], ["76-80", "Sword, bastard +3"],
+    ["81-84", "Sword, two-handed +1"],
+    ["85", "Sword, two-handed +1, +3 vs dragonkind"],
+    ["86", "Sword, two-handed +1, +3 vs giantkind"],
+    ["87", "Sword, two-handed +1, +3 vs lycanthropes"],
+    ["88", "Sword, two-handed +1, +3 vs regenerating monsters"],
+    ["89", "Sword, two-handed +1, +3 vs spellcasters"],
+    ["90", "Sword, two-handed +1, +3 vs undead"],
+    ["91-95", "Sword, two-handed +2"], ["96-00", "Sword, two-handed +3"]
+  ]),
+  miscWeapons: rangeRows([
+    ["01-05", "Axe, battle +1"], ["06-08", "Axe, battle +2"],
+    ["09-10", "Axe, battle +3"], ["11-15", "Axe, hand +1"],
+    ["16-18", "Axe, hand +2"], ["19-20", "Axe, hand +3"],
+    ["21-25", "Dagger +1"], ["26-28", "Dagger +2"], ["29-30", "Dagger +3"],
+    ["31-35", "Hammer, throwing +1"], ["36-38", "Hammer, throwing +2"],
+    ["39-40", "Hammer, throwing +3"], ["41-45", "Hammer, war +1"],
+    ["46-48", "Hammer, war +2"], ["49-50", "Hammer, war +3"],
+    ["51-55", "Mace +1"], ["56-58", "Mace +2"], ["59-60", "Mace +3"],
+    ["61-65", "Polearm +1"], ["66-68", "Polearm +2"], ["69-70", "Polearm +3"],
+    ["71-72", "Shield, horned +1"], ["73-75", "Shield, knife +1"],
+    ["76-78", "Shield, sword +1"], ["79-80", "Shield, tusked +1"],
+    ["81-85", "Spear +1"], ["86-88", "Spear +2"], ["89-90", "Spear +3"],
+    ["91-95", "Staff +1"], ["96-98", "Staff +2"], ["99-00", "Staff +3"]
+  ])
+});
+
+export function rollOnRangeTable(rows, roll, rng = Math.random) {
+  const value = roll === undefined || roll === null || roll === ""
+    ? 1 + Math.floor(rng() * 100)
+    : clamp(Math.round(numeric(roll, 1)), 1, 100);
+  const row = (rows ?? []).find((entry) => value >= entry.min && value <= entry.max);
+  return row ? { roll: value, name: row.name } : null;
+}
+
+export function magicItemCategory(roll, rng = Math.random) {
+  const result = rollOnRangeTable(MAGIC_ITEM_CATEGORIES, roll, rng);
+  return result ? { ...result, key: MAGIC_ITEM_CATEGORIES.find((entry) => entry.name === result.name)?.key } : null;
+}
+
+/** RC pp. 228-231: pick the category, then the exact item on its subtable. */
+export function rollMagicItem(input = {}, rng = Math.random) {
+  const selected = MAGIC_ITEM_CATEGORIES.find((entry) => entry.key === input?.category);
+  const category = selected
+    ? { roll: null, name: selected.name, key: selected.key }
+    : magicItemCategory(input?.roll, rng);
+  if (!category) return null;
+  const subRoll = () => 1 + Math.floor(rng() * 100);
+  if (category.key === "armor") {
+    const size = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.armorSizes, subRoll(), rng)?.name;
+    const armor = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.armorTypes, subRoll(), rng)?.name;
+    const ac = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.armorAc, subRoll(), rng)?.name;
+    const special = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.armorSpecial, subRoll(), rng)?.name;
+    return {
+      ...category,
+      item: `${size} ${armor} ${ac}`,
+      details: { size, armor, ac, special },
+      subRoll: null
+    };
+  }
+  if (category.key === "missiles") {
+    const weapon = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.missileGeneration, subRoll(), rng)?.name;
+    const weaponClass = rollOnRangeTable(MAGIC_ITEM_SUBTABLES.missiles, subRoll(), rng)?.name;
+    const possibleTalent = subRoll() <= 40
+      ? rollOnRangeTable(MAGIC_ITEM_SUBTABLES.missileTalents, subRoll(), rng)?.name : null;
+    return {
+      ...category,
+      item: weapon,
+      details: { weaponClass, possibleTalent },
+      subRoll: null
+    };
+  }
+  const item = rollOnRangeTable(MAGIC_ITEM_SUBTABLES[category.key], subRoll(), rng);
+  return item ? { ...category, item: item.name, itemRoll: item.roll, subRoll: item.roll } : null;
+}
+
+

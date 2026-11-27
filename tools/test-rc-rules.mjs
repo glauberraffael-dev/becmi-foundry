@@ -15,14 +15,16 @@ import {
   baseSaves, baseThiefSkills, calculateXpAward, capXpAdvancement, chooseDamage,
   computeArmorClass, computeLoad, encounterChance, encounterCheck, encounterDistance,
   equippedAcBonus, equippedSaveBonuses, evasionChance, evasionCheck, finalDamage,
-  generalSkillInfo, generalSkillSlots, GENERAL_SKILLS, hpForLevel, masteryChoices,
-  masteryData, masteryWeapon, levelForXp, monsterAttackRows, monsterDamageFormula,
+  gemValue, generalSkillInfo, generalSkillSlots, GENERAL_SKILLS, hpForLevel, jewelryValue,
+  magicItemCategory, masteryChoices, masteryData, masteryWeapon, levelForXp, monsterAttackRows,
+  monsterDamageFormula,
   monsterHpFormula, monsterHpFromHitDice, monsterSaveTargets, monsterSpellcasterInfo,
   monsterThac0, monsterXpValue, MONSTER_XP_TABLE, normalizeClassKey, parseMonsterHitDice,
   parseMonsterSaveAs, planAbilityAdjustment, primeRequisiteBonus, pursuitRound,
-  reactionBand, reactionStep, resolveTurnResult, rollExpression, spellKey,
-  spellSlotsForLevel, spellsFor, sumDamage, surpriseCheck, turnUndeadCell,
-  turnUndeadColumn, turnUndeadTable, wanderingMonsterDistance, xpForNextLevel, xpThresholds
+  reactionBand, reactionStep, resolveTurnResult, rollExpression, rollMagicItem,
+  rollTreasureType, spellKey, spellSlotsForLevel, spellsFor, sumDamage, surpriseCheck,
+  treasureTypeInfo, TREASURE_TYPES, turnUndeadCell, turnUndeadColumn, turnUndeadTable,
+  wanderingMonsterDistance, xpForNextLevel, xpThresholds
 } from "../scripts/rules-rc.mjs";
 
 const check = (name, fn) => {
@@ -617,4 +619,55 @@ check("evasion chances and pursuit follow chapter 7", () => {
   assert.equal(round.first, "party");
   assert.equal(round.moraleCheckDue, true);
   assert.equal(pursuitRound({ round: 4, partyRoll: 4, monsterRoll: 2 }).moraleCheckDue, false);
+});
+
+check("treasure types A-V choose the lair or carried table", () => {
+  assert.deepEqual(Object.keys(TREASURE_TYPES), "ABCDEFGHIJKLMNOPQRSTUV".split(""));
+  assert.equal(treasureTypeInfo("c", "auto").table, "lair");
+  assert.equal(treasureTypeInfo("P", "auto").table, "carried");
+  assert.equal(treasureTypeInfo("v").table, "carried");
+  assert.equal(treasureTypeInfo("Z"), null);
+
+  const lair = rollTreasureType({ type: "A", location: "lair" }, () => 0);
+  assert.equal(lair.location, "lair");
+  assert.equal(lair.coins.cp.amount, 1000);
+  assert.equal(lair.coins.pp.amount, 1000);
+  assert.equal(lair.coinGp, 7310);
+  assert.equal(lair.gems.count, 6);
+  assert.equal(lair.jewelry.count, 6);
+  assert.equal(lair.magic.count, 3);
+  assert.equal(lair.magic.found, true);
+
+  const carried = rollTreasureType({ type: "P" }, () => 0.9);
+  assert.equal(carried.location, "carried");
+  assert.equal(carried.coins.cp.amount, 24);
+  assert.equal(rollTreasureType({ type: "S" }, () => 0.9).gems.found, false);
+  assert.equal(rollTreasureType({ type: "S" }, () => 0).gems.found, true);
+  const carriedLow = rollTreasureType({ type: "P" }, () => 0);
+  assert.equal(carriedLow.coins.cp.amount, 3);
+  assert.equal(carriedLow.coinGp, 0.03);
+});
+
+check("gem, jewelry and magical item tables use the RC ranges", () => {
+  assert.equal(gemValue({ roll: 98, averageLevel: 9 }).value, null);
+  assert.equal(gemValue({ roll: 98, averageLevel: 5 }).adjusted, 88);
+  assert.equal(gemValue({ roll: 98, averageLevel: 5 }).value, 5000);
+  assert.equal(jewelryValue({ roll: 100 }).value, 50000);
+  assert.equal(jewelryValue({ roll: 100 }).enc, 50);
+  assert.equal(gemValue({ roll: 50 }, () => 0).value, 1000);
+
+  assert.equal(magicItemCategory(25).key, "potions");
+  assert.equal(magicItemCategory(26).key, "scrolls");
+  assert.equal(magicItemCategory(100).key, "miscWeapons");
+  assert.equal(rollMagicItem({ roll: 1 }, () => 0).item, "Agility");
+  assert.equal(rollMagicItem({ category: "potions" }, () => 0).item, "Agility");
+  const armor = rollMagicItem({ category: "armor" }, () => 0);
+  assert.equal(armor.details.size, "Human");
+  assert.equal(armor.details.armor, "Leather armor");
+  assert.equal(armor.details.ac, "+1");
+  assert.equal(armor.details.special, "Absorption");
+  const missile = rollMagicItem({ category: "missiles" }, () => 0);
+  assert.equal(missile.item, "Arrows +1 (2d10)");
+  assert.equal(missile.details.weaponClass, "Arrows");
+  assert.equal(missile.details.possibleTalent, "Biting");
 });
