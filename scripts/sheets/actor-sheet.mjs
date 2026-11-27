@@ -12,13 +12,17 @@ import {
 import {
   rollGemValue, rollJewelryValue, rollMagicItemCard, rollTreasure
 } from "../treasure.mjs";
+import {
+  rollForageCheck, rollLostCheck, rollSeaWeather, rollSwimCheck, rollTravelDay
+} from "../travel.mjs";
 import { applySheetTheme, isDarkMode, sanitizeImageUpdate, setDarkMode } from "./preferences.mjs";
 import {
   RC, SPELL_LISTS, GENERAL_SKILLS, attackRows, adjustment, calculateXpAward,
   encounterChance, equippedAcBonus, evasionChance, getRCClass, generalSkillInfo, hpForLevel,
   MAGIC_ITEM_CATEGORIES, masteryData, masteryRanks, masteryWeapon, masteryChoices,
-  monsterAttackRows, monsterSpellcasterInfo, monsterXpValue, normalizeClassKey, spellKey,
-  spellSlotsForLevel, spellsFor, treasureTypeInfo, TREASURE_TYPES, turnUndeadColumn
+  monsterAttackRows, monsterSpellcasterInfo, monsterXpValue, movementForLoad, normalizeClassKey,
+  spellKey, spellSlotsForLevel, spellsFor, TRAVEL_MODES, travelFatigue, travelMilesPerDay,
+  treasureTypeInfo, TREASURE_TYPES, turnUndeadColumn
 } from "../rules-rc.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -130,10 +134,47 @@ function readTreasureInputs(element, previous = {}) {
   }));
 }
 
+/** Travel panel inputs are transient DM state, never Actor data. */
+const TRAVEL_DEFAULTS = Object.freeze({
+  load: 0,
+  mode: "foot",
+  terrain: "clear",
+  forage: false,
+  road: false,
+  guide: false,
+  hunting: false,
+  fertile: true,
+  days: 1,
+  daysTraveled: 0,
+  restDays: 0,
+  exerting: false,
+  drowning: false,
+  attempt: 1,
+  constitution: "",
+  outdoorSpeed: 120,
+  aerial: ""
+});
+
+function readTravelInputs(element, previous = {}) {
+  return Object.fromEntries(Object.entries(TRAVEL_DEFAULTS).map(([key, fallback]) => {
+    const input = element?.querySelector(`[data-travel-input="${key}"]`);
+    if (!input) return [key, previous[key] ?? fallback];
+    if (typeof fallback === "boolean") return [key, Boolean(input.checked)];
+    return [key, input.value];
+  }));
+}
+
 function reactionCharisma(actor) {
   const adjustmentValue = actor?.system?.attributes?.adjustments?.cha;
   if (adjustmentValue !== undefined) return Number(adjustmentValue) || 0;
   return adjustment(actor?.system?.abilities?.cha?.value) ?? 0;
+}
+
+function travelConstitution(actor, input = {}) {
+  if (input.constitution !== "" && input.constitution !== null && input.constitution !== undefined) {
+    return Number(input.constitution) || 10;
+  }
+  return Number(actor?.system?.abilities?.con?.value) || 10;
 }
 
 function trackingValue(path, value) {
@@ -166,6 +207,7 @@ const SHEET_TABS = [
   ["features", "BECMI.sheet.tab.features"],
   ["xp", "BECMI.sheet.tab.xp"],
   ["encounter", "BECMI.sheet.tab.encounter"],
+  ["travel", "BECMI.sheet.tab.travel"],
   ["treasure", "BECMI.sheet.tab.treasure"],
   ["equipment", "BECMI.sheet.tab.equipment"],
   ["spells", "BECMI.sheet.tab.spells"],
@@ -311,6 +353,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   xpResult = null;
   encounterInputs = {};
   treasureInputs = {};
+  travelInputs = {};
   encounterState = {
     surprise: "none",
     reaction: { attempt: 1, pendingModifier: 0, done: false }
@@ -351,6 +394,11 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       evasionCheck: BECMIActorSheet.#evasionCheck,
       pursuitRound: BECMIActorSheet.#pursuitRound,
       rollEncounterTable: BECMIActorSheet.#rollEncounterTable,
+      travelDay: BECMIActorSheet.#travelDay,
+      lostCheck: BECMIActorSheet.#lostCheck,
+      forageCheck: BECMIActorSheet.#forageCheck,
+      seaWeather: BECMIActorSheet.#seaWeather,
+      swimCheck: BECMIActorSheet.#swimCheck,
       rollTreasure: BECMIActorSheet.#rollTreasure,
       rollMagicItem: BECMIActorSheet.#rollMagicItem,
       rollGemValue: BECMIActorSheet.#rollGemValue,
@@ -602,6 +650,30 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       monsterTreasure: isCharacter ? "" : (actor.system.treasure ?? "")
     };
 
+    const travelInputs = { ...TRAVEL_DEFAULTS, ...(this.travelInputs ?? {}) };
+    this.travelInputs = travelInputs;
+    const travelLoad = travelInputs.load === "" ? 0 : Number(travelInputs.load) || 0;
+    const movement = movementForLoad(travelLoad);
+    const dailyTravel = travelMilesPerDay(travelInputs);
+    const travelOption = (key) => ({ key, label: game.i18n.localize(`BECMI.travel.terrain.${key}`) });
+    const travel = {
+      inputs: travelInputs,
+      movement,
+      loadBand: game.i18n.localize(`BECMI.travel.band.${movement.band}`),
+      dailyMiles: dailyTravel.miles,
+      terrainLabel: game.i18n.localize(`BECMI.travel.terrain.${dailyTravel.terrain}`),
+      fatigue: travelFatigue(travelInputs.daysTraveled, travelInputs.restDays),
+      constitution: travelConstitution(actor, travelInputs),
+      modeOptions: TRAVEL_MODES.map((entry) => ({ key: entry.key, label: entry.label })),
+      terrainOptions: ["trail", "clear", "grasslands", "city", "forest", "hills", "desert",
+        "mountains", "swamp", "jungle", "ice"].map(travelOption),
+      aerialOptions: [
+        { key: "", label: game.i18n.localize("BECMI.travel.none") },
+        { key: "mount", label: game.i18n.localize("BECMI.travel.aerialMount") },
+        { key: "device", label: game.i18n.localize("BECMI.travel.aerialDevice") }
+      ]
+    };
+
     Object.assign(context, {
       actor, system: actor.system, flags, isCharacter,
       canEdit: this.isEditable,
@@ -611,7 +683,7 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       level, xp, classKey, rcClass, isDruid, canCast, monsterSpellcaster, hasSpellsTab,
       spellClassKey, spellLevel, monsterSpellcastingText: casterInfo?.text ?? "",
       canTurn, turnUndeadLevel, nameLevel, nameLevelStored, nameLevelChoices, clericSpellSlots,
-      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter, treasure,
+      canThief, canMastery, masteryEnabled, canGeneral, generalEnabled, xpCalc, encounter, travel, treasure,
       masteryToggleLabel: game.i18n.localize(masteryEnabled
         ? "BECMI.sheet.masteryDisable" : "BECMI.sheet.masteryEnable"),
       generalToggleLabel: game.i18n.localize(generalEnabled
@@ -1141,6 +1213,34 @@ export class BECMIActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return;
     }
     await drawEncounterTable(this.actor, this.encounterInputs.table);
+  }
+
+  static async #travelDay() {
+    this.travelInputs = readTravelInputs(this.element, this.travelInputs);
+    await rollTravelDay(this.actor, this.travelInputs);
+  }
+
+  static async #lostCheck() {
+    this.travelInputs = readTravelInputs(this.element, this.travelInputs);
+    await rollLostCheck(this.actor, this.travelInputs);
+  }
+
+  static async #forageCheck() {
+    this.travelInputs = readTravelInputs(this.element, this.travelInputs);
+    await rollForageCheck(this.actor, this.travelInputs);
+  }
+
+  static async #seaWeather() {
+    this.travelInputs = readTravelInputs(this.element, this.travelInputs);
+    await rollSeaWeather(this.actor, this.travelInputs);
+  }
+
+  static async #swimCheck() {
+    this.travelInputs = readTravelInputs(this.element, this.travelInputs);
+    await rollSwimCheck(this.actor, {
+      ...this.travelInputs,
+      constitution: travelConstitution(this.actor, this.travelInputs)
+    });
   }
 
   static async #rollTreasure() {

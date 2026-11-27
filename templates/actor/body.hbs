@@ -769,6 +769,80 @@
   </div>
 </section>
 
+<!-- ============================ TRAVEL ============================ -->
+<section class="becmi-tab-panel{{#if (eq activeTab "travel")}} is-active{{/if}}" data-tab="travel">
+  <div class="becmi-scroll-y">
+    <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.travel'}}</h2>
+    <p class="becmi-hint">{{localize 'BECMI.travel.hint'}}</p>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.movementTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.load'}}:</label><input data-travel-input="load" type="number" min="0" value="{{travel.inputs.load}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.mode'}}:</label>
+        <select data-travel-input="mode">
+          {{#each travel.modeOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../travel.inputs.mode)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field"><label>{{localize 'BECMI.encounter.terrain'}}:</label>
+        <select data-travel-input="terrain">
+          {{#each travel.terrainOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../travel.inputs.terrain)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.days'}}:</label><input data-travel-input="days" type="number" min="1" value="{{travel.inputs.days}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.aerial'}}:</label>
+        <select data-travel-input="aerial">
+          {{#each travel.aerialOptions as |option|}}
+          <option value="{{option.key}}"{{#if (eq option.key ../travel.inputs.aerial)}} selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="becmi-field becmi-field--wide"><span class="becmi-derived">{{travel.loadBand}} · {{travel.movement.normal}} / {{travel.movement.encounter}} / {{travel.movement.running}} · {{travel.dailyMiles}} {{localize 'BECMI.travel.milesPerDay'}} ({{travel.terrainLabel}})</span></div>
+      <button type="button" class="becmi-roll" data-action="travelDay">{{localize 'BECMI.travel.dayCheck'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.longDistanceTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.daysTraveled'}}:</label><input data-travel-input="daysTraveled" type="number" min="0" value="{{travel.inputs.daysTraveled}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.restDays'}}:</label><input data-travel-input="restDays" type="number" min="0" value="{{travel.inputs.restDays}}"></div>
+      <div class="becmi-field becmi-field--wide"><span class="becmi-derived">{{localize 'BECMI.travel.restOwed'}}: {{travel.fatigue.owedRestDays}} · {{localize 'BECMI.travel.penalty'}} {{travel.fatigue.attackPenalty}}</span></div>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.lostTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <label class="becmi-check"><input type="checkbox" data-travel-input="road"{{#if travel.inputs.road}} checked{{/if}}> {{localize 'BECMI.travel.road'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-travel-input="guide"{{#if travel.inputs.guide}} checked{{/if}}> {{localize 'BECMI.travel.guide'}}</label>
+      <button type="button" class="becmi-roll" data-action="lostCheck">{{localize 'BECMI.travel.lostCheck'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.forageTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <label class="becmi-check"><input type="checkbox" data-travel-input="forage"{{#if travel.inputs.forage}} checked{{/if}}> {{localize 'BECMI.travel.forage'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-travel-input="hunting"{{#if travel.inputs.hunting}} checked{{/if}}> {{localize 'BECMI.travel.hunting'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-travel-input="fertile"{{#if travel.inputs.fertile}} checked{{/if}}> {{localize 'BECMI.travel.fertile'}}</label>
+      <button type="button" class="becmi-roll" data-action="forageCheck">{{localize 'BECMI.travel.forageCheck'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.weatherTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <button type="button" class="becmi-roll" data-action="seaWeather">{{localize 'BECMI.travel.seaCheck'}}</button>
+    </div>
+
+    <h3 class="becmi-subtitle">{{localize 'BECMI.travel.swimTitle'}}</h3>
+    <div class="becmi-grid becmi-grid--combat">
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.outdoorSpeed'}}:</label><input data-travel-input="outdoorSpeed" type="number" min="1" value="{{travel.inputs.outdoorSpeed}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.abilities.con'}}:</label><input data-travel-input="constitution" type="number" min="1" value="{{travel.constitution}}"></div>
+      <div class="becmi-field"><label>{{localize 'BECMI.travel.drowningAttempt'}}:</label><input data-travel-input="attempt" type="number" min="1" value="{{travel.inputs.attempt}}"></div>
+      <label class="becmi-check"><input type="checkbox" data-travel-input="exerting"{{#if travel.inputs.exerting}} checked{{/if}}> {{localize 'BECMI.travel.exerting'}}</label>
+      <label class="becmi-check"><input type="checkbox" data-travel-input="drowning"{{#if travel.inputs.drowning}} checked{{/if}}> {{localize 'BECMI.travel.drowningCheck'}}</label>
+      <button type="button" class="becmi-roll" data-action="swimCheck">{{localize 'BECMI.travel.swimCheck'}}</button>
+    </div>
+  </div>
+</section>
+
 <section class="becmi-tab-panel{{#if (eq activeTab "treasure")}} is-active{{/if}}" data-tab="treasure">
   <h2 class="becmi-section-title">{{localize 'BECMI.sheet.tab.treasure'}}</h2>
   <div class="becmi-sheet-body">

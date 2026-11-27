@@ -34,6 +34,10 @@ short paraphrases; the PDF and OCR export are **not** included.
   1d6 surprise and initiative, encounter distance, 2d6 reactions from the RollTable
   compendium, d100 evasion and chase rounds. Every check posts a chat card and
   never writes to the Actor.
+- A **Travel** tab gives the DM chapter 6 procedures: load-based movement, terrain
+  and daily travel rates, mandatory rest and fatigue, getting lost, foraging,
+  swimming/drowning, sea weather on 2d6 and aerial travel. These checks also post
+  chat cards and never write to the Actor.
 - Name Level choices are on the character sheet: Land Owner or Travelling, holding
   style, and fighter specialization by alignment. The sheet derives the title and
   shows the RC advantages and obligations; paladins/avengers get cleric-level spells,
@@ -124,8 +128,8 @@ https://raw.githubusercontent.com/glauberraffael-dev/becmi-foundry/main/system.j
 ```
 
 If a cached manifest offers an older version, add a cache-busting query such as
-`.../system.json?v=0.1.34`. The manifest points to a versioned archive,
-`becmi-foundry-0.1.34.zip`, so Foundry never downloads a stale ZIP from `main`.
+`.../system.json?v=0.1.35`. The manifest points to a versioned archive,
+`becmi-foundry-0.1.35.zip`, so Foundry never downloads a stale ZIP from `main`.
 See [PUBLISHING.md](PUBLISHING.md) for regeneration and push instructions.
 
 ### From a local folder

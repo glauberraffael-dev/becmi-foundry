@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.35
+
+- Added a **Travel** tab with the Rules Cyclopedia chapter 6 procedures:
+  encumbrance-based movement rates, terrain modifiers and daily travel distances
+  for every printed walker and mount, one rest day per six travelled days with
+  the cumulative attack/damage penalty, the daily getting-lost check (roads,
+  rivers and guides skip it), foraging and hunting, swimming/breath/drowning
+  checks, sea weather on 2d6, and aerial mount/device distances. All checks post
+  chat cards and keep their inputs off the Actor.
+- Added Foundry-independent travel rule tests and extended the sheet smoke test
+  to cover the new actions and panel controls.
+
 ## 0.1.34
 
 - Added a seven-step **Creation Wizard** (`ApplicationV2`) on the Actor sheet,

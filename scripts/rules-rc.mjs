@@ -2086,4 +2086,186 @@ export function rollMagicItem(input = {}, rng = Math.random) {
   return item ? { ...category, item: item.name, itemRoll: item.roll, subRoll: item.roll } : null;
 }
 
+/* ------------------------------------------------------------------ *
+ * Chapter 6: Movement and travel (RC pp. 87-90)
+ * ------------------------------------------------------------------ */
+
+/** RC p. 87: 1 round = 10 seconds, 1 turn = 10 minutes, 144 turns/day. */
+export const GAME_TIME_UNITS = Object.freeze({
+  roundSeconds: 10,
+  turnMinutes: 10,
+  turnsPerDay: 144
+});
+
+/** RC p. 88: load in coin-weight (cn) sets all three character speeds. */
+export const MOVEMENT_RATES = Object.freeze([
+  { band: "none", max: 400, normal: 120, encounter: 40, running: 120 },
+  { band: "light", max: 800, normal: 90, encounter: 30, running: 90 },
+  { band: "medium", max: 1200, normal: 60, encounter: 20, running: 60 },
+  { band: "heavy", max: 1600, normal: 30, encounter: 10, running: 30 },
+  { band: "veryHeavy", max: 2400, normal: 15, encounter: 5, running: 15 },
+  { band: "immobile", max: Infinity, normal: 0, encounter: 0, running: 0 }
+]);
+
+export function movementForLoad(loadCn = 0) {
+  const cn = Math.max(0, numeric(loadCn, 0));
+  const row = MOVEMENT_RATES.find((entry) => cn <= entry.max) ?? MOVEMENT_RATES.at(-1);
+  return {
+    load: cn,
+    band: row.band,
+    normal: row.normal,
+    encounter: row.encounter,
+    running: row.running
+  };
+}
+
+/** RC p. 88: terrain modifies daily travel, but not rounds or turns. */
+export const TERRAIN_MODIFIERS = Object.freeze({
+  trail: 1.5,
+  road: 1.5,
+  clear: 1,
+  city: 1,
+  grassland: 1,
+  grasslands: 1,
+  forest: 2 / 3,
+  muddy: 2 / 3,
+  snow: 2 / 3,
+  hills: 2 / 3,
+  broken: 2 / 3,
+  desert: 2 / 3,
+  mountains: 0.5,
+  swamp: 0.5,
+  jungle: 0.5,
+  ice: 0.5,
+  glacier: 0.5
+});
+
+/** RC p. 88: miles covered per day by walkers and mounts. */
+export const TRAVEL_MODES = Object.freeze([
+  { key: "foot", label: "Foot, no encumbrance", rates: { clear: 24, trail: 36, hills: 16, mountains: 12, desert: 16 } },
+  { key: "footLight", label: "Foot, light encumbrance", rates: { clear: 12, trail: 24, hills: 8, mountains: 6, desert: 6 } },
+  { key: "footHeavy", label: "Foot, heavy encumbrance", rates: { clear: 8, trail: 12, hills: 6, mountains: 4, desert: 6 } },
+  { key: "camel", label: "Camel", rates: { clear: 32, trail: 48, hills: 24, mountains: 16, desert: 32 } },
+  { key: "elephant", label: "Elephant", rates: { clear: 24, trail: 36, hills: 12, mountains: 8, desert: 8 } },
+  { key: "ridingHorse", label: "Riding horse", rates: { clear: 48, trail: 72, hills: 36, mountains: 24, desert: 16 } },
+  { key: "donkey", label: "Donkey or mule", rates: { clear: 24, trail: 36, hills: 16, mountains: 12, desert: 16 } },
+  { key: "warHorse", label: "War horse", rates: { clear: 24, trail: 36, hills: 16, mountains: 12, desert: 16 } },
+  { key: "draftHorse", label: "Draft horse", rates: { clear: 16, trail: 24, hills: 12, mountains: 8, desert: 8 } },
+  { key: "ox", label: "Ox", rates: { clear: 12, trail: 16, hills: 10, mountains: 8, desert: 6 } }
+]);
+
+function round2(value) {
+  return Math.round(value * 100) / 100;
+}
+
+/** RC p. 88: slowest walker or mount decides the pace; foraging is 2/3. */
+export function travelMilesPerDay({ mode = "foot", terrain = "clear", forage = false } = {}) {
+  const selected = TRAVEL_MODES.find((entry) => entry.key === mode) ?? TRAVEL_MODES[0];
+  const key = Object.hasOwn(TERRAIN_MODIFIERS, terrain) ? terrain : "clear";
+  const printed = selected.rates[key];
+  const daily = printed === undefined
+    ? round2(selected.rates.clear * TERRAIN_MODIFIERS[key])
+    : printed;
+  const miles = forage ? round2(daily * (2 / 3)) : daily;
+  return { mode: selected.key, label: selected.label, terrain: key, miles, forage: Boolean(forage) };
+}
+
+/** RC p. 88: normal speed / 5 gives clear-terrain miles per day. */
+export function overlandMilesPerDay(normalSpeed = 120, terrain = "clear") {
+  const key = Object.hasOwn(TERRAIN_MODIFIERS, terrain) ? terrain : "clear";
+  return round2(Math.max(0, numeric(normalSpeed, 120)) / 5 * TERRAIN_MODIFIERS[key]);
+}
+
+/** RC p. 89: a day check is skipped on roads, rivers or with a guide. */
+export const LOST_TERRAINS = Object.freeze({
+  clear: { min: 1, max: 1 },
+  grassland: { min: 1, max: 1 },
+  grasslands: { min: 1, max: 1 },
+  city: { min: 1, max: 1 },
+  swamp: { min: 1, max: 3 },
+  jungle: { min: 1, max: 3 },
+  desert: { min: 1, max: 3 },
+  other: { min: 1, max: 2 }
+});
+
+export function lostCheck({ terrain = "clear", road = false, guide = false, roll } = {}, rng = Math.random) {
+  const key = Object.hasOwn(LOST_TERRAINS, terrain) ? terrain : "other";
+  const target = LOST_TERRAINS[key];
+  const value = roll === undefined || roll === null || roll === ""
+    ? 1 + Math.floor(rng() * 6)
+    : clamp(Math.round(numeric(roll, 1)), 1, 6);
+  const safe = Boolean(road || guide);
+  return {
+    terrain: key,
+    roll: value,
+    target: { ...target },
+    formula: `1d6 <= ${target.max}`,
+    checked: !safe,
+    lost: !safe && value >= target.min && value <= target.max
+  };
+}
+
+/** RC p. 89: 1-3 on 1d6 finds food while travelling; hunting can be automatic. */
+export function forageCheck({ roll, hunting = false, fertile = true } = {}, rng = Math.random) {
+  const value = roll === undefined || roll === null || roll === ""
+    ? 1 + Math.floor(rng() * 6)
+    : clamp(Math.round(numeric(roll, 1)), 1, 6);
+  return { roll: value, success: (hunting && fertile) || value <= 3 };
+}
+
+/** RC p. 89: one rest day per six travelled days, cumulative -1 per missed rest. */
+export function travelFatigue(daysTraveled = 0, restDays = 0) {
+  const traveled = Math.max(0, numeric(daysTraveled, 0));
+  const rested = Math.max(0, numeric(restDays, 0));
+  const owed = Math.floor(traveled / 6);
+  const remaining = Math.max(0, owed - rested);
+  const penalty = remaining > 0 ? -remaining : 0;
+  return { owedRestDays: owed, remainingRestDays: remaining, attackPenalty: penalty, damagePenalty: penalty };
+}
+
+/** RC p. 89: swimming is 1/5 outdoor speed; underwater the same number is feet. */
+export function swimMovement(outdoorYardsPerRound = 120) {
+  const rate = Math.max(0, numeric(outdoorYardsPerRound, 120)) / 5;
+  return { surfaceYardsPerRound: rate, underwaterFeetPerRound: rate };
+}
+
+/** RC p. 90: breath and drowning use Constitution, with a cumulative -1 check. */
+export function breathRounds(constitution = 10, exerting = false) {
+  return Math.max(1, Math.floor(Math.max(1, numeric(constitution, 10)) / (exerting ? 2 : 1)));
+}
+
+export function drowningTarget(attempt = 1, constitution = 10) {
+  return Math.max(1, Math.round(numeric(constitution, 10)) - (Math.max(1, Math.round(numeric(attempt, 1))) - 1));
+}
+
+export function drowningGraceRounds(constitution = 10) {
+  return Math.ceil(Math.max(1, numeric(constitution, 10)) / 3);
+}
+
+/** RC p. 90: 2d6 weather at sea; gales also dictate the drifting direction. */
+export const SEA_WEATHER = Object.freeze([
+  { min: 2, max: 2, key: "noWind", multiplier: 0, oarsMultiplier: 1 / 3 },
+  { min: 3, max: 3, key: "extremeLightBreeze", multiplier: 1 / 3 },
+  { min: 4, max: 4, key: "lightBreeze", multiplier: 1 / 3 },
+  { min: 5, max: 5, key: "moderateBreeze", multiplier: 2 / 3 },
+  { min: 6, max: 8, key: "normalWinds", multiplier: 1 },
+  { min: 9, max: 9, key: "strongBreeze", multiplier: 4 / 3 },
+  { min: 10, max: 10, key: "highWinds", multiplier: 3 / 2 },
+  { min: 11, max: 11, key: "extremeHighWinds", multiplier: 2 },
+  { min: 12, max: 12, key: "gale", multiplier: 3, randomDirection: true, sinkingChance: 80 }
+]);
+
+export function seaWeather(roll, rng = Math.random) {
+  const value = roll === undefined || roll === null || roll === ""
+    ? 2 + Math.floor(rng() * 6) + Math.floor(rng() * 6)
+    : clamp(Math.round(numeric(roll, 7)), 2, 12);
+  const row = SEA_WEATHER.find((entry) => value >= entry.min && value <= entry.max) ?? SEA_WEATHER[4];
+  return { roll: value, ...row };
+}
+
+/** RC p. 90: aerial mounts cover 72 miles/day, devices 120. */
+export function aerialMilesPerDay(kind = "mount") {
+  return kind === "device" ? 120 : 72;
+}
+
 

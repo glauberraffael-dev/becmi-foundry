@@ -215,6 +215,9 @@ for (const action of ["encounterCheck", "surpriseCheck", "encounterDistance", "w
   "reactionCheck", "resetReaction", "evasionCheck", "pursuitRound", "rollEncounterTable"]) {
   if (typeof actions[action] !== "function") throw new Error(`encounter action ${action} is not registered`);
 }
+for (const action of ["travelDay", "lostCheck", "forageCheck", "seaWeather", "swimCheck"]) {
+  if (typeof actions[action] !== "function") throw new Error(`travel action ${action} is not registered`);
+}
 for (const action of ["rollTreasure", "rollMagicItem", "rollGemValue", "rollJewelryValue"]) {
   if (typeof actions[action] !== "function") throw new Error(`treasure action ${action} is not registered`);
 }
@@ -228,6 +231,15 @@ for (const marker of [
   'data-action="rollEncounterTable"', 'data-encounter-input="table"'
 ]) {
   if (!body.includes(marker)) throw new Error(`encounter panel is missing ${marker}`);
+}
+for (const marker of [
+  'data-tab="travel"', 'data-action="travelDay"', 'data-action="lostCheck"',
+  'data-action="forageCheck"', 'data-action="seaWeather"', 'data-action="swimCheck"',
+  'data-travel-input="load"', 'data-travel-input="mode"', 'data-travel-input="terrain"',
+  'data-travel-input="road"', 'data-travel-input="guide"', 'data-travel-input="forage"',
+  'data-travel-input="constitution"', 'data-travel-input="drowning"'
+]) {
+  if (!body.includes(marker)) throw new Error(`travel panel is missing ${marker}`);
 }
 for (const marker of [
   'data-tab="treasure"', 'data-action="rollTreasure"', 'data-action="rollMagicItem"',
